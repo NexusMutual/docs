@@ -1,47 +1,46 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
-# Tutorial Intro
+# Getting Started
 
-Let's discover **Docusaurus in less than 5 minutes**.
+This documentation provides everything you need to know about Nexus Mutual.
 
-## Getting Started
+## Overview
 
-Get started by **creating a new site**.
+All of the basics are covered:
+* [Introduction to Nexus Mutual](/overview/)
+* [Membership](/overview/membership)
+* [Cover products](/overview/cover-products/)
+* [Claims history](/overview/claims-history)
+* [Resources](/overview/resources/)
+* [Audits and Security](/overview/resources/audits-and-security)
+* [FAQ](/overview/resources/faq)
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Protocol
 
-### What you'll need
+An in-depth review of the Nexus Mutual protocol:
+* [Overview of the protocol](/protocol/)
+* [The NXM token](/protocol/nxm-token/)
+* [The capital pool](/protocol/capital-pool/)
+* [Tokenized cover, features](/protocol/cover)
+* [Dynamic pricing](protocol/pricing)
+* [Capacity](/protocol/capacity)
+* [NXM staking](/protocol/staking/)
+* [Staking pools](/protocol/staking/staking-pools)
+* [Claims assessment](/protocol/claims-assessment)
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Governance
 
-## Generate a new site
+Review of protocol and DAO governance, and how the DAO operates:
+* [Introduction to governance](/governance/)
+* [Nexus Mutual Protocol Proposals (NMPPs)](/governance/protocol-proposals)
+* [Nexus Mutual DAO Proposals (NMDPs)](/governance/dao-proposals)
+* [Overview of the Nexus Mutual DAO](/governance/dao)
 
-Generate a new Docusaurus site using the **classic template**.
+## Resources
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Standard FAQ and links to various resources:
+* [FAQ](/overview/resources/faq)
+* [Audits and Security](/overview/resources/audits-and-security)
