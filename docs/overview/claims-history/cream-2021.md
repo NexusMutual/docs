@@ -25,10 +25,10 @@ To date, eight (8) claims have been filed and voted on by claims assessors. As s
 #### Approved claims
 Claims assessors reviewed and approved Claims 98, 99, 100, 101, 103, and 105. These claims included proof of loss, which showed each affected member suffered a loss of 20% or greater. You can review the transactions related to each claim in the [Google Sheet](https://docs.google.com/spreadsheets/d/1dcg2NPeGm8xqqLwnqxFHJXFeBcMwICxWjEpYaRG1Cjo/edit?usp=sharing) and the [Nexus Mutual user interface in the Claims section](https://app.nexusmutual.io/claim-assessment).
 
-| Approved claims      |          |         |
-| ----------- | ----------- | ----------- |
-| [Claim 98](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=98)      | [Claim 99](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=99) | [Claim 100](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=100) |
-| [Claim 101](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=101)      | [Claim 103](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=103)     | [Claim 105](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=105)     |
+| Approved claims                                                                 |                                                                                 |                                                                                 |
+|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [Claim 98](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=98)   | [Claim 99](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=99)   | [Claim 100](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=100) |
+| [Claim 101](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=101) | [Claim 103](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=103) | [Claim 105](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=105) |
 
 #### Denied claims
 Claims assessors reviewed and denied claims 102 and 104.
@@ -39,6 +39,6 @@ Claims assessors can use their discretion when deciding claims. In this case, me
 
 The member who filed Claim 104 purchased Protocol Cover after the exploit took place and was not eligible for a claim payout for that reason.
 
-| Denied claims      |         |         |
-| ----------- | ----------- | ----------- |
-| [Claim 102](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=102)      | [Claim 102 Snapshot vote (partial claim payment from DAO treasury)](https://snapshot.org/#/community.nexusmutual.eth/proposal/0xc2bff3d5d05a72f3ff31258851dc736436e800552f0df0bf339efe41f76a7ad6) | [Claim 104](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=104) |
+| Denied claims                                                                   |                                                                                                                                                                                                   |                                                                                 |
+|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [Claim 102](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=102) | [Claim 102 Snapshot vote (partial claim payment from DAO treasury)](https://snapshot.org/#/community.nexusmutual.eth/proposal/0xc2bff3d5d05a72f3ff31258851dc736436e800552f0df0bf339efe41f76a7ad6) | [Claim 104](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=104) |

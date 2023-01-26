@@ -18,8 +18,7 @@ The base price decreases linearly from <code>BumpedPrice</code> to <code>TargetP
 
 ### Base price formula
 
-<code>basePrice = MAX(bumpedPrice - priceDrop, targetPrice)</code><p>
-</p>
+<p><code>basePrice = MAX(bumpedPrice - priceDrop, targetPrice)</code></p>
 
 Where:
 * <code>bump = 0.2% addition to the base price per 1% of pool capacity used</code>
@@ -69,14 +68,11 @@ When the capacity for a cover product falls between 90% to 100%, surge pricing, 
 
 ### Price formula including surge loading
 
-<code>premium = basePremium + surgePremium</code><p>
-</p>
-Where:<p>
-</p>
+<p><code>premium = basePremium + surgePremium</code></p>
+Where:<p></p>
 
 * <code>basePremium = cover amount * basePrice</code>
-* <code>surgePremium = cover amount * surgeLoading / 2</code><p>
-</p>
+* <p><code>surgePremium = cover amount * surgeLoading / 2</code></p>
 
   * Where <code>surgeLoading</code> is referred to as the surge loading factor in the examples below
 
@@ -84,34 +80,25 @@ Where:<p>
 * <code>used capacity % before = 88%</code>
 * <code>used capacity % after = 95%</code>
 
-<code>loading = 0.02 for every 1% of capacity over 90%</code><p>
-</p>
-<code>surge loading factor at 95% = (95% - 90%) / 1% * 0.02 = 5 * 0.02 = 0.1</code><p>
-</p>
+<p><code>loading = 0.02 for every 1% of capacity over 90%</code></p>
+<p><code>surge loading factor at 95% = (95% - 90%) / 1% * 0.02 = 5 * 0.02 = 0.1</code></p>
 
 *Example: capacity starts at 91% and goes to 95%*
 * <code>used capacity % before = 91%</code>
 * <code>used capacity % after = 95%</code>
 
-<code>surge loading factor at 95% = (95% - 90%) / 1% * 0.02 = 5 * 0.02 = 0.1</code><p>
-</p>
+<p><code>surge loading factor at 95% = (95% - 90%) / 1% * 0.02 = 5 * 0.02 = 0.1</code></p>
 
-<code>surge loading factor at 91% = (91% - 90%) / 1% * 0.02 = 1 * 0.02 = 0.02</code><p>
-</p>
+<p><code>surge loading factor at 91% = (91% - 90%) / 1% * 0.02 = 1 * 0.02 = 0.02</code></p>
 
 and
 
-<code>premium = basePremium + surgePremium</code><p>
-</p>
+<p><code>premium = basePremium + surgePremium</code></p>
 
 Where:
 * <code>basePremium = cover amount * basePrice</code>
-* <code>surgePremium = surgePremium 90% to 95% - surgePremium 90% to 91%</code><p>
-</p>
-  
-* <code>surgePremium 90% to 95% = amount * surge loading factor at 95% / 2 =</code><p>
-  </p>
-  
+* <p><code>surgePremium = surgePremium 90% to 95% - surgePremium 90% to 91%</code></p>
+* <p><code>surgePremium 90% to 95% = amount * surge loading factor at 95% / 2 =</code></p>
 * <code>surgePremium 90% to 91% = amount * surge loading factor at 91% / 2 =</code>
 
 ## Benefits
@@ -137,12 +124,3 @@ Cover products in a staking pool with ample capacity but infrequent cover buys w
 As the cost of cover increases, demand will begin to decrease once the price reaches a certain level and continues to rise. This can limit exposure to risk, while generating more revenue for the mutual and members participating as NXM stakers.
 
 Dynamic pricing plays an important role in risk management, though it’s not the only way the protocol manages exposure to risk.
-
-
-
-
-
-
-
-
-

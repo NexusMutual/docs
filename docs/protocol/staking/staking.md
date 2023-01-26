@@ -53,8 +53,7 @@ Tokenized staking positions accrue rewards using a time-based veToken model, whe
 
 ### Staking rewards formula
 
-<code>rewardShares = stakeShares * (1 + (10% * LOCK_PERIODS_IN_A_YEAR * daysUntilStakeLockPeriodEnds / 365)</code><p>
-</p>
+<p><code>rewardShares = stakeShares * (1 + (10% * LOCK_PERIODS_IN_A_YEAR * daysUntilStakeLockPeriodEnds / 365)</code></p>
 
 Where:
 * <code>stakeShares</code> is the amount of NXM staked in one position for a given lock period
@@ -90,7 +89,6 @@ See the following scenario for an example:
 * Global capacity factor is 2
 
 The NXM burned to facilitate the claim payout would be as follows:
-<code>50 (ETH) / 0.1 (ETH/NXM) / 2  = 250 NXM</code><p>
-</p>
+<p><code>50 (ETH) / 0.1 (ETH/NXM) / 2  = 250 NXM</code></p>
 
 NXM stakers earn rewards but run the risk of losing their staked NXM, as NXM burns can result in a portion of a position or the whole position being burned.

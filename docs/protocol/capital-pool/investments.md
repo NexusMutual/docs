@@ -4,7 +4,7 @@ sidebar_position: 4.4
 
 # Investments
 
-Any investment allocations are decided by members through on-chain governance using the [Nexus Mutual Protocol Proposal (NMPP)](/governance/protocol-proposals) format. To date, members have voted to allocate capital pool assets in the following strategies.
+Any investment allocations are decided by members through on-chain governance using the [Nexus Mutual Protocol Improvement Proposal (NMPIP)](/governance/protocol-improvement-proposals) format. To date, members have voted to allocate capital pool assets in the following strategies.
 
 ## Investment in Lido stETH
 

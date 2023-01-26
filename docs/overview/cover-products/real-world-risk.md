@@ -19,6 +19,6 @@ Members who have real world risk and pricing expertise can launch a staking pool
 * Weather derivative cover
 * Wildfire cover
 
-Those interested in developing a new cover product and managing a staking pool (i.e., risk management business) can [fill out this contact form](https://nexusmutual.io/contact.html).
+Those interested in developing a new cover product and managing a staking pool (i.e., risk management business) can [fill out this contact form](https://nexusmutual.io/contact).
 
 After you submit your inquiry, the product team will contact you to explore potential cover product development for the risk(s) you are interested in offering through the Nexus Mutual protocol.

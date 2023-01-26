@@ -6,23 +6,19 @@ sidebar_position: 4.8
 
 [Staking pool managers](/protocol/staking/staking-pools#staking-pool-managers) allocate staked NXM to individual products to create open capacity, which is the amount of cover that can be sold over a given period of time for a given product. Capacity is calculated as follows:
 
-<code>total stake = active stake + expired stake</code><p>
-</p>
+<p><code>total stake = active stake + expired stake</code></p>
 
 Where <code>active stake</code> represents all NXM in active staking periods and expired stake represents staked NXM in staking periods that have ended and can be withdrawn by NXM stakers.
 
-<code>total capacity = active stake * global capacity factor</code><p>
-</p>
+<p><code>total capacity = active stake * global capacity factor</code></p>
 
 Where total capacity is the amount of staked NXM in active staking periods and the global capacity factor is two for all products but can be changed by the Advisory Board.
 
-<code>total product capacity = total capacity * capacity reduction factor * product weight</code><p>
-</p>
+<p><code>total product capacity = total capacity * capacity reduction factor * product weight</code></p>
 
 Where the <code>capacity reduction factor</code> is set to zero but can be adjusted up to one by the Advisory Board and <code>product weight</code> refers to the amount of staked NXM allocated to that cover product.
 
-<code>total product capacity = reserved product capacity + available product capacity</code><p>
-</p>
+<p><code>total product capacity = reserved product capacity + available product capacity</code></p>
 
 Where <code>reserved product capacity</code> is the reserved product capacity for covers that have been sold and <code>available product capacity</code> is the remaining capacity that can still be sold.
 
