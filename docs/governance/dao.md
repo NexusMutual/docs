@@ -58,7 +58,7 @@ Before creating an NMDP team creation request, review the existing teams.
 
 ## DAO teams
 
-Currently, there are five proposed teams under review on the forum. Of those teams, there are three teams that have previously been established.
+Currently, there are five DAO teams. These teams work on behalf of Nexus Mutual DAO members, and their funding is approved through the NMDP process. You can review the [most recent DAO team funding proposal](https://forum.nexusmutual.io/t/q1-q2-2023-dao-teams-budget-request-proposal/986) to learn about each team's priorities, duties, and more.
 
 ### Community team
 
@@ -124,23 +124,29 @@ The team works to solve problems the right way and retains focus on the Nexus Mu
 
 ## DAO team funding
 
-If the DAO team budget request proposals are approved by members through Snapshot governance, the DAO treasury sends funds to the team multisigs. Currently, there is a proposal to streamline the payment process, increase the signing threshold on the Community multisig, and manage all team budgets from that multisig.
+If the DAO team budget request proposals are approved by members through Snapshot governance, the DAO treasury sends funds to the team multisigs. With the [Q1 & Q2 2023 DAO teams budget request proposal](https://snapshot.org/#/community.nexusmutual.eth/proposal/0x63e292837175a2976c8857e0f3d565c7e5349fbf3671bcebae5505ed4dc97b12), members voted to streamline the payment process. All of the funding for DAO teams is held in the DAO teams multisig (formerly, the Community multisig) and payments are managed from that multisig.
 
-### Community multisig
+The Operations team has implemented an oversight process for any non-salary payment requests from the DAO teams multisig.
 
-The Community Safe has a two-of-three signing threshold.
+### DAO teams (formerly, Community) multisig
+
+The DAO teams Safe has a three-of-five (3/5) signing threshold.
 
 [Safe multisig](https://app.safe.global/eth:0x57d2D86d32497bC4AEd3b603A391db50c10D7fA1/balances): 0x57d2D86d32497bC4AEd3b603A391db50c10D7fA1
 
 #### Community multisig signers
 
+All signers are required to use a hardware wallet-secured address for their signing address.
+
 * BraveNewDeFi
 * Dopeee
 * Kayleigh
+* Rei
+* Claudio
 
-### Investment multisig 
+### Investment multisig
 
-The Investment Safe has a two-of-three signing threshold.
+The Investment Safe has a two-of-three (2/3) signing threshold. This Safe was used before team payments were streamlined to the DAO team multisig.
 
 [Safe multisig](https://app.safe.global/eth:0x09ABbe423feDEE2332CAEa4117093D7d9B017cF5/balances): 0x09ABbe423feDEE2332CAEa4117093D7d9B017cF5
 
