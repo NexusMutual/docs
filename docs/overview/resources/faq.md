@@ -68,7 +68,7 @@ If you suffer a loss of funds and need to file a claim, you will need to submit 
 
 ### How do I get my protocol listed on Nexus Mutual?
 
-If you're interested in having your protocol reviewed for a potential listing in the Nexus Mutual user interface, you can use the following [contact form](https://nexusmutual.io/contact.html) to provide your request, which the product team will review and determine if a listing is appropriate at this time.
+If you're interested in having your protocol reviewed for a potential listing in the Nexus Mutual user interface, you can use the following [contact form](https://nexusmutual.io/contact) to provide your request, which the product team will review and determine if a listing is appropriate at this time.
 
 ## Claims
 
