@@ -38,7 +38,7 @@ Source: [Yield-bearing token contract viewed in Zerion](https://app.zerion.io/to
 
 ## Cover wording
 
-For more information, read the full terms and conditions of [Nexus Mutual’s Yield Token Cover](https://nexusmutual.io/pages/YieldTokenCoverv1.0.pdf).
+For more information, read the full terms and conditions of [Nexus Mutual’s Yield Token Cover](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f475a1a2c7250a1e9697_YieldTokenCoverv1.0.pdf).
 
 Nexus Mutual’s claims assessors use this cover wording as a reference when considering any loss event.
 

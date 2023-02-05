@@ -25,7 +25,7 @@ Source: [Igor Igamberdiev, The Block Research](https://twitter.com/FrankResearch
 
 ## Cover wording
 
-For more information, read the full terms and conditions of [Nexus Mutual's Protocol Cover](https://nexusmutual.io/pages/ProtocolCoverv1.0.pdf).
+For more information, read the full terms and conditions of [Nexus Mutual's Protocol Cover](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4c4cca088730ac54ccc_ProtocolCoverv1.0.pdf).
 
 Nexus Mutual's claims assessors use this cover wording as a reference when considering any claim.
 

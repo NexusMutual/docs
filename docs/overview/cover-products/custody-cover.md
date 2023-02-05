@@ -16,7 +16,7 @@ When you have crypto assets deposited on a centralized exchange, Custody Cover p
 
 ## Cover wording
 
-For more information, read the full terms and conditions of [Nexus Mutual's Custody Cover](https://nexusmutual.io/pages/CustodyCoverWordingv1.0.pdf).
+For more information, read the full terms and conditions of [Nexus Mutual's Custody Cover](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4d7b378db634f0f9a9d_CustodyCoverWordingv1.0.pdf).
 
 Nexus Mutual's claims assessors use this cover wording as a reference when considering any claim.
 

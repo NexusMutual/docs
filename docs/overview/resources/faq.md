@@ -68,7 +68,7 @@ If you suffer a loss of funds and need to file a claim, you will need to submit 
 
 ### How do I get my protocol listed on Nexus Mutual?
 
-If you're interested in having your protocol reviewed for a potential listing in the Nexus Mutual user interface, you can use the following [contact form](https://nexusmutual.io/contact.html) to provide your request, which the product team will review and determine if a listing is appropriate at this time.
+If you're interested in having your protocol reviewed for a potential listing in the Nexus Mutual user interface, you can use the following [contact form](https://nexusmutual.io/contact) to provide your request, which the product team will review and determine if a listing is appropriate at this time.
 
 ## Claims
 
@@ -185,4 +185,5 @@ While wNXM is backed 1-to-1 with genuine NXM, the two tokens are priced by diffe
 ### Where can I verify the wNXM supply?
 
 You can verify the wNXM supply by viewing the [wNXM smart contract on Etherscan](https://etherscan.io/address/0x0d438f3b5175bebc262bf23753c1e53d03432bde).
+
 * wNXM contract address: 0x0d438F3b5175Bebc262bF23753C1E53d03432bDE
