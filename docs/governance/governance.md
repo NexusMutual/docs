@@ -23,7 +23,7 @@ The Advisory Board is currently made up of five members of the mutual and contai
 * Technical expertise: insurance and mutuals
 * General expertise: legal, regulatory, corporate governance, and business management
 
-The Advisory Board has power in limited circumstances and is primarily there to provide qualified technical guidance to the members of the mutual on improvement proposals as well as take emergency action, should it be required. The scope of the Advisory Board’s power in governance is outlined on the [Nexus Mutual Improvement Proposals (NMPIP)](/governance/protocol-improvement-proposals) page.
+The Advisory Board has power in limited circumstances and is primarily there to provide qualified technical guidance to the members of the mutual on improvement proposals as well as take emergency action, should it be required. The scope of the Advisory Board’s power in governance is outlined on the [Nexus Mutual Protocol Improvement Proposals (NMPIP)](/governance/protocol-improvement-proposals) page.
 
 #### Advisory Board Members
 
