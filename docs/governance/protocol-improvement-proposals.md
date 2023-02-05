@@ -40,11 +40,11 @@ The Advisory Board whitelists critical decision proposals; however, any Advisory
 
 ## NMPIP governance process
 
-Creating a Nexus Mutual Protocol Improvement Proposal (NMPIP) is the first step in the protocol governance process. Any member can create, post, and vote on NMPPs.
+Creating a Nexus Mutual Protocol Improvement Proposal (NMPIP) is the first step in the protocol governance process. Any member can create, post, and vote on NMPIPs.
 
 ### 1. Posting an NMPIP
 
-When you write an NMPIP,  you should include the following information:
+When you write an NMPIP, you should include the following information:
 
 **Title**. NMPIP: [Concise title for proposal]. For example: <code>NMPIP: Invest some of the mutuals funds in LIDO stETH</code>
 
