@@ -39,4 +39,4 @@ For a review of the claims assessment process, see the [Claims Assessment](/prot
 
 ## Get a quote
 
-Organizations interested in protecting their validators can [fill out this contact form](https://nexusmutual.io/contact.html) and the business development team will contact you to explore tailored cover options and pricing.
+Organizations interested in protecting their validators can [fill out this contact form](https://nexusmutual.io/contact) and the business development team will contact you to explore tailored cover options and pricing.
