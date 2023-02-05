@@ -72,8 +72,7 @@ Once the cool-down period has passed, a claim vote is finalized and the member h
 
 Members who lock their NXM and participate in the claims assessment process earn rewards for voting on claims. The total assessment reward pool is calculated using the following formula:
 
-<code>totalRewardInNXM = min(maxRewardInNXM, expectedPayout * rewardRatio * coverPeriodInDays / 365)</code><p>
-</p>
+<p><code>totalRewardInNXM = min(maxRewardInNXM, expectedPayout * rewardRatio * coverPeriodInDays / 365)</code></p>
 
 Where the <code>maxRewardInNXM</code> is equal to 50 NXM and the <code>rewardRatio</code> is 1.3%.
 

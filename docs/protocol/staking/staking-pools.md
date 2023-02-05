@@ -59,7 +59,6 @@ See the following scenario for an example:
 * The claim amount is equal to 50 ETH
 
 The NXM burned to facilitate the claim payout would be as follows:
-<code>50 (ETH) / 0.1 (ETH/NXM) / 2  = 250 NXM</code><p>
-</p>
+<p><code>50 (ETH) / 0.1 (ETH/NXM) / 2  = 250 NXM</code></p>
 
 Depending on the selected product weight for a risk, staking pool managers earn rewards while running the risk of losing the pool’s allocated staked NXM, as NXM burns can result in a portion of the pool’s staked NXM or all of the pool’s staked NXM being burned to facilitate claim payouts.

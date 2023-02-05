@@ -46,13 +46,13 @@ To become a member, you will need to verify your identity through the KYC proces
 
 **Unfortunately, the Nexus Mutual DAO cannot accept members from the following jurisdictions.** We are working hard to try and reduce this list in the future.
 
-| China &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |  Mexico &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Syria |
-| :---------------- | :---------------- | :------------------- |
-| Ethiopia         |  North Korea     | Trinidad and Tobago |
-| India            |  Russia          | Tunisia             |
-| Iran             |  Serbia          | Vanuatu             |
-| Iraq             |  South Korea     | Yemen               |
-| Japan            |  Sri Lanka       |                     |
+| China &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Mexico &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Syria               |
+|:-------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------|:--------------------|
+| Ethiopia                                                                                         | North Korea                                                                         | Trinidad and Tobago |
+| India                                                                                            | Russia                                                                              | Tunisia             |
+| Iran                                                                                             | Serbia                                                                              | Vanuatu             |
+| Iraq                                                                                             | South Korea                                                                         | Yemen               |
+| Japan                                                                                            | Sri Lanka                                                                           |                     |
 
 ## Participating within the protocol, contributing to the mutual
 

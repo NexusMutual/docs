@@ -47,4 +47,3 @@ For a review of the claims assessment process, see the [Claims Assessment](/prot
 ## Excess Cover product development
 
 Organizations interested in learning more about Excess Cover can [fill out this contact form](https://nexusmutual.io/contact) and the business development team will contact you to explore tailored cover options and pricing.
-

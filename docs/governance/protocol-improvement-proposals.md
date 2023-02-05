@@ -2,15 +2,15 @@
 sidebar_position: 5.2
 ---
 
-# Nexus Mutual Protocol Proposals
+# Nexus Mutual Protocol Improvement Proposals
 
-An Nexus Mutual Protocol Proposal (NMPP) is a proposal to signal or enact change to the Nexus Mutual protocol. These proposals are used to engage with the community, reach consensus, and enact proposals if approved through an on-chain vote.
+An Nexus Mutual Protocol Improvement Proposal (NMPIP) is a proposal to signal or enact change to the Nexus Mutual protocol. These proposals are used to engage with the community, reach consensus, and enact proposals if approved through an on-chain vote.
 
 Members can post, discuss, and vote on proposals that fall into one of the following categories. 
 
 ## Upgrades, technical changes, use of funds
 
-Members can propose changes to protocol parameters and incentives, the capital model, and the pricing mechanism. When new products are developed, an NMPP is shared, discussed, and voted on by members. All investment allocations or any use of capital pool funds require an NMPP and vote before execution, as well.
+Members can propose changes to protocol parameters and incentives, the capital model, and the pricing mechanism. When new products are developed, an NMPIP is shared, discussed, and voted on by members. All investment allocations or any use of capital pool funds require an NMPIP and vote before execution, as well.
 
 The proposals are implemented via the governance process with the following quorum requirements:
 * Regular quorum (15% of total NXM supply)
@@ -23,7 +23,7 @@ The Advisory Board members provide a recommended outcome for each proposal via a
 
 ## Critical decisions
 
-In extreme circumstances, members can create an NMPP and hold an on-chain vote to decide if Nexus Mutual should make changes to the Advisory Board, stop cover purchases, or wind up and shut down. 
+In extreme circumstances, members can create an NMPIP and hold an on-chain vote to decide if Nexus Mutual should make changes to the Advisory Board, stop cover purchases, or wind up and shut down. 
 
 Proposals to replace an Advisory Board member have the following quorum requirements:
 * Regular quorum (15% of total NXM supply)
@@ -38,15 +38,15 @@ Other proposals in this category are implemented via the governance process with
 
 The Advisory Board whitelists critical decision proposals; however, any Advisory Board member can be replaced by another member if the membership base agrees. **Proposals to replace an Advisory Board member bypass the whitelist approach and ensure that members on a whole are in control.**
 
-## NMPP governance process
+## NMPIP governance process
 
-Creating a Nexus Mutual Protocol Proposal (NMPP) is the first step in the protocol governance process. Any member can create, post, and vote on NMPPs.
+Creating a Nexus Mutual Protocol Improvement Proposal (NMPIP) is the first step in the protocol governance process. Any member can create, post, and vote on NMPPs.
 
-### 1. Posting an NMPP
+### 1. Posting an NMPIP
 
-When you write an NMPP,  you should include the following information:
+When you write an NMPIP,  you should include the following information:
 
-**Title**. NMPP: [Concise title for proposal]. For example: <code>NMPP: Invest some of the mutuals funds in LIDO stETH</code>
+**Title**. NMPIP: [Concise title for proposal]. For example: <code>NMPIP: Invest some of the mutuals funds in LIDO stETH</code>
 
 **Summary**. Short summary, no more than 250 words, of your proposal.
 
@@ -61,20 +61,20 @@ When you write an NMPP,  you should include the following information:
   * If you choose to conduct a signaling vote using Snapshot, please update status to Signaling Vote and link to that vote. Signaling votes can be used but are not required.
 * If it is in the open for vote stage, add the link to the on-chain proposal
 
-Other sections may be added, but the above should be outlined in any NMPP proposal.
+Other sections may be added, but the above should be outlined in any NMPIP proposal.
 
 ### 2. Review and discussion period
 
-An NMPP should be open for review and comment for at least 14 days before requesting to have your proposal whitelisted by the Advisory Board.
+An NMPIP should be open for review and comment for at least 14 days before requesting to have your proposal whitelisted by the Advisory Board.
 
 NMPPs can be in the open for comment stage for longer periods of time, but there is a minimum to ensure review, feedback, and discussion can occur before the proposal is reviewed by the Advisory Board.
 
 ### 3. Work with Advisory Board to whitelist proposal
 
 
-Members who post an NMPP that has been active for at least 14 days can request the Advisory Board to review and whitelist a proposal on-chain.
+Members who post an NMPIP that has been active for at least 14 days can request the Advisory Board to review and whitelist a proposal on-chain.
 
-The Advisory Board will categorize the NMPP, assign a proposal number, and set the total NXM token rewards to be shared among those participating in the vote.
+The Advisory Board will categorize the NMPIP, assign a proposal number, and set the total NXM token rewards to be shared among those participating in the vote.
 
 **Note**: this step does not apply to critical decision votes. 
 
@@ -94,7 +94,7 @@ For upgrades, technical changes, use of funds votes, the Advisory Board will vot
 
 If the majority of members vote to approve, the proposal will pass and will be implemented after a 24-hour cool-down period.
 
-## NMPP Template
+## NMPIP Template
 
 * Title
   * Summary

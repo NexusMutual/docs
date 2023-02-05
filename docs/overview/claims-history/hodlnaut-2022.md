@@ -22,15 +22,15 @@ Twenty-one (21) claims were filed and voted on by claims assessors. Since this l
 #### Approved claims
 Claims assessors reviewed and approved Claims 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 143, 144, 145, 147, and 151. These claims included proof of loss, which showed each affected member suffered a loss of 10% or greater. You can review the transactions related to each claim in the [Hodlnaut Claims Tracker](https://docs.google.com/spreadsheets/d/1Yy7wasUHlAW8TSiu6GoqoN3ZEFdvWMYXDO-5x93BVKQ/edit?usp=sharing) and the [Nexus Mutual user interface](https://app.nexusmutual.io/claim-assessment).
 
-| Approved claims      |          |         |
-| ----------- | ----------- | ----------- |
-| [Claim 127](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=127)      | [Claim 128](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=128) | [Claim 129](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=129) |
-| [Claim 130](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=130)      | [Claim 131](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=131)     | [Claim 132](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=132)     |
-| [Claim 133](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=133)      | [Claim 134](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=134)     | [Claim 135](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=135)     |
-| [Claim 136](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=136)      | [Claim 137](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=137)     | [Claim 138](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=138)     |
-| [Claim 140](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=140)      | [Claim 141](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=141)     | [Claim 143](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=143)     |
-| [Claim 144](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=144)      | [Claim 145](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=145)     | [Claim 147](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=147)     |
-| [Claim 151](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=151)      |       |       |
+| Approved claims                                                                 |                                                                                 |                                                                                 |
+|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [Claim 127](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=127) | [Claim 128](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=128) | [Claim 129](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=129) |
+| [Claim 130](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=130) | [Claim 131](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=131) | [Claim 132](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=132) |
+| [Claim 133](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=133) | [Claim 134](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=134) | [Claim 135](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=135) |
+| [Claim 136](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=136) | [Claim 137](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=137) | [Claim 138](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=138) |
+| [Claim 140](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=140) | [Claim 141](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=141) | [Claim 143](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=143) |
+| [Claim 144](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=144) | [Claim 145](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=145) | [Claim 147](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=147) |
+| [Claim 151](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=151) |                                                                                 |                                                                                 |
 
 #### Denied claims
 Claims assessors reviewed and denied Claims 126, 139, and 142.
@@ -41,6 +41,6 @@ Claims assessors reviewed and denied Claims 126, 139, and 142.
 
 **Claim 142 was filed with no supporting proof of loss**.
 
-| Denied claims      |          |         |
-| ----------- | ----------- | ----------- |
-| [Claim 126](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=126)      | [Claim 139](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=139) | [Claim 142](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=142) |
+| Denied claims                                                                   |                                                                                 |                                                                                 |
+|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [Claim 126](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=126) | [Claim 139](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=139) | [Claim 142](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=142) |
