@@ -8,7 +8,7 @@ sidebar_position: 3.6
 A total of $1.18m was paid out for Claims 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 143, 144, 145, 147, and 151.
 
 ## Overview
-After Hodlnaut halted withdrawals on 8 August 2022, members who held Hodlnaut Custody Cover at the time withdrawals were first halted waited for the 90-day period to pass. [Section 1.2 of the Custody Cover wording](https://nexusmutual.io/pages/CustodyCoverWordingv1.0.pdf) provides protection for assets that cannot be withdrawn from a centralized exchange after more than 90 days has passed. 
+After Hodlnaut halted withdrawals on 8 August 2022, members who held Hodlnaut Custody Cover at the time withdrawals were first halted waited for the 90-day period to pass. [Section 1.2 of the Custody Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4d7b378db634f0f9a9d_CustodyCoverWordingv1.0.pdf) provides protection for assets that cannot be withdrawn from a centralized exchange after more than 90 days has passed. 
 
 During this time, members documented their losses and prepared for claims filing. Before the 90-day period ended, a [guide to Hodlnaut claims filing](https://medium.com/nexus-mutual/how-hodlnaut-custody-cover-holders-can-prepare-for-claims-filing-17b8e169fc97) was shared across the mutual's social channels.
 
