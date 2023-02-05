@@ -17,7 +17,7 @@ Penalties and missed rewards include:
 
 ## Cover wording
 
-For more information, read the full terms and conditions of [Nexus Mutual’s ETH Staking Cover](https://nexusmutual.io/pages/Nexus-ETH2-Staking-Cover-Wording-v1.0.pdf).
+For more information, read the full terms and conditions of [Nexus Mutual’s ETH Staking Cover](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f8390352b0dc1cb8112b_ETH2-Staking-Cover-Wording-v1.0.pdf).
 
 Nexus Mutual’s claims assessors use this cover wording as a reference when considering any claim.
 
