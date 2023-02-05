@@ -24,7 +24,7 @@ If an established team is nearing the end of their funding period, they can crea
 
 ### 1. Posting an NMDP
 
-When you write an NMDP,  you should include the required information, which is specific to the NMDP type. At a minimum, you must include:
+When you write an NMDP, you should include the required information, which is specific to the NMDP type. At a minimum, you must include:
 
 **Title**. NMDP: [Concise title for proposal]. For example: <code>NMDP: Should we give BootNode a grant to design an ERC-4626 compliant covered vault?</code>
 
