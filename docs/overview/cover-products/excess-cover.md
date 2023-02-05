@@ -16,7 +16,7 @@ This is a bespoke product that can be created for individual cover providers.
 
 ## Sherlock Excess Cover wording
 
-Currently, Nexus Mutual provides [Sherlock](https://www.sherlock.xyz/), auditing and smart contract coverage protocol, with Excess Cover. For more information, read the full terms and conditions of [Nexus Mutual’s Sherlock Excess Cover](https://nexusmutual.io/pages/SherlockExcessCoverv1.0.pdf).
+Currently, Nexus Mutual provides [Sherlock](https://www.sherlock.xyz/), auditing and smart contract coverage protocol, with Excess Cover. For more information, read the full terms and conditions of [Nexus Mutual’s Sherlock Excess Cover](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f7c4f0864e48c46ad93c_SherlockExcessCoverv1.0.pdf).
 
 Nexus Mutual’s claims assessors use this cover wording as a reference when considering any claim.
 
