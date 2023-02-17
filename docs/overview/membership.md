@@ -6,8 +6,6 @@ sidebar_position: 2.1
 
 The Nexus Mutual DAO operates as a discretionary mutual where people are required to join as members before they can interact with the protocol or contribute within the DAO.
 
-As a member, you can buy cover, contribute capital to the mutual in exchange for NXM tokens, and earn rewards from staking NXM, managing staking pools, assessing claims, and participating in on-chain governance.
-
 ## Benefits of membership
 
 Members own the capital pool, contribute to the mutual, and control the protocol through on-chain governance.
@@ -26,7 +24,7 @@ Members can:
 
 Before you complete the membership process, be sure to read the membership agreement and Know-Your-Customer (KYC) requirements.
 
-While the wallet address you use for your whitelisted membership address can be changed later on, it's strongly recommended that you use a [hardware wallet](https://support.mycrypto.com/staying-safe/hardware-wallet-recommendations/) to generate an address and use that as your membership address.
+While the wallet address you use for your whitelisted membership address can be changed later on, it's strongly recommended that you use a [hardware wallet](https://support.mycrypto.com/staying-safe/hardware-wallet-recommendations/) to generate an address that will be used as your membership address.
 
 ### Membership agreement
 
@@ -40,9 +38,9 @@ By becoming a member you agree to the conditions specified in the [DAO Member Ag
 
 To become a member, you will need to verify your identity through the KYC process.
 
-1. First, select the **Pay membership fee** button on the [Welcome page](https://app.nexusmutual.io/home).
-2. Pay the 0.0020 ETH fee and proceed to the KYC submission process.
-3. You will be prompted to submit a photo of your government-issued identification, which will be used in the verification process.
+1. First, select the (Membership) button on the [Welcome page](https://app.nexusmutual.io/home).
+2. Proceed to KYC submission: you will be prompted to submit a photo of your government-issued identification, which will be used in the verification process.
+3. Pay the 0.0020 ETH fee and finalize your membership.
 
 **Unfortunately, the Nexus Mutual DAO cannot accept members from the following jurisdictions.** We are working hard to try and reduce this list in the future.
 
