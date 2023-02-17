@@ -44,9 +44,9 @@ Nexus Mutual’s claims assessors use this cover wording as a reference when con
 
 ### Proof of loss
 
-With Yield Token Cover, the yield-bearing token itself represents a member’s proof of loss. When group claim events are approved, members who held active Yield Token Cover when the depeg event occurred will be able to swap their yield-bearing token for 90% of the cover amount.
+With Yield Token Cover, the yield-bearing token itself represents your proof of loss. When group claim events are approved, you will be able to swap your yield-bearing token for 90% of the cover amount if you held active Yield Token Cover when the depeg event occurred.
 
-Members will need to have possession of the yield-bearing token in order to redeem their claim payout.
+You will need to have possession of the yield-bearing token in order to redeem your claim payout.
 
 ## Claim process
 
