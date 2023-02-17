@@ -18,7 +18,7 @@ When you have crypto assets deposited in a protocol that is deployed on Ethereum
 
 In 2021, the previously offered Smart Contract Cover was deprecated in favor of the more comprehensive Protocol Cover, which was updated and designed to protect people against the most prevalent risks.
 
-The major risks associated with DeFi protocols are caused by vulnerabilities in a protocol's codebase or vulnerabilities in a protocol's external infrastructure such as oracle failure or oracle price manipulation. Below is a list of the most common causes of protocol loss of fund events.
+The major risks associated with DeFi protocols are caused by vulnerabilities in a protocol's codebase or vulnerabilities in a protocol's external infrastructure such as oracle failure or oracle price manipulation. Below is a list of the most common causes of protocol loss events.
 
 ![Major risks root causes of attacks](pathname:///img/MajorRisks-Table.png)
 Source: [Igor Igamberdiev, The Block Research](https://twitter.com/FrankResearcher/status/1395363410691428359)
@@ -31,18 +31,18 @@ Nexus Mutual's claims assessors use this cover wording as a reference when consi
 
 ### Proof of loss
 
-When someone who holds Protocol Cover suffers a loss of funds, they can file a claim, as outlined below, and claims assessors will review the claim submission to determine whether the claim is valid.
+When you hold Protocol Cover and suffer a loss of funds, you can file a claim, as outlined below, and claims assessors will review the claim submission to determine whether the claim is valid.
 
-For Protocol Cover claims, on-chain proof of loss is required. A member will file a claim and either sign a transaction using their affected address or send a 0 value transaction with their affected address to prove they own and control that address.
+For Protocol Cover claims, on-chain proof of loss is required. You will file a claim and either sign a transaction using your affected address or send a 0 value transaction with your affected address to prove you own and control that address.
 
-Once a member proves they own and control the affected address, claims assessors can review the on-chain history associated with that address to determine:
+Once you prove that you own and control the affected address, claims assessors can review the on-chain history associated with the address to determine:
 * If funds were deposited when the loss event occurred
 * If the cover was active when the loss event occurred
-* If the member suffered a loss of funds and, if so, the amount of funds that were lost
+* If you suffered a loss of funds and, if so, the amount of funds that were lost
 
 ## Claims process
 
-After an exploit occurs, you will need to wait 72 hours for the cool-down period to pass. The cool-down period only applies for Protocol Cover claims.
+After an exploit occurs, you will need to wait 72 hours for the cool-down period to pass. The cool-down period applies for Protocol Cover claims.
 1. If you hold Protocol Cover at the time the exploit occurs, you can submit a claim with supporting evidence, otherwise referred to as proof of loss.
     * You will choose to either sign a message from the affected address or send a 0 value transaction from the affected address to prove you own and control the affected address.
     * You will be able to include written details, links to supporting documentation, and/or upload screenshots or other files in the Incident Details portion of the claim submission process.
