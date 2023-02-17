@@ -14,9 +14,6 @@ All of the basics are covered:
 * [Membership](/overview/membership)
 * [Cover products](/overview/cover-products/)
 * [Claims history](/overview/claims-history)
-* [Resources](/overview/resources/)
-* [Audits and Security](/overview/resources/audits-and-security)
-* [FAQ](/overview/resources/faq)
 
 ## Protocol
 
