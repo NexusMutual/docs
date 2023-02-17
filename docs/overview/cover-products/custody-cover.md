@@ -22,14 +22,14 @@ Nexus Mutual's claims assessors use this cover wording as a reference when consi
 
 ### Proof of loss
 
-When someone who holds Custody Cover suffers a loss of funds, they can file a claim, as outlined below, and claims assessors will review the claim submission to determine whether the claim is valid.
+When you hold Custody Cover and suffer a loss of funds, you can file a claim, as outlined below, and claims assessors will review the claim submission to determine whether the claim is valid.
 
-For Custody Cover claims, off-chain account verification and proof of loss is required. A member will file a claim and provide screenshots of account statements, provide a link to their account statements hosted on Google Drive with the necessary personal information blacked out, and verify that their custodial account is indeed owned and controlled by them using a secure off-chain process.
+For Custody Cover claims, off-chain account verification and proof of loss is required. You will file a claim and provide screenshots of account statements, provide a link to your account statements hosted on Google Drive with the necessary personal information blacked out, and verify that your custodial account is indeed owned and controlled by you. This is done using a secure off-chain process.
 
-Once a member proves they own and control the impacted custodial account, claims assessors can review the off-chain account statements and any other supporting evidence to determine:
+Once you have proved you own and control the affected custodial account, claims assessors can review the off-chain account statements and any other supporting evidence to determine:
 * If funds were deposited in the custodial account when the loss event occurred
 * If the cover was active when the custodial loss event occurred
-* If the member suffered a loss of funds, and, if so, the amount of funds that were lost
+* If you suffered a loss of funds, and, if so, the amount of funds that were lost
 
 ## Claims process
 
