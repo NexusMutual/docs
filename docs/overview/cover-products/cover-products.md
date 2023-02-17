@@ -4,7 +4,7 @@ sidebar_position: 2.2
 
 # Cover Products
 
-Members can purchase cover products that protect against various risks. Currently, the mutual offers a variety of cover products for crypto-native risks. The protocol does support product development for new types of cover, such as cover for real world risk and other types of crypto-native risk.
+Members can purchase cover products that protect against different kinds of risk. Currently, the mutual offers a variety of cover products for crypto-native risks. The protocol does support product development for new types of cover, such as cover for real world risk and other types of crypto-native risk.
 
 Members can choose from five crypto-native cover products:
 * [**Protocol Cover**](/overview/cover-products/protocol-cover). For crypto assets deposited in a single protocol deployed on EVM-compatible networks.
