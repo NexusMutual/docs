@@ -11,7 +11,7 @@ Review Nexus Mutual's audits, bug bounties, and initiatives to strengthen our ec
 
 Below are a list of audits conducted on Nexus Mutual's smart contracts in order of newest to oldest. You can also review [Nexus Mutual's GitHub](https://github.com/NexusMutual/smart-contracts) where these reports are hosted.
 
-### iosiro audits | November - December 2022
+### iosiro audits | November - December 2022, February - March 2023
 
 [iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on all contracts under the <code>contracts/modules</code> folder.
 * [Nexus Mutual V2 Audit](https://gist.github.com/iosiro-security/9ab387c0f43fddfc50e3a66802d2f4f7)
