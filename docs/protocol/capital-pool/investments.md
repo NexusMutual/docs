@@ -18,11 +18,12 @@ In September 2021, the DAO Investment team posted another forum proposal that [r
 
 In May 2022, the DAO Investment team posted a forum proposal that [reviewed the opportunity to allocate, and risk of allocating, 15,348 ETH to the M11 Credit wETH lending pool on Maple Finance](https://forum.nexusmutual.io/t/proposal-allocate-capital-to-maple-finance/835/1). After members discussed this proposal and the technical requirements were fulfilled, the proposal was put to a formal governance vote in August 2022.
 * Members voted in favor of [Proposal 172](https://app.nexusmutual.io/governance/view?proposalId=172), and 15,348 ETH was sent to the [Nexus Mutual Enzyme vault](https://app.enzyme.finance/vault/0x27f23c710dd3d878fe9393d93465fed1302f2ebd), where it was then deposited in the M11 Credit wETH pool on Maple Finance.
+* After the Auros liquidity issue was resolved, [the M11 Credit deposit was withdrawn from the pool](https://forum.nexusmutual.io/t/m11-credit-weth-pool-updates-and-status-reports/969/5?u=bravenewdefi) and is now held in the Nexus Mutual Enzyme vault. Members signaled support to let the Investment team manage the withdrawal process. 
 
 ## Investment performance
 
 The capital pool contract can be verified on-chain. Anyone can view the crypto assets held in the pool.
-* [Capital Pool Address](https://etherscan.io/address/0xcafea35cE5a2fc4CED4464DA4349f81A122fd12b): 0xcafea35cE5a2fc4CED4464DA4349f81A122fd12b
+* [Capital Pool Address](https://etherscan.io/address/0xcafea112db32436c2390f5ec988f3adb96870627): 0xcafea112Db32436c2390F5EC988f3aDB96870627
 
 ## Lido Finance rewards history
 
@@ -30,6 +31,4 @@ Lido Finance has a [reward history tool](https://stake.lido.fi/rewards) that any
 
 ## Nexus Mutual Enzyme vault
 
-[The Enzyme Finance vault has a dashboard](https://app.enzyme.finance/vault/0x27f23c710dd3d878fe9393d93465fed1302f2ebd) that tracks the capital pool allocation to the M11 Credit wETH lending pool on Maple Finance, where anyone can review the financial performance of the deposit, movement/deployment of funds through the vault, and earnings over time.
-
-In addition, the [Maven 11 wETH pool displayed in the Maple Finance user interface](https://app.maple.finance/#/earn/pool/0x1a066b0109545455bc771e49e6edef6303cb0a93) provides information about the pool, loan history, projected APY for the pool, and more. Read the [announcement](https://medium.com/nexus-mutual/nexus-mutual-utilizes-chainlink-proof-of-reserve-to-verify-deposits-on-maple-finance-integrates-7dd6ee911916) for information on how the protocol uses Chainlink Proof of Reserve to track the price per share of the NXMTY tokens.
+[The Enzyme Finance vault has a dashboard](https://app.enzyme.finance/vault/0x27f23c710dd3d878fe9393d93465fed1302f2ebd) that tracked the capital pool allocation to the M11 Credit wETH lending pool on Maple Finance. The funds have been withdrawn from the M11 Credit wETH pool and the wETH is held in the Nexus Mutual Enzyme vault, where anyone can review the financial performance of the vault, movement/deployment of funds through the vault, and earnings over time.
