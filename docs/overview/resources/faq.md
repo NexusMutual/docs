@@ -66,6 +66,10 @@ You can review the products in detail in the [Cover Products](/overview/cover-pr
 Yes, you can. You need to buy cover using the ETH address you used to sign up for membership (i.e. your whitelisted address). Cover is purchased with that address but you can protect assets in other wallets.
 If you suffer a loss of funds and need to file a claim, you will need to submit proof of loss, which differs for each [cover product](/overview/cover-products/).
 
+### Can I buy cover for another person such as my spouse?
+
+No, you cannot buy cover for another person even if that person is your spouse. Someone can only buy cover for their assets or deposits per the language in each product's cover wording. Anyone who joins as a Nexus Mutual member can buy cover for their assets and/or deposits.
+
 ### How do I get my protocol listed on Nexus Mutual?
 
 If you're interested in having your protocol reviewed for a potential listing in the Nexus Mutual user interface, you can use the following [contact form](https://nexusmutual.io/contact) to provide your request, which the product team will review and determine if a listing is appropriate at this time.
