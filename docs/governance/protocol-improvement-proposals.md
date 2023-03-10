@@ -40,11 +40,27 @@ The Advisory Board whitelists critical decision proposals; however, any Advisory
 
 ## NMPIP governance process
 
-Creating a Nexus Mutual Protocol Improvement Proposal (NMPIP) is the first step in the protocol governance process. Any member can create, post, and vote on NMPIPs.
+Any potential governance change should start as a Request for Comment (RFC) before a protocol improvement proposal is raised. Creating a Nexus Mutual Protocol Improvement Proposal (NMPIP) is the second step in the protocol governance process. Any member can start RFC discussions, create, post, and vote on NMPIPs.
 
-### 1. Posting an NMPIP
+### 1. Posting a RFC
 
-When you write an NMPIP, you should include the following information:
+Every governance discussion should start as a Request for Comment (RFC) to get feedback from the community and, if applicable, the engineering team.
+
+RFCs should be posted for at least 12 days before they are raised as formal NMPIPs. Of course, they can be posted for longer periods, but a minimum is necessary to ensure members have adequate time to give feedback ahead of a formal proposal. This feedback can be used to revise your proposal ahead of a NMPIP posting.
+
+The format for RFCs is an abbreviated version of the NMPIP format:
+
+**Title**. [RFC]: [Concise title for proposal]. For example: <code>[RFC]: Invest some of the mutuals funds in LIDO stETH</code>
+
+**Summary**. Short summary, no more than 250 words, of your proposal.
+
+**Rationale**. Explain why your proposal is important: what problem does it solve?
+
+**Specification**. The what and how of your proposal. What is the purpose of your proposal and how does it solve the stated problem, benefit members, or improve the protocol?
+
+### 2. Posting an NMPIP
+
+When you are ready to write an NMPIP, you should include the following information:
 
 **Title**. NMPIP: [Concise title for proposal]. For example: <code>NMPIP: Invest some of the mutuals funds in LIDO stETH</code>
 
@@ -63,13 +79,13 @@ When you write an NMPIP, you should include the following information:
 
 Other sections may be added, but the above should be outlined in any NMPIP proposal.
 
-### 2. Review and discussion period
+### 3. Review and discussion period
 
 An NMPIP should be open for review and comment for at least 14 days before requesting to have your proposal whitelisted by the Advisory Board.
 
 NMPPs can be in the open for comment stage for longer periods of time, but there is a minimum to ensure review, feedback, and discussion can occur before the proposal is reviewed by the Advisory Board.
 
-### 3. Work with Advisory Board to whitelist proposal
+### 4. Work with Advisory Board to whitelist proposal
 
 
 Members who post an NMPIP that has been active for at least 14 days can request the Advisory Board to review and whitelist a proposal on-chain.
@@ -78,7 +94,7 @@ The Advisory Board will categorize the NMPIP, assign a proposal number, and set 
 
 **Note**: this step does not apply to critical decision votes. 
 
-### 4. On-chain vote
+### 5. On-chain vote
 
 Once a vote has been whitelisted and transitioned on-chain, members can vote on the proposal. On-chain votes are open for three days before they close and the results are finalized.
 
