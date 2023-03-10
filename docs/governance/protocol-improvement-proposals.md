@@ -106,7 +106,7 @@ Members who vote will not be able to redeem or transfer their NXM tokens for a t
 
 For upgrades, technical changes, use of funds votes, the Advisory Board will vote to make a recommended outcome. If the 15% quorum is not reached, the Advisory Board’s recommendation is the default outcome.
 
-### 5. Implementation
+### 6. Implementation
 
 If the majority of members vote to approve, the proposal will pass and will be implemented after a 24-hour cool-down period.
 
