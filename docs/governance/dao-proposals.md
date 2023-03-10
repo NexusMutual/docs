@@ -22,7 +22,25 @@ If an established team is nearing the end of their funding period, they can crea
 
 ## NMDP governance process
 
-### 1. Posting an NMDP
+Any potential governance change should start as a Request for Comment (RFC) before a protocol improvement proposal is raised. Creating a Nexus Mutual DAO Proposal (NMDP) is the second step in the protocol governance process. Any member can start RFC discussions, create, post, and vote on NMDPs.
+
+### 1. Posting a RFC
+
+Every governance discussion should start as a Request for Comment (RFC) to get feedback from the community and, if applicable, the Investment team.
+
+RFCs should be posted for at least 12 days before they are raised as formal NMDPs. Of course, they can be posted for longer periods, but a minimum is necessary to ensure members have adequate time to give feedback ahead of a formal proposal. This feedback can be used to revise your proposal ahead of a NMDP posting.
+
+The format for RFCs is an abbreviated version of the NMDP format:
+
+**Title**. [RFC]: [Concise title for proposal]. For example: <code>[RFC]: Should we give BootNode a grant to design an ERC-4626 compliant covered vault?</code>
+
+**Summary**. Short summary, no more than 250 words, of your proposal.
+
+**Rationale**. Explain why your proposal is important: what problem does it solve?
+
+**Specification**. The what and how of your proposal. What is the purpose of your proposal and how does it solve the stated problem, benefit members, or improve the DAO or protocol?
+
+### 2. Posting an NMDP
 
 When you write an NMDP, you should include the required information, which is specific to the NMDP type. At a minimum, you must include:
 
@@ -39,17 +57,17 @@ When you write an NMDP, you should include the required information, which is sp
   * If you choose to conduct a signaling vote using Snapshot, please update status to Signaling Vote and link to that vote. Signaling votes can be used but are not required.
 * If it is in the Open for Vote stage, add the link to the Snapshot proposal
 
-### 2. Review and discussion period
+### 3. Review and discussion period
 
 An NMDP should be open for review and comment for at least seven days before transitioning your proposal to a Snapshot vote.
 
 NMDPs can be in the open for comment stage for longer periods of time, but there is a minimum to ensure review, feedback, and discussion can occur before the proposal is moved to a Snapshot vote.
 
-### 3. Snapshot vote
+### 4. Snapshot vote
 
 Once a proposal has been posted on Snapshot, members can vote on the proposal. Snapshot votes must be open for a minimum of five days before they close and the results are finalized.
 
-### 4. Vote outcomes
+### 5. Vote outcomes
 
 An NMDP Snapshot vote requires a majority to pass. If a vote is accepted, then the member who posted the NMDP can reach out to the [Community team](/governance/dao-proposals#nmdp-templates) to receive a Utopia link, which will be used to request funds. 
 
