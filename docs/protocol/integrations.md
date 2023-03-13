@@ -2,7 +2,7 @@
 sidebar_position: 4.7
 ---
 
-# Integrations and commissions
+# Integrations and Commissions
 
 The protocol now supports commission rates. When you integrate and offer your users the ability to purchase cover through your user interface (UI), you can set a commission rate for any cover purchased through your UI.
 
