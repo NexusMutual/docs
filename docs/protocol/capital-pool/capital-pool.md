@@ -13,3 +13,5 @@ There are five foundations that define how members share risk with one another. 
 3. **Buy NXM**. Members can contribute ETH directly to the mutual to generate new NXM. Members can contribute ETH at any time, and any ETH contributed flows into the capital pool.
 4. **Sell NXM**. Members can redeem NXM for ETH directly from the mutual, but only when the minimum capital requirement ratio (MCR%) is above 100%. The "MCR lock" ensures the mutual has enough funds to pay valid claims.
 5. **Investment Earnings**. Members discuss, propose, and vote on capital pool investment allocations, which generate a return for the mutual. This is also called earning money on the "float" in traditional terms. All the investment earnings accumulate in the capital pool. Initially, the Nexus Mutual protocol held ETH and DAI in the capital pool, but members have allocated some capital to investment strategies.
+
+For a detailed breakdown of Nexus Mutual's capital pool assets, see the [Capital Pool and Ownership Dune Dashboard](https://dune.com/nexus_mutual/capital-pool-and-ownership) created by the R&D and Marketing DAO teams.
