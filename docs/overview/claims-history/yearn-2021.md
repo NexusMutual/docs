@@ -2,7 +2,7 @@
 sidebar_position: 3.2
 ---
 
-# Yearn yDAI Hack | 05 February 2021
+# Yearn yDAI Hack | February 2021
 
 A total of $2.36m  was paid out to Yearn Finance Smart Contract Cover holders. Smart Contract Cover has since been deprecated and replaced by Protocol Cover, an updated cover product that protects against more risks in DeFi.
 
