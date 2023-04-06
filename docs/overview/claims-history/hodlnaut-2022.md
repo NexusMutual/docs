@@ -2,7 +2,7 @@
 sidebar_position: 3.6
 ---
 
-# Hodlnaut Halted Withdrawals | 08 August 2022
+# Hodlnaut Halted Withdrawals | August 2022
 
 ## Total claims paid
 A total of $1.18m was paid out for Claims 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 143, 144, 145, 147, and 151.
