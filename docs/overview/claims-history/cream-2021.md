@@ -2,7 +2,7 @@
 sidebar_position: 3.3
 ---
 
-# CREAM V1 Economic Exploit | 27 October 2021
+# CREAM V1 Economic Exploit | October 2021
 
 There is a full post-mortem of this loss event and the claim payouts in the [Paying claims for the CREAM V1 exploit](https://medium.com/nexus-mutual/paying-claims-for-the-cream-v1-exploit-230f93990f1b) Medium post. Details of this event are also included below.
 
