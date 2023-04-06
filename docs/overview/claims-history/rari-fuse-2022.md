@@ -2,7 +2,7 @@
 sidebar_position: 3.4
 ---
 
-# TribeDAO, Rari Capital Fuse Market Hack | 30 April 2022
+# TribeDAO, Rari Capital Fuse Market Hack | April 2022
 
 ## Total Claim Payouts
 A total of $5.08m was paid out for Claims 110, 111, and 113.
