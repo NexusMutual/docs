@@ -2,7 +2,7 @@
 sidebar_position: 3.5
 ---
 
-# Perpetual Protocol v1 Economic Design Failure | 12-15 May 2022
+# Perpetual Protocol v1 Economic Design Failure | May 2022
 
 ## Total Claim Payouts
 A total of $390k was paid out for Claim 118 and Claim 119.
