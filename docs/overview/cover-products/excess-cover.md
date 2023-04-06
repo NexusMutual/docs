@@ -44,6 +44,12 @@ Your organization will need to wait 72 hours for the cool-down period to pass. T
 
 For a review of the claims assessment process, see the [Claims Assessment](/protocol/claims-assessment) section.
 
+## Excess Cover claim payouts
+
+Members have paid a total of $1,007,321 to Sherlock, which represented 25% of their claim payment to [Euler Finance](https://github.com/sherlock-protocol/sherlock-reports/blob/588192a19aef3180fa302e9ae10e8c29d7c7f044/coverage-agreements/Euler%20Coverage%20Agreement%20(Revised%202022.10.19).pdf) per the terms of Sherlock Excess Cover.
+
+To review Nexus Mutual's past claims record and individual case studies, you can see the [Claims History](/overview/claims-history/) section.
+
 ## Excess Cover product development
 
 Organizations interested in learning more about Excess Cover can [fill out this contact form](https://nexusmutual.io/contact) and the business development team will contact you to explore tailored cover options and pricing.
