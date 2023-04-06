@@ -54,6 +54,6 @@ For a review of the claims assessment process, see the [Claims Assessment](/prot
 
 ## Protocol Cover claim payouts
 
-Members have paid $8.24m to cover holders who suffered a loss due to past exploits and technical failures.
+Members have paid $10,819,078.50 to cover holders who suffered a loss due to past exploits and technical failures.
 
 To review Nexus Mutual's past claims record and individual case studies, you can see the [Claims History](/overview/claims-history/) section.
