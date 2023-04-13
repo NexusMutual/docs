@@ -11,15 +11,15 @@ Ultimately, these votes are decided by members who stake NXM. There is usually a
 
 ## Claims paid to date
 
-Members of the mutual have paid out more than $17.8m to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralized custodians.
+Members of the mutual have paid out more than $17.9m to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralized custodians.
 
 |  Year | Total Claims Paid (in USD) |
 |------:|---------------------------:|
 |  2020 |                 $33,717.32 |
 |  2021 |              $2,735,170.27 |
 |  2022 |              $6,590,556.94 |
-|  2023 |              $8,533,335.92 |
-| Total |             $17,892,780.45 |
+|  2023 |              $8,554,573.99 |
+| Total |             $17,914,018.52 |
 
 ## Auditing, reviewing past claims
 
