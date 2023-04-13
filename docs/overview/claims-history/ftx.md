@@ -6,7 +6,7 @@ sidebar_position: 3.7
 
 ## Total claims paid
 
-A total of $4.9m was paid out for Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, and 178.
+A total of $4.92m was paid out for Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, 178, and V2 12.
 
 ## Overview
 
@@ -18,7 +18,7 @@ After 90 days passed, withdrawals were still halted on FTX. On Monday, 6 Februar
 
 ## Filed claims and outcomes
 
-Twenty-three (23) claims were filed and voted on by claims assessors. Since this loss event met the terms outlined in Section 1.2 of the Custody Cover wording, claims assessors reviewed the validity of the claims to determine:
+Twenty-four (24) claims were filed and voted on by claims assessors. Since this loss event met the terms outlined in Section 1.2 of the Custody Cover wording, claims assessors reviewed the validity of the claims to determine:
 
 * Was the member's FTX Custody Cover active at the time withdrawals were first halted?
 * Did the member provide off-chain proof of loss with their claim?
@@ -26,7 +26,7 @@ Twenty-three (23) claims were filed and voted on by claims assessors. Since this
 
 ### Approved claims
 
-Claims assessors reviewed and approved Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, and 178. These claims included proof of loss, which showed each affected member suffered a loss due to halted withdrawals.
+Claims assessors reviewed and approved Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, 178, and V2 12. These claims included proof of loss, which showed each affected member suffered a loss due to halted withdrawals.
 
 You can review the transactions related to each claim in the [FTX Claims Tracker](https://docs.google.com/spreadsheets/d/1DvBE95LUuOY5B4pJZoXG8SbXUIWvYsXaYkk70DHAh6E/edit?usp=sharing) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
 
@@ -38,7 +38,7 @@ You can review the transactions related to each claim in the [FTX Claims Tracker
 | [Claim 165](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=165) | [Claim 166](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=166) | [Claim 167](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=167) |
 | [Claim 168](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=168) | [Claim 169](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=169) | [Claim 170](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=170) |
 | [Claim 171](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=171) | [Claim 172](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=172) | [Claim 173](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=173) |
-| [Claim 176](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=176) | [Claim 178](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=178) |                                                                                |
+| [Claim 176](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=176) | [Claim 178](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=178) |[Claim V2 12](https://app.nexusmutual.io/assessment/view-claim?claimId=12) |
 
 ### Denied claims
 
