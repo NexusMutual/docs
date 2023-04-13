@@ -46,7 +46,7 @@ For a review of the claims assessment process, see the [Claims Assessment](/prot
 
 ## Excess Cover claim payouts
 
-Members have paid a total of $1,007,321 to Sherlock, which represented 25% of their claim payment to [Euler Finance](https://github.com/sherlock-protocol/sherlock-reports/blob/588192a19aef3180fa302e9ae10e8c29d7c7f044/coverage-agreements/Euler%20Coverage%20Agreement%20(Revised%202022.10.19).pdf) per the terms of Sherlock Excess Cover.
+Members have paid a total of $1,023,746 to Sherlock, which represented 25% of their claim payment to [Euler Finance](https://github.com/sherlock-protocol/sherlock-reports/blob/588192a19aef3180fa302e9ae10e8c29d7c7f044/coverage-agreements/Euler%20Coverage%20Agreement%20(Revised%202022.10.19).pdf) and [Sentiment](https://twitter.com/sentimentxyz/status/1645512005443534849) per the terms of Sherlock Excess Cover.
 
 To review Nexus Mutual's past claims record and individual case studies, you can see the [Claims History](/overview/claims-history/) section.
 
