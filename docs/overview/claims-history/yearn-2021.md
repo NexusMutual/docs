@@ -35,12 +35,14 @@ Claims assessors reviewed and approved Claims 72–75, 77–84, 86–87, and 93.
 | [Claim 83](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=83) | [Claim 84](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=84) | [Claim 86](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=86) | [Claim 87](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=87) | [Claim 93](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=93) |
 
 #### Denied claims
-Claims assessors reviewed and denied Claims 76, 85, and 88.
+Claims assessors reviewed and denied Claims 76, 85, 88, and 92.
 
 [**Claim 76 [Cover ID #2929]**](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=76). The address provided as proof of loss was not among the affected addresses and was not impacted by the yDAI vault hack. Claims assessors voted to deny this claim as no loss of funds occurred due to the hack.
 
 [**Claim 85 [Cover ID #2458]**](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=85). The address provided as proof of loss was among the affected address but did not incur a loss of funds that met the 20% or greater criteria as specified in the cover wording. Given this, claims assessors voted to deny this claim.
 
 [**Claim 88 [Cover ID #641]**](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=88). This claim did not require proof of loss, but claims assessors voted to deny. It’s unknown the complete rationale for the denial of this claim, but [Hugh speculated that](https://discord.com/channels/496296560624140298/689385874265342056/813389210123239455) "...I suspect voters took the view that there was no loss in this case but I can see arguments on both sides here. The claimant may resubmit one more time if they wish though. If they do so, I would encourage them to put forward arguments in this channel and as part of the claim submission."
+
+Claim 92 [Cover ID #3675]. While a loss did occur, Yearn compensated this member for their loss of funds prior to this claim filing. Claims assessors reviewed and determined that no loss of funds had occurred since Yearn made the member whole through reimbursement, and assessors voted to deny this claim.
 
 Due to a minor bug in the Nexus Mutual contracts at the time, the member who filed Claim 88 was not able to resubmit their claim again until May 2021. **When the member who held Cover ID #641 resubmitted their claim (i.e., [Claim 93](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=93)), their resubmission was approved because their claim did not require proof of loss.**
