@@ -82,6 +82,8 @@ Members that lock their NXM and participate in the claims assessment process ear
 
 <code>reward = totalRewardInNXM * userStakeAtVoteTime / (accepted + denied)</code>
 
+Once you assess and vote on a claim, you will earn your share NXM rewards, which you will be able to withdraw after the vote closes and the 24-hour cool down period passes.
+
 ## Fraudulent votes
 
 During the cool-down period, claim outcomes can be reviewed if fraudulent voting is suspected. If the Advisory Board finds a claims assessor to have voted to deny a legitimate claim or approve an illegitimate claim, then a fraud penalty can be imposed. The Advisory Board can submit a merkle-tree root hash representing the fraudulent voter and their assessment stake. The fraudulent vote is reversed and the fraudulent assessor's stake is burned.
