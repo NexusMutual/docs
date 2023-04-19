@@ -51,4 +51,37 @@ Members who filed a claim and received a payout agreed to the following terms:
 
 <blockquote>By making a successful claim and receiving a payout (i.e., reimbursement) from Nexus Mutual, you agree to send your eToken and dToken balances to the Nexus Mutual DAO Treasury (0x586b9b2F8010b284A0197f392156f1A7Eb5e86e9) on Ethereum mainnet. In doing so, you give rights to any potential reimbursements from Euler Finance—including any reimbursement tokens that the Euler team may decide to distribute in the future—to Nexus Mutual once your claim has been approved.</blockquote>
 
-The Community team is in the process of working with members who redeemed their claim payment for Euler Finance and the Euler Finance community, so any future reimbursement can be returned to the capital pool.
+The Community team has been working with members who redeemed their claim payment for Euler Finance and the Euler Finance community, so reimbursement is returned to the capital pool.
+
+#### Euler Finance reimbursement to affected users
+
+On 11 April 2023, the Euler Labs team [shared an update](https://twitter.com/eulerfinance/status/1645964057239855104) with their community indicating they were [opening reimbursement claims at 2:00 UTC](https://t.co/fAJr5Qdv1w), per the [updated redemption plan](https://forum.euler.finance/t/plan-for-redemption-of-euler-funds-v2/947) shared on the Euler Finance governance forum.
+
+For affected users who received a claim payment from Nexus Mutual, a disclaimer was presented in the redemption user interface that read:
+
+> According to the Nexus Mutual DAO Community team, you have previously redeemed a claim payment of [#######] [ETH/DAI]. They have requested that you transfer the right to reimbursement for up to the full value of [#######] [ETH/DAI] to the Nexus Mutual DAO treasury address, [as per the following agreement](https://docs.nexusmutual.io/overview/claims-history/euler#euler-finance-reimbursement).
+
+> To discuss, please email claims@nexusmutual.io.
+
+#### Response from Euler Finance claimants
+
+Once reimbursement was made available to Euler Finance users, the Community team reached out to the nine members who redeemed a claim payment from Nexus Mutual for the Euler Finance loss event and provided instructions on how to return their claim payment to the [Nexus Mutual DAO treasury](https://etherscan.io/address/0x586b9b2f8010b284a0197f392156f1a7eb5e86e9).
+
+Afterwards, eight of the nine members responded and said they would return their claim payments to the mutual since they experienced no material loss after claiming their reimbursement from Euler Finance.
+
+The member who redeemed 199.6 ETH for Claim V2 #4 emailed the mutual and indicated they would not return their claim payment.
+
+#### Recovery rate
+
+To date, 12.99184203 WETH, 107.57 ETH, and 1,720,207 DAI has been returned to the Nexus Mutual DAO treasury. The member who redeemed 60 ETH for Claim V2 #11 has shared that they will return their claim payment, but needed certain documentation from the mutual before redeeming their reimbursement from Euler Finance and returning the 60 ETH to the DAO treasury.
+
+For DAI denominated Euler Finance claims, 99.05% has been recovered.
+
+For ETH denominated Euler Finance claims, 32.39% has been recovered.
+* Once the 60 ETH from Claim V2 #11 is returned, the ETH recovery rate will reach 48.52%
+
+#### Transferring returned funds to the capital pool
+
+Once all outstanding funds have been sent to the DAO treasury, the Community team will work with the DAO treasury multisig signers and send the reimbursed funds back to the capital pool.
+
+When this has been completed, this section will be updated with the transaction confirming the return of funds to the capital pool.
