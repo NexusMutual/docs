@@ -70,7 +70,7 @@ Where:
 
 When members stake NXM and enter into longer-term staking periods (i.e., lock periods), they receive more stake shares, which increases the share of cover fees they receive every time someone buys cover from the staking pool.
 
-Stake shares decrease over time as a member’s staking position approaches the end of the lock period. Delegating staked NXM to a staking pool fosr a 728-day staking period will provide the highest share of cover fees, given the staking shares would remain high for a year before starting to diminish as the remaining lock period decreases below 365 days. You can refer to the available [staking periods](/protocol/staking/#staking-periods) in the section above.
+Stake shares decrease over time as a member’s staking position approaches the end of the lock period. Delegating staked NXM to a staking pool for a 728-day staking period will provide the highest share of cover fees, given the staking shares would remain high for a year before starting to diminish as the remaining lock period decreases below 365 days. You can refer to the available [staking periods](/protocol/staking/#staking-periods) in the section above.
 
 This mechanism aligns incentives between NXM stakers, who benefit from higher staking shares for longer-term staking periods; staking pool managers, who benefit from long-term capacity that can be used to sell covers for up to 364 days; and cover buyers, who benefit from access to deep capacity for longer time periods when they decide to purchase protection.
 
