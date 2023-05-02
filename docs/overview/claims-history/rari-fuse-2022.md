@@ -5,7 +5,7 @@ sidebar_position: 3.4
 # TribeDAO, Rari Capital Fuse Market Hack | April 2022
 
 ## Total Claim Payouts
-A total of $5.08m was paid out for Claims 110, 111, and 113.
+A total of $5,089,889.24 was paid out for Claims 110, 111, and 113.
 
 ## Overview
 After this exploit occurred, claims assessors [discussed this loss event](https://discord.com/channels/496296560624140298/689385874265342056/970676366238425098) in the mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](/protocol/claims-assessment/) process and review the validity of claims submitted after a loss event occurs.
@@ -19,6 +19,8 @@ To date, two (2) claims have been filed and voted on by claims assessors. As sta
 * Did the member have active cover at the time of the exploit?
 * Did the member provide proof of loss?
 * Did the member lose 20% or more of the covered amount?
+
+For more information on each claim, review the section below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 #### Approved claims
 Claims assessors reviewed and approved Claims [110](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=110), [111](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=111), and [113](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=113). The claims included proof of loss, which showed the affected addresses where the members suffered a loss of 20% or greater. You can review the transaction related to this claim in the [Google Sheet](https://docs.google.com/spreadsheets/d/1haZshQwcYASEGnVRmE5AWC_iNWRLibqRNT7y94Jh63E/edit#gid=0) and the [Nexus Mutual user interface in the Claims section](https://app.nexusmutual.io/claim-assessment).
