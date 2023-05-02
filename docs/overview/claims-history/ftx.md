@@ -6,7 +6,7 @@ sidebar_position: 3.7
 
 ## Total claims paid
 
-A total of $4.92m was paid out for Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, 178, and V2 12.
+A total of $4,924,887.90 was paid out for Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, 178, and V2 12.
 
 ## Overview
 
@@ -23,6 +23,8 @@ Twenty-four (24) claims were filed and voted on by claims assessors. Since this 
 * Was the member's FTX Custody Cover active at the time withdrawals were first halted?
 * Did the member provide off-chain proof of loss with their claim?
 * Did the member verify ownership of their FTX account?
+
+For more information on each claim, review the sections below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 ### Approved claims
 
