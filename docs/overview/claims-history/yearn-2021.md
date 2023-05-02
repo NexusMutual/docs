@@ -4,7 +4,7 @@ sidebar_position: 3.2
 
 # Yearn yDAI Hack | February 2021
 
-A total of $2.36m  was paid out to Yearn Finance Smart Contract Cover holders. Smart Contract Cover has since been deprecated and replaced by Protocol Cover, an updated cover product that protects against more risks in DeFi.
+A total of $2,317,776.72 was paid out to Yearn Finance Smart Contract Cover holders. Smart Contract Cover has since been deprecated and replaced by Protocol Cover, an updated cover product that protects against more risks in DeFi.
 
 ## Overview
 After this exploit occurred, claims assessors [discussed this loss event](https://discord.com/channels/496296560624140298/689385874265342056/807263979192713217) in the mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
@@ -21,6 +21,8 @@ A total of eighteen (18) claims were filed and voted on by claims assessors. As 
 * Did the member have a cover with an ID higher than #2291?
   * If so, then proof of loss was required for a claim to be approved.
   * If proof of loss was provided, then members were required to demonstrate a material loss of at least 20% of the cover amount.
+
+For more information on each claim, review the sections below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 #### Proof of loss
 Members voted and approved [Proposal 109: Include Proof of Loss in Smart Contract Cover Wording](https://app.nexusmutual.io/governance/view?proposalId=109). After this proposal was passed, members introduced proof of loss in October 2020 which means that cover ID #2291 and above require proof of material loss per a signed message from the affected address at the time of claiming. Claimants must demonstrate a material loss of at least 20% of the cover amount.
