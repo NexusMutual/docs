@@ -28,7 +28,7 @@ Three claims were filed and voted on by claims assessors. Since this loss event 
 
 Claims assessors reviewed and approved Claims 174 and 177. These claims included proof of loss, which showed each affected member suffered a loss due to halted withdrawals.
 
-You can review the transactions related to each claim in the [BlockFi Claims Tracker](https://docs.google.com/spreadsheets/d/1U6cGApDL_crY5RJBa3PUOTMAa17acmWBpYk5ZOPpOls/edit?usp=sharing) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
+You can review the transactions related to each claim in the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims), [BlockFi Claims Tracker](https://docs.google.com/spreadsheets/d/1U6cGApDL_crY5RJBa3PUOTMAa17acmWBpYk5ZOPpOls/edit?usp=sharing) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
 
 ### Denied claims
 
