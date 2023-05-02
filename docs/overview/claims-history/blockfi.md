@@ -6,7 +6,7 @@ sidebar_position: 3.8
 
 ## Total claims paid
 
-A total of $30,574 was paid out for Claims 174 and 177.
+A total of $30,590.64 was paid out for Claims 174 and 177.
 
 ## Overview
 
