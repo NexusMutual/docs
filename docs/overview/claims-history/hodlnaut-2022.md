@@ -5,7 +5,7 @@ sidebar_position: 3.6
 # Hodlnaut Halted Withdrawals | August 2022
 
 ## Total claims paid
-A total of $1.18m was paid out for Claims 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 143, 144, 145, 147, and 151.
+A total of $1,113,211.17 was paid out for Claims 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 143, 144, 145, 147, and 151.
 
 ## Overview
 After Hodlnaut halted withdrawals on 8 August 2022, members who held Hodlnaut Custody Cover at the time withdrawals were first halted waited for the 90-day period to pass. [Section 1.2 of the Custody Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4d7b378db634f0f9a9d_CustodyCoverWordingv1.0.pdf) provides protection for assets that cannot be withdrawn from a centralized exchange after more than 90 days has passed. 
@@ -18,6 +18,8 @@ After 90 days passed, withdrawals were still halted on Hodlnaut. On Monday, 7 No
 Twenty-one (21) claims were filed and voted on by claims assessors. Since this loss event met the terms outlined in Section 1.2 of the Custody Cover wording, claims assessors reviewed the validity of the claims to determine:
 * Was the member's Hodlnaut Custody Cover active at the time withdrawals were first halted?
 * Did the member provide off-chain proof of loss with their claim?
+
+For more information on each claim, review the sections below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 #### Approved claims
 Claims assessors reviewed and approved Claims 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 143, 144, 145, 147, and 151. These claims included proof of loss, which showed each affected member suffered a loss of 10% or greater. You can review the transactions related to each claim in the [Hodlnaut Claims Tracker](https://docs.google.com/spreadsheets/d/1Yy7wasUHlAW8TSiu6GoqoN3ZEFdvWMYXDO-5x93BVKQ/edit?usp=sharing) and the [Nexus Mutual user interface](https://app.nexusmutual.io/claim-assessment).
