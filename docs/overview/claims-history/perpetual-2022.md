@@ -19,7 +19,7 @@ To date, two (2) claims have been filed and voted on by claims assessors. As sta
 * Did the member have active cover at the time of the exploit?
 * Did the member provide proof of loss?
 
-For more information on each claim, review the sections below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
+For more information on each claim, review the section below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 #### Approved claims
 Claims assessors reviewed and approved [Claim 118](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=118) and [Claim 119](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=119). The claims included proof of loss, which showed the affected addresses where the members suffered a loss of 20% or greater. You can review the transactions related to these claims in the [Nexus Mutual user interface in the Claims section](https://app.nexusmutual.io/claim-assessment).
