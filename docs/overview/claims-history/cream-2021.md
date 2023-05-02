@@ -7,7 +7,7 @@ sidebar_position: 3.3
 There is a full post-mortem of this loss event and the claim payouts in the [Paying claims for the CREAM V1 exploit](https://medium.com/nexus-mutual/paying-claims-for-the-cream-v1-exploit-230f93990f1b) Medium post. Details of this event are also included below.
 
 ## Total claim payouts
-A total of $395k was paid out to members including the Claim 102 payout from the DAO treasury.
+A total of $397,087.31 was paid out to members including the Claim 102 payout from the DAO treasury.
 
 ### Overview
 After this exploit occurred, claims assessors discussed this loss event in the mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
@@ -21,6 +21,8 @@ To date, eight (8) claims have been filed and voted on by claims assessors. As s
 * Did the member have active cover at the time of the exploit?
 * Did the member provide proof of loss?
 * Did the member lose 20% or more of the covered amount?
+
+For more information on each claim, review the sections below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 #### Approved claims
 Claims assessors reviewed and approved Claims 98, 99, 100, 101, 103, and 105. These claims included proof of loss, which showed each affected member suffered a loss of 20% or greater. You can review the transactions related to each claim in the [Google Sheet](https://docs.google.com/spreadsheets/d/1dcg2NPeGm8xqqLwnqxFHJXFeBcMwICxWjEpYaRG1Cjo/edit?usp=sharing) and the [Nexus Mutual user interface in the Claims section](https://app.nexusmutual.io/claim-assessment).
