@@ -6,7 +6,7 @@ sidebar_position: 3.9
 
 ## Total claims paid
 
-A total of $2.39m was paid out for Euler Finance Protocol Cover Claims V2 0, 2, 3, 4, 5, 6, 7, 8, and 11.
+A total of $2,389,227.88 was paid out for Euler Finance Protocol Cover Claims V2 0, 2, 3, 4, 5, 6, 7, 8, and 11.
 
 A total of $1m was paid out for the Sherlock Excess Cover Claim V2 10, where [Sherlock paid out on their Euler Finance coverage](https://twitter.com/sherlockdefi/status/1641174876231815168) and their Excess Cover offset the payout by 25%.
 
@@ -24,6 +24,8 @@ Nine Euler Finance Protocol Cover claims and two Sherlock Excess Cover claims we
 * Did the member have active cover at the time of the exploit?
 * Did the member provide proof of loss?
 * Did the member request a claim amount that matched their actual loss?
+
+For more information on each claim, review the sections below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 ### Approved claims
 
