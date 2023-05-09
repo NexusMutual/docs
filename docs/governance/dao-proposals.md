@@ -86,7 +86,7 @@ In addition to the required sections that are noted and outlined in [Posting an 
     * Budget request
   * Proposal status
 
-## DAO team creation request
+### DAO team creation request
 
 * Title
   * Summary
@@ -102,7 +102,7 @@ In addition to the required sections that are noted and outlined in [Posting an 
     * Budget request
   * Proposal status
 
-## DAO team funding request
+### DAO team funding request
 
   * Title
     * Summary
@@ -118,6 +118,6 @@ In addition to the required sections that are noted and outlined in [Posting an 
       * Six-month performance review
   * Proposal status
 
-## DAO team proposals
+### DAO team proposals
 
 The DAO team creation requests and DAO team funding requests are reviewed in the [Nexus Mutual DAO](/governance/dao) section.
