@@ -12,17 +12,17 @@ With this approach, the price - per pool per risk - starts high and decreases to
 
 The dynamic pricing mechanism is reviewed in detail below.
 
-## Base price
+## Spot price
 
-The base price decreases linearly from <code>BumpedPrice</code> to <code>TargetPrice</code>, depending on the <code>Speed(PRICE_CHANGE_PER_DAY)</code> and the <code>time passed since the last cover buy</code>.
+The spot price decreases linearly from <code>bumpedPrice</code> to <code>targetPrice</code>, depending on the <code>Speed(PRICE_CHANGE_PER_DAY)</code> and the <code>time passed since the last cover buy</code>.
 
-### Base price formula
+### Spot price formula
 
-<p><code>basePrice = MAX(bumpedPrice - priceDrop, targetPrice)</code></p>
+<p><code>spotPrice = MAX(bumpedPrice - priceDrop, targetPrice)</code></p>
 
 Where:
 * <code>bump = 0.2% addition to the base price per 1% of pool capacity used</code>
-* <code>Bumped price = basePrice + capacity% of the pool to be used / 1% x 0.2</code>
+* <code>Bumped price = spotPrice + capacity% of the pool to be used / 1% x 0.2</code>
 * <code>priceDrop = timeSinceLastCoverBuy * speed</code>
 * <code>speed = PRICE_CHANGE_PER_DAY / 1 dayInSeconds</code>
 * <code>targetPrice</code> is set by the staking pool manager and can be updated at any time
@@ -32,7 +32,7 @@ Where:
 The Bumped Price gets updated after each cover buy and is used to calculate the base price of the NEXT cover.
 
 *Example*
-* <code>basePrice = 2.5%</code>
+* <code>spotPrice = 2.5%</code>
 * <code>capacity % of the pool to be used = 15%</code>
 * <code>bumpedPrice = 2.5 + 15% / 1% x 0.2 = 5.5 price per annum</code>
 
@@ -40,24 +40,24 @@ The Bumped Price gets updated after each cover buy and is used to calculate the 
 
 ### Price drop
 
-This is determined by taking the <code>timeSinceLastCoverBuy</code> and multiplying times the <code>Speed</code>, which moves at 1% per day.
+This is determined by taking the <code>timeSinceLastCoverBuy</code> and multiplying by the <code>Speed</code>, which moves at 0.5% per day. The price drop is subtracted from base price.
 
 *Example*
-* <code>speed = 1% per day</code>
-* <code>timeSinceLastCoverBuy = 30 days</code>
-* <code>priceDrop = 30 * 1% = 0.3%</code>
+* <code>speed = 0.5% per day</code>
+* <code>timeSinceLastCoverBuy = 3 days</code>
+* <code>priceDrop = 3 * 0.5% = 1.5%</code>
 
-### Calculating base price
+### Calculating spot price
 
 You can see an example of the variables being used to calculate the price of an individual cover product within a staking pool:
 
 *Example*
-* <code>speed = 1% per day</code>
-* <code>timeSinceLastCoverBuy = 30 days</code>
-* <code>priceDrop = 30 * 1% = 0.3%</code>
-* <code>bumpedPrice = 5.5%</code>
-* <code>targetPrice = 3%</code>
-* <code>basePrice = MAX(5.5% - 0.3%, 3%) = 5.2%</code>
+* <code>speed = 0.5% per day</code>
+* <code>timeSinceLastCoverBuy = 3 days</code>
+* <code>priceDrop = 3 * 0.5% = 1.5%</code>
+* <code>bumpedPrice = 6.5%</code>
+* <code>targetPrice = 4%</code>
+* <code>spotPrice = MAX(6.5% - 1.5%, 3%) = 5.0%</code>
 
 ## Surge loading
 
@@ -71,7 +71,7 @@ When the capacity for a cover product falls between 90% to 100%, surge pricing, 
 <p><code>premium = basePremium + surgePremium</code></p>
 Where:<p></p>
 
-* <code>basePremium = cover amount * basePrice</code>
+* <code>basePremium = cover amount * spotPrice</code>
 * <p><code>surgePremium = cover amount * surgeLoading / 2</code></p>
 
   * Where <code>surgeLoading</code> is referred to as the surge loading factor in the examples below
@@ -96,7 +96,7 @@ and
 <p><code>premium = basePremium + surgePremium</code></p>
 
 Where:
-* <code>basePremium = cover amount * basePrice</code>
+* <code>basePremium = cover amount * spotPrice</code>
 * <p><code>surgePremium = surgePremium 90% to 95% - surgePremium 90% to 91%</code></p>
 * <p><code>surgePremium 90% to 95% = amount * surge loading factor at 95% / 2 =</code></p>
 * <code>surgePremium 90% to 91% = amount * surge loading factor at 91% / 2 =</code>
