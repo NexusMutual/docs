@@ -21,7 +21,7 @@ The spot price decreases linearly from <code>bumpedPrice</code> to <code>targetP
 <p><code>spotPrice = MAX(bumpedPrice - priceDrop, targetPrice)</code></p>
 
 Where:
-* <code>bump = 0.2% addition to the base price per 1% of pool capacity used</code>
+* <code>bump = 0.2% addition to the spot price per 1% of pool capacity used</code>
 * <code>Bumped price = spotPrice + capacity% of the pool to be used / 1% x 0.2</code>
 * <code>priceDrop = timeSinceLastCoverBuy * speed</code>
 * <code>speed = PRICE_CHANGE_PER_DAY / 1 dayInSeconds</code>
@@ -29,7 +29,7 @@ Where:
 
 ### Bumped price
 
-The Bumped Price gets updated after each cover buy and is used to calculate the base price of the NEXT cover.
+The Bumped Price gets updated after each cover buy and is used to calculate the spot price of the NEXT cover.
 
 *Example*
 * <code>spotPrice = 2.5%</code>
@@ -40,7 +40,7 @@ The Bumped Price gets updated after each cover buy and is used to calculate the 
 
 ### Price drop
 
-This is determined by taking the <code>timeSinceLastCoverBuy</code> and multiplying by the <code>Speed</code>, which moves at 0.5% per day. The price drop is subtracted from base price.
+This is determined by taking the <code>timeSinceLastCoverBuy</code> and multiplying by the <code>Speed</code>, which moves at 0.5% per day. The price drop is subtracted from spot price.
 
 *Example*
 * <code>speed = 0.5% per day</code>
