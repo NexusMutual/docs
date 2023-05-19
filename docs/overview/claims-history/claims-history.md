@@ -23,7 +23,7 @@ Members of the mutual have paid out more than $17.9m to cover holders who suffer
 
 ## Auditing, reviewing past claims
 
-For stats on claims, you can review the [Claims Dune dasbhoard](https://dune.com/nexus_mutual/claims) and the [claims section in the Nexus Mutual user interface](https://app.nexusmutual.io/assessment). Numerous claims have been submitted by users testing the system.
+For stats on claims, you can review the [Claims Dune dashboard](https://dune.com/nexus_mutual/claims) and the [claims section in the Nexus Mutual user interface](https://app.nexusmutual.io/assessment). Numerous claims have been submitted by users testing the system.
 
 You can review a detailed [claims history in this Google Sheet with rationale sourced from the Nexus Mutual Discord discussions](https://docs.google.com/spreadsheets/d/e/2PACX-1vQgAYpLsoWhlzM4tqcFlNEJAfpdYvOpukHD1LnRNl1IC1EyNndK0i6SrbNtbcABT_qMvR2BcTpP1GSw/pubhtml#), where you will find the summary, outcome, and other information about each claim that has been filed.
 
