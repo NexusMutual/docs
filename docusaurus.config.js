@@ -37,19 +37,6 @@ const config = {
         },
       }),
     ],
-    [
-      '@docusaurus/preset-google-tag-manager',
-      {
-        id: 'GTM-WKL6F7R',
-        // Optional
-        // datalayer: {
-        //   // Optional
-        //   url: '/datalayer.js',
-        //   // Optional
-        //   eventName: 'docusaurusRouteChange',
-        // },
-      },
-    ],
   ],
 
   themeConfig:
