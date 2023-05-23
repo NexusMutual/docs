@@ -28,10 +28,9 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          routeBasePath: '/',
-        },
+        docs: { routeBasePath: '/' },
         blog: false,
+        googleTagManager: { containerId: 'GTM-WKL6F7R' },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -39,8 +38,10 @@ const config = {
     ],
   ],
 
+  // plugins: [require.resolve('@cmfcmf/docusaurus-search-local')],
+
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
         title: 'Nexus Mutual',
@@ -130,7 +131,6 @@ const config = {
             ],
           },
         ],
-        
       },
       prism: {
         theme: lightCodeTheme,
