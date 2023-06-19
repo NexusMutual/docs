@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2.2
+sidebar_position: 2.1
 ---
 
 # Cover Products
