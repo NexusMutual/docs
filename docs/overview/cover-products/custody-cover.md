@@ -2,11 +2,9 @@
 sidebar_position: 2.4
 ---
 
-# Custody Cover
+# Custody Cover - Deprecated
 
-When your crypto assets are held in a custodial account on an exchange, your funds are held in wallets that you do not have access to.
-
-You run the risk of a loss due to a custodial wallet hack or the potential for withdrawals to be halted without notice, which would prevent you from removing funds from the centralized exchange.
+*This cover product type has been sunset following the outcome of [NMPIP-193](https://app.nexusmutual.io/governance/view?proposalId=193). Members are no longer able to purchase protection for this type of risk.*
 
 ## Covered risks
 
