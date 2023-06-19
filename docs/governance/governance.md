@@ -62,7 +62,7 @@ To encourage wider participation and reward members for their time, 100 NXM in i
 
 #### Governance security
 
-Members that use their NXM to vote on a protocol improvement proposal will not be able to redeem or transfer their NXM for three days after they cast their vote. This prevents anyone from using a flashloan to borrow a large amount of wNXM and unwrap the wNXM to NXM to sway a vote with a significant voting weight.
+Members that use their NXM to vote on a protocol improvement proposal will not be able to redeem or transfer their NXM for three days after they cast their vote.
 
 The governance restriction can be calculated as follows:
 
