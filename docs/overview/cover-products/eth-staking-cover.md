@@ -1,29 +1,28 @@
 ---
-sidebar_position: 2.6
+sidebar_position: 2.4
 ---
 
-# ETH Staking Cover
+# ETH Slashing Cover
 
 Organizations that run ETH validators and help secure the Ethereum network are exposed to slashing risks, which can be caused by improper actions such as double-signing, surround voting, downtime, and infrastructure and setup failure.
 
 ## Covered risks
 
-When you run ETH validators and have active ETH Staking Cover, you are protected against losses that occur during the cover period where one or more of the covered validators incur penalties and missed rewards greater than the deductible, which is 0.25 ETH per validator, in any continuous 40 day period.
+When you run ETH validators and have active ETH Slashing Cover, you are protected against losses that occur during the cover period where one or more of the covered validators incur penalties greater than the deductible, which is 0.25 ETH per validator, in any continuous 40 day period.
 
 Penalties and missed rewards include:
 * Deductions made from the covered validators on the Ethereum Beacon Chain
-* Any missed consensus rewards as a result of being offline
 * Any transaction rewards as part of execution rewards missed as a result of being offline
 
 ## Cover wording
 
-For more information, read the full terms and conditions of [Nexus Mutual’s ETH Staking Cover](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/64537e48093226c0a2bf685c_NexusMutual-ETHStakingCover.pdf).
+For more information, read the full terms and conditions of [Nexus Mutual’s ETH Slashing Cover](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/64537e48093226c0a2bf685c_NexusMutual-ETHStakingCover.pdf).
 
 Nexus Mutual’s claims assessors use this cover wording as a reference when considering any claim.
 
 ### Proof of loss
 
-When an organization purchases ETH Staking Cover, they provide the validator numbers they want covered in a csv file, which is stored on IPFS.
+When an organization purchases ETH Slashing Cover, they provide the validator numbers they want covered in a csv file, which is stored on IPFS.
 
 If a validator, or validators, suffer penalties or missed rewards, they will provide the list of impacted validators and the corresponding loss for each validator.
 
