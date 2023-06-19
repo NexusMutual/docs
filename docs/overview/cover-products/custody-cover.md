@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2.4
+sidebar_position: 2.8
 ---
 
 # Custody Cover - Deprecated
