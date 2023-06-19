@@ -2,9 +2,9 @@
 sidebar_position: 2.5
 ---
 
-# Yield Token Cover
+# Yield Token Cover - Deprecated
 
-When you deposit crypto assets into a yield aggregator or a protocol that is integrated with other DeFi protocols, your funds are exposed to a variety of risks across multiple protocols.
+*This cover product type has been sunset following the outcome of [NMPIP-193](https://app.nexusmutual.io/governance/view?proposalId=193). Members are no longer able to purchase protection for this type of risk.*
 
 ## Covered risks
 
