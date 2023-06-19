@@ -8,7 +8,7 @@ The protocol now supports commission rates. When you integrate and offer your us
 
 The commission ratio and commission destination address are configured in your implementation of the router contract. The commission ratio is a percentage added to the cover price, where the maximum ratio that can be applied is 25%. When someone buys cover and pays the fee through your UI, the commission ratio is applied and that amount is sent to the commission destination address in the asset that is used to pay the cover fee.
 
-It is recommended to use a whitelisted membership address as the destination address, though it is not required. If cover buyers choose to pay the cover fee in NXM and the commission destination address is not a member, the buy cover transaction will fail. If you are selling cover to non-members through your UI, then this should not present a problem unless you are using the wNXM discount to reduce the cost of cover for your users.
+It is recommended to use a whitelisted membership address as the destination address, though it is not required. If cover buyers choose to pay the cover fee in NXM and the commission destination address is not a member, the buy cover transaction will fail.
 
 ## Commission
 
