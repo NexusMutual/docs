@@ -114,7 +114,7 @@ After receiving significant feedback from a smaller working group, Dopeee then h
 
 * **March 2023**. In the next phase, a request for comments was put to members in the [RFC - Tokenomics Design Detail](https://forum.nexusmutual.io/t/request-for-comment-tokenomics-design-detail/1034) governance forum post. The intent of this post was to finalize the mechanics of the new tokenomics. Rei asked for feedback on the following mechanisms within the ratcheting AMM: currency of redemptions; buying/selling availability; TWAP for establishing system price; NXM price shock upon transition from bonding curve; oracle safety buffer; and a potential soft launch.
 
-The tokenomics revamp project is currently in the **finalize the ratcheting AMM mechanics** phase, and the engineering team is reviewing the proposed solution and providing feedback on the suggested mechanics.
+The tokenomics revamp project is currently in the **finalize the ratcheting AMM mechanics** phase, and the engineering team is reviewing the proposed solution and providing feedback on the suggested mechanics. You can follow along with the [new tokenomics progress on the forum](https://forum.nexusmutual.io/c/nexus-mutual-updates/new-tokenomics-project/16).
 
 ### Remaining phases to be completed
 
