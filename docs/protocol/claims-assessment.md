@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Claims Assessment
 
-When a loss event occurs, members who held active cover can submit a claim. Once a claim is submitted, members can stake NXM and participate as a claims assessor, who reviews the validity of a submitted claim.
+When a loss event occurs, members who held active cover can submit a claim. Once a claim is submitted, members can stake NXM and participate as a claim assessor, who reviews the validity of a submitted claim.
 
 Across the current - and any future - cover products, there are two different claim types.
 
@@ -22,11 +22,11 @@ For individual claims, cover holders can submit claims with supporting proof of 
 
 ### Group claims
 
-The group claims process applies for [Yield Token Cover](/overview/cover-products/yield-token-cover). When a depeg event occurs, the Advisory Board triggers a group claim event through an on-chain governance proposal. A group claim outcome determines if one event was valid. These claims are not assessed on an individual basis.
+The group claim process applies for [Yield Token Cover](/overview/cover-products/yield-token-cover). When a depeg event occurs, the Advisory Board triggers a group claim event through an on-chain governance proposal. A group claim outcome determines if one event was valid. These claims are not assessed on an individual basis.
 
 ## Claim process
 
-When a loss occurs, cover holders start the claims process and assessors get involved once a claim has been submitted.
+When a loss occurs, cover holders start the claim process and assessors get involved once a claim has been submitted.
 
 ### 1. Claim submission
 
@@ -36,28 +36,28 @@ Before a claim can be filed, the cover holder will need to make a claim deposit 
 * If the claim is approved, the claim deposit is refunded in the same transaction as the claim payout
 * If the claim is denied, the claim deposit will not be refunded
 
-The deposited amount is the ETH equivalent of the NXM amount distributed as claims assessment rewards, where the minimum deposit required is 0.05 ETH and the maximum amount required is an ETH deposit equivalent to 50 NXM. See the [claims assessment rewards](/protocol/claims-assessment#4-claims-assessment-rewards) section below.
+The deposited amount is the ETH equivalent of the NXM amount distributed as claim assessment rewards, where the minimum deposit required is 0.05 ETH and the maximum amount required is an ETH deposit equivalent to 50 NXM. See the [claims assessment rewards](/protocol/claims-assessment#4-claims-assessment-rewards) section below.
 
-Claim deposits are required to prevent people from spamming the claims process with multiple claims, as there is no limit to the number of times a claim can be submitted. As long as a cover holder provides a claim deposit, they can file a claim as many times as preferred.
+Claim deposits are required to prevent people from spamming the claim process with multiple claims, as there is no limit to the number of times a claim can be submitted. As long as a cover holder provides a claim deposit, they can file a claim as many times as preferred.
 
 ### 2. Voting process
 
 Once a claim is submitted, the voting process begins. A claim vote lasts for a minimum of three days.
 
-#### Claims assessors
+#### Claim assessors
 
-Members can stake their NXM and participate as a claims assessor. Claims assessment stakes are locked for 90 days after a member’s last vote was cast. Assessors review the incident details, proof of loss, and other supporting information to determine a claim’s validity. Members discuss submitted claims in the Nexus Mutual Discord. 
+Members can stake their NXM and participate as a claim assessor. Claim assessment stakes are locked for 90 days after a member’s last vote was cast. Assessors review the incident details, proof of loss, and other supporting information to determine a claim’s validity. Members discuss submitted claims in the Nexus Mutual Discord. 
 
 #### Outcomes
 
-**Accept**. If a claims assessor reviews the proof of loss and supporting evidence and determines a claim is valid, they can submit their vote to approve. Once a vote to approve has been submitted, other members can submit votes to approve or deny the claim.
+**Accept**. If a claim assessor reviews the proof of loss and supporting evidence and determines a claim is valid, they can submit their vote to approve. Once a vote to approve has been submitted, other members can submit votes to approve or deny the claim.
 * A simple majority (50%+) is required to decide an assessment vote
 * The assessment will last for a minimum of three days, which starts from the time the first vote to approve is submitted
 * There is a 24-hour silent period, where no votes should be casted before an assessment vote closes
   * If a vote is submitted during the last 24 hours of the vote, the voting period is extended with an amount of time proportional to the voter's stake, with 24 hours representing the maximum time increase
   * This design feature prevents "rush attacks," where someone tries to overturn a claim outcome by submitting a vote at the last minute that moves the majority outcome with no time to appeal the vote
 
-**Deny**. If claims assessors review the claim submission and determine that no loss has occurred or that the claim does not meet the terms of the cover wording, no deny vote is required unless another member submits a vote to approve.
+**Deny**. If claim assessors review the claim submission and determine that no loss has occurred or that the claim does not meet the terms of the cover wording, no deny vote is required unless another member submits a vote to approve.
 * If a claim receives no votes and the three day period passes, the claim will be denied by default
 
 ### 3. Claim payouts
@@ -66,11 +66,11 @@ When a claim vote has closed with an accepted status, a cool-down period of one 
 
 Once the cool-down period has passed, a claim vote is finalized and the member has 30 days to redeem their claim payout.
 
-### 4. Claims assessment rewards
+### 4. Claim assessment rewards
 
 #### Total rewards
 
-Members who lock their NXM and participate in the claims assessment process earn rewards for voting on claims. The total assessment reward pool is calculated using the following formula:
+Members who lock their NXM and participate in the claim assessment process earn rewards for voting on claims. The total assessment reward pool is calculated using the following formula:
 
 <p><code>totalRewardInNXM = min(maxRewardInNXM, expectedPayout * rewardRatio * coverPeriodInDays / 365)</code></p>
 
@@ -78,7 +78,7 @@ Where the <code>maxRewardInNXM</code> is equal to 50 NXM and the <code>rewardRat
 
 #### Individual rewards
 
-Members that lock their NXM and participate in the claims assessment process earn a share of the total reward pool. An individual member’s share of claims assessment rewards can be calculated using the following formula:
+Members that lock their NXM and participate in the claim assessment process earn a share of the total reward pool. An individual member’s share of claim assessment rewards can be calculated using the following formula:
 
 <code>reward = totalRewardInNXM * userStakeAtVoteTime / (accepted + denied)</code>
 
@@ -86,6 +86,6 @@ Once you assess and vote on a claim, you will earn your share NXM rewards, which
 
 ## Fraudulent votes
 
-During the cool-down period, claim outcomes can be reviewed if fraudulent voting is suspected. If the Advisory Board finds a claims assessor to have voted to deny a legitimate claim or approve an illegitimate claim, then a fraud penalty can be imposed. The Advisory Board can submit a merkle-tree root hash representing the fraudulent voter and their assessment stake. The fraudulent vote is reversed and the fraudulent assessor's stake is burned.
+During the cool-down period, claim outcomes can be reviewed if fraudulent voting is suspected. If the Advisory Board finds a claim assessor to have voted to deny a legitimate claim or approve an illegitimate claim, then a fraud penalty can be imposed. The Advisory Board can submit a merkle-tree root hash representing the fraudulent voter and their assessment stake. The fraudulent vote is reversed and the fraudulent assessor's stake is burned.
 
 Once the Advisory Board submits the merkle-tree root hash, anyone can process the fraud penalty. By processing the fraud penalty, a member is executing the transaction that burns the assessor’s stake and reverses their fraudulent vote.
