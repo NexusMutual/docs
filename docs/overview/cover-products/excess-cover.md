@@ -18,7 +18,7 @@ This is a bespoke product that can be created for individual cover providers.
 
 Currently, Nexus Mutual provides [Sherlock](https://www.sherlock.xyz/), auditing and smart contract coverage protocol, with Excess Cover (a.k.a., Sherlock Quota Share Cover). For more information, read the full terms and conditions of [Nexus Mutual’s Sherlock Excess Cover](https://api.nexusmutual.io/ipfs/QmbQAsbisyGK6i1to4d85SqE2f2e98PsXHAuSzrprpsYe8).
 
-Nexus Mutual’s claims assessors use this cover wording as a reference when considering any claim.
+Nexus Mutual’s claim assessors use this cover wording as a reference when considering any claim.
 
 ### Proof of loss
 
@@ -38,7 +38,7 @@ Your organization will need to wait 72 hours for the cool-down period to pass. T
     * The claim payments must exceed the agreed upon deductible during a 90-day period.
     * For Sherlock Excess Cover, the deductible is $500,000.
 
-2. Claims assessors will review, discuss, and vote to approve claims where proof of loss shows that your organization has indeed paid out claims for covered underlying risks above the deductible.
+2. Claim assessors will review, discuss, and vote to approve claims where proof of loss shows that your organization has indeed paid out claims for covered underlying risks above the deductible.
     * If the claim is approved, your organization will be able to redeem the payout.
     * If the claim is denied, your organization will be able to file another claim with more supporting evidence.
 
