@@ -8,17 +8,13 @@ Organizations that run ETH validators and help secure the Ethereum network are e
 
 ## Covered risks
 
-When you run ETH validators and have active ETH Slashing Cover, you are protected against losses that occur during the cover period where one or more of the covered validators incur penalties greater than the deductible, which is 0.25 ETH per validator, in any continuous 40 day period.
-
-Penalties and missed rewards include:
-* Deductions made from the covered validators on the Ethereum Beacon Chain
-* Any transaction rewards as part of execution rewards missed as a result of being offline
+When you run ETH validators and have active ETH Slashing Cover, you are protected against losses that occur during the cover period where one or more of the covered validators incur penalties greater than the deductible in any continuous 40 day period.
 
 ## Cover wording
 
-For more information, read the full terms and conditions of [Nexus Mutual’s ETH Slashing Cover](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/64537e48093226c0a2bf685c_NexusMutual-ETHStakingCover.pdf).
+For more information, read the full terms and conditions of [Nexus Mutual’s ETH Slashing Cover](https://api.nexusmutual.io/ipfs/QmWepFbtMYSzJt22ddF1CK9PwbrYgiLk9qJjryDrgpGuus).
 
-Nexus Mutual’s claims assessors use this cover wording as a reference when considering any claim.
+Nexus Mutual’s claim assessors use this cover wording as a reference when considering any claim.
 
 ### Proof of loss
 
@@ -32,7 +28,7 @@ After a validator, or validators, suffer a loss, your organization can contact t
 1. Once the losses have been calculated, your organization can file a claim in the Nexus Mutual user interface.
 2. You will submit a calculation of losses by providing a file of impacted validators and their losses by slot/epoch.
     * This should equal the claim amount being requested after the deductible is accounted for.
-3. Claims assessors can then reference this information against [beaconcha.in](https://beaconcha.in/) or [rated.network](https://www.rated.network/?network=mainnet&view=pool) to verify the loss calculations.
+3. Claim assessors can then reference this information against [beaconcha.in](https://beaconcha.in/) or [rated.network](https://www.rated.network/?network=mainnet&view=pool) to verify the loss calculations.
 
 For a review of the claims assessment process, see the [Claims Assessment](/protocol/claims-assessment) section.
 
