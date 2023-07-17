@@ -12,15 +12,15 @@ A total of $1m was paid out for the Sherlock Excess Cover Claim V2 10, where [Sh
 
 ## Overview
 
-On Monday, 13 March 2023, [Euler Finance was exploited for $197m](https://twitter.com/FrankResearcher/status/1635241475989721089). After this exploit occurred, claims assessors [discussed this loss event in the mutual's Discord server](https://discord.com/channels/496296560624140298/1084935082978070549/1084935082978070549). Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](https://docs.nexusmutual.io/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
+On Monday, 13 March 2023, [Euler Finance was exploited for $197m](https://twitter.com/FrankResearcher/status/1635241475989721089). After this exploit occurred, claim assessors [discussed this loss event in the mutual's Discord server](https://discord.com/channels/496296560624140298/1084935082978070549/1084935082978070549). Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](https://docs.nexusmutual.io/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
 
-Members reviewed the information available in the days after the exploit, while Euler Finance Protocol Cover holders waited for the 72-hour cool-down period to pass before submitting claims. Claims assessors discussed the event and determined the Euler Finance exploit was covered under [section 1.1 of the Protocol Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4c4cca088730ac54ccc_ProtocolCoverv1.0.pdf).
+Members reviewed the information available in the days after the exploit, while Euler Finance Protocol Cover holders waited for the 72-hour cool-down period to pass before submitting claims. Claim assessors discussed the event and determined the Euler Finance exploit was covered under [section 1.1 of the Protocol Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4c4cca088730ac54ccc_ProtocolCoverv1.0.pdf).
 
-The Community team released a [Euler Finance claims filing guide](https://nexusmutual.io/blog/how-euler-finance-protocol-cover-holders-can-prepare-for-claims-filing), which provided information for those who planned to file a claim, as well as information about the active covers and the Claims Assessment process. The Community team also shared the [Euler Finance Claims Tracker](https://docs.google.com/spreadsheets/d/1ewvu_PhqqUqdOtsVYkU2_2PusdjAurrWeDKyZNECyFA/edit?usp=sharing), where members could track the status of Euler Finance claims throughout the assessment process.
+The Community team released a [Euler Finance claims filing guide](https://nexusmutual.io/blog/how-euler-finance-protocol-cover-holders-can-prepare-for-claims-filing), which provided information for those who planned to file a claim, as well as information about the active covers and the Claim Assessment process. The Community team also shared the [Euler Finance Claims Tracker](https://docs.google.com/spreadsheets/d/1ewvu_PhqqUqdOtsVYkU2_2PusdjAurrWeDKyZNECyFA/edit?usp=sharing), where members could track the status of Euler Finance claims throughout the assessment process.
 
 ## Filed claims and outcomes
 
-Nine Euler Finance Protocol Cover claims and two Sherlock Excess Cover claims were filed and voted on by claims assessors. As stated in the section above, claims assessors had determined this was a covered event. Once it has been determined that an event is covered, claims assessors review the validity of claims to determine:
+Nine Euler Finance Protocol Cover claims and two Sherlock Excess Cover claims were filed, and those claims were reviewed and voted on by claim assessors. As stated in the section above, claim assessors had determined this was a covered event. Once it has been determined that an event is covered, claim assessors review the validity of claims to determine:
 * Did the member have active cover at the time of the exploit?
 * Did the member provide proof of loss?
 * Did the member request a claim amount that matched their actual loss?
@@ -29,7 +29,7 @@ For more information on each claim, review the sections below and the [Nexus Mut
 
 ### Approved claims
 
-Claims assessors reviewed and approved Claims V2 0, 2, 3, 4, 5, 6, 7, 8, and 11. Assessors also reviewed and approved Claim V2 10, the Sherlock Excess Cover claim.
+Claim assessors reviewed and approved Claims V2 0, 2, 3, 4, 5, 6, 7, 8, and 11. Assessors also reviewed and approved Claim V2 10, the Sherlock Excess Cover claim.
 
 The claims included proof of loss, which showed the affected addresses where the members suffered a loss. Each approved claim also requested a claim payment that reflected their actual loss amount.
 
@@ -43,9 +43,9 @@ You can review the transactions related to each claim in the [Euler Finance Clai
 
 ### Denied claims
 
-Claims assessors reviewed and denied Claim V2 1.
+Claim assessors reviewed and denied Claim V2 1.
 
-Claim V2 1 was the first Sherlock Excess Cover claim, which requested a claim payment that did not factor in the $500,000 deductible included in the cover wording. The Sherlock team filed another claim, Claim V2 10, which claims assessors reviewed and approved after the request claim amount factored in the deductible.
+Claim V2 1 was the first Sherlock Excess Cover claim, which requested a claim payment that did not factor in the $500,000 deductible included in the cover wording. The Sherlock team filed another claim, Claim V2 10, which claim assessors reviewed and approved after the request claim amount factored in the deductible.
 
 ### Euler Finance reimbursement
 
