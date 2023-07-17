@@ -15,14 +15,14 @@ During this time, members documented their losses and prepared for claims filing
 After 90 days passed, withdrawals were still halted on Hodlnaut. On Monday, 7 November 2022, members began filing claims for the Hodlnaut loss event. As claims were filed, members staked NXM to participate in the [Claims Assessment](/protocol/claims-assessment) process. Claims assessors discussed claims in the Nexus Mutual Discord and kept track of eligible covers in the [Hodlnaut Claims Tracker](https://docs.google.com/spreadsheets/d/1Yy7wasUHlAW8TSiu6GoqoN3ZEFdvWMYXDO-5x93BVKQ/edit?usp=sharing), which is displayed below.
 
 ### Filed claims and outcomes
-Twenty-one (21) claims were filed and voted on by claims assessors. Since this loss event met the terms outlined in Section 1.2 of the Custody Cover wording, claims assessors reviewed the validity of the claims to determine:
+Twenty-one (21) claims were filed, and those claims were reviewed and voted on by claim assessors. Since this loss event met the terms outlined in Section 1.2 of the Custody Cover wording, claim assessors reviewed the validity of the claims to determine:
 * Was the member's Hodlnaut Custody Cover active at the time withdrawals were first halted?
 * Did the member provide off-chain proof of loss with their claim?
 
 For more information on each claim, review the sections below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 #### Approved claims
-Claims assessors reviewed and approved Claims 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 143, 144, 145, 147, and 151. These claims included proof of loss, which showed each affected member suffered a loss of 10% or greater. You can review the transactions related to each claim in the [Hodlnaut Claims Tracker](https://docs.google.com/spreadsheets/d/1Yy7wasUHlAW8TSiu6GoqoN3ZEFdvWMYXDO-5x93BVKQ/edit?usp=sharing) and the [Nexus Mutual user interface](https://app.nexusmutual.io/claim-assessment).
+Claim assessors reviewed and approved Claims 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 143, 144, 145, 147, and 151. These claims included proof of loss, which showed each affected member suffered a loss of 10% or greater. You can review the transactions related to each claim in the [Hodlnaut Claims Tracker](https://docs.google.com/spreadsheets/d/1Yy7wasUHlAW8TSiu6GoqoN3ZEFdvWMYXDO-5x93BVKQ/edit?usp=sharing) and the [Nexus Mutual user interface](https://app.nexusmutual.io/claim-assessment).
 
 | Approved claims                                                                 |                                                                                 |                                                                                 |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -35,11 +35,11 @@ Claims assessors reviewed and approved Claims 127, 128, 129, 130, 131, 132, 133,
 | [Claim 151](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=151) |                                                                                 |                                                                                 |
 
 #### Denied claims
-Claims assessors reviewed and denied Claims 126, 139, and 142.
+Claim assessors reviewed and denied Claims 126, 139, and 142.
 
-**Claims 126, 127, and 128 were all filed together by one member**. When the 90-day period ended, the actual loss was ~47 ETH. Claims assessors discussed these claims in the Nexus Mutual Discord and decided that approving Claim 127 and 128 would reimburse the member for their actual loss without paying more than the actual loss since the technical requirement for partial claims was not available in the Nexus Mutual V1 protocol.
+**Claims 126, 127, and 128 were all filed together by one member**. When the 90-day period ended, the actual loss was ~47 ETH. Claim assessors discussed these claims in the Nexus Mutual Discord and decided that approving Claim 127 and 128 would reimburse the member for their actual loss without paying more than the actual loss since the technical requirement for partial claims was not available in the Nexus Mutual V1 protocol.
 
-**Claims 129 and 139 were both filed by one member**. When the 90-day period ended, the actual loss was ~20 ETH. Claims assessors discussed the claims in the Nexus Mutual Discord and decided that approving Claim 129 and denying Claim 139 would reimburse the member for their actual loss without paying more than the actual loss since the technical requirement for partial claims was not available in the Nexus Mutual V1 protocol.
+**Claims 129 and 139 were both filed by one member**. When the 90-day period ended, the actual loss was ~20 ETH. Claim assessors discussed the claims in the Nexus Mutual Discord and decided that approving Claim 129 and denying Claim 139 would reimburse the member for their actual loss without paying more than the actual loss since the technical requirement for partial claims was not available in the Nexus Mutual V1 protocol.
 
 **Claim 142 was filed with no supporting proof of loss**.
 
