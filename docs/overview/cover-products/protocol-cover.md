@@ -9,20 +9,8 @@ When you deposit crypto assets into a single protocol, your funds are exposed to
 ## Covered risks
 
 When you have crypto assets deposited in a protocol that is deployed on Ethereum, an EVM-compatible network, or an Ethereum Layer 2, Protocol Cover protects against the following risks:
-* A smart contract code bug or error resulting in the Designated Protocol
-being used in an unintended way
+* A smart contract code bug or error resulting in the Designated Protocol being used in an unintended way
 * A Sudden and Severe Economic Event, which includes oracle manipulation or failure, severe liquidation failures, or governance takeovers
-
-
-### Major risks
-
-In 2021, the previously offered Smart Contract Cover was deprecated in favor of the more comprehensive Protocol Cover, which was updated and designed to protect people against the most prevalent risks.
-
-The major risks associated with DeFi protocols are caused by vulnerabilities in a protocol's codebase or vulnerabilities in a protocol's external infrastructure such as oracle failure or oracle price manipulation. Below is a list of the most common causes of protocol loss events.
-
-![Major risks root causes of attacks](pathname:///img/MajorRisks-Table.png)
-
-Source: [Igor Igamberdiev, The Block Research](https://twitter.com/FrankResearcher/status/1395363410691428359)
 
 ## Cover wording
 
