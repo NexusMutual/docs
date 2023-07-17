@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Claims History
 
-Because Nexus Mutual is a discretionary mutual, the cover products members purchase are not the same as traditional insurance policies. When a member who holds cover suffers a material loss, they can submit their claim and go through the [Claims Assessment](/protocol/claims-assessment) process. Members who have staked NXM can participate as claims assessors. Claims assessors review submitted claims, discuss claims, and vote on whether or not to accept claims.
+Because Nexus Mutual is a discretionary mutual, the cover products members purchase are not the same as traditional insurance policies. When a member who holds cover suffers a material loss, they can submit their claim and go through the [Claims Assessment](/protocol/claims-assessment) process. Members who have staked NXM can participate as claim assessors. Claim assessors review submitted claims, discuss claims, and vote on whether or not to accept claims.
 
 Ultimately, these votes are decided by members who stake NXM. There is usually a community discussion in the [Nexus Mutual Discord server](https://discord.gg/xxFaAEn), where members share their expertise on an event and share information.
 
