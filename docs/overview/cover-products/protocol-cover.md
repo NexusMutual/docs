@@ -21,6 +21,7 @@ In 2021, the previously offered Smart Contract Cover was deprecated in favor of 
 The major risks associated with DeFi protocols are caused by vulnerabilities in a protocol's codebase or vulnerabilities in a protocol's external infrastructure such as oracle failure or oracle price manipulation. Below is a list of the most common causes of protocol loss events.
 
 ![Major risks root causes of attacks](pathname:///img/MajorRisks-Table.png)
+
 Source: [Igor Igamberdiev, The Block Research](https://twitter.com/FrankResearcher/status/1395363410691428359)
 
 ## Cover wording
