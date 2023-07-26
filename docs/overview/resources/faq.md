@@ -53,14 +53,6 @@ Nexus Mutual provides a variety of cover products including:
 
 For a full list of Nexus Mutual's cover products, see the [Cover Products](/overview/cover-products/) page.
 
-### What loss events are covered?
-
-* [Protocol Cover](/overview/cover-products/protocol-cover) protects against a range of loss events caused by exploits, oracle price manipulation, economic design failure, and governance attacks.
-* [Custody Cover](/overview/cover-products/custody-cover) protects against custodial hacks and custodial withdrawals that are halted for more than 90 days.
-* [Yield Token Cover](/overview/cover-products/yield-token-cover) protects against any loss event that causes the yield token's market value to depeg from its intended value (i.e., face value).
-
-You can review the products in detail in the [Cover Products](/overview/cover-products/) section.
-
 ### Can I buy cover for assets in wallets other than my whitelisted address?
 
 Yes, you can. You need to buy cover using the ETH address you used to sign up for membership (i.e. your whitelisted address). Cover is purchased with that address but you can protect assets in other wallets.
