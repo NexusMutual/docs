@@ -6,7 +6,7 @@ sidebar_position: 2.1
 
 Members can purchase cover products that protect against different kinds of risk. Currently, the mutual offers a variety of cover products for crypto-native risks. The protocol does support product development for new types of cover, such as cover for real world risk and other types of crypto-native risk.
 
-Members can choose from five crypto-native cover products:
+Members can choose from various crypto-native cover products:
 * [**Protocol Cover**](/overview/cover-products/protocol-cover). For crypto assets deposited in a single protocol deployed on EVM-compatible networks.
   * Protection against a range of loss events caused by smart contract code bugs/errors and Sudden and Severe Economic Events, which include oracle manipulation or failure, severe liquidation failures, or governance takeovers.
 * [**ETH Slashing Cover**](/overview/cover-products/eth-staking-cover). For validator operators who are staking ETH.
