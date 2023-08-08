@@ -46,10 +46,7 @@ If more than 48 hours has passed and your membership still hasn't gone through, 
 
 ### What risks do you cover?
 
-Nexus Mutual provides a variety of cover products including:
-* [Protocol Cover](/overview/cover-products/protocol-cover)
-* [Custody Cover](/overview/cover-products/custody-cover)
-* [Yield Token Cover](/overview/cover-products/yield-token-cover)
+Nexus Mutual provides a variety of cover products including [Protocol Cover](/overview/cover-products/protocol-cover).
 
 For a full list of Nexus Mutual's cover products, see the [Cover Products](/overview/cover-products/) page.
 
@@ -82,9 +79,6 @@ Because members have to stake NXM to participate in the Claims Assessment proces
 
 Loss is determined at different times for different cover types:
 * **Protocol Cover**. Loss is determined just before the time the loss of funds occurred.
-* **Custody Cover**. Loss is determined either at:
-  * The time the custodial hack occurs; or
-  * The 90-day point if withdrawals are halted
 
 See the [Cover Products](/overview/cover-products/) section for more information about loss.
 
