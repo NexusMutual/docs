@@ -14,7 +14,7 @@ When you have crypto assets deposited in a protocol that is deployed on Ethereum
 
 ## Cover wording
 
-For more information, read the full terms and conditions of [Nexus Mutual's Protocol Cover](https://api.nexusmutual.io/ipfs/QmNusbX6kf7sNA1NxvbYrqjskxaPecgegK1sqWAyK7rygE).
+For more information, read the full terms and conditions of [Nexus Mutual's Protocol Cover](https://api.nexusmutual.io/ipfs/QmdunFJm4A5CUW1ynM7bevsGt6UzQfw6K4ysKqvsqpjWCQ).
 
 Nexus Mutual's claim assessors use this cover wording as a reference when considering any claim.
 
