@@ -16,3 +16,9 @@ Members can custody and use NXM within the protocol to participate in:
 For a detailed breakdown of the NXM supply, number of NXM holders, NXM distribution and more, see the [Capital Pool and Ownership Dune Dashboard](https://dune.com/nexus_mutual/capital-pool-and-ownership) created by the R&D and Marketing DAO teams.
 
 The token model, which is used to control capitalization and determine the NXM price, is reviewed in the following section.
+
+## NXM token contract
+
+The [NXM token contract](https://etherscan.io/token/0xd7c49cee7e9188cca6ad8ff264c1da2e69d4cf3b) can be found on Etherscan: 0xd7c49CEE7E9188cCa6AD8FF264C1DA2e69D4Cf3B
+
+The NXM token contract was created when Nexus Mutual first launched in 2019; it was deployed by the Nexus Foundation. The NXM token contract is immutable and owned by the Foundation address: 0xFC64382c9Ce89bA1C21692A68000366a35fF0336
