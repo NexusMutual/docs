@@ -16,15 +16,15 @@ Members of the mutual have paid out more than $17.9m to cover holders who suffer
 |  Year | Total Claims Paid (in USD) |
 |------:|---------------------------:|
 |  2020 |                 $33,720.10 |
-|  2021 |              $2,714,864.03 |
-|  2022 |              $6,615,394.76 |
-|  2023 |              $8,548,608.78 |
-| Total |             $17,912,587.67 |
+|  2021 |              $2,710,472.99 |
+|  2022 |              $6,610,593.91 |
+|  2023 |              $8,571,037.08 |
+| Total |             $17,925,824.08 |
 
 ## Auditing, reviewing past claims
 
 For stats on claims, you can review the [Claims Dune dashboard](https://dune.com/nexus_mutual/claims) and the [claims section in the Nexus Mutual user interface](https://app.nexusmutual.io/assessment). Numerous claims have been submitted by users testing the system.
 
-You can review a detailed [claims history in this Google Sheet with rationale sourced from the Nexus Mutual Discord discussions](https://docs.google.com/spreadsheets/d/e/2PACX-1vQgAYpLsoWhlzM4tqcFlNEJAfpdYvOpukHD1LnRNl1IC1EyNndK0i6SrbNtbcABT_qMvR2BcTpP1GSw/pubhtml#), where you will find the summary, outcome, and other information about each claim that has been filed.
+You can review the mutual's [claims history on the Nexus Mutual DAO website](https://nexusmutualdao.io/claims-history), where you will find the summary, outcome, and other information about each claim request that has been filed.
 
 In the following sections, we outline past claims events and review the claim outcomes.
