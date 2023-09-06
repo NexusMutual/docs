@@ -58,7 +58,7 @@ Before creating an NMDP team creation request, review the existing teams.
 
 ## DAO teams
 
-Currently, there are five DAO teams. These teams work on behalf of Nexus Mutual DAO members, and their funding is approved through the NMDP process. You can review the [most recent DAO team funding proposal](https://forum.nexusmutual.io/t/q1-q2-2023-dao-teams-budget-request-proposal/986) to learn about each team's priorities, duties, and more.
+Currently, there are five DAO teams. These teams work on behalf of Nexus Mutual DAO members, and their funding is approved through the NMDP process. You can review the [most recent DAO team funding proposal](https://forum.nexusmutual.io/t/nmdp-1-q3-q4-2023-dao-teams-budget-request-proposal/1158) to learn about each team's priorities, duties, and more.
 
 ### Community team
 
@@ -82,23 +82,17 @@ The team creates awareness about the risk marketplace and reaches prospective me
 
 This team was originally incorporated with the Community team but has a proposal to establish their own team, given Marketing and Community have different objectives.
 
-#### Team members
+### Investment Committee
 
-**Head of Marketing (FT)**. Claudio serves as team lead and has worked for the DAO since May 2022. He brings 10 years' experience in digital marketing to Nexus Mutual. As a strategic marketer, Claudio is data-driven, customer-centric, and passionate about online branding and visibility with a specialized focus in online advertising.
-
-### Investment team
-
-The Investment team provides in-depth proposals and works to provide members with the information they need to invest Nexus Mutual's assets in a way that maximizes the return without negatively impacting the mutual's ability to pay claims on a timely basis.
+The Investment Committee provides in-depth proposals and works to provide members with the information they need to invest Nexus Mutual's assets in a way that maximizes the return without negatively impacting the mutual's ability to pay claims on a timely basis.
 
 The team reviews investment opportunities and writes detailed investment strategy proposals for the governance forum, where they provide members with the potential benefits, risks, and considerations necessary to make an informed decision ahead of on-chain governance votes.
 
 #### Team members
 
-**Head of Investment (FT)**. Dopeee serves as team lead and has worked for the Foundation since 2021 and is an inaugural member of the Investment team, where he has served as the team lead since July 2022. Dopeee coordinates the Investment Advisors and provides the DAO with regular updates on the Investment team's progress.
-
-**Investment Advisors (PT)**. Discuss, review, and evaluate potential investment strategies with the Head of Investment. Investment strategies that the team agrees present good opportunities are written as an NMPP and presented to members for their review. 
+**Investment Committee Members (PT)**. Discuss, review, and evaluate potential investment strategies with the Head of Investment. Investment strategies that the team agrees present good opportunities are written as an NMPP and presented to members for their review. 
 * **Nico**. Chief Investment Officer of Prosight Specialty, a property and casualty insurer providing tailored insurance solutions for businesses. He provides oversight and strategic direction of their multi-billion dollar investment portfolio consisting of core, core plus, and alternative assets.
-* **Aleks**. Partner at Blockchain Capital LLC - a VC focused on crypto investments. He brings a range of industry contacts and possesses a breadth of knowledge across various crypto protocols and businesses.
+* **Rei**. Rei has served as a founding member of the Nexus Mutual protocol and made a variety of contributions since 2018. Previously, he was qualified as a UK actuary, held a variety of back-office and front-office corporate roles in reinsurance and brokerage.
 * **Gauthier**. Former M&A analyst, who dove deep into the crypto rabbit-hole during the first lockdown in 2020. He has been investing with a strong focus on DeFi protocols ever since. He serves as a Discord moderator in the Nexus Mutual community, and as a multisig signer for the DAO treasury. Gauthier has been a very vocal advocate for Nexus Mutual on Twitter, and he has a strong vested interest in Nexus Mutual and aims to identify the best investment opportunities for the mutual.
 * **Guillaume**. Business professional with more than 15 years' experience, with a good analytical and structured approach to all types of problems. His skills in project management and risk management can be complementary to the profiles of the initial team. Also a retail investor in both DeFi and TradFi (a long-time investor in insurance stocks). He plans to contribute to the Investment team around both set-up/structure, as well as the process to surface and implement direct DeFi investments in line with the strategy.
 
@@ -106,7 +100,7 @@ The team reviews investment opportunities and writes detailed investment strateg
 
 The Operations team provides support to other DAO teams, manages projects between DAO teams to improve communication and efficiency, helps coordinate online and in-person events, and improves internal operations within the DAO.
 
-The team strives to bring DAO community ownership to coordination of funds, projects, and events. Through increased transparency, communication and coordination among DAO members and teams, and accountability around funding and performance, this team helps further decentralize the mustual and scale the DAO.
+The team strives to bring DAO community ownership to coordination of funds, projects, and events. Through increased transparency, communication and coordination among DAO members and teams, and accountability around funding and performance, this team helps further decentralize the mutual and scale the DAO.
 
 #### Team members
 
@@ -134,30 +128,19 @@ The DAO teams Safe has a three-of-five (3/5) signing threshold.
 
 [Safe multisig](https://app.safe.global/eth:0x57d2D86d32497bC4AEd3b603A391db50c10D7fA1/balances): 0x57d2D86d32497bC4AEd3b603A391db50c10D7fA1
 
-#### Community multisig signers
+#### DAO teams multisig signers
 
 All signers are required to use a hardware wallet-secured address for their signing address.
 
 * BraveNewDeFi
-* Dopeee
-* Kayleigh
 * Rei
-* Claudio
-
-### Investment multisig
-
-The Investment Safe has a two-of-three (2/3) signing threshold. This Safe was used before team payments were streamlined to the DAO team multisig.
-
-[Safe multisig](https://app.safe.global/eth:0x09ABbe423feDEE2332CAEa4117093D7d9B017cF5/balances): 0x09ABbe423feDEE2332CAEa4117093D7d9B017cF5
-
-#### Investment multisig signers
-
-* BraveNewDeFi
-* Dopeee
+* Sem
 * Kayleigh
+* Hugh
 
 ### Past team funding proposals
 
+* [NMDP #1: Q3 & Q4 2023 | DAO Teams Budget Request Proposal](https://forum.nexusmutual.io/t/nmdp-1-q3-q4-2023-dao-teams-budget-request-proposal/1158)
 * [Q1 & Q2 2023 | DAO Teams Budget Request Proposal](https://forum.nexusmutual.io/t/q1-q2-2023-dao-teams-budget-request-proposal/986/1)
 * [Q1 & Q2 2023 | Proposed Teams, Priorities, and 6-month Budget Breakdown](https://forum.nexusmutual.io/t/q1-q2-2023-proposed-teams-priorities-and-6-month-budget-breakdown/985/1)
 * [Nexus Hubs V2 Proposal](https://forum.nexusmutual.io/t/nexus-hubs-v2-proposal/889)
