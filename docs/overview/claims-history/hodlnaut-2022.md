@@ -22,7 +22,7 @@ Twenty-one (21) claims were filed, and those claims were reviewed and voted on b
 For more information on each claim, review the sections below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 #### Approved claims
-Claim assessors reviewed and approved Claims 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 143, 144, 145, 147, and 151. These claims included proof of loss, which showed each affected member suffered a loss of 10% or greater. You can review the transactions related to each claim in the [Hodlnaut Claims Tracker](https://docs.google.com/spreadsheets/d/1Yy7wasUHlAW8TSiu6GoqoN3ZEFdvWMYXDO-5x93BVKQ/edit?usp=sharing) and the [Nexus Mutual user interface](https://app.nexusmutual.io/claim-assessment).
+Claim assessors reviewed and approved Claims 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 143, 144, 145, 147, and 151. These claims included proof of loss, which showed each affected member suffered a loss of 10% or greater. You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
 
 | Approved claims                                                                 |                                                                                 |                                                                                 |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
