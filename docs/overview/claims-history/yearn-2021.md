@@ -36,6 +36,8 @@ Claim assessors reviewed and approved Claims 72–75, 77–84, 86–87, and 93. 
 | [Claim 78](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=78) | [Claim 79](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=79) | [Claim 80](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=80) | [Claim 81](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=81) | [Claim 82](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=82) |
 | [Claim 83](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=83) | [Claim 84](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=84) | [Claim 86](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=86) | [Claim 87](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=87) | [Claim 93](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=93) |
 
+You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
+
 #### Denied claims
 Claim assessors reviewed and denied Claims 76, 85, 88, and 92.
 
