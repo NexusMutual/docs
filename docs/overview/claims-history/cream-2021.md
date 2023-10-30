@@ -25,7 +25,7 @@ To date, eight (8) claims have been filed and voted on by claims assessors. As s
 For more information on each claim, review the sections below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 #### Approved claims
-Claim assessors reviewed and approved Claims 98, 99, 100, 101, 103, and 105. These claims included proof of loss, which showed each affected member suffered a loss of 20% or greater. You can review the transactions related to each claim in the [Google Sheet](https://docs.google.com/spreadsheets/d/1dcg2NPeGm8xqqLwnqxFHJXFeBcMwICxWjEpYaRG1Cjo/edit?usp=sharing) and the [Nexus Mutual user interface in the Claims section](https://app.nexusmutual.io/claim-assessment).
+Claim assessors reviewed and approved Claims 98, 99, 100, 101, 103, and 105. These claims included proof of loss, which showed each affected member suffered a loss of 20% or greater. You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
 
 | Approved claims                                                                 |                                                                                 |                                                                                 |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
