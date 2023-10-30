@@ -33,7 +33,7 @@ Claim assessors reviewed and approved Claims V2 0, 2, 3, 4, 5, 6, 7, 8, and 11. 
 
 The claims included proof of loss, which showed the affected addresses where the members suffered a loss. Each approved claim also requested a claim payment that reflected their actual loss amount.
 
-You can review the transactions related to each claim in the [Euler Finance Claims Tracker](https://docs.google.com/spreadsheets/d/1ewvu_PhqqUqdOtsVYkU2_2PusdjAurrWeDKyZNECyFA/edit?usp=sharing) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
+You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
 
 | Approved claims                                                                 |                                                                                 |                                                                                 |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
