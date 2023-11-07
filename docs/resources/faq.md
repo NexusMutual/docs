@@ -8,7 +8,7 @@ sidebar_position: 5.1
 
 ### What is Nexus Mutual?
 
-Nexus Mutual is an insurance alternative that operates as a discretionary mutual, where people can join as members and share risk with others. Members can participate in various roles, such as NXM stakers, who underwrite cover; cover buyers, who purchase coverage to protect against risk; claim assessors, who stake NXM and review filed claims; and governance participants, who vote on protocol and DAO proposals to shape the mutual's future.
+Nexus Mutual is an insurance alternative that operates as a discretionary mutual, where people can join as members and share risk with others. Members can participate in various roles, such as NXM stakers, who underwrite cover; cover buyers, who purchase coverage to protect against risk; claim assessors, who stake NXM and review filed claims; and governance participants, who vote on protocol and DAO proposals to shape the Mutual's future.
 
 It replaces the idea of a traditional insurance company because it is wholly owned by the members.
 
@@ -18,7 +18,7 @@ Learn more in the [Overview](/overview/) section.
 
 All members and NXM holders collectively own the capital pool and its assets. By acting as a member and holding NXM, you are pooling capital and sharing risk with others. When claims are paid, members who stake NXM can have their stake burned to facilitate claim payouts, which flow out from the capital pool.
 
-Everyone within the mutual pools capital and shares risk.
+Everyone within the Mutual pools capital and shares risk.
 
 Learn more in the [Protocol](/protocol/) section.
 
@@ -126,15 +126,15 @@ If you wish to contribute to the DAO by working on a single-purpose project, pro
 
 ### How can I contribute to the DAO?
 
-There are a variety of ways to contribute to the mutual and the DAO. Learn more about how the [Nexus Mutual DAO](/governance/dao) operates and how you can contribute.
+There are a variety of ways to contribute to the Mutual and the DAO. Learn more about how the [Nexus Mutual DAO](/governance/dao) operates and how you can contribute.
 
 ## NXM Token
 
 ### Why do you need the NXM token?
 
-The NXM token is needed in order to bind together the internal economics of the mutual, so that the platform can:
+The NXM token is needed in order to bind together the internal economics of the Mutual, so that the platform can:
 * Dynamically react to the prevailing conditions and capitalisation levels; and
-* Reward active members for participating in the day-to-day operations of the mutual
+* Reward active members for participating in the day-to-day operations of the Mutual
 
 ### When did the NXM token launch?
 
@@ -142,7 +142,7 @@ Nexus Mutual and the NXM token were launched on 30 May 2019. You can read our [W
 
 ### Is NXM listed on any exchanges?
 
-The NXM token is not listed on exchanges and the mutual does not expect to list NXM on exchanges in the future. Due to the nature of the token model and the requirement for tokens to belong to members only, any exchange listing would have to be bespoke.
+The NXM token is not listed on exchanges and the Mutual does not expect to list NXM on exchanges in the future. Due to the nature of the token model and the requirement for tokens to belong to members only, any exchange listing would have to be bespoke.
 
 Tokens will be redeemable directly from within the Nexus Mutual user interface for ETH.
 
