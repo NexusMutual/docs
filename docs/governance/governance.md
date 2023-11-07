@@ -1,5 +1,5 @@
 ---
-Sidebar_position: 5.1
+Sidebar_position: 4.5
 ---
 
 # Governance
