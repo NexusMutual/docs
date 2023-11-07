@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2.1
+sidebar_position: 1.3
 ---
 
 # Cover Products
@@ -11,7 +11,7 @@ Members can choose from various crypto-native cover products:
   * Protection against a range of loss events caused by smart contract code bugs/errors and Sudden and Severe Economic Events, which include oracle manipulation or failure, severe liquidation failures, or governance takeovers.
 * [**ETH Slashing Cover**](/overview/cover-products/eth-staking-cover). For validator operators who are staking ETH.
   * Protection against slashing penalties.
-* [**Excess Cover**](/overview/cover-products/excess-cover). For crypto-native cover providers and other protection providers.
+* [**Quota Share Cover**](/overview/cover-products/quota-share-cover). For crypto-native cover providers and other protection providers.
   * Protection for underlying risk covered by a cover provider.
 
 In the following pages, you can learn more about each of Nexus Mutual's cover products and the development process for new cover products.
