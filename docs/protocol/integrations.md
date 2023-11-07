@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4.7
+sidebar_position: 4.4
 ---
 
-# Integrations and Commissions
+# Integrations
 
 The protocol now supports commission rates. When you integrate and offer your users the ability to purchase cover through your user interface (UI), you can set a commission rate for any cover purchased through your UI.
 
@@ -16,13 +16,7 @@ If you are distributing Nexus Mutual cover in your UI, you can add a commission 
 
 For example: whenever someone buys cover in the Nexus Mutual UI, a 15% commission is applied, which is then directed to the [DAO treasury](https://app.safe.global/balances?safe=eth:0x586b9b2F8010b284A0197f392156f1A7Eb5e86e9).
 
-Commissions create stronger economic incentives to expand the mutual's distribution network.
-
-## Referral Links
-
-*In Development*. In the near future, members will be able to use referral links to earn a commission when they refer others in their network to buy Nexus Mutual cover through the Nexus Mutual or another third-party UI.
-
-Referral links are currently in development and will be available soon.
+Commissions create stronger economic incentives to expand the Mutual's distribution network.
 
 ## Selling cover to non-members
 
