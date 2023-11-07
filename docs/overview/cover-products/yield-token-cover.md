@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2.9
+sidebar_position: 2
 ---
 
 # Yield Token Cover - Deprecated
