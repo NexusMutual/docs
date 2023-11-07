@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5.7
+sidebar_position: 5.1
 ---
 
 # FAQ
@@ -8,7 +8,7 @@ sidebar_position: 5.7
 
 ### What is Nexus Mutual?
 
-Nexus Mutual is an insurance alternative that operates as a discretionary mutual, where people can join as members and share risk with others. Members can participate in various roles, such as NXM stakers, who underwrite cover; cover buyers, who purchase protection to hedge against risk; and claims assessors, who stake NXM and review filed claims.
+Nexus Mutual is an insurance alternative that operates as a discretionary mutual, where people can join as members and share risk with others. Members can participate in various roles, such as NXM stakers, who underwrite cover; cover buyers, who purchase coverage to protect against risk; claim assessors, who stake NXM and review filed claims; and governance participants, who vote on protocol and DAO proposals to shape the mutual's future.
 
 It replaces the idea of a traditional insurance company because it is wholly owned by the members.
 
@@ -24,7 +24,7 @@ Learn more in the [Protocol](/protocol/) section.
 
 ### Does Nexus Mutual offer "insurance"?
 
-Nexus Mutual cover is not a contract of insurance. Cover is provided on a discretionary basis with Nexus Mutual members having the final say on which claims are paid. Members are putting trust in the economic incentive model rather than an insurance company.
+Nexus Mutual cover is not a contract of insurance. Cover is provided on a discretionary basis with Nexus Mutual members having the final say on which claims are paid. Members are putting trust in the protocol's design and fraud protection mechanisms rather than an insurance company.
 
 Nexus Mutual is a discretionary mutual: a mutual fund that provides discretionary cover, which is an insurance-like product that involves only a discretion, not a legal obligation, to pay out on the occurrence of a material loss.
 
@@ -32,7 +32,7 @@ Nexus Mutual is a discretionary mutual: a mutual fund that provides discretionar
 
 ### How do I become a member?
 
-You can go to the [Nexus Mutual user interface](https://app.nexusmutual.io/home) to begin the membership application process. 
+You can go to the [Nexus Mutual user interface](https://app.nexusmutual.io/membership) to begin the membership application process. 
 
 See the [Membership](/overview/membership) page for more information.
 
@@ -40,7 +40,7 @@ See the [Membership](/overview/membership) page for more information.
 
 We do not send out any notifications when your membership is complete. To respect the privacy of our users, we do not send out email or SMS notifications when the membership process has been completed.
 
-If more than 48 hours has passed and your membership still hasn't gone through, please reach out in the [KYC Assistance channel](http://discord.gg/BtDgJMv) in the Nexus Mutual Discord.
+If more than 48 hours has passed and your membership still hasn't gone through, please reach out in the [Open a Ticket channel](https://discord.gg/nexusmutual) in the Nexus Mutual Discord.
 
 ## Cover products
 
@@ -52,7 +52,7 @@ For a full list of Nexus Mutual's cover products, see the [Cover Products](/over
 
 ### Can I buy cover for assets in wallets other than my whitelisted address?
 
-Yes, you can. You need to buy cover using the ETH address you used to sign up for membership (i.e. your whitelisted address). Cover is purchased with that address but you can protect assets in other wallets.
+Yes, you can. You need to buy cover using the Ethereum address you used to sign up for membership (i.e. your registered membership address). Cover is purchased with that address but you can protect assets in other wallets.
 If you suffer a loss of funds and need to file a claim, you will need to submit proof of loss, which differs for each [cover product](/overview/cover-products/).
 
 ### Can I buy cover for another person such as my spouse?
@@ -61,19 +61,21 @@ No, you cannot buy cover for another person even if that person is your spouse. 
 
 ### How do I get my protocol listed on Nexus Mutual?
 
-If you're interested in having your protocol reviewed for a potential listing in the Nexus Mutual user interface, you can use the following [contact form](https://nexusmutual.io/contact) to provide your request, which the product team will review and determine if a listing is appropriate at this time.
+If you're interested in having your protocol reviewed for a potential listing in the Nexus Mutual user interface, you can use the following **[contact form](https://nexusmutual.io/contact)** to provide your request, which the Product team will review and determine if a listing is appropriate at this time.
 
 ## Claims
 
 ### Have any claims been paid?
 
-To date, members have more than $9.34m to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on a centralized custodian.
+To date, members have paid more than $18m to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralised custodians.
+
+To learn more, see the [Claims History section](overview/claims-history/) of the documentation.
 
 ### How do I know my claim will be paid?
 
-The Claims Assessment process is designed to prevent anyone from submitting fraudulent votes. The claims process is battled-tested and has been used to review and approve more than $9.34m in claims to date.
+The Claim Assessment process is designed to prevent anyone from submitting fraudulent votes. The claims process is battled-tested and has been used to review and approve more than $18m in claims to date.
 
-Because members have to stake NXM to participate in the Claims Assessment process, they risk having their stake burned if they vote fraudulently. See the [Claims Assessment](/protocol/claims-assessment#fraudulent-votes) section for more details on the security of the claims process.
+Because members have to stake NXM to participate in the Claim Assessment process, they risk having their stake burned if they vote fraudulently. See the [Claim Assessment](/protocol/claims-assessment#fraudulent-votes) section for more details on the security of the claims process.
 
 ### When is loss of funds (in DAI or ETH) determined for a claim?
 
@@ -86,9 +88,9 @@ See the [Cover Products](/overview/cover-products/) section for more information
 
 Proof of loss is different for each cover product. You can find information on proof of loss on each page within the [Cover Products](/overview/cover-products/) section.
 
-### How long does the Claims Assessment process take?
+### How long does the Claim Assessment process take?
 
-From the time you submit your claim, it usually takes between three and six days for claims assessors to review, vote, and determine a claim's outcome.
+From the time you submit your claim, it usually takes between three (3) and six (6) days for claim assessors to review, vote, and determine a claim's outcome.
 
 ## Staking
 
@@ -96,7 +98,7 @@ From the time you submit your claim, it usually takes between three and six days
 
 When you stake your NXM, you can choose to allow a staking pool manager the ability to allocate and stake your NXM against different cover products. You also delegate your voting power for protocol governance to the staking pool manager.
 
-Learn more in the [Staking](/protocol/staking/) section. 
+Learn more in the [Staking](/protocol/staking/) section.
 
 ### What is a staking period?
 
@@ -108,7 +110,7 @@ Learn more in the [Staking](/protocol/staking/#staking-periods) section.
 
 Your NXM can be burned to facilitate claim payouts if members who purchased cover from the staking pool file successful claims.
 
-If a claim is filed and approved by claims assessors, then the staked NXM allocated to the relevant cover product is burned proportionally across all stakers.
+If a claim is filed and approved by claim assessors, then the staked NXM allocated to the relevant cover product is burned proportionally across all stakers.
 
 Learn more in the [Staking](/protocol/staking/#risk-of-nxm-burns) section. 
 
@@ -131,7 +133,7 @@ There are a variety of ways to contribute to the mutual and the DAO. Learn more 
 ### Why do you need the NXM token?
 
 The NXM token is needed in order to bind together the internal economics of the mutual, so that the platform can:
-* Dynamically react to the prevailing conditions and capitalization levels; and
+* Dynamically react to the prevailing conditions and capitalisation levels; and
 * Reward active members for participating in the day-to-day operations of the mutual
 
 ### When did the NXM token launch?
@@ -142,7 +144,7 @@ Nexus Mutual and the NXM token were launched on 30 May 2019. You can read our [W
 
 The NXM token is not listed on exchanges and the mutual does not expect to list NXM on exchanges in the future. Due to the nature of the token model and the requirement for tokens to belong to members only, any exchange listing would have to be bespoke.
 
-Tokens will be redeemable directly from within the Nexus Mutual user interface for ETH, subject to [some restrictions](/protocol/nxm-token/token-model#redemption-and-purchase-restrictions).
+Tokens will be redeemable directly from within the Nexus Mutual user interface for ETH.
 
 ### Can I transfer NXM tokens?
 

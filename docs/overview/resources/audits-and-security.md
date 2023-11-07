@@ -1,15 +1,25 @@
 ---
-sidebar_label: Audits and Security
-sidebar_position: 5.6
+sidebar_position: 5
 ---
 
 # Audits and Security
 
-Review Nexus Mutual's audits, bug bounties, and initiatives to strengthen our ecosystem.
+Review Nexus Mutual's audits, bug bounties, and initiatives to strengthen our protocol's security.
 
 ## Audits
 
 Below are a list of audits conducted on Nexus Mutual's smart contracts in order of newest to oldest. You can also review [Nexus Mutual's GitHub](https://github.com/NexusMutual/smart-contracts) where these reports are hosted.
+
+### iosiro audit | October 2023
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the Ratcheting AMM (RAMM) contracts within the <code>[folder]</code> folder.
+* [Nexus Mutual RAMM Audit](results)
+
+### Chaos Labs economic audit | October 2023
+
+[Chaos Labs](https://chaoslabs.xyz/) was commissioned by the Foundation to conduct an economic audit of the Ratcheting AMM (RAMM) design and mechanism. The [initial announcement](https://forum.nexusmutual.io/t/nexus-mutual-partners-with-chaos-labs-for-economic-audit-of-ramm-mechanism-design/1206?u=bravenewdefi) was made on the Nexus Mutual governance forum.
+* [Chaos Labs economic audit report for the RAMM](link)
+
 
 ### iosiro audits | November - December 2022, February - March 2023
 
@@ -38,6 +48,13 @@ The [G0 Group](https://github.com/g0-group) was commissioned by Nexus Mutual to 
 ## Security
 
 Nexus Mutual works to ensure the smart contract system is safe and secure. Regular audits are an important part of maintaining the security of the smart contract system, but there are other approaches the mutual takes to keep the protocol secure.
+
+### Security for RAMM launch
+
+Pending a successful on-chain governance vote, the RAMM will launch in late November. At launch, the Engineering team will employ the following security measures to ensure the launch is closely monitored:
+* **Implementing circuit breakers in RAMM contract.** The RAMM contract will be deployed with circuit breakers in the code, which will limit the maximum amount of ETH that can be withdrawn and the maximum amount of NXM that can be minted via capital contributions over a defined period of time. The limits will be progressively raised over time, after careful monitoring of the system.
+* **Active smart contract monitoring with Tenderly alerts**. The Engineering team uses Tenderly alerts to monitor for certain events within the protocol. At launch, the Engineering team will have enhanced monitoring in place for the RAMM contracts and any associated events within the protocol to ensure they can closely monitor the smart contracts.
+* **Emergency pause functionality for RAMM contract**. The [Advisory Board](governance/#advisory-board) has the power to enact an emergency pause on the RAMM contract should any malicious activity take place, which will prevent any minting or redeeming from occurring that would result in a loss of value for members. This power would only be used in an extreme situation and serves as a last resort.
 
 ### Bug bounty program
 
