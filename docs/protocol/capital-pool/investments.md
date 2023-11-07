@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4.4
+sidebar_position: 3.6
 ---
 
 # Investments
