@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.8
+sidebar_position: 2.9
 ---
 
 # BlockFi Halted Withdrawals | November 2022
