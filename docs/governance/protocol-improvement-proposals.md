@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5.2
+sidebar_position: 4.6
 ---
 
 # Nexus Mutual Protocol Improvement Proposals
