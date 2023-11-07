@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.4
+sidebar_position: 2.5
 ---
 
 # TribeDAO, Rari Capital Fuse Market Hack | April 2022
