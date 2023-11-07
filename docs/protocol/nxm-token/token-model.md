@@ -1,129 +1,144 @@
 ---
-sidebar_position: 4.2
+sidebar_position: 3.3
 ---
 
-# Token model
+# Token Model
 
-Nexus Mutual uses a continuous token model, also referred to as a bonding curve. The bonding curve ensures that capital efficiency can be achieved, as it's extremely important for cover providers. Ultimately, underwriters live or die based on their capital efficiency.
+The Nexus Mutual protocol has a mechanism that allows members to freely mint and redeem NXM and ensures all claims can be confidently paid should a major loss event occur. This mechanism is referred to as the Ratcheting Automated Market Maker (RAMM), a two-pool system built on top of the Capital Pool that allows members to redeem and mint NXM.
 
-Capital efficiency in underwriting means:
-* Making sure the mutual has enough funds to confidently pay all claims; and
-* Not sitting on excess capital that isn't required
+![ramm-diagram](pathname:///img/ramm-diagram.png)
 
-The bonding curve exists to balance these two objectives. 
+To strike a balance between ETH flowing into the Capital Pool, ETH flowing out of the Capital Pool, cover being underwritten by staked NXM, Capital Pool investment allocations, and asset-liability management, the protocol uses this automated mechanism to manage the amount of capital that is provided as liquidity for NXM holders.
 
-## Token price
+Members can use the crypto assets held in the Capital Pool to underwrite various cover products and/or propose and vote on Capital Pool investment allocations. For more information, see the [Staking](/staking) and [Investments](/investments) pages.
 
-The token price varies based on two primary parameters controlled by the bonding curve:
-1. The funding level of the mutual; and
-2. The amount of capital required to support the covers written.
+# Ratcheting Automated Market Maker (RAMM)
 
-### Token price formula
+The RAMM model is made up of two virtual one-sided [Uniswap v2-style pools](https://docs.uniswap.org/contracts/v2/concepts/protocol-overview/how-uniswap-works), which determine the price at which the mutual is willing to buy and sell NXM in value-accretive ranges for the mutual, complemented by a price ratchet to enable price discovery.
 
-<code>Price = A + (MCR(eth) / C) x MCR%^4</code>
+The Below Pool and Above Pool are the two pools present in the system. These pools contain a defined amount of ETH liquidity paired with “virtual” NXM. This creates two internal pools, which have the same ETH liquidity; the NXM reserves in each pool are represented by a virtual NXM balance. The ETH and NXM balances change over time as NXM is sold and purchased.
 
-Where:
-* TP = Token Price in Ether
-* A and C are constant values, which were calibrated at launch
-  * A = 0.01028
-  * C = 5,800,000
-* MCR = the value of the minimum capital requirement in ETH, which grows as the number of covers grows
-* MCR% = ratio of the [capital pool](/protocol/capital-pool/) to the minimum capital requirement
+The two pools are described below:
 
-The MCR(eth) floor was set through governance in October 2020 and currently stands at 162,424.73 ETH.
+**Below Pool**. This pool handles swaps below the Book Value. NXM sold in this pool is burned and ETH is distributed from this pool. NXM can be swapped for ETH in this pool only at an NXM spot price less than or equal to the Book Value. NXM can only be redeemed in this pool; NXM mints occur in the Above Pool.
 
-### Drivers of growth
+![below-pool](pathname:///img/below-pool.png)
 
-The token price is controlled by the bonding curve, which reflects the two fundamental drivers of growth: funds in the capital pool and cover sales.
+**Above Pool**. This pool handles swaps above the Book Value. ETH is contributed to this pool and, in return, NXM is minted. NXM can be purchased from this pool only at an NXM spot price greater than or equal to the Book Value. NXM can only be minted in this pool; NXM redemptions occur in the Below Pool.
 
-In the short term, the MCR(eth) value is fixed, which means that short-term NXM price movements are driven entirely by how much capital is in the capital pool. More capital means higher MCR%, which leads to a higher NXM price.
+![above-pool](pathname:///img/above-pool.png)
 
-The capital pool increases when the mutual generates surplus (cover fees less claims), investment earnings grow, and/or members contribute more funds to the mutual.
+## Behaviours in the pools
 
-In the long term, if we assume the MCR% stabilizes around a certain level, then price will be driven by MCR(eth), which is driven by active cover (i.e., adoption).
+![ramm-pools](pathname:///img/ramm-pools.png)
 
-## Redemption and purchase restrictions
+| Above Pool                                                                                                                               | Below Pool                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| 1) When NXM is purchased in this pool, the price increases as the ETH liquidity increases and the virtual amount of NXM decreases.       | 5) During periods where no NXM is being redeemed for ETH, the ratchet mechanism will move the price back toward the Book Value.   |
+| 2) This pool operates within the following price range: <code>[(100+ oracle buffer)% * Book Value,∞)</code>                              | 6) This is the Book Value, which the ratchet mechanism will "ratchet" up to in the absence of NXM redemptions in this pool.       |
+| 3) During periods where no NXM is purchased, the ratchet mechanism will move the price back toward the Book Value.                       | 7) When NXM is redeemed in this pool, the price decreases as the ETH liquidity decreases and the virtual amount of NXM increases. |
+| 4) This is the Book Value, which the ratchet mechanism will "ratchet" down to in the absence of NXM purchases in this pool.              | 8) This pool operates within the following price range: <code>(0, (100-x)% * Book Value]</code>                                   |
 
-Several restrictions apply to the redemption and purchase of NXM tokens. Generally, these restrictions are in place to ensure the mutual always has sufficient funds to confidently pay members' claims.
+## How liquidity is managed within the RAMM
 
-### 1. MCR% related limits
+The Nexus Mutual protocol holds crypto assets within the Capital Pool, and the RAMM is designed to allocate a certain amount of liquidity from the Capital Pool on an ongoing basis. ETH liquidity is added to the RAMM over time when the liquidity in the RAMM is below the target liquidity value. When members contribute ETH to the Capital Pool and mint NXM, any ETH liquidity in the RAMM in excess of the target liquidity is removed from the RAMM over time.
 
-* Redemptions are restricted if MCR% is less than 100%
-* Purchases are restricted if MCR% is greater than 400%
-* Where a transaction would result in the MCR% being outside these limits the volume of the transaction is limited
+To be sure all claims can be paid, the Minimum Capital Requirement (MCR) is the only threshold that can prevent additional liquidity from being sent to the RAMM.
 
-### 2. Transaction limits caps
+The MCR is driven by the Active Cover Amount going forward. The on-chain formula for the MCR is presented below:
+<code>MCR = Total Active Cover Amount / 4.8</code>
 
-Redemptions and purchases are limited per transaction to 5% of the MCR.
+At launch, members signalled support for a target liquidity of 5,000 ETH.
 
-### 3. Capital pool liquidity
+### Liquidity in the Below and Above Pools
 
-The capital pool must also have enough liquidity in ETH to execute on the redemption. While this is not generally expected to be an issue, this may occur temporarily if a large portion of the funds have been invested in non-ETH assets.
+*Below Pool*
 
-### 4. Redemption price
+As members redeem NXM for ETH, there will be less ETH held in the pools until more liquidity is injected to reach the target liquidity value–this happens automatically, given the system checks if the liquidity in the pools is less than the target liquidity value at each swap. The only scenario where liquidity will not be added to the pool will be when the ETH balance in the Capital Pool is less than or equal to the MCR plus the target liquidity: <code>Capital Pool < MCR + target_liq</code>
 
-To discourage speculative buy/sell behavior, the redemption price will be set at 2.5% lower than the purchase price derived from the token model.
+*Above Pool*
 
-## New tokenomics project
+As members purchase NXM with ETH, the amount of ETH liquidity in the pools will increase. If the ETH liquidity is greater than the target liquidity, then ETH will be removed over time–this also happens automatically. The system checks if the liquidity in the pools is greater than the target liquidity value at each swap, cover buy and claim payout.
 
-DAO members are currently engaged in an ongoing project to revamp the token model, with the goals of providing better token liquidity for members and providing the protocol with a market-consistent price for NXM.
+During periods where members are not redeeming NXM for ETH or contributing ETH in return for NXM, the ratchet mechanism moves the price. We’ll review that in the next section.
 
-Updates from this project, and community discussion, can be found on the [#tokenomics-revamp channel](https://discord.gg/E6zKGV4yqw) in the Nexus Mutual Discord.
+## How the ratchet mechanism works
 
-### Background
+The ratchet mechanism allows for price discovery over time by moving the price toward the Book Value over time in the Below Pool and/or the Above Pool. The redemption price will decrease when NXM is redeemed in the Below Pool and the minting price will increase when NXM is purchased in the Above Pool, but the ratchet mechanism moves the prices to the Book Value over time.
 
-When Nexus Mutual launched in May 2019, the protocol used a continuous token model (i.e., bonding curve). The bonding curve serves as an integral component within the Nexus Mutual protocol. This design allows members to contribute and pool capital within one smart contract in exchange for NXM, which is used to participate within the mutual as a risk assessor or claims assessor; voter in the governance process; and as someone who buys cover to protect their assets.
+### Ratcheting up in the Below Pool
 
-Members have voted to change different bonding curve parameters over time, with members voting to switch off the MCR floor increment in October 2020 after Yan_Delphi created the [Pause Daily 1% MCR Growth proposal](https://forum.nexusmutual.io/t/pause-daily-1-mcr-growth/225) on the forum and received community comments and feedback. This proposal was transitioned to an on-chain vote, and after members cast their votes, it was approved with 1,694,351 NXM votes in favor of setting the MCR increment to 0% per day. The MCR floor remains at the 162,424.73 ETH level, as approved by members in [Proposal 103](https://app.nexusmutual.io/governance/view?proposalId=103).
+During periods when NXM is not being redeemed for ETH, the ratchet will move the spot price by reducing the number of NXM in the virtual pool.
 
-Starting in December 2020, the MCR% fell below 100% and the redemption restriction prevented members from redeeming NXM for ETH. Between December 2020 and August 2021, the price of wNXM diverged from the NXM price in ETH terms, with wNXM falling below book value per NXM in August 2021—wNXM has remained below the book value per NXM since this time.
+In the example below, you can see a scenario where NXM is redeemed for ETH at Step 1 and Step 6.
 
-In October 2021, Muir shared the [Solving wNXM discount while maintaining reasonable MCR%](https://forum.nexusmutual.io/t/solving-wnxm-discount-while-maintaining-reasonable-mcr/683) on the governance forum. Members discussed potential solutions, with consensus that a buyback would be an effective solution. Following this discussion, Gauthier shared [Proposal: Operation TM12](https://forum.nexusmutual.io/t/proposal-operation-tm12/716), where he presented a formal proposal to allocate 8,000 ETH from the capital pool to be used to buyback wNXM with the following goals:
+The graph on the left shows the spot price dropping in Steps 1 and 6 when NXM is redeemed for ETH and subsequently increasing again as the ratchet moves.
 
-> Transferring these funds will add value to the mutual and its members in a number of ways:
+In the graph on the right, you can see the amount of ETH in the pool. As NXM is redeemed for ETH, liquidity is reduced. When the liquidity in the pool is below the target (e.g., in this case, 5000 ETH is the target), more ETH is injected into the pool over time. As the pool reaches the target liquidity, no more ETH is injected into the pool.
 
-> Providing liquidity for wNXM / ETH LP on Uniswap v3
-> 
-> Decrease MCR%, allowing the mutual to retain earnings and premiums
-> 
-> Funding new grants, encouraging growth and development
-> 
-> Conducting other services that would benefit the community
+![ratcheting-below](pathname:///img/ratcheting-below.png)
 
-After considerable discussion, this proposal was transitioned to an on-chain vote, where members approved [Proposal 160](https://app.nexusmutual.io/governance/view?proposalId=160) with 1,107,957 NXM voting in support of the proposal.
+### Ratcheting down in the Above Pool
 
-### Creation of Tokenomics Working Group
+During periods when NXM is not being purchased with ETH, the ratchet will move the spot price by increasing the number of NXM in the virtual pool.
 
-After the buyback, various members voiced frustration that the 8,000 ETH hadn't closed the gap between wNXM and book value per NXM. This combined with the inability for members to redeem NXM for ETH, while the MCR% was below 100% led to a series of discussions on the Nexus Mutual governance forum and on Discord.
+If someone purchases NXM, the price will increase and then, if no other NXM purchases are made, the ratchet will move the spot price back toward the Book Value in the Above Pool.
 
-These discussions led to the creation of the Tokenomics Working Group, which was initially organized by Dopeee, who reached out to both vocal critics and long-term supporters of the mutual.
+The graph on the left shows the spot price increasing in Steps 1 , 6 and 17 when NXM is purchased with ETH and subsequently decreasing again as the ratchet moves toward the Book Value.
 
-After receiving significant feedback from a smaller working group, Dopeee then handed the role of working group lead to Rei. Throughout Q3 and Q4 2022, the focus was on incorporating various feedback into a prospective design and modeling out extreme scenarios to fine tune the model before presenting to the community for wider feedback.
+In the graph on the right, you can see the amount of ETH in the pool. As NXM is purchased with ETH, liquidity increases. When the liquidity in the pool is above the target (e.g., in this case, 5000 ETH is the target), more ETH is removed from the pool over time. As the pool reaches the target liquidity, no more ETH is removed from the pool.
 
-### Timeline of Progress to Date
+![ratcheting-above](pathname:///img/ratcheting-above.png)
+
+# The Ratcheting AMM Whitepaper
+
+The above is an overview of the RAMM, how the mechanism works, how liquidity is managed, and how the ratchet works. For more detailed information, please see the [Ratcheting AMM Whitepaper](link), which contains an in-depth review of the RAMM mechanism and the various parameters.
+
+# Current Parameters
+
+| Parameter                        | Description                                                                                                                                                                     | Proposed Value                                  |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| **liq<sub>target</sub>**         | Target ETH liquidity                                                                                                                                                            | 5,000 ETH                                       |
+| **liqSpeed<sub>out</sub>**       | Max amount of ETH that is removed from the pools daily as long as *liq* > *target_liq*                                                                                          | 100 ETH                                         |
+| **initialBudget**                | Amount of ETH that needs to be injected before the *liqSpeed<sub>in</sub>* and *ratchetSpeed<sub>b</sub>* parameters change from initial to long-term state                     | 43,835 ETH                                      |
+| **fastLiqSpeed<sub>in</sub>**    | Initial state: max amount of ETH that is added to the pools daily. This value is active until an amount of ETH equal to *initialBudget* has been injected into the pools        | 1,500 ETH                                       |
+| **liqSpeed<sub>in</sub>**        | Long-term state: max amount of ETH that is added to the pools daily. This value becomes active after an amount of ETH equal to *initialBudget* has been injected into the pools | 100 ETH                                         |
+| **ratchetTarget**                | Middle value towards which the *spot* prices move                                                                                                                               | Book Value                                      |
+| **oracleBuffer**                 | Margin to allow for oracle lag when calculating Book Value in ETH. Secondary function - create spread                                                                           | 1%                                              |
+| **ratchetSpeed<sub>a</sub>**     | Daily decrease in *spot<sub>a</sub>* when above *ratchetTarget<sub>a</sub>*                                                                                                     | 4% of <code>ratchetTarget</code>                |
+| **fastRatchetSpeed<sub>b</sub>** | Initial state: Daily increase in *spot<sub>b</sub>* when above *ratchetTarget<sub>b</sub>*                                                                                      | 50% of <code>ratchetTarget</code>               |
+| **ratchetSpeed<sub>b</sub>**     | Long-term state: Daily increase in *spot<sub>b</sub>* when above *ratchetTarget<sub>b</sub>*                                                                                    | 4% of <code>ratchetTarget</code>                |
 
 
+| Parameter                       | Description                                                                                                                                            |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Book Value ("BV")**           | Capital Pool value in ETH / NXM supply                                                                                                                 |
+| **liq**                         | ETH liquidity in the pools                                                                                                                             |
+| **NXM<sub>a</sub>**             | Notional NXM reserve in the Above Pool                                                                                                                 |
+| **k<sub>a</sub>**               | Above Pool invariant equal to *liq* * *NXM<sub>a</sub>*                                                                                                |
+| **NXM<sub>b</sub>**             | Notional NXM reserve in the Below Pool                                                                                                                 |
+| **k<sub>b</sub>**               | Below Pool invariant equal to *liq* * *NXM<sub>b</sub>*                                                                                                |
+| **spot<sub>a</sub>**            | Current price at which members can exchange ETH for NXM. Equal to *liq* / *NXM<sub>a</sub>*                                                            |
+| **spot<sub>b</sub>**            | Current price at which members can exchange NXM for ETH. Equal to *liq* / *NXM<sub>b</sub>*                                                            |
+| **ratchetTarget<sub>a</sub>**   | Value towards which *spot<sub>a</sub>* moves.   Equal to *(1 + oracleBuffer)* * *ratchetTarget*                                                        |
+| **ratchetTarget<sub>b</sub>**   | Value towards which *spot<sub>b</sub>* moves. Equal to *(1 - oracleBuffer)* * *ratchetTarget*                                                          |
+| **twap<sub>a</sub>**            | Time-weighted average price of the Above Pool                                                                                                          |
+| **twap<sub>b</sub>**            | Time-weighted average price of the Below Pool                                                                                                          |
+| **cumulativePrice<sub>a</sub>** | Cumulative price of the Above Pool                                                                                                                     |
+| **cumulativePrice<sub>b</sub>** | Cumulative price of the Below Pool                                                                                                                     |
+| **observation**                 | A single observation contains the cumulative price for each pool and the timestamp for when the cumulative price sample was taken                      |
+| **granularity**                 | Number of observations stored at one time by the twap mechanism                                                                                        |
+| **obsIndex**                    | Index of the observation where each sample for the twap is stored                                                                                      |
+| **periodSize**                  | Size of time period over which the twap observations are taken                                                                                         |
+| **currentTimestamp**            | Timestamp of the current block, in the same units as *periodSize*                                                                                      |
+| **p<sub>a</sub>**               | Above pool price allowing for the spot price, calculated as *p<sub>a</sub>* = *min*(*twap<sub>a</sub>*, *spot<sub>a</sub>*)                            |
+| **p<sub>b</sub>**               | Below pool price allowing for the spot price, calculated as *p<sub>b</sub>* = *min*(*twap<sub>b</sub>*, *spot<sub>b</sub>*)                            |
+| **ipFloor**                     | Used to set a floor for the internal price, expressed as a percentage of BV                                                                            |
+| **ipCeil**                      | Used to set a ceiling for the internal price, expressed as a percentage of BV                                                                          |
+| **Internal Price ("ip")**       | Final internal price used by the system, calculated as: *ip* = *max*(min(*p<sub>a</sub>* + *p<sub>b</sub>* – *BV*, *ipCeil* * *BV*), *ipFloor* * *BV*) |
 
-* **August 2022**. The Tokenomics Revamp channel was created in the Nexus Mutual Discord and BraveNewDeFi posts [Rei's first summary](https://discord.com/channels/496296560624140298/1014519536218816643/1014524667140259900). Rei invites members to review his [GitHub repo](https://github.com/rmelbardis/BondingCurveNexus). Over the next two months, the members engage in in-depth discussions about the initial design.
+# Additional Information
 
-* **October 2022**. Rei shares the [second update](https://discord.com/channels/496296560624140298/1014519536218816643/1033041913340756138) and provides an overview of the ratcheting AMM (“RAMM”) design with some options. Members again actively engage in discussion about this design and feedback is incorporated into the mechanics.
+In the following sections, you will find the [history of capitalisation controls](/history-capitalisation-controls) and the [drivers of Capital Pool growth](/capital-pool) within the mutual.
 
-* **January 2023**. Rei shares the [Tokenomics Proposal: Replacing the Bonding Curve](https://forum.nexusmutual.io/t/tokenomics-proposal-replacing-the-bonding-curve/988) post on the forum, where the initial design for tokenomics is broadly shared with a detailed paper that outlines the various components of the tokenomics mechanism. There is considerable discussion on the forum and in the [Tokenomics Revamp Discord channel](https://discord.com/channels/496296560624140298/1014519536218816643/1066048954833321984), and an alternative proposal emerges that more closely follows the original bonding curve.
-
-* **February 2023**. A [non-binding signaling vote](https://snapshot.org/#/community.nexusmutual.eth/proposal/0x575abc7cfc9fc68185924539a8ec1c0dcc26b12b9f2a346252125120a6382c9e) is opened for seven days, and members vote on four potential options for how members move this initiative forward. Members vote with 851k NXM (98.49%) for **Option A: Ratcheting AMM design**. 
-
-* **March 2023**. In the next phase, a request for comments was put to members in the [RFC - Tokenomics Design Detail](https://forum.nexusmutual.io/t/request-for-comment-tokenomics-design-detail/1034) governance forum post. The intent of this post was to finalize the mechanics of the new tokenomics. Rei asked for feedback on the following mechanisms within the ratcheting AMM: currency of redemptions; buying/selling availability; TWAP for establishing system price; NXM price shock upon transition from bonding curve; oracle safety buffer; and a potential soft launch.
-
-* **April 2023 to June 2023**. The R&D and Foundation Engineering teams finalized the the details of the system. They provided an [update on the forum](https://forum.nexusmutual.io/t/rfc-tokenomics-draft-ramm-whitepaper-and-draft-technical-spec/1155) with the [draft whitepaper](https://docs.google.com/document/d/1e9D_UJnCYzdLQvT0vwu62tpWRYOHMjQLow1XOBs-fro/edit?pli=1) and [draft technical specifications](https://docs.google.com/document/d/1x-uqIGjAkM_YRqRm3KOjB1xg_l7RS5BjmKGk5xlncgM/edit) of the new tokenomics design.
-
-* **July 2023**. The Foundation Engineering team has begun to develop the system in Solidity, while the R&D team is working with the Community team to create educational resources about the new tokenomics system before the parameter discussions start on the forum. The system parameters and development phases will happen in parallel with one another. The Foundation plans to secure an economic audit of the system design, as well.
-  * The Engineering team will code, review, test, secure an audit, address audit comments, and provide the community with the new tokenomics code to review ahead of a formal [Protocol Improvement Proposal](https://docs.nexusmutual.io/governance/protocol-improvement-proposals).
-  * While the Engineering team develops the new tokenomics contracts, the R&D team will lead a governance discussion on the forum and work with members to determine the parameters for the system, which include: amount of initial liquidity for the ratcheting AMM; target liquidity for the ratcheting AMM in the long term; the speed of the ratchet below book value and above book value; how the TWAP is determined for cover capacity, cover pricing, and NXM rewards. This will be done in tandem with the development of the system, and after the mechanism itself is finalized.
-
-To stay up to date on the new tokenomics project, you can follow along with the [progress on the forum](https://forum.nexusmutual.io/c/nexus-mutual-updates/new-tokenomics-project/16).
-
-### Remaining phases to be completed
-
-* **On-chain governance vote**. After members have reviewed the ratcheting AMM codebase and a [Protocol Improvement Proposal](https://docs.nexusmutual.io/governance/protocol-improvement-proposals) has been posted on the forum for at least 14 days, the proposal will be transitioned to an on-chain vote, where members will decide if the ratcheting AMM should be implemented. If members were to approve the subsequent system, the next phase would occur.
-
-* **Implementation**. The Engineering team would deploy the ratcheting AMM smart contract(s) and deprecate the bonding curve through a migration process. Once implemented, the new tokenomics would take effect with the initial parameters approved by members.
+The [history of capitalisation controls](protocol/nxm-token/history-capitalisation-controls) is optional: you can skip to the [drivers of Capital Pool growth](/capital-pool) section to learn about the conditions under which the Capital Pool expands and contracts.
