@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.6
+sidebar_position: 2.7
 ---
 
 # Hodlnaut Halted Withdrawals | August 2022
