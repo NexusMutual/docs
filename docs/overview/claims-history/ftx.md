@@ -1,12 +1,12 @@
 ---
-sidebar_position: 3.7
+sidebar_position: 2.8
 ---
 
 # FTX Halted Withdrawals | November 2022
 
 ## Total claims paid
 
-A total of $4,924,887.90 was paid out for Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, 178, V2 12, V2 14, and V2 19.
+A total of $4,924,887.90 was paid out for Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, 178, V2 12, V2 14, V2 19, and V2 20.
 
 ## Overview
 
@@ -28,7 +28,7 @@ For more information on each claim, review the sections below and the [Nexus Mut
 
 ### Approved claims
 
-Claim assessors reviewed and approved Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, 178, V2 12, V2 14, and V2 19. These claims included proof of loss, which showed each affected member suffered a loss due to halted withdrawals.
+Claim assessors reviewed and approved Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, 178, V2 12, V2 14, V2 19, and V2 20. These claims included proof of loss, which showed each affected member suffered a loss due to halted withdrawals.
 
 You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
 
@@ -41,7 +41,7 @@ You can review a summary of each claim in the [Nexus Mutual Claims History datab
 | [Claim 168](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=168) | [Claim 169](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=169) | [Claim 170](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=170) |
 | [Claim 171](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=171) | [Claim 172](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=172) | [Claim 173](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=173) |
 | [Claim 176](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=176) | [Claim 178](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=178) | [Claim V2 12](https://app.nexusmutual.io/assessment/view-claim?claimId=12)      |
-| [Claim V2 14](https://app.nexusmutual.io/claims/view-claim?claimId=14)          | [Claim V2 19](https://app.nexusmutual.io/claims/view-claim?claimId=19)          |                                                                                 |
+| [Claim V2 14](https://app.nexusmutual.io/claims/view-claim?claimId=14)          | [Claim V2 19](https://app.nexusmutual.io/claims/view-claim?claimId=19)          | [Claim V2 20](https://app.nexusmutual.io/claims/view-claim?claimId=20)          |
 
 ### Denied claims
 
