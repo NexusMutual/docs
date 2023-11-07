@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.5
+sidebar_position: 2.6
 ---
 
 # Perpetual Protocol v1 Economic Design Failure | May 2022
