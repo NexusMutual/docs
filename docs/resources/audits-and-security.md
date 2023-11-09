@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 5.1
 ---
 
 # Audits and Security
@@ -20,7 +20,7 @@ Below are a list of audits conducted on Nexus Mutual's smart contracts in order 
 ### Chaos Labs economic audit | October 2023
 
 [Chaos Labs](https://chaoslabs.xyz/) was commissioned by the Foundation to conduct an economic audit of the Ratcheting AMM (RAMM) design and mechanism. The [initial announcement](https://forum.nexusmutual.io/t/nexus-mutual-partners-with-chaos-labs-for-economic-audit-of-ramm-mechanism-design/1206?u=bravenewdefi) was made on the Nexus Mutual governance forum.
-* Chaos Labs economic audit report for the RAMM | *Coming Soon*
+* [Chaos Labs economic audit report for the RAMM](https://chaoslabs.xyz/resources/chaos_labs_nexus_mutual_pt_1.pdf)
 
 
 ### iosiro audits | November - December 2022, February - March 2023

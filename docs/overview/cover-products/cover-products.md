@@ -9,7 +9,7 @@ Members can purchase cover products that protect against different kinds of risk
 Members can choose from various crypto-native cover products:
 * [**Protocol Cover**](/overview/cover-products/protocol-cover). For crypto assets deposited in a single protocol deployed on EVM-compatible networks.
   * Protection against a range of loss events caused by smart contract code bugs/errors and Sudden and Severe Economic Events, which include oracle manipulation or failure, severe liquidation failures, or governance takeovers.
-* [**ETH Slashing Cover**](/overview/cover-products/eth-staking-cover). For validator operators who are staking ETH.
+* [**ETH Slashing Cover**](/overview/cover-products/eth-slashing-cover). For validator operators who are staking ETH.
   * Protection against slashing penalties.
 * [**Quota Share Cover**](/overview/cover-products/quota-share-cover). For crypto-native cover providers and other protection providers.
   * Protection for underlying risk covered by a cover provider.

@@ -10,7 +10,7 @@ The Nexus Mutual protocol has a mechanism that allows members to freely mint and
 
 To strike a balance between ETH flowing into the Capital Pool, ETH flowing out of the Capital Pool, cover being underwritten by staked NXM, Capital Pool investment allocations, and asset-liability management, the protocol uses this automated mechanism to manage the amount of capital that is provided as liquidity for NXM holders.
 
-Members can use the crypto assets held in the Capital Pool to underwrite various cover products and/or propose and vote on Capital Pool investment allocations. For more information, see the [Staking](/staking) and [Investments](/investments) pages.
+Members can use the crypto assets held in the Capital Pool to underwrite various cover products and/or propose and vote on Capital Pool investment allocations. For more information, see the [Staking](/protocol/staking) and [Investments](/protocol/capital-pool/investments) pages.
 
 # Ratcheting Automated Market Maker (RAMM)
 
@@ -92,7 +92,7 @@ In the graph on the right, you can see the amount of ETH in the pool. As NXM is 
 
 # The Ratcheting AMM Whitepaper
 
-The above is an overview of the RAMM, how the mechanism works, how liquidity is managed, and how the ratchet works. For more detailed information, please see the [Ratcheting AMM Whitepaper](link), which contains an in-depth review of the RAMM mechanism and the various parameters.
+The above is an overview of the RAMM, how the mechanism works, how liquidity is managed, and how the ratchet works. For more detailed information, please see the [Ratcheting AMM Whitepaper](https://drive.google.com/file/d/1Oh1iDxvW18FY_RXEwlhMfEWmucQb3eFa/view), which contains an in-depth review of the RAMM mechanism and the various parameters.
 
 # Current Parameters
 
@@ -139,6 +139,6 @@ The above is an overview of the RAMM, how the mechanism works, how liquidity is 
 
 # Additional Information
 
-In the following sections, you will find the [history of capitalisation controls](/history-capitalisation-controls) and the [drivers of Capital Pool growth](/capital-pool) within the mutual.
+In the following sections, you will find the [history of capitalisation controls](/protocol/nxm-token/history-capitalisation-controls) and the [drivers of Capital Pool growth](/protocol/capital-pool) within the mutual.
 
-The [history of capitalisation controls](protocol/nxm-token/history-capitalisation-controls) is optional: you can skip to the [drivers of Capital Pool growth](/capital-pool) section to learn about the conditions under which the Capital Pool expands and contracts.
+The [history of capitalisation controls](protocol/nxm-token/history-capitalisation-controls) is optional: you can skip to the [drivers of Capital Pool growth](/protocol/capital-pool) section to learn about the conditions under which the Capital Pool expands and contracts.

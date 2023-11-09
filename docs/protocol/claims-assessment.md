@@ -15,8 +15,8 @@ Across the current - and any future - cover products, there are two different cl
 The individual claim process applies for the following cover products:
 * [Protocol Cover](/overview/cover-products/protocol-cover)
 * [Custody Cover](/overview/cover-products/custody-cover)
-* [ETH Staking Cover](/overview/cover-products/eth-staking-cover)
-* [Excess Cover](/overview/cover-products/excess-cover)
+* [ETH Staking Cover](/overview/cover-products/eth-slashing-cover)
+* [Excess Cover](/overview/cover-products/quota-share-cover)
 
 For individual claims, cover holders can submit claims with supporting proof of loss and details about their loss. These claims are reviewed by assessors on an individual basis to determine the validity of each claim that is filed.
 

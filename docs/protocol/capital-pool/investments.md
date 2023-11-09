@@ -36,7 +36,9 @@ In March 2023, Moss from the Avantgarde team shared an [RFC](https://forum.nexus
 * [Signalling Vote: how to proceed with staking on Enzyme vault (first 50% AUM)](https://snapshot.org/#/community.nexusmutual.eth/proposal/0x2062275bd251ee368d58f6c83e22b457242899d106352073d3c103a69911290d)
 
 Members signaled their support via Snapshot and this proposal was transitioned to an [NMPIP](https://forum.nexusmutual.io/t/nmpip-196-restart-enzyme-vault-start-staking-through-kiln-6-624-weth/1174/1), which was then put on chain for a full-member vote.
-* Members voted in favor of [NMPIP 196: Stake 6624 WETH from the Nexus Mutual Enzyme vault through Kiln](https://app.nexusmutual.io/governance/view?proposalId=196) and 6,224 WETH from the Nexus Mutual Enzyme vault (i.e., a portion of the capital pool) to Kiln.
+* Members voted in favor of [NMPIP 196: Stake 6624 WETH from the Nexus Mutual Enzyme vault through Kiln](https://app.nexusmutual.io/governance/view?proposalId=196) and 6,624 WETH from the Nexus Mutual Enzyme vault (i.e., a portion of the capital pool) to Kiln.
+
+The 6,224 WETH was staked in Kiln and is currently accuring staking rewards. See [Avantgarde's latest post](https://forum.nexusmutual.io/t/nmpip-196-restart-enzyme-vault-start-staking-through-kiln-6-624-weth/1174/5?u=bravenewdefi) on the governance forum for a status update.
 
 ## Investment performance
 
