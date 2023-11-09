@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
 # Getting Started
@@ -39,5 +40,5 @@ Review of protocol and DAO governance, and how the DAO operates:
 ## Resources
 
 Standard FAQ and links to various resources:
-* [FAQ](/overview/resources/faq)
-* [Audits and Security](/overview/resources/audits-and-security)
+* [FAQ](/resources/faq)
+* [Audits and Security](/resources/audits-and-security)
