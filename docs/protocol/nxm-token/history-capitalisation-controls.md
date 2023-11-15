@@ -101,7 +101,7 @@ The actual MCR was smoothed so it didn't cause large one-off shocks and was rest
 
 Long term, the MCR should be driven by the amount of cover the mutual has written as well as other risk factors like how well matched assets are with liabilities.
 
-Nexus Mutual implemented the capital model by assuming a fixed gearing factor applied to the active cover in ETH terms. This was a simplification of the full capital model, which is described in detail in the [Nexus Mutual whitepaper](https://github.com/NexusMutual/website/blob/master/assets/docs/nmx_white_paperv2_3.pdf). If the full capital model (which is run off-chain) starts producing results that are materially different to the current gearing factor it is anticipated that the factor will be updated via a governance action.
+Nexus Mutual implemented the capital model by assuming a fixed gearing factor applied to the active cover in ETH terms. This was a simplification of the full capital model, which is described in detail in the [Nexus Mutual whitepaper](/bookshelf/nexus-mutual-whitepaper-2018.pdf). If the full capital model (which is run off-chain) starts producing results that are materially different to the current gearing factor it is anticipated that the factor will be updated via a governance action.
 
 <code>f(Cover Amount) = Active Cover in ETH / Gearing Factor</code>
 

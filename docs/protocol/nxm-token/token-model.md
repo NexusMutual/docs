@@ -92,7 +92,7 @@ In the graph on the right, you can see the amount of ETH in the pool. As NXM is 
 
 # The Ratcheting AMM Whitepaper
 
-The above is an overview of the RAMM, how the mechanism works, how liquidity is managed, and how the ratchet works. For more detailed information, please see the [Ratcheting AMM Whitepaper](https://drive.google.com/file/d/1Oh1iDxvW18FY_RXEwlhMfEWmucQb3eFa/view), which contains an in-depth review of the RAMM mechanism and the various parameters.
+The above is an overview of the RAMM, how the mechanism works, how liquidity is managed, and how the ratchet works. For more detailed information, please see the [Ratcheting AMM Whitepaper](/bookshelf/nexus-mutual-ramm-whitepaper-v1-2023.pdf), which contains an in-depth review of the RAMM mechanism and the various parameters.
 
 # Current Parameters
 
