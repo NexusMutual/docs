@@ -76,7 +76,7 @@ The graph on the left shows the spot price dropping in Steps 1 and 6 when NXM is
 
 In the graph on the right, you can see the amount of ETH in the pool. As NXM is redeemed for ETH, liquidity is reduced. When the liquidity in the pool is below the target (e.g., in this case, 5000 ETH is the target), more ETH is injected into the pool over time. As the pool reaches the target liquidity, no more ETH is injected into the pool.
 
-![ratcheting-below](pathname:///img/ratcheting-below.png)
+![ratcheting-below](pathname:///img/ratcheting-below-wb.png)
 
 ### Ratcheting down in the Above Pool
 
@@ -88,7 +88,7 @@ The graph on the left shows the spot price increasing in Steps 1 , 6 and 17 when
 
 In the graph on the right, you can see the amount of ETH in the pool. As NXM is purchased with ETH, liquidity increases. When the liquidity in the pool is above the target (e.g., in this case, 5000 ETH is the target), more ETH is removed from the pool over time. As the pool reaches the target liquidity, no more ETH is removed from the pool.
 
-![ratcheting-above](pathname:///img/ratcheting-above.png)
+![ratcheting-above](pathname:///img/ratcheting-above-wb.png)
 
 # The Ratcheting AMM Whitepaper
 
