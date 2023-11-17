@@ -34,6 +34,16 @@ The Advisory Board requires three of five members to enact changes.
 * [Nick Munoz-McDonald](https://github.com/NickErrant)
 * [Graeme Thurgood](https://twitter.com/GraemeThurgood)
 
+#### Emergency Pause Powers
+
+In extreme situations where a vulnerability is discovered, the Advisory Board has the power to enact an emergency pause of the Ratcheting AMM (RAMM) contract or of the entire protocol. This power would only be used as a means of securing the protocol if a vulnerability was discovered that could put funds at risk.
+
+For added security, a separate Emergency Pause multisig was created with *only* the power to pause either the RAMM contract or the entire protocol. An additional two (2) signers have been added to this multisig to have adequate coverage across time zones.
+
+The Advisory Board members listed above are signers on this multisig, as well as:
+* [BraveNewDeFi](https://twitter.com/BraveDeFi), Head of the DAO Community team
+* [Shark0der](https://twitter.com/shark0der), Nexus Mutual Foundation Technical Lead
+
 ## DAO governance power
 
 Voting power in DAO governance, which uses Snapshot, is equal to the sum total of an individual member’s NXM tokens.
