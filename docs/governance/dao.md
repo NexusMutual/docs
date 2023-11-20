@@ -8,7 +8,7 @@ People join as members of the Nexus Mutual DAO and access the benefits of member
 
 Members who want to work to further the protocol's development, growth, awareness, or adoption can contribute to the DAO through a grant or a DAO team. Grants and teams are funded through the NMDP process; successful proposals receive funding from the DAO treasury (formerly referred to as the Community Fund).
 
-People that contribute should help further the Nexus Mutual mission. Teams and contributors should share the mutual's values.
+People that contribute should help further the Nexus Mutual mission. Teams and contributors should share the Mutual's values.
 
 ## Mission
 
@@ -50,7 +50,7 @@ The treasury Safe has a four-of-seven signing threshold.
 
 Members can contribute to the DAO in a variety of ways. Reviewing governance forum discussions, providing comments and feedback, and voting in governance is an important way all members can contribute.
 
-Those who want to put their talents and skills to work for the DAO can create an NMDP to request a grant for a single-purpose project or another purpose. Any grant proposal should highlight how someone's work will benefit the growth and development of the mutual. Learn more about the NMDP grant process on the [Nexus Mutual DAO Proposals (NMDP)](/governance/dao-proposals) page.
+Those who want to put their talents and skills to work for the DAO can create an NMDP to request a grant for a single-purpose project or another purpose. Any grant proposal should highlight how someone's work will benefit the growth and development of the Mutual. Learn more about the NMDP grant process on the [Nexus Mutual DAO Proposals (NMDP)](/governance/dao-proposals) page.
 
 Members can also contribute to an existing team or establish a new team that can serve the DAO for the long-term and provide a necessary function that is not being fulfilled within the DAO.
 
@@ -70,7 +70,7 @@ This team was [first established](https://forum.nexusmutual.io/t/establishing-mu
 
 #### Team members
 
-**Head of Community (FT)**. BraveNewDeFi serves as team lead and has worked for the DAO since 2021. In that time, he has updated and maintained the V1 documentation, developed the mutual's DAO working group model, launched the first DAO team, and standardized the claims process to reduce friction for those submitting claims. He works with the Community Manager to provide support to members, create and distribute informative/educational content, and works to update and engage with members.
+**Head of Community (FT)**. BraveNewDeFi serves as team lead and has worked for the DAO since 2021. In that time, he has updated and maintained the V1 documentation, developed the Mutual's DAO working group model, launched the first DAO team, and standardized the claims process to reduce friction for those submitting claims. He works with the Community Manager to provide support to members, create and distribute informative/educational content, and works to update and engage with members.
 
 **Community Manager (PT)**. Sem provides support to members on Discord and LinkedIn, answering questions and helping members troubleshoot issues. She also writes the weekly newsletter, conducts research, distributes content across social channels, and compiles weekly reports.
 
@@ -78,13 +78,13 @@ This team was [first established](https://forum.nexusmutual.io/t/establishing-mu
 
 The Marketing team works to expand Nexus Mutual's brand awareness and engagement with the DAO's target audiences and drive growth in new membership. They create and execute marketing campaigns; develop and distribute content; and manage Nexus Mutual's marketing channels.
 
-The team creates awareness about the risk marketplace and reaches prospective members around the world. With a defined content strategy and data-driven metrics to demonstrate their impact, the Marketing team grows brand awareness and membership within the mutual, while providing DAO members with a measure of their success.
+The team creates awareness about the risk marketplace and reaches prospective members around the world. With a defined content strategy and data-driven metrics to demonstrate their impact, the Marketing team grows brand awareness and membership within the Mutual, while providing DAO members with a measure of their success.
 
 This team was originally incorporated with the Community team but has a proposal to establish their own team, given Marketing and Community have different objectives.
 
 ### Investment Committee
 
-The Investment Committee provides in-depth proposals and works to provide members with the information they need to invest Nexus Mutual's assets in a way that maximizes the return without negatively impacting the mutual's ability to pay claims on a timely basis.
+The Investment Committee provides in-depth proposals and works to provide members with the information they need to invest Nexus Mutual's assets in a way that maximizes the return without negatively impacting the Mutual's ability to pay claims on a timely basis.
 
 The team reviews investment opportunities and writes detailed investment strategy proposals for the governance forum, where they provide members with the potential benefits, risks, and considerations necessary to make an informed decision ahead of on-chain governance votes.
 
@@ -93,14 +93,14 @@ The team reviews investment opportunities and writes detailed investment strateg
 **Investment Committee Members (PT)**. Discuss, review, and evaluate potential investment strategies with the Head of Investment. Investment strategies that the team agrees present good opportunities are written as an NMPP and presented to members for their review. 
 * **Nico**. Chief Investment Officer of Prosight Specialty, a property and casualty insurer providing tailored insurance solutions for businesses. He provides oversight and strategic direction of their multi-billion dollar investment portfolio consisting of core, core plus, and alternative assets.
 * **Rei**. Rei has served as a founding member of the Nexus Mutual protocol and made a variety of contributions since 2018. Previously, he was qualified as a UK actuary, held a variety of back-office and front-office corporate roles in reinsurance and brokerage.
-* **Gauthier**. Former M&A analyst, who dove deep into the crypto rabbit-hole during the first lockdown in 2020. He has been investing with a strong focus on DeFi protocols ever since. He serves as a Discord moderator in the Nexus Mutual community, and as a multisig signer for the DAO treasury. Gauthier has been a very vocal advocate for Nexus Mutual on Twitter, and he has a strong vested interest in Nexus Mutual and aims to identify the best investment opportunities for the mutual.
+* **Gauthier**. Former M&A analyst, who dove deep into the crypto rabbit-hole during the first lockdown in 2020. He has been investing with a strong focus on DeFi protocols ever since. He serves as a Discord moderator in the Nexus Mutual community, and as a multisig signer for the DAO treasury. Gauthier has been a very vocal advocate for Nexus Mutual on Twitter, and he has a strong vested interest in Nexus Mutual and aims to identify the best investment opportunities for the Mutual.
 * **Guillaume**. Business professional with more than 15 years' experience, with a good analytical and structured approach to all types of problems. His skills in project management and risk management can be complementary to the profiles of the initial team. Also a retail investor in both DeFi and TradFi (a long-time investor in insurance stocks). He plans to contribute to the Investment team around both set-up/structure, as well as the process to surface and implement direct DeFi investments in line with the strategy.
 
 ### Operations team
 
 The Operations team provides support to other DAO teams, manages projects between DAO teams to improve communication and efficiency, helps coordinate online and in-person events, and improves internal operations within the DAO.
 
-The team strives to bring DAO community ownership to coordination of funds, projects, and events. Through increased transparency, communication and coordination among DAO members and teams, and accountability around funding and performance, this team helps further decentralize the mutual and scale the DAO.
+The team strives to bring DAO community ownership to coordination of funds, projects, and events. Through increased transparency, communication and coordination among DAO members and teams, and accountability around funding and performance, this team helps further decentralize the Mutual and scale the DAO.
 
 #### Team members
 
@@ -168,7 +168,7 @@ Members who want to launch a new team can write and post a team creation request
 
 **Purpose**. What broad purpose does your team serve? 
 
-**How team aligns with DAO values, mission**. How does your team help further the DAO's mission and align with the mutual's values?
+**How team aligns with DAO values, mission**. How does your team help further the DAO's mission and align with the Mutual's values?
 
 **Priorities**. What time-specific projects does your team plan to focus on over the next six months?
 

@@ -77,7 +77,7 @@ An NMDP Snapshot vote requires a majority to pass. If a vote is accepted, then t
 
 In addition to the required sections that are noted and outlined in [Posting an NMDP](/governance/dao-proposals#1-posting-an-nmdp), your grant proposal must include:
 
-**Impact areas**. Projects should benefit the growth and development of the mutual but aren't limited otherwise. In this section, you should highlight why your proposal will benefit the mutual. Examples could include projects that increase awareness, improve education, create tooling, or provide technical improvements and/or functionality. 
+**Impact areas**. Projects should benefit the growth and development of the Mutual but aren't limited otherwise. In this section, you should highlight why your proposal will benefit the Mutual. Examples could include projects that increase awareness, improve education, create tooling, or provide technical improvements and/or functionality. 
 
 * Title
   * Summary

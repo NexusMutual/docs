@@ -10,13 +10,13 @@ Crypto-native cover providers and other providers can protect their underwriting
 
 Crypto-native cover providers and other providers underwrite coverage for various risks, which can result in claim payouts that reduce their underwriting capital.
 
-Quota Share Cover allows other cover providers to shift a portion of their risk exposure onto the mutual.
+Quota Share Cover allows other cover providers to shift a portion of their risk exposure onto the Mutual.
 
 This is a bespoke product that can be created for individual cover providers.
 
 ## Sherlock Quota Share Cover wording
 
-Currently, Nexus Mutual provides [Sherlock](https://www.sherlock.xyz/), auditing and smart contract coverage protocol, with Quota Share Cover (a.k.a., Sherlock Quota Share Cover). For more information, read the full terms and conditions of [Nexus Mutual’s Sherlock Quota Share Cover](https://api.nexusmutual.io/ipfs/QmbQAsbisyGK6i1to4d85SqE2f2e98PsXHAuSzrprpsYe8).
+Currently, Nexus Mutual provides [Sherlock](https://www.sherlock.xyz/), auditing and smart contract coverage protocol, with Quota Share Cover (a.k.a., Sherlock Quota Share Cover) and [Uno Re](https://app.unore.io/) with Quota Share Cover (a.k.a., Uno Re Quota Share Cover). For more information, read the full terms and conditions of [Nexus Mutual’s Sherlock Quota Share Cover](https://api.nexusmutual.io/ipfs/QmbQAsbisyGK6i1to4d85SqE2f2e98PsXHAuSzrprpsYe8) and [Nexus Mutual's Uno Re Quota Share Cover](https://api.nexusmutual.io/ipfs/QmWXYjBYjdKoRw6kyUvp5gYKjj2ojPPVxNYKr1gDjMLssY).
 
 Nexus Mutual’s claim assessors use this cover wording as a reference when considering any claim.
 
@@ -46,7 +46,7 @@ For a review of the claim assessment process, see the [Claim Assessment](/protoc
 
 ## Quota Share Cover claim payouts
 
-Members have paid a total of $1,023,746 to Sherlock, which represented 25% of their claim payment to [Euler Finance](https://github.com/sherlock-protocol/sherlock-reports/blob/588192a19aef3180fa302e9ae10e8c29d7c7f044/coverage-agreements/Euler%20Coverage%20Agreement%20(Revised%202022.10.19).pdf) and [Sentiment](https://twitter.com/sentimentxyz/status/1645512005443534849) per the terms of Sherlock Quota Share Cover.
+Members have paid a total of $1,042,309 to Sherlock, which represented a portion of their claim payment to [Euler Finance](https://github.com/sherlock-protocol/sherlock-reports/blob/588192a19aef3180fa302e9ae10e8c29d7c7f044/coverage-agreements/Euler%20Coverage%20Agreement%20(Revised%202022.10.19).pdf), [Sentiment](https://twitter.com/sentimentxyz/status/1645512005443534849), and [Anja Finance](https://twitter.com/sherlockdefi/status/1706700594428170307) per the terms of Sherlock Quota Share Cover.
 
 To review Nexus Mutual's past claims record and individual case studies, you can see the [Claims History](/overview/claims-history/) section.
 

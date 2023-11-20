@@ -49,7 +49,7 @@ The [G0 Group](https://github.com/g0-group) was commissioned by Nexus Mutual to 
 
 ## Security
 
-Nexus Mutual works to ensure the smart contract system is safe and secure. Regular audits are an important part of maintaining the security of the smart contract system, but there are other approaches the mutual takes to keep the protocol secure.
+Nexus Mutual works to ensure the smart contract system is safe and secure. Regular audits are an important part of maintaining the security of the smart contract system, but there are other approaches the Mutual takes to keep the protocol secure.
 
 ### Security for RAMM launch
 
@@ -62,7 +62,7 @@ Pending a successful on-chain governance vote, the RAMM will launch in late Nove
 
 Nexus Mutual works with [Immunefi](https://immunefi.com/) to manage a bug bounty program. On Immunefi, hackers secure DeFi contracts, save funds from theft, and get paid for responsibly disclosing vulnerabilities. We are able to secure the Nexus Mutual protocol through this program with Immunefi.
 
-Through this program, whitehat hackers are incentivized to disclose vulnerabilities in the mutual's smart contract system in exchange for payouts equal to the level of severity.
+Through this program, whitehat hackers are incentivized to disclose vulnerabilities in the Mutual's smart contract system in exchange for payouts equal to the level of severity.
 
 **Smart Contracts and Blockchain**
 * **Critical** | Up to $50,000 USD

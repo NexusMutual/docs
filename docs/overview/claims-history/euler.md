@@ -12,7 +12,7 @@ A total of $1m was paid out for the Sherlock Excess Cover Claim V2 10, where [Sh
 
 ## Overview
 
-On Monday, 13 March 2023, [Euler Finance was exploited for $197m](https://twitter.com/FrankResearcher/status/1635241475989721089). After this exploit occurred, claim assessors [discussed this loss event in the mutual's Discord server](https://discord.com/channels/496296560624140298/1084935082978070549/1084935082978070549). Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](https://docs.nexusmutual.io/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
+On Monday, 13 March 2023, [Euler Finance was exploited for $197m](https://twitter.com/FrankResearcher/status/1635241475989721089). After this exploit occurred, claim assessors [discussed this loss event in the Mutual's Discord server](https://discord.com/channels/496296560624140298/1084935082978070549/1084935082978070549). Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](https://docs.nexusmutual.io/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
 
 Members reviewed the information available in the days after the exploit, while Euler Finance Protocol Cover holders waited for the 72-hour cool-down period to pass before submitting claims. Claim assessors discussed the event and determined the Euler Finance exploit was covered under [section 1.1 of the Protocol Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4c4cca088730ac54ccc_ProtocolCoverv1.0.pdf).
 
@@ -69,21 +69,23 @@ For affected users who received a claim payment from Nexus Mutual, a disclaimer 
 
 Once reimbursement was made available to Euler Finance users, the Community team reached out to the nine members who redeemed a claim payment from Nexus Mutual for the Euler Finance loss event and provided instructions on how to return their claim payment to the [Nexus Mutual DAO treasury](https://etherscan.io/address/0x586b9b2f8010b284a0197f392156f1a7eb5e86e9).
 
-Afterwards, eight of the nine members responded and said they would return their claim payments to the mutual since they experienced no material loss after claiming their reimbursement from Euler Finance.
+Afterwards, eight of the nine members responded and said they would return their claim payments to the Mutual since they experienced no material loss after claiming their reimbursement from Euler Finance.
 
-The member who redeemed 199.6 ETH for Claim V2 #4 emailed the mutual and indicated they would not return their claim payment.
+The member who redeemed 199.6 ETH for Claim V2 #4 emailed the Mutual and indicated they would not return their claim payment.
+
+The DAO Community team and the Foundation Legal team is in the process of working with these two members who received claim payouts to transfer the their reimbursement to the Mutual, so any future reimbursement can be returned to the Capital Pool.
 
 #### Recovery rate
 
-To date, 12.99184203 WETH, 107.57 ETH, and 1,720,207 DAI has been returned to the Nexus Mutual DAO treasury. The member who redeemed 60 ETH for Claim V2 #11 has shared that they will return their claim payment, but needed certain documentation from the mutual before redeeming their reimbursement from Euler Finance and returning the 60 ETH to the DAO treasury.
+To date, 12.99184203 WETH, 107.57 ETH, and 1,720,207 DAI has been returned to the Nexus Mutual DAO treasury. The member who redeemed 60 ETH for Claim V2 #11 has shared that they will return their claim payment, but needed certain documentation from the Mutual before redeeming their reimbursement from Euler Finance and returning the 60 ETH to the DAO treasury.
 
 For DAI denominated Euler Finance claims, 99.05% has been recovered.
 
 For ETH denominated Euler Finance claims, 32.39% has been recovered.
 * Once the 60 ETH from Claim V2 #11 is returned, the ETH recovery rate will reach 48.52%
 
-#### Transferring returned funds to the capital pool
+#### Transferring returned funds to the Capital Pool
 
-Once all outstanding funds have been sent to the DAO treasury, the Community team will work with the DAO treasury multisig signers and send the reimbursed funds back to the capital pool.
+Once all outstanding funds have been sent to the DAO treasury, the Community team will work with the DAO treasury multisig signers and send the reimbursed funds back to the Capital Pool.
 
-When this has been completed, this section will be updated with the transaction confirming the return of funds to the capital pool.
+When this has been completed, this section will be updated with the transaction confirming the return of funds to the Capital Pool.

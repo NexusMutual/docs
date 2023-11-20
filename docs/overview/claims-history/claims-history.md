@@ -11,7 +11,7 @@ Ultimately, these votes are decided by members who stake NXM. There is usually a
 
 ## Claims paid to date
 
-Members of the mutual have paid out more than $18m to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralized custodians.
+Members of the Mutual have paid out more than $18m to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralized custodians.
 
 |  Year | Total Claims Paid (in USD) |
 |------:|---------------------------:|
@@ -25,6 +25,6 @@ Members of the mutual have paid out more than $18m to cover holders who suffered
 
 For stats on claims, you can review the [Claims Dune dashboard](https://dune.com/nexus_mutual/claims) and the [claims section in the Nexus Mutual user interface](https://app.nexusmutual.io/assessment). Numerous claims have been submitted by users testing the system.
 
-You can review the mutual's [claims history on the Nexus Mutual DAO website](https://nexusmutualdao.io/claims-history), where you will find the summary, outcome, and other information about each claim request that has been filed.
+You can review the Mutual's [claims history on the Nexus Mutual DAO website](https://nexusmutualdao.io/claims-history), where you will find the summary, outcome, and other information about each claim request that has been filed.
 
 In the following sections, we outline past claims events and review the claim outcomes.

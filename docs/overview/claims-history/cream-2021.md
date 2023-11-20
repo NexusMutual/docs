@@ -10,11 +10,11 @@ There is a full post-mortem of this loss event and the claim payouts in the [Pay
 A total of $397,087.31 was paid out to members including the Claim 102 payout from the DAO treasury.
 
 ### Overview
-After this exploit occurred, claim assessors discussed this loss event in the mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
+After this exploit occurred, claim assessors discussed this loss event in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
 
 Members reviewed the information available in the days after the exploit, while CREAM V1 Protocol Cover holders waited for the 72-hour cool-down period to pass before submitting claims. Claim assessors discussed the event and determined the CREAM V1 economic exploit was covered under sections 1.2 and 1.3 of the Protocol Cover wording.
 
-Once the 72-hour cool-down period had passed, [the mutual released a statement](https://medium.com/nexus-mutual/cream-v1-exploit-loss-event-details-claims-filing-b35f77e02cb6) with instructions on How to File a Claim, as well as information about the active covers and the Claims Assessment process. Within this Medium article, there is a [Google Sheet](https://docs.google.com/spreadsheets/d/1dcg2NPeGm8xqqLwnqxFHJXFeBcMwICxWjEpYaRG1Cjo/edit?usp=sharing) that contains CREAM V1 active covers where information has been included about accepted, denied, and unfiled claims.
+Once the 72-hour cool-down period had passed, [the Mutual released a statement](https://medium.com/nexus-mutual/cream-v1-exploit-loss-event-details-claims-filing-b35f77e02cb6) with instructions on How to File a Claim, as well as information about the active covers and the Claims Assessment process. Within this Medium article, there is a [Google Sheet](https://docs.google.com/spreadsheets/d/1dcg2NPeGm8xqqLwnqxFHJXFeBcMwICxWjEpYaRG1Cjo/edit?usp=sharing) that contains CREAM V1 active covers where information has been included about accepted, denied, and unfiled claims.
 
 ### Filed claims and outcomes
 To date, eight (8) claims have been filed and voted on by claims assessors. As stated in the section above, claims assessors had determined this was a covered event. Once it has been determined that an event is covered, claim assessors review the validity of claims to determine:

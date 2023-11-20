@@ -47,7 +47,7 @@ Members need to use their whitelisted address to withdraw rewards as they accrue
 
 ## Rewards
 
-When members purchase cover and pay the cover fee, 50% of the cover fee is minted in NXM rewards and distributed to stakers in the pool. Staking rewards are streamed over the course of the cover period and accrue to tokenized staking positions. These rewards do not compound to staking positions and are freely withdrawable by individual NFT owners at any time, so long as the owner is a member of the mutual.
+When members purchase cover and pay the cover fee, 50% of the cover fee is minted in NXM rewards and distributed to stakers in the pool. Staking rewards are streamed over the course of the cover period and accrue to tokenized staking positions. These rewards do not compound to staking positions and are freely withdrawable by individual NFT owners at any time, so long as the owner is a member of the Mutual.
 
 Tokenized staking positions accrue rewards using a time-based veToken model, where locking NXM for longer periods increases the share of cover fees a member will receive. NXM stakers who are long-term aligned receive greater rewards. Staking rewards are calculated as follows:
 

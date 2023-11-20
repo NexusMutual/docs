@@ -11,7 +11,7 @@ The following information below is the documentation that outlined how the origi
 Nexus Mutual used a continuous token model, also referred to as a bonding curve. The bonding curve ensured that capital efficiency could be achieved, as it's extremely important for cover providers.
 
 Capital efficiency in underwriting means:
-* Making sure the mutual has enough funds to confidently pay all claims; and
+* Making sure the Mutual has enough funds to confidently pay all claims; and
 * Not sitting on excess capital that isn't required
 
 The bonding curve existed to balance those two objectives. 
@@ -19,12 +19,12 @@ The bonding curve existed to balance those two objectives.
 ### Token price
 
 The token price varied based on two primary parameters controlled by the bonding curve:
-1. The funding level of the mutual; and
+1. The funding level of the Mutual; and
 2. The amount of capital required to support the covers written.
 
 #### Token price formula
 
-<code>Price = A + (MCR(eth) / C) x MCR%^4</code>
+<p><code>Price = A + (MCR(eth) / C) x MCR%^4</code></p>
 
 Where:
 * TP = Token Price in Ether
@@ -34,11 +34,11 @@ Where:
 * MCR = the value of the Minimum Capital Requirement in ETH, which grows as the number of covers grows
 * MCR% = ratio of the [Capital Pool](/protocol/capital-pool/) to the Minimum Capital Requirement
 
-The MCR(eth) floor was set through governance in October 2020 and stands at 162,424.73 ETH. The DAO teams have shared NMPIP-209:Launch Tokenomics Upgrade on the Nexus Mutual governance forum, where it is proposed to remove the MCR(eth) floor.
+The MCR(eth) floor was set through governance in October 2020 and stands at 162,424.73 ETH. In November 2023, Members voted to approve [NMPIP-209: Launch Tokenomics Upgrade](https://app.nexusmutual.io/governance/view?proposalId=209), which granted the Advisory Board the power to remove the MCR(eth) Floor.
 
 ### Redemption and purchase restrictions
 
-Several restrictions applied to the redemption and purchase of NXM tokens. Generally, these restrictions were in place to ensure the mutual always had sufficient funds to confidently pay members' claims.
+Several restrictions applied to the redemption and purchase of NXM tokens. Generally, these restrictions were in place to ensure the Mutual always had sufficient funds to confidently pay members' claims.
 
 #### 1. MCR% related limits
 
@@ -50,9 +50,9 @@ Several restrictions applied to the redemption and purchase of NXM tokens. Gener
 
 Redemptions and purchases were limited per transaction to 5% of the MCR.
 
-#### 3. Capital pool liquidity
+#### 3. Capital Pool liquidity
 
-The capital pool also needed to have enough liquidity in ETH to execute on the redemption. While this was not generally expected to be an issue, this occured temporarily if a large portion of the funds had been invested in non-ETH assets.
+The Capital Pool also needed to have enough liquidity in ETH to execute on the redemption. While this was not generally expected to be an issue, this occured temporarily if a large portion of the funds had been invested in non-ETH assets.
 
 #### 4. Redemption price
 
@@ -62,11 +62,11 @@ To discourage speculative buy/sell behavior, the redemption price was set at 2.5
 
 # Minimum Capital Requirement
 
-The Minimum Capital Requirement (MCR) is used directly in the token price formula and is therefore an important component of the entire Nexus Mutual protocol. The MCR represents the minimum amount of funds the mutual needs to be very confident it can pay all claims. It is represented by the following formula:
+The Minimum Capital Requirement (MCR) is used directly in the token price formula and is therefore an important component of the entire Nexus Mutual protocol. The MCR represents the minimum amount of funds the Mutual needs to be very confident it can pay all claims. It is represented by the following formula:
 
-<code>MCR = Max (MCR Floor, f(Cover Amount))</code>
+<p><code>MCR = Max (MCR Floor, f(Cover Amount))</code></p>
 
-The long-term goal of the mutual was to have the f(Cover Amount) drive the MCR calculations but the mutual needed an MCR floor value in the early phases so that there is a critical mass of capital to enable cover growth.
+The long-term goal of the Mutual was to have the f(Cover Amount) drive the MCR calculations but the Mutual needed an MCR floor value in the early phases so that there is a critical mass of capital to enable cover growth.
 
 ### MCR floor history
 
@@ -74,7 +74,7 @@ The long-term goal of the mutual was to have the f(Cover Amount) drive the MCR c
 
 **June 2019** | Members decided to lower the MCR floor to 7,000 ETH to enable cover purchases to go live sooner.
 
-**November 2019** | Members decided to implement a dynamic MCR floor to help meet concentrated demand on a smaller number of systems. If the mutual had excess capital (defined as having a MCR% greater than 130%) then the MCR floor value would increase by 1% per day.
+**November 2019** | Members decided to implement a dynamic MCR floor to help meet concentrated demand on a smaller number of systems. If the Mutual had excess capital (defined as having a MCR% greater than 130%) then the MCR floor value would increase by 1% per day.
 
 **July 2020** | Members decided to increase the frequency of the MCR floor increment to 1% every 4 hours (if the MCR% was above 130%) until the MCR floor reached 100,000 ETH.
 
@@ -82,11 +82,13 @@ The long-term goal of the mutual was to have the f(Cover Amount) drive the MCR c
 
 **October 2020** | Members decided to switch off the MCR floor increment, and MCR Floor currently stands at 162,424.73 ETH
 
+**November 2023** | Members voted to remove the MCR(eth) Floor and replace the Bonding Curve with the Ratcheting AMM (RAMM).
+
 ## Implementation
 
 The actual MCR value that was used in the token price model was implemented as a smoothed version of the target MCR. Where:
 
-<code>Target MCR = Max (MCR Floor, f(Cover Amount))</code>
+<p><code>Target MCR = Max (MCR Floor, f(Cover Amount))</code></p>
 
 The actual MCR took the existing MCR value and moved it towards the target each time:
 * Someone minted NXM;
@@ -99,7 +101,7 @@ The actual MCR was smoothed so it didn't cause large one-off shocks and was rest
 
 ### f(Cover Amount)
 
-Long term, the MCR should be driven by the amount of cover the mutual has written as well as other risk factors like how well matched assets are with liabilities.
+Long term, the MCR should be driven by the amount of cover the Mutual has written as well as other risk factors like how well matched assets are with liabilities.
 
 Nexus Mutual implemented the capital model by assuming a fixed gearing factor applied to the active cover in ETH terms. This was a simplification of the full capital model, which is described in detail in the [Nexus Mutual whitepaper](/bookshelf/nexus-mutual-whitepaper-2018.pdf). If the full capital model (which is run off-chain) starts producing results that are materially different to the current gearing factor it is anticipated that the factor will be updated via a governance action.
 

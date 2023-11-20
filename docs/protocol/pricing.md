@@ -109,7 +109,7 @@ The dynamic pricing model allows a staking pool to diversify risk across cover p
 
 ### High utilization, high price to signal demand
 
-Should the perceived risk associated with a single cover product increase in a short period of time, the increase in cover buys will shift the cover price higher. When this happens, the mutual captures more revenue as exposure to any single risk increases. If the utilization for one cover product rises above 90%, then surge pricing is applied to the cover product’s price.
+Should the perceived risk associated with a single cover product increase in a short period of time, the increase in cover buys will shift the cover price higher. When this happens, the Mutual captures more revenue as exposure to any single risk increases. If the utilization for one cover product rises above 90%, then surge pricing is applied to the cover product’s price.
 
 Rising prices and surge pricing can serve as a signal to staking pool managers that the risk needs to be re-evaluated to determine:
 * If more staked NXM should be allocated to open up additional capacity for that cover product; or
@@ -121,6 +121,6 @@ Cover products in a staking pool with ample capacity but infrequent cover buys w
 
 ### Managing exposure to risk
 
-As the cost of cover increases, demand will begin to decrease once the price reaches a certain level and continues to rise. This can limit exposure to risk, while generating more revenue for the mutual and members participating as NXM stakers.
+As the cost of cover increases, demand will begin to decrease once the price reaches a certain level and continues to rise. This can limit exposure to risk, while generating more revenue for the Mutual and members participating as NXM stakers.
 
 Dynamic pricing plays an important role in risk management, though it’s not the only way the protocol manages exposure to risk.

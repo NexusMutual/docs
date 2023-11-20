@@ -10,7 +10,7 @@ Members can post, discuss, and vote on proposals that fall into one of the follo
 
 ## Upgrades, technical changes, use of funds
 
-Members can propose changes to protocol parameters and incentives, the capital model, and the pricing mechanism. When new products are developed, an NMPIP is shared, discussed, and voted on by members. All investment allocations or any use of capital pool funds require an NMPIP and vote before execution, as well.
+Members can propose changes to protocol parameters and incentives, the capital model, and the pricing mechanism. When new products are developed, an NMPIP is shared, discussed, and voted on by members. All investment allocations or any use of Capital Pool funds require an NMPIP and vote before execution, as well.
 
 The proposals are implemented via the governance process with the following quorum requirements:
 * Regular quorum (15% of total NXM supply)
@@ -50,7 +50,7 @@ RFCs should be posted for at least 12 days before they are raised as formal NMPI
 
 The format for RFCs is an abbreviated version of the NMPIP format:
 
-**Title**. [RFC]: [Concise title for proposal]. For example: <code>[RFC]: Invest some of the mutuals funds in LIDO stETH</code>
+**Title**. [RFC]: [Concise title for proposal]. For example: <code>[RFC]: Invest some of the Mutuals fund's in LIDO stETH</code>
 
 **Summary**. Short summary, no more than 250 words, of your proposal.
 
@@ -62,7 +62,7 @@ The format for RFCs is an abbreviated version of the NMPIP format:
 
 When you are ready to write an NMPIP, you should include the following information:
 
-**Title**. NMPIP: [Concise title for proposal]. For example: <code>NMPIP: Invest some of the mutuals funds in LIDO stETH</code>
+**Title**. NMPIP: [Concise title for proposal]. For example: <code>NMPIP: Invest some of the Mutual's funds in LIDO stETH</code>
 
 **Summary**. Short summary, no more than 250 words, of your proposal.
 

@@ -4,7 +4,7 @@ Sidebar_position: 4.5
 
 # Governance
 
-Nexus Mutual is a decentralized people-powered protocol that is governed by members. Through protocol governance, members can propose and vote on changes to any aspect of the protocol. These decisions determine the mutual’s future operations.
+Nexus Mutual is a decentralized people-powered protocol that is governed by members. Through protocol governance, members can propose and vote on changes to any aspect of the protocol. These decisions determine the Mutual’s future operations.
 
 In addition, members determine how DAO treasury funds are allocated and spent. These funds are often used to fund DAO teams or grants that improve awareness and education or technical infrastructure and capabilities.
 
@@ -18,12 +18,12 @@ A single member’s voting power is capped at 5% of the total NXM supply. This i
 
 ### Advisory Board
 
-The Advisory Board is currently made up of five members of the mutual and contains members of the founding team and other experts. The goal is to have a qualified mix of individuals covering three broad skill sets of:
+The Advisory Board is currently made up of five members of the Mutual and contains members of the founding team and other experts. The goal is to have a qualified mix of individuals covering three broad skill sets of:
 * Technical expertise: smart contract security and blockchain
 * Technical expertise: insurance and mutuals
 * General expertise: legal, regulatory, corporate governance, and business management
 
-The Advisory Board has power in limited circumstances and is primarily there to provide qualified technical guidance to the members of the mutual on improvement proposals as well as take emergency action, should it be required. The scope of the Advisory Board’s power in governance is outlined on the [Nexus Mutual Protocol Improvement Proposals (NMPIP)](/governance/protocol-improvement-proposals) page.
+The Advisory Board has power in limited circumstances and is primarily there to provide qualified technical guidance to the members of the Mutual on improvement proposals as well as take emergency action, should it be required. The scope of the Advisory Board’s power in governance is outlined on the [Nexus Mutual Protocol Improvement Proposals (NMPIP)](/governance/protocol-improvement-proposals) page.
 
 #### Advisory Board Members
 

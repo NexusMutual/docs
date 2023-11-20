@@ -18,6 +18,6 @@ For more information, read the full terms and conditions of [Nexus Mutual's Cust
 
 ## Custody Cover claim payouts
 
-Members have approved and paid a total of $6,071,193.76 to cover holders who suffered a loss due to halted withdrawals on a centralized custodian.
+Members have approved and paid a total of $6,366,353 to cover holders who suffered a loss due to halted withdrawals on a centralized custodian.
 
 To review Nexus Mutual's past claims record and individual claim stories, you can see the [Claims History](/overview/claims-history/) section.

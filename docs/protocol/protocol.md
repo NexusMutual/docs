@@ -12,4 +12,4 @@ Members coordinate with one another through the Nexus Mutual protocol.
 
 Above is an overview of Nexus Mutual's risk marketplace, where participating members coordinate through the protocol.
 
-Within the protocol, the NXM token is used to share risk and participate within the mutual. Learn more about the role the NXM token plays within the Nexus Mutual protocol in the next section.
+Within the protocol, the NXM token is used to share risk and participate within the Mutual. Learn more about the role the NXM token plays within the Nexus Mutual protocol in the next section.

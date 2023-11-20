@@ -10,7 +10,7 @@ The Nexus Mutual DAO operates as a discretionary mutual - people can join, share
 
 For more information on how the protocol operates, see the [Protocol](/protocol/) section.
 
-In the following pages within the Overview section, you can learn about membership, cover products, the mutual's claims history, and access various resources.
+In the following pages within the Overview section, you can learn about membership, cover products, the Mutual's claims history, and access various resources.
 
 ## Teams supporting the protocol
 
@@ -26,4 +26,4 @@ The Foundation exists to maintain the Nexus Mutual protocol and user interface; 
 
 Everyone who goes through the membership process becomes a Nexus Mutual DAO member. Members can contribute to the protocol in a variety of ways, which are all reviewed in detail within the [Protocol](/protocol/) section.
 
-Members can also participate in [protocol governance](/governance/) to decide proposals regarding the protocol and capital pool investments. There are DAO teams that work on behalf of all members to create awareness about the mutual and increase adoption of the protocol. To receive funding from the DAO treasury, these teams use the [Nexus Mutual DAO Proposal process](/governance/dao-proposals/), which uses Snapshot governance.
+Members can also participate in [protocol governance](/governance/) to decide proposals regarding the protocol and Capital Pool investments. There are DAO teams that work on behalf of all members to create awareness about the Mutual and increase adoption of the protocol. To receive funding from the DAO treasury, these teams use the [Nexus Mutual DAO Proposal process](/governance/dao-proposals/), which uses Snapshot governance.

@@ -8,12 +8,12 @@ The Nexus Mutual DAO operates as a discretionary mutual where people are require
 
 ## Benefits of membership
 
-Members own the capital pool, contribute to the mutual, and control the protocol through on-chain governance.
+Members own the Capital Pool, contribute to the Mutual, and control the protocol through on-chain governance.
 
 Members can:
 * Buy discretionary cover products
 * Share risk with other members
-* Contribute funds to the mutual and hold NXM tokens
+* Contribute funds to the Mutual and hold NXM tokens
 * Stake NXM, underwrite risk, and earn rewards
 * Stake NXM, assess claims, and earn rewards
 * Create and run risk management businesses
@@ -30,9 +30,9 @@ While the wallet address you use for your whitelisted membership address can be 
 
 By becoming a member you agree to the conditions specified in the [DAO Member Agreement](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f45aacb2752b543ddcaf_Nexus-Mutual-DAO-Member-Agreement-FIN.pdf).
 
-* **KYC / AML**. To become a member, you will need to verify your identity through the Know-Your-Customer / Anti-Money-Laundering process. If this fails, you won’t be able to join the mutual.
-* **You pay an initial membership fee**. Membership costs 0.0020 ETH and is required for anyone who joins the mutual.
-* **You own part of the mutual**. You can buy cover and earn more NXM by helping run the mutual, including voting on claims, staking NXM, and voting on proposals.
+* **KYC / AML**. To become a member, you will need to verify your identity through the Know-Your-Customer / Anti-Money-Laundering process. If this fails, you won’t be able to join the Mutual.
+* **You pay an initial membership fee**. Membership costs 0.0020 ETH and is required for anyone who joins the Mutual.
+* **You own part of the mutual**. You can buy cover and earn more NXM by helping run the Mutual, including voting on claims, staking NXM, and voting on proposals.
 
 ### KYC requirements
 
@@ -52,7 +52,7 @@ To become a member, you will need to verify your identity through the KYC proces
 | Iraq                                                                                             | South Korea                                                                         | Yemen               |
 | Japan                                                                                            | Sri Lanka                                                                           |                     |
 
-## Participating within the protocol, contributing to the mutual
+## Participating within the protocol, contributing to the Mutual
 
 Once you have joined as a member, you can participate within the protocol in a variety of ways or contribute to the Nexus Mutual DAO.
 * Read the [Protocol](/protocol/) section to learn more about how you can participate.

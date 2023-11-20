@@ -12,7 +12,7 @@ A total of $4,924,887.90 was paid out for Claims 156, 157, 158, 159, 160, 161, 1
 
 After FTX halted withdrawals in November 2022, members who held FTX Custody Cover at the time withdrawals were first halted waited for the 90-day period to pass. [Section 1.2 of the Custody Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4d7b378db634f0f9a9d_CustodyCoverWordingv1.0.pdf) provides protection for assets that cannot be withdrawn from a centralized exchange after more than 90 days has passed.
 
-During this time, members documented their losses and prepared for claims filing. Before the 90-day period ended, a [guide to FTX claims filing](https://nexusmutual.io/blog/how-ftx-custody-cover-holders-can-prepare-for-claims-filing) was shared across the mutual's social channels. 
+During this time, members documented their losses and prepared for claims filing. Before the 90-day period ended, a [guide to FTX claims filing](https://nexusmutual.io/blog/how-ftx-custody-cover-holders-can-prepare-for-claims-filing) was shared across the Mutual's social channels. 
 
 After 90 days passed, withdrawals were still halted on FTX. On Monday, 6 February 2023, members began filing claims for the FTX loss event. As claims were filed, members staked NXM to participate in the [Claims Assessment](https://docs.nexusmutual.io/protocol/claims-assessment) process. Claim assessors discussed claims in the Nexus Mutual Discord and kept track of eligible covers in the [FTX Claims Tracker](https://docs.google.com/spreadsheets/d/1DvBE95LUuOY5B4pJZoXG8SbXUIWvYsXaYkk70DHAh6E/edit?usp=sharing).
 
@@ -59,4 +59,4 @@ Members who filed a claim and received a payout agreed to the following terms:
 
 <blockquote>By making a successful claim and receiving a payout (i.e., reimbursement) from Nexus Mutual, you agree to give rights to any future reimbursements from the FTX bankruptcy proceedings — including any future reimbursement tokens distributed as part of the FTX bankruptcy settlement — to Nexus Mutual, per the recoveries provision in Section 3 in the Custody Cover wording: https://nexusmutual.io/pages/CustodyCoverWordingv1.0.pdf.</blockquote>
 
-The Community team is in the process of working with members who received claim payouts to transfer the bankruptcy claims to the mutual, so any future reimbursement can be returned to the capital pool.
+The DAO Community team and the Foundation Legal team is in the process of working with members who received claim payouts to transfer the bankruptcy claims to the Mutual, so any future reimbursement can be returned to the Capital Pool.

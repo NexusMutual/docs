@@ -7,11 +7,11 @@ sidebar_position: 2.3
 A total of $2,317,776.72 was paid out to Yearn Finance Smart Contract Cover holders. Smart Contract Cover has since been deprecated and replaced by Protocol Cover, an updated cover product that protects against more risks in DeFi.
 
 ## Overview
-After this exploit occurred, claim assessors [discussed this loss event](https://discord.com/channels/496296560624140298/689385874265342056/807263979192713217) in the mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
+After this exploit occurred, claim assessors [discussed this loss event](https://discord.com/channels/496296560624140298/689385874265342056/807263979192713217) in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
 
 Members reviewed the information available after the hack occurred and the consensus was that this was a covered event, as it met the conditions outlined in the existing cover wording at the time of the hack.
 
-The Yearn development team worked with the mutual to provide members with a [complete list of affected addresses](https://github.com/NexusMutual/incidents/tree/master/2021-02-04-ydai-v1) for claim assessors to refer to when checking the proof of loss requirement during the claims voting process.
+The Yearn development team worked with the Mutual to provide members with a [complete list of affected addresses](https://github.com/NexusMutual/incidents/tree/master/2021-02-04-ydai-v1) for claim assessors to refer to when checking the proof of loss requirement during the claims voting process.
 
 ### Filed claims and outcomes
 A total of eighteen (18) claims were filed, and those claims were reviewed and voted on by claim assessors. As stated in the section above, claim assessors had determined this was a covered event. Once it has been determined that an event is covered, claim assessors review the validity of claims to determine:

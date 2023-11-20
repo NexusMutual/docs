@@ -30,7 +30,8 @@ After a validator, or validators, suffer a loss, your organization can contact t
     * This should equal the claim amount being requested after the deductible is accounted for.
 3. Claim assessors can then reference this information against [beaconcha.in](https://beaconcha.in/) or [rated.network](https://www.rated.network/?network=mainnet&view=pool) to verify the loss calculations.
 
-For a review of the claims assessment process, see the [Claims Assessment](/protocol/claims-assessment) section.
+For a review of the Claims 
+assessment process, see the [Claims Assessment](/protocol/claims-assessment) section.
 
 ## Get a quote
 

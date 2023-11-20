@@ -12,7 +12,7 @@ A total of $30,590.64 was paid out for Claims 174 and 177.
 
 After BlockFi halted withdrawals in November 2022, members who held BlockFi Custody Cover at the time withdrawals were first halted waited for the 90-day period to pass. [Section 1.2 of the Custody Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4d7b378db634f0f9a9d_CustodyCoverWordingv1.0.pdf) provides protection for assets that cannot be withdrawn from a centralized exchange after more than 90 days has passed.
 
-During this time, members documented their losses and prepared for claims filing. Before the 90-day period ended, a [guide to BlockFi claims filing](https://nexusmutual.io/blog/how-blockfi-and-gemini-custody-cover-holders-can-prepare-for-claims-filing) was shared across the mutual's social channels.
+During this time, members documented their losses and prepared for claims filing. Before the 90-day period ended, a [guide to BlockFi claims filing](https://nexusmutual.io/blog/how-blockfi-and-gemini-custody-cover-holders-can-prepare-for-claims-filing) was shared across the Mutual's social channels.
 
 After 90 days passed, withdrawals were still halted on BlockFi. On Thursday, 9 February 2023, members began filing claims for the BlockFi loss event. As claims were filed, members staked NXM to participate in the [Claims Assessment](https://docs.nexusmutual.io/protocol/claims-assessment) process. Claim assessors discussed claims in the Nexus Mutual Discord and kept track of eligible covers in the [BlockFi Claims Tracker](https://docs.google.com/spreadsheets/d/1U6cGApDL_crY5RJBa3PUOTMAa17acmWBpYk5ZOPpOls/edit?usp=sharing).
 
