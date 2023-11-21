@@ -43,7 +43,7 @@ The 6,224 WETH was staked in Kiln and is currently accuring staking rewards. See
 ## Investment performance
 
 The Capital Pool contract can be verified on-chain. Anyone can view the crypto assets held in the pool.
-* [Capital Pool Address](https://etherscan.io/address/0xcafea112db32436c2390f5ec988f3adb96870627): 0xcafea112Db32436c2390F5EC988f3aDB96870627
+* [Capital Pool Address](https://etherscan.io/address/0xcafeaBED7e0653aFe9674A3ad862b78DB3F36e60): 0xcafeaBED7e0653aFe9674A3ad862b78DB3F36e60
 
 ## Lido Finance rewards history
 
