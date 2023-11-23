@@ -13,9 +13,7 @@ Below are a list of audits conducted on Nexus Mutual's smart contracts in order 
 ### iosiro audit | October 2023
 
 [iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the Ratcheting AMM (RAMM) contracts.
-* [Nexus Mutual RAMM Audit | Preliminary Draft](https://gist.github.com/iosiro-security/90e2aab047eff89cbb9e89c8b06e6876#file-0_iosiro-nexus-mutual-tokenomics-draft-report-md)
-
-*When iosiro provides a finalised audit report, this page will be updated with that report.*
+* [Nexus Mutual Tokenomics Smart Contract Audit](https://iosiro.com/audits/nexus-mutual-tokenomics-smart-contract-audit)
 
 ### Chaos Labs economic audit | October 2023
 
