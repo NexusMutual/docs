@@ -18,16 +18,20 @@ A single member’s voting power is capped at 5% of the total NXM supply. This i
 
 ### Advisory Board
 
-The Advisory Board is currently made up of five members of the Mutual and contains members of the founding team and other experts. The goal is to have a qualified mix of individuals covering three broad skill sets of:
+The Advisory Board is currently made up of five (5) members of the Mutual and contains members of the founding team and other experts. The goal is to have a qualified mix of individuals covering three broad skill sets of:
 * Technical expertise: smart contract security and blockchain
 * Technical expertise: insurance and mutuals
 * General expertise: legal, regulatory, corporate governance, and business management
+
+Advisory Board members are elected by Nexus Mutual members through governance. If a vote to appoint or replace an Advisory Board member is approved, the elected member will be granted the Advisory Board role through the MemberRoles contract, which you can find in the [Nexus Mutual SDK](https://sdk.nexusmutual.io/).
 
 The Advisory Board has power in limited circumstances and is primarily there to provide qualified technical guidance to the members of the Mutual on improvement proposals as well as take emergency action, should it be required. The scope of the Advisory Board’s power in governance is outlined on the [Nexus Mutual Protocol Improvement Proposals (NMPIP)](/governance/protocol-improvement-proposals) page.
 
 #### Advisory Board Members
 
-The Advisory Board requires three of five members to enact changes.
+The Advisory Board requires a quorum of three out of five members to provide their recommendation on proposals in the Upgrades, Technical Changes, Use of Funds or Critical Decisions on-chain governance categories. If members grant the Advisory Board approval to make smart contract upgrades, Advisory Board members can enact changes through the <code>Release New Smart Contract Code</code> on-chain governance category as long as the quorum of three out of five members is met.
+
+Below is the list of elected Advisory Board members:
 * [Roxana Danila](https://twitter.com/roxdanila)
 * [Hugh Karp](https://twitter.com/HughKarp)
 * [Rei Melbardis](https://twitter.com/Rei_Melb)
@@ -38,7 +42,7 @@ The Advisory Board requires three of five members to enact changes.
 
 In extreme situations where a vulnerability is discovered, the Advisory Board has the power to enact an emergency pause of the Ratcheting AMM (RAMM) contract or of the entire protocol. This power would only be used as a means of securing the protocol if a vulnerability was discovered that could put funds at risk.
 
-For added security, a separate Emergency Pause multisig was created with *only* the power to pause either the RAMM contract or the entire protocol. An additional two (2) signers have been added to this multisig to have adequate coverage across time zones.
+For added security, an [Emergency Pause multisig](https://app.safe.global/home?safe=eth:0x422D71fb8040aBEF53f3a05d21A9B85eebB2995D) was created with *only* the power to pause either the RAMM contract or the entire protocol. An additional two (2) signers have been added to this multisig to have adequate coverage across time zones.
 
 The Advisory Board members listed above are signers on this multisig, as well as:
 * [BraveNewDeFi](https://twitter.com/BraveDeFi), Head of the DAO Community team
@@ -58,7 +62,7 @@ Members can create a [Nexus Mutual Protocol Improvement Proposal (NMPIP)](/gover
 * [Upgrades, Technical Changes, Use of Funds](/governance/protocol-improvement-proposals#upgrades-technical-changes-use-of-funds)
 * [Critical Decisions](/governance/protocol-improvement-proposals#critical-decisions)
 
-#### Protocol improvement proposal quorum parameters
+#### Protocol improvement proposal quorum parameters for Member roles
 * Quorum (Regular Resolutions): 15% of total NXM supply
 * Quorum (Special Resolutions): 75% of total NXM supply
 * Majority (Regular Resolutions): 50%+ of voting weight
@@ -72,7 +76,7 @@ To encourage wider participation and reward members for their time, 100 NXM in i
 
 #### Governance security
 
-Members that use their NXM to vote on a protocol improvement proposal will not be able to redeem or transfer their NXM for three days after they cast their vote.
+Members that use their NXM to vote on a protocol improvement proposal will not be able to redeem or transfer their NXM for three (3) days after they cast their vote.
 
 The governance restriction can be calculated as follows:
 
