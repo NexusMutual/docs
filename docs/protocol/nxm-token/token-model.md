@@ -106,8 +106,8 @@ The above is an overview of the RAMM, how the mechanism works, how liquidity is 
 | **ratchetTarget**                | Middle value towards which the *spot* prices move                                                                                                                               | Book Value                                      |
 | **oracleBuffer**                 | Margin to allow for oracle lag when calculating Book Value in ETH. Secondary function - create spread                                                                           | 1%                                              |
 | **ratchetSpeed<sub>a</sub>**     | Daily decrease in *spot<sub>a</sub>* when above *ratchetTarget<sub>a</sub>*                                                                                                     | 4% of <code>ratchetTarget</code>                |
-| **fastRatchetSpeed<sub>b</sub>** | Initial state: Daily increase in *spot<sub>b</sub>* when above *ratchetTarget<sub>b</sub>*                                                                                      | 50% of <code>ratchetTarget</code>               |
-| **ratchetSpeed<sub>b</sub>**     | Long-term state: Daily increase in *spot<sub>b</sub>* when above *ratchetTarget<sub>b</sub>*                                                                                    | 4% of <code>ratchetTarget</code>                |
+| **fastRatchetSpeed<sub>b</sub>** | Initial state: Daily increase in *spot<sub>b</sub>* when below *ratchetTarget<sub>b</sub>*                                                                                      | 50% of <code>ratchetTarget</code>               |
+| **ratchetSpeed<sub>b</sub>**     | Long-term state: Daily increase in *spot<sub>b</sub>* when below *ratchetTarget<sub>b</sub>*                                                                                    | 4% of <code>ratchetTarget</code>                |
 
 
 | Parameter                       | Description                                                                                                                                            |
