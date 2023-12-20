@@ -12,7 +12,7 @@ To strike a balance between ETH flowing into the Capital Pool, ETH flowing out o
 
 Members can use the crypto assets held in the Capital Pool to underwrite various cover products and/or propose and vote on Capital Pool investment allocations. For more information, see the [Staking](/protocol/staking) and [Investments](/protocol/capital-pool/investments) pages.
 
-# Ratcheting Automated Market Maker (RAMM)
+## Ratcheting Automated Market Maker (RAMM)
 
 The RAMM model is made up of two virtual one-sided [Uniswap v2-style pools](https://docs.uniswap.org/contracts/v2/concepts/protocol-overview/how-uniswap-works), which determine the price at which the mutual is willing to buy and sell NXM in value-accretive ranges for the mutual, complemented by a price ratchet to enable price discovery.
 
@@ -28,7 +28,7 @@ The two pools are described below:
 
 ![above-pool](pathname:///img/above-pool.png)
 
-## Behaviours in the pools
+### Behaviours in the pools
 
 ![ramm-pools](pathname:///img/ramm-pools.PNG)
 
@@ -39,7 +39,7 @@ The two pools are described below:
 | 3) During periods where no NXM is purchased, the ratchet mechanism will move the price back toward the Book Value.                       | 7) When NXM is redeemed in this pool, the price decreases as the ETH liquidity decreases and the virtual amount of NXM increases. |
 | 4) This is the Book Value, which the ratchet mechanism will "ratchet" down to in the absence of NXM purchases in this pool.              | 8) This pool operates within the following price range: <code>(0, (100-x)% * Book Value]</code>                                   |
 
-## How liquidity is managed within the RAMM
+### How liquidity is managed within the RAMM
 
 The Nexus Mutual protocol holds crypto assets within the Capital Pool, and the RAMM is designed to allocate a certain amount of liquidity from the Capital Pool on an ongoing basis. ETH liquidity is added to the RAMM over time when the liquidity in the RAMM is below the target liquidity value. When members contribute ETH to the Capital Pool and mint NXM, any ETH liquidity in the RAMM in excess of the target liquidity is removed from the RAMM over time.
 
@@ -62,7 +62,7 @@ As members purchase NXM with ETH, the amount of ETH liquidity in the pools will 
 
 During periods where members are not redeeming NXM for ETH or contributing ETH in return for NXM, the ratchet mechanism moves the price. We’ll review that in the next section.
 
-## How the ratchet mechanism works
+### How the ratchet mechanism works
 
 The ratchet mechanism allows for price discovery over time by moving the price toward the Book Value over time in the Below Pool and/or the Above Pool. The redemption price will decrease when NXM is redeemed in the Below Pool and the minting price will increase when NXM is purchased in the Above Pool, but the ratchet mechanism moves the prices to the Book Value over time.
 
@@ -90,11 +90,11 @@ In the graph on the right, you can see the amount of ETH in the pool. As NXM is 
 
 ![ratcheting-above](pathname:///img/ratcheting-above-wb.png)
 
-# The Ratcheting AMM Whitepaper
+## The Ratcheting AMM Whitepaper
 
 The above is an overview of the RAMM, how the mechanism works, how liquidity is managed, and how the ratchet works. For more detailed information, please see the [Ratcheting AMM Whitepaper](/bookshelf/nexus-mutual-ramm-whitepaper-v1-2023.pdf), which contains an in-depth review of the RAMM mechanism and the various parameters.
 
-# Current Parameters
+## Current Parameters
 
 | Parameter                        | Description                                                                                                                                                                     | Proposed Value                                  |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
@@ -137,7 +137,7 @@ The above is an overview of the RAMM, how the mechanism works, how liquidity is 
 | **ipCeil**                      | Used to set a ceiling for the internal price, expressed as a percentage of BV                                                                          |
 | **Internal Price ("ip")**       | Final internal price used by the system, calculated as: *ip* = *max*(min(*p<sub>a</sub>* + *p<sub>b</sub>* – *BV*, *ipCeil* * *BV*), *ipFloor* * *BV*) |
 
-# Additional Information
+## Additional Information
 
 In the following sections, you will find the [history of capitalisation controls](/protocol/nxm-token/history-capitalisation-controls) and the [drivers of Capital Pool growth](/protocol/capital-pool) within the Mutual.
 
