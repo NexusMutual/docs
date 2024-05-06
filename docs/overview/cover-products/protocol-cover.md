@@ -12,11 +12,31 @@ When you have crypto assets deposited in a protocol that is deployed on Ethereum
 * A smart contract code bug or error resulting in the Designated Protocol being used in an unintended way
 * A Sudden and Severe Economic Event, which includes oracle manipulation or failure, severe liquidation failures, or governance takeovers
 
-## Cover wording
+Nexus Mutual offers two Protocol Cover products:
+1. **Protocol Cover**, which protects deposits in a single protocol against the above risks
+2. **Bundled Protocol Cover**, which protects deposits across multiple protocols against the above risks
+
+## Protocol Cover wording
 
 For more information, read the full terms and conditions of [Nexus Mutual's Protocol Cover](https://api.nexusmutual.io/ipfs/QmdunFJm4A5CUW1ynM7bevsGt6UzQfw6K4ysKqvsqpjWCQ).
 
-Nexus Mutual's claim assessors use this cover wording as a reference when considering any claim.
+Nexus Mutual's claim assessors use this cover wording as a reference when considering any Protocol Cover claim.
+
+## Bundled Protocol Cover wording
+
+For more information, read the full terms and conditions of [Nexus Mutual's Bundled Protocol Cover](https://api.nexusmutual.io/ipfs/QmWV9woyKJirjHd73MhibV59qmqzp1w1gqfMfZBQhneSL8).
+
+Nexus Mutual's claim assessors use this cover wording as a reference when considering any Bundled Protocol Cover claim.
+
+### Information about Bundled Protocol Cover listings
+
+* [EigenLayer + Ether.fi + Pendle Bundled Protocol Cover | Product Sheet](https://drive.google.com/file/d/15HFwyUbGM9Rq5mAWGwG9HV4pc2RILpIC/view?usp=sharing)
+* [EigenLayer + Renzo + Pendle Bundled Protocol Cover | Product Sheet](https://drive.google.com/file/d/1RIogfFtJeHqK4tZW2o_3jUVEzw4Slhcq/view)
+* [Etherfi Liquid ETH Vault Bundled Protocol Cover | Product Sheet](https://drive.google.com/file/d/1Hfw2gr07plxsQzMKO0ZPsNTPFC8tDSro/view?usp=sharing)
+* [EigenLayer + KelpDAO + Pendle Bundled Protocol Cover | Product Sheet](https://drive.google.com/file/d/19I9hrrRM03Ci8g3_hRH1J7Dcfz_CTWwm/view?usp=sharing)
+* [EigenLayer + Swell + Pendle Bundled Protocol Cover | Product Sheet](https://drive.google.com/file/d/1muHFoFH1maaa4DHJyclpKeqn4MWOmTBW/view?usp=sharing)
+
+More to be added!
 
 ### Proof of loss
 

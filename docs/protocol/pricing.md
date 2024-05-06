@@ -43,21 +43,21 @@ The Bumped Price gets updated after each cover buy and is used to calculate the 
 This is determined by taking the <code>timeSinceLastCoverBuy</code> and multiplying by the <code>Speed</code>, which moves at 0.5% per day. The price drop is subtracted from spot price.
 
 *Example*
-* <code>speed = 0.5% per day</code>
+* <code>speed = 2.0% per day</code>
 * <code>timeSinceLastCoverBuy = 3 days</code>
-* <code>priceDrop = 3 * 0.5% = 1.5%</code>
+* <code>priceDrop = 3 * 2.0% = 6.0%</code>
 
 ### Calculating spot price
 
 You can see an example of the variables being used to calculate the price of an individual cover product within a staking pool:
 
 *Example*
-* <code>speed = 0.5% per day</code>
+* <code>speed = 2.0% per day</code>
 * <code>timeSinceLastCoverBuy = 3 days</code>
-* <code>priceDrop = 3 * 0.5% = 1.5%</code>
+* <code>priceDrop = 3 * 2.0% = 6.0%</code>
 * <code>bumpedPrice = 6.5%</code>
 * <code>targetPrice = 4%</code>
-* <code>spotPrice = MAX(6.5% - 1.5%, 3%) = 5.0%</code>
+* <code>spotPrice = MAX(6.5% - 6.0%, 3%) = 3.0%</code>
 
 ## Surge loading
 
