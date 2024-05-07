@@ -40,7 +40,7 @@ The Bumped Price gets updated after each cover buy and is used to calculate the 
 
 ### Price drop
 
-This is determined by taking the <code>timeSinceLastCoverBuy</code> and multiplying by the <code>Speed</code>, which moves at 0.5% per day. The price drop is subtracted from spot price.
+This is determined by taking the <code>timeSinceLastCoverBuy</code> and multiplying by the <code>Speed</code>, which moves at 2.0% per day. The price drop is subtracted from spot price.
 
 *Example*
 * <code>speed = 2.0% per day</code>
