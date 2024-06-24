@@ -11,7 +11,7 @@ Ultimately, these votes are decided by members who stake NXM. There is usually a
 
 ## Claims paid to date
 
-Members of the Mutual have paid out more than $18m to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralized custodians.
+Members of the Mutual have paid out $18M+ to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralized custodians.
 
 |  Year | Total Claims Paid (in USD) |
 |------:|---------------------------:|

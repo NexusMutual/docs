@@ -8,7 +8,7 @@ sidebar_position: 1.8
 
 When you deposit crypto assets into a yield aggregator or a protocol that is integrated with other DeFi protocols, your funds are exposed to a variety of risks across multiple protocols.
 
-**Instead of buying cover separately, you can deposit crypto assets into a natively covered vault that automatically buys cover for all deposits using a portion of the yield generated from the underlying strategy.**
+**Instead of buying cover separately, you can deposit onchain assets into a natively covered vault that automatically buys cover for all deposits using a portion of the yield generated from the underlying strategy.**
 
 Covered vaults are built using the ERC-4626 token standard, which allows any other protocols to build covered vaults with their ERC-4626 yield-bearing vaults.
 

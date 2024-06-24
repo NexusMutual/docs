@@ -4,7 +4,7 @@ sidebar_position: 3.6
 
 # Investments
 
-Any investment allocations are decided by members through on-chain governance using the [Nexus Mutual Protocol Improvement Proposal (NMPIP)](/governance/protocol-improvement-proposals) format. To date, members have voted to allocate Capital Pool assets in the following strategies.
+Any investment allocations are decided by members through onchain governance using the [Nexus Mutual Protocol Improvement Proposal (NMPIP)](/governance/protocol-improvement-proposals) format. To date, members have voted to allocate Capital Pool assets in the following strategies.
 
 ## Investment in Lido stETH
 
@@ -42,7 +42,7 @@ The 6,224 WETH was staked in Kiln and is currently accuring staking rewards. See
 
 ## Investment performance
 
-The Capital Pool contract can be verified on-chain. Anyone can view the crypto assets held in the pool.
+The Capital Pool contract can be verified onchain. Anyone can view the crypto assets held in the pool.
 * [Capital Pool Address](https://etherscan.io/address/0xcafeaBED7e0653aFe9674A3ad862b78DB3F36e60): 0xcafeaBED7e0653aFe9674A3ad862b78DB3F36e60
 
 ## Lido Finance rewards history

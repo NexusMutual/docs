@@ -29,12 +29,12 @@ An in-depth review of the Nexus Mutual protocol:
 * [The Token Model](/protocol/nxm-token/token-model)
 * [The Capital Pool](/protocol/capital-pool/)
 * [Tokenized cover, features](/protocol/cover)
-* [Integrations and commissions](/protocol/integrations)
-* [Dynamic pricing](protocol/pricing)
+* [Integrations](/protocol/integrations)
+* [Pricing](protocol/pricing)
 * [Capacity](/protocol/capacity)
 * [NXM staking](/protocol/staking/)
 * [Staking pools](/protocol/staking/staking-pools)
-* [Claims assessment](/protocol/claims-assessment)
+* [Claim assessment](/protocol/claims-assessment)
 
 ## Governance
 

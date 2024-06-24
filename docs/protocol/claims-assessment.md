@@ -2,9 +2,11 @@
 sidebar_position: 4.3
 ---
 
-# Claims Assessment
+# Claim Assessment
 
-When a loss event occurs, members who held active cover can submit a claim. Once a claim is submitted, members can stake NXM and participate as a claim assessor, who reviews the validity of a submitted claim.
+When a loss event occurs, members who held active cover can submit a claim. Once a claim is submitted, members can stake NXM and participate as a claim assessor, who reviews the validity of a submitted claim. 
+
+To date, members have approved and paid $18M+ in claims to people impacted by loss events.
 
 Across the current - and any future - cover products, there are two different claim types.
 
@@ -14,15 +16,14 @@ Across the current - and any future - cover products, there are two different cl
 
 The individual claim process applies for the following cover products:
 * [Protocol Cover](/overview/cover-products/protocol-cover)
-* [Custody Cover](/overview/cover-products/custody-cover)
 * [ETH Staking Cover](/overview/cover-products/eth-slashing-cover)
-* [Excess Cover](/overview/cover-products/quota-share-cover)
+* [Quota Share Cover](/overview/cover-products/quota-share-cover)
 
 For individual claims, cover holders can submit claims with supporting proof of loss and details about their loss. These claims are reviewed by assessors on an individual basis to determine the validity of each claim that is filed.
 
 ### Group claims
 
-The group claim process applies for [Yield Token Cover](/overview/cover-products/yield-token-cover). When a depeg event occurs, the Advisory Board triggers a group claim event through an on-chain governance proposal. A group claim outcome determines if one event was valid. These claims are not assessed on an individual basis.
+The group claim process applies for our since deprecated [Yield Token Cover](/overview/cover-products/yield-token-cover) product. For future products, a group claim can apply if a loss is assessed on a group basis. If such a loss event were to occur, the Advisory Board would trigger a group claim event through an onchain governance proposal. A group claim outcome would determines if one event was valid. These claims would not be assessed on an individual basis.
 
 ## Claim process
 

@@ -4,7 +4,7 @@ sidebar_position: 3.9
 
 # Pricing
 
-Previously, an off-chain pricing module was used for cover products. This model has been sunset and pricing has now moved on-chain, with a dynamic pricing model that determines the price of cover products.
+Previously, an offchain pricing module was used for cover products. This model has been sunset and pricing has now moved onchain, with a dynamic pricing model that determines the price of cover products.
 
 When a cover product is added to a staking pool, the price starts at the initial price and decreases over time toward the target price set by each staking pool. The initial price for each cover product is determined by the Advisory Board and the target price is set by members running staking pools, who are referred to as staking pool managers.
 

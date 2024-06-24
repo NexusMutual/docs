@@ -38,9 +38,9 @@ See the [Membership](/overview/membership) page for more information.
 
 ### Will I get a notification when the membership process has been completed?
 
-We do not send out any notifications when your membership is complete. To respect the privacy of our users, we do not send out email or SMS notifications when the membership process has been completed.
+Yes, once your KYC has completed you will receive an email notification to the email you used to register as a member.
 
-If more than 48 hours has passed and your membership still hasn't gone through, please reach out in the [Open a Ticket channel](https://discord.gg/nexusmutual) in the Nexus Mutual Discord.
+If more than 24 hours has passed and your membership still hasn't gone through, please reach out through the [Nexus Mutual contact forum](https://nexusmutual.io/contact).
 
 ## Cover products
 
@@ -50,7 +50,7 @@ Nexus Mutual provides a variety of cover products including [Protocol Cover](/ov
 
 For a full list of Nexus Mutual's cover products, see the [Cover Products](/overview/cover-products/) page.
 
-### Can I buy cover for assets in wallets other than my whitelisted address?
+### Can I buy cover for assets in wallets other than my registered address?
 
 Yes, you can. You need to buy cover using the Ethereum address you used to sign up for membership (i.e. your registered membership address). Cover is purchased with that address but you can protect assets in other wallets.
 If you suffer a loss of funds and need to file a claim, you will need to submit proof of loss, which differs for each [cover product](/overview/cover-products/).
@@ -67,13 +67,13 @@ If you're interested in having your protocol reviewed for a potential listing in
 
 ### Have any claims been paid?
 
-To date, members have paid more than $18m to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralised custodians.
+To date, members have paid $18M+ to people who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralised custodians.
 
 To learn more, see the [Claims History section](overview/claims-history/) of the documentation.
 
 ### How do I know my claim will be paid?
 
-The Claim Assessment process is designed to prevent anyone from submitting fraudulent votes. The claims process is battled-tested and has been used to review and approve more than $18m in claims to date.
+Our Claim Assessment process is designed to prevent anyone from submitting fraudulent votes. The claims process is battled-tested and has been used to review and approve $18M+ in claims to date.
 
 Because members have to stake NXM to participate in the Claim Assessment process, they risk having their stake burned if they vote fraudulently. See the [Claim Assessment](/protocol/claims-assessment#fraudulent-votes) section for more details on the security of the claims process.
 

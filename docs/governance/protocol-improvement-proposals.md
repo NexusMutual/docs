@@ -4,7 +4,7 @@ sidebar_position: 4.6
 
 # Nexus Mutual Protocol Improvement Proposals
 
-An Nexus Mutual Protocol Improvement Proposal (NMPIP) is a proposal to signal or enact change to the Nexus Mutual protocol. These proposals are used to engage with the community, reach consensus, and enact proposals if approved through an on-chain vote.
+An Nexus Mutual Protocol Improvement Proposal (NMPIP) is a proposal to signal or enact change to the Nexus Mutual protocol. These proposals are used to engage with the community, reach consensus, and enact proposals if approved through an onchain vote.
 
 Members can post, discuss, and vote on proposals that fall into one of the following categories. 
 
@@ -23,7 +23,7 @@ The Advisory Board members provide a recommended outcome for each proposal via a
 
 ## Critical decisions
 
-In extreme circumstances, members can create an NMPIP and hold an on-chain vote to decide if Nexus Mutual should make changes to the Advisory Board, stop cover purchases, or wind up and shut down. 
+In extreme circumstances, members can create an NMPIP and hold an onchain vote to decide if Nexus Mutual should make changes to the Advisory Board, stop cover purchases, or wind up and shut down. 
 
 Proposals to replace an Advisory Board member have the following quorum requirements:
 * Regular quorum (15% of total NXM supply)
@@ -75,7 +75,7 @@ When you are ready to write an NMPIP, you should include the following informati
 **Proposal status**. Depending on what stage your proposal is in, you must include:
 * **Stage**. One of the following should be added: 1) Open for Comment, 2) Closed, 3) Open for voting, 4) Accepted, or 5) Rejected.
   * If you choose to conduct a signaling vote using Snapshot, please update status to Signaling Vote and link to that vote. Signaling votes can be used but are not required.
-* If it is in the open for vote stage, add the link to the on-chain proposal
+* If it is in the open for vote stage, add the link to the onchain proposal
 
 Other sections may be added, but the above should be outlined in any NMPIP proposal.
 
@@ -88,15 +88,15 @@ NMPPs can be in the open for comment stage for longer periods of time, but there
 ### 4. Work with Advisory Board to whitelist proposal
 
 
-Members who post an NMPIP that has been active for at least 14 days can request the Advisory Board to review and whitelist a proposal on-chain.
+Members who post an NMPIP that has been active for at least 14 days can request the Advisory Board to review and whitelist a proposal onchain.
 
 The Advisory Board will categorize the NMPIP, assign a proposal number, and set the total NXM token rewards to be shared among those participating in the vote.
 
 **Note**: this step does not apply to critical decision votes. 
 
-### 5. On-chain vote
+### 5. Onchain vote
 
-Once a vote has been whitelisted and transitioned on-chain, members can vote on the proposal. On-chain votes are open for three days before they close and the results are finalized.
+Once a vote has been whitelisted and transitioned onchain, members can vote on the proposal. Onchain votes are open for three days before they close and the results are finalized.
 
 #### NXM redemption, transfer lock
 

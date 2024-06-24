@@ -6,15 +6,25 @@ sidebar_position: 1.7
 
 The Nexus Mutual protocol provides the infrastructure for members to build risk management businesses.
 
-Members with real world risk and pricing expertise can work with the product team to offer new cover products that expand the mutual’s offerings to include real world cover products.
+Members with real world risk and pricing expertise can work with the product team to offer new cover products that expand the Mutual’s offerings to include real world cover products.
 
 ## The Retail Mutual Cover
 
 In July 2023, Nexus Mutual announced their strategic partnership with InShare, a specialist in alternative risk transfer and mutuals. InShare, acting as a representative for a membership organization of independent retail businesses, is working with Nexus Mutual to expand capacity and cover more than 5,000 small independent business owners in the UK.
 
-With this partnership, Nexus Mutual became the first to use on-chain capital to cover excess losses for a traditional discretionary mutual. In traditional markets, there is a severe shortage of capital to offset various underwriting risks. By working with Nexus Mutual, InShare can support their client and protect more retail businesses across the UK against small business risks such as fire, theft and accidental damage.
+With this partnership, Nexus Mutual became the first to use onchain capital to cover excess losses for a traditional discretionary mutual. In traditional markets, there is a severe shortage of capital to offset various underwriting risks. By working with Nexus Mutual, InShare can support their client and protect more retail businesses across the UK against small business risks such as fire, theft and accidental damage.
 
 To learn more, read the announcement on the [Nexus Mutual blog](https://nexusmutual.io/blog/nexus-mutual-expands-cover-capacity-in-the-uk-with-on-chain-capital).
+
+## Cover Re Deal
+
+In November 2023, Hugh Karp [raised a proposal on the governance forum](https://forum.nexusmutual.io/t/nmpip-grant-advisory-board-the-power-to-enter-into-investment-and-retrocession-agreement-with-cover-re/1315/1) to enter into a two-phase deal with [Cover Re ("Re")](https://re.xyz/). This proposal outlined a $15M combined investment and retrocession deal.
+
+After discussion on the forum, this proposal transitioned to an [onchain vote](https://app.nexusmutual.io/governance/view?proposalId=212), where members voted to grant the Advisory Board the authority to enter into the Cover Re deal. Through the Cover Re deal, the Mutual will generate premiums from the investment and from the retrocession, where the Mutual's capital will be used to underwrite real world risk.
+
+The Foundation worked with the Re team to execute the first phase of the deal and the investment went live in May 2024. This deal was covered by CoinDesk in the article "[RWA Platform Re Debuts Tokenized Reinsurance Fund on Avalanche with $15M Commitment from Nexus Mutual](https://www.coindesk.com/business/2024/05/14/rwa-platform-re-debuts-tokenized-reinsurance-fund-on-avalanche-with-15m-commitment-from-nexus-mutual/)."
+
+Phase 2 (the retrocession) is expected to go live in Q3/Q4 2024. Keep an eye on the governance forum for further updates.
 
 ## Product development
 

@@ -10,17 +10,27 @@ Organizations that run ETH validators and help secure the Ethereum network are e
 
 When you run ETH validators and have active ETH Slashing Cover, you are protected against losses that occur during the cover period where one or more of the covered validators incur penalties greater than the deductible in any continuous 40 day period.
 
-## Cover wording
+Nexus Mutual offers two ETH slashing products:
+* ETH Slashing Cover
+* ETH Slashing Umbrella Cover
+
+## ETH Slashing Cover wording
 
 For more information, read the full terms and conditions of [Nexus Mutual’s ETH Slashing Cover](https://api.nexusmutual.io/ipfs/QmWepFbtMYSzJt22ddF1CK9PwbrYgiLk9qJjryDrgpGuus).
 
 Nexus Mutual’s claim assessors use this cover wording as a reference when considering any claim.
 
+## ETH Slashing Umbrella Cover
+
+For more information, read the full terms and conditions of Nexus Mutual's [ETH Slashing Umbrella Cover](https://api.nexusmutual.io/ipfs/QmQx2H9A51SARNc4W8Ta2D2woXv2ebkUGZMC5HZoQW8TUX)
+
+Nexus Mutual’s claim assessors use this cover wording as a reference when considering any claim.
+
 ### Proof of loss
 
-When an organization purchases ETH Slashing Cover, they provide the validator numbers they want covered in a csv file, which is stored on IPFS.
+When an organization purchases ETH Slashing Cover, they provide the validator numbers they want covered in a csv file and that list is stored on IPFS.
 
-If a validator, or validators, suffer penalties or missed rewards, they will provide the list of impacted validators and the corresponding loss for each validator.
+If a validator, or validators, suffer penalties, they will provide the list of impacted validators and the corresponding loss for each validator.
 
 ## Claims process
 

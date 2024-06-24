@@ -29,7 +29,7 @@ Below are a list of audits conducted on Nexus Mutual's smart contracts in order 
 ### iosiro audits | May 2021 & June 2021
 
 [iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct a smart contract audit on:
-* [The stacked risk, on-chain MCR, and swap operator contracts](https://iosiro.com/audits/nexus-mutual-stacked-risk-on-chain-mcr-and-swap-operator-smart-contract-audit)
+* [The stacked risk, onchain MCR, and swap operator contracts](https://iosiro.com/audits/nexus-mutual-stacked-risk-on-chain-mcr-and-swap-operator-smart-contract-audit)
 * [The distributor smart contract](https://iosiro.com/audits/nexus-mutual-distributor-smart-contract-audit)
 * [The emergency response smart contract](https://iosiro.com/audits/nexus-mutual-emergency-response-smart-contract-audit)
 
@@ -51,7 +51,7 @@ Nexus Mutual works to ensure the smart contract system is safe and secure. Regul
 
 ### Security for RAMM launch
 
-Pending a successful on-chain governance vote, the RAMM will launch in late November. At launch, the Engineering team will employ the following security measures to ensure the launch is closely monitored:
+Pending a successful onchain governance vote, the RAMM will launch in late November. At launch, the Engineering team will employ the following security measures to ensure the launch is closely monitored:
 * **Implementing circuit breakers in RAMM contract.** The RAMM contract will be deployed with circuit breakers in the code, which will limit the maximum amount of ETH that can be withdrawn and the maximum amount of NXM that can be minted via capital contributions over a defined period of time. The limits will be progressively raised over time, after careful monitoring of the system.
 * **Active smart contract monitoring with Tenderly alerts**. The Engineering team uses Tenderly alerts to monitor for certain events within the protocol. At launch, the Engineering team will have enhanced monitoring in place for the RAMM contracts and any associated events within the protocol to ensure they can closely monitor the smart contracts.
 * **Emergency pause functionality for RAMM contract**. The [Advisory Board](/governance/#advisory-board) has the power to enact an emergency pause on the RAMM contract should any malicious activity take place, which will prevent any minting or redeeming from occurring that would result in a loss of value for members. This power would only be used in an extreme situation and serves as a last resort.

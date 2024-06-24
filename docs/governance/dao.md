@@ -86,7 +86,7 @@ This team was originally incorporated with the Community team but has a proposal
 
 The Investment Committee provides in-depth proposals and works to provide members with the information they need to invest Nexus Mutual's assets in a way that maximizes the return without negatively impacting the Mutual's ability to pay claims on a timely basis.
 
-The team reviews investment opportunities and writes detailed investment strategy proposals for the governance forum, where they provide members with the potential benefits, risks, and considerations necessary to make an informed decision ahead of on-chain governance votes.
+The team reviews investment opportunities and writes detailed investment strategy proposals for the governance forum, where they provide members with the potential benefits, risks, and considerations necessary to make an informed decision ahead of onchain governance votes.
 
 #### Team members
 

@@ -12,7 +12,7 @@ In addition, members determine how DAO treasury funds are allocated and spent. T
 
 Every member who joins Nexus Mutual has voting power equal to one vote plus the sum total of their NXM tokens, which applies to protocol governance.
 
-<p><code>On-chain voting power = 1 + MIN (5% of NXM supply, NXM holdings)</code></p>
+<p><code>Onchain voting power = 1 + MIN (5% of NXM supply, NXM holdings)</code></p>
 
 A single member’s voting power is capped at 5% of the total NXM supply. This is designed to prevent a large holder from having undue influence in protocol governance.
 
@@ -29,7 +29,7 @@ The Advisory Board has power in limited circumstances and is primarily there to 
 
 #### Advisory Board Members
 
-The Advisory Board requires a quorum of three out of five members to provide their recommendation on proposals in the Upgrades, Technical Changes, Use of Funds or Critical Decisions on-chain governance categories. If members grant the Advisory Board approval to make smart contract upgrades, Advisory Board members can enact changes through the <code>Release New Smart Contract Code</code> on-chain governance category as long as the quorum of three out of five members is met.
+The Advisory Board requires a quorum of three out of five members to provide their recommendation on proposals in the Upgrades, Technical Changes, Use of Funds or Critical Decisions onchain governance categories. If members grant the Advisory Board approval to make smart contract upgrades, Advisory Board members can enact changes through the <code>Release New Smart Contract Code</code> onchain governance category as long as the quorum of three out of five members is met.
 
 Below is the list of elected Advisory Board members:
 * [Roxana Danila](https://twitter.com/roxdanila)
@@ -101,4 +101,4 @@ These votes should be open for a minimum of three days.
 
 Learn more about NMPPs and NMDPs in the following pages. 
 
-***Disclaimer***: *While all care has been taken there may be some discrepancies between the Governance documentation and the functioning of the on-chain governance smart contracts. In the event a discrepancy exists in this documentation, the smart contract rules apply.*
+***Disclaimer***: *While all care has been taken there may be some discrepancies between the Governance documentation and the functioning of the onchain governance smart contracts. In the event a discrepancy exists in this documentation, the smart contract rules apply.*
