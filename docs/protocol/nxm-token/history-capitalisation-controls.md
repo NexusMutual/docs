@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.4
+sidebar_position: 5.3
 ---
 
 # History of Capitalisation Controls

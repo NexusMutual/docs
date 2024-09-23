@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.6
+sidebar_position: 5.5
 ---
 
 # Investments
@@ -40,10 +40,24 @@ Members signaled their support via Snapshot and this proposal was transitioned t
 
 The 6,224 WETH was staked in Kiln and is currently accuring staking rewards. See [Avantgarde's latest post](https://forum.nexusmutual.io/t/nmpip-196-restart-enzyme-vault-start-staking-through-kiln-6-624-weth/1174/5?u=bravenewdefi) on the governance forum for a status update.
 
+## Investment in Chorus One through Stakewise V3 via the Nexus Mutual Enzyme vault
+
+In June 2024, the Avantgarde team shared an [RFC](https://forum.nexusmutual.io/t/rfc-stake-idle-eth-on-enzyme-vault-to-chorus-one-through-stakewise-v3/1461) on the forum, where they outlined a proposal to allocate the remaining idle WETH held in the Nexus Mutual Enzyme vault into Chorus One's Stakewise V3 vault. The original RFC they posted received feedback from community members and the Investment Committee to put this RFC up for a signalling vote to determine members' appetite to allocate to Chorus One since another proposal to allocate to Etherfi's weETH was also active at this time. After the [signalling vote concluded](https://snapshot.org/#/community.nexusmutual.eth/proposal/0x376bda4fef544f42799604627791be993d4a050ad49d415c284cc3e2cd6e8b9c), the result showed that members had signalled support for allocating 4,989 ETH to Chorus One via Stakewise V3.
+
+A [joint NMPIP was posted on forum by the Investment Committee](https://forum.nexusmutual.io/t/nmpip-228-allocate-6-575-eth-to-chorus-one-and-etherfi/1480/1), which outlined allocating 4,989 ETH to Chorus One via Stakewise V3 and 1,586 ETH to EtherFi by acquiring weETH if NMPIP 228 was approved. The NMPIP went up for vote over a three-day period and members voted to approve the allocation. Subsequently, the allocation was executed by the Avantgarde team in the [Nexus Mutual Enzyme Vault](https://app.enzyme.finance/vault/0x27f23c710dd3d878fe9393d93465fed1302f2ebd). 
+
+## Investment in Etherfi's weETH via the Nexus Mutual Enzyme vault
+
+In June 2024, the Etherfi team share an [RFC](https://forum.nexusmutual.io/t/rfc-stake-idle-eth-on-enzyme-vault-to-ether-fi/1464) on the forum, where they outlined a proposal to allocate the remaining idle WETH held in the Nexus Mutual Enzyme vault to Etherfi via weETH. The original RFC they posted received feedback from community members and the Investment Committee to put this RFC up for a signalling vote to determine members' appetite to allocate to Etherfi via weETH since another proposal to Chorus One via Stakewise V3 was also active at this time. After the [signalling vote concluded](https://snapshot.org/#/community.nexusmutual.eth/proposal/0x376bda4fef544f42799604627791be993d4a050ad49d415c284cc3e2cd6e8b9c), the result showed that members had signalled support for allocating 1,586 ETH to Etherfi via weETH.
+
+A [joint NMPIP was posted on forum by the Investment Committee](https://forum.nexusmutual.io/t/nmpip-228-allocate-6-575-eth-to-chorus-one-and-etherfi/1480/1), which outlined allocating 4,989 ETH to Chorus One via Stakewise V3 and 1,586 ETH to EtherFi by acquiring weETH if NMPIP 228 was approved. The NMPIP went up for vote over a three-day period and members voted to approve the allocation. Subsequently, the allocation was executed by the Avantgarde team in the [Nexus Mutual Enzyme Vault](https://app.enzyme.finance/vault/0x27f23c710dd3d878fe9393d93465fed1302f2ebd). 
+
 ## Investment performance
 
 The Capital Pool contract can be verified onchain. Anyone can view the crypto assets held in the pool.
 * [Capital Pool Address](https://etherscan.io/address/0xcafeaBED7e0653aFe9674A3ad862b78DB3F36e60): 0xcafeaBED7e0653aFe9674A3ad862b78DB3F36e60
+
+You can also find the [Investment Committee's monthly updates on the Capital Pool investment performance](https://forum.nexusmutual.io/c/investment/22) on the forum.
 
 ## Lido Finance rewards history
 

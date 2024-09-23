@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4.3
+sidebar_position: 6.2
 ---
 
 # Claim Assessment
@@ -23,7 +23,7 @@ For individual claims, cover holders can submit claims with supporting proof of 
 
 ### Group claims
 
-The group claim process applies for our since deprecated [Yield Token Cover](/overview/cover-products/yield-token-cover) product. For future products, a group claim can apply if a loss is assessed on a group basis. If such a loss event were to occur, the Advisory Board would trigger a group claim event through an onchain governance proposal. A group claim outcome would determines if one event was valid. These claims would not be assessed on an individual basis.
+The group claim process applies for our since deprecated Yield Token Cover product. For future products, a group claim can apply if a loss is assessed on a group basis. If such a loss event were to occur, the Advisory Board would trigger a group claim event through an onchain governance proposal. A group claim outcome would determines if one event was valid. These claims would not be assessed on an individual basis.
 
 ## Claim process
 

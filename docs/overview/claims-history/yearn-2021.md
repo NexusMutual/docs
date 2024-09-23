@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2.3
+sidebar_position: 3.2
 ---
 
 # Yearn yDAI Hack | February 2021

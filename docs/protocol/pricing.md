@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.9
+sidebar_position: 5.8
 ---
 
 # Pricing

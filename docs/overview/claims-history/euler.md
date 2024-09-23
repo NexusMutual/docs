@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 3.9
 ---
 
 # Euler Finance Exploit | March 2023

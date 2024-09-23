@@ -1,6 +1,6 @@
 ---
 sidebar_label: Capital Pool
-sidebar_position: 3.5
+sidebar_position: 5.4
 ---
 
 # Capital Pool

@@ -1,5 +1,5 @@
 ---
-Sidebar_position: 4.5
+Sidebar_position: 8
 ---
 
 # Governance
@@ -35,7 +35,7 @@ Below is the list of elected Advisory Board members:
 * [Roxana Danila](https://twitter.com/roxdanila)
 * [Hugh Karp](https://twitter.com/HughKarp)
 * [Rei Melbardis](https://twitter.com/Rei_Melb)
-* [Nick Munoz-McDonald](https://github.com/NickErrant)
+* [Lee McClelland](https://www.linkedin.com/in/lee-j-mcclelland/)
 * [Graeme Thurgood](https://twitter.com/GraemeThurgood)
 
 #### Emergency Pause Powers
@@ -61,6 +61,8 @@ Nexus Mutual members can start discussions on the [Nexus Mutual governance forum
 Members can create a [Nexus Mutual Protocol Improvement Proposal (NMPIP)](/governance/protocol-improvement-proposals) to share on the forum and discuss with other members. These proposals can generally be classified in one of the two following categories.
 * [Upgrades, Technical Changes, Use of Funds](/governance/protocol-improvement-proposals#upgrades-technical-changes-use-of-funds)
 * [Critical Decisions](/governance/protocol-improvement-proposals#critical-decisions)
+
+To learn more about the NMPIP process, [see the Governance Hub on the Nexus Mutual DAO website](https://nexusmutualdao.io/governance-hub).
 
 #### Protocol improvement proposal quorum parameters for Member roles
 * Quorum (Regular Resolutions): 15% of total NXM supply
@@ -88,10 +90,12 @@ Members can still use their NXM to stake and delegate to a staking pool and part
 
 ### DAO proposals, votes
 
-Members can create a [Nexus Mutual DAO Proposal (NMDP)](/governance/dao-proposals) to share on the forum and discuss with other members. These proposals can generally be classified in one of the three following categories.
-* [Grant request](/governance/dao-proposals#grant-request)
-* [DAO team creation request](/governance/dao-proposals#dao-team-creation-request)
-* [DAO team funding request](/governance/dao-proposals#dao-team-funding-request)
+Members can create a [Nexus Mutual DAO Proposal (NMDP)](https://nexusmutualdao.io/governance-hub/the-nmdp-process-templates) to share on the forum and discuss with other members. These proposals can generally be classified in one of the three following categories.
+* **Grant request**. Members that wish to contribute to the DAO by working on single-purpose projects, providing short-term services, building tools for members, or other means can submit a grant-specific NMDP. The required information for a grant-specific NMDP is included in the NMDP template entry.
+* **DAO team creation request**. If a member, or group of members, believe another team can provide long-term value to the DAO, protocol, and members on a whole, they can write and post a team creation request NMDP. The required information for a team creation request NMDP is included in the NMDP template entry. Learn more about the process on the Nexus Mutual DAO page.
+* **DAO team funding request**. If an established team is nearing the end of their funding period, they can create a team funding request NMDP. The required information for a team funding request NMDP is included in the NMDP template entry. Learn more about the process on the Nexus Mutual DAO page.
+
+To learn more about the NMDP process and governance, [see the Governance Hub on the Nexus Mutual DAO website](https://nexusmutualdao.io/governance-hub).
 
 ### Signaling votes
 
@@ -102,3 +106,7 @@ These votes should be open for a minimum of three days.
 Learn more about NMPPs and NMDPs in the following pages. 
 
 ***Disclaimer***: *While all care has been taken there may be some discrepancies between the Governance documentation and the functioning of the onchain governance smart contracts. In the event a discrepancy exists in this documentation, the smart contract rules apply.*
+
+## Additional DAO Related Resources
+
+The DAO teams maintain the [Governance Hub on the DAO website](https://nexusmutualdao.io/governance-hub). The Governance Hub is an all-in-one resource for all information about governance, DAO multisigs, treasury holdings, and more.

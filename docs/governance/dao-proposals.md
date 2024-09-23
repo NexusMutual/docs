@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4.7
+sidebar_position: 8.2
 ---
 
 # Nexus Mutual DAO Proposals

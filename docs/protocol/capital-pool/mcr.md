@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.7
+sidebar_position: 5.6
 ---
 
 # Minimum Capital Requirement

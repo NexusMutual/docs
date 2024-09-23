@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4.1
+sidebar_position: 6
 ---
 
 # Staking
