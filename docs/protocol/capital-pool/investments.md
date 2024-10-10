@@ -55,7 +55,7 @@ A [joint NMPIP was posted on forum by the Investment Committee](https://forum.ne
 ## Investment performance
 
 The Capital Pool contract can be verified onchain. Anyone can view the crypto assets held in the pool.
-* [Capital Pool Address](https://etherscan.io/address/0xcafeaBED7e0653aFe9674A3ad862b78DB3F36e60): 0xcafeaBED7e0653aFe9674A3ad862b78DB3F36e60
+* [Capital Pool Address](https://etherscan.io/address/0xcafeaf6ea90cb931ae43a8cf4b25a73a24cf6158): 0xcafeaf6eA90CB931ae43a8Cf4B25a73a24cF6158
 
 You can also find the [Investment Committee's monthly updates on the Capital Pool investment performance](https://forum.nexusmutual.io/c/investment/22) on the forum.
 
