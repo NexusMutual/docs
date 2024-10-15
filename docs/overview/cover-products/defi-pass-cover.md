@@ -20,7 +20,7 @@ When you purchase a DeFi Pass, you will specify the wallet address you want to p
 
 ## Covered Risks: Base DeFi Pass
 
-When you have crypto assets deposited in Aerodrome, Beefy, Compound v3, ExtraFi, Moonwell, Morpho, Overnight and Uniswap v3 on Base, the Base DeFi Pass Cover provides all-in-one, flexibile protection that safeguards your assets against the following risks:
+When you have crypto assets deposited in Aerodrome, Arcadia, Beefy, Compound v3, ExtraFi, Moonwell, Morpho, Overnight and Uniswap v3 on Base, the Base DeFi Pass Cover provides all-in-one, flexibile protection that safeguards your assets against the following risks:
 * Smart contract exploits/hacks
 * Severe oracle failure/manipulation
 * Severe liquidation failure
