@@ -16,7 +16,11 @@ Across the current - and any future - cover products, there are two different cl
 
 The individual claim process applies for the following cover products:
 * [Protocol Cover](/overview/cover-products/protocol-cover)
-* [ETH Staking Cover](/overview/cover-products/eth-slashing-cover)
+* [Bundled Protocol Cover](/overview/cover-products/bundled-protocol-cover)
+* [DeFi Pass Cover](/overview/cover-products/defi-pass-cover)
+* [Native Protocol Cover](/overview/cover-products/native-protocol-cover)
+* [Fund Portfolio Cover](/overview/cover-products/fund-portfolio-cover)
+* [ETH Slashing Cover](/overview/cover-products/eth-slashing-cover)
 * [Quota Share Cover](/overview/cover-products/quota-share-cover)
 
 For individual claims, cover holders can submit claims with supporting proof of loss and details about their loss. These claims are reviewed by assessors on an individual basis to determine the validity of each claim that is filed.
