@@ -19,8 +19,8 @@ Members of the Mutual have paid out $18M+ to cover holders who suffered a loss d
 |  2021 |              $2,716,958.11 |
 |  2022 |              $6,615,394.75 |
 |  2023 |              $8,883,212.99 |
-|  2024 |                  $5,027.91 |
-| Total |             $18,254,313.86 |
+|  2024 |                  $6,895.07 |
+| Total |             $18,256,181.02 |
 
 ## Auditing, reviewing past claims
 
