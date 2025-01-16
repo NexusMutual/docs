@@ -44,12 +44,14 @@ To become a member, you will need to verify your identity.
 
 **Unfortunately, the Nexus Mutual DAO cannot accept members from the following jurisdictions.** We are working hard to reduce this list in the future.
 
-| China &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Japan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Russian Federation  |
-|:-------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------|:--------------------|
-| Democratic People's Republic Korea                                                               | Mali                                                                                | South Sudan         |
-| India                                                                                            | Mexico                                                                              | Syrian Arab Republic|
-| Iraq                                                                                             | Myanmar                                                                             | Vanuatu             |
-| Islamic Republic of Iran                                                                         | Republic of Korea                                                                   | Yemen               |
+Restricted|Countries|List
+:-----:|:-----:|:-----:
+China|Islamic Republic of Iran|Republic of Korea
+Democratic People's Republic Korea|Japan|Russian Federation
+Democratic Republic of the Congo|Lebanon|South Sudan
+Haiti|Mali|Syrian Arab Republic
+India|Mexico|Vanuatu
+Iraq|Myanmar|Yemen
 
 ## Participating within the protocol, contributing to the Mutual
 
