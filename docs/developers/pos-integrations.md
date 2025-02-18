@@ -40,14 +40,14 @@ Set up the ethers provider and get the user to connect their wallet.
 
 #### Step 3: Fetch a quote
 
-Use `getQuoteAndBuyCoverInputs` to retrieve a quote for the desired cover. Provide all the necessary parameters including the product ID, cover amount (in wei), cover period (in days), cover asset (ETH or DAI), and the buyer’s address. See the [products.json section of the SDK](https://sdk.nexusmutual.io/data/products.json) to see the total list of individual cover products the Mutual offers.
+Use `getQuoteAndBuyCoverInputs` to retrieve a quote for the desired cover. Provide all the necessary parameters including the product ID, cover amount (in wei), cover period (in days), cover asset (ETH, USDC or cbBTC), and the buyer’s address. See the [products.json section of the SDK](https://sdk.nexusmutual.io/data/products.json) to see the total list of individual cover products the Mutual offers.
 
 ```
 const response = await nexusSdk.getQuoteAndBuyCoverInputs(
   XX, // product id for Bundled Protocol Cover or Protocol Cover
   ethers.utils.parseEther('10').toString(), // cover amount (in wei) denominated in the asset below
   28, // coverPeriod (in days: min 28 days, max 365 days)
-  CoverAsset.ETH, // cover asset - ETH, DAI, or USDC
+  CoverAsset.ETH, // cover asset - ETH, USDC or cbBTC
   wallet.address, // coverBuyerAddress - address of the end user buying the cover, that will receive the cover NFT
 );
 ```
@@ -61,7 +61,7 @@ const response = await nexusSdk.getQuoteAndBuyCoverInputs(
   XX, // product id for Bundled Protocol Cover or Protocol Cover
   ethers.utils.parseEther('10').toString(), // cover amount (in wei) denominated in the asset below
   28, // coverPeriod (in days: min 28 days, max 365 days)
-  CoverAsset.ETH, // cover asset - ETH, DAI, or USDC
+  CoverAsset.ETH, // cover asset - ETH, USDC or cbBTC
   wallet.address, // coverBuyerAddress - address of the end user buying the cover, that will receive the cover NFT
   );
 ```
