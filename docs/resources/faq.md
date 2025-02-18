@@ -77,7 +77,7 @@ Our Claim Assessment process is designed to prevent anyone from submitting fraud
 
 Because members have to stake NXM to participate in the Claim Assessment process, they risk having their stake burned if they vote fraudulently. See the [Claim Assessment](/protocol/claims-assessment#fraudulent-votes) section for more details on the security of the claims process.
 
-### When is loss of funds (in DAI or ETH) determined for a claim?
+### When is loss of funds determined for a claim?
 
 Loss is determined at different times for different cover types:
 * **Protocol Cover**. Loss is determined just before the time the loss of funds occurred.
@@ -144,7 +144,7 @@ Nexus Mutual and the NXM token were launched on 30 May 2019. You can read our [W
 
 The NXM token is not listed on exchanges and the Mutual does not expect to list NXM on exchanges in the future. Due to the nature of the token model and the requirement for tokens to belong to members only, any exchange listing would have to be bespoke.
 
-Tokens will be redeemable directly from within the Nexus Mutual user interface for ETH.
+NXM tokens can be redeemed directly from within the Nexus Mutual user interface for ETH.
 
 ### Can I transfer NXM tokens?
 
