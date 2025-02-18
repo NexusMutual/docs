@@ -6,7 +6,7 @@ sidebar_position: 5.7
 
 Members can buy cover products to protect against any of the supported risks. Cover capacity is sourced from one or more staking pools, depending on available capacity.
 
-To buy cover, members choose the product, cover amount in ETH, DAI or USDC, cover period length, and preferred slippage given that pricing is onchain. The cover fee can be paid in ETH, DAI, USDC or NXM.
+To buy cover, members choose the product, cover amount in ETH, USDC or cbBTC, cover period length, and preferred slippage given that pricing is onchain. The cover fee can be paid in ETH, USDC, cbBTC or NXM.
 
 After the cover is purchased, it is tokenized and represented as an NFT (ERC-721) that is held in the member's address.
 
