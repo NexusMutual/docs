@@ -5,7 +5,7 @@ sidebar_position: 5.1
 
 # NXM Token
 
-The NXM token is a governance and utility token backed by crypto assets held in the capital pool contract. When someone contributes ETH or DAI to the capital pool in the [Nexus Mutual user interface](https://app.nexusmutual.io/swap), NXM is minted and transferred to their wallet.
+The NXM token is a governance and utility token backed by crypto assets held in the capital pool contract. When someone contributes ETH, USDC or cbBTC to the Capital Pool in the [Nexus Mutual user interface](https://app.nexusmutual.io/swap), NXM is minted and transferred to their wallet.
 
 Members can custody and use NXM within the protocol to participate in:
 * **Onchain governance**. NXM holders use the token to vote in onchain governance, where members make critical decisions about protocol upgrades, capital pool investment allocations, and how capital pool assets are used. Learn more in the [Governance](/governance/) section.
