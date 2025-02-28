@@ -52,7 +52,7 @@ Redemptions and purchases were limited per transaction to 5% of the MCR.
 
 #### 3. Capital Pool liquidity
 
-The Capital Pool also needed to have enough liquidity in ETH to execute on the redemption. While this was not generally expected to be an issue, this occured temporarily if a large portion of the funds had been invested in non-ETH assets.
+The Capital Pool also needed to have enough liquidity in ETH to execute on the redemption. While this was not generally expected to be an issue, this occurred temporarily if a large portion of the funds had been invested in non-ETH assets.
 
 #### 4. Redemption price
 
