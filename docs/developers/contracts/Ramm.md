@@ -2,7 +2,7 @@
 sidebar_position: 9.7
 ---
 
-# Ramm
+# RAMM
 
 ## Overview
 

@@ -6,7 +6,7 @@ sidebar_position: 10.3
 
 ## Quick Summary
 
-Before diving into the details, here’s a **high-level overview** of what a staking pool manager does:
+Before diving into the details, here's a **high-level overview** of what a staking pool manager does:
 
 1. **Create a Staking Pool** → Set fees, add products, define capacity.
 2. **Monitor Cover Purchases** → Capacity is allocated automatically from active tranches.
@@ -67,7 +67,7 @@ $$
 ### Understanding Capacity & Utilization in NXM Terms
 
 - **The protocol reserves and tracks capacity in NXM terms**—this is the **unit of account** within the system.
-- When a **cover is purchased**, NXM is **reserved from the pool’s active tranches**.
+- When a **cover is purchased**, NXM is **reserved from the pool's active tranches**.
 - **Available capacity** is determined by the **NXM actively staked** in **valid tranches**.
 - **Utilized capacity** represents the **NXM currently backing active cover**.
 - **Once capacity is utilized, it remains locked** until the cover expires or is replaced.
@@ -82,53 +82,99 @@ $$
 
 ### How the Multiplier Affects Underwriting Capacity
 
-When a pool has **X amount of NXM staked**, it can **underwrite more than X NXM worth of cover**. This is due to the concept of **capacity multipliers**, which allow capital efficiency in staking.
+When a pool has **X amount of NXM staked**, it can **underwrite more than X NXM worth of cover**. This is due to the concept of **capacity multipliers** per product, which allow capital efficiency in staking.
 
-#### How is the Multiplier Determined?
+#### Two Types of Multipliers
 
-The **multiplier is set at the product level**, meaning different cover products can have different multipliers depending on risk factors.
+There are two distinct multipliers that affect a pool's underwriting capacity:
 
-- The protocol assigns a **multiplication factor** to a product, which determines how much **effective underwriting capacity** a pool has.
-- This means a pool with **10,000 NXM staked** can **underwrite 30,000 NXM worth of cover** if the product has a **3x multiplier**.
+1. **Product Capacity Multiplier (2x maximum)**: Applied to each product individually
+2. **Pool-Wide Weight Leverage (20x maximum)**: Applied to the total weight allocation across all products
+
+#### Maximum Capacity Multiplier per Product
+
+Each product has a **maximum capacity multiplier of 2x**. The **capacity reduction ratio** (`capacityReductionRatio`) adjusts this maximum multiplier based on product-specific configurations. For example, a `capacityReductionRatio` of 2000 (representing a **20% reduction**) decreases the multiplier to 1.6x.
+
+#### Retrieving the Capacity Reduction Ratio
+
+To obtain the `capacityReductionRatio` for a specific product, use the following function calls:
+
+```solidity
+uint16 productType = CoverProducts.getProduct(productId).productType;
+uint32 capacityReductionRatio = CoverProducts.getProductType(productType).capacityReductionRatio;
+```
+
+- Note `capacityReductionRatio` is in basis points (i.e. 2000 is 20%)
+
+#### Example Calculation
+
+- **Maximum Capacity Multiplier per Product:** **2x**
+- **Capacity Reduction Ratio:** **20%** (`capacityReductionRatio = 2000`)
+- **Effective Capacity Multiplier:** **1.6x** (2x - 20%)
+
+**Breakdown:**
+
+1. **Determine the Reduction:**
+
+   $$
+   \text{Reduction} = \frac{\text{capacityReductionRatio}}{10000} = \frac{2000}{10000} = 20\%
+   $$
+
+2. **Apply the Reduction to the Maximum Multiplier:**
+   $$
+   \text{Effective Capacity Multiplier} = 2x \times (1 - 0.20) = 1.6x
+   $$
+
+#### Pool-Wide Maximum Weight Leverage
+
+Across all products within a pool, there is an additional **maximum weight leverage cap of 20x**. This means that the **sum of all weights** assigned to products in the pool **cannot exceed 20x** the staked NXM, ensuring risk management and capital efficiency.
+
+#### Visualization: How Multipliers Work Together
+
+For a pool with 100 NXM staked:
+
+| Product   | Weight  | Capacity Reduction Ratio | Capacity | Capacity Multiplier | Total Capacity |
+| --------- | ------- | ------------------------ | -------- | ------------------- | -------------- |
+| 1         | 0.2     | 0% (0)                   | 20 NXM   | 2x                  | 40 NXM         |
+| 2         | 0.5     | 0% (0)                   | 50 NXM   | 2x                  | 100 NXM        |
+| 3         | 1.0     | 30% (3000)               | 70 NXM   | 1.4x                | 98 NXM         |
+| 4         | 1.0     | 0% (0)                   | 100 NXM  | 2x                  | 200 NXM        |
+| 5         | 1.0     | 0% (0)                   | 100 NXM  | 2x                  | 200 NXM        |
+| **Total** | **3.7** |                          |          |                     | **638 NXM**    |
+
+**How to read this table:**
+
+- **Weight**: The portion of staked NXM allocated to each product (can sum up to 20x)
+- **Capacity**: The amount of NXM allocated based on weight (Weight × Staked NXM)
+- **Capacity Multiplier**: The product-specific multiplier (max 2x, reduced by capacity reduction ratio)
+- **Total Capacity**: The actual underwriting capacity (Capacity × Capacity Multiplier)
 
 #### Key Formula for Effective Capacity:
 
 $$
-\text{Effective Underwriting Capacity} = \text{Staked NXM} \times \text{Multiplier}
+\text{Effective Underwriting Capacity} = \text{Staked NXM} \times \text{Weight} \times \text{Capacity Multiplier}
 $$
 
-For example:
+Where:
 
-- A pool stakes **20,000 NXM**.
-- The product has a **2.5x multiplier**.
-- **Total underwriting capacity = 20,000 × 2.5 = 50,000 NXM**.
+- **Capacity Multiplier** = 2x × (100% - capacityReductionRatio)
+- **Total Weight** across all products can be set up to 20x (MAX_TOTAL_WEIGHT)
 
-#### **Checking a Pool's Underwriting Capacity**
+#### Summary
 
-To see how much cover a pool can underwrite versus its staked NXM:
-
-```solidity
-uint poolCapacity = StakingPool.getPoolCapacity(poolId);
-```
-
-#### How to Check a Product’s Multiplier
-
-Managers can retrieve the multiplier for a product using:
-
-```solidity
-uint multiplier = CoverProducts.getProductMultiplier(productId);
-```
+- **Maximum Capacity Multiplier per Product**: Each product can have a maximum of **2x** capacity multiplier.
+- **Capacity Reduction Ratio**: A `capacityReductionRatio` of **2000** (20%) reduces the per-product capacity multiplier to **1.6x**.
+- **Pool-Wide Maximum Weight Leverage**: The total weight across all products in a pool is capped at **20x**.
+- **Combined Effect**: These two multipliers work together to determine the total underwriting capacity of your pool.
 
 #### Why is This Important for Managers?
 
-1. **Higher Multiplier = Higher Risk Exposure**
+Understanding how these multipliers work together helps you:
 
-   - If a claim is approved, the **NXM burn is based on the actual cover underwritten**.
-   - A pool **may have only 10,000 NXM staked**, but if it underwrites **30,000 NXM of cover**, the potential burn risk is much larger.
-
-2. **Utilization vs. Risk Management**
-   - Pools should **balance staking with risk exposure**.
-   - Higher multipliers **increase effective capacity**, but **also amplify potential losses in a claim scenario**.
+1. **Set optimal weights** for different products based on risk and return
+2. **Account for capacity reduction ratios** when planning your pool's capacity
+3. **Maximize capital efficiency** while staying within the protocol's risk parameters
+4. **Estimate actual underwriting capacity** more accurately across your product portfolio
 
 ---
 
@@ -178,7 +224,7 @@ When a **valid claim** is approved, a portion of the **staked NXM in the pool is
 
 #### How the Burn Amount is Calculated
 
-NXM burns are **proportional** to the **pool’s share of total risk exposure**:
+NXM burns are **proportional** to the **pool's share of total risk exposure**:
 
 $$ \text{Pool Burned NXM} = \frac{\text{Pool's Allocated Capacity for the Cover}}{\text{Total Allocated Capacity Across All Pools}} \times \text{Cover Payout} $$
 
@@ -190,7 +236,7 @@ This ensures that:
 
 #### How Much NXM Will Be Burned Per Staker?
 
-Each staker’s **NXM burn is proportional** to their **share of the total pool stake**:
+Each staker's **NXM burn is proportional** to their **share of the total pool stake**:
 
 $$ \text{Staker Burned NXM} = \frac{\text{Staker's Share of Pool Stake}}{\text{Total Staked in Pool}} \times \text{Pool Burned NXM} $$
 
@@ -232,17 +278,17 @@ $$
 
 ##### How to Check Pool Burn Risk:
 
-To check **total pool stake**:
+- Check pool utilization using the [capacity pools API](https://api.nexusmutual.io/v2/api/docs/#/Capacity/get_v2_capacity_pools__poolId_):
 
-```solidity
-uint totalPoolStake = StakingPool.getPoolStake(poolId);
-```
+  ```bash
+  GET https://api.nexusmutual.io/v2/capacity/pools/{poolId}
 
-To check a pool’s allocated capacity for a specific cover:
-
-```solidity
-uint allocatedCapacity = StakingPool.getAllocatedCapacity(poolId, coverId);
-```
+  {
+    "poolId": 22,
+    "utilizationRate": 4926,  // 49.26% utilization
+    ...
+  }
+  ```
 
 ---
 
@@ -250,7 +296,7 @@ uint allocatedCapacity = StakingPool.getAllocatedCapacity(poolId, coverId);
 
 1. **Identifies the staked NXM** allocated to the affected cover.
 2. **Calculates the required burn amount** based on the cover payout.
-3. **Burns NXM from the pool’s staked balance**, reducing the available capacity.
+3. **Burns NXM from the pool's staked balance**, reducing the available capacity.
 4. **Adjusts pool allocations** to reflect the new effective stake.
 
 ---
@@ -394,19 +440,91 @@ uint maxFee = stakingPool.getMaxPoolFee();
   - The tranche expiration unlocks their stake.
   - The governance voting lock is cleared.
 
----
-
 ### How do I as a staking pool manager adjust pricing?
 
-Call:
+To update the **target price** and **weights** for products in your staking pool, use:
 
 ```solidity
-StakingProducts.setProductTargetPrice(poolId, productId, newTargetPrice);
+StakingProducts.setProducts(uint poolId, StakedProductParam[] memory params);
 ```
 
-- This updates the **minimum price**, but actual pricing **still fluctuates** due to:
-  - **Price bumps** (small increases with capacity usage).
-  - **Price decay** (gradual reductions over time).
+#### Struct: `StakedProductParam`
+
+| Field                        | Type     | Description                                                      |
+| ---------------------------- | -------- | ---------------------------------------------------------------- |
+| `productId`                  | `uint24` | ID of the product being updated.                                 |
+| `recalculateEffectiveWeight` | `bool`   | Flag to indicate if the effective weight should be recalculated. |
+| `setTargetWeight`            | `bool`   | Flag to indicate if the target weight should be set.             |
+| `targetWeight`               | `uint8`  | **New target weight** (determines allocation).                   |
+| `setTargetPrice`             | `bool`   | Flag to indicate if the target price should be set.              |
+| `targetPrice`                | `uint96` | **New target price** of the product.                             |
+
+#### Steps to Adjust Pricing
+
+1. **Prepare an array of `StakedProductParam` structs**, setting:
+
+   - `productId` → The ID of the product to update.
+   - `setTargetPrice` → Set to `true` to update the target price.
+   - `targetPrice` → The **new target price** for the product.
+   - `setTargetWeight` → Set to `true` to update the target weight.
+   - `targetWeight` → Adjust how much stake is allocated to this product.
+   - `recalculateEffectiveWeight` → Set to `true` to recalculate effective weights.
+
+2. Retrieve the minimum product price before setting pool `minPrice`:
+   - Each product has a **minimum price** set globally.
+   - The **pool's `minPrice` must not be lower than the product's minimum price**.
+   - Retrieve the product's min price using:
+
+```solidity
+uint16 minPrice = CoverProducts.getProduct(productId).minPrice;
+```
+
+To get the **minimum prices** for multiple products:
+
+```solidity
+uint[] minPrices = CoverProducts.getMinPrices(productIds);
+```
+
+3. Call `setProducts` to update the staking pool settings:
+
+```solidity
+require(minPrice >= minProductPrice, "Pool minPrice cannot be lower than product minPrice");
+
+StakedProductParam[] memory params = new StakedProductParam[](1);
+params[0] = StakedProductParam({
+    productId: 1,
+    recalculateEffectiveWeight: true,
+    setTargetWeight: true,
+    targetWeight: 100,         // Adjust target weight (0-255)
+    setTargetPrice: true,
+    targetPrice: 500           // Example: Set new target price to 500
+});
+
+StakingProducts.setProducts(poolId, params);
+```
+
+4. **Call `recalculateEffectiveWeights`** to ensure price and weight adjustments reflect utilization:
+
+```solidity
+StakingProducts.recalculateEffectiveWeights(poolId, productIds);
+```
+
+---
+
+#### Why Pricing Adjustments Matter
+
+- **Target Price** → Acts as a reference, but actual price fluctuates with demand.
+- **Price Bump** → Increases price **by 2% per purchase**.
+- **Price Decay** → Reduces price **by 0.1% per day** when no new purchases occur.
+- **Utilization Impact** → Higher utilization pushes the effective price **closer to maxPrice**.
+- **`minPrice` Constraint** → Ensures no pool undercuts the **global minimum product price**.
+
+#### Why Pricing Adjustments Matter
+
+- **Target Price** → Acts as a reference, but actual price fluctuates with demand.
+- **Price Bump** → Increases price **by 2% per purchase**.
+- **Price Decay** → Reduces price **by 0.1% per day** when no new purchases occur.
+- **Utilization Impact** → Higher utilization pushes the effective price **closer to maxPrice**.
 
 ---
 

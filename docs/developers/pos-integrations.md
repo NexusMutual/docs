@@ -42,9 +42,9 @@ Set up the ethers provider and get the user to connect their wallet.
 
 Use `getQuoteAndBuyCoverInputs` to retrieve a quote for the desired cover. Provide all the necessary parameters including the product ID, cover amount (in wei), cover period (in days), cover asset (ETH, USDC or cbBTC), and the buyer’s address. See the [products.json section of the SDK](https://sdk.nexusmutual.io/data/products.json) to see the total list of individual cover products the Mutual offers.
 
-```
+```javascript
 const response = await nexusSdk.getQuoteAndBuyCoverInputs(
-  XX, // product id for Bundled Protocol Cover or Protocol Cover
+  1, // product id for Bundled Protocol Cover or Protocol Cover
   ethers.utils.parseEther('10').toString(), // cover amount (in wei) denominated in the asset below
   28, // coverPeriod (in days: min 28 days, max 365 days)
   CoverAsset.ETH, // cover asset - ETH, USDC or cbBTC
@@ -56,14 +56,37 @@ const response = await nexusSdk.getQuoteAndBuyCoverInputs(
 
 If the quote is successfully retrieved, you can display the quote information to the user:
 
-```
-const response = await nexusSdk.getQuoteAndBuyCoverInputs(
-  XX, // product id for Bundled Protocol Cover or Protocol Cover
-  ethers.utils.parseEther('10').toString(), // cover amount (in wei) denominated in the asset below
-  28, // coverPeriod (in days: min 28 days, max 365 days)
-  CoverAsset.ETH, // cover asset - ETH, USDC or cbBTC
-  wallet.address, // coverBuyerAddress - address of the end user buying the cover, that will receive the cover NFT
-  );
+```json
+{
+  displayInfo: {
+    premiumInAsset: "1000000000000000000", // integer string, smallest unit (i.e. wei)
+    coverAmount: "5000000000000000000", // integer string, smallest unit (i.e. wei)
+    yearlyCostPerc: 0.05, // percentage expressed as number between 0 and 1
+    maxCapacity: "20000000000000000000" // integer string, smallest unit (i.e. wei)
+  },
+  buyCoverInput: {
+    buyCoverParams: {
+      coverId: 1,
+      owner: "0x1234567890abcdef1234567890abcdef12345678", // Address format
+      productId: 2,
+      coverAsset: "ETH", // Example CoverAsset
+      amount: "1000000000000000000", // integer string, smallest unit (i.e. wei)
+      period: 3600, // period in seconds
+      maxPremiumInAsset: "2000000000000000000", // integer string, smallest unit (i.e. wei)
+      paymentAsset: 1,
+      commissionRatio: 0.1, // 10%
+      commissionDestination: "0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef", // Optional Address
+      ipfsData: "QmT5NvUtoM5nXc5g5g5g5g5g5g5g5g5g5g5g5g5g5g5" // Example IPFS data
+    },
+    poolAllocationRequests: [
+      {
+        poolId: "1",
+        coverAmountInAsset: "1000000000000000000", // integer string, smallest unit (i.e. wei)
+        skip: false
+      }
+    ]
+  }
+}
 ```
 
 #### Step 5: Buy Cover
