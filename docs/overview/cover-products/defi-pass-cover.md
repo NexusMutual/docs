@@ -10,7 +10,7 @@ Instead of buying several different Protocol Covers or Bundled Protocol Covers t
 
 ## Covered Risks
 
-With a DeFi Pass, you can deposit funds in any, or all of, the designated protocols for a given network up to the aggregate value of your covered amount and enjoy all-in-one, flexibile protection that safeguards your assets against the following risks:
+With a DeFi Pass, you can deposit funds in any, or all of, the designated protocols for a given network up to the aggregate value of your covered amount and enjoy all-in-one, flexible protection that safeguards your assets against the following risks:
 * Smart contract exploits/hacks
 * Severe oracle failure/manipulation
 * Severe liquidation failure
@@ -20,7 +20,7 @@ When you purchase a DeFi Pass, you will specify the wallet address you want to p
 
 ## Covered Risks: Base DeFi Pass
 
-When you have crypto assets deposited in Aerodrome, Arcadia, Beefy, Compound v3, ExtraFi, Moonwell, Morpho, Overnight and Uniswap v3 on Base, the Base DeFi Pass Cover provides all-in-one, flexibile protection that safeguards your assets against the following risks:
+When you have crypto assets deposited in Aerodrome, Arcadia, Beefy, Compound v3, ExtraFi, Moonwell, Morpho, Overnight and Uniswap v3 on Base, the Base DeFi Pass Cover provides all-in-one, flexible protection that safeguards your assets against the following risks:
 * Smart contract exploits/hacks
 * Severe oracle failure/manipulation
 * Severe liquidation failure
