@@ -47,18 +47,14 @@ async function createConfigAsync() {
           theme: {
             customCss: require.resolve("./src/css/custom.css"),
           },
+          googleTagManager: {
+            containerId: 'GTM-WKL6F7R',
+          },
         },
       ],
     ],
 
     plugins: [
-      [
-        '@docusaurus/plugin-google-gtag',
-        {
-          trackingID: 'GTM-WKL6F7R',
-          anonymizeIP: true,
-        },
-      ],
       [
         '@easyops-cn/docusaurus-search-local',
         {
