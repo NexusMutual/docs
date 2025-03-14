@@ -16,7 +16,7 @@ Members can use the crypto assets held in the Capital Pool to underwrite various
 
 The RAMM model is made up of two virtual one-sided [Uniswap v2-style pools](https://docs.uniswap.org/contracts/v2/concepts/protocol-overview/how-uniswap-works), which determine the price at which the mutual is willing to buy and sell NXM in value-accretive ranges for the mutual, complemented by a price ratchet to enable price discovery.
 
-The Below Pool and Above Pool are the two pools present in the system. These pools contain a defined amount of ETH liquidity paired with “virtual” NXM. This creates two internal pools, which have the same ETH liquidity; the NXM reserves in each pool are represented by a virtual NXM balance. The ETH and NXM balances change over time as NXM is sold and purchased.
+The Below Pool and Above Pool are the two pools present in the system. These pools contain a defined amount of ETH liquidity paired with "virtual" NXM. This creates two internal pools, which have the same ETH liquidity; the NXM reserves in each pool are represented by a virtual NXM balance. The ETH and NXM balances change over time as NXM is sold and purchased.
 
 The two pools are described below:
 
@@ -60,7 +60,7 @@ As members redeem NXM for ETH, there will be less ETH held in the pools until mo
 
 As members purchase NXM with ETH, the amount of ETH liquidity in the pools will increase. If the ETH liquidity is greater than the target liquidity, then ETH will be removed over time–this also happens automatically. The system checks if the liquidity in the pools is greater than the target liquidity value at each swap, cover buy and claim payout.
 
-During periods where members are not redeeming NXM for ETH or contributing ETH in return for NXM, the ratchet mechanism moves the price. We’ll review that in the next section.
+During periods where members are not redeeming NXM for ETH or contributing ETH in return for NXM, the ratchet mechanism moves the price. We'll review that in the next section.
 
 ### How the ratchet mechanism works
 
@@ -138,4 +138,4 @@ The above is an overview of the RAMM, how the mechanism works, how liquidity is 
 
 In the following sections, you will find the [history of capitalization controls](/protocol/nxm-token/history-capitalisation-controls) and the [drivers of Capital Pool growth](/protocol/capital-pool) within the Mutual.
 
-The [history of capitalization controls](protocol/nxm-token/history-capitalisation-controls) is optional: you can skip to the [drivers of Capital Pool growth](/protocol/capital-pool) section to learn about the conditions under which the Capital Pool expands and contracts.
+The [history of capitalization controls](/protocol/nxm-token/history-capitalisation-controls) is optional: you can skip to the [drivers of Capital Pool growth](/protocol/capital-pool) section to learn about the conditions under which the Capital Pool expands and contracts.

@@ -69,7 +69,7 @@ If you're interested in having your protocol reviewed for a potential listing in
 
 To date, members have paid $18M+ to people who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralised custodians.
 
-To learn more, see the [Claims History section](overview/claims-history/) of the documentation.
+To learn more, see the [Claims History section](/overview/claims-history/) of the documentation.
 
 ### How do I know my claim will be paid?
 
@@ -138,7 +138,7 @@ The NXM token is needed in order to bind together the internal economics of the 
 
 ### When did the NXM token launch?
 
-Nexus Mutual and the NXM token were launched on 30 May 2019. You can read our [We’ve Launched](https://medium.com/nexus-mutual/weve-launched-2bc8ba1049f2) Medium post for details about the initial launch. You can check out the [Nexus Mutual user interface](https://app.nexusmutual.io/home) as well.
+Nexus Mutual and the NXM token were launched on 30 May 2019. You can read our [We've Launched](https://medium.com/nexus-mutual/weve-launched-2bc8ba1049f2) Medium post for details about the initial launch. You can check out the [Nexus Mutual user interface](https://app.nexusmutual.io/home) as well.
 
 ### Is NXM listed on any exchanges?
 
