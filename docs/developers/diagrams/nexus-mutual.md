@@ -186,16 +186,13 @@ flowchart LR
    (1c) **StakingPoolFactory** deploys new **StakingPool**.  
    (1d) **StakingProducts** assigns manager via **TokenController**.  
    (1e) **StakingProducts** sets initial products and metadata.
-  <br>
 2. **Manager Updates Pool Products**
    (2a) **Manager** calls `"setProducts()"` on **StakingProducts**.  
    (2b) **StakingProducts** updates weights and prices in **StakingPool**.
-  <br>
 3. **Staker Deposits NXM**
    (3a) **Staker** calls `"depositTo(amount, trancheId, tokenId, dest)"` on **StakingPool**.  
    (3b) **StakingPool** validates and calculates shares, calls `"depositStakedNXM()"` on **TokenController**.  
    (3c) **TokenController** updates pool balance and calls `"operatorTransfer()"` on **NXMToken**.
-  <br>
 4. **Staker Withdraws Stake/Rewards**
    (4a) **Staker** calls `"withdraw()"` on **StakingPool**.
 
@@ -204,7 +201,6 @@ flowchart LR
    (4b) **StakingPool** calculates amounts, calls `"withdrawNXMStakeAndRewards()"` on **TokenController**.  
    (4c) **TokenController** calls transfers on **NXMToken**.
    (4d) **NXMToken** transfer stake + rewards to **Staker**
-  <br>
 5. **Claim Redemption Burns Stake and Pays Claimant**
    If a claim is approved the claimant is paid from the staked NXM.
    (5a) **Claimant** calls `"redeemClaimPayout()"` on **IndividualClaims**.  
