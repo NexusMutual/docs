@@ -116,7 +116,7 @@ When calling the **\`/quote\` API**, it:
 3. **Returns a price quote** and a breakdown of pool allocations.
 
 **Cover Router API Reference:**  
-[\`/quote\` API Docs](/quote)
+[\`/quote\` API Docs](https://api.nexusmutual.io/v2/api/docs/#/Quote/get_v2_quote)
 
 ---
 

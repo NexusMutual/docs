@@ -41,7 +41,7 @@ Before a claim can be filed, the cover holder will need to make a claim deposit 
 * If the claim is approved, the claim deposit is refunded in the same transaction as the claim payout
 * If the claim is denied, the claim deposit will not be refunded
 
-The deposited amount is the ETH equivalent of the NXM amount distributed as claim assessment rewards, where the minimum deposit required is 0.05 ETH and the maximum amount required is an ETH deposit equivalent to 50 NXM. See the [claims assessment rewards](/protocol/claims-assessment#4-claims-assessment-rewards) section below.
+The deposited amount is the ETH equivalent of the NXM amount distributed as claim assessment rewards, where the minimum deposit required is 0.05 ETH and the maximum amount required is an ETH deposit equivalent to 50 NXM. See the [claims assessment rewards](/protocol/claims-assessment#4-claim-assessment-rewards) section below.
 
 Claim deposits are required to prevent people from spamming the claim process with multiple claims, as there is no limit to the number of times a claim can be submitted. As long as a cover holder provides a claim deposit, they can file a claim as many times as preferred.
 
