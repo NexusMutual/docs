@@ -18,7 +18,7 @@ If there are additional risks your fund is concerned about, you can [reach out t
 
 ## Fund Portfolio Cover Wording
 
-For more information, read the full terms and conditions of [Nexus Mutual's Fund Portfolio Cover](https://api.nexusmutual.io/ipfs/QmevgAXtzi7773NaBrzGyW95aKSrt3MBtpQU1SQCPyCbSF).
+For more information, read the full terms and conditions of [Nexus Mutual's Fund Portfolio Cover](https://api.nexusmutual.io/ipfs/QmPwYKc8WQYmTeq5cZ7wxPbZfgTHm9aHh7SLAHpf4g1yQi).
 
 ### Proof of Loss
 
@@ -38,7 +38,7 @@ After a loss event occurs, your team will need to wait 14 days for the cool-down
     * You will be able to include written details, links to supporting documentation, and/or upload screenshots or other files in the Incident Details portion of the claim submission process
     * You will choose to either sign a message from the affected address or send a 0 value transaction from the affected address to prove you own and control the affected address
 2. Claim assessors will review, discuss and vote to approve claims where proof of loss shows that you have indeed suffered a loss of funds.
-    * If your claim is approved, you will be able to redeem your claim payout after the 24-hour cool-down period passes in the Your Covers menu. You can also check your Dashboard to see the status of any active claims.
-    * If your claim is denied, you will be able to file another claim with more supporting evidence
+    * If your claim is approved, you will be able to redeem your claim payout after the 24-hour post-claim period passes in the Your Covers menu. You can also check your Dashboard to see the status of any active claims.
+    * If your claim is denied, you will be able to file another claim with more supporting evidence.
 
 For a review of the claim assessment process, see the [Claim Assessment](/protocol/claims-assessment) section.

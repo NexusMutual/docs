@@ -20,7 +20,7 @@ For more information, read the full terms and conditions of [Nexus Mutual's Bund
 
 Nexus Mutual's claim assessors use this cover wording as a reference when considering any Bundled Protocol Cover claim.
 
-*Note*: Every Bundled Protocol Cover listing includes an annex documented linked in the Terms and Conditions section on the Buy Cover page. You can review the annex for each listing to confirm which protocols are included in the Bundled Protocol Cover listing.
+*Note*: Each Bundled Protocol Cover listing includes an annex, which is linked in the Terms and Conditions section on the Buy Cover page.
 
 ### Proof of Loss
 
@@ -35,12 +35,12 @@ Once you prove that you own and control the affected address, claim assessors ca
 
 ## Claim Filing Process
 
-After a loss event occurs, you will need to wait 14 days for the cool-down period to pass. The cool-down period applies for DeFi Pass Cover claims, per the cover wording.
-1. If you hold DeFi Pass Cover at the time the loss event occurs, you can submit a claim with supporting evidence, otherwise referred to as proof of loss.
+After a loss event occurs, you will need to wait 14 days for the cool-down period to pass. The cool-down period applies for Bundled Protocol Cover claims, per the cover wording.
+1. If you hold Bundled Protocol Cover at the time the loss event occurs, you can submit a claim with supporting evidence, otherwise referred to as proof of loss.
     * You will be able to include written details, links to supporting documentation, and/or upload screenshots or other files in the Incident Details portion of the claim submission process
     * You will choose to either sign a message from the affected address or send a 0 value transaction from the affected address to prove you own and control the affected address
 2. Claim assessors will review, discuss and vote to approve claims where proof of loss (i.e., your designated wallet address) shows that you have indeed suffered a loss of funds.
-    * If your claim is approved, you will be able to redeem your claim payout after the 24-hour cool-down period passes in the Your Covers menu. You can also check your Dashboard to see the status of any active claims.
+    * If your claim is approved, you will be able to redeem your claim payout after the 24-hour post-claim period passes in the Your Covers menu. You can also check your Dashboard to see the status of any active claims.
     * If your claim is denied, you will be able to file another claim with more supporting evidence
 
 For a review of the claim assessment process, see the [Claim Assessment](/protocol/claims-assessment) section.
