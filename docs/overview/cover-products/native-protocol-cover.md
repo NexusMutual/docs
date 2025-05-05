@@ -39,7 +39,7 @@ After a loss event occurs, you will need to wait 14 days for the cool-down perio
     * You will need to include a technical analysis of the loss event demonstrating the cause of the loss and the extraction of funds from the Designated Protocol including references to the relevant blockchain transactions; and
     * You will choose to either sign a transaction using an address associated with your protocol or send a 0 value transaction with your team's multisig address to prove you are part of the Designated Protocol team.
 2. Claim assessors will review, discuss and vote to approve claims where proof of loss (i.e., your designated wallet address) shows that you have indeed suffered a loss of funds.
-    * If your claim is approved, you will be able to redeem your claim payout after the 24-hour cool-down period passes in the Your Covers menu. You can also check your Dashboard to see the status of any active claims.
-    * If your claim is denied, you will be able to file another claim with more supporting evidence
+    * If your claim is approved, you will be able to redeem your claim payout after the 24-hour post-claim period passes in the Your Covers menu. You can also check your Dashboard to see the status of any active claims.
+    * If your claim is denied, you will be able to file another claim with more supporting evidence.
 
 For a review of the claim assessment process, see the [Claim Assessment](/protocol/claims-assessment) section.

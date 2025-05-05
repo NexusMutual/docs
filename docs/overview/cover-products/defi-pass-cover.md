@@ -4,7 +4,7 @@ sidebar_position: 1.6
 
 # DeFi Pass Cover
 
-The DeFi Pass product is designed for people who are active in one network's DeFi ecosystem and regularly move their crypto assets between major protocols to get the best yields.
+The DeFi Pass is for people who use multiple DeFi protocols within the same blockchain network and regularly move their crypto around to get the best yields.
 
 Instead of buying several different Protocol Covers or Bundled Protocol Covers to protect your crypto assets, you can buy one DeFi Pass for a fixed price to protect against smart contract and economic risks across several of the leading protocols within one network's ecosystem.
 
@@ -20,20 +20,20 @@ When you purchase a DeFi Pass, you will specify the wallet address you want to p
 
 ## Covered Risks: Base DeFi Pass
 
-When you have crypto assets deposited in Aerodrome, Arcadia, Beefy, Compound v3, ExtraFi, Moonwell, Morpho, Overnight and Uniswap v3 on Base, the Base DeFi Pass Cover provides all-in-one, flexible protection that safeguards your assets against the following risks:
+When you have crypto assets deposited in the covered protocols on Base, the Base DeFi Pass Cover provides all-in-one, flexible protection that safeguards your assets against the following risks:
 * Smart contract exploits/hacks
 * Severe oracle failure/manipulation
 * Severe liquidation failure
 * Governance attacks
 
-To learn more about the designated protocols (i.e., the protocols included in the Base DeFi Pass) and the covered sub-protocols, see the [Base DeFi Pass Annex](https://api.nexusmutual.io/ipfs/QmVjm5qfpkJdHiLCLpR9UeYM5WWQ58SpWTH9upWowvozGK).
+To learn more about the covered protocols (i.e., the protocols included in the Base DeFi Pass) and the covered sub-protocols, see the [Base DeFi Pass covered risks and exclusions on OpenCover](https://opencover.com/base-pass-covered-risks-and-exclusion/).
 
 ## DeFi Pass Cover Wording
 
 For more information, read the full terms and conditions of [Nexus Mutual's DeFi Pass Cover](https://api.nexusmutual.io/ipfs/QmQLh2wNDD2b2RGg9rNFbyrQwxqTthrTNaTsHenZnRg6u6).
 
-To learn about the protocols included in each DeFi Pass, you can read the Annex documentats below:
-* [Base DeFi Pass Annex](https://api.nexusmutual.io/ipfs/QmVjm5qfpkJdHiLCLpR9UeYM5WWQ58SpWTH9upWowvozGK)
+To learn about the protocols included in each DeFi Pass, you can read the information below:
+* [Base DeFi Pass covered risks and exclusions on OpenCover](https://opencover.com/base-pass-covered-risks-and-exclusion/)
 
 ## Exposed Funds vs. Cover Amount
 
@@ -87,7 +87,7 @@ After a loss event occurs, you will need to wait 14 days for the cool-down perio
 1. If you hold DeFi Pass Cover at the time the loss event occurs, you can submit a claim with supporting evidence, otherwise referred to as proof of loss.
     * You will be able to include written details, links to supporting documentation, and/or upload screenshots or other files in the Incident Details portion of the claim submission process
 2. Claim assessors will review, discuss and vote to approve claims where proof of loss (i.e., your designated wallet address) shows that you have indeed suffered a loss of funds.
-    * If your claim is approved, you will be able to redeem your claim payout after the 24-hour cool-down period passes in the Your Covers menu. You can also check your Dashboard to see the status of any active claims.
+    * If your claim is approved, you will be able to redeem your claim payout after the 24-hour post-claim period passes in the Your Covers menu. You can also check your Dashboard to see the status of any active claims.
     * If your claim is denied, you will be able to file another claim with more supporting evidence
 
 For a review of the claim assessment process, see the [Claim Assessment](/protocol/claims-assessment) section.

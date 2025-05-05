@@ -37,8 +37,8 @@ Your organization will need to wait 14 days for the cool-down period to pass. Th
 1. Your organization will file a claim using evidence of their claim payments for the covered underlying risks.
 
 2. Claim assessors will review, discuss, and vote to approve claims where proof of loss shows that your organisation has indeed paid out claims for covered underlying risks above the deductible.
-    * If the claim is approved, your organisation will be able to redeem the payout after the 24-hour cool-down period ends
-    * If the claim is denied, your organisation will be able to file another claim with more supporting evidence
+    * If the claim is approved, your organisation will be able to redeem the payout after the 24-hour post-claim period ends.
+    * If the claim is denied, your organisation will be able to file another claim with more supporting evidence.
 
 For a review of the claim assessment process, see the [Claim Assessment](/protocol/claims-assessment) section.
 
