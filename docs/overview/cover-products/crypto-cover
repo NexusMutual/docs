@@ -1,0 +1,45 @@
+---
+sidebar_position: 2.2
+---
+
+# Crypto Cover
+
+Crypto Cover is a modular cover product that offers several different coverage options within one wording document. This allows the Product & Risk team to bundle different types of coverage into one (1) single listing.
+
+## Covered Risks
+
+Crypto Cover  allows the Mutual to offer:
+* **Part A: Custody Cover**. Protection against a loss of funds due to crime-related loss and halted withdrawals of more than 100 days on centralized exchanges and crypto custodians. Available for purchases of $1M or more.
+* **Part B: Single Protocol Cover & Multi Protocol Cover**. Protection against a loss of funds due to smart contract hacks/exploits, oracle failure, oracle manipulation, liquidation failure, and governance takeovers.
+* **Part C: Depeg Cover**. Protection against a defined loss of value (i.e., the Depeg Percentage) over a defined amount of time (i.e., the Depeg Time). In simple terms, this coverage protects against a depeg event that lasts more than several days.
+* **Part D: Slashing Cover**. Protection for proof-of-stake (PoS) validators and native token stakers against penalties and slashing events.
+
+## Crypto Cover Wording
+
+For more information, read the full terms and conditions of [Nexus Mutual's Crypto Cover](https://api.nexusmutual.io/ipfs/QmaR79gHuSzU371e7V6EEk1V14ohDm2Hk25FFuRgk9vrfx).
+
+Nexus Mutual's claim assessors use this cover wording as a reference when considering any Crypto Cover claim.
+
+### Proof of Loss
+
+When you hold Crypto Cover and suffer a loss, you can file a claim and claim assessors will review your claim submission to determine whether your claim is valid.
+
+For Crypto Cover claims, proof of loss is required. See the [Crypto Cover wording](https://api.nexusmutual.io/ipfs/QmaR79gHuSzU371e7V6EEk1V14ohDm2Hk25FFuRgk9vrfx) for details on the required proof of loss for each different cover offering included with this product.
+
+## Claim Filing Process
+
+After a loss event occurs, you will need to wait for the Cool-Down Period to pass. The Cool-Down Period is defined for each coverage offering in the Crypto Cover wording.
+
+The cool-down period applies for Crypto Cover claims, per the cover wording.
+1. If you hold Crypto Cover at the time the loss event occurs, you can submit a claim with supporting evidence, otherwise referred to as proof of loss.
+    * You will be able to include written details, links to supporting documentation, and/or upload screenshots or other files in the Incident Details portion of the claim submission process
+    * You will provide proof of loss, as detailed in the Crypto Cover wording depending on which part of the wording is included in the annex.
+2. Claim assessors will review, discuss and vote to approve claims where proof of loss shows that you have indeed suffered a loss.
+    * If your claim is approved, you will be able to redeem your claim payout after the 24-hour post-claim period passes in the Your Covers menu. You can also check your Dashboard to see the status of any active claims.
+    * If your claim is denied, you will be able to file another claim with more supporting evidence
+
+For a review of the claim assessment process, see the [Claim Assessment](/protocol/claims-assessment) section.
+
+## Claim Payouts
+
+To review Nexus Mutual's past claims record and individual case studies, you can see the [Claims History](/overview/claims-history/) section.
