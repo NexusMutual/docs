@@ -10,15 +10,16 @@ With Native Protocol Cover, your team can provide users with a base layer of pro
 
 With Native Protocol Cover, you can protect your protocol's TVL against loss events caused by:
 * Smart contract exploits/hacks
-* Severe oracle failure/manipulation
-* Severe liquidation failure
-* Governance attacks
+* Oracle failure
+* Oracle manipulation
+* Liquidation failure
+* Governance takeovers
 
 If you're interested in learning more about Native Protocol Cover and its protections, [please reach out to our team](https://nexusmutual.io/contact).
 
 ## Native Protocol Cover Wording
 
-For more information, read the full terms and conditions of [Nexus Mutual's Native Protocol Cover](https://api.nexusmutual.io/ipfs/QmRrKXV9RBNAB5E1ZEigWmvvT24FgrWNSZ8Yw1VNXR8E6Q).
+For more information, read the full terms and conditions of [Nexus Mutual's Native Protocol Cover](https://api.nexusmutual.io/ipfs/QmQz38DSo6DyrHkRj8uvtGFyx842izVvnx8a3qqF99dctG).
 
 Nexus Mutual's claim assessors use this cover wording as a reference when considering any Native Protocol Cover claim.
 
