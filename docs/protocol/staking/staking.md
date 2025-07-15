@@ -24,20 +24,20 @@ NXM stakers do not control how their NXM is allocated within a staking pool, tho
 
 When someone decides to stake their NXM, they need to choose the length of time that their NXM will be locked in a staking pool: this is referred to as the staking period.
 
-Members can choose to stake their NXM for as little as 91 days or as long as two years. There are a total of eight staking periods to choose from. Members are able to delegate their NXM to multiple staking pools and for multiple staking periods.
+Members can choose to stake their NXM for as little as 30 days or as long as almost two years. There are a total of eight staking periods to choose from. Members are able to delegate their NXM to multiple staking pools and for multiple staking periods.
 
 | Staking Period # | Days |
 | :--------------: | :--: |
-| 1                | 91   |
-| 2                | 182  |
-| 3                | 273  |
-| 4                | 364  |
-| 5                | 455  |
-| 6                | 546  |
-| 7                | 637  |
-| 8                | 728  |
+| 1                | 30   |
+| 2                | 121  |
+| 3                | 212  |
+| 4                | 303  |
+| 5                | 394  |
+| 6                | 485  |
+| 7                | 576  |
+| 8                | 667  |
 
-Each staking period will have a fixed date range, so all NXM delegated in one staking period will expire at the same time. If a member delegates their staked NXM to Staking Period #1 noted above 20 days into the 91-day period, then their staked NXM would be subject to a 71-day lockup when Staking Period #1 ends and members can withdraw their NXM.
+Each staking period will have a fixed date range, so all NXM delegated in one staking period will expire at the same time. If a member delegates their staked NXM to Staking Period #1 noted above 20 days into the 121-day period, then their staked NXM would be subject to a 101-day lockup when Staking Period #1 ends and members can withdraw their NXM.
 
 ## Tokenized staking positions
 
