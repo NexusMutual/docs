@@ -12,7 +12,7 @@ People that contribute should help further the Nexus Mutual mission. Teams and c
 
 ## Mission
 
-Our mission is to build an ecosystem in which anyone can protect anyone else by sharing risk. We often refer to this as the global risk marketplace.
+Our mission is to provide onchain protection against crypto risks and beyond.
 
 ## Values
 
@@ -37,6 +37,7 @@ The treasury multisig signers were decided through a Snapshot vote. The communit
 * [Sisyphos of kpk](https://x.com/sisyphos7919)
 * [Richard Chen](https://twitter.com/richardchen39)
 * [Adam Benayoun](https://twitter.com/adambn)
+* [Deepcryptodive on behalf of kpk](https://x.com/deepcryptodive)
 
 The multisig signers will sign off on, but not decide, which proposals pass and do not pass. They will enact the will of the wider Nexus Mutual community who vote with their NXM.
 
@@ -54,7 +55,7 @@ The DAP Treasury consists of several Safes.
 
 ## Contributing to the DAO
 
-Members can contribute to the DAO in a variety of ways. Reviewing governance forum discussions, providing comments and feedback, and voting in governance is an important way all members can contribute.
+Members can contribute to the DAO in a variety of ways. Reviewing governance forum discussions, providing comments and feedback, and voting in governance is an important way all members can contribute. [Our Head of Community offers several initiatives for people to get involved within Nexus Mutual and DeFi, as well](https://nexusmutualdao.io/calls-to-action). Check them out!
 
 Those who want to put their talents and skills to work for the DAO can create an NMDP to request a grant for a single-purpose project or another purpose. Any grant proposal should highlight how someone's work will benefit the growth and development of the Mutual. Learn more about the NMDP grant process on the [Nexus Mutual DAO Proposals (NMDP)](/governance/dao-proposals) page.
 
@@ -121,6 +122,8 @@ If the DAO team budget request proposals are approved by members through Snapsho
 
 The DAO teams have implemented an oversight process for any non-salary payment requests from the DAO teams multisig.
 
+For more information about the DAO teams, [see the DAO teams page on the Nexus Mutual DAO website](https://nexusmutualdao.io/nexus-mutual-dao-teams).
+
 ### DAO teams (formerly, Community) multisig
 
 The DAO teams Safe has a three-of-five (3/5) signing threshold.
@@ -155,6 +158,7 @@ All signers are required to use a hardware wallet-secured address for their sign
 * [Proposal to Serve as Mutant Marketing Lead](https://forum.nexusmutual.io/t/proposal-to-serve-as-mutant-marketing-lead/601)
 * [Proposal to Serve as Mutant Marketing Advisor](https://forum.nexusmutual.io/t/proposal-to-serve-as-mutant-marketing-advisor/602)
 * [Mutant Marketing Strategy & Budget Proposal](https://forum.nexusmutual.io/t/proposal-to-serve-as-mutant-marketing-advisor/602)
+
 
 ## Proposing a new team
 
