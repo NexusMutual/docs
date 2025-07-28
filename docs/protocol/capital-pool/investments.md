@@ -22,7 +22,7 @@ In May 2022, the DAO Investment team posted a forum proposal that [reviewed the 
 
 ## Investment in Rocket Pool (rETH)
 
-In April 2023, uisce.eth share a Request for Comment (RFC) proposal to allocate 14,400 ETH from the Capital Pool to Rocket Pool (rETH). Uisce.eth reviewed the opportunity to increase, and risk of increasing, the allocation of Nexus Mutual's Capital Pool to rETH, and more. You can review the [[RFC]: Staking with Rocketpool Protocol](https://forum.nexusmutual.io/t/rfc-staking-with-rocketpool-protocol/1064) forum post for the full details. After going through the standard review period, uisce.eth used two Snapshot signaling votes to gauge members' support for this proposal.
+In April 2023, uisce.eth shared a Request for Comment (RFC) proposal to allocate 14,400 ETH from the Capital Pool to Rocket Pool (rETH). Uisce.eth reviewed the opportunity to increase, and risk of increasing, the allocation of Nexus Mutual's Capital Pool to rETH, and more. You can review the [[RFC]: Staking with Rocketpool Protocol](https://forum.nexusmutual.io/t/rfc-staking-with-rocketpool-protocol/1064) forum post for the full details. After going through the standard review period, uisce.eth used two Snapshot signaling votes to gauge members' support for this proposal.
 * [Signaling Vote: Should the Mutual Stake with Rocketpool (#1)](https://snapshot.org/#/community.nexusmutual.eth/proposal/0xab65f84dfa13e6860f2c70d975edacf23e7554405839372ff3872127700d1f39)
 * [Signaling Vote: Amount of ETH to allocate to Rocketpool (#2)](https://snapshot.org/#/community.nexusmutual.eth/proposal/0xdf858c753975f9526598f0c201669050fb787b793d99503f80a7e4f2e8ba88ed)
 
@@ -40,6 +40,8 @@ Members signaled their support via Snapshot and this proposal was transitioned t
 
 The 6,224 WETH was staked in Kiln and is currently accuring staking rewards. See [Avantgarde's latest post](https://forum.nexusmutual.io/t/nmpip-196-restart-enzyme-vault-start-staking-through-kiln-6-624-weth/1174/5?u=bravenewdefi) on the governance forum for a status update.
 
+**Note**: the funds invested in Kiln were reallocated to Etherfi's eETH in March 2025 per the outcome of NMPIP 249.
+
 ## Investment in Chorus One through Stakewise V3 via the Nexus Mutual Enzyme vault
 
 In June 2024, the Avantgarde team shared an [RFC](https://forum.nexusmutual.io/t/rfc-stake-idle-eth-on-enzyme-vault-to-chorus-one-through-stakewise-v3/1461) on the forum, where they outlined a proposal to allocate the remaining idle WETH held in the Nexus Mutual Enzyme vault into Chorus One's Stakewise V3 vault. The original RFC they posted received feedback from community members and the Investment Committee to put this RFC up for a signalling vote to determine members' appetite to allocate to Chorus One since another proposal to allocate to Etherfi's weETH was also active at this time. After the [signalling vote concluded](https://snapshot.org/#/community.nexusmutual.eth/proposal/0x376bda4fef544f42799604627791be993d4a050ad49d415c284cc3e2cd6e8b9c), the result showed that members had signalled support for allocating 4,989 ETH to Chorus One via Stakewise V3.
@@ -48,9 +50,15 @@ A [joint NMPIP was posted on forum by the Investment Committee](https://forum.ne
 
 ## Investment in Etherfi's weETH via the Nexus Mutual Enzyme vault
 
-In June 2024, the Etherfi team share an [RFC](https://forum.nexusmutual.io/t/rfc-stake-idle-eth-on-enzyme-vault-to-ether-fi/1464) on the forum, where they outlined a proposal to allocate the remaining idle WETH held in the Nexus Mutual Enzyme vault to Etherfi via weETH. The original RFC they posted received feedback from community members and the Investment Committee to put this RFC up for a signalling vote to determine members' appetite to allocate to Etherfi via weETH since another proposal to Chorus One via Stakewise V3 was also active at this time. After the [signalling vote concluded](https://snapshot.org/#/community.nexusmutual.eth/proposal/0x376bda4fef544f42799604627791be993d4a050ad49d415c284cc3e2cd6e8b9c), the result showed that members had signalled support for allocating 1,586 ETH to Etherfi via weETH.
+In June 2024, the Etherfi team shared an [RFC](https://forum.nexusmutual.io/t/rfc-stake-idle-eth-on-enzyme-vault-to-ether-fi/1464) on the forum, where they outlined a proposal to allocate the remaining idle WETH held in the Nexus Mutual Enzyme vault to Etherfi via weETH. The original RFC they posted received feedback from community members and the Investment Committee to put this RFC up for a signalling vote to determine members' appetite to allocate to Etherfi via weETH since another proposal to Chorus One via Stakewise V3 was also active at this time. After the [signalling vote concluded](https://snapshot.org/#/community.nexusmutual.eth/proposal/0x376bda4fef544f42799604627791be993d4a050ad49d415c284cc3e2cd6e8b9c), the result showed that members had signalled support for allocating 1,586 ETH to Etherfi via weETH.
 
 A [joint NMPIP was posted on forum by the Investment Committee](https://forum.nexusmutual.io/t/nmpip-228-allocate-6-575-eth-to-chorus-one-and-etherfi/1480/1), which outlined allocating 4,989 ETH to Chorus One via Stakewise V3 and 1,586 ETH to EtherFi by acquiring weETH if NMPIP 228 was approved. The NMPIP went up for vote over a three-day period and members voted to approve the allocation. Subsequently, the allocation was executed by the Avantgarde team in the [Nexus Mutual Enzyme Vault](https://app.enzyme.finance/vault/0x27f23c710dd3d878fe9393d93465fed1302f2ebd). 
+
+## Investment in Etherfi's eETH via the Nexus Mutual Enzyme vault
+
+In February 2025, the Etherfi team shared an [RFC](https://forum.nexusmutual.io/t/rfc-stake-kiln-eth-in-enzyme-vault-on-ether-fi/1695) on the forum, where they outlined a proposal to allocate the WETH staked in Kiln via the Nexus Mutual Enzyme vault to Etherfi via eETH. The proposal was live on the forum for two weeks and no critical feedback was provided. The comments provided by members were supportive and this RFC transitioned to a formal NMPIP.
+
+In March 2025 the Etherfi team posted [NMPIP: Stake Kiln ETH in Enzyme Vault on ether.fi](https://forum.nexusmutual.io/t/nmpip-stake-kiln-eth-in-enzyme-vault-on-ether-fi/1708/1) on the forum, which outlined reallocating the 6,784 WETH staked in Kiln to Etherfi's eETH if [NMPIP 249](https://app.nexusmutual.io/governance/view?proposalId=249) was approved. The NMPIP went up for vote over a three-day period and members voted to approve the allocation. Subsequently, the allocation was executed by the Avantgarde team in the [Nexus Mutual Enzyme Vault](https://app.enzyme.finance/vault/0x27f23c710dd3d878fe9393d93465fed1302f2ebd).
 
 ## Investment performance
 

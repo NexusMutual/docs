@@ -34,19 +34,24 @@ The treasury multisig signers were decided through a Snapshot vote. The communit
 * [DeFi Dad](https://twitter.com/DeFi_Dad)
 * [Gauthier](https://twitter.com/Nedict0x)
 * [BraveNewDeFi](https://twitter.com/BraveDeFi)
+* [Sisyphos of kpk](https://x.com/sisyphos7919)
 * [Richard Chen](https://twitter.com/richardchen39)
 * [Adam Benayoun](https://twitter.com/adambn)
 * [Deepcryptodive on behalf of kpk](https://x.com/deepcryptodive)
 
 The multisig signers will sign off on, but not decide, which proposals pass and do not pass. They will enact the will of the wider Nexus Mutual community who vote with their NXM.
 
-### DAO treasury address
+### DAO treasury addresses
 
-The DAO treasury is managed across several multisigs, as noted below:
-* [Original DAO Treasury Safe Multisig](https://app.safe.global/eth:0x586b9b2F8010b284A0197f392156f1A7Eb5e86e9/balances): 0x586b9b2F8010b284A0197f392156f1A7Eb5e86e9
-* [DAO Treasury Avatar Safe Multisig](https://app.safe.global/balances?safe=eth:0x8e53D04644E9ab0412a8c6bd228C84da7664cFE3):0x8e53D04644E9ab0412a8c6bd228C84da7664cFE3
-* [Nexus Mutual Grants Safe Multisig](https://app.safe.global/settings/setup?safe=eth:0x09ABbe423feDEE2332CAEa4117093D7d9B017cF5): 0x09ABbe423feDEE2332CAEa4117093D7d9B017cF5
-* [Nexus Mutual Community Staking Pool Safe Multisig](https://app.safe.global/home?safe=eth:0xFA7E852Ceb3F7d0f1AC02F3b8AFCa95e6DcBdb3C): 0xFA7E852Ceb3F7d0f1AC02F3b8AFCa95e6DcBdb3C 
+The DAP Treasury consists of several Safes.
+* [Original DAO Treasury multisig](https://app.safe.global/home?safe=eth:0x586b9b2F8010b284A0197f392156f1A7Eb5e86e9): 0x586b9b2F8010b284A0197f392156f1A7Eb5e86e9
+  * *Signing threshold*: 4 of 7
+* [Avatar DAO Treasury multisig, managed by kpk](https://app.safe.global/home?safe=eth:0x8e53D04644E9ab0412a8c6bd228C84da7664cFE3): 0x8e53D04644E9ab0412a8c6bd228C84da7664cFE3 
+  * *Signing threshold*: 4 of 7
+* [DAO Community Staking Pool multisig](https://app.safe.global/home?safe=eth:0xFA7E852Ceb3F7d0f1AC02F3b8AFCa95e6DcBdb3C): 0xFA7E852Ceb3F7d0f1AC02F3b8AFCa95e6DcBdb3C
+  * *Signing threshold*: 2 of 4
+* [DAO Grants & Accelerator multisig](https://app.safe.global/home?safe=eth:0x09ABbe423feDEE2332CAEa4117093D7d9B017cF5): 0x09ABbe423feDEE2332CAEa4117093D7d9B017cF5
+  * *Signing threshold*: 3 of 5
 
 ## Contributing to the DAO
 
@@ -60,54 +65,62 @@ Before creating an NMDP team creation request, review the existing teams.
 
 ## DAO teams
 
-Currently, there are four DAO teams. These teams work on behalf of Nexus Mutual DAO members, and their funding is approved through the NMDP process. You can review past [DAO team funding proposals on the governance forum](https://forum.nexusmutual.io/c/governance-discussions/dao-team-funding/15) to learn about each team's priorities, duties, and more.
+Currently, there are four DAO teams. These teams work on behalf of Nexus Mutual DAO members, and their funding is approved through the NMDP process. You can review the [most recent DAO team funding proposal](https://forum.nexusmutual.io/t/nmdp-7-q3-q4-2024-dao-teams-budget-request-proposal/1485) to learn about each team's priorities, duties, and more.
 
 ### Community team
 
-The Community team provides support to and educational content for members, staking pool managers, DAOs and our wider community in order to expand coverage. Design communication channels to drive community engagement, member retention.
+The Community team empowers members, staking pool managers, DAOs, and the broader ecosystem by providing educational resources and tools that promote growth in cover sales. They also design and manage communication channels to foster engagement and strengthen member retention.
+
+This team plays a vital support role, assisting members with everyday inquiries as well as offering direct guidance during claim events. Through consistent communication, engagement, and reliable support, the Community team enhances the overall member experience and ensures better access to key resources.
 
 This team was [first established](https://forum.nexusmutual.io/t/establishing-mutant-marketing-hub-charter/600) in 2021 and has since changed name and split into two separate teams (i.e., Community and Marketing). 
 
 #### Team members
 
-**Head of Community (FT)**. Responsible for community management, content production and coordination across the social channels, including content delivery in targeted channels. Conducts regular research on ways to improve member experience within Discord, governance forum, etc. Supports knowledge and project management.
-  * *Bio*: Sem joined the Community team part-time in February 2022 and later transitioned to a full-time team member in June 2023. She has a background in freelance governance research, notably with reState Foundation on the Future of Governance Toolkit. Her career spans roles as a VC Associate focusing on emerging fintech, product management, organizational design consulting, and human-computer interaction research. Sem earned an MSc and BSc from the Technical University of Munich and is fluent in English, German, and Turkish. 
+**Head of Community (FT)**. Sem is responsible for community management, content production and coordination across the social channels, including content delivery in targeted channels. She conducts regular research on ways to improve member experience within Discord, governance forum, etc. and provides supports to knowledge and project management.
+  * *Bio*. Sem joined the Community team part-time in February 2022 and later transitioned to a full-time team member in June 2023. She has a background in freelance governance research, notably with reState Foundation on the Future of Governance Toolkit. Her career spans roles as a VC Associate focusing on emerging fintech, product management, organizational design consulting, and human-computer interaction research. Sem earned an MSc and BSc from the Technical University of Munich and is fluent in English, German, and Turkish. 
 
 ### Marketing team
 
-The Marketing team works to expand Nexus Mutual’s brand awareness, engagement with target audiences and drive growth in new membership. This team creates and executes marketing campaigns; develops and distributes content; and manages Nexus Mutual’s marketing channels.
+The Marketing team is responsible for growing Nexus Mutual’s brand awareness, engaging target audiences, and driving new member growth. Their work includes planning and executing marketing campaigns, creating and distributing content, and managing the Mutual’s various marketing channels.
 
-This team was originally incorporated with the Community team but has a proposal to establish their own team, given Marketing and Community have different objectives.
+By promoting Nexus Mutual and reaching potential members globally, the team increases visibility and engagement. With a clear content strategy and data-driven performance metrics, they not only expand the Mutual’s reach but also provide the DAO with transparent measures of marketing impact.
+
+Originally part of the Community team, the Marketing team has submitted a proposal to operate independently, recognizing the distinct goals and functions that set Marketing apart from Community efforts.
 
 #### Team members
 
-**Director of Marketing (FT)**: Responsible for creating content for the Nexus Mutual account, developing and implementing comprehensive social media strategies to increase brand awareness, engagement, and generate leads for our B2B and B2B2C products.
-  * **Bio**: Phil joined Nexus Mutual in July 2024. He has 10 years of experience from startups to Fortune 1000 companies and a degree in Marketing. Prior to joining Nexus, he was the Content Communications Lead for Unstoppable Domains, a unicorn in the blockchain space. He got into crypto through NFTs at the end of 2020 and has never looked back.
+**Director of Marketing (FT)**. Phil is responsible for creating content for the Nexus Mutual account, developing and implementing comprehensive social media strategies to increase brand awareness, engagement, and generate leads for our B2B and B2B2C products.
+  * *Bio*. Phil joined Nexus Mutual in July 2024. He has 10 years of experience from startups to Fortune 1000 companies and a degree in Marketing. Prior to joining Nexus, he was the Content Communications Lead for Unstoppable Domains, a unicorn in the blockchain space. He got into crypto through NFTs at the end of 2020 and has never looked back.
 
 ### R&D team
 
-The R&D team helps overcome hard problems faced by the protocol and ecosystem. They strive to decentralize the problem-solving function, increase transparency, and attract skilled members who want to solve difficult problems.
+The R&D team tackles complex challenges within the protocol and broader ecosystem. Their goal is to decentralize problem-solving, foster transparency, and attract skilled members who are motivated to address difficult issues.
+
+By staying aligned with Nexus Mutual’s mission and values, the team prioritizes thoughtful, sustainable solutions over quick fixes that could compromise long-term goals. They actively engage with members to collaboratively explore, critique, and solve problems, cultivating a community of capable and committed contributors.
 
 #### Team members
 
-**Head of R&D**. Responsible for leading projects, managing contributors, working with DAO and Foundation members to increase participation in research, analytics, protocol design and product design.
-  * **Bio**: Rei has served as Head of R&D since Q1 2023. He began working on Nexus Mutual in May 2018 as the first full-time employee, covering economic design, legal set-up, actuarial modeling, documentation, and early business development. Rei has been an Advisory Board member since February 2020. Previously qualified as a UK actuary, Rei held a variety of back-office and front-office corporate roles in reinsurance and brokerage.
+**Head of R&D (PT)**. Rei is responsible for leading projects, managing contributors, working with DAO and Foundation members to increase participation in research, analytics, protocol design and product design.
+  * *Bio*. Rei has served as Head of R&D since Q1 2023. Began working on Nexus Mutual in May 2018 as the first full-time employee, covering economic design, legal set-up, actuarial modeling, documentation, and early business development. Advisory Board member since February 2020. Previously qualified as a UK actuary, held a variety of back-office and front-office corporate roles in reinsurance and brokerage.
 
-**Dune Wizard (FT)**: Responsible for writing SQL queries in Dune, capturing accurate current and historic information across the Nexus Mutual smart contracts.
-  * **Bio**: Tomasz is an experienced Data Engineer specializing in analytics engineering with a wealth of hands-on experience contributing to the Dune Spellbook repository. Proficient in SQL, dbt, and Python, with a keen ability to build robust analytics dashboards utilizing platforms like Dune Analytics and Power BI.
+**Dune Wizard (FT)**. Tomasz is responsible for writing SQL queries in Dune, capturing accurate current and historic information across the Nexus Mutual smart contracts.
+  * *Bio*. Tomasz is an experienced Data Engineer specializing in analytics engineering with a wealth of hands-on experience contributing to the Dune Spellbook repository. Proficient in SQL, dbt, and Python, with a keen ability to build robust analytics dashboards utilizing platforms like Dune Analytics and Power BI.
 
 ### Product & Risk team
 
-The Product & Risk team ideates on existing cover products and develops new cover products to drive cover sales, reach new markets, and provide members with superior protection against the greatest risks onchain and offchain. This team supports new and existing syndicates/distributors building on top of the Mutual. They also research new risks, develop risk frameworks and pricing models.
+The Product & Risk team is responsible for enhancing existing cover products and creating new ones to boost sales, expand into new markets, and offer members robust protection against major on-chain and off-chain risks. They also provide support to both new and established syndicates and distributors building on top of the protocol. Additionally, the team researches emerging risks to develop comprehensive risk frameworks and pricing models.
 
 #### Team members
 
-**Head of Product & Risk (FT)**: Conducts research on new risks and feasibility assessments for new cover products and cover wording development. Manages the Product and Cover listing process within the Mutual and regularly reviews new protocols for listings in the Nexus Mutual UI. Works with the Legal team to create new cover wording, schedule, and annex documents to support product development and listings. Reviews correlation levels across active cover and works with the BD team to track cover expiries, so the BD team can perform outreach and source demand for upcoming open capacity. Works closely with staking pool managers in the Nexus Mutual ecosystem and manage the Community Staking pool. Handles the Mutual's response to claim events.
-  * **Bio**: BraveNewDeFi has moved to a full-time position on the Product & Risk team, where he conducts research on new risks and feasibility assessments for new cover products and cover wording development. Brave manages the Product and Cover listing process within the Mutual and regularly reviews new protocols for listings in the Nexus Mutual UI. He also works with the Legal team to create new cover wording, schedule, and annex documents to support product development and listings. In addition to this work, he reviews correlation levels across active cover and works with the BD team to track cover expiries, so the BD team can perform outreach and source demand for upcoming open capacity. As part of this role, he will work closely with staking pool managers in the Nexus Mutual ecosystem and manage the Community Staking pool. BraveNewDeFi will continue to serve as the point person when claim events occur.
+**Head of Product & Risk (FT)**. BraveNewDeFi leads research on emerging risks and conducts feasibility assessments for new cover products, including the development of cover wording. He oversees the product and cover listing process within Nexus Mutual and regularly evaluates new protocols for listings in the Nexus Mutual user interface. In collaboration with the Legal team, he helps draft cover wording, schedules, and annex documents to support product development and listings. Brave also monitors correlation levels across active covers and works with the Business Development team to track upcoming cover expirations, enabling proactive outreach and demand generation for newly available capacity. As part of his role, he collaborates closely with staking pool managers across the Nexus Mutual ecosystem and manages the Community Staking Pool. Additionally, BraveNewDeFi continues to serve as the primary point of contact during claim events.
+  * *Bio*. BraveNewDeFi joined Nexus Mutual in 2021 after actively contributing to the DAO and helping establish the DAO teams model—a framework for onboarding and offboarding teams within the DAO. He launched the first DAO team, the Community team, and collaborated with other contributors to expand the team model to support the Mutual’s growth. Over the following three years, Brave applied his expertise in risk to develop a comprehensive DeFi risk and exploit database, which is now used internally to assess and price risk for both new and existing listings. In August 2024, after a year of involvement with the Product & Risk team, Brave was voted into the role of Head of Product & Risk.
 
 ## DAO team funding
 
-If the DAO team budget request proposals are approved by members through Snapshot governance, the DAO treasury sends funds to the team multisigs. With the [Q1 & Q2 2023 DAO teams budget request proposal](https://snapshot.org/#/community.nexusmutual.eth/proposal/0x63e292837175a2976c8857e0f3d565c7e5349fbf3671bcebae5505ed4dc97b12), members voted to streamline the payment process. All of the funding for DAO teams is held in the DAO teams multisig (formerly, the Community multisig) and payments are managed from that multisig.
+If the DAO team budget request proposals are approved by members through Snapshot governance, the DAO treasury sends funds to the team multisigs. With the [NMDP 7: Q3 & Q4 2024 | DAO Teams Budget Request Proposal](https://forum.nexusmutual.io/t/nmdp-7-q3-q4-2024-dao-teams-budget-request-proposal/1485/1), members voted to streamline the payment process. All of the funding for DAO teams is held in the DAO teams multisig (formerly, the Community multisig) and payments are managed from that multisig.
+
+The DAO teams have implemented an oversight process for any non-salary payment requests from the DAO teams multisig.
 
 For more information about the DAO teams, [see the DAO teams page on the Nexus Mutual DAO website](https://nexusmutualdao.io/nexus-mutual-dao-teams).
 
@@ -116,9 +129,36 @@ For more information about the DAO teams, [see the DAO teams page on the Nexus M
 The DAO teams Safe has a three-of-five (3/5) signing threshold.
 * [Safe multisig](https://app.safe.global/eth:0x57d2D86d32497bC4AEd3b603A391db50c10D7fA1/balances): 0x57d2D86d32497bC4AEd3b603A391db50c10D7fA1
 
+#### DAO teams multisig signers
+
+All signers are required to use a hardware wallet-secured address for their signing address.
+
+* BraveNewDeFi
+* Rei
+* Sem
+* Tomasz
+* Hugh
+
 ### Past team funding proposals
 
-To see recent and past DAO team budget requests, [head to the DAO Team Funding section on the Nexus Mutual governance forum](https://forum.nexusmutual.io/c/governance-discussions/dao-team-funding/15).
+* [NMDP 7: Q3 & Q4 2024 | DAO Teams Budget Request Proposal](https://forum.nexusmutual.io/t/nmdp-7-q3-q4-2024-dao-teams-budget-request-proposal/1485/1)
+* [[NMDP #2]: Q1 & Q2 2024 | DAO Teams Budget Request Proposal](https://forum.nexusmutual.io/t/nmdp-2-q1-q2-2024-dao-teams-budget-request-proposal/1371)
+* [NMDP #1: Q3 & Q4 2023 | DAO Teams Budget Request Proposal](https://forum.nexusmutual.io/t/nmdp-1-q3-q4-2023-dao-teams-budget-request-proposal/1158)
+* [Q1 & Q2 2023 | DAO Teams Budget Request Proposal](https://forum.nexusmutual.io/t/q1-q2-2023-dao-teams-budget-request-proposal/986/1)
+* [Q1 & Q2 2023 | Proposed Teams, Priorities, and 6-month Budget Breakdown](https://forum.nexusmutual.io/t/q1-q2-2023-proposed-teams-priorities-and-6-month-budget-breakdown/985/1)
+* [Nexus Hubs V2 Proposal](https://forum.nexusmutual.io/t/nexus-hubs-v2-proposal/889)
+* [Nexus Hubs: Proposed Teams, Priorities, and 6-month Budget Breakdown](https://forum.nexusmutual.io/t/nexus-hubs-proposed-teams-priorities-and-6-month-budget-breakdown/888)
+* [Investment Hub Objectives and Budget](https://forum.nexusmutual.io/t/investment-hub-objectives-and-budget/680)
+* [Mutant Marketing | Third Operational Quarter Review (02/22–04/22)](https://forum.nexusmutual.io/t/mutant-marketing-third-operational-quarter-review-02-22-04-22/841)
+* [Mutant Marketing: 2022 Roadmap](https://forum.nexusmutual.io/t/mutant-marketing-2022-roadmap/771)
+* [Mutant Marketing: First Quarter Operations Report](https://forum.nexusmutual.io/t/mutant-marketing-first-quarter-operations-report/729/1)
+* [Investment Hub Charter](https://forum.nexusmutual.io/t/investment-hub-charter/679/1)
+* [Investment Hub Objectives and Budget](https://forum.nexusmutual.io/t/investment-hub-objectives-and-budget/680)
+* [Establishing Mutant Marketing: Hub Charter](https://forum.nexusmutual.io/t/establishing-mutant-marketing-hub-charter/600)
+* [Proposal to Serve as Mutant Marketing Lead](https://forum.nexusmutual.io/t/proposal-to-serve-as-mutant-marketing-lead/601)
+* [Proposal to Serve as Mutant Marketing Advisor](https://forum.nexusmutual.io/t/proposal-to-serve-as-mutant-marketing-advisor/602)
+* [Mutant Marketing Strategy & Budget Proposal](https://forum.nexusmutual.io/t/proposal-to-serve-as-mutant-marketing-advisor/602)
+
 
 ## Proposing a new team
 

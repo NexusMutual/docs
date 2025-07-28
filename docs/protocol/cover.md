@@ -12,7 +12,7 @@ After the cover is purchased, it is tokenized and represented as an NFT (ERC-721
 
 ## Tokenized cover
 
-With tokenized cover, members can renew existing cover, file partial claims, and transfer the cover to a non-member address. Cover NFTs allow for features that were previously unavailable.
+With tokenized cover, members can renew existing cover and file partial claims. Cover NFTs allow for features that were previously unavailable.
 
 ### Flexible coverage
 

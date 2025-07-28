@@ -18,13 +18,11 @@ To learn more, read the announcement on the [Nexus Mutual blog](https://nexusmut
 
 ## Cover Re Deal
 
-In November 2023, Hugh Karp [raised a proposal on the governance forum](https://forum.nexusmutual.io/t/nmpip-grant-advisory-board-the-power-to-enter-into-investment-and-retrocession-agreement-with-cover-re/1315/1) to enter into a two-phase deal with [Cover Re ("Re")](https://re.xyz/). This proposal outlined a $15M combined investment and retrocession deal.
+In November 2023, Hugh Karp [raised a proposal on the governance forum](https://forum.nexusmutual.io/t/nmpip-grant-advisory-board-the-power-to-enter-into-investment-and-retrocession-agreement-with-cover-re/1315/1) to enter into a deal with [Cover Re ("Re")](https://re.xyz/). This proposal outlined a $15M investment deal.
 
-After discussion on the forum, this proposal transitioned to an [onchain vote](https://app.nexusmutual.io/governance/view?proposalId=212), where members voted to grant the Advisory Board the authority to enter into the Cover Re deal. Through the Cover Re deal, the Mutual will generate premiums from the investment and from the retrocession, where the Mutual's capital will be used to underwrite real world risk.
+After discussion on the forum, this proposal transitioned to an [onchain vote](https://app.nexusmutual.io/governance/view?proposalId=212), where members voted to grant the Advisory Board the authority to enter into the Cover Re deal. Through the Cover Re deal, the Mutual will generate premiums from the investment, where the Mutual's capital will be used to underwrite real world risk.
 
-The Foundation worked with the Re team to execute the first phase of the deal and the investment went live in May 2024. This deal was covered by CoinDesk in the article "[RWA Platform Re Debuts Tokenized Reinsurance Fund on Avalanche with $15M Commitment from Nexus Mutual](https://www.coindesk.com/business/2024/05/14/rwa-platform-re-debuts-tokenized-reinsurance-fund-on-avalanche-with-15m-commitment-from-nexus-mutual/)."
-
-Phase 2 (the retrocession) is expected to go live in Q3/Q4 2024. Keep an eye on the governance forum for further updates.
+The Foundation worked with the Re team to execute the deal and the investment went live in May 2024. This deal was covered by CoinDesk in the article "[RWA Platform Re Debuts Tokenized Reinsurance Fund on Avalanche with $15M Commitment from Nexus Mutual](https://www.coindesk.com/business/2024/05/14/rwa-platform-re-debuts-tokenized-reinsurance-fund-on-avalanche-with-15m-commitment-from-nexus-mutual/)."
 
 ## Product development
 

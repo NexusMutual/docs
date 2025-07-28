@@ -59,68 +59,8 @@ You can see an example of the variables being used to calculate the price of an 
 * <code>targetPrice = 4%</code>
 * <code>spotPrice = MAX(6.5% - 6.0%, 3%) = 3.0%</code>
 
-## Surge loading
-
-When the capacity for a cover product falls between 90% to 100%, surge pricing, referred to as loading, is applied to a cover product’s price.
-* If the cover product has 0% to 90% of capacity reserved for existing covers, then no loading applies
-* If the cover product has 90% to 100% of capacity reserved for existing covers, then loading is applied, where loading is a linear function related to capacity used post cover purchase
-  * For loading of 2% per 1% of capacity used above 90%
-
-### Price formula including surge loading
-
-<p><code>premium = basePremium + surgePremium</code></p>
-Where:<p></p>
-
-* <code>basePremium = cover amount * spotPrice</code>
-* <p><code>surgePremium = cover amount * surgeLoading / 2</code></p>
-
-  * Where <code>surgeLoading</code> is referred to as the surge loading factor in the examples below
-
-*Example: capacity starts at 88% and goes to 95%*
-* <code>used capacity % before = 88%</code>
-* <code>used capacity % after = 95%</code>
-
-<p><code>loading = 0.02 for every 1% of capacity over 90%</code></p>
-<p><code>surge loading factor at 95% = (95% - 90%) / 1% * 0.02 = 5 * 0.02 = 0.1</code></p>
-
-*Example: capacity starts at 91% and goes to 95%*
-* <code>used capacity % before = 91%</code>
-* <code>used capacity % after = 95%</code>
-
-<p><code>surge loading factor at 95% = (95% - 90%) / 1% * 0.02 = 5 * 0.02 = 0.1</code></p>
-
-<p><code>surge loading factor at 91% = (91% - 90%) / 1% * 0.02 = 1 * 0.02 = 0.02</code></p>
-
-and
-
-<p><code>premium = basePremium + surgePremium</code></p>
-
-Where:
-* <code>basePremium = cover amount * spotPrice</code>
-* <p><code>surgePremium = surgePremium 90% to 95% - surgePremium 90% to 91%</code></p>
-* <p><code>surgePremium 90% to 95% = amount * surge loading factor at 95% / 2 =</code></p>
-* <code>surgePremium 90% to 91% = amount * surge loading factor at 91% / 2 =</code>
-
 ## Benefits
 
 Dynamic pricing adjusts based on changes in demand and utilization. This allows for reactive pricing without the need for immediate action by staking pool managers.
 
 The dynamic pricing model allows a staking pool to diversify risk across cover products no matter if demand is high or low. In each instance, the price will increase or decrease to reflect the market rate.
-
-### High utilization, high price to signal demand
-
-Should the perceived risk associated with a single cover product increase in a short period of time, the increase in cover buys will shift the cover price higher. When this happens, the Mutual captures more revenue as exposure to any single risk increases. If the utilization for one cover product rises above 90%, then surge pricing is applied to the cover product’s price.
-
-Rising prices and surge pricing can serve as a signal to staking pool managers that the risk needs to be re-evaluated to determine:
-* If more staked NXM should be allocated to open up additional capacity for that cover product; or
-* If the pool should reduce exposure to that risk over time by adjusting the staking parameters
-
-### Low utilization, low price
-
-Cover products in a staking pool with ample capacity but infrequent cover buys will decrease in price toward the target price set by the staking pool manager. If a smaller amount of staked NXM is allocated to a cover product, the target price can still be achieved, though when additional cover is purchased, the cost of cover will move up in price faster than a pool with a larger number of staked NXM allocated to the same risk.
-
-### Managing exposure to risk
-
-As the cost of cover increases, demand will begin to decrease once the price reaches a certain level and continues to rise. This can limit exposure to risk, while generating more revenue for the Mutual and members participating as NXM stakers.
-
-Dynamic pricing plays an important role in risk management, though it’s not the only way the protocol manages exposure to risk.
