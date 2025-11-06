@@ -12,7 +12,7 @@ For more information on how the protocol operates, see the [Protocol](/protocol/
 
 In the following pages within the Overview section, you can learn about membership, cover products, the Mutual's claims history, and access various resources.
 
-## Teams supporting the protocol
+## Teams Supporting the Protocol
 
 The Foundation and Nexus Mutual DAO members contribute to the protocol to further development, create awareness, and increase adoption. Third parties can also request grant funding to make independent contributions or help further development of the protocol.
 
@@ -26,4 +26,4 @@ The Foundation exists to maintain the Nexus Mutual protocol and user interface; 
 
 Everyone who goes through the membership process becomes a Nexus Mutual DAO member. Members can contribute to the protocol in a variety of ways, which are all reviewed in detail within the [Protocol](/protocol/) section.
 
-Members can also participate in [protocol governance](/governance/) to decide proposals regarding the protocol and Capital Pool investments. There are DAO teams that work on behalf of all members to create awareness about the Mutual and increase adoption of the protocol. To receive funding from the DAO treasury, these teams use the [Nexus Mutual DAO Proposal process](/governance/dao-proposals/), which uses Snapshot governance.
+Members can also participate in [governance](/governance/) to decide proposals regarding the protocol, Capital Pool, and DAO treasury.

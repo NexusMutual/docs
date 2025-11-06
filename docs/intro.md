@@ -40,6 +40,4 @@ An in-depth review of the Nexus Mutual protocol:
 
 Review of protocol and DAO governance, and how the DAO operates:
 * [Introduction to governance](/governance/)
-* [Nexus Mutual Protocol Improvement Proposals (NMPIPs)](/governance/protocol-improvement-proposals)
-* [Nexus Mutual DAO Proposals (NMDPs)](/governance/dao-proposals)
 * [Overview of the Nexus Mutual DAO](/governance/dao)

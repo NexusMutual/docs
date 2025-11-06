@@ -54,7 +54,6 @@ Every member who joins Nexus Mutual has voting power equal to one vote plus the 
 
 To defeat a proposal, members must vote with at least 15% of the NXM token supply to deny the default outcome recommended by the AB.
 
-
 ## Governance Proposal Timelines, Types
 
 When governance proposals go to vote, there is a standard timeframe for the voting period:
@@ -106,7 +105,6 @@ Those who want to put their talents and skills to work for the DAO can contribut
 Anyone interested in starting a new DAO team can reach out through the [Nexus Mutual Contact Form](https://nexusmutual.io/contact) and BraveNewDeFi will respond promptly. Of course, anyone can put forward an RFC on the governance forum, but the existing DAO team members are happy to provide feedback and support to anyone interested in working for the DAO.
 
 ### Signalling Votes
-
 
 While not required, signalling votes are a helpful way to gauge support for an RFC, NMDP or NMPIP before it goes to a formal vote. Anyone interested in gauging support for a proposal can reach out to [BraveNewDeFi](https://t.me/BraveNewDeFi), who can help create the signalling vote on the [Nexus Mutual DAO Snapshot space](https://snapshot.box/#/s:community.nexusmutual.eth).
 
