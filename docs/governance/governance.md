@@ -4,109 +4,110 @@ Sidebar_position: 8
 
 # Governance
 
-Nexus Mutual is a decentralized people-powered protocol that is governed by members. Through protocol governance, members can propose and vote on changes to any aspect of the protocol. These decisions determine the Mutual’s future operations.
+Nexus Mutual is an onchain discretionary mutual governed by its members. The Mutual uses an optimistic governance model where the Advisory Board (AB) creates a proposal and sets the default outcome.
 
-In addition, members determine how DAO treasury funds are allocated and spent. These funds are often used to fund DAO teams or grants that improve awareness and education or technical infrastructure and capabilities.
+The AB creates a proposal in parallel on the [Nexus Mutual DAO Snapshot space](https://snapshot.box/#/s:community.nexusmutual.eth), where Nexus Mutual members can vote to reject the default outcome. If Nexus Mutual members vote and meet the quorum for rejection, the AB's default outcome is rejected and the proposal does not move forward.
 
-## Protocol governance power
+## The Advisory Board
 
-Every member who joins Nexus Mutual has voting power equal to one vote plus the sum total of their NXM tokens, which applies to protocol governance.
-
-<p><code>Onchain voting power = 1 + MIN (5% of NXM supply, NXM holdings)</code></p>
-
-A single member’s voting power is capped at 5% of the total NXM supply. This is designed to prevent a large holder from having undue influence in protocol governance.
-
-### Advisory Board
-
-The Advisory Board is currently made up of five (5) members of the Mutual and contains members of the founding team and other experts. The goal is to have a qualified mix of individuals covering three broad skill sets of:
+The Advisory Board (AB) puts forward governance proposals and recommends a default outcome. There are five (5) subject matter experts that sit on the AB, who bring expertise across three broad skill sets:
 * Technical expertise: smart contract security and blockchain
 * Technical expertise: insurance and mutuals
 * General expertise: legal, regulatory, corporate governance, and business management
 
-Advisory Board members are elected by Nexus Mutual members through governance. If a vote to appoint or replace an Advisory Board member is approved, the elected member will be granted the Advisory Board role through the MemberRoles contract, which you can find in the [Nexus Mutual SDK](https://sdk.nexusmutual.io/).
-
-The Advisory Board has power in limited circumstances and is primarily there to provide qualified technical guidance to the members of the Mutual on improvement proposals as well as take emergency action, should it be required. The scope of the Advisory Board’s power in governance is outlined on the [Nexus Mutual Protocol Improvement Proposals (NMPIP)](/governance/protocol-improvement-proposals) page.
-
-#### Advisory Board Members
-
-The Advisory Board requires a quorum of three out of five members to provide their recommendation on proposals in the Upgrades, Technical Changes, Use of Funds or Critical Decisions onchain governance categories. If members grant the Advisory Board approval to make smart contract upgrades, Advisory Board members can enact changes through the <code>Release New Smart Contract Code</code> onchain governance category as long as the quorum of three out of five members is met.
-
-Below is the list of elected Advisory Board members:
+The current AB members are:
 * [Roxana Danila](https://twitter.com/roxdanila)
 * [Hugh Karp](https://twitter.com/HughKarp)
 * [Rei Melbardis](https://twitter.com/Rei_Melb)
 * [Lee McClelland](https://www.linkedin.com/in/lee-j-mcclelland/)
 * [Graeme Thurgood](https://twitter.com/GraemeThurgood)
 
-#### Emergency Pause Powers
+### The Role of the Advisory Board
+
+The Advisory Board has power in limited circumstances and is primarily there to provide qualified technical guidance to Mutual members on proposals, prevent fraud from occurring within the Mutual, perform technical upgrades when granted authority by members, and take emergency action to pause the protocol, should it be required.
+
+For governance votes, the AB recommends a default outcome and Nexus Mutual members may vote in the Nexus Mutual DAO Snapshot space to reject that default outcome.
+* If Nexus Mutual members vote to deny a proposal and quorum is reached, the proposal does not move forward and the AB's default outcome is discarded.
+* If Nexus Mutual members vote to deny a proposal and quorum is not reached, the proposal moves forward and the AB's default outcome is accepted.
+
+### Emergency Pause Powers
 
 In extreme situations where a vulnerability is discovered, the Advisory Board has the power to enact an emergency pause of the Ratcheting AMM (RAMM) contract or of the entire protocol. This power would only be used as a means of securing the protocol if a vulnerability was discovered that could put funds at risk.
 
-For added security, an [Emergency Pause multisig](https://app.safe.global/home?safe=eth:0x422D71fb8040aBEF53f3a05d21A9B85eebB2995D) was created with *only* the power to pause either the RAMM contract or the entire protocol. An additional two (2) signers have been added to this multisig to have adequate coverage across time zones.
+For added security, an Emergency Pause Safe multisig was created. The Emergency Pause Safe multisig's only power is to pause either the RAMM contract or the entire protocol if a vulnerability is discovered or exploited.
 
-The Advisory Board members listed above are signers on this multisig, as well as:
-* [BraveNewDeFi](https://twitter.com/BraveDeFi), Head of the DAO Community team
-* [Shark0der](https://twitter.com/shark0der), Nexus Mutual Foundation Technical Lead
+### Replacing Advisory Board Members
 
-## DAO governance power
+Ultimately, AB members serve at the discretion of Nexus Mutual members. Should members decide an AB member needs to be replaced, Nexus Mutual members can raise a proposal onchain to replace an AB member without interference from existing AB members.
 
-Voting power in DAO governance, which uses Snapshot, is equal to the sum total of an individual member’s NXM tokens.
+Any Nexus Mutual member can raise a proposal to raise an AB member, with the following requirements:
+* The member who raises the proposal must have a minimum of 100 NXM tokens in order to put the proposal onchain; and
+* At least 15% of the total NXM token supply must participate in the vote.
 
-## Governance proposals
+If a proposal to replace an AB member receives a majority of the votes to approve and quorum is met, the proposal will pass.
 
-Nexus Mutual members can start discussions on the [Nexus Mutual governance forum](https://forum.nexusmutual.io/), which can then be transitioned to a vote after enough time has passed. There are two different proposal types, and they focus on either the protocol or the DAO.
+## Voting Power
 
-### Protocol improvement proposals, votes
+Every member who joins Nexus Mutual has voting power equal to one vote plus the sum total of their NXM tokens.
 
-Members can create a [Nexus Mutual Protocol Improvement Proposal (NMPIP)](/governance/protocol-improvement-proposals) to share on the forum and discuss with other members. These proposals can generally be classified in one of the two following categories.
-* [Upgrades, Technical Changes, Use of Funds](/governance/protocol-improvement-proposals#upgrades-technical-changes-use-of-funds)
-* [Critical Decisions](/governance/protocol-improvement-proposals#critical-decisions)
+### Quorum for Rejection
 
-To learn more about the NMPIP process, [see the Governance Hub on the Nexus Mutual DAO website](https://nexusmutualdao.io/governance-hub).
+To defeat a proposal, members must vote with at least 15% of the NXM token supply to deny the default outcome recommended by the AB.
 
-#### Protocol improvement proposal quorum parameters for Member roles
-* Quorum (Regular Resolutions): 15% of total NXM supply
-* Quorum (Special Resolutions): 75% of total NXM supply
-* Majority (Regular Resolutions): 50%+ of voting weight
-* Super-majority (Special Resolutions): 75%+ of voting weight
 
-#### Voting incentives
+## Governance Proposal Timelines, Types
 
-Voting requires members to dedicate time and attention to reviewing proposals, making decisions, and casting votes.
+When governance proposals go to vote, there is a standard timeframe for the voting period:
+1. **Proposal is created**. The vote is put onchain and on the Nexus Mutual DAO Snapshot space for voting.
+2. **Proposal is open for voting**. All governance proposals have a three (3) day voting period.
+3. **Post-vote timelock period**. Once the voting period closes, a proposal is subject to a 24-hour timelock period where no action can take place until the timelock period passes.
+4. **Proposal outcome**. If a proposal succeeds, it can be executed after the timelock period ends. If a proposal is defeated, no action is taken after the timelock period ends.
 
-To encourage wider participation and reward members for their time, 100 NXM in incentives is split between the number of members who vote on a protocol improvement proposal, not the number of tokens cast in a vote. These rewards make it worthwhile for all members to participate.
+This applies to all of the governance proposal types outlined below.
 
-#### Governance security
+### Nexus Mutual Protocol Improvement Proposals (NMPIP)
 
-Members that use their NXM to vote on a protocol improvement proposal will not be able to redeem or transfer their NXM for three (3) days after they cast their vote.
+A Nexus Mutual Protocol Improvement Proposal (NMPIP) is a proposal to signal or enact a change to the Nexus Mutual protocol. These proposals are used to engage with the community, reach consensus, and enact proposals if approved through a vote.
 
-The governance restriction can be calculated as follows:
+Members can post and discuss proposals on the Nexus Mutual governance forum. [All proposals need to follow the guidelines outlined in the Nexus Mutual Protocol Improvement Proposal (NMPIP) framework post on the forum](https://forum.nexusmutual.io/t/about-the-nexus-mutual-protocol-improvement-proposals-category/27).
 
-<p><code>Restriction = T + 3 days</code></p>
+Once an NMPIP has gone through the discussion process, it will be put to a vote on the [Nexus Mutual DAO Snapshot space](https://snapshot.box/#/s:community.nexusmutual.eth). All Nexus Mutual members can vote and enjoy gas-less voting on Snapshot.
 
-Where T = timestamp when vote is cast
+The default outcome will be **approve** unless Nexus Mutual members vote to deny and meet quorum.
 
-Members can still use their NXM to stake and delegate to a staking pool and participate in claims assessment, but transfers and redemptions will not be possible for the duration of the three-day period.
+#### Capital Pool Investments
 
-### DAO proposals, votes
+Nexus Mutual invests the idle assets held in the [Capital Pool](https://dune.com/nexus_mutual/capital-pool-and-ownership) at the discretion of its members. Any potential investment of Capital Pool funds must first go through the NMPIP process before a vote on an investment allocation can be made.
 
-Members can create a [Nexus Mutual DAO Proposal (NMDP)](https://nexusmutualdao.io/governance-hub/the-nmdp-process-templates) to share on the forum and discuss with other members. These proposals can generally be classified in one of the three following categories.
-* **Grant request**. Members that wish to contribute to the DAO by working on single-purpose projects, providing short-term services, building tools for members, or other means can submit a grant-specific NMDP. The required information for a grant-specific NMDP is included in the NMDP template entry.
-* **DAO team creation request**. If a member, or group of members, believe another team can provide long-term value to the DAO, protocol, and members on a whole, they can write and post a team creation request NMDP. The required information for a team creation request NMDP is included in the NMDP template entry. Learn more about the process on the Nexus Mutual DAO page.
-* **DAO team funding request**. If an established team is nearing the end of their funding period, they can create a team funding request NMDP. The required information for a team funding request NMDP is included in the NMDP template entry. Learn more about the process on the Nexus Mutual DAO page.
+Anyone interested in putting forward a proposal to allocate a portion of Nexus Mutual's Capital Pool to an investment must follow the [Investment Proposal Template](https://forum.nexusmutual.io/t/investment-proposal-template/1096/1) that was developed by the Investment Committee.
 
-To learn more about the NMDP process and governance, [see the Governance Hub on the Nexus Mutual DAO website](https://nexusmutualdao.io/governance-hub).
+For examples of past investment allocations, see the [Investments](/protocol/capital-pool/investments) section of the documentation.
 
-### Signaling votes
+### Nexus Mutual DAO Proposals (NMDP)
 
-These are not required but may be used to gauge sentiment as part of a protocol or DAO proposal. To gauge sentiment, someone can conduct a Snapshot vote with the title “Signaling vote: [Title of proposal]”.
+A Nexus Mutual DAO Proposal (NMDP) is a proposal that is used to propose DAO treasury management strategies, submit a grant request for funding, create a new DAO team, or request a renewal and funding for an existing DAO team. These proposals are used to engage with the community, reach consensus, manage the DAO treasury, and distribute funding from the DAO treasury to fund projects and teams.
 
-These votes should be open for a minimum of three days.
+Members can post and discuss proposals on the Nexus Mutual governance forum. [All proposals need to follow the guidelines outlined in the Nexus Mutual DAO Proposal (NMDP) framework post on the forum](https://forum.nexusmutual.io/t/about-the-nexus-mutual-dao-proposals-category/450).
 
-Learn more about NMPPs and NMDPs in the following pages. 
+Once an NMDP has gone through the discussion process, it will be put to a vote on the [Nexus Mutual DAO Snapshot space](https://snapshot.box/#/s:community.nexusmutual.eth). All Nexus Mutual members can vote and enjoy gas-less voting on Snapshot.
 
-***Disclaimer***: *While all care has been taken there may be some discrepancies between the Governance documentation and the functioning of the onchain governance smart contracts. In the event a discrepancy exists in this documentation, the smart contract rules apply.*
+The default outcome will be **approve** unless Nexus Mutual members vote to deny and meet quorum.
 
-## Additional DAO Related Resources
+#### DAO Treasury Management
 
-The DAO teams maintain the [Governance Hub on the DAO website](https://nexusmutualdao.io/governance-hub). The Governance Hub is an all-in-one resource for all information about governance, DAO multisigs, treasury holdings, and more.
+In September 2024, Nexus Mutual members voted to approve [kpk's (formerly karpatkey) proposal to manage the Nexus Mutual DAO treasury](https://forum.nexusmutual.io/t/nmdp-8-establish-karpatkey-as-the-treasury-manager-for-nexus-mutual-dao/1511), the pool of funds set aside to fund DAO-based initiatives.
+
+Since that time, kpk has provided [treasury updates](https://forum.nexusmutual.io/t/nexus-mutual-dao-treasury-updates-karpatkey/1572) on the governance forum. They also track the [Mutual's DAO treasury performance](https://reports.karpatkey.com/nexus-mutual?month=9&year=2025&currency=USD) on the kpk website.
+
+#### DAO Team Funding Requests
+
+Those who want to put their talents and skills to work for the DAO can contribute to an existing team or establish a new team that can serve the DAO for the long-term and provide a necessary function that is not being fulfilled within the DAO. For information on the existing teams, see the [latest DAO team funding request](https://forum.nexusmutual.io/c/governance-discussions/dao-team-funding/15) on the governance forum.
+
+Anyone interested in starting a new DAO team can reach out through the [Nexus Mutual Contact Form](https://nexusmutual.io/contact) and BraveNewDeFi will respond promptly. Of course, anyone can put forward an RFC on the governance forum, but the existing DAO team members are happy to provide feedback and support to anyone interested in working for the DAO.
+
+### Signalling Votes
+
+
+While not required, signalling votes are a helpful way to gauge support for an RFC, NMDP or NMPIP before it goes to a formal vote. Anyone interested in gauging support for a proposal can reach out to [BraveNewDeFi](https://t.me/BraveNewDeFi), who can help create the signalling vote on the [Nexus Mutual DAO Snapshot space](https://snapshot.box/#/s:community.nexusmutual.eth).
+
+***Disclaimer***: While all care has been taken, there may be some discrepancies between the governance documentation and the functioning of the onchain governance smart contracts. In the event a discrepancy exists in this documentation, the smart contract rules apply.
