@@ -1,25 +1,18 @@
 ---
-sidebar_position: 8.4
+sidebar_position: 8.1
 ---
 
 # Nexus Mutual DAO
 
-People join as members of the Nexus Mutual DAO and access the benefits of membership. Nexus Mutual is a member-driven protocol and DAO. People contribute to the protocol when they buy cover, underwrite risk, build risk management businesses, assess claims, or participate in governance.
+People join as members of the Nexus Mutual DAO and access the benefits of membership. Nexus Mutual is a member-driven protocol and DAO. People contribute to the protocol when they buy cover, underwrite risk, or participate in governance.
 
 Members who want to work to further the protocol's development, growth, awareness, or adoption can contribute to the DAO through a grant or a DAO team. Grants and teams are funded through the NMDP process; successful proposals receive funding from the DAO treasury (formerly referred to as the Community Fund).
 
-People that contribute should help further the Nexus Mutual mission. Teams and contributors should share the Mutual's values.
+People that contribute should help further the Nexus Mutual mission.
 
 ## Mission
 
 Our mission is to provide onchain protection against crypto risks and beyond.
-
-## Values
-
-Nexus Mutual members value:
-* **Trust**–our commitment to transparency and our track record for paying claims should speak for itself, as we know we earn trust through our actions.
-* **Egalitarian**–we are building an open protocol and DAO, so that protection is accessible by anyone.
-* **Integrity**–we engage honestly with one another, keep our word, and always choose the right decision even when it's difficult.
 
 ## DAO treasury
 
@@ -38,7 +31,7 @@ The treasury multisig signers were decided through a Snapshot vote. The communit
 * [Adam Benayoun](https://twitter.com/adambn)
 * [Deepcryptodive on behalf of kpk](https://x.com/deepcryptodive)
 
-The multisig signers will sign off on, but not decide, which proposals pass and do not pass. They will enact the will of the wider Nexus Mutual community who vote with their NXM.
+The multisig signers are responsible for distributing funds from the DAO treasury for NMDP votes that meet the approval threshold. 
 
 ### DAO treasury address
 
@@ -50,9 +43,9 @@ The DAO treasury is managed across several multisigs, as noted below:
 
 ## Contributing to the DAO
 
-Members can contribute to the DAO in a variety of ways. Reviewing governance forum discussions, providing comments and feedback, and voting in governance is an important way all members can contribute. [Our Head of Community offers several initiatives for people to get involved within Nexus Mutual and DeFi, as well](https://nexusmutualdao.io/calls-to-action). Check them out!
+Members can contribute to the DAO in a variety of ways. Reviewing governance forum discussions, providing comments and feedback, and voting in governance is an important way all members can contribute.
 
-Those who want to put their talents and skills to work for the DAO can create an NMDP to request a grant for a single-purpose project or another purpose. Any grant proposal should highlight how someone's work will benefit the growth and development of the Mutual. Learn more about the NMDP grant process on the [Nexus Mutual DAO Proposals (NMDP)](/governance/dao-proposals) page.
+Those who want to put their talents and skills to work for the DAO can create an NMDP to request a grant for a single-purpose project or another purpose. Any grant proposal should highlight how someone's work will benefit the growth and development of the Mutual. Learn more about the NMDP process on the Nexus Mutual governance forum.
 
 Members can also contribute to an existing team or establish a new team that can serve the DAO for the long-term and provide a necessary function that is not being fulfilled within the DAO.
 

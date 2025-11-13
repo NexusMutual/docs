@@ -10,6 +10,46 @@ Review Nexus Mutual's audits, bug bounties, and initiatives to strengthen our pr
 
 Below are a list of audits conducted on Nexus Mutual's smart contracts in order of newest to oldest. You can also review [Nexus Mutual's GitHub](https://github.com/NexusMutual/smart-contracts) where these reports are hosted.
 
+### iosiro audit | March 2025
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the Cover Edit, Limit Orders and Staking Pool contracts. 
+* [Nexus Mutual Cover Edit, Limit Orders and Staking Pool Fix Smart Contract Audit](https://iosiro.com/audits/nexus-mutual-cover-edit-limit-orders-and-staking-pool-fix-smart-contract-audit)
+
+### iosiro audit | January 2025
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the Product Pricing Changes contract.
+* [Nexus Mutual Product Pricing Changes Smart Contract Audit](https://iosiro.com/audits/nexus-mutual-product-pricing-changes-smart-contract-audit)
+
+### iosiro audit | November 2024
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the USD Price Feed Oracle.
+* [Nexus Mutual USD Price Feed Oracle Support Audit](https://iosiro.com/audits/nexus-mutual-usd-price-feed-oracle-support-audit)
+
+### iosiro audit | September 2024
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the Long Term Limit Order contract.
+* [Nexus Mutual Long Term Limit Order Smart Contract Audit](https://iosiro.com/audits/nexus-mutual-long-term-limit-order-smart-contract-audit)
+
+### iosiro audit | August 2024
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the Staking Pool Fixes and NXM Batch Withdrawal Changes.
+* [Staking Pool Fixes and NXM Batch Withdrawal Changes Smart Contract Audit](https://iosiro.com/audits/staking-pool-fixes-and-nxm-batch-withdrawal-changes-smart-contract-audit)
+
+### iosiro audit | July 2024
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the CoverProducts Refactor and and Total Active Cover Fix code.
+* [Nexus Mutual CoverProducts Refactor and Total Active Cover Fix Smart Contract Audit](https://iosiro.com/audits/nexus-mutual-coverproducts-refactor-and-total-active-cover-fix#introduction)
+
+### iosiro audit | March 2024
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the Swap Operator contract.
+* [Nexus Mutual Swap Operator Asset to Asset Smart Contract Audit](https://iosiro.com/audits/nexus-mutual-swap-operator-asset-to-asset-smart-contract-audit)
+
+### iosiro audit | January 2024
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the Safe Tracker, a new contract in the system that follows the ERC-20 standard. The balance of the Safe and the total supply are calculated as the total value of the assets in terms of ETH. The Safe Tracker is used to track the price of assets managed by a Safe multisig controlled by the Advisory Board. This Safe was used to manage the Mutual's Aave v3 loan, which has since been repaid.
+* [Nexus Mutual Safe Tracker Smart Contract Audit](https://iosiro.com/audits/nexus-mutual-safe-tracker-smart-contract-audit#specification)
+
 ### iosiro audit | October 2023
 
 [iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the Ratcheting AMM (RAMM) contracts.
@@ -48,13 +88,6 @@ The [G0 Group](https://github.com/g0-group) was commissioned by Nexus Mutual to 
 ## Security
 
 Nexus Mutual works to ensure the smart contract system is safe and secure. Regular audits are an important part of maintaining the security of the smart contract system, but there are other approaches the Mutual takes to keep the protocol secure.
-
-### Security for RAMM launch
-
-Pending a successful onchain governance vote, the RAMM will launch in late November. At launch, the Engineering team will employ the following security measures to ensure the launch is closely monitored:
-* **Implementing circuit breakers in RAMM contract.** The RAMM contract will be deployed with circuit breakers in the code, which will limit the maximum amount of ETH that can be withdrawn and the maximum amount of NXM that can be minted via capital contributions over a defined period of time. The limits will be progressively raised over time, after careful monitoring of the system.
-* **Active smart contract monitoring with Tenderly alerts**. The Engineering team uses Tenderly alerts to monitor for certain events within the protocol. At launch, the Engineering team will have enhanced monitoring in place for the RAMM contracts and any associated events within the protocol to ensure they can closely monitor the smart contracts.
-* **Emergency pause functionality for RAMM contract**. The [Advisory Board](/governance/#advisory-board) has the power to enact an emergency pause on the RAMM contract should any malicious activity take place, which will prevent any minting or redeeming from occurring that would result in a loss of value for members. This power would only be used in an extreme situation and serves as a last resort.
 
 ### Bug bounty program
 
