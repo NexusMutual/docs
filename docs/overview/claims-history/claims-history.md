@@ -29,7 +29,7 @@ Members of the Mutual have paid out $18M+ to cover holders who suffered a loss d
 
 For stats on claims, you can review:
 * The Mutual's [claims history on the Nexus Mutual DAO website](https://nexusmutualdao.io/claims-history), where you will find the summary, outcome, and other information about each claim request that has been filed.
-* Tthe [Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
+* The [Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 * The [claims section in the Nexus Mutual user interface](https://app.nexusmutual.io/assessment). Numerous claims have been submitted by users testing the system in the first two years after the Mutual launched.
 
 In the following sections, we outline past claims events and review claim outcomes.
