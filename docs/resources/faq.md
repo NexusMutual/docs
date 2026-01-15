@@ -36,7 +36,7 @@ For information on the Mutual's track record of paying claims, see the [Claims H
 
 ### How do I become a member?
 
-You can go to the [Nexus Mutual app](https://app.nexusmutual.io/membership) to begin the membership application process. 
+You can go to the [Nexus Mutual app](https://app.nexusmutual.io/become-member) to begin the membership application process.
 
 See the [Membership](/overview/membership) page for more information.
 
@@ -148,7 +148,7 @@ The NXM token is needed in order to bind together the internal economics of the 
 
 ### When did the NXM token launch?
 
-Nexus Mutual and the NXM token were launched on 30 May 2019. You can read our [We've Launched](https://medium.com/nexus-mutual/weve-launched-2bc8ba1049f2) Medium post for details about the initial launch. You can check out the [Nexus Mutual app](https://app.nexusmutual.io/home) as well.
+Nexus Mutual and the NXM token were launched on 30 May 2019. You can read our [We've Launched](https://medium.com/nexus-mutual/weve-launched-2bc8ba1049f2) Medium post for details about the initial launch. You can check out the [Nexus Mutual app](https://app.nexusmutual.io/) as well.
 
 ### Is NXM listed on any exchanges?
 

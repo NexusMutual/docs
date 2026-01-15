@@ -125,7 +125,7 @@ if (response.result) {
 PoS integrations do require a disclaimer to let users know they'll have to become a Nexus Mutual member in order to file a claim. You can find the template below:
 
 - By buying Nexus Mutual Bundled Protocol Cover, you agree to the [terms](link to relevant Product Type wording) and [conditions](link to any relevant schedule and/or annex document)
-- By checking this box, you confirm that you do not reside in the countries listed in the [linked page](https://docs.nexusmutual.io/overview/membership/#kyc-requirements), and acknowledge that in the event of a loss, you will be required to join as a [member of Nexus Mutual](https://app.nexusmutual.io/membership) to file your claim.
+- By checking this box, you confirm that you do not reside in the countries listed in the [linked page](https://docs.nexusmutual.io/overview/membership/#kyc-requirements), and acknowledge that in the event of a loss, you will be required to join as a [member of Nexus Mutual](https://app.nexusmutual.io/become-member) to file your claim.
 
 #### Guidance on How to Display
 
