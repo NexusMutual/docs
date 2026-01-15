@@ -38,7 +38,7 @@ By becoming a member you agree to the conditions specified in the [DAO Member Ag
 
 To become a member, you will need to verify your identity.
 
-1. First, select the (Membership) button on the [Welcome page](https://app.nexusmutual.io/home).
+1. First, select the (Membership) button on the [Welcome page](https://app.nexusmutual.io/).
 2. Proceed to KYC submission: you will be prompted to submit a photo of your government-issued identification, which will be used in the verification process.
 3. Pay the 0.0020 ETH fee and finalize your membership.
 

@@ -104,7 +104,7 @@ async function createConfigAsync() {
               position: "right",
             },
             {
-              href: "https://app.nexusmutual.io/home",
+              href: "https://app.nexusmutual.io/",
               label: "Nexus Mutual UI",
               position: "right",
             },
