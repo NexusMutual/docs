@@ -49,16 +49,17 @@ Restricted|Countries|List
 Algeria|India|Namibia
 Angola|Iran|Nepal
 Bolivia|Japan|North Korea
-Bulgaria|Kenya|South Sudan
-Cameroon|Lao People’s Democratic Republic|Syria
-China|Lebanon|Venezuela
-Cote d'Ivoire|Mexico|Vietnam
-Democratic Republic of Congo|Monaco|Yemen
-Haiti|Myanmar| 
+Bulgaria|Kenya|Russia
+Cameroon|Lao People’s Democratic Republic|South Sudan
+China|Lebanon|Syria
+Cote d'Ivoire|Mexico|Venezuela
+Democratic Republic of Congo|Monaco|Vietnam
+Haiti|Myanmar|Yemen
 
 ## Participating within the protocol, contributing to the Mutual
 
 Once you have joined as a member, you can participate within the protocol in a variety of ways and contribute to the Nexus Mutual DAO.
 * Read the [Protocol](/protocol/) section to learn more about how you can participate.
 * Read the [Governance](/governance/) section to learn more about how you can contribute to the [Nexus Mutual DAO](/governance/dao).
+
 
