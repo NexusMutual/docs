@@ -1,19 +1,19 @@
 # Depositing USDC
 
-Approved depositors may deposit USDC into the RWI Vault smart contract. Once verified, you can connect your wallet, deposit USDC and start earning yield through the Deposit interface.
+[Approved](/approval) depositors may deposit USDC into the RWI Vault smart contract. Once verified, you can connect your wallet, deposit USDC and start earning yield through the Deposit interface.
 
 Depositing USDC requires you to submit a transaction on Ethereum. You may also be requested to approve the Vault contract to interact with your USDC ahead of depositing.
 
-When you deposit USDC, you are calling the `requestDeposit()` function on the smart contract. If the deposit doesn’t exceed the Vault Cap, the smart contract will automatically accept your USDC and you will receive an amount of RWIV tokens in return based on the current exchange rate.
+When you deposit USDC, you are calling the <code>requestDeposit()</code> function on the smart contract. If the deposit doesn’t exceed the Vault Cap, the smart contract will automatically accept your USDC and you will receive an amount of RWIV tokens in return based on the current exchange rate.
 
-It is also possible to deposit and immediately lock the LP tokens to earn bonuses. In this case, the `requestDepositandLock()` function is called instead.
+It is also possible to deposit and immediately lock the LP tokens to earn bonuses. In this case, the <code>requestDepositandLock()</code> function is called instead.
 
 ## RWIV Token
 
 RWIV is the deposit token of the RWI Vault.
 
-- RWIV tokens accrue the baseline yield programmatically, increasing the USDC redemption value of the token
-- RWIV can be locked in the Vault’s smart contracts to earn bonuses
+- RWIV tokens accrue the [Baseline Yield](/yield-structure/baseline-yield) programmatically, increasing the USDC redemption value of the token
+- RWIV can be locked in the Vault’s smart contracts to earn [bonuses](/yield-structure/bonuses)
 - Unless locked, RWIV is freely transferable and deployable in other DeFi applications
 
 ## Vault Cap
@@ -27,4 +27,4 @@ Users are still able to submit a deposit request transaction even if that deposi
 
 The initial Vault Cap is set to 10m USDC.
 
-The Vault Operator can update the Vault Cap onchain as required. These updates are made according to the VO’s processes based on deposit demand, ability of Insurance Partners to take in additional funds and interest accrued over time within the Vault.
+The Vault Operator can update the Vault Cap onchain as required. These updates are made according to the VO’s processes based on deposit demand, ability of [Insurance Partners](/insurance-partners) to take in additional funds and interest accrued over time within the Vault.
