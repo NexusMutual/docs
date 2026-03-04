@@ -1,6 +1,10 @@
+---
+sidebar_position: 8.2
+---
+
 # Depositing USDC
 
-[Approved](/approval) depositors may deposit USDC into the RWI Vault smart contract. Once verified, you can connect your wallet, deposit USDC and start earning yield through the Deposit interface.
+[Approved](approval.md) depositors may deposit USDC into the RWI Vault smart contract. Once verified, you can connect your wallet, deposit USDC and start earning yield through the Deposit interface.
 
 Depositing USDC requires you to submit a transaction on Ethereum. You may also be requested to approve the Vault contract to interact with your USDC ahead of depositing.
 
@@ -12,8 +16,8 @@ It is also possible to deposit and immediately lock the LP tokens to earn bonuse
 
 RWIV is the deposit token of the RWI Vault.
 
-- RWIV tokens accrue the [Baseline Yield](/yield-structure/baseline-yield) programmatically, increasing the USDC redemption value of the token
-- RWIV can be locked in the Vault’s smart contracts to earn [bonuses](/yield-structure/bonuses)
+- RWIV tokens accrue the [Baseline Yield](yield-structure/baseline-yield/baseline-yield.md) programmatically, increasing the USDC redemption value of the token
+- RWIV can be locked in the Vault’s smart contracts to earn [bonuses](yield-structure/bonuses/bonuses.md)
 - Unless locked, RWIV is freely transferable and deployable in other DeFi applications
 
 ## Vault Cap
@@ -27,4 +31,4 @@ Users are still able to submit a deposit request transaction even if that deposi
 
 The initial Vault Cap is set to 10m USDC.
 
-The Vault Operator can update the Vault Cap onchain as required. These updates are made according to the VO’s processes based on deposit demand, ability of [Insurance Partners](/insurance-partners) to take in additional funds and interest accrued over time within the Vault.
+The Vault Operator can update the Vault Cap onchain as required. These updates are made according to the VO’s processes based on deposit demand, ability of [Insurance Partners](insurance-partners.md) to take in additional funds and interest accrued over time within the Vault.
