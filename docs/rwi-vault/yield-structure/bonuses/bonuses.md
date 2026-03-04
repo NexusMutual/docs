@@ -19,9 +19,7 @@ The longer a depositor locks their LP tokens, the higher the proportion of bonus
 
 The earning rate is capped at 8x. Longer lock durations than 720 days still earn the maximum rate.
 
-Snapshots are taken quarterly, after which each depositor’s points reset to zero.
-
-### Points Formula
+## Points Formula
 
 For each locking segment:
 
