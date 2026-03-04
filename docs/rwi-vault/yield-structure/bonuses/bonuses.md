@@ -33,6 +33,6 @@ If there are edits to a locking position:
 - Non-overlapping segments use the only earning rate during that time
 - Overlapping segments use the maximum possible earning rate
 
-With points earning rate <code>er_k</code> corresponding to time period <code>t_k</code> within a season:
+With points earning rate $er_k$ corresponding to time period $t_k$ within a season:
 
-$season points = \sum_{k=1}^n er_k * t_k$
+$points = \sum_{k=1}^n er_k * t_k$
