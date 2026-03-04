@@ -1,3 +1,7 @@
+---
+sidebar_position: 8.5
+---
+
 # Withdrawals
 
 Withdrawals of RWIV into USDC are requested via the app by calling <code>requestRedeem()</code>.

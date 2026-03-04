@@ -1,8 +1,12 @@
+---
+sidebar_position: 8.7
+---
+
 # FAQs
 
 ## Where does the yield come from?
 
-The Vault Operator generates returns by providing capital to carefully selected Insurance Partners. The RWI Vault is launched in partnership with [Re](https://re.xyz/). Re uses this capital to underwrite large portfolios of short-tailed mass market reinsurance business - auto, property, warranty and workers compensation.
+The Vault Operator generates returns by providing capital to carefully selected [Insurance Partners](insurance-partners.md). The RWI Vault is launched in partnership with [Re](https://re.xyz/). Re uses this capital to underwrite large portfolios of short-tailed mass market reinsurance business - auto, property, warranty and workers compensation.
 
 The typical timeline for release of reserves in these lines of business is 18-24 months.
 
@@ -42,9 +46,9 @@ The release of funds actively used as insurance reserves is subject to approval 
 The RWIV tokens continue to accumulate at the Baseline Yield while placed in the withdrawal queue. There is also a secondary market pool available on Uniswap v3 for instant trading of RWIV.
 
 
-## What does the Nexus Mutual cover protect against?
+## What does the Nexus Mutual Cover protect against?
 
-The cover is designed to fully protect the Baseline Yield for depositors by covering against the risk of insufficient underlying insurance returns, process failure by the VO and Vault smart contract risk.
+The Baseline Yield Cover is designed to fully protect the Baseline Yield for depositors by covering against the risk of insufficient underlying insurance returns, process failure by the VO and Vault smart contract risk.
 
 The Baseline Yield Cover provided by Nexus Mutual pays out to the Vault Operator on a quarterly basis if the Vault does not achieve the Baseline Yield.
 
@@ -54,4 +58,4 @@ If the Vault’s [Net Asset Value](/yield-struicture/bonuses/nav-calculation.md)
 
 No. The Baseline Yield can be changed onchain by the Vault Operator with a 90-day delay from submitting the change.
 
-The Vault Operator benchmarks the yield by tracking the average of the 2- and 5-year treasury yields (the main drivers of mass-market insurance returns) plus a 2-3% spread. If there is a deviation of more than 1% from the previous average, the operator may change the Baseline Yield to ensure sustainability of returns. The VO also reserves the right to respond to other changing conditions.
+The Vault Operator benchmarks the yield by tracking the average of the 2- and 5-year US Treasury yields (the main drivers of mass-market insurance returns) plus a 2-3% spread. If there is a deviation of more than 1% from the previous average, the operator may change the Baseline Yield to ensure sustainability of returns. The VO also reserves the right to respond to other changing conditions.
