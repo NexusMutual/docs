@@ -2,6 +2,8 @@
 
 At the end of every quarter (31/03, 30/06, 30/09, 31/12), the VO calculates total Net Asset Value ("NAV").
 
+## NAV Definition
+
 NAV is defined as:
 
 **Assets - Liabilities**
@@ -19,28 +21,28 @@ Where:
 - Any Pending Bonuses
 - Pre-funded Cover Fee Asset
 
-If NAV is positive:
-- Bonuses distributed 60%
-- Nexus Mutual profit share 20%
-- VO share 20%
+## Calculation Outcomes
 
-If NAV is negative:
-- Claim submitted via Nexus Mutual Baseline Yield Cover
+If NAV is **positive**, bonuses are distributed:
+- 60% to locked users in proportion to accumulated points
+- 20% to Nexus Mutual via profit sharing on the Baseline Yield cover
+- 20% to the Vault Operator
+
+If NAV is **negative**, the VO submits a claim via Nexus Mutual Baseline Yield Cover
 
 Note that there may be some retrospective revisions to the NAV calculations based on updated/audited results from Insurance Partners. Any impacts of those will flow through to the NAV calculations of the upcoming quarters and we do not expect to retrospectively change outcomes of previous quarters once declared.
 
-**Individual Components (where not self-explanatory)**
+## Individual Components (where not self-explanatory)
 
-*Value of Nexus Mutual Cover*
+**Value of Nexus Mutual Cover**
 Calculated as <code>Cover Amount in USDC * Annual Cost of Cover * (Cover Days Remaining / 365)</code>
 
-
-*Pre-funded Cover Fee Asset*
+**Pre-funded Cover Fee Asset**
 The purpose of this item is to smooth out the impact on NAV of the NXM Grant used to pay early Baseline Yield Cover fees.
 For the first six quarters (Q1 - Q6) of operating the Vault, this asset is the cumulative total of the cover fees paid using the NXM grant, denominated in USDC at the time of each cover buy/edit.
 For the following six quarters (Q7 - Q12), the asset is released in a pattern that is a mirror image of the pattern that it was accumulated in.
 
-Example:
+*Example:*
 The equivalent of 1000 USDC is paid in NXM as a Baseline Yield cover fee on day 100 of operating the Vault. The Pre-funded Cover Fee Asset increases by 1000 USDC instantly.
 1000 USDC is then scheduled to be released from the Cover Fee Asset on
 Release Day = 2 * Quarter Length * Number of Funding Quarters - Current Day = 992
