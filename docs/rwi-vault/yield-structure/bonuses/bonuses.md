@@ -25,7 +25,6 @@ For each locking segment:
 
 <code>earning_rate = min(8, (t_unlock - t_lock) in days / 90) * LP_token_amount / 1000</code>
 
-
 If there are edits to a locking position:
 
 - Non-overlapping segments use the only earning rate during that time
