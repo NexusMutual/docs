@@ -1,3 +1,7 @@
+---
+sidebar_position: 8.1
+---
+
 # Depositor Approval
 
 Depositors are required to pass verification before they are able to interact with the Vault's smart contracts directly.
@@ -14,9 +18,9 @@ This process is distinct from Nexus Mutual membership.
 
 Approved depositors can access the full range of Vault actions:
 
-- Make [deposits](/depositing) into the Vault directly
-- Lock their RWIV tokens to earn [bonuses](/yield-structure/bonuses)
-- Request [withdrawals](/withdrawals) directly from the Vault
+- Make [deposits](depositing.md) into the Vault directly
+- Lock their RWIV tokens to earn [bonuses](yield-structure/bonuses/bonuses.md)
+- Request [withdrawals](withdrawals.md) directly from the Vault
 
 ## Requirements
 
