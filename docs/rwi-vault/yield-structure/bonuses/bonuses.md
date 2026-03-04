@@ -1,3 +1,7 @@
+---
+sidebar_position: 8.4.2
+---
+
 # Bonuses
 
 RWIV tokens can be locked in the Vault smart contracts for a specified duration to earn points. Locking RWIV tokens for longer periods better aligns depositor timelines with the return emergence of the underlying investments.

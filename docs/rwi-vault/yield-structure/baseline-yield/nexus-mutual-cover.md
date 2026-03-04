@@ -1,3 +1,7 @@
+---
+sidebar_position: 8.4.1.1
+---
+
 # Nexus Mutual Cover
 
 The Nexus Mutual Baseline Yield Cover is designed to pay out in case the Vault is unable to meet the Baseline Yield.

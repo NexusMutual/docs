@@ -1,8 +1,12 @@
+---
+sidebar_position: 8.4.1
+---
+
 # Baseline Yield
 
 The Baseline Yield is set at a fixed rate and automatically accrues onto each investor’s loan as represented by the redemption value of the RWIV token.
 
-The Baseline Yield is protected by [Baseline Yield Cover](/nexus-mutual-cover) from Nexus Mutual that steps in to fill the shortfall in the unlikely case of insufficient returns from the underlying insurance products, or any process or smart contract failures.
+The Baseline Yield is protected by [Baseline Yield Cover](nexus-mutual-cover.md) from Nexus Mutual that steps in to fill the shortfall in the unlikely case of insufficient returns from the underlying insurance products, or any process or smart contract failures.
 
 ## Baseline Yield Setting
 
