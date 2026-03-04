@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Overview
+# Real World Insurance Vault
 
 The Real World Insurance Vault (“RWI Vault”) allows sophisticated investors to earn yield on their USDC.
 
