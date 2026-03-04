@@ -1,3 +1,7 @@
+---
+sidebar_position: 8.4.2.1
+---
+
 # Net Asset Value Calculation
 
 At the end of every quarter (31/03, 30/06, 30/09, 31/12), the VO calculates total Net Asset Value ("NAV").

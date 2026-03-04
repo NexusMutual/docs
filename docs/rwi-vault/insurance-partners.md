@@ -1,3 +1,7 @@
+---
+sidebar_position: 8.3
+---
+
 # Insurance Partners
 
 The Vault Operator sources returns by depositing funds into offchain insurance opportunities, with a focus on short-tail lines — insurance business where the vast majority of claims are resolved within a relatively shorter timeframe after the policies themselves end.
