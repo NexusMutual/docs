@@ -41,3 +41,8 @@ An in-depth review of the Nexus Mutual protocol:
 Review of protocol and DAO governance, and how the DAO operates:
 * [Introduction to governance](/governance/)
 * [Overview of the Nexus Mutual DAO](/governance/dao)
+
+## Real World Insurance Vault
+
+Information about the Real World Insurance Vault:
+* [RWI Vault](/rwi-vault)
