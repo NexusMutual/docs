@@ -37,12 +37,13 @@ Unfortunately, we cannot accept applications from the following jurisdictions.
 
 Restricted|Countries|List
 :-----:|:-----:|:-----:
-Algeria|Iran|Russia
+Afghanistan|Haiti|Russia
+Algeria|Iran|Somalia
 Angola|Kenya|South Sudan
-Bolivia|Lao People’s Democratic Republic|Syria
-Bulgaria|Lebanon|Venezuela
-Cameroon|Monaco|Vietnam
-China|Myanmar|Yemen
-Cote d'Ivoire|Namibia|
-Democratic Republic of Congo|Nepal|
-Haiti|North Korea|
+Belarus|Lao People’s Democratic Republic|Sudan
+Bolivia|Lebanon|Syria
+Bulgaria|Monaco|Venezuela
+Cameroon|Myanmar|Vietnam
+China|Namibia|Yemen
+Cote d'Ivoire|Nepal|
+Democratic Republic of Congo|North Korea|
