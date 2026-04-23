@@ -16,7 +16,7 @@ Our mission is to provide onchain protection against crypto risks and beyond.
 
 ## DAO treasury
 
-The idea for the DAO treasury originated from a member's post on the [forum](https://forum.nexusmutual.io/t/nexus-mutual-community-fund/330). After the idea was discussed, [Proposal #116](https://app.nexusmutual.io/governance/view?proposalId=116) was voted on and passed by members to form a DAO treasury multisig and to mint 250,000 NXM for the treasury to use for grants.
+The idea for the DAO treasury originated from a member's post on the [forum](https://forum.nexusmutual.io/t/nexus-mutual-community-fund/330). After the idea was discussed, [Proposal #116](https://app.nexusmutual.io/governance/view?proposalId=116) was voted on and passed by members to form a DAO treasury multisig and to mint 250,000 NXM for the treasury to use for grants. The  Advisory Board, formally constituted as the Foundation Council of Terrapin International Foundation, established to provide the DAO with its legal and operational structure.
 
 Members decide what community projects and teams are funded from the treasury.
 
@@ -29,7 +29,7 @@ The treasury multisig signers were decided through a Snapshot vote. The communit
 * [BraveNewDeFi](https://twitter.com/BraveDeFi)
 * [Richard Chen](https://twitter.com/richardchen39)
 * [Adam Benayoun](https://twitter.com/adambn)
-* [Deepcryptodive on behalf of kpk](https://x.com/deepcryptodive)
+* [Netrim on behalf of kpk](https://x.com/thelyingbear)
 
 The multisig signers are responsible for distributing funds from the DAO treasury for NMDP votes that meet the approval threshold. 
 
@@ -86,9 +86,6 @@ The R&D team helps overcome hard problems faced by the protocol and ecosystem. T
 **Head of R&D**. Responsible for leading projects, managing contributors, working with DAO and Foundation members to increase participation in research, analytics, protocol design and product design.
   * **Bio**: Rei has served as Head of R&D since Q1 2023. He began working on Nexus Mutual in May 2018 as the first full-time employee, covering economic design, legal set-up, actuarial modeling, documentation, and early business development. Rei has been an Advisory Board member since February 2020. Previously qualified as a UK actuary, Rei held a variety of back-office and front-office corporate roles in reinsurance and brokerage.
 
-**Dune Wizard (FT)**: Responsible for writing SQL queries in Dune, capturing accurate current and historic information across the Nexus Mutual smart contracts.
-  * **Bio**: Tomasz is an experienced Data Engineer specializing in analytics engineering with a wealth of hands-on experience contributing to the Dune Spellbook repository. Proficient in SQL, dbt, and Python, with a keen ability to build robust analytics dashboards utilizing platforms like Dune Analytics and Power BI.
-
 ### Product & Risk team
 
 The Product & Risk team ideates on existing cover products and develops new cover products to drive cover sales, reach new markets, and provide members with superior protection against the greatest risks onchain and offchain. This team supports new and existing syndicates/distributors building on top of the Mutual. They also research new risks, develop risk frameworks and pricing models.
@@ -102,7 +99,7 @@ The Product & Risk team ideates on existing cover products and develops new cove
 
 If the DAO team budget request proposals are approved by members through Snapshot governance, the DAO treasury sends funds to the team multisigs. With the [Q1 & Q2 2023 DAO teams budget request proposal](https://snapshot.org/#/community.nexusmutual.eth/proposal/0x63e292837175a2976c8857e0f3d565c7e5349fbf3671bcebae5505ed4dc97b12), members voted to streamline the payment process. All of the funding for DAO teams is held in the DAO teams multisig (formerly, the Community multisig) and payments are managed from that multisig.
 
-For more information about the DAO teams, [see the DAO teams page on the Nexus Mutual DAO website](https://nexusmutualdao.io/nexus-mutual-dao-teams).
+For more information about the DAO teams, [see the latest DAO teams funding proposal on the Nexus Mutual governance forum](https://forum.nexusmutual.io/c/governance-discussions/dao-team-funding/15).
 
 ### DAO teams (formerly, Community) multisig
 
