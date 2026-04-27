@@ -52,7 +52,7 @@ The Baseline Yield Cover is designed to fully protect the Baseline Yield for dep
 
 The Baseline Yield Cover provided by Nexus Mutual pays out to the Vault Operator on a quarterly basis if the Vault does not achieve the Baseline Yield.
 
-If the Vault’s [Net Asset Value](/yield-struicture/bonuses/nav-calculation.md) is negative at the end of a quarter, the cover will make up the difference.
+If the Vault’s [Net Asset Value](/rwi-vault/yield-structure/bonuses/nav-calculation) is negative at the end of a quarter, the cover will make up the difference.
 
 ## Is the Baseline Yield fixed forever?
 
