@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8.4.1.1
+sidebar_position: 2
 ---
 
 # Nexus Mutual Cover

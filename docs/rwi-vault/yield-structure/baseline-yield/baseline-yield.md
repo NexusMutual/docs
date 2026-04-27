@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8.4.1
+sidebar_position: 1
 ---
 
 # Baseline Yield

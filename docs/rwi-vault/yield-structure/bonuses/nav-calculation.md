@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8.4.2.1
+sidebar_position: 2
 ---
 
 # Net Asset Value Calculation
