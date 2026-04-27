@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1.8
+sidebar_position: 5
 ---
 
 # Fund Portfolio Cover

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1.9
+sidebar_position: 6
 ---
 
 # ETH Slashing Cover

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9.4
+sidebar_position: 2
 ---
 
 # Cover

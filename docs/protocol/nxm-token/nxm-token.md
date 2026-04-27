@@ -1,6 +1,6 @@
 ---
 sidebar_label: NXM Token
-sidebar_position: 5.1
+sidebar_position: 1
 ---
 
 # NXM Token

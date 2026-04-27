@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2.0
+sidebar_position: 7
 ---
 
 # Quota Share Cover

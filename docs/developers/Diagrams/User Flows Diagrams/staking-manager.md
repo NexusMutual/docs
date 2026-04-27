@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11.4
+sidebar_position: 3
 ---
 
 # Staking Pool Manager Flow

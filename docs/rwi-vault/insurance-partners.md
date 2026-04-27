@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8.3
+sidebar_position: 3
 ---
 
 # Insurance Partners

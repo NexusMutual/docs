@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10.3
+sidebar_position: 2
 ---
 
 # Manager User Flow

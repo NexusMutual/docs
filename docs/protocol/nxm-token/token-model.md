@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5.2
+sidebar_position: 1
 ---
 
 # Token Model

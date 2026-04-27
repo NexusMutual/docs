@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11.2
+sidebar_position: 1
 ---
 
 # Cover Buyer / Claims Flow
