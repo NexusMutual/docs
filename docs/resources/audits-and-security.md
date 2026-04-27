@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7.1
+sidebar_position: 1
 ---
 
 # Audits and Security

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9.6
+sidebar_position: 4
 ---
 
 # Pool

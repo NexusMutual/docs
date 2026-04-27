@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6.2
+sidebar_position: 7
 ---
 
 # Claim Assessment

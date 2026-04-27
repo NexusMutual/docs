@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10.9
+sidebar_position: 4
 ---
 
 # Governance & Membership Contracts
