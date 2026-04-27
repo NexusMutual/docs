@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.7
+sidebar_position: 7
 ---
 
 # FTX Halted Withdrawals | November 2022

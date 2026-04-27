@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6.1
+sidebar_position: 1
 ---
 
 # Staking pools

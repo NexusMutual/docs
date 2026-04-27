@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.3
+sidebar_position: 3
 ---
 
 # CREAM V1 Economic Exploit | October 2021

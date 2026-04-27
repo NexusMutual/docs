@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8.1
+sidebar_position: 1
 ---
 
 # Nexus Mutual DAO

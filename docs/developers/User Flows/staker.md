@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10.4
+sidebar_position: 3
 ---
 
 # NXM Staker User Flow

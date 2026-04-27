@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11.3
+sidebar_position: 2
 ---
 
 # Staker Flow

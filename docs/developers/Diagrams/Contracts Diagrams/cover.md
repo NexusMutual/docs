@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10.8
+sidebar_position: 3
 ---
 
 # Cover Contracts
