@@ -19,4 +19,4 @@ Note that the typical timeline for releasing loss reserves from the insurance bu
 
 RWIV tokens are fungible, freely tradeable and can be used in wider DeFi applications.
 
-The Nexus Mutual Community Fund has created a Uniswap v3 pool where secondary market liquidity may be available.
+As a result, there may be secondary market pools available for instant trading of RWIV.
