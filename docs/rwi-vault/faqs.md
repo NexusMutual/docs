@@ -30,7 +30,7 @@ are restricted to approved depositors who have completed KYC/KYB and Sophisticat
 
 Locking RWIV tokens for longer periods better aligns the timelines of the depositors with the return emergence of the Vault Operator’s underlying investments. Depositors who lock their RWIV will be rewarded with points, with a higher earning rate for those locking for longer periods, up to a maximum lock duration of 2 years.
 
-Should the underlying insurance investments generate surplus returns exceeding the Baseline Yield and cost of Nexus Mutual Cover, then 60% of this excess will be distributed as USDC on a quarterly basis, in proportion to the points accumulated by individual depositors. 
+Should the underlying insurance investments generate surplus returns exceeding the Baseline Yield and cost of Nexus Mutual Cover, then 60% of this excess will be distributed as USDC on a quarterly basis, in proportion to the points accumulated by individual depositors.
 
 The VO will report on the additional yield to locked depositors as the bonus distributions are made.
 
@@ -43,7 +43,9 @@ Smaller requests with immediately available liquidity will be filled within a fe
 
 The release of funds actively used as insurance reserves is subject to approval by the local regulators of the insurance partners. In extreme scenarios, it is possible that RWI Vault depositors will have to wait for the backed policies to expire and reserves to be released in full before liquidity is available. This process can take a year or longer.
 
-The RWIV tokens continue to accumulate at the Baseline Yield while placed in the withdrawal queue. There is also a secondary market pool available on Uniswap v3 for instant trading of RWIV.
+The RWIV tokens continue to accumulate at the Baseline Yield while placed in the withdrawal queue.
+
+There may also be secondary market pools available for instant trading of RWIV.
 
 
 ## What does the Nexus Mutual Cover protect against?
