@@ -16,19 +16,19 @@ Nexus Mutual offers two ETH slashing products:
 
 ## ETH Slashing Cover wording
 
-For more information, read the full terms and conditions of [Nexus Mutual’s ETH Slashing Cover](https://api.nexusmutual.io/ipfs/QmWepFbtMYSzJt22ddF1CK9PwbrYgiLk9qJjryDrgpGuus).
+For more information, read the full terms and conditions of [Nexus Mutual’s ETH Slashing Cover](https://api.nexusmutual.io/v2/ipfs/QmWepFbtMYSzJt22ddF1CK9PwbrYgiLk9qJjryDrgpGuus).
 
-Nexus Mutual’s claim assessors use this cover wording as a reference when considering any claim.
+Nexus Mutual’s [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment) use this cover wording as a reference when considering any claim.
 
 ## ETH Slashing Umbrella Cover
 
-For more information, read the full terms and conditions of Nexus Mutual's [ETH Slashing Umbrella Cover](https://api.nexusmutual.io/ipfs/QmQx2H9A51SARNc4W8Ta2D2woXv2ebkUGZMC5HZoQW8TUX)
+For more information, read the full terms and conditions of Nexus Mutual's [ETH Slashing Umbrella Cover](https://api.nexusmutual.io/v2/ipfs/QmPBPP4fufqrDcg2SEJEmNt3THemFRbNDct7Kxy8ryLmmg)
 
-Nexus Mutual’s claim assessors use this cover wording as a reference when considering any claim.
+Nexus Mutual’s [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment) use this cover wording as a reference when considering any claim.
 
 ### Proof of loss
 
-When an organization purchases ETH Slashing Cover, they provide the validator numbers they want covered in a csv file and that list is stored on IPFS.
+When an organization purchases ETH Slashing Cover or ETH Slashing Umbrella Cover, they provide the validator numbers they want covered in a csv file and that list is stored on IPFS.
 
 If a validator, or validators, suffer penalties, they will provide the list of impacted validators and the corresponding loss for each validator.
 
@@ -38,7 +38,7 @@ After a validator, or validators, suffer a loss, your organization can contact t
 1. Once the losses have been calculated, your organization can file a claim in the Nexus Mutual user interface.
 2. You will submit a calculation of losses by providing a file of impacted validators and their losses by slot/epoch.
     * This should equal the claim amount being requested after the deductible is accounted for.
-3. Claim assessors can then reference this information against [beaconcha.in](https://beaconcha.in/) or [rated.network](https://www.rated.network/?network=mainnet&view=pool) to verify the loss calculations.
+3. The [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment) can then reference this information against [beaconcha.in](https://beaconcha.in/) or [rated.network](https://www.rated.network/?network=mainnet&view=pool) to verify the loss calculations.
 
 For a review of the Claims 
 assessment process, see the [Claims Assessment](/protocol/claims-assessment) section.

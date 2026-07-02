@@ -44,8 +44,6 @@ Managers also determine the target pricing for each cover product. The target pr
 
 When members purchase cover and pay the cover fee, 50% of the cover fee is minted in NXM rewards and is distributed within a staking pool. The staking pool’s management fee is applied before NXM rewards are distributed to NXM stakers in the pool. Staking rewards are streamed over the course of the cover period and accrue to the pool manager’s staking position. These rewards do not compound to the staking position and can be withdrawn at any time.
 
-The formula for NXM staking rewards is provided in detail in the [Staking NXM](/protocol/staking/#staking-rewards-formula) section.
-
 ## NXM burns
 
 When a member who purchased cover from a manager’s staking pool files a claim that is approved and paid, the staked NXM within the pool reserved for that cover product gets burned. The amount of NXM burned is the equivalent of the paid claim amount.
