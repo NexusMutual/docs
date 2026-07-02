@@ -18,7 +18,7 @@ This is a bespoke product that can be created for individual cover providers.
 
 Currently, Nexus Mutual provides [Sherlock](https://www.sherlock.xyz/), auditing and smart contract coverage protocol, with Quota Share Cover (a.k.a., Sherlock Quota Share Cover) and [Uno Re](https://app.unore.io/) with Quota Share Cover (a.k.a., Uno Re Quota Share Cover). For more information, read the full terms and conditions of [Nexus Mutual’s Sherlock Quota Share Cover](https://api.nexusmutual.io/ipfs/QmQfYgbBhyC3gJMvan9gbzUaZtd4Xy4gubEYfgTFKycBDZ) and [Nexus Mutual's Uno Re Quota Share Cover](https://api.nexusmutual.io/ipfs/QmWXYjBYjdKoRw6kyUvp5gYKjj2ojPPVxNYKr1gDjMLssY).
 
-Nexus Mutual’s claim assessors use this cover wording as a reference when considering any claim.
+Nexus Mutual’s [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment) use this cover wording as a reference when considering any claim.
 
 ### Proof of Loss
 
@@ -36,7 +36,7 @@ Your organization will need to wait 14 days for the cool-down period to pass. Th
 
 1. Your organization will file a claim using evidence of their claim payments for the covered underlying risks.
 
-2. Claim assessors will review, discuss, and vote to approve claims where proof of loss shows that your organisation has indeed paid out claims for covered underlying risks above the deductible.
+2. The Claims Committee will review, discuss, and vote to approve claims where proof of loss shows that your organisation has indeed paid out claims for covered underlying risks above the deductible.
     * If the claim is approved, your organisation will be able to redeem the payout after the 24-hour cool-down period ends
     * If the claim is denied, your organisation will be able to file another claim with more supporting evidence
 

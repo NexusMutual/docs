@@ -54,10 +54,17 @@ Nexus Mutual offers different cover products to protect against different types 
 
 For a full list of Nexus Mutual's cover products, see the [Cover Products](/overview/cover-products/) page or search our available listings in the [Nexus Mutual app](https://app.nexusmutual.io/cover/buy-cover).
 
+### Does Nexus Mutual offer cover for protocols on networks like Solana?
+
+Yes, with the launch of our upfront proof of loss feature, we can now support listings for Solana and other non-EVM networks. If there is a protocol on a non-EVM network you would like listed in the Nexus Mutual app, reach out to us through the [Nexus Mutual contact form](https://nexusmutual.io/contact).
+
 ### Can I buy cover for assets in wallets other than my membership address?
 
 Yes, you can. You need to buy cover using the your membership address (i.e., the Ethereum address you used to sign up for membership). You need to purchase cover with your membership address, but you can protect crypto assets you manage in other blockchain wallet addresses.
-If you suffer a loss of funds and need to file a claim, you will need to submit proof of loss, which differs for each [cover product](/overview/cover-products/).
+
+For most of Nexus Mutual's cover products, you will provide the wallet address(es) in the **Extra Cover Info** section below the Cover Details. This information is stored privately and can be edited to add or remove covered wallet addresses during the active cover period but not during or after a loss event occurs.
+
+If you suffer a loss of funds and need to file a claim, you will provide the necessary information at that time. This information differs for each [cover product](/overview/cover-products/).
 
 ### Can I buy cover for another person such as my spouse?
 
@@ -99,7 +106,7 @@ Proof of loss is different for each cover product. You can find information on p
 
 ### How long does the Claim Assessment process take?
 
-From the time you submit your claim, it usually takes between three (3) and five (5) days for the Claims Committee to review, vote, and determine a claim's outcome.
+From the time you submit your claim, it usually takes three (3) days for the Claims Committee to review, vote, and determine a claim's outcome.
 
 ## Staking
 
@@ -119,7 +126,7 @@ Learn more in the [Staking](/protocol/staking/#staking-periods) section.
 
 Your NXM can be burned to facilitate claim payouts if members who purchased cover from the staking pool file successful claims.
 
-If a claim is filed and approved by claim assessors, then the staked NXM allocated to the relevant cover product is burned proportionally across all stakers.
+If a claim is filed and approved by the [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment), then the staked NXM allocated to the relevant cover product is burned proportionally across all stakers.
 
 Learn more in the [Staking](/protocol/staking/#risk-of-nxm-burns) section. 
 

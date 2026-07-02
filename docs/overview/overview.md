@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Overview
 
-Nexus Mutual is a decentralized insurance alternative that allows members to join and share risk. Members can purchase cover products that protect against different kinds of risk. The Nexus Mutual protocol is built on Ethereum and provides the infrastructure for members to buy cover, underwrite risk, assess claims, and build risk management businesses.
+Nexus Mutual is a decentralized insurance alternative that allows members to join and share risk. Members can purchase cover products that protect against different kinds of risk. The Nexus Mutual protocol is built on Ethereum and provides the infrastructure for members to buy cover and underwrite risk.
 
 The Nexus Mutual DAO operates as a discretionary mutual - people can join, share risk, and enjoy the benefits of membership. Members coordinate with one another through the Nexus Mutual protocol.
 
