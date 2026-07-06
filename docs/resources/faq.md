@@ -66,6 +66,17 @@ For most of Nexus Mutual's cover products, you will provide the wallet address(e
 
 If you suffer a loss of funds and need to file a claim, you will provide the necessary information at that time. This information differs for each [cover product](/overview/cover-products/).
 
+## What is upfront proof of loss?
+
+For several of Nexus Mutual's cover products, you will need to provide some information in the **Extra Cover Info** section on the Buy Cover page.
+
+For most of our cover products, you will enter the wallet address or wallet addresses you want your coverage to be valid for. This information is stored privately offchain and can only be accessed by you and the [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment), who will use that information to help calculate your Claim Amount and assist you with claims filing if a loss event should occur during the Active Cover period. **Be sure you include all of the relevant wallet addresses for your coverage, as the coverage only applies to the wallet addresses listed for the cover you purchase.**
+
+You will be able to edit this information during the Active Cover period if you want to add or remove cover addresses to your coverage. To keep this information private, we require you to sign a message to prove you own the address before you can access or edit this information in the Nexus Mutual app. 
+Upfront proof of loss allows the Mutual to improve the member experience by extending coverage to non-EVM networks like Solana, helping members prepare for claims filing events in a timely fashion, and more.
+
+To learn more about how upfront proof of loss applies to each of the Mutual's cover products, see the [Cover Products page](/overview/cover-products/) to find detailed information on the cover product you are interested in purchasing.
+
 ### Can I buy cover for another person such as my spouse?
 
 No, you cannot buy cover for another person even if that person is your spouse. Someone can only buy cover for their crypto or deposits per the language in each product's cover wording. Anyone who joins as a Nexus Mutual member can buy cover for their crypto and/or deposits.
