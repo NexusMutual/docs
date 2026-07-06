@@ -49,36 +49,11 @@ Members need to use their whitelisted address to withdraw rewards as they accrue
 
 When members purchase cover and pay the cover fee, 50% of the cover fee is minted in NXM rewards and distributed to stakers in the pool. Staking rewards are streamed over the course of the cover period and accrue to tokenized staking positions. These rewards do not compound to staking positions and are freely withdrawable by individual NFT owners at any time, so long as the owner is a member of the Mutual.
 
-Tokenized staking positions accrue rewards using a time-based veToken model, where locking NXM for longer periods increases the share of cover fees a member will receive. NXM stakers who are long-term aligned receive greater rewards. Staking rewards are calculated as follows:
-
-### Staking rewards formula
-
-<p><code>rewardShares = stakeShares * (1 + (10% * LOCK_PERIODS_IN_A_YEAR * daysUntilStakeLockPeriodEnds / 365)</code></p>
-
-Where:
-* <code>stakeShares</code> is the amount of NXM staked in one position for a given lock period
-* <code>LOCK_PERIODS_IN_A_YEAR = 4</code>
-
-*Example*
-* <code>stake = 100 NXM</code>
-* <code>stakeShares = 100</code>
-* <code>daysUntilStakeLockPeriodEnds = 92</code>
-
-<code>rewardShares = 100 * (1 + 10% * 4 * 92 / 365) = 100 * (1 + 0.10) = 100 * 1.10 = 110</code>
-
-### Incentives to stake NXM in longer term lock periods
-
-When members stake NXM and enter into longer-term staking periods (i.e., lock periods), they receive more stake shares, which increases the share of cover fees they receive every time someone buys cover from the staking pool.
-
-Stake shares decrease over time as a member’s staking position approaches the end of the lock period. Delegating staked NXM to a staking pool for a 728-day staking period will provide the highest share of cover fees, given the staking shares would remain high for a year before starting to diminish as the remaining lock period decreases below 365 days. You can refer to the available [staking periods](/protocol/staking/#staking-periods) in the section above.
-
-This mechanism aligns incentives between NXM stakers, who benefit from higher staking shares for longer-term staking periods; staking pool managers, who benefit from long-term capacity that can be used to sell covers for up to 364 days; and cover buyers, who benefit from access to deep capacity for longer time periods when they decide to purchase protection.
-
 ## Risk of NXM burns
 
 When members delegate their staked NXM to a pool, their NXM can be burned to facilitate claim payouts if members who purchased cover from the pool file successful claims.
 
-If a claim is filed and approved by claims assessors, then the staked NXM allocated to the relevant cover product is burned proportionally across all stakers.
+If a claim is filed and approved by the [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment), then the staked NXM allocated to the relevant cover product is burned proportionally across all stakers.
 
 Each cover has reserved capacity denominated in NXM, which is used to determine the conversion rate applied to a staking pool when NXM is burned to facilitate a claim payout. The protocol also takes the global capacity factor into account.
 
