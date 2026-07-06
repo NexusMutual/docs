@@ -30,7 +30,7 @@ Managers choose which cover products to include in their pool and how much NXM t
 
 ### Product weight
 
-Managers can stake NXM across products with up to 20x leverage. The amount of leverage used within the pool determines the total target weight for the pool. For each individual product, the most NXM that can be staked is the balance of NXM available in the pool. 
+Managers can stake NXM across products with up to 20x leverage. The amount of leverage used within the pool determines the total target weight for the pool. For each individual product, the most NXM that can be staked is the balance of NXM available in the pool.
 
 *For example*: if a staking pool has 10,000 NXM, a manager can stake up to 10,000 NXM against a single product. If a manager uses 20x leverage, they can stake 10,000 NXM against 20 different cover products. However, a manager could stake 5,000 NXM against 40 different cover products.
 
@@ -43,8 +43,6 @@ Managers also determine the target pricing for each cover product. The target pr
 ## Rewards
 
 When members purchase cover and pay the cover fee, 50% of the cover fee is minted in NXM rewards and is distributed within a staking pool. The staking pool’s management fee is applied before NXM rewards are distributed to NXM stakers in the pool. Staking rewards are streamed over the course of the cover period and accrue to the pool manager’s staking position. These rewards do not compound to the staking position and can be withdrawn at any time.
-
-The formula for NXM staking rewards is provided in detail in the [Staking NXM](/protocol/staking/#staking-rewards-formula) section.
 
 ## NXM burns
 

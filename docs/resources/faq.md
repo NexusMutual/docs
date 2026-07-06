@@ -50,14 +50,32 @@ If more than 24 hours has passed and your membership still hasn't gone through, 
 
 ### What risks do you cover?
 
-Nexus Mutual offers different cover products to protect against different types of risk. 
+Nexus Mutual offers different cover products to protect against different types of risk.
 
 For a full list of Nexus Mutual's cover products, see the [Cover Products](/overview/cover-products/) page or search our available listings in the [Nexus Mutual app](https://app.nexusmutual.io/cover/buy-cover).
+
+### Does Nexus Mutual offer cover for protocols on networks like Solana?
+
+Yes, with the launch of our upfront proof of loss feature, we can now support listings for Solana and other non-EVM networks. If there is a protocol on a non-EVM network you would like listed in the Nexus Mutual app, reach out to us through the [Nexus Mutual contact form](https://nexusmutual.io/contact).
 
 ### Can I buy cover for assets in wallets other than my membership address?
 
 Yes, you can. You need to buy cover using the your membership address (i.e., the Ethereum address you used to sign up for membership). You need to purchase cover with your membership address, but you can protect crypto assets you manage in other blockchain wallet addresses.
-If you suffer a loss of funds and need to file a claim, you will need to submit proof of loss, which differs for each [cover product](/overview/cover-products/).
+
+For most of Nexus Mutual's cover products, you will provide the wallet address(es) in the **Extra Cover Info** section below the Cover Details. This information is stored privately and can be edited to add or remove covered wallet addresses during the active cover period but not during or after a loss event occurs.
+
+If you suffer a loss of funds and need to file a claim, you will provide the necessary information at that time. This information differs for each [cover product](/overview/cover-products/).
+
+## What is upfront proof of loss?
+
+For several of Nexus Mutual's cover products, you will need to provide some information in the **Extra Cover Info** section on the Buy Cover page.
+
+For most of our cover products, you will enter the wallet address or wallet addresses you want your coverage to be valid for. This information is stored privately offchain and can only be accessed by you and the [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment), who will use that information to help calculate your Claim Amount and assist you with claims filing if a loss event should occur during the Active Cover period. **Be sure you include all of the relevant wallet addresses for your coverage, as the coverage only applies to the wallet addresses listed for the cover you purchase.**
+
+You will be able to edit this information during the Active Cover period if you want to add or remove cover addresses to your coverage. To keep this information private, we require you to sign a message to prove you own the address before you can access or edit this information in the Nexus Mutual app. 
+Upfront proof of loss allows the Mutual to improve the member experience by extending coverage to non-EVM networks like Solana, helping members prepare for claims filing events in a timely fashion, and more.
+
+To learn more about how upfront proof of loss applies to each of the Mutual's cover products, see the [Cover Products page](/overview/cover-products/) to find detailed information on the cover product you are interested in purchasing.
 
 ### Can I buy cover for another person such as my spouse?
 
@@ -81,15 +99,15 @@ Nexus Mutual's claims process is battle-tested and has been used to review and a
 
 Our Claim Assessment process is managed by the Claims Committee, a group of publicly known experts with an established record of assessing claims within the Mutual. Currently, Nexus Mutual's Claims Committee has three members:
 * **Hugh Karp, Advisory Board Member**. Hugh is Nexus Mutual's founder and brings a wealth of traditional insurance expertise along with half a decade of onchain risk expertise to the Claims Committee.
-* **Roxana Danila, Advisory Board Member**. Roxana is Nexus Mutual's CTO and brings engineering and onchain analysis expertise to the Claims Committee. 
+* **Roxana Danila, Advisory Board Member**. Roxana is Nexus Mutual's CTO and brings engineering and onchain analysis expertise to the Claims Committee.
 * **BraveNewDeFi, Head of Risk**. BraveNewDeFi is Head of Risk and has been managing claims incident response since he joined Nexus Mutual in 2021. Brave brings his onchain risk and analysis expertise to the Claims Committee.
 
 Every claim filed is reviewed by the Claims Committee, who provide claimants with help to calculate their losses and ensure all of the information needed is included before a claim is filed.
-To learn more about the Claims Assessment process, see the [/protocol/claims-assessment] section of the documentation. 
+To learn more about the Claims Assessment process, see the [/protocol/claims-assessment] section of the documentation.
 
 ### When is loss of funds determined for a claim?
 
-Loss is determined at the time just before the loss event occurred. You can always confirm how loss is calculated by reviewing the cover wording for the cover you have purchased, as well. 
+Loss is determined at the time just before the loss event occurred. You can always confirm how loss is calculated by reviewing the cover wording for the cover you have purchased, as well.
 
 See the [Cover Products](/overview/cover-products/) section for more information about loss.
 
@@ -99,7 +117,7 @@ Proof of loss is different for each cover product. You can find information on p
 
 ### How long does the Claim Assessment process take?
 
-From the time you submit your claim, it usually takes between three (3) and five (5) days for the Claims Committee to review, vote, and determine a claim's outcome.
+From the time you submit your claim, it usually takes three (3) days for the Claims Committee to review, vote, and determine a claim's outcome.
 
 ## Staking
 
@@ -113,21 +131,21 @@ Learn more in the [Staking](/protocol/staking/) section.
 
 A staking period is the length of time you choose to lockup your staked NXM in a staking pool of your choosing. NXM needs to be locked up to ensure capital that's underwriting cover cannot exit a staking pool and leave active covers unbacked.
 
-Learn more in the [Staking](/protocol/staking/#staking-periods) section. 
+Learn more in the [Staking](/protocol/staking/#staking-periods) section.
 
 ### What are the risks of staking NXM?
 
 Your NXM can be burned to facilitate claim payouts if members who purchased cover from the staking pool file successful claims.
 
-If a claim is filed and approved by claim assessors, then the staked NXM allocated to the relevant cover product is burned proportionally across all stakers.
+If a claim is filed and approved by the [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment), then the staked NXM allocated to the relevant cover product is burned proportionally across all stakers.
 
-Learn more in the [Staking](/protocol/staking/#risk-of-nxm-burns) section. 
+Learn more in the [Staking](/protocol/staking/#risk-of-nxm-burns) section.
 
 ## Governance
 
 ### How can I get involved in Nexus Mutual governance?
 
-You can stay active and engaged on the [Nexus Mutual governance forum](https://forum.nexusmutual.io/) and learn how to start a discussion or raise a proposal by reviewing the [Governance](/governance/) section. 
+You can stay active and engaged on the [Nexus Mutual governance forum](https://forum.nexusmutual.io/) and learn how to start a discussion or raise a proposal by reviewing the [Governance](/governance/) section.
 
 ### Does Nexus Mutual have a grants program?
 
