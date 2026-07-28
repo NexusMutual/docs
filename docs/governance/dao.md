@@ -16,7 +16,7 @@ Our mission is to provide onchain protection against crypto risks and beyond.
 
 ## DAO treasury
 
-The idea for the DAO treasury originated from a member's post on the [forum](https://forum.nexusmutual.io/t/nexus-mutual-community-fund/330). After the idea was discussed, [Proposal #116](https://app.nexusmutual.io/governance/view?proposalId=116) was voted on and passed by members to form a DAO treasury multisig and to mint 250,000 NXM for the treasury to use for grants. The  Advisory Board, formally constituted as the Foundation Council of Terrapin International Foundation, established to provide the DAO with its legal and operational structure.
+The idea for the DAO treasury originated from a member's post on the [forum](https://forum.nexusmutual.io/t/nexus-mutual-community-fund/330). After the idea was discussed, [Proposal #116](https://app.nexusmutual.io/governance/proposals/v1/116) was voted on and passed by members to form a DAO treasury multisig and to mint 250,000 NXM for the treasury to use for grants. The  Advisory Board, formally constituted as the Foundation Council of Terrapin International Foundation, established to provide the DAO with its legal and operational structure.
 
 Members decide what community projects and teams are funded from the treasury.
 

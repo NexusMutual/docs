@@ -9,15 +9,15 @@ Any investment allocations are decided by members through the Mutual's [governan
 ## Investment in Lido stETH
 
 In May 2021, the DAO Investment team posted a forum proposal that [reviewed the opportunity to stakes, and risk of staking, 15,000 ETH in Lido Finance to generate investment returns](https://forum.nexusmutual.io/t/proposal-increase-the-allocation-of-the-capital-pool-to-steth/641). After member discussion, this proposal was put to a formal governance vote.
-* Members voted in favor of [Proposal 140](https://app.nexusmutual.io/governance/view?proposalId=140), and 14,997.9999 ETH was staked in Lido Finance, which added [14,998 stETH](https://etherscan.io/tx/0x8a127001d3a7840206bef53870209f7f9c6b3df9fd2ba9e872b2ed18728e6d22) to the mutual's Capital Pool.
+* Members voted in favor of [Proposal 140](https://app.nexusmutual.io/governance/proposals/v1/140), and 14,997.9999 ETH was staked in Lido Finance, which added [14,998 stETH](https://etherscan.io/tx/0x8a127001d3a7840206bef53870209f7f9c6b3df9fd2ba9e872b2ed18728e6d22) to the mutual's Capital Pool.
 
 In September 2021, the DAO Investment team posted another forum proposal that [reviewed the opportunity to increase, and risk of increasing, the allocation of Nexus Mutual's Capital Pool to stETH from the then 15,248 stETH held in the Capital Pool to 30,000 stETH](https://forum.nexusmutual.io/t/proposal-increase-the-allocation-of-the-capital-pool-to-steth/641), representing 18.5% of the total Capital Pool.
-* Members voted in favor of [Proposal 157](https://app.nexusmutual.io/governance/view?proposalId=157), and 14,713.2999 ETH was staked in Lido Finance, which added [14,713.30 stETH](https://etherscan.io/tx/0x5afe54104e9932c3d7390df71416eb41e4ffe915e2c33e9d560b69234e332539) to the Capital Pool.
+* Members voted in favor of [Proposal 157](https://app.nexusmutual.io/governance/proposals/v1/157), and 14,713.2999 ETH was staked in Lido Finance, which added [14,713.30 stETH](https://etherscan.io/tx/0x5afe54104e9932c3d7390df71416eb41e4ffe915e2c33e9d560b69234e332539) to the Capital Pool.
 
 ## Investment in M11 Credit's WETH lending pool on Maple Finance
 
 In May 2022, the DAO Investment team posted a forum proposal that [reviewed the opportunity to allocate, and risk of allocating, 15,348 ETH to the M11 Credit WETH lending pool on Maple Finance](https://forum.nexusmutual.io/t/proposal-allocate-capital-to-maple-finance/835/1). After members discussed this proposal and the technical requirements were fulfilled, the proposal was put to a formal governance vote in August 2022.
-* Members voted in favor of [Proposal 172](https://app.nexusmutual.io/governance/view?proposalId=172), and 15,348 ETH was sent to the [Nexus Mutual Enzyme vault](https://app.enzyme.finance/vault/0x27f23c710dd3d878fe9393d93465fed1302f2ebd), where it was then deposited in the M11 Credit WETH pool on Maple Finance.
+* Members voted in favor of [Proposal 172](https://app.nexusmutual.io/governance/proposals/v1/172), and 15,348 ETH was sent to the [Nexus Mutual Enzyme vault](https://app.enzyme.finance/vault/0x27f23c710dd3d878fe9393d93465fed1302f2ebd), where it was then deposited in the M11 Credit WETH pool on Maple Finance.
 * After the Auros liquidity issue was resolved, [the M11 Credit deposit was withdrawn from the pool](https://forum.nexusmutual.io/t/m11-credit-weth-pool-updates-and-status-reports/969/5?u=bravenewdefi) and is now held in the Nexus Mutual Enzyme vault. Members signaled support to let the Investment team manage the withdrawal process.
 
 ## Investment in Rocket Pool (rETH)
@@ -27,7 +27,7 @@ In April 2023, uisce.eth share a Request for Comment (RFC) proposal to allocate 
 * [Signaling Vote: Amount of ETH to allocate to Rocketpool (#2)](https://snapshot.org/#/community.nexusmutual.eth/proposal/0xdf858c753975f9526598f0c201669050fb787b793d99503f80a7e4f2e8ba88ed)
 
 Members signaled their support via Snapshot and this proposal was transitioned to an [NMPIP](https://forum.nexusmutual.io/t/nmpip-197-allocate-14-400-eth-to-rocket-pool-protocol-reth/1173), which was then put on chain for a full-member vote.
-* Members voted in favor of [NMPIP 197: Stake 14,400 ETH from the Capital Pool in Rocket Pool (rETH)](https://app.nexusmutual.io/governance/view?proposalId=197) and 14,400 ETH was staked with Rocket Pool, which added 13,358 rETH to the Capital Pool.
+* Members voted in favor of [NMPIP 197: Stake 14,400 ETH from the Capital Pool in Rocket Pool (rETH)](https://app.nexusmutual.io/governance/proposals/v1/197) and 14,400 ETH was staked with Rocket Pool, which added 13,358 rETH to the Capital Pool.
 
 ## Investment in Kiln via the Nexus Mutual Enzyme vault
 
@@ -36,7 +36,7 @@ In March 2023, Moss from the Avantgarde team shared an [RFC](https://forum.nexus
 
 
 Members signaled their support via Snapshot and this proposal was transitioned to an [NMPIP](https://forum.nexusmutual.io/t/nmpip-196-restart-enzyme-vault-start-staking-through-kiln-6-624-weth/1174/1), which was then put on chain for a full-member vote.
-* Members voted in favor of [NMPIP 196: Stake 6624 WETH from the Nexus Mutual Enzyme vault through Kiln](https://app.nexusmutual.io/governance/view?proposalId=196) and 6,624 WETH from the Nexus Mutual Enzyme vault (i.e., a portion of the Capital Pool) to Kiln.
+* Members voted in favor of [NMPIP 196: Stake 6624 WETH from the Nexus Mutual Enzyme vault through Kiln](https://app.nexusmutual.io/governance/proposals/v1/196) and 6,624 WETH from the Nexus Mutual Enzyme vault (i.e., a portion of the Capital Pool) to Kiln.
 
 The 6,224 WETH was staked in Kiln and is currently accuring staking rewards. See [Avantgarde's latest post](https://forum.nexusmutual.io/t/nmpip-196-restart-enzyme-vault-start-staking-through-kiln-6-624-weth/1174/5?u=bravenewdefi) on the governance forum for a status update.
 

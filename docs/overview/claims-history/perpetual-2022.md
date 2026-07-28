@@ -5,7 +5,7 @@ sidebar_position: 5
 # Perpetual Protocol v1 Economic Design Failure | May 2022
 
 ## Total Claim Payouts
-A total of $377,147.19 was paid out for Claim 118 and Claim 119.
+A total of $377,147.19 was paid out for Claim V1 #118 and Claim V1 #119.
 
 ## Overview
 After this exploit occurred, claim assessors [discussed this loss event](https://discordapp.com/channels/496296560624140298/689385874265342056/980881247368806470) in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
@@ -22,4 +22,4 @@ To date, two (2) claims have been filed and voted on by claim assessors. As stat
 For more information on each claim, review the section below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims). 
 
 #### Approved claims
-Claim assessors reviewed and approved [Claim 118](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=118) and [Claim 119](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=119). The claims included proof of loss, which showed the affected addresses where the members suffered a loss of 20% or greater. You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
+Claim assessors reviewed and approved Claim V1 #118 and Claim V1 #119. The claims included proof of loss, which showed the affected addresses where the members suffered a loss of 20% or greater. You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://nexusmutual.io/claims).

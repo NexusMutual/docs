@@ -6,9 +6,9 @@ sidebar_position: 9
 
 ## Total claims paid
 
-A total of $2,389,227.88 was paid out for Euler Finance Protocol Cover Claims V2 0, 2, 3, 4, 5, 6, 7, 8, and 11.
+A total of $2,389,227.88 was paid out for Euler Finance Protocol Cover Claims V2 #0, #2, #3, #4, #5, #6, #7, #8, and #11.
 
-A total of $1m was paid out for the Sherlock Excess Cover Claim V2 10, where [Sherlock paid out on their Euler Finance coverage](https://twitter.com/sherlockdefi/status/1641174876231815168) and their Excess Cover offset the payout by 25%.
+A total of $1m was paid out for the Sherlock Excess Cover Claim V2 #10, where [Sherlock paid out on their Euler Finance coverage](https://twitter.com/sherlockdefi/status/1641174876231815168) and their Excess Cover offset the payout by 25%.
 
 ## Overview
 
@@ -29,23 +29,23 @@ For more information on each claim, review the sections below and the [Nexus Mut
 
 ### Approved claims
 
-Claim assessors reviewed and approved Claims V2 0, 2, 3, 4, 5, 6, 7, 8, and 11. Assessors also reviewed and approved Claim V2 10, the Sherlock Excess Cover claim.
+Claim assessors reviewed and approved Claims V2 #0, #2, #3, #4, #5, #6, #7, #8, and #11. Assessors also reviewed and approved Claim V2 #10, the Sherlock Excess Cover claim.
 
 The claims included proof of loss, which showed the affected addresses where the members suffered a loss. Each approved claim also requested a claim payment that reflected their actual loss amount.
 
-You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
+You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://nexusmutual.io/claims).
 
 | Approved claims                                                                 |                                                                                 |                                                                                 |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Claim V2 0](https://app.nexusmutual.io/assessment/view-claim?claimId=0) | [Claim V2 2](https://app.nexusmutual.io/assessment/view-claim?claimId=2) | [Claim V2 3](https://app.nexusmutual.io/assessment/view-claim?claimId=3) |
-| [Claim V2 4](https://app.nexusmutual.io/assessment/view-claim?claimId=4) | [Claim V2 5](https://app.nexusmutual.io/assessment/view-claim?claimId=5) | [Claim V2 6](https://app.nexusmutual.io/assessment/view-claim?claimId=6) |
-| [Claim V2 7](https://app.nexusmutual.io/assessment/view-claim?claimId=7) | [Claim V2 8](https://app.nexusmutual.io/assessment/view-claim?claimId=8) | [Claim V2 11](https://app.nexusmutual.io/assessment/view-claim?claimId=11) |
+| Claim V2 #0 | Claim V2 #2 | Claim V2 #3 |
+| Claim V2 #4 | Claim V2 #5 | Claim V2 #6 |
+| Claim V2 #7 | Claim V2 #8 | Claim V2 #11 |
 
 ### Denied claims
 
-Claim assessors reviewed and denied Claim V2 1.
+Claim assessors reviewed and denied Claim V2 #1.
 
-Claim V2 1 was the first Sherlock Excess Cover claim, which requested a claim payment that did not factor in the $500,000 deductible included in the cover wording. The Sherlock team filed another claim, Claim V2 10, which claim assessors reviewed and approved after the request claim amount factored in the deductible.
+Claim V2 #1 was the first Sherlock Excess Cover claim, which requested a claim payment that did not factor in the $500,000 deductible included in the cover wording. The Sherlock team filed another claim, Claim V2 #10, which claim assessors reviewed and approved after the request claim amount factored in the deductible.
 
 ### Euler Finance reimbursement
 
