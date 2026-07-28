@@ -12,7 +12,7 @@ After this exploit occurred, claim assessors [discussed this loss event](https:/
 
 Claim assessors discussed the event and determined the Perpetual Protocol v1 economic design failure event was covered under section 1.2 of the [Protocol Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4c4cca088730ac54ccc_ProtocolCoverv1.0.pdf).
 
-Once the first claim was filed and members were aware of this loss event, the Mutual [released a statement](https://discordapp.com/channels/496296560624140298/689385874265342056/980881247368806470) with information regarding the [affected addresses](https://docs.google.com/spreadsheets/d/15hajD9CatNgNMgjGq6QdvCw4dGqndFGG0V30vof2Smo/edit#gid=0) and details about the event, as well as information about the active claims and the Claim Assessment process.
+Once the first claim was filed and members were aware of this loss event, the Mutual [released a statement](https://discordapp.com/channels/496296560624140298/689385874265342056/980881247368806470) with information regarding the affected addresses and details about the event, as well as information about the active claims and the Claim Assessment process.
 
 ### Filed claims and outcomes
 To date, two (2) claims have been filed and voted on by claim assessors. As stated in the section above, claim assessors had determined this was a covered event. Once it has been determined that an event is covered, claim assessors review the validity of claims to determine:

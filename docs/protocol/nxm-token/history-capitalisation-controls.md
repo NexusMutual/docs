@@ -34,7 +34,7 @@ Where:
 * MCR = the value of the Minimum Capital Requirement in ETH, which grows as the number of covers grows
 * MCR% = ratio of the [Capital Pool](/protocol/capital-pool/) to the Minimum Capital Requirement
 
-The MCR(eth) floor was set through governance in October 2020 and stands at 162,424.73 ETH. In November 2023, Members voted to approve [NMPIP-209: Launch Tokenomics Upgrade](https://app.nexusmutual.io/governance/proposals/v1/209), which granted the Advisory Board the power to remove the MCR(eth) Floor.
+The MCR(eth) floor was set through governance in October 2020 at 162,424.73 ETH. In November 2023, Members voted to approve [NMPIP-209: Launch Tokenomics Upgrade](https://app.nexusmutual.io/governance/proposals/v1/209), which granted the Advisory Board the power to remove the MCR(eth) Floor. The floor was subsequently removed, and the MCR is now driven entirely by the Mutual's Total Active Cover Amount. See [Minimum Capital Requirement](/protocol/capital-pool/mcr).
 
 ### Redemption and purchase restrictions
 

@@ -63,7 +63,7 @@ To defeat a proposal, members must vote with at least 15% of the NXM token suppl
 ## Governance Proposal Timelines, Types
 
 When governance proposals go to vote, there is a standard timeframe for the voting period:
-1. **Proposal is created**. The vote is put onchain and on the Nexus Mutual DAO Snapshot space for voting.
+1. **Proposal is created**. The vote is put onchain and on the Nexus Mutual DAO Snapshot space. Voting opens four hours after the proposal is published.
 2. **Proposal is open for voting**. All governance proposals have a three (3) day voting period. An onchain Advisory Board proposal closes as soon as three AB members have voted in favour.
 3. **Post-vote timelock period**. Once the voting period closes, a proposal is subject to a 24-hour timelock period where no action can take place until the timelock period passes.
 4. **Proposal outcome**. If a proposal succeeds, it can be executed after the timelock period ends. If a proposal is defeated, no action is taken after the timelock period ends.

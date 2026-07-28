@@ -15,7 +15,6 @@ Members can:
 * Share risk with other members
 * Contribute funds to the Mutual and hold NXM tokens
 * Stake NXM, underwrite risk, and earn rewards
-* Stake NXM, assess claims, and earn rewards
 * Create and run risk management businesses
 * Put forward and vote on governance proposals
 * Contribute to the Nexus Mutual DAO
