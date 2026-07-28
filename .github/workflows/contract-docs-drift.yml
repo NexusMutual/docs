@@ -37,8 +37,11 @@ jobs:
           npm ci --ignore-scripts
           npm install --no-save @nexusmutual/deployments@latest
 
-      - name: Check contract reference against deployed ABIs
+      - name: Check contract reference against deployed contracts
         id: check
+        env:
+          # Optional. Falls back to a public endpoint when unset.
+          ETH_RPC_URL: ${{ secrets.ETH_RPC_URL }}
         run: |
           set +e
           npm run --silent check:contract-docs > report.txt 2>&1
