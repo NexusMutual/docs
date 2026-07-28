@@ -13,17 +13,9 @@ There will be a discussion on the validity of a claim on the [Nexus Mutual gover
 
 ## Claims Paid to Date
 
-Members of the Mutual have paid out $18M+ to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralized custodians.
+Members of the Mutual have paid out over $18M to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralized custodians.
 
-|  Year | Total Claims Paid (in USD) |
-|------:|---------------------------:|
-|  2020 |                 $33,720.10 |
-|  2021 |              $2,716,958.11 |
-|  2022 |              $6,615,394.75 |
-|  2023 |              $8,883,212.99 |
-|  2024 |                  $6,895.07 |
-|  2025 |              $245,957.29 |
-| Total |             $18,502,138.31 |
+For every claim the Mutual has paid, along with the amount and date, see the [claims record](https://nexusmutual.io/claims).
 
 ## Auditing, Reviewing Past Claims
 

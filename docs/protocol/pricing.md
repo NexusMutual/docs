@@ -43,8 +43,8 @@ The spot price decreases linearly from <code>bumpedPrice</code> to <code>targetP
 <p><code>spotPrice = MAX(bumpedPrice - priceDrop, targetPrice)</code></p>
 
 Where:
-* <code>bump = 0.2% addition to the spot price per 1% of pool capacity used</code>
-* <code>Bumped price = spotPrice + capacity% of the pool to be used / 1% x 0.2</code>
+* <code>bump = 0.05% addition to the spot price per 1% of pool capacity used</code>
+* <code>Bumped price = spotPrice + capacity% of the pool to be used / 1% x 0.05</code>
 * <code>priceDrop = timeSinceLastCoverBuy * speed</code>
 * <code>speed = PRICE_CHANGE_PER_DAY / 1 dayInSeconds</code>
 * <code>targetPrice</code> is set by the staking pool manager and can be updated at any time
@@ -56,7 +56,7 @@ The Bumped Price gets updated after each cover buy and is used to calculate the 
 *Example*
 * <code>spotPrice = 2.5%</code>
 * <code>capacity % of the pool to be used = 15%</code>
-* <code>bumpedPrice = 2.5 + 15% / 1% x 0.2 = 5.5 price per annum</code>
+* <code>bumpedPrice = 2.5 + 15% / 1% x 0.05 = 3.25 price per annum</code>
 
 **Note**: when a cover product is first added to a staking pool, the <code>BumpedPrice</code> is equal to the <code>InitialPrice</code> set by the Advisory Board.
 
@@ -79,7 +79,7 @@ You can see an example of the variables being used to calculate the price of a c
 * <code>priceDrop = 3 * 2.0% = 6.0%</code>
 * <code>bumpedPrice = 6.5%</code>
 * <code>targetPrice = 4%</code>
-* <code>spotPrice = MAX(6.5% - 6.0%, 3%) = 3.0%</code>
+* <code>spotPrice = MAX(6.5% - 6.0%, 4%) = 4.0%</code>
 
 ## Benefits
 

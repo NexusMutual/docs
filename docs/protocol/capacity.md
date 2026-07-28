@@ -34,8 +34,8 @@ The Advisory Board can adjust two factors to adjust exposure to risk for any one
 
 ### Global Capacity Factor
 
-At launch, the global capacity factor will be set at two for all listings, which means every one NXM staked opens up two NXM worth of capacity.
+The global capacity factor is set at two for all listings, which means every one NXM staked opens up two NXM worth of capacity.
 
 ### Capacity Reduction Factor
 
-At launch, the capacity reduction factor will be set at zero for all products but can be increased up to a maximum of one if any one listing's active cover approaches 20% of the minimum capital requirement (MCR).
+The capacity reduction factor is set at zero for all products but can be increased up to a maximum of one if any one listing's active cover approaches 20% of the minimum capital requirement (MCR).
