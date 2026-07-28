@@ -69,6 +69,15 @@ const literal = raw => {
 };
 
 /**
+ * Constants that are private in the contract but readable through a getter
+ * under a different name.
+ */
+const ALIASES = {
+  GLOBAL_CAPACITY_RATIO: 'getGlobalCapacityRatio',
+  GLOBAL_REWARDS_RATIO: 'getGlobalRewardsRatio',
+};
+
+/**
  * Contracts exposing NAME as a zero-arg view/pure getter at a known address.
  * StakingPool is excluded by the address requirement: pools are deployed per
  * pool through the factory, so there is no single address to read from.
@@ -111,61 +120,6 @@ for (const r of rows) {
   console.log(`${r.missing ? 'FAIL' : 'ok  '} ${r.file.padEnd(width)}  ${r.contract.padEnd(20)} documented:${String(r.documented).padStart(3)}  notOnABI:${String(r.missing).padStart(3)}`);
 }
 
-// ---- check 3 --------------------------------------------------------------
-
-const provider = new ethers.JsonRpcProvider(RPC);
-let verified = 0;
-
-console.log('\nConstants quoted in the reference:');
-
-for (const [file, pageContract] of Object.entries(PAGES)) {
-  if (!fs.existsSync(path.join(DOCS, file))) continue;
-
-  for (const c of documentedConstants(read(file))) {
-    const expected = literal(c.raw);
-    if (expected === null) {
-      notes.push(`${file}: ${c.name} = ${c.raw} — value form not checked`);
-      continue;
-    }
-
-    const candidates = gettersFor(c.name);
-    const contract = candidates.includes(pageContract) ? pageContract : candidates[0];
-    if (!contract) {
-      notes.push(`${file}: ${c.name} has no public getter — not checked`);
-      continue;
-    }
-
-    let actual;
-    try {
-      const instance = new ethers.Contract(addresses[contract], abis[contract], provider);
-      actual = await instance[c.name]();
-    } catch (err) {
-      notes.push(`${file}: ${c.name} could not be read from ${contract} — ${(err.shortMessage || err.message).slice(0, 60)}`);
-      continue;
-    }
-
-    verified++;
-    if (BigInt(actual) === expected) {
-      console.log(`  ok    ${c.name.padEnd(26)} ${String(expected).padStart(22)}  (${contract})`);
-    } else {
-      console.log(`  FAIL  ${c.name.padEnd(26)} ${String(expected).padStart(22)}  documented, ${actual} onchain  (${contract})`);
-      problems.push(`${file}: ${c.name} is documented as ${c.raw} but ${contract} returns ${actual}`);
-    }
-  }
-}
-
-// ---- check 4: numbers stated in prose ------------------------------------
-//
-// Docs often state a number a reader can use rather than the constant behind
-// it: "0.05% per 1% of capacity" for PRICE_BUMP_RATIO = 500. Those have no
-// machine-readable link to the contract, so an annotation supplies one:
-//
-//   <!-- @check StakingProducts.PRICE_BUMP_RATIO = 500 -->
-//
-// The annotation asserts the underlying value has not moved. It does not
-// verify the prose is a correct reading of that value, which stays a human
-// judgement. It catches drift, not misinterpretation.
-
 const ANNOTATION = /<!--\s*@check\s+([A-Za-z0-9_]+)\.([A-Za-z0-9_]+)\s*=\s*(.+?)\s*-->/g;
 
 const annotations = [];
@@ -187,6 +141,64 @@ const walk = dir => {
   }
 };
 walk(ALL_DOCS);
+
+// ---- check 3 --------------------------------------------------------------
+
+const provider = new ethers.JsonRpcProvider(RPC);
+let verified = 0;
+
+console.log('\nConstants quoted in the reference:');
+
+for (const [file, pageContract] of Object.entries(PAGES)) {
+  if (!fs.existsSync(path.join(DOCS, file))) continue;
+
+  for (const c of documentedConstants(read(file))) {
+    const expected = literal(c.raw);
+    if (expected === null) {
+      const covered = annotations.some(a => a.getter === c.name);
+      if (!covered) notes.push(`${file}: ${c.name} = ${c.raw} — value form not checked`);
+      continue;
+    }
+
+    const getter = ALIASES[c.name] ?? c.name;
+    const candidates = gettersFor(getter);
+    const contract = candidates.includes(pageContract) ? pageContract : candidates[0];
+    if (!contract) {
+      notes.push(`${file}: ${c.name} is private and has no getter — not checked`);
+      continue;
+    }
+
+    let actual;
+    try {
+      const instance = new ethers.Contract(addresses[contract], abis[contract], provider);
+      actual = await instance[getter]();
+    } catch (err) {
+      notes.push(`${file}: ${c.name} could not be read from ${contract} — ${(err.shortMessage || err.message).slice(0, 60)}`);
+      continue;
+    }
+
+    verified++;
+    const via = getter === c.name ? contract : `${contract}.${getter}`;
+    if (BigInt(actual) === expected) {
+      console.log(`  ok    ${c.name.padEnd(26)} ${String(expected).padStart(22)}  (${via})`);
+    } else {
+      console.log(`  FAIL  ${c.name.padEnd(26)} ${String(expected).padStart(22)}  documented, ${actual} onchain  (${via})`);
+      problems.push(`${file}: ${c.name} is documented as ${c.raw} but ${contract} returns ${actual}`);
+    }
+  }
+}
+
+// ---- check 4: numbers stated in prose ------------------------------------
+//
+// Docs often state a number a reader can use rather than the constant behind
+// it: "0.05% per 1% of capacity" for PRICE_BUMP_RATIO = 500. Those have no
+// machine-readable link to the contract, so an annotation supplies one:
+//
+//   <!-- @check StakingProducts.PRICE_BUMP_RATIO = 500 -->
+//
+// The annotation asserts the underlying value has not moved. It does not
+// verify the prose is a correct reading of that value, which stays a human
+// judgement. It catches drift, not misinterpretation.
 
 if (annotations.length) {
   console.log('\nNumbers stated in prose:');

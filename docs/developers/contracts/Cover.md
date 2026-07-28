@@ -105,6 +105,7 @@ uint private constant BUCKET_SIZE = 7 days;
 
 - **Allocation Units per NXM:**
 
+<!-- @check Cover.NXM_PER_ALLOCATION_UNIT = 0.01 ether -->
 ```solidity
 uint private constant ALLOCATION_UNITS_PER_NXM = 100;
 uint public constant NXM_PER_ALLOCATION_UNIT = ONE_NXM / ALLOCATION_UNITS_PER_NXM;
