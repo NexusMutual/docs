@@ -24,7 +24,6 @@ struct Slot0 {
     uint128 ethReserve;
     uint88 budget;
     uint32 updatedAt;
-    bool swapPaused;
   }
 ```
 
@@ -94,30 +93,18 @@ Ramm.callStatic.swap(nxmIn, 0, future_timestamp);
 Resets the ETH budget used for liquidity injection to zero. This function can only be called by governance.
 
 ```solidity
-function removeBudget() external onlyGovernance;
+function removeBudget() external onlyGovernor;
 ```
-
-### `setEmergencySwapPause`
-
-Allows an emergency administrator to pause or resume swap functionality during emergencies.
-
-```solidity
-function setEmergencySwapPause(bool _swapPaused) external onlyEmergencyAdmin;
-```
-
-| Parameter     | Description                               |
-| ------------- | ----------------------------------------- |
-| `_swapPaused` | True to pause swaps, false to resume them |
 
 ### `setCircuitBreakerLimits`
 
-Sets the limits for the circuit breakers, controlling the maximum ETH and NXM that can be released.
+Sets the limits for the circuit breakers, controlling the maximum ETH and NXM that can be released. Governance only.
 
 ```solidity
 function setCircuitBreakerLimits(
   uint _ethLimit,
   uint _nxmLimit
-) external onlyEmergencyAdmin;
+) external onlyGovernor;
 ```
 
 | Parameter   | Description                      |
@@ -204,7 +191,6 @@ function getInternalPriceAndUpdateTwap() external returns (uint internalPrice);
 - **`NxmSwappedForEth(address indexed user, uint nxmIn, uint ethOut)`**: Emitted when a user swaps NXM for ETH.
 - **`ObservationUpdated(uint32 timestamp, uint112 priceCumulativeAbove, uint112 priceCumulativeBelow)`**: Emitted when price observations are updated.
 - **`BudgetRemoved()`**: Emitted when the ETH budget is removed.
-- **`SwapPauseConfigured(bool swapPaused)`**: Emitted when the swap pause status is configured.
 
 ## Contact and Support
 

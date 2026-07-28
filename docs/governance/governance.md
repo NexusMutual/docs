@@ -54,7 +54,7 @@ Voting on a proposal to replace an AB member locks your NXM transfers until the 
 
 Every member who joins Nexus Mutual has voting power equal to one vote plus the sum total of their NXM tokens.
 
-For onchain votes, a single member's voting power is capped at 5% of the total NXM supply.
+A single member's voting power is capped at 5% of the total NXM supply. This cap applies to Snapshot votes as well as onchain votes, because the Snapshot space reads voting power from the `VotePower` contract.
 
 ### Quorum for Rejection
 

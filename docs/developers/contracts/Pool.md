@@ -32,29 +32,35 @@ struct Asset {
 | `isCoverAsset` | Indicates if the asset can be used for claim payouts.    |
 | `isAbandoned`  | Marks the asset as no longer in use.                     |
 
-### Swap Details
+### Price Oracles
 
-Each asset has associated swap parameters to manage asset swapping:
+Each asset has a price oracle used to value it in ETH:
 
 ```solidity
-struct SwapDetails {
-    uint104 minAmount;
-    uint104 maxAmount;
-    uint32 lastSwapTime;
-    uint16 maxSlippageRatio;
-}
+function oracles(address assetAddress) external view returns (
+    address aggregator,
+    uint8 aggregatorType,
+    uint8 assetDecimals
+);
 ```
 
-| Parameter          | Description                                                             |
-| ------------------ | ----------------------------------------------------------------------- |
-| `minAmount`        | Minimum amount for swapping.                                            |
-| `maxAmount`        | Maximum amount for swapping.                                            |
-| `lastSwapTime`     | Timestamp of the last swap operation.                                   |
-| `maxSlippageRatio` | Maximum allowable slippage during a swap to prevent unfavorable trades. |
+| Parameter        | Description                                       |
+| ---------------- | ------------------------------------------------- |
+| `aggregator`     | The Chainlink aggregator for this asset.          |
+| `aggregatorType` | Whether the aggregator prices the asset in ETH or USD. |
+| `assetDecimals`  | The decimals of the asset.                        |
 
 ### SwapOperator
 
-The `Pool` interacts with the `SwapOperator` contract to handle asset swaps, maintaining the desired asset allocations.
+The `Pool` interacts with the `SwapOperator` contract to handle asset swaps, maintaining the desired asset allocations. While a swap is in flight, the Pool records the asset and amount that left the Pool:
+
+```solidity
+function assetInSwapOperator() external view returns (address assetAddress, uint96 amount);
+```
+
+### Minimum Capital Requirement
+
+The `Pool` holds the Minimum Capital Requirement (MCR) calculation. The MCR is the amount of capital the mutual needs to hold against the cover it has sold, and the MCR ratio expresses the Pool's value against that requirement.
 
 ### Payouts and Claims
 
@@ -76,19 +82,17 @@ Adds a new asset to the `Pool` with specified swap parameters (governance only).
 function addAsset(
     address assetAddress,
     bool isCoverAsset,
-    uint _min,
-    uint _max,
-    uint _maxSlippageRatio
-) external onlyGovernance;
+    address aggregator,
+    uint8 aggregatorType
+) external onlyGovernor;
 ```
 
-| Parameter          | Description                                                                              |
-| ------------------ | ---------------------------------------------------------------------------------------- |
-| `assetAddress`     | The address of the new asset's ERC20 contract.                                           |
-| `isCoverAsset`     | Whether the asset can be used for claim payouts.                                         |
-| `min`              | The minimum amount for swapping.                                                         |
-| `max`              | The maximum amount for swapping.                                                         |
-| `maxSlippageRatio` | The maximum allowable slippage ratio during swaps (in basis points, where 10000 = 100%). |
+| Parameter        | Description                                            |
+| ---------------- | ------------------------------------------------------ |
+| `assetAddress`   | The address of the new asset's ERC20 contract.         |
+| `isCoverAsset`   | Whether the asset can be used for claim payouts.       |
+| `aggregator`     | The Chainlink aggregator for this asset.               |
+| `aggregatorType` | Whether the aggregator prices the asset in ETH or USD. |
 
 ### `setAssetDetails`
 
@@ -108,42 +112,40 @@ function setAssetDetails(
 | `isCoverAsset` | Updated status of whether the asset can be used for payouts. |
 | `isAbandoned`  | Marks the asset as abandoned or active.                      |
 
-### `setSwapDetails`
+### `setAssetOracle`
 
-Updates the swap parameters for a specific asset (governance only).
+Updates the price oracle for a specific asset (governance only).
 
 ```solidity
-function setSwapDetails(
+function setAssetOracle(
     address assetAddress,
-    uint _min,
-    uint _max,
-    uint _maxSlippageRatio
-) external onlyGovernance;
+    address aggregator,
+    uint8 aggregatorType
+) external onlyGovernor;
 ```
 
-| Parameter        | Description                                                       |
-| ---------------- | ----------------------------------------------------------------- |
-| assetAddress     | The address of the asset's ERC20 contract.                        |
-| min              | New minimum swap amount.                                          |
-| max              | New maximum swap amount.                                          |
-| maxSlippageRatio | New maximum slippage ratio (in basis points, where 10000 = 100%). |
+| Parameter        | Description                                            |
+| ---------------- | ------------------------------------------------------ |
+| `assetAddress`   | The address of the asset's ERC20 contract.             |
+| `aggregator`     | The Chainlink aggregator for this asset.               |
+| `aggregatorType` | Whether the aggregator prices the asset in ETH or USD. |
 
-### `transferAsset`
+### `transferAssetToSafe`
 
-Transfers a specified amount of an asset from the `Pool` to a destination address (governance only).
+Transfers a specified amount of an asset from the `Pool` to the Safe multisig tracked by the `SafeTracker` contract (governance only).
 
 ```solidity
-function transferAsset(
+function transferAssetToSafe(
     address assetAddress,
-    address payable destination,
+    address safeAddress,
     uint amount
-) external onlyGovernance nonReentrant;
+) external onlyGovernor nonReentrant;
 ```
 
 | Parameter      | Description                                |
 | -------------- | ------------------------------------------ |
 | `assetAddress` | The address of the asset's ERC20 contract. |
-| `destination`  | The recipient address.                     |
+| `safeAddress`  | The recipient Safe address.                |
 | `amount`       | The amount to transfer.                    |
 
 ### `transferAssetToSwapOperator`
@@ -164,37 +166,27 @@ function transferAssetToSwapOperator(
 
 **Description:** Called by the SwapOperator to receive assets from the Pool for swapping purposes.
 
-### `setSwapDetailsLastSwapTime`
+### `clearSwapAssetAmount`
 
-Updates the lastSwapTime for a specific asset's swap details (SwapOperator only).
-
-```solidity
-function setSwapDetailsLastSwapTime(
-    address assetAddress,
-    uint32 lastSwapTime
-) public override onlySwapOperator whenNotPaused;
-```
-
-| Parameter    | Description                                              |
-| ------------ | -------------------------------------------------------- |
-| assetAddress | The address of the asset's ERC20 contract.               |
-| lastSwapTime | The timestamp of the last swap operation for this asset. |
-
-**Description:** Allows the SwapOperator to update the last time a swap was performed for an asset.
-
-### `setSwapValue`
-
-Updates the swapValue to reflect the value of assets currently in the process of being swapped (SwapOperator only).
+Clears the record of the asset currently held by the SwapOperator, once the swap has settled (SwapOperator only).
 
 ```solidity
-function setSwapValue(uint newValue) external onlySwapOperator whenNotPaused;
+function clearSwapAssetAmount(address assetAddress) external onlySwapOperator;
 ```
 
-| Parameter | Description                                           |
-| --------- | ----------------------------------------------------- |
-| newValue  | The new total value (in ETH) of assets being swapped. |
+| Parameter      | Description                                |
+| -------------- | ------------------------------------------ |
+| `assetAddress` | The address of the asset's ERC20 contract. |
 
-**Description:** Sets the total value of assets currently being swapped by the SwapOperator. Helps the Pool keep track of assets during swaps.
+### `updateMCR`
+
+Recalculates the Minimum Capital Requirement.
+
+```solidity
+function updateMCR() external;
+```
+
+**Description:** The MCR moves gradually towards its desired value, so this is called periodically to bring the stored value up to date.
 
 ### `sendPayout`
 
@@ -229,30 +221,18 @@ function sendEth(address member, uint amount) external onlyRamm nonReentrant;
 | `member`  | The address of the recipient. |
 | `amount`  | The amount of ETH to send.    |
 
-### `upgradeCapitalPool`
+### `migrate`
 
-Transfers all assets from the current `Pool` to a new `Pool` contract during a contract upgrade (master only).
-
-```solidity
-function upgradeCapitalPool(address payable newPoolAddress) external onlyMaster nonReentrant;
-```
-
-| Parameter        | Description                           |
-| ---------------- | ------------------------------------- |
-| `newPoolAddress` | The address of the new Pool contract. |
-
-### `updateAddressParameters`
-
-Updates address-based parameters within the `Pool` contract (governance only).
+Transfers the assets and MCR state of a previous `Pool` into this one during a contract upgrade.
 
 ```solidity
-function updateAddressParameters(bytes8 code, address value) external onlyGovernance;
+function migrate(address previousPool, address previousMCR) external;
 ```
 
-| Parameter | Description                                                                                                                     |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `code`    | A code representing the parameter to update (`"SWP_OP"` for swapOperator, `"PRC_FEED"` for priceFeedOracle) |
-| `value`   | The new address value.                                                                                                          |
+| Parameter      | Description                             |
+| -------------- | --------------------------------------- |
+| `previousPool` | The address of the previous Pool.       |
+| `previousMCR`  | The address of the previous MCR contract. |
 
 ## View Functions
 
@@ -286,38 +266,34 @@ Retrieves a list of all assets managed by the `Pool`, along with their propertie
 function getAssets() external view returns (Asset[] memory);
 ```
 
-### `getAssetSwapDetails`
+### `getAssetId`
 
-Retrieves the swap parameters for a specific asset.
+Returns the id of an asset from its address.
 
 ```solidity
-function getAssetSwapDetails(address assetAddress) external view returns (SwapDetails memory);
+function getAssetId(address assetAddress) external view returns (uint);
 ```
 
 | Parameter      | Description                                |
 | -------------- | ------------------------------------------ |
 | `assetAddress` | The address of the asset's ERC20 contract. |
 
-### `calculateMCRRatio`
+### `getEthForAsset` and `getAssetForEth`
 
-Helper function to calculate the MCR ratio given specific values.
-
-```solidity
-function calculateMCRRatio(uint totalAssetValue, uint mcrEth) public override pure returns (uint);
-```
-
-| Parameter       | Description                                     |
-| --------------- | ----------------------------------------------- |
-| totalAssetValue | The total value of all assets in ETH.           |
-| mcrEth          | The current Minimum Capital Requirement in ETH. |
-
-**Description:** Calculates the MCR ratio using the formula:
+Convert between an asset amount and its value in ETH, using the asset's price oracle.
 
 ```solidity
-uint mcrRatio = totalAssetValue * (10 ** MCR_RATIO_DECIMALS) / mcrEth;
+function getEthForAsset(address assetAddress, uint amount) external view returns (uint);
+function getAssetForEth(address assetAddress, uint ethIn) external view returns (uint);
 ```
 
-**Usage:** Primarily used internally but can be helpful for simulations or calculations outside the contract.
+### `getMCR`
+
+Returns the current Minimum Capital Requirement in ETH.
+
+```solidity
+function getMCR() external view returns (uint);
+```
 
 ### `getInternalTokenPriceInAsset`
 
@@ -359,8 +335,10 @@ function getMCRRatio() public view returns (uint);
 
 ## Events
 
-- `Payout(address indexed to, address indexed assetAddress, uint amount)`: Emitted when a payout is made to a claimant.
-- `DepositReturned(address indexed to, uint amount)`: Emitted when a deposit amount is returned to a user.
+- `Payout(address to, address assetAddress, uint amount)`: Emitted when a payout is made to a claimant.
+- `AssetsTransferredToSwapOperator(address assetAddress, uint amount)`: Emitted when assets are sent to the SwapOperator for a swap.
+- `AssetsTransferredToSafe(address assetAddress, uint amount)`: Emitted when assets are sent to the Safe multisig.
+- `MCRUpdated(uint mcr, uint desiredMCR, uint mcrFloor, uint mcrETHWithGear, uint totalSumAssured)`: Emitted when the MCR is recalculated.
 
 ## Integration Guidelines
 
