@@ -25,7 +25,7 @@ graph TD
 
     %% Buying Cover
     Member -->|"**(2a)** Calls buyCover"| Cover
-    Cover -->|"**(2b)** onlyMember check"| MemberRoles
+    Cover -->|"**(2b)** onlyMember check"| Registry
     Cover -->|"**(2c)** get product info"| CoverProducts
     Cover -->|"**(2d)** mint Cover NFT"| CoverNFT
     CoverNFT -->|"**(2e)** issue NFT"| Member
@@ -42,26 +42,25 @@ graph TD
     Assessors(("Assessors"))
 
     %% Contracts
-    IndividualClaims["IndividualClaims Contract"]
-    Assessment["Assessment Contract"]
+    Claims["Claims Contract"]
+    Assessments["Assessments Contract"]
     Cover["Cover Contract"]
-    TokenController["TokenController"]
+    CoverNFT["CoverNFT Contract"]
     Pool["Pool"]
 
     %% Submit Claim
-    Member -->|"**(1a)** submitClaim"| IndividualClaims
-    IndividualClaims -->|"**(1b)** validate cover"| CoverNFT
-    IndividualClaims -->|"**(1b)** validate amount"| Cover
-    IndividualClaims -->|"**(1c)** startAssessment"| Assessment
+    Member -->|"**(1a)** submitClaim"| Claims
+    Claims -->|"**(1b)** validate cover"| CoverNFT
+    Claims -->|"**(1b)** validate amount"| Cover
+    Claims -->|"**(1c)** startAssessment"| Assessments
 
     %% Assessment Process
-    Assessors -->|"**(2a)** castVotes"| Assessment
-    Assessment -->|"**(2b)** lock staked NXM"| TokenController
+    Assessors -->|"**(2a)** castVote"| Assessments
 
     %% Claim Payout
-    Member -->|"**(3a)** redeemClaimPayout"| IndividualClaims
-    IndividualClaims -->|"**(3b)** burnStake"| Cover
-    IndividualClaims -->|"**(3c)** sendPayout"| Pool
+    Member -->|"**(3a)** redeemClaimPayout"| Claims
+    Claims -->|"**(3b)** burnStake"| Cover
+    Claims -->|"**(3c)** sendPayout"| Pool
     Pool -.->|"**(3c)** transfer claim amount + deposit"| Member
 ```
 
@@ -73,9 +72,9 @@ graph TD
    - Call `buyCover` on Cover contract with the pool allocation result
 
 2. **Submit and Process Claim**
-   - Call `submitClaim` on IndividualClaims to request a payout
+   - Call `submitClaim` on Claims to request a payout
    - Wait for assessment period where Assessors vote on the claim
-   - If approved, call `redeemClaimPayout` on IndividualClaims to receive payout
+   - If approved, call `redeemClaimPayout` on Claims to receive payout
 
 ---
 
@@ -101,20 +100,20 @@ graph TD
 ## Claim Submission & Processing
 
 1. **Submit Claim**
-   **(1a)** `Cover Buyer` calls `submitClaim` on IndividualClaims
-   **(1b)** `IndividualClaims` validates:
+   **(1a)** `Cover Buyer` calls `submitClaim` on Claims
+   **(1b)** `Claims` validates:
 
    - Cover ownership via CoverNFT
    - Cover validity via Cover
-     **(1c)** `IndividualClaims` starts assessment process
+     **(1c)** `Claims` starts assessment process
 
 2. **Assessment Process**
-   **(2a)** `Assessors` call `castVotes` on Assessment
-   **(2b)** `Assessment` locks staked NXM for voting period
+   **(2a)** `Assessors` call `castVote` on Assessments
+   **(2b)** `Assessments` records each ballot with the rationale for the decision
 
 3. **Claim Payout**
-   **(3a)** `Cover Buyer` calls `redeemClaimPayout` on IndividualClaims
-   **(3b)** `IndividualClaims` calls Cover to burn stake from affected pools
-   **(3c)** `IndividualClaims` sends payout via Pool which:
+   **(3a)** `Cover Buyer` calls `redeemClaimPayout` on Claims
+   **(3b)** `Claims` calls Cover to burn stake from affected pools
+   **(3c)** `Claims` sends payout via Pool which:
    - Transfers claim amount in cover asset
    - Returns claim deposit in ETH

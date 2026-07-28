@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Claims & Assessment
+# Claims & Assessments
 
 ## 1. Submit Claim Flow
 
@@ -12,19 +12,19 @@ graph TD
     Member(("Cover Buyer"))
 
     %% Contracts
-    IndividualClaims["IndividualClaims Contract"]
-    Assessment["Assessment Contract"]
+    Claims["Claims Contract"]
+    Assessments["Assessments Contract"]
     Cover["Cover Contract"]
     CoverNFT["CoverNFT Contract"]
 
     %% Submit Claim
-    Member -->|"**(1a)** submitClaim"| IndividualClaims
-    IndividualClaims -->|"**(1b)** validate cover"| CoverNFT
-    IndividualClaims -->|"**(1c)** validate amount"| Cover
-    IndividualClaims -->|"**(1d)** startAssessment"| Assessment
+    Member -->|"**(1a)** submitClaim"| Claims
+    Claims -->|"**(1b)** validate cover"| CoverNFT
+    Claims -->|"**(1c)** validate amount"| Cover
+    Claims -->|"**(1d)** startAssessment"| Assessments
 ```
 
-## 2. Assessment & Redemption Flow
+## 2. Assessments & Redemption Flow
 
 ```mermaid
 graph TD
@@ -33,21 +33,19 @@ graph TD
     Assessor(("Claim Assessor"))
 
     %% Contracts
-    IndividualClaims["IndividualClaims Contract"]
-    Assessment["Assessment Contract"]
+    Claims["Claims Contract"]
+    Assessments["Assessments Contract"]
     Cover["Cover Contract"]
-    TokenController["TokenController"]
     Pool["Pool"]
 
     %% Assessment Process
-    Assessor -->|"**(2a)** castVotes"| Assessment
-    Assessment -->|"**(2b)** lock staked NXM"| TokenController
+    Assessor -->|"**(2a)** castVote"| Assessments
 
     %% Claim Payout
-    Member -->|"**(3a)** redeemClaimPayout"| IndividualClaims
-    IndividualClaims -->|"**(3b)** validate claim status"| Assessment
-    IndividualClaims -->|"**(3c)** burnStake"| Cover
-    IndividualClaims -->|"**(3d)** sendPayout"| Pool
+    Member -->|"**(3a)** redeemClaimPayout"| Claims
+    Claims -->|"**(3b)** validate claim status"| Assessments
+    Claims -->|"**(3c)** burnStake"| Cover
+    Claims -->|"**(3d)** sendPayout"| Pool
     Pool -.->|"**(3e)** transfer claim amount + deposit"| Member
 ```
 
@@ -63,7 +61,7 @@ graph TD
 
 1. **Submit Claim**
 
-   - Call `submitClaim` on IndividualClaims to request a payout
+   - Call `submitClaim` on Claims to request a payout
    - Provide:
      - Cover ID
      - Claim amount
@@ -73,7 +71,7 @@ graph TD
 
 2. **Redeem Approved Claim**
    - Wait for assessment period to complete
-   - If claim is approved, call `redeemClaimPayout` on IndividualClaims
+   - If claim is approved, call `redeemClaimPayout` on Claims
    - Receive:
      - Claim amount in cover asset
      - Assessment deposit returned in ETH
@@ -81,7 +79,7 @@ graph TD
 ### 2. Claim Assessor Actions
 
 1. **Vote on Claims**
-   - Call `castVotes` on Assessment contract
+   - Call `castVote` on Assessments contract
    - Specify:
      - Claim ID
      - Vote (Accept/Reject)
@@ -93,25 +91,25 @@ graph TD
 ## Claim Submission & Processing
 
 1. **Submit Claim**
-   **(1a)** `Cover Buyer` calls `submitClaim` on IndividualClaims
-   **(1b)** `IndividualClaims` validates cover ownership via CoverNFT
-   **(1c)** `IndividualClaims` validates claim amount via Cover
-   **(1d)** `IndividualClaims` starts assessment process
+   **(1a)** `Cover Buyer` calls `submitClaim` on Claims
+   **(1b)** `Claims` validates cover ownership via CoverNFT
+   **(1c)** `Claims` validates claim amount via Cover
+   **(1d)** `Claims` starts assessment process
 
 2. **Assessment Process**
-   **(2a)** `Assessors` call `castVotes` on Assessment
-   **(2b)** `Assessment` locks staked NXM via TokenController for voting period
+   **(2a)** `Assessors` call `castVote` on Assessments
+   **(2b)** `Assessments` records each ballot with the rationale for the decision
 
 3. **Claim Payout**
-   **(3a)** `Cover Buyer` calls `redeemClaimPayout` on IndividualClaims
-   **(3b)** `IndividualClaims` validates with Assessment:
+   **(3a)** `Cover Buyer` calls `redeemClaimPayout` on Claims
+   **(3b)** `Claims` validates with Assessments:
 
    - Assessment period has ended
    - More accept votes than deny votes
    - Cooldown period has passed
 
-   **(3c)** `IndividualClaims` calls Cover to burn stake from affected pools
-   **(3d)** `IndividualClaims` sends payout via Pool
+   **(3c)** `Claims` calls Cover to burn stake from affected pools
+   **(3d)** `Claims` sends payout via Pool
    **(3e)** `Pool` transfers:
 
    - Claim amount in cover asset

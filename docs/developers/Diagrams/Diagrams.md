@@ -6,17 +6,17 @@ sidebar_position: 3
 
 ## Nexus Mutual Platform Flow Diagram
 
-This document merges multiple **Cover** and **Staking** flows with their underlying interactions across **Token**, **Capital**, **Claims/Assessment**, and **Governance** groupings. We use two comprehensive flows:
+This document merges multiple **Cover** and **Staking** flows with their underlying interactions across **Token**, **Capital**, **Claims/Assessments**, and **Governance** groupings. We use two comprehensive flows:
 
 1. Buying Cover and Processing Claims
    - Includes:
      - Buying Cover (**Cover ↔ Token ↔ Capital**)
-     - Submitting and Assessing Claims (**Claims/Assessment ↔ Cover ↔ Capital ↔ Governance**)
+     - Submitting and Assessing Claims (**Claims/Assessments ↔ Cover ↔ Capital ↔ Governance**)
 2. Staking Pool Management and Staking Lifecycle
    - Includes:
      - Pool creation and product listing (**Staking ↔ Token**)
      - Stakers redeeming rewards (**Staking ↔ Token**)
-     - Burning NXM on approved claims (**Claims/Assessment ↔ Staking ↔ Token**)
+     - Burning NXM on approved claims (**Claims/Assessments ↔ Staking ↔ Token**)
 
 We provide detailed steps and a **Mermaid diagram** for each flow, ensuring step numbering in both the **text description** and **diagrams** for clarity. Code blocks are **escaped** so they remain valid raw markdown.
 
@@ -48,7 +48,7 @@ flowchart LR
     end
 
     subgraph "Governance Group"
-      MR("MemberRoles")
+      MR("Registry")
     end
 
     %% 1. Buy Cover (single tx)
@@ -62,20 +62,18 @@ flowchart LR
     TC -->|"**(1g)** burn NXM or transfer ETH/ERC20"| PoolC
 
     %% 2. Submit Claim (single tx)
-    Buyer -->|"**(2a)** submitClaim()"| IndClaims
-    IndClaims -->|"**(2b)** validate isApprovedOrOwner()"| CoverN
-    IndClaims -->|"**(2b)** validate amount"| CoverC
-    IndClaims -->|"**(2c)** startAssessment()"| Assess
+    Buyer -->|"**(2a)** submitClaim()"| ClaimsC
+    ClaimsC -->|"**(2b)** validate isApprovedOrOwner()"| CoverN
+    ClaimsC -->|"**(2b)** validate amount"| CoverC
+    ClaimsC -->|"**(2c)** startAssessment()"| Assess
 
     %% 3. Assessment Process (multiple tx)
-    Assessor -->|"**(3a)** castVotes()"| Assess
-    Assess -->|"**(3b)** lock staked NXM"| TC
-    TC -->|"**(3b)** lock"| NXM
+    Assessor -->|"**(3a)** castVote()"| Assess
 
     %% 4. Claim Payout (single tx)
-    Buyer -->|"**(4a)** redeemClaimPayout()"| IndClaims
-    IndClaims -->|"**(4b)** burnStake()"| CoverC
-    IndClaims -->|"**(4c)** sendPayout()"| PoolC
+    Buyer -->|"**(4a)** redeemClaimPayout()"| ClaimsC
+    ClaimsC -->|"**(4b)** burnStake()"| CoverC
+    ClaimsC -->|"**(4c)** sendPayout()"| PoolC
     PoolC -->|"**(4c)** transfer claim amount + deposit"| Buyer
 ```
 
@@ -91,26 +89,25 @@ flowchart LR
    **(1g)** `Cover` handles payment: - For NXM: Burns premium via **TokenController** - For ETH/ERC20: Transfers premium to **Pool**
 
 2. **Buyer Submits Claim**  
-   **(2a)** `Buyer` calls `submitClaim()` on **IndividualClaims**.  
-   **(2b)** `IndividualClaims` validates:
+   **(2a)** `Buyer` calls `submitClaim()` on **Claims**.  
+   **(2b)** `Claims` validates:
 
-   - Cover ownership via `CoverNFT.isApprovedOrOwner()`
-   - Cover validity via `Cover.coverSegmentWithRemainingAmount()`
+   - Cover ownership via `CoverNFT.ownerOf()`
+   - Cover validity via `Cover.getCoverData()`
 
-   **(2c)** `IndividualClaims` starts assessment via `Assessment.startAssessment()`.
+   **(2c)** `Claims` starts assessment via `Assessments.startAssessment()`.
 
-3. **Claim Assessment**  
-   **(3a)** `Assessors` call `castVotes()` on **Assessment**.  
-   **(3b)** `Assessment` locks staked NXM via **TokenController**.  
+3. **Claim Assessments**  
+   **(3a)** `Assessors` call `castVote()` on **Assessments**.  
    **(3c)** When voting ends:
 
    - If accepted: Claim can be redeemed
    - If denied: Claim deposit funds rewards
 
 4. **Claim Payout**  
-   **(4a)** `Buyer` calls `redeemClaimPayout()` on **IndividualClaims**.  
-   **(4b)** `IndividualClaims` calls `Cover.burnStake()` to burn staker's NXM.  
-   **(4c)** `IndividualClaims` calls `Pool.sendPayout()` which: - Transfers claim amount in cover asset - Returns assessment deposit in ETH
+   **(4a)** `Buyer` calls `redeemClaimPayout()` on **Claims**.  
+   **(4b)** `Claims` calls `Cover.burnStake()` to burn staker's NXM.  
+   **(4c)** `Claims` calls `Pool.sendPayout()` which: - Transfers claim amount in cover asset - Returns assessment deposit in ETH
 
 ---
 
@@ -135,9 +132,9 @@ flowchart LR
       NXM("NXMToken")
     end
 
-    subgraph "Claims/Assessment Group"
-      IC("IndividualClaims")
-      AS("Assessment")
+    subgraph "Claims/Assessments Group"
+      IC("Claims")
+      AS("Assessments")
     end
 
     subgraph "Cover Group"
@@ -205,11 +202,11 @@ flowchart LR
    **(4d)** `NXMToken` transfer stake + rewards to **Staker**
 5. **Claim Redemption Burns Stake and Pays Claimant**
    If a claim is approved the claimant is paid from the staked NXM.
-   **(5a)** `Claimant` calls `"redeemClaimPayout()"` on **IndividualClaims**.  
-   **(5b)** `IndividualClaims` calls `"burnStake()"` on **Cover**.  
+   **(5a)** `Claimant` calls `"redeemClaimPayout()"` on **Claims**.  
+   **(5b)** `Claims` calls `"burnStake()"` on **Cover**.  
    **(5c)** `Cover` calls `"burnStake()"` on affected **StakingPool**(s).  
    **(5d)** `StakingPool` calls `"burnStakedNXM()"` on **TokenController**.  
    **(5e)** `TokenController` burns tokens via **NXMToken**.  
-   **(5f)** `IndividualClaims` calls `"Pool.sendPayout()"` which:
+   **(5f)** `Claims` calls `"Pool.sendPayout()"` which:
    - Transfers claim amount in cover asset
    - Returns assessment deposit in ETH

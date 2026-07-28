@@ -51,7 +51,7 @@ Submitting a claim requires an ETH deposit:
 uint public constant CLAIM_DEPOSIT_IN_ETH = 0.05 ether;
 ```
 
-The deposit is returned to the claimant once the claim is resolved. It is retrieved separately from the payout, using `retrieveDeposit`.
+An accepted claim returns the deposit together with the payout. A claim that resolves as a draw returns the deposit through `retrieveDeposit`. A denied claim keeps the deposit.
 
 ### Status and Outcome
 
@@ -108,12 +108,12 @@ function redeemClaimPayout(uint claimId) external;
 - **Behavior:**
   - Requires the assessment to be finalized and accepted.
   - Requires the redemption period to still be open.
-  - Burns the stake backing the cover and sends the payout from the Pool.
-  - Emits `ClaimPayoutRedeemed`.
+  - Burns the stake backing the cover, then sends the payout and the assessment deposit from the Pool.
+  - Emits `ClaimPayoutRedeemed` and `ClaimDepositRetrieved`.
 
 ### `retrieveDeposit`
 
-Returns the ETH assessment deposit to the claimant.
+Returns the ETH assessment deposit for a claim that resolved as a draw.
 
 ```solidity
 function retrieveDeposit(uint claimId) external;
@@ -122,6 +122,11 @@ function retrieveDeposit(uint claimId) external;
 | Parameter | Description                           |
 | --------- | ------------------------------------- |
 | `claimId` | The claim whose deposit is retrieved. |
+
+- **Behavior:**
+  - Requires the outcome to be `DRAW`.
+  - Can be called by anyone, and always sends the deposit to the current cover owner.
+  - Emits `ClaimDepositRetrieved`.
 
 ---
 
@@ -186,7 +191,7 @@ The owner of the cover NFT. The cover must be within its cover period or its gra
 
 ### What happens to my deposit?
 
-The deposit is returned once the claim is resolved. Call `retrieveDeposit` to collect it, separately from redeeming the payout.
+An accepted claim returns the deposit along with the payout. If the assessment ends in a draw, call `retrieveDeposit` to collect it. A denied claim keeps the deposit.
 
 ### How long do I have to redeem an accepted payout?
 

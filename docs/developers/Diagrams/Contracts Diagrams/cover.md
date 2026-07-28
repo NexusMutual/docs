@@ -16,7 +16,7 @@ graph TD
     CoverProducts["CoverProducts Contract"]
     CoverNFT["CoverNFT Contract"]
     Pool["Pool Contract"]
-    NXMaster["NXMaster Registry"]
+    Registry["Registry"]
 
     %% Member interactions
     Member -->|"**(1a)** buyCover"| Cover
@@ -26,9 +26,9 @@ graph TD
     Cover -->|"**(1d)** payment"| Pool
 
     %% Contract Registry interactions
-    CoverProducts -.->|"getLatestAddress"| NXMaster
-    Cover -.->|"getLatestAddress"| NXMaster
-    CoverNFT -.->|"getLatestAddress"| NXMaster
+    CoverProducts -.->|"getLatestAddress"| Registry
+    Cover -.->|"getLatestAddress"| Registry
+    CoverNFT -.->|"getLatestAddress"| Registry
 ```
 
 ## 2. Product Management Flow
@@ -40,7 +40,7 @@ graph TD
 
     %% Contracts
     CoverProducts["CoverProducts Contract"]
-    NXMaster["NXMaster Registry"]
+    Registry["Registry"]
     Pool["Pool Contract"]
 
     %% AB Member interactions
@@ -50,7 +50,7 @@ graph TD
 
     %% Internal validations
     CoverProducts -->|"validate assets"| Pool
-    CoverProducts -.->|"getLatestAddress"| NXMaster
+    CoverProducts -.->|"getLatestAddress"| Registry
 ```
 
 ## Actions
@@ -104,14 +104,14 @@ graph TD
 - Cover periods have minimum (28 days) and maximum (365 days) durations
 - Products can be deprecated which prevents new cover purchases
 - Products can be restricted to specific staking pools
-- All contracts fetch latest addresses from NXMaster Registry
+- All contracts fetch latest addresses from Registry
 - Product metadata is stored on IPFS with timestamps
 - Initial price ratio must be above product minimum price
 
 ## Registry Dependencies
 
-All contracts fetch latest contract addresses from NXMaster:
+All contracts fetch latest contract addresses from Registry:
 
-- CoverProducts: P1 (Pool), CO (Cover), MR (MemberRoles), SP (StakingProducts)
-- Cover: P1 (Pool), TC (TokenController), MR (MemberRoles), CP (CoverProducts)
+- CoverProducts: P1 (Pool), CO (Cover), MR (Registry), SP (StakingProducts)
+- Cover: P1 (Pool), TC (TokenController), MR (Registry), CP (CoverProducts)
 - CoverNFT: Operator address
