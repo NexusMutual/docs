@@ -10,6 +10,7 @@ The MCR is driven by the Mutual's Total Active Cover Amount, which is the curren
 
 <code>MCR = f(Cover) = Total Active Cover Amount in ETH / Gearing Factor</code>
 
+<!-- @check Pool.GEARING_FACTOR = 48000 -->
 Gearing Factor currently = 4.8
 
 The full capital model is run offchain. If it starts producing results that are materially different to the current Gearing Factor, the factor is updated through a governance action.

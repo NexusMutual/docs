@@ -24,6 +24,7 @@ NXM stakers do not control how their NXM is allocated within a staking pool, tho
 
 When someone decides to stake their NXM, they need to choose the length of time that their NXM will be locked in a staking pool: this is referred to as the staking period.
 
+<!-- @check StakingProducts.TRANCHE_DURATION = 91 days -->
 Members can choose to stake their NXM for as little as 91 days or as long as two years. There are a total of eight staking periods to choose from. Members are able to delegate their NXM to multiple staking pools and for multiple staking periods.
 
 | Staking Period # | Days |

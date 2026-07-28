@@ -57,6 +57,7 @@ These risk experts will review the incident details and proof of loss provided b
 
 Once you submit your claim, the Claims Committee will be alerted and begin their review.
 
+<!-- @check Assessments.minVotingPeriod = 3 days -->
 Any claim that is submitted will be open for voting for at least 72 hours. During that 72 hours, the Claims Committee will review the details provided, discuss the validity of your claim, and cast their votes. At least 2 of the 3 Claims Committee Assessors need to cast **accept** votes for a claim to be accepted.
 
 Once the Claims Committee has cast their votes and the 72-hour period ends, voting on the claim will close.

@@ -30,6 +30,7 @@ While the Ethereum address you use for your registered membership address can be
 By becoming a member you agree to the conditions specified in the [DAO Member Agreement](https://app.nexusmutual.io/assets/Nexus-Mutual-DAO-Member-Agreement-FIN.pdf).
 
 * **KYC / AML**. To become a member, you will need to verify your identity through the Know-Your-Customer / Anti-Money-Laundering process. If this fails, you won’t be able to join the Mutual.
+<!-- @check Registry.JOIN_FEE = 0.002 ether -->
 * **You pay an initial membership fee**. Membership costs 0.0020 ETH and is required for anyone who joins the Mutual.
 * **You own part of the Mutual**. You can buy cover and earn more NXM by helping run the Mutual, including voting on claims, staking NXM, and voting on proposals.
 
