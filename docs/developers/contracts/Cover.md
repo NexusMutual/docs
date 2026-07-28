@@ -383,7 +383,7 @@ Use the buyCover function, providing the necessary parameters and allocation req
 
 ### Can I extend or modify an existing cover?
 
-As of the current implementation, modifying existing covers is not supported and will revert with EditNotSupported. You may need to purchase a new cover instead.
+Yes. Pass the id of the cover you want to edit as `coverId` in `BuyCoverParams`, and leave it as `0` to buy a new cover. The caller must own the cover or be approved for it. Editing produces a new cover id, with the original linked to the latest edit.
 
 ### How is the premium calculated?
 

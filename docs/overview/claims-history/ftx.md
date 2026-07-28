@@ -6,7 +6,7 @@ sidebar_position: 7
 
 ## Total claims paid
 
-A total of $4,924,887.90 was paid out for Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, 178, V2 12, V2 14, V2 19, and V2 20.
+A total of $4,924,887.90 was paid out for Claims V1 #156, #157, #158, #159, #160, #161, #162, #163, #164, #165, #166, #167, #168, #169, #170, #171, #172, #173, #176, #178, V2 #12, V2 #14, V2 #19, and V2 #20.
 
 ## Overview
 
@@ -28,30 +28,30 @@ For more information on each claim, review the sections below and the [Nexus Mut
 
 ### Approved claims
 
-Claim assessors reviewed and approved Claims 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 176, 178, V2 12, V2 14, V2 19, and V2 20. These claims included proof of loss, which showed each affected member suffered a loss due to halted withdrawals.
+Claim assessors reviewed and approved Claims V1 #156, #157, #158, #159, #160, #161, #162, #163, #164, #165, #166, #167, #168, #169, #170, #171, #172, #173, #176, #178, V2 #12, V2 #14, V2 #19, and V2 #20. These claims included proof of loss, which showed each affected member suffered a loss due to halted withdrawals.
 
-You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
+You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://nexusmutual.io/claims).
 
 | Approved claims                                                                 |                                                                                 |                                                                                 |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Claim 156](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=156) | [Claim 157](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=157) | [Claim 158](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=158) |
-| [Claim 159](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=159) | [Claim 160](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=160) | [Claim 161](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=161) |
-| [Claim 162](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=162) | [Claim 163](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=163) | [Claim 164](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=164) |
-| [Claim 165](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=165) | [Claim 166](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=166) | [Claim 167](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=167) |
-| [Claim 168](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=168) | [Claim 169](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=169) | [Claim 170](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=170) |
-| [Claim 171](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=171) | [Claim 172](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=172) | [Claim 173](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=173) |
-| [Claim 176](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=176) | [Claim 178](https://app.nexusmutual.io/claim-assessment/view-claim?claimId=178) | [Claim V2 12](https://app.nexusmutual.io/assessment/view-claim?claimId=12)      |
-| [Claim V2 14](https://app.nexusmutual.io/claims/view-claim?claimId=14)          | [Claim V2 19](https://app.nexusmutual.io/claims/view-claim?claimId=19)          | [Claim V2 20](https://app.nexusmutual.io/claims/view-claim?claimId=20)          |
+| Claim V1 #156 | Claim V1 #157 | Claim V1 #158 |
+| Claim V1 #159 | Claim V1 #160 | Claim V1 #161 |
+| Claim V1 #162 | Claim V1 #163 | Claim V1 #164 |
+| Claim V1 #165 | Claim V1 #166 | Claim V1 #167 |
+| Claim V1 #168 | Claim V1 #169 | Claim V1 #170 |
+| Claim V1 #171 | Claim V1 #172 | Claim V1 #173 |
+| Claim V1 #176 | Claim V1 #178 | Claim V2 #12      |
+| Claim V2 #14          | Claim V2 #19          | Claim V2 #20          |
 
 ### Denied claims
 
-Claim assessors reviewed and denied Claims 146, 148, and 175.
+Claim assessors reviewed and denied Claims V1 #146, #148, and #175.
 
-Claim 146 was filed before the 90-day period had passed, and this cover expired on 13 October 2022. Because the cover expired before withdrawals were halted and it was filed before withdrawals had been halted for more than 90 days, claim assessors voted to deny this claim.
+Claim V1 #146 was filed before the 90-day period had passed, and this cover expired on 13 October 2022. Because the cover expired before withdrawals were halted and it was filed before withdrawals had been halted for more than 90 days, claim assessors voted to deny this claim.
 
-Claim 148 was filed before the 90-day period had passed, and claim assessors voted to deny this claim for that reason. The member who filed this claim waited until the 90-day period passed and filed a second claim (Claim 158), which claim assessors approved and paid.
+Claim V1 #148 was filed before the 90-day period had passed, and claim assessors voted to deny this claim for that reason. The member who filed this claim waited until the 90-day period passed and filed a second claim (Claim V1 #158), which claim assessors approved and paid.
 
-Claim 175 was filed with a requested claim amount that was higher than the actual loss amount. Because the requested claim amount was higher than the actual loss, claim assessors voted to deny this claim. The member who filed this claim submitted a second claim, where the requested claim amount matched the actual loss. After reviewing this second submission, claim assessors voted to approve and pay this claim.
+Claim V1 #175 was filed with a requested claim amount that was higher than the actual loss amount. Because the requested claim amount was higher than the actual loss, claim assessors voted to deny this claim. The member who filed this claim submitted a second claim, where the requested claim amount matched the actual loss. After reviewing this second submission, claim assessors voted to approve and pay this claim.
 
 ### FTX bankruptcy and reimbursement
 

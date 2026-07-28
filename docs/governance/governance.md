@@ -8,6 +8,8 @@ Nexus Mutual is an onchain discretionary mutual governed by its members. The Mut
 
 The AB creates a proposal in parallel on the [Nexus Mutual DAO Snapshot space](https://snapshot.box/#/s:community.nexusmutual.eth), where Nexus Mutual members can vote to reject the default outcome. If Nexus Mutual members vote and meet the quorum for rejection, the AB's default outcome is rejected and the proposal does not move forward.
 
+Where a proposal requires a change onchain, the Advisory Board enacts the outcome of the Snapshot vote through the `Governor` contract, exactly as members voted. See [Onchain execution](#onchain-execution) below.
+
 ## The Advisory Board
 
 The Advisory Board (AB) puts forward governance proposals and recommends a default outcome. There are five (5) subject matter experts that sit on the AB, who bring expertise across three broad skill sets:
@@ -40,15 +42,19 @@ For added security, an Emergency Pause Safe multisig was created. The Emergency 
 
 Ultimately, AB members serve at the discretion of Nexus Mutual members. Should members decide an AB member needs to be replaced, Nexus Mutual members can raise a proposal onchain to replace an AB member without interference from existing AB members.
 
-Any Nexus Mutual member can raise a proposal to raise an AB member, with the following requirements:
-* The member who raises the proposal must have a minimum of 100 NXM tokens in order to put the proposal onchain; and
+Any Nexus Mutual member can raise a proposal to replace an AB member, with the following requirements:
+* The member who raises the proposal must hold more than 99 NXM in order to put the proposal onchain; and
 * At least 15% of the total NXM token supply must participate in the vote.
 
-If a proposal to replace an AB member receives a majority of the votes to approve and quorum is met, the proposal will pass.
+Participation counts every vote cast, whether for, against, or abstain. If a proposal to replace an AB member receives more votes for than against and quorum is met, the proposal will pass.
+
+Voting on a proposal to replace an AB member locks your NXM transfers until the proposal becomes executable. This is the only proposal type members raise and vote on directly onchain.
 
 ## Voting Power
 
 Every member who joins Nexus Mutual has voting power equal to one vote plus the sum total of their NXM tokens.
+
+For onchain votes, a single member's voting power is capped at 5% of the total NXM supply.
 
 ### Quorum for Rejection
 
@@ -58,7 +64,7 @@ To defeat a proposal, members must vote with at least 15% of the NXM token suppl
 
 When governance proposals go to vote, there is a standard timeframe for the voting period:
 1. **Proposal is created**. The vote is put onchain and on the Nexus Mutual DAO Snapshot space for voting.
-2. **Proposal is open for voting**. All governance proposals have a three (3) day voting period.
+2. **Proposal is open for voting**. All governance proposals have a three (3) day voting period. An onchain Advisory Board proposal closes as soon as three AB members have voted in favour.
 3. **Post-vote timelock period**. Once the voting period closes, a proposal is subject to a 24-hour timelock period where no action can take place until the timelock period passes.
 4. **Proposal outcome**. If a proposal succeeds, it can be executed after the timelock period ends. If a proposal is defeated, no action is taken after the timelock period ends.
 
@@ -107,5 +113,31 @@ Anyone interested in starting a new DAO team can reach out through the [Nexus Mu
 ### Signalling Votes
 
 While not required, signalling votes are a helpful way to gauge support for an RFC, NMDP or NMPIP before it goes to a formal vote. Anyone interested in gauging support for a proposal can reach out to [BraveNewDeFi](https://t.me/BraveNewDeFi), who can help create the signalling vote on the [Nexus Mutual DAO Snapshot space](https://snapshot.box/#/s:community.nexusmutual.eth).
+
+## Onchain execution
+
+Proposals that change the protocol are enacted onchain through the `Governor` contract. The Advisory Board implements the outcome of the Snapshot vote as members voted it.
+
+The `Governor` contract handles two kinds of proposal.
+
+### Advisory Board proposals
+
+An AB proposal carries the transactions that enact a governance outcome, such as a contract upgrade or a Capital Pool allocation. Only Advisory Board members can raise, vote on, and execute these proposals.
+
+* Each AB member holds one vote, regardless of how much NXM they hold.
+* Three votes in favour carry the proposal, at which point voting closes and the timelock starts.
+* The Advisory Board can cancel an AB proposal before it is executed.
+
+### Member proposals
+
+A member proposal replaces an Advisory Board member. Votes are weighted by voting power, and any member can execute the proposal once it passes. See [Replacing Advisory Board Members](#replacing-advisory-board-members) for the requirements.
+
+### Voting and execution
+
+Both kinds of proposal follow the same sequence:
+
+* Members and AB members cast a vote for, against, or abstain.
+* A proposal carries when it has more votes for than against, and it meets the threshold that applies to its kind.
+* A 24-hour timelock runs before a carried proposal can be executed.
 
 ***Disclaimer***: While all care has been taken, there may be some discrepancies between the governance documentation and the functioning of the onchain governance smart contracts. In the event a discrepancy exists in this documentation, the smart contract rules apply.

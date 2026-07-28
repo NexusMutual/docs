@@ -6,7 +6,7 @@ sidebar_position: 8
 
 ## Total claims paid
 
-A total of $30,590.64 was paid out for Claims 174 and 177.
+A total of $30,590.64 was paid out for Claims V1 #174 and #177.
 
 ## Overview
 
@@ -28,12 +28,12 @@ For more information on each claim, review the sections below and the [Nexus Mut
 
 ### Approved claims
 
-Claim assessors reviewed and approved Claims 174 and 177. These claims included proof of loss, which showed each affected member suffered a loss due to halted withdrawals.
+Claim assessors reviewed and approved Claims V1 #174 and #177. These claims included proof of loss, which showed each affected member suffered a loss due to halted withdrawals.
 
-You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://app.nexusmutual.io/assessment).
+You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://nexusmutual.io/claims).
 
 ### Denied claims
 
-Claim assessors reviewed and denied Claim 155.
+Claim assessors reviewed and denied Claim V1 #155.
 
-Claim 155 was filed before the 90-day period had passed. Claim assessors reviewed and denied this claim because withdrawal had not been halted for more than 90 days when the claim was filed.
+Claim V1 #155 was filed before the 90-day period had passed. Claim assessors reviewed and denied this claim because withdrawal had not been halted for more than 90 days when the claim was filed.
