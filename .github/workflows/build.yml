@@ -1,0 +1,45 @@
+name: Build
+
+# The site is built and deployed from master by an external integration, so a
+# change that breaks the install or the build is only discovered at deploy
+# time, after it has already merged. This runs the same two steps the deploy
+# runs, before the merge.
+#
+# Unlike the contract docs drift check, a failure here is this repository's
+# own and should block. Add it to the required status checks.
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+# A newer push supersedes an in-flight run for the same ref.
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      # npm ci fails when package.json and package-lock.json disagree, which
+      # is the failure a lockfile conflict resolved by hand tends to produce.
+      - name: Install
+        run: npm ci
+
+      # onBrokenLinks is set to throw, so this also fails on a broken internal
+      # link or anchor.
+      - name: Build
+        run: npm run build
