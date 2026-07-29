@@ -4,11 +4,17 @@ sidebar_position: 5
 
 # Developer Resources
 
-The Nexus Mutual protocol is designed to enable easy integrations and allow developers to build on top of the protocol. To learn more about the Nexus Mutual protocol, you can review:
-* [Contracts](/developers/contracts/)
-* [User Flows](/developers/User%20Flows/cover-buyer)
-* [Point of Sale Integrations](/developers/pos-integrations)
+The Nexus Mutual protocol is designed to enable easy integrations and allow developers to build on top of the protocol.
 
-## Nexus Mutual SDK
+* [Contracts](/developers/contracts/) — the deployed contracts and their interfaces
+* [User Flows](/developers/user-flows/cover-buyer) — how buying cover, staking, and managing a pool work end to end
+* [Diagrams](/developers/Diagrams/) — contract relationships and user journeys
+* [Point of Sale Integrations](/developers/pos-integrations) — sell cover from your own frontend
 
-Builders can review the [SDK documentation](https://api.nexusmutual.io/v2/api/docs/) und the [Nexus Mutual SDK](https://sdk.nexusmutual.io/). 
+## Libraries and APIs
+
+**[`@nexusmutual/sdk`](https://github.com/NexusMutual/sdk)** wraps the buy cover flow, quoting, and cover metadata. Start here for an integration.
+
+**[`@nexusmutual/deployments`](https://www.npmjs.com/package/@nexusmutual/deployments)** publishes the deployed addresses and ABIs, versioned with the contracts.
+
+**[The Nexus Mutual API](https://api.nexusmutual.io/v2/api/docs/)** serves quotes, capacity, and product data. The SDK calls it for you, and you can call it directly.
