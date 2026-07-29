@@ -64,6 +64,27 @@ async function createConfigAsync() {
           docsRouteBasePath: '/',
         },
       ],
+      [
+        '@docusaurus/plugin-client-redirects',
+        {
+          // The developer directories were renamed to remove spaces, which
+          // had been reaching production as %20 in the URL. Keep the old
+          // paths working for anything already linking to them.
+          createRedirects(existingPath) {
+            const renamed = [
+              ['/developers/Diagrams/user-flows-diagrams/', '/developers/Diagrams/User Flows Diagrams/'],
+              ['/developers/Diagrams/contracts-diagrams/', '/developers/Diagrams/Contracts Diagrams/'],
+              ['/developers/user-flows/', '/developers/User Flows/'],
+            ];
+            for (const [current, previous] of renamed) {
+              if (existingPath.startsWith(current)) {
+                return [existingPath.replace(current, previous)];
+              }
+            }
+            return undefined;
+          },
+        },
+      ],
     ],
 
     stylesheets: [

@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.10.2",
+    "@docusaurus/plugin-client-redirects": "^3.10.2",
     "@docusaurus/types": "^3.10.2",
     "@nexusmutual/deployments": "^3.4.0",
     "ethers": "^6.17.0"
