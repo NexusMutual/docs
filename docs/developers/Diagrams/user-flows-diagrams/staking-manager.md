@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: The contract calls behind creating a staking pool, listing products on it and setting prices and weights.
 ---
 
 # Staking Pool Manager Flow

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: The contract calls behind depositing NXM into a staking pool, earning rewards and withdrawing.
 ---
 
 # Staker Flow

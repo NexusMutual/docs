@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: Audit reports, the FAQ, and a glossary of the terms used across these docs.
 ---
 
 # Resources

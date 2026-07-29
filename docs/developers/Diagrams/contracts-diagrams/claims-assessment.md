@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: How the Claims and Assessments contracts interact when a claim is submitted, assessed and paid.
 ---
 
 # Claims & Assessments
