@@ -5,13 +5,30 @@ updates:
     directory: /
     schedule:
       interval: monthly
-    open-pull-requests-limit: 1
+    open-pull-requests-limit: 5
     groups:
+      # Minor and patch updates travel together as one reviewable PR.
+      # Majors are left out of the group so each arrives on its own, with
+      # its own changelog, rather than inside a routine bump.
       npm:
         applies-to: version-updates
+        update-types:
+          - minor
+          - patch
         patterns:
           - "*"
       npm-security:
         applies-to: security-updates
+        patterns:
+          - "*"
+
+  # The workflows pin actions by major tag, so those need updating too.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    groups:
+      actions:
         patterns:
           - "*"
