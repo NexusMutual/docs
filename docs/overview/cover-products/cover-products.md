@@ -10,7 +10,7 @@ Every **listing** you can buy cover on is sold under a **product**. The product 
 
 [The product index](https://nexusmutual.io/product-index) lists every listing and marks the ones no longer offered.
 
-The pages here cover the products with published wordings. A product missing from them may still be available.
+[Cover wordings](/overview/cover-products/cover-wordings) links the wording for every product, current and retired.
 
 ## New cover products
 
