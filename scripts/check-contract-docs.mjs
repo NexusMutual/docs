@@ -235,6 +235,66 @@ if (annotations.length) {
   }
 }
 
+// ---- check 5: worked examples --------------------------------------------
+//
+// Annotations assert a constant has not moved. They cannot tell whether the
+// prose reads it correctly: "0.5%" where 500 basis points means 0.05% still
+// passes. Running the example removes that gap, because the number comes back
+// from the contract rather than from the sentence.
+
+const { examples } = await import('./doc-examples.mjs');
+
+/** Strings a reader might reasonably have written for this number. */
+const renderings = n => [...new Set([
+  String(n),
+  ...[1, 2].map(d => n.toFixed(d)).filter(s => Number(s) === n),
+])];
+
+const appearsIn = (text, n) => renderings(n).some(s => text.includes(s));
+
+if (examples.length) {
+  console.log('\nWorked examples:');
+
+  for (const ex of examples) {
+    const docPath = path.join(ALL_DOCS, ex.doc);
+    if (!fs.existsSync(docPath)) {
+      problems.push(`${ex.doc}: page is missing, cannot run "${ex.title}"`);
+      continue;
+    }
+    const text = fs.readFileSync(docPath, 'utf8');
+
+    let produced;
+    try {
+      const bound = Object.fromEntries(Object.keys(abis)
+        .filter(c => addresses[c])
+        .map(c => [c, new ethers.Contract(addresses[c], abis[c], provider)]));
+      produced = await ex.run(bound);
+    } catch (err) {
+      notes.push(`${ex.doc}: "${ex.title}" could not be run — ${(err.shortMessage || err.message).slice(0, 70)}`);
+      continue;
+    }
+
+    const checks = { ...(ex.inputs ?? {}), ...produced };
+    const missing = Object.entries(checks).filter(([, v]) => !appearsIn(text, v));
+
+    verified += Object.keys(checks).length;
+
+    if (missing.length === 0) {
+      const shown = Object.entries(produced).map(([k, v]) => `${k} ${v}`).join(', ');
+      console.log(`  ok    ${ex.title.padEnd(46)} ${shown}  [${ex.doc}]`);
+    } else {
+      console.log(`  FAIL  ${ex.title.padEnd(46)} [${ex.doc}]`);
+      for (const [label, value] of missing) {
+        console.log(`          ${label} is ${value} onchain, and does not appear in the page`);
+      }
+      problems.push(
+        `${ex.doc} (${ex.section ?? ex.title}): the example does not match the contract — `
+        + missing.map(([l, v]) => `${l} should be ${v}`).join('; '),
+      );
+    }
+  }
+}
+
 console.log(`\ndeployed contracts: ${Object.keys(addresses).length}   published ABIs: ${Object.keys(abis).length}   values verified: ${verified}`);
 
 if (notes.length) {
