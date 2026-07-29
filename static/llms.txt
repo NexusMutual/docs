@@ -6,64 +6,132 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 
 ## Start here
 
-- [Getting started](https://docs.nexusmutual.io/): entry point and orientation
-- [Overview](https://docs.nexusmutual.io/overview/): what the Mutual is and how membership works
-- [Membership](https://docs.nexusmutual.io/overview/membership): joining, KYC requirements, and what members can do
-- [FAQ](https://docs.nexusmutual.io/resources/faq): common questions on cover, claims, staking, governance, and NXM
+- [Getting Started](https://docs.nexusmutual.io/): This documentation provides everything you need to know about Nexus Mutual.
 
-## Cover products
+## Overview
 
-- [Cover products](https://docs.nexusmutual.io/overview/cover-products/): index of the products members can buy
-- [Single Protocol Cover](https://docs.nexusmutual.io/overview/cover-products/protocol-cover): assets in one protocol
-- [Multi Protocol Cover](https://docs.nexusmutual.io/overview/cover-products/bundled-protocol-cover): assets in a protocol that deploys into others
-- [Crypto Cover](https://docs.nexusmutual.io/overview/cover-products/crypto-cover): modular cover bundling custody, protocol, depeg and slashing risks
-- [DeFi Pass Cover](https://docs.nexusmutual.io/overview/cover-products/defi-pass-cover): flexible cover across an ecosystem's leading protocols
-- [Native Protocol Cover](https://docs.nexusmutual.io/overview/cover-products/native-protocol-cover): protocol-level cover a team buys for its users
-- [Fund Portfolio Cover](https://docs.nexusmutual.io/overview/cover-products/fund-portfolio-cover): cover across a fund's yield-generating portfolio
-- [Quota Share Cover](https://docs.nexusmutual.io/overview/cover-products/quota-share-cover): cover for other cover providers
-- [ETH Slashing Umbrella Cover](https://docs.nexusmutual.io/overview/cover-products/eth-slashing-cover): validator slashing penalties
-- [Real World Risk](https://docs.nexusmutual.io/overview/cover-products/real-world-risk): using onchain capital to underwrite traditional risk
+- [Overview](https://docs.nexusmutual.io/overview/): Nexus Mutual is a decentralized insurance alternative that allows members to join and share risk.
+- [Membership](https://docs.nexusmutual.io/overview/membership): The Nexus Mutual DAO operates as a discretionary mutual where people are required to join as members before they can interact with the protocol or contribute within the DAO.
 
-## How the protocol works
+### Cover Products
 
-- [The protocol](https://docs.nexusmutual.io/protocol/): the risk marketplace and how the parts fit together
-- [Cover](https://docs.nexusmutual.io/protocol/cover): cover as a transferable NFT, and what that allows
-- [Pricing](https://docs.nexusmutual.io/protocol/pricing): dynamic pricing, the price bump, and the drop toward the target price
-- [Capacity](https://docs.nexusmutual.io/protocol/capacity): how staked NXM becomes capacity, and the factors that limit it
-- [Staking](https://docs.nexusmutual.io/protocol/staking/): staking NXM, tranches, delegation, and rewards
-- [Staking pools](https://docs.nexusmutual.io/protocol/staking/staking-pools): how a pool allocates stake across products
-- [Claim assessment](https://docs.nexusmutual.io/protocol/claims-assessment): submitting a claim and how the Claims Committee decides it
-- [Capital pool](https://docs.nexusmutual.io/protocol/capital-pool/): the assets backing cover
-- [Minimum Capital Requirement](https://docs.nexusmutual.io/protocol/capital-pool/mcr): the MCR and the gearing factor
-- [NXM token](https://docs.nexusmutual.io/protocol/nxm-token/): what the token does
-- [Token model](https://docs.nexusmutual.io/protocol/nxm-token/token-model): the Ratcheting AMM and how NXM is priced
+- [Cover Products](https://docs.nexusmutual.io/overview/cover-products/): Members buy cover against a specific risk, for a chosen amount and period.
+- [Cover wordings](https://docs.nexusmutual.io/overview/cover-products/cover-wordings): The cover wording for every Nexus Mutual product, taken from what the protocol records.
+- [Real World Risk](https://docs.nexusmutual.io/overview/cover-products/real-world-risk): The Nexus Mutual protocol provides the infrastructure for members to build risk management businesses.
+
+### Claims History
+
+- [Claims History](https://docs.nexusmutual.io/overview/claims-history/): Because Nexus Mutual is a discretionary mutual, the cover products members purchase are not the same as traditional insurance policies.
+- [bZx hack | February 2020](https://docs.nexusmutual.io/overview/claims-history/bzx-2020): There is a full post-mortem of this loss event and the claim payouts in the bZx flash loan event Medium post.
+- [Yearn yDAI Hack | February 2021](https://docs.nexusmutual.io/overview/claims-history/yearn-2021): A total of $2,317,776.72 was paid out to Yearn Finance Smart Contract Cover holders.
+- [CREAM V1 Economic Exploit | October 2021](https://docs.nexusmutual.io/overview/claims-history/cream-2021): There is a full post-mortem of this loss event and the claim payouts in the Paying claims for the CREAM V1 exploit Medium post.
+- [TribeDAO, Rari Capital Fuse Market Hack | April 2022](https://docs.nexusmutual.io/overview/claims-history/rari-fuse-2022): A total of $5,089,889.24 was paid out for Claims V1 #110, #111, and #113.
+- [Perpetual Protocol v1 Economic Design Failure | May 2022](https://docs.nexusmutual.io/overview/claims-history/perpetual-2022): A total of $377,147.19 was paid out for Claim V1 #118 and Claim V1 #119.
+- [Hodlnaut Halted Withdrawals | August 2022](https://docs.nexusmutual.io/overview/claims-history/hodlnaut-2022): A total of $1,113,211.17 was paid out for Claims V1 #127, #128, #129, #130, #131, #132, #133, #134, #135, #136, #137, #138, #140, #141, #143, #144, #145, #147, and #151.
+- [FTX Halted Withdrawals | November 2022](https://docs.nexusmutual.io/overview/claims-history/ftx): A total of $4,924,887.90 was paid out for Claims V1 #156, #157, #158, #159, #160, #161, #162, #163, #164, #165, #166, #167, #168, #169, #170, #171, #172, #173, #176, #178, V2 #12, V2 #14, V2 #19, and V2 #20.
+- [BlockFi Halted Withdrawals | November 2022](https://docs.nexusmutual.io/overview/claims-history/blockfi): A total of $30,590.64 was paid out for Claims V1 #174 and #177.
+- [Euler Finance Exploit | March 2023](https://docs.nexusmutual.io/overview/claims-history/euler): A total of $2,389,227.88 was paid out for Euler Finance Protocol Cover Claims V2 #0, #2, #3, #4, #5, #6, #7, #8, and #11.
+
+## The Nexus Mutual Protocol
+
+- [The Nexus Mutual Protocol](https://docs.nexusmutual.io/protocol/): Nexus Mutual is a decentralized insurance alternative that allows people to join as members and share risk with others.
+- [Cover](https://docs.nexusmutual.io/protocol/cover): Members can buy cover products to protect against any of the supported risks.
+- [Pricing](https://docs.nexusmutual.io/protocol/pricing): The protocol uses two approaches to pricing:  Dynamic pricing for public listings with variable pricing  Fixed pricing for select public listings and private listings with a defined minimum price set by the Advisory Board to prevent a race to the bottom scenario
+- [Capacity](https://docs.nexusmutual.io/protocol/capacity): Staking pool managers allocate staked NXM to individual listings to create available capacity, which is the amount of cover that can be sold over a given period of time for a given listing.
+- [Claim Assessment](https://docs.nexusmutual.io/protocol/claims-assessment): When you buy cover to protect yourself against risk and suffer a loss, you can submit a claim in the Nexus Mutual app.
+
+### NXM Token
+
+- [NXM Token](https://docs.nexusmutual.io/protocol/nxm-token/): The NXM token is a governance and utility token backed by crypto assets held in the capital pool contract.
+- [Token Model](https://docs.nexusmutual.io/protocol/nxm-token/token-model): The Nexus Mutual protocol has a mechanism that allows members to freely mint and redeem NXM and ensures all claims can be confidently paid should a major loss event occur.
+- [History of Capitalisation Controls](https://docs.nexusmutual.io/protocol/nxm-token/history-capitalisation-controls): The following information below is the documentation that outlined how the original bonding curve worked; how the NXM token was priced; certain bonding curve parameters; how the Minimum Capital Requirement (MCR) was previously implemented; and the history of the MCR Floor.
+
+### Capital Pool
+
+- [Capital Pool](https://docs.nexusmutual.io/protocol/capital-pool/): The Capital Pool is jointly owned by all Nexus Mutual members.
+- [Investments](https://docs.nexusmutual.io/protocol/capital-pool/investments): Any investment allocations are decided by members through the Mutual's governance process using the Investment Proposal Template outlined on the governance forum.
+- [Minimum Capital Requirement](https://docs.nexusmutual.io/protocol/capital-pool/mcr): The Minimum Capital Requirement (MCR) is an important component of the entire Nexus Mutual protocol.
+
+### Staking
+
+- [Staking](https://docs.nexusmutual.io/protocol/staking/): Staking plays a critical role in the protocol, as allocating staked NXM against cover products opens up available capacity, so other members can purchase cover.
+- [Staking pools](https://docs.nexusmutual.io/protocol/staking/staking-pools): Risk is assessed and managed in individual staking pools.
+
+## Resources
+
+- [Resources](https://docs.nexusmutual.io/resources/): Audit reports, the FAQ, and a glossary of the terms used across these docs.
+- [Audits and Security](https://docs.nexusmutual.io/resources/audits-and-security): Review Nexus Mutual's audits, bug bounties, and initiatives to strengthen our protocol's security.
+- [FAQ](https://docs.nexusmutual.io/resources/faq): Nexus Mutual is a decentralized insurance alternative that allows members to join, purchase cover to protect themselves against a variety of risks, and more.
+- [Glossary](https://docs.nexusmutual.io/resources/glossary): Terms used across these docs, in the sense Nexus Mutual uses them.
+
+## Developer Resources
+
+- [Developer Resources](https://docs.nexusmutual.io/developers/): The Nexus Mutual protocol is designed to enable easy integrations and allow developers to build on top of the protocol.
+- [Point-of-Sale (PoS) Integrations](https://docs.nexusmutual.io/developers/pos-integrations): The Mutual now offers PoS integrations, so you can allow users to buy cover directly in your frontend.
+
+### Contracts
+
+- [Contracts](https://docs.nexusmutual.io/developers/contracts/): The source code for the Nexus Mutual protocol is available on GitHub.
+- [Assessments](https://docs.nexusmutual.io/developers/contracts/Assessments): The Assessments contract manages evaluation of cover claims.
+- [Cover](https://docs.nexusmutual.io/developers/contracts/Cover): The Cover contract manages the purchase and management of coverage within the protocol.
+- [Claims](https://docs.nexusmutual.io/developers/contracts/Claims): The Claims contract enables cover owners to submit claims and redeem payouts if their claims are accepted.
+- [Pool](https://docs.nexusmutual.io/developers/contracts/Pool): The Pool contract is a core component of the protocol, responsible for managing collective assets such as ETH and other ERC20 tokens.
+- [RAMM](https://docs.nexusmutual.io/developers/contracts/Ramm): The Ramm contract is designed to allow swaps between NXM tokens and ETH.
+- [StakingPool](https://docs.nexusmutual.io/developers/contracts/StakingPool): The StakingPool contract manages NXM staking and allocates capacity for purchased covers within the staking pool.
+- [StakingPoolFactory](https://docs.nexusmutual.io/developers/contracts/StakingPoolFactory): The StakingPoolFactory contract is responsible for deploying and managing staking pools in the protocol.
+- [StakingProducts](https://docs.nexusmutual.io/developers/contracts/StakingProducts): The StakingProducts contract manages cover products and their integration into staking pools.
+- [TokenController](https://docs.nexusmutual.io/developers/contracts/TokenController): The TokenController contract is the core token manager within the protocol, governing NXM minting, burning, and transfers.
+
+### Diagrams
+
+- [Diagrams](https://docs.nexusmutual.io/developers/Diagrams/): This document merges multiple Cover and Staking flows with their underlying interactions across Token, Capital, Claims/Assessments, and Governance groupings.
+
+#### Contracts Diagrams
+
+- [Capital Contracts](https://docs.nexusmutual.io/developers/Diagrams/contracts-diagrams/capital): How the Pool, Ramm, SwapOperator and SafeTracker contracts interact to hold and value the capital pool.
+- [Claims & Assessments](https://docs.nexusmutual.io/developers/Diagrams/contracts-diagrams/claims-assessment): How the Claims and Assessments contracts interact when a claim is submitted, assessed and paid.
+- [Cover Contracts](https://docs.nexusmutual.io/developers/Diagrams/contracts-diagrams/cover): All contracts fetch latest contract addresses from Registry:
+- [Governance & Membership Contracts](https://docs.nexusmutual.io/developers/Diagrams/contracts-diagrams/governance-membership): Contracts resolve their dependencies through the Registry, which also holds membership records, the Advisory Board seats and the emergency pause configuration.
+- [Staking Contracts](https://docs.nexusmutual.io/developers/Diagrams/contracts-diagrams/staking): All contracts fetch latest contract addresses from Registry:
+- [Token Contracts](https://docs.nexusmutual.io/developers/Diagrams/contracts-diagrams/token): All contracts fetch latest contract addresses from Registry:
+
+#### User Flows Diagrams
+
+- [Cover Buyer / Claims Flow](https://docs.nexusmutual.io/developers/Diagrams/user-flows-diagrams/cover-buyer): The contract calls behind buying cover and claiming on it, from the buyer's point of view.
+- [Staker Flow](https://docs.nexusmutual.io/developers/Diagrams/user-flows-diagrams/staker): The contract calls behind depositing NXM into a staking pool, earning rewards and withdrawing.
+- [Staking Pool Manager Flow](https://docs.nexusmutual.io/developers/Diagrams/user-flows-diagrams/staking-manager): The contract calls behind creating a staking pool, listing products on it and setting prices and weights.
+
+### User Flows
+
+- [Cover Buyer User Flow](https://docs.nexusmutual.io/developers/user-flows/cover-buyer): Buying cover on Nexus Mutual allows users to protect against specific risks (such as smart contract failures or stablecoin depegging).
+- [Manager User Flow](https://docs.nexusmutual.io/developers/user-flows/manager): Before diving into the details, here's a high-level overview of what a staking pool manager does:
+- [NXM Staker User Flow](https://docs.nexusmutual.io/developers/user-flows/staker): Staking in NXM Staking Pools allows you to earn rewards by locking up NXM tokens to help underwrite insurance covers.
 
 ## Governance
 
-- [Governance](https://docs.nexusmutual.io/governance/): proposals, the Advisory Board, voting power, and onchain execution
-- [Nexus Mutual DAO](https://docs.nexusmutual.io/governance/dao): the DAO, its treasury, and its teams
+- [Governance](https://docs.nexusmutual.io/governance/): Nexus Mutual is an onchain discretionary mutual governed by its members.
+- [Nexus Mutual DAO](https://docs.nexusmutual.io/governance/dao): People join as members of the Nexus Mutual DAO and access the benefits of membership.
 
-## Claims record
+## Real World Insurance Vault
 
-- [Claims history](https://docs.nexusmutual.io/overview/claims-history/): every past loss event with the outcome and the reasoning
+- [Real World Insurance Vault](https://docs.nexusmutual.io/rwi-vault/): The Real World Insurance Vault (“RWI Vault”) allows sophisticated investors to earn yield on their USDC.
+- [Depositor Approval](https://docs.nexusmutual.io/rwi-vault/approval): Depositors are required to pass verification before they are able to interact with the Vault's smart contracts directly.
+- [Depositing USDC](https://docs.nexusmutual.io/rwi-vault/depositing): Approved depositors may deposit USDC into the RWI Vault smart contract.
+- [Insurance Partners](https://docs.nexusmutual.io/rwi-vault/insurance-partners): The Vault Operator sources returns by depositing funds into offchain insurance opportunities, with a focus on short-tail lines — insurance business where the vast majority of claims are resolved within a relatively shorter timeframe after the policies themselves end.
+- [Withdrawals](https://docs.nexusmutual.io/rwi-vault/withdrawals): Withdrawals of RWIV into USDC are requested via the app by calling <code>requestRedeem()</code>.
+- [Risks](https://docs.nexusmutual.io/rwi-vault/risks): The RWI Vault is exposed to risks from both Ethereum blockchain infrastructure and institutional insurance exposure.
+- [FAQs](https://docs.nexusmutual.io/rwi-vault/faqs): The Vault Operator generates returns by providing capital to carefully selected Insurance Partners.
 
-## Real-World Insurance Vault
+### Yield Structure
 
-- [RWI Vault](https://docs.nexusmutual.io/rwi-vault/): depositing into insurance-backed yield
-- [Yield structure](https://docs.nexusmutual.io/rwi-vault/yield-structure/): baseline yield and bonuses
-- [Risks](https://docs.nexusmutual.io/rwi-vault/risks): what a depositor is exposed to
-- [Withdrawals](https://docs.nexusmutual.io/rwi-vault/withdrawals): how and when deposits come back
+- [Yield Structure](https://docs.nexusmutual.io/rwi-vault/yield-structure/): There are two ways in which depositors can accrue yield:
 
-## Building on Nexus Mutual
+#### Baseline Yield
 
-- [Developer resources](https://docs.nexusmutual.io/developers/): libraries, APIs, and where to start
-- [Contracts](https://docs.nexusmutual.io/developers/contracts/): the deployed contract set and what each does
-- [Point of sale integrations](https://docs.nexusmutual.io/developers/pos-integrations): selling cover from your own frontend
-- [User flows](https://docs.nexusmutual.io/developers/user-flows/cover-buyer): buying cover, staking, and managing a pool, end to end
-- [Diagrams](https://docs.nexusmutual.io/developers/Diagrams/): contract relationships and user journeys
+- [Baseline Yield](https://docs.nexusmutual.io/rwi-vault/yield-structure/baseline-yield/): The Baseline Yield is set at a fixed rate and automatically accrues onto each investor’s loan as represented by the redemption value of the RWIV token.
+- [Nexus Mutual Cover](https://docs.nexusmutual.io/rwi-vault/yield-structure/baseline-yield/nexus-mutual-cover): The Nexus Mutual Baseline Yield Cover is designed to pay out in case the Vault is unable to meet the Baseline Yield.
 
-## Optional
+#### Bonuses
 
-- [Audits and security](https://docs.nexusmutual.io/resources/audits-and-security): audit reports and the bug bounty
-- [History of capitalisation controls](https://docs.nexusmutual.io/protocol/nxm-token/history-capitalisation-controls): the retired bonding curve and MCR floor
-- [Capital pool investments](https://docs.nexusmutual.io/protocol/capital-pool/investments): past allocations of idle capital
+- [Bonuses](https://docs.nexusmutual.io/rwi-vault/yield-structure/bonuses/): RWIV tokens can be locked in the Vault smart contracts for a specified duration to earn points.
+- [Net Asset Value Calculation](https://docs.nexusmutual.io/rwi-vault/yield-structure/bonuses/nav-calculation): At the end of every quarter (31/03, 30/06, 30/09, 31/12), the VO calculates total Net Asset Value ("NAV").

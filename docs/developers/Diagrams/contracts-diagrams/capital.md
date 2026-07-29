@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: How the Pool, Ramm, SwapOperator and SafeTracker contracts interact to hold and value the capital pool.
 ---
 
 # Capital Contracts

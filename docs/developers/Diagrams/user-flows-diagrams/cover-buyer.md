@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: The contract calls behind buying cover and claiming on it, from the buyer's point of view.
 ---
 
 # Cover Buyer / Claims Flow
