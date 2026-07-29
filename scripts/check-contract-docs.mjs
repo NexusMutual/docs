@@ -28,6 +28,7 @@ import { ethers } from 'ethers';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DOCS = path.join(ROOT, 'docs/developers/contracts');
+const ALL_DOCS = path.join(ROOT, 'docs');
 const RPC = process.env.ETH_RPC_URL || 'https://ethereum-rpc.publicnode.com';
 
 // doc file -> deployed contract name
@@ -65,6 +66,15 @@ const literal = raw => {
   const hours = s.match(/^(\d+)\s*hours?$/);
   if (hours) return BigInt(hours[1]) * 3600n;
   return null;
+};
+
+/**
+ * Constants that are private in the contract but readable through a getter
+ * under a different name.
+ */
+const ALIASES = {
+  GLOBAL_CAPACITY_RATIO: 'getGlobalCapacityRatio',
+  GLOBAL_REWARDS_RATIO: 'getGlobalRewardsRatio',
 };
 
 /**
@@ -110,6 +120,28 @@ for (const r of rows) {
   console.log(`${r.missing ? 'FAIL' : 'ok  '} ${r.file.padEnd(width)}  ${r.contract.padEnd(20)} documented:${String(r.documented).padStart(3)}  notOnABI:${String(r.missing).padStart(3)}`);
 }
 
+const ANNOTATION = /<!--\s*@check\s+([A-Za-z0-9_]+)\.([A-Za-z0-9_]+)\s*=\s*(.+?)\s*-->/g;
+
+const annotations = [];
+const walk = dir => {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, entry.name);
+    if (entry.isDirectory()) { walk(p); continue; }
+    if (!entry.name.endsWith('.md')) continue;
+    const txt = fs.readFileSync(p, 'utf8');
+    for (const m of txt.matchAll(ANNOTATION)) {
+      annotations.push({
+        file: path.relative(ALL_DOCS, p),
+        contract: m[1],
+        getter: m[2],
+        raw: m[3].trim(),
+        line: txt.slice(0, m.index).split('\n').length,
+      });
+    }
+  }
+};
+walk(ALL_DOCS);
+
 // ---- check 3 --------------------------------------------------------------
 
 const provider = new ethers.JsonRpcProvider(RPC);
@@ -123,37 +155,87 @@ for (const [file, pageContract] of Object.entries(PAGES)) {
   for (const c of documentedConstants(read(file))) {
     const expected = literal(c.raw);
     if (expected === null) {
-      notes.push(`${file}: ${c.name} = ${c.raw} — value form not checked`);
+      const covered = annotations.some(a => a.getter === c.name);
+      if (!covered) notes.push(`${file}: ${c.name} = ${c.raw} — value form not checked`);
       continue;
     }
 
-    const candidates = gettersFor(c.name);
+    const getter = ALIASES[c.name] ?? c.name;
+    const candidates = gettersFor(getter);
     const contract = candidates.includes(pageContract) ? pageContract : candidates[0];
     if (!contract) {
-      notes.push(`${file}: ${c.name} has no public getter — not checked`);
+      notes.push(`${file}: ${c.name} is private and has no getter — not checked`);
       continue;
     }
 
     let actual;
     try {
       const instance = new ethers.Contract(addresses[contract], abis[contract], provider);
-      actual = await instance[c.name]();
+      actual = await instance[getter]();
     } catch (err) {
       notes.push(`${file}: ${c.name} could not be read from ${contract} — ${(err.shortMessage || err.message).slice(0, 60)}`);
       continue;
     }
 
     verified++;
+    const via = getter === c.name ? contract : `${contract}.${getter}`;
     if (BigInt(actual) === expected) {
-      console.log(`  ok    ${c.name.padEnd(26)} ${String(expected).padStart(22)}  (${contract})`);
+      console.log(`  ok    ${c.name.padEnd(26)} ${String(expected).padStart(22)}  (${via})`);
     } else {
-      console.log(`  FAIL  ${c.name.padEnd(26)} ${String(expected).padStart(22)}  documented, ${actual} onchain  (${contract})`);
+      console.log(`  FAIL  ${c.name.padEnd(26)} ${String(expected).padStart(22)}  documented, ${actual} onchain  (${via})`);
       problems.push(`${file}: ${c.name} is documented as ${c.raw} but ${contract} returns ${actual}`);
     }
   }
 }
 
-console.log(`\ndeployed contracts: ${Object.keys(addresses).length}   published ABIs: ${Object.keys(abis).length}   constants verified: ${verified}`);
+// ---- check 4: numbers stated in prose ------------------------------------
+//
+// Docs often state a number a reader can use rather than the constant behind
+// it: "0.05% per 1% of capacity" for PRICE_BUMP_RATIO = 500. Those have no
+// machine-readable link to the contract, so an annotation supplies one:
+//
+//   <!-- @check StakingProducts.PRICE_BUMP_RATIO = 500 -->
+//
+// The annotation asserts the underlying value has not moved. It does not
+// verify the prose is a correct reading of that value, which stays a human
+// judgement. It catches drift, not misinterpretation.
+
+if (annotations.length) {
+  console.log('\nNumbers stated in prose:');
+  for (const a of annotations) {
+    const expected = literal(a.raw);
+    const where = `${a.file}:${a.line}`;
+
+    if (expected === null) {
+      notes.push(`${where}: @check ${a.contract}.${a.getter} = ${a.raw} — value form not understood`);
+      continue;
+    }
+    if (!addresses[a.contract] || !abis[a.contract]) {
+      problems.push(`${where}: @check names ${a.contract}, which is not deployed`);
+      continue;
+    }
+
+    let actual;
+    try {
+      const instance = new ethers.Contract(addresses[a.contract], abis[a.contract], provider);
+      actual = await instance[a.getter]();
+    } catch (err) {
+      notes.push(`${where}: ${a.contract}.${a.getter} could not be read — ${(err.shortMessage || err.message).slice(0, 60)}`);
+      continue;
+    }
+
+    verified++;
+    const label = `${a.contract}.${a.getter}`;
+    if (BigInt(actual) === expected) {
+      console.log(`  ok    ${label.padEnd(44)} ${String(expected).padStart(22)}  [${where}]`);
+    } else {
+      console.log(`  FAIL  ${label.padEnd(44)} ${String(expected).padStart(22)}  documented, ${actual} onchain  [${where}]`);
+      problems.push(`${where}: ${label} is documented as ${a.raw} but returns ${actual}. The prose around this line is derived from it and needs rereading.`);
+    }
+  }
+}
+
+console.log(`\ndeployed contracts: ${Object.keys(addresses).length}   published ABIs: ${Object.keys(abis).length}   values verified: ${verified}`);
 
 if (notes.length) {
   console.log('\nNot checked:');

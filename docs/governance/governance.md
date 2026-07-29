@@ -12,6 +12,7 @@ Where a proposal requires a change onchain, the Advisory Board enacts the outcom
 
 ## The Advisory Board
 
+<!-- @check Registry.ADVISORY_BOARD_SEATS = 5 -->
 The Advisory Board (AB) puts forward governance proposals and recommends a default outcome. There are five (5) subject matter experts that sit on the AB, who bring expertise across three broad skill sets:
 * Technical expertise: smart contract security and blockchain
 * Technical expertise: insurance and mutuals
@@ -43,7 +44,9 @@ For added security, an Emergency Pause Safe multisig was created. The Emergency 
 Ultimately, AB members serve at the discretion of Nexus Mutual members. Should members decide an AB member needs to be replaced, Nexus Mutual members can raise a proposal onchain to replace an AB member without interference from existing AB members.
 
 Any Nexus Mutual member can raise a proposal to replace an AB member, with the following requirements:
+<!-- @check Governor.PROPOSAL_THRESHOLD = 100 ether -->
 * The member who raises the proposal must hold more than 99 NXM in order to put the proposal onchain; and
+<!-- @check Governor.MEMBER_VOTE_QUORUM_PERCENTAGE = 15 -->
 * At least 15% of the total NXM token supply must participate in the vote.
 
 Participation counts every vote cast, whether for, against, or abstain. If a proposal to replace an AB member receives more votes for than against and quorum is met, the proposal will pass.
@@ -54,6 +57,7 @@ Voting on a proposal to replace an AB member locks your NXM transfers until the 
 
 Every member who joins Nexus Mutual has voting power equal to one vote plus the sum total of their NXM tokens.
 
+<!-- @check Governor.VOTE_WEIGHT_CAP_PERCENTAGE = 5 -->
 A single member's voting power is capped at 5% of the total NXM supply. This cap applies to Snapshot votes as well as onchain votes, because the Snapshot space reads voting power from the `VotePower` contract.
 
 ### Quorum for Rejection
@@ -125,6 +129,7 @@ The `Governor` contract handles two kinds of proposal.
 An AB proposal carries the transactions that enact a governance outcome, such as a contract upgrade or a Capital Pool allocation. Only Advisory Board members can raise, vote on, and execute these proposals.
 
 * Each AB member holds one vote, regardless of how much NXM they hold.
+<!-- @check Governor.ADVISORY_BOARD_THRESHOLD = 3 -->
 * Three votes in favour carry the proposal, at which point voting closes and the timelock starts.
 * The Advisory Board can cancel an AB proposal before it is executed.
 
@@ -138,6 +143,7 @@ Both kinds of proposal follow the same sequence:
 
 * Members and AB members cast a vote for, against, or abstain.
 * A proposal carries when it has more votes for than against, and it meets the threshold that applies to its kind.
+<!-- @check Governor.TIMELOCK_PERIOD = 1 days -->
 * A 24-hour timelock runs before a carried proposal can be executed.
 
 ***Disclaimer***: While all care has been taken, there may be some discrepancies between the governance documentation and the functioning of the onchain governance smart contracts. In the event a discrepancy exists in this documentation, the smart contract rules apply.

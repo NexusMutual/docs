@@ -34,6 +34,7 @@ The Advisory Board can adjust two factors to adjust exposure to risk for any one
 
 ### Global Capacity Factor
 
+<!-- @check Cover.getGlobalCapacityRatio = 20000 -->
 The global capacity factor is set at two for all listings, which means every one NXM staked opens up two NXM worth of capacity.
 
 ### Capacity Reduction Factor

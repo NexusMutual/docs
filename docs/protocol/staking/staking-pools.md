@@ -30,6 +30,7 @@ Managers choose which cover products to include in their pool and how much NXM t
 
 ### Product weight
 
+<!-- @check StakingProducts.MAX_TOTAL_WEIGHT = 2000 -->
 Managers can stake NXM across products with up to 20x leverage. The amount of leverage used within the pool determines the total target weight for the pool. For each individual product, the most NXM that can be staked is the balance of NXM available in the pool.
 
 *For example*: if a staking pool has 10,000 NXM, a manager can stake up to 10,000 NXM against a single product. If a manager uses 20x leverage, they can stake 10,000 NXM against 20 different cover products. However, a manager could stake 5,000 NXM against 40 different cover products.

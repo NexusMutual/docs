@@ -43,6 +43,7 @@ The spot price decreases linearly from <code>bumpedPrice</code> to <code>targetP
 <p><code>spotPrice = MAX(bumpedPrice - priceDrop, targetPrice)</code></p>
 
 Where:
+<!-- @check StakingProducts.PRICE_BUMP_RATIO = 500 -->
 * <code>bump = 0.05% addition to the spot price per 1% of pool capacity used</code>
 * <code>Bumped price = spotPrice + capacity% of the pool to be used / 1% x 0.05</code>
 * <code>priceDrop = timeSinceLastCoverBuy * speed</code>
@@ -62,6 +63,7 @@ The Bumped Price gets updated after each cover buy and is used to calculate the 
 
 ### Price Drop
 
+<!-- @check StakingProducts.PRICE_CHANGE_PER_DAY = 200 -->
 This is determined by taking the <code>timeSinceLastCoverBuy</code> and multiplying by the <code>Speed</code>, which moves at 2.0% per day. The price drop is subtracted from spot price.
 
 *Example*
