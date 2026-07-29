@@ -14,7 +14,7 @@ graph TD
     %% Contracts
     StakingPool["StakingPool"]
     StakingNFT["StakingNFT"]
-    NXMaster["NXMaster Registry"]
+    Registry["Registry"]
 
    subgraph "Token Group"
       TCO("TokenController")
@@ -35,8 +35,8 @@ graph TD
     Staker -->|"**(3)** extendDeposit()"| StakingPool
 
     %% Contract Registry interactions
-    StakingPool -.->|"getLatestAddress"| NXMaster
-    StakingNFT -.->|"getLatestAddress"| NXMaster
+    StakingPool -.->|"getLatestAddress"| Registry
+    StakingNFT -.->|"getLatestAddress"| Registry
 ```
 
 ## 2. Staking Pool Manager Flow
@@ -49,7 +49,7 @@ graph TD
     %% Contracts
     StakingProducts["StakingProducts Contract"]
     StakingPoolFactory["StakingPoolFactory Contract"]
-    NXMaster["NXMaster Registry"]
+    Registry["Registry"]
 
     %% Manager interactions
     Manager -->|"**(1a)** createStakingPool()"| StakingProducts
@@ -60,8 +60,8 @@ graph TD
     StakingProducts -->|"**(1b)** create"| StakingPoolFactory
 
     %% Contract Registry interactions
-    StakingProducts -.->|"getLatestAddress"| NXMaster
-    StakingPoolFactory -.->|"getLatestAddress"| NXMaster
+    StakingProducts -.->|"getLatestAddress"| Registry
+    StakingPoolFactory -.->|"getLatestAddress"| Registry
 ```
 
 ## Actions
@@ -131,11 +131,11 @@ graph TD
 - Pools can be public or private
 - Pool managers set product weights and pricing
 - Rewards are distributed based on stake duration
-- All contracts fetch latest addresses from NXMaster Registry
+- All contracts fetch latest addresses from Registry
 
 ## Registry Dependencies
 
-All contracts fetch latest contract addresses from NXMaster:
+All contracts fetch latest contract addresses from Registry:
 
 - StakingPool: TC (TokenController), P1 (Pool), SP (StakingProducts)
 - StakingProducts: TC (TokenController), PF (StakingPoolFactory), CP (CoverProducts)

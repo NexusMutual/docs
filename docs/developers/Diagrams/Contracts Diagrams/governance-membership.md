@@ -12,22 +12,23 @@ graph TD
     Member(("Member"))
 
     %% Contracts
-    Governance["Governance Contract"]
+    Governor["Governor Contract"]
     VotePower["VotePower Contract"]
-    MemberRoles["MemberRoles Contract"]
-    NXMaster["NXMaster Registry"]
+    Registry["Registry Contract"]
+    TokenController["TokenController"]
 
     %% Member interactions
-    Member -->|"**(1)** submitProposal"| Governance
-    Member -->|"**(2)** vote"| Governance
-    Member -->|"**(3)** queryVotingPower"| VotePower
-    Member -->|"**(4)** withdrawMembership"| MemberRoles
-    Member -->|"**(5)** switchMembership"| MemberRoles
+    Member -->|"**(1)** proposeAdvisoryBoardSwap"| Governor
+    Member -->|"**(2)** vote"| Governor
+    Member -->|"**(3)** execute"| Governor
+    Member -->|"**(4)** balanceOf"| VotePower
+    Member -->|"**(5)** join / leave / switchTo"| Registry
 
-    %% Contract Registry interactions
-    Governance -.->|"getLatestAddress"| NXMaster
-    VotePower -.->|"getLatestAddress"| NXMaster
-    MemberRoles -.->|"getLatestAddress"| NXMaster
+    %% Contract interactions
+    Governor -->|"getVoteWeight reads balance"| TokenController
+    Governor -->|"lockForMemberVote"| TokenController
+    Governor -->|"swapAdvisoryBoardMember"| Registry
+    VotePower -.->|"getVoteWeight"| Governor
 ```
 
 ## 2. Advisory Board Flow
@@ -38,102 +39,90 @@ graph TD
     ABMember(("AB Member"))
 
     %% Contracts
-    Governance["Governance Contract"]
-    MemberRoles["MemberRoles Contract"]
-    NXMaster["NXMaster Registry"]
+    Governor["Governor Contract"]
+    Registry["Registry Contract"]
 
     %% AB Member interactions
-    ABMember -->|"**(1)** approveProposal"| Governance
-    ABMember -->|"**(2)** rejectAction"| Governance
-    ABMember -->|"**(3)** swapABMember"| MemberRoles
+    ABMember -->|"**(1)** propose"| Governor
+    ABMember -->|"**(2)** vote"| Governor
+    ABMember -->|"**(3)** execute"| Governor
+    ABMember -->|"**(4)** cancel"| Governor
 
-    %% Contract Registry interactions
-    Governance -.->|"getLatestAddress"| NXMaster
-    MemberRoles -.->|"getLatestAddress"| NXMaster
+    %% Contract interactions
+    Governor -->|"isAdvisoryBoardMember"| Registry
+    Governor -.->|"proposal transactions"| Registry
 ```
 
 ## Actions
 
 ### Quick Summary:
 
-1. Members can submit and vote on proposals
-2. AB Members review and approve proposals
-3. Operators execute approved proposals
+1. The Advisory Board raises proposals carrying the transactions that enact a governance outcome
+2. Members raise proposals to replace an Advisory Board member
+3. A carried proposal is executed after a 24-hour timelock
 
 ### 1. Member Actions
 
-1. **Submit Proposal**
+1. **Propose an Advisory Board Swap**
 
-   - **Member** calls `submitProposal` on Governance with:
-     - Proposal title
-     - Short description
-     - Proposal description hash
-     - Category ID
+   - **Member** calls `proposeAdvisoryBoardSwap` on Governor with:
+     - The AB member to replace and the member to replace them with
+     - A description
+   - Requires the member to hold more than 99 NXM
 
-2. **Vote on Proposal**
+2. **Vote on a Proposal**
 
-   - **Member** calls `vote` on Governance with:
+   - **Member** calls `vote` on Governor with:
      - Proposal ID
-     - Solution ID
-     - Include managed staking pools flag
+     - Choice: For, Against, or Abstain
+   - Voting locks the member's NXM transfers until the proposal is executable
 
-3. **Query Voting Power**
+3. **Read Voting Power**
 
-   - **Member** calls `queryVotingPower` on VotePower to:
-     - Check voting influence
-     - View delegated voting power
+   - **Member** calls `balanceOf` on VotePower to check their voting weight
+   - Weight is the member's NXM balance plus one, capped at 5% of total supply
 
-4. **Withdraw Membership**
+4. **Execute a Proposal**
 
-   - **Member** calls `withdrawMembership` on MemberRoles to:
-     - Remove membership status
-     - Burn remaining NXM tokens
+   - **Member** calls `execute` on Governor once the timelock has passed
+   - Requires more votes for than against, and 15% of supply to have participated
 
-5. **Switch Membership**
-   - **Member** calls `switchMembership` on MemberRoles to:
-     - Transfer membership to new address
-     - Move NXM tokens and assets
+5. **Join, Leave or Switch Membership**
+   - **Member** calls `join`, `leave` or `switchTo` on Registry
 
 ### 2. Advisory Board Actions
 
-1. **Approve Proposal**
+1. **Raise a Proposal**
 
-   - **AB Member** calls `approveProposal` on Governance to:
-     - Move proposal to voting stage
-     - Set voting parameters
+   - **AB Member** calls `propose` on Governor with:
+     - The transactions to execute
+     - A description
 
-2. **Reject Action**
+2. **Vote on a Proposal**
 
-   - **AB Member** calls `rejectAction` on Governance to:
-     - Block suspicious proposal execution
-     - Requires majority AB rejection
+   - **AB Member** calls `vote` on Governor
+   - Each AB member holds one vote, regardless of NXM held
+   - Three votes in favour carry the proposal and start the timelock
 
-3. **Swap AB Member**
-   - **AB Member** calls `swapABMember` on MemberRoles to:
-     - Replace existing AB member
-     - Update AB member registry
+3. **Execute a Proposal**
 
-### 3. Operator Actions
+   - **AB Member** calls `execute` on Governor once the timelock has passed
 
-1. **Execute Proposal**
-   - **Operator** calls `triggerAction` on Governance to:
-     - Execute approved proposals
-     - Must wait for action waiting time
-     - Handles proposal implementation
+4. **Cancel a Proposal**
+   - **AB Member** calls `cancel` on Governor
+   - Only AB proposals can be cancelled
 
 ## Notes
 
-- Proposals require minimum token holding time
-- AB members can reject suspicious proposals
-- Voting power includes delegated votes
-- Members can delegate voting power
-- Special resolutions have different majority requirements
-- All contracts fetch latest addresses from NXMaster Registry
+- Members raise and vote on Advisory Board replacements onchain, and vote on all other proposals through the Nexus Mutual DAO Snapshot space
+- Voting power is capped at 5% of the total NXM supply
+- Voting on a member proposal locks NXM transfers until the proposal is executable
+- A 24-hour timelock runs before any carried proposal can be executed
+- All contracts resolve addresses through the Registry
 
-## NXMMaster Registry Dependencies
+## Registry Dependencies
 
-All contracts fetch latest contract addresses from NXMaster:
+Contracts resolve their dependencies through the Registry, which also holds membership records, the Advisory Board seats and the emergency pause configuration.
 
-- **Governance:** TC (`TokenController`), MR (`MemberRoles`), PC (`ProposalCategory`)
-- **MemberRoles:** TC (`TokenController`), P1 (`Pool`), CO (`Cover`), PS (`PooledStaking`), AS (`Assessment`)
-- **VotePower:** TC (`TokenController`), MR (`MemberRoles`), GV (`Governance`)
+- **Governor:** `Registry`, `TokenController`
+- **VotePower:** `Registry`, `Governor`, `NXMToken`

@@ -4,41 +4,40 @@ sidebar_position: 2
 
 # Contracts
 
-The source code for the Nexus Mutual protocol is available on [GitHub](https://github.com/NexusMutual). Contract addresses can be found in our [SDK](https://sdk.nexusmutual.io/).
+The source code for the Nexus Mutual protocol is available on [GitHub](https://github.com/NexusMutual). Contract addresses and ABIs are published in the [`@nexusmutual/deployments`](https://www.npmjs.com/package/@nexusmutual/deployments) package and through our [SDK](https://sdk.nexusmutual.io/).
 
-The core contracts can be found in the [modules folder within the Smart Contracts repo](https://github.com/NexusMutual/smart-contracts/tree/release-candidate/contracts/modules). 
-* Assessment
-* Cover
-* Individual Claims
-* Pool
-* RAMM
-* Staking Pool
-* Staking Pool Factory
-* Staking Products
-* Token Controller
-
-## Assessment
-
-The `Assessment` contract manages evaluation of cover claims. Members stake NXM tokens and cast votes to determine the outcome of assessments. The contract distributes rewards for benevolent participation, enforces stake lockup periods, and implements a fraud resolution process by burning tokens from fraudulent assessors.
+The core contracts can be found in the [modules folder within the Smart Contracts repo](https://github.com/NexusMutual/smart-contracts/tree/master/contracts/modules).
 
 ## Cover
 
-The `Cover` contract manages the purchase and management of coverage within the protocol. It allows users to buy coverage for specific products and handles the allocation of coverage across various staking pools. The contract keeps track of cover segments, allocations, and active covers, ensuring that coverage is properly managed over time.
+The `Cover` contract manages the purchase and management of coverage within the protocol. It allows users to buy coverage for specific products and handles the allocation of coverage across various staking pools. Passing the id of an existing cover edits that cover instead of buying a new one.
 
-## Individual Claims
+## Cover Products
 
-The `IndividualClaims` contract enables cover owners to **submit claims** and **redeem payouts** if their claims are accepted. Claims go through a **decentralized assessment** process where members of the mutual decide the claim outcome.
+The `CoverProducts` contract holds the product and product type registry. It stores each product's cover assets, grace period and product type, and each product type's claim method and cover wording.
+
+## Limit Orders
+
+The `LimitOrders` contract executes cover purchases from signed orders. Members sign an order up front, and the order is settled later when its conditions are met, which supports limit-price and long-term cover purchases.
+
+## Claims
+
+The `Claims` contract enables cover owners to **submit claims** and **redeem payouts** if their claims are accepted. Submitting a claim starts an assessment, and the claimant deposits ETH which is returned when the claim is accepted.
 
 The contract integrates with multiple protocol components, including:
 
-- **Assessment (`IAssessment`)** – Handles voting and decision-making for claims.
-- **Cover (`ICover`)** – Provides cover policy and segment details.
-- **Staking Pools (`IPool`)** – Facilitates payout processing.
-- **RAMM (`IRamm`)** – Updates token prices and liquidity.
+- **Assessments (`IAssessments`)** – Handles voting and decision-making for claims.
+- **Cover (`ICover`)** – Provides cover data.
+- **Pool (`IPool`)** – Facilitates payout processing.
+- **Ramm (`IRamm`)** – Updates token prices and liquidity.
+
+## Assessments
+
+The `Assessments` contract manages evaluation of cover claims. Assessors are organised into groups, and each product type is assigned to the group that assesses its claims. Assessors cast a vote for or against a claim, along with the rationale for their decision.
 
 ## Pool
 
-The `Pool` contract is a **core component** of the protocol, responsible for managing collective assets such as ETH and other ERC20 tokens. The contract maintains these assets, facilitating their swaps through either the RAMM or SwapOperator contracts. It also handles the receipt of premiums from cover purchases and disburses payouts for claims.
+The `Pool` contract is a **core component** of the protocol, responsible for managing collective assets such as ETH and other ERC20 tokens. The contract maintains these assets, facilitating their swaps through either the RAMM or SwapOperator contracts. It also handles the receipt of premiums from cover purchases and disburses payouts for claims. The Pool also holds the Minimum Capital Requirement (MCR) calculation.
 
 As a core contract it is designed for interaction by other contracts within the protocol. It integrates various contracts to manage reserve assets securely and efficiently, ensuring the system's liquidity and claim payout obligations are met.
 
@@ -48,11 +47,19 @@ As a core contract it is designed for interaction by other contracts within the 
 
 The `Ramm` contract is designed to allow swaps between NXM tokens and ETH. Internally it works by simulating 2 Uniswap v2 -like pools which have their liquidity adjusted using liquidity injection and a ratcheting mechanism.
 
+## Safe Tracker
+
+The `SafeTracker` contract reports the value of assets held in a Safe multisig controlled by the Advisory Board, so that those assets are counted in the Capital Pool. It exposes an ERC20-like balance denominated in ETH.
+
+## Swap Operator
+
+The `SwapOperator` contract swaps the Pool's assets through the CoW Protocol. Its address is set on the Pool through governance.
+
 ## Staking Pool
 
 The `StakingPool` contract **manages NXM staking** and **allocates capacity** for purchased covers within the staking pool.
 
-Each StakingPool contract represents its own distinct pool that manages the staked NXM tokens and the allocations of those staked NXM to cover products. This allows for precise management of stakes and cover allocations specific to that pool
+Each StakingPool contract represents its own distinct pool that manages the staked NXM tokens and the allocations of those staked NXM to cover products. This allows for precise management of stakes and cover allocations specific to that pool. Staking pools are deployed per pool through the `StakingPoolFactory`, so each has its own address.
 
 When a user **stakes NXM**, the contract **mints an NFT**, which serves as a proof of stake ownership.
 
@@ -98,7 +105,37 @@ This contract enables:
 **Designed for Internal Use Only**
 
 - 🚫 TokenController is NOT meant for direct integration by users or external contracts.
-- ✅ Only protocol-approved contracts (e.g., Governance, StakingPool, Assessment, Pool) can interact with it.
-- ✅ Functions are restricted using access control mechanisms such as onlyInternal and onlyGovernance.
+- ✅ Only protocol-approved contracts (e.g., Governor, StakingPool, Assessments, Pool) can interact with it.
+- ✅ Functions are restricted using access control mechanisms such as onlyContracts and onlyGovernor.
 
 This design ensures that all NXM token movements remain securely controlled within the protocol.
+
+## Registry
+
+The `Registry` contract holds the address of every protocol contract, and resolves those addresses for the rest of the system. It also holds membership records, the Advisory Board seats, and the emergency pause configuration.
+
+## Governor
+
+The `Governor` contract holds governance proposals and the votes cast on them. It handles Advisory Board proposals, which carry the transactions that enact a governance outcome, and member proposals, which replace an Advisory Board member. See [Governance](/governance/) for the process around these proposals.
+
+## Vote Power
+
+The `VotePower` contract exposes a member's voting power as an ERC20-like balance. The Nexus Mutual DAO Snapshot space reads voting power from this contract.
+
+## Helper contracts
+
+These contracts hold no protocol state and exist to make integration easier.
+
+- **`CoverBroker`** lets non-members buy cover, paying in ETH or a Pool-supported ERC20. Members paying in NXM call `Cover.buyCover` directly.
+- **`StakingViewer`** aggregates staking pool, token and reward data for reading.
+- **`CoverViewer`** aggregates cover data for reading.
+
+## Token contracts
+
+- **`NXMToken`** is the mutual's membership token.
+- **`CoverNFT`** represents ownership of a cover.
+- **`StakingNFT`** represents ownership of a staking position.
+
+## Legacy contracts
+
+These contracts remain deployed to serve historical data and are not part of the current protocol flow: `NXMaster`, `Governance`, `LegacyClaimsData` and `LegacyQuotationData`.

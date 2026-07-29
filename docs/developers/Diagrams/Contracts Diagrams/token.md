@@ -14,7 +14,7 @@ graph TD
     %% Contracts
     NXMToken["NXMToken"]
     TokenController["TokenController"]
-    NXMaster["NXMaster Registry"]
+    Registry["Registry"]
 
     %% Member interactions
     Member -->|"**(1)** transfer()"| NXMToken
@@ -26,8 +26,8 @@ graph TD
     NXMToken -.->|"**(3c)** sends NXM"| Member
 
     %% Contract Registry interactions
-    NXMToken -.->|"getLatestAddress"| NXMaster
-    TokenController -.->|"getLatestAddress"| NXMaster
+    NXMToken -.->|"getLatestAddress"| Registry
+    TokenController -.->|"getLatestAddress"| Registry
 ```
 
 ## 2. Operator Flow
@@ -40,7 +40,7 @@ graph TD
     %% Contracts
     TokenController["TokenController"]
     NXMToken["NXMToken"]
-    NXMaster["NXMaster Registry"]
+    Registry["Registry"]
 
     %% Operator interactions
     Operator -->|"**(1a)** mint()"| TokenController
@@ -50,8 +50,8 @@ graph TD
     NXMToken -.->|"**(2c)** sends NXM"| TokenController
 
     %% Contract Registry interactions
-    TokenController -.->|"getLatestAddress"| NXMaster
-    NXMToken -.->|"getLatestAddress"| NXMaster
+    TokenController -.->|"getLatestAddress"| Registry
+    NXMToken -.->|"getLatestAddress"| Registry
 ```
 
 ## Actions
@@ -105,11 +105,11 @@ graph TD
 
 - Token transfers can be paused in emergencies
 - Minting has configurable limits
-- All contracts fetch latest addresses from NXMaster Registry
+- All contracts fetch latest addresses from Registry
 
-## NXMMaster Registry Dependencies
+## Registry Dependencies
 
-All contracts fetch latest contract addresses from NXMaster:
+All contracts fetch latest contract addresses from Registry:
 
-- **TokenController:** MR (`MemberRoles`), NXM (`NXMToken`)
+- **TokenController:** MR (`Registry`), NXM (`NXMToken`)
 - **NXMToken:** TC (`TokenController`)

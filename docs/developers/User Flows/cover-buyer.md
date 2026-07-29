@@ -149,7 +149,7 @@ Common **asset IDs**:
 To check if an address is a member:
 
 ```solidity
-bool isMember = MemberRoles.checkRole(memberAddress, uint8(Role.Member));
+bool isMember = Registry.checkRole(memberAddress, uint8(Role.Member));
 ```
 
 ---
@@ -243,17 +243,18 @@ A successful **cover purchase** results in a **Cover NFT**.
 To verify purchase success:
 
 - Buyer will receive a **Cover NFT** for their cover purchase.
-- **Monitor the `CoverEdited` event**:
+- **Monitor the `CoverBought` event**:
 
 ```solidity
-event CoverEdited(
+event CoverBought(
     uint indexed coverId,
-    uint indexed productId,
-    uint indexed segmentId,
-    address buyer,
-    string ipfsMetadata
+    uint indexed originalCoverId,
+    uint indexed buyerMemberId,
+    uint productId
 );
 ```
+
+`originalCoverId` is the cover this one was edited from, and equals `coverId` for a new purchase.
 
 - Retrieve **cover details** via:
 
@@ -277,10 +278,10 @@ CoverViewer.getCovers(coverIds);
 ### How to Submit a Claim
 
 1. **Ensure the cover is active** or **within the grace period**.
-2. **Call \`IndividualClaims.submitClaim()\`** with the cover ID and deposit.
+2. **Call \`Claims.submitClaim()\`** with the cover ID and deposit.
 
 ```solidity
-IndividualClaims.submitClaim(uint coverId);
+Claims.submitClaim(uint coverId);
 ```
 
 - **Claim Payout:** **100% of the cover amount.** No deductibles.
@@ -316,7 +317,7 @@ CoverViewer.getCovers(coverIds);
 - Check membership status:
 
 ```solidity
-bool isMember = MemberRoles.checkRole(memberAddress, uint8(Role.Member));
+bool isMember = Registry.checkRole(memberAddress, uint8(Role.Member));
 ```
 
 ---

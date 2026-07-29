@@ -6,20 +6,20 @@ sidebar_position: 9
 
 ## Overview
 
-The `TokenController` contract is the **core token manager** within the protocol, governing **NXM minting, burning, and transfers**. It is **not meant to be directly integrated by users** but rather serves as an internal controller for **Governance, Staking Pools, and Assessment**.
+The `TokenController` contract is the **core token manager** within the protocol, governing **NXM minting, burning, and transfers**. It is **not meant to be directly integrated by users** but rather serves as an internal controller for **Governor, Staking Pools, and Cover**.
 
 This contract enables:
 
 - **Minting and burning NXM** for staking, rewards, and governance.
 - **Managing staking pool deposits and withdrawals** to regulate staked NXM.
-- **Facilitating governance and assessment rewards** by distributing NXM.
+- **Facilitating staking pool rewards** by distributing NXM.
 - **Operator-controlled transfers** for protocol-authorized token movements.
 
 **Designed for Internal Use Only**
 
 - 🚫 TokenController is NOT meant for direct integration by users or external contracts.
-- ✅ Only protocol-approved contracts (e.g., Governance, StakingPool, Assessment, Pool) can interact with it.
-- ✅ Functions are restricted using access control mechanisms such as onlyInternal and onlyGovernance.
+- ✅ Only protocol-approved contracts (e.g., Governor, StakingPool, Cover, Pool) can interact with it.
+- ✅ Functions are restricted using access control mechanisms such as onlyContracts and onlyGovernor.
 
 This design ensures that all NXM token movements remain securely controlled within the protocol.
 
@@ -29,7 +29,7 @@ This design ensures that all NXM token movements remain securely controlled with
 
 `TokenController` is the **sole authority** for NXM operations. It ensures:
 
-- **Minting:** Only authorized contracts (e.g., Governance, Assessment) can mint NXM as rewards.
+- **Minting:** Only authorized contracts (e.g., Cover, Ramm) can mint NXM.
 - **Burning:** NXM is burned when governance penalties, staking pool claims, or expired cover obligations occur.
 - **Operator-controlled transfers:** Only designated contracts can initiate approved token movements, maintaining strict oversight over token transactions.
 
@@ -45,11 +45,11 @@ Staking pools interact with `TokenController` through the following functions:
 
 This ensures **accurate stake tracking**, prevents premature withdrawals, and aligns rewards with active stakes.
 
-### Governance and Assessment Integration
+### Governance Integration
 
-Governance and Assessment contracts leverage `TokenController` through:
+The `Governor` contract leverages `TokenController` through:
 
-- **Reward distribution** to governance voters and assessment participants (`mintRewards`).
+- **Locking transfers** while a member has an open vote on a member proposal (`lockForMemberVote`).
 - **Token burning** in case of governance-imposed penalties (`burnFrom`).
 - **NXM transfers** for governance-related activities (`operatorTransfer`).
 
@@ -59,11 +59,10 @@ Each function ensures that NXM token movements remain **restricted to protocol-a
 
 Tokens can be locked for various reasons, restricting transfers until the conditions for unlocking are met.
 
-| **Lock Type**             | **Purpose**                                     | **Unlock Conditions**                     |
-| ------------------------- | ----------------------------------------------- | ----------------------------------------- |
-| **Governance Lock**       | Prevents withdrawal of voting power mid-vote.   | Unlocks after the vote concludes.         |
-| **Claim Assessment Lock** | Ensures assessors cannot withdraw NXM mid-vote. | Unlocks after the claim is resolved.      |
-| **Staking Lock**          | Ensures liquidity remains available for covers. | Unlocks after the staking period expires. |
+| **Lock Type**       | **Purpose**                                     | **Unlock Conditions**                     |
+| ------------------- | ----------------------------------------------- | ----------------------------------------- |
+| **Governance Lock** | Prevents withdrawal of voting power mid-vote.   | Unlocks once the proposal is executable.  |
+| **Staking Lock**    | Ensures liquidity remains available for covers. | Unlocks after the staking period expires. |
 
 **Important:**  
 If NXM is locked for **multiple reasons**, **all** unlock conditions must be met before withdrawal is allowed.
@@ -75,13 +74,15 @@ If NXM is locked for **multiple reasons**, **all** unlock conditions must be met
 `TokenController` handles multiple types of rewards distributed by the protocol:
 
 - **Staking Rewards** – Earned by staking NXM in pools.
-- **Governance Rewards** – Earned by participating in governance voting.
-- **Claim Assessment Rewards** – Earned by assessing claims.
+- **Pool Manager Rewards** – Earned by managing a staking pool.
 
 Rewards must be **manually claimed** using the function:
 
 ```solidity
-function withdrawNXM(uint amount) external;
+function withdrawNXM(
+    StakingPoolDeposit[] calldata stakingPoolDeposits,
+    StakingPoolManagerReward[] calldata stakingPoolManagerRewards
+) external;
 ```
 
 This ensures that users explicitly collect rewards, allowing for flexible management of their earnings.
@@ -93,7 +94,7 @@ This ensures that users explicitly collect rewards, allowing for flexible manage
 Burns NXM tokens from an account.
 
 ```solidity
-function burnFrom(address member, uint amount) external;
+function burnFrom(address member, uint amount) external returns (bool);
 ```
 
 | Parameter | Description                     |
@@ -103,7 +104,7 @@ function burnFrom(address member, uint amount) external;
 
 **Usage:**
 
-- Called by **Governance or Assessment** to penalize users.
+- Called by **Governor** to penalize users.
 - Used by **Staking Pools** when claims are approved.
 
 ---
@@ -113,7 +114,7 @@ function burnFrom(address member, uint amount) external;
 Transfers NXM on behalf of an account, but only when authorized.
 
 ```solidity
-function operatorTransfer(address from, address to, uint amount) external;
+function operatorTransfer(address from, address to, uint amount) external returns (bool);
 ```
 
 | Parameter | Description                   |
@@ -129,23 +130,35 @@ function operatorTransfer(address from, address to, uint amount) external;
 
 ---
 
-### `mintRewards`
+### `mint`
 
-Mints new NXM as rewards.
+Mints new NXM to a member.
 
 ```solidity
-function mintRewards(address recipient, uint amount) external;
+function mint(address member, uint amount) external;
 ```
 
-| Parameter   | Description                |
-| ----------- | -------------------------- |
-| `recipient` | Address receiving rewards. |
-| `amount`    | Amount of NXM to mint.     |
+| Parameter | Description                |
+| --------- | -------------------------- |
+| `member`  | Address receiving the NXM. |
+| `amount`  | Amount of NXM to mint.     |
 
-**Usage:**
+---
 
-- Used by **Governance** to reward voting participation.
-- Used by **Assessment** to pay assessors.
+### `mintStakingPoolNXMRewards`
+
+Mints NXM as rewards for a staking pool.
+
+```solidity
+function mintStakingPoolNXMRewards(uint amount, uint poolId) external;
+```
+
+| Parameter | Description                          |
+| --------- | ------------------------------------ |
+| `amount`  | Amount of NXM to mint as rewards.    |
+| `poolId`  | The staking pool receiving rewards.  |
+
+**Usage:** Called when cover is bought, to fund the rewards paid to the pools backing that cover.
 
 ---
 
@@ -154,13 +167,14 @@ function mintRewards(address recipient, uint amount) external;
 Deposits NXM into a staking pool.
 
 ```solidity
-function depositStakedNXM(address stakingPool, uint amount) external;
+function depositStakedNXM(address from, uint amount, uint poolId) external;
 ```
 
-| Parameter     | Description                  |
-| ------------- | ---------------------------- |
-| `stakingPool` | Address of the staking pool. |
-| `amount`      | Amount of NXM to stake.      |
+| Parameter | Description                       |
+| --------- | --------------------------------- |
+| `from`    | Address the NXM is taken from.    |
+| `amount`  | Amount of NXM to stake.           |
+| `poolId`  | The staking pool being staked in. |
 
 **Usage:**
 
@@ -173,13 +187,13 @@ function depositStakedNXM(address stakingPool, uint amount) external;
 Burns staked NXM when a cover claim is approved.
 
 ```solidity
-function burnStakedNXM(address stakingPool, uint amount) external;
+function burnStakedNXM(uint amount, uint poolId) external;
 ```
 
-| Parameter     | Description                  |
-| ------------- | ---------------------------- |
-| `stakingPool` | Address of the staking pool. |
-| `amount`      | Amount of NXM to burn.       |
+| Parameter | Description                     |
+| --------- | ------------------------------- |
+| `amount`  | Amount of NXM to burn.          |
+| `poolId`  | The staking pool being burned.  |
 
 **Usage:**
 
@@ -192,13 +206,20 @@ function burnStakedNXM(address stakingPool, uint amount) external;
 Withdraws staked NXM and rewards from a staking pool.
 
 ```solidity
-function withdrawNXMStakeAndRewards(address stakingPool, uint amount) external;
+function withdrawNXMStakeAndRewards(
+    address to,
+    uint stakeToWithdraw,
+    uint rewardsToWithdraw,
+    uint poolId
+) external;
 ```
 
-| Parameter     | Description                  |
-| ------------- | ---------------------------- |
-| `stakingPool` | Address of the staking pool. |
-| `amount`      | Amount of NXM to withdraw.   |
+| Parameter           | Description                          |
+| ------------------- | ------------------------------------ |
+| `to`                | Address receiving the NXM.           |
+| `stakeToWithdraw`   | Amount of staked NXM to withdraw.    |
+| `rewardsToWithdraw` | Amount of rewards to withdraw.       |
+| `poolId`            | The staking pool being withdrawn from. |
 
 **Usage:**
 
@@ -206,29 +227,37 @@ function withdrawNXMStakeAndRewards(address stakingPool, uint amount) external;
 
 ---
 
-### `withdrawCoverNote (Deprecated)`
-
-```solidity
-function withdrawCoverNote() external;
-```
-
-**This function is deprecated and should not be used in new integrations.**
-
 ## View Functions
 
-### `getWithdrawableCoverNotes (Deprecated)`
+### `getTokenPrice`
+
+Returns the internal NXM price in ETH. This is the recommended way to read the token price, since it gives a stable address to call.
 
 ```solidity
-function getWithdrawableCoverNotes(address member) external view returns (uint);
+function getTokenPrice() external view returns (uint tokenPrice);
 ```
 
-**Deprecated and no longer relevant in the updated staking model.**
+### `totalBalanceOf`
+
+Returns a member's total NXM balance, including staked and locked amounts.
+
+```solidity
+function totalBalanceOf(address member) external view returns (uint);
+```
+
+### `getStakingPoolManager`
+
+Returns the manager of a staking pool.
+
+```solidity
+function getStakingPoolManager(uint poolId) external view returns (address);
+```
 
 ## Frequently Asked Questions
 
 ### **Who can interact with `TokenController`?**
 
-Only **protocol-approved contracts** such as `Governance`, `StakingPool`, and `Assessment` can call its functions.
+Only **protocol-approved contracts** such as `Governor`, `StakingPool`, and `Cover` can call its functions.
 
 ---
 
@@ -258,17 +287,7 @@ Stakers **must wait until their tranche expires** before calling `withdrawNXMSta
 
 ### **When can governance participants withdraw their NXM?**
 
-Governance participants must wait until the voting period ends before their tokens are unlocked and withdrawable.
-
-### **When can claim assessors withdraw their NXM?**
-
-Claim assessors must wait until the claim is resolved before they can withdraw their locked NXM.
-
----
-
-### **Why are `withdrawCoverNote` and `getWithdrawableCoverNotes` deprecated?**
-
-These functions were part of an **old v1 staking mechanism** and are no longer relevant.
+Governance participants must wait until the proposal they voted on becomes executable before their tokens are unlocked.
 
 ## Contact and Support
 
