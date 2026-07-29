@@ -5,43 +5,13 @@ slug: /
 
 # Getting Started
 
-This documentation provides everything you need to know about Nexus Mutual.
+Nexus Mutual is an onchain discretionary mutual. Members pool capital, buy cover against onchain and real world risks, underwrite that risk by staking NXM, and decide claims and protocol changes through governance.
 
-## Overview
-
-All of the basics are covered:
-* [Introduction to Nexus Mutual](/overview/)
-* [Membership](/overview/membership)
-* [Cover products](/overview/cover-products/)
-* [Claims history](/overview/claims-history)
-
-## Resources
-
-Standard FAQ and links to various resources:
-* [FAQ](/resources/faq)
-* [Audits and Security](/resources/audits-and-security)
-
-## Protocol
-
-An in-depth review of the Nexus Mutual protocol:
-* [Overview of the protocol](/protocol/)
-* [The NXM token](/protocol/nxm-token/)
-* [The Token Model](/protocol/nxm-token/token-model)
-* [The Capital Pool](/protocol/capital-pool/)
-* [Tokenized cover, features](/protocol/cover)
-* [Pricing](protocol/pricing)
-* [Capacity](/protocol/capacity)
-* [NXM staking](/protocol/staking/)
-* [Staking pools](/protocol/staking/staking-pools)
-* [Claim assessment](/protocol/claims-assessment)
-
-## Governance
-
-Review of protocol and DAO governance, and how the DAO operates:
-* [Introduction to governance](/governance/)
-* [Overview of the Nexus Mutual DAO](/governance/dao)
-
-## Real World Insurance Vault
-
-Information about the Real World Insurance Vault:
-* [RWI Vault](/rwi-vault)
+- **[Overview](/overview/)** — what the Mutual is, how membership works, and what has been claimed
+- **[Cover products](/overview/cover-products/)** — what can be covered, and the wording each product is sold under
+- **[The protocol](/protocol/)** — cover, staking, capacity, pricing, the capital pool and the NXM token
+- **[Claim assessment](/protocol/claims-assessment)** — how a claim is decided
+- **[Governance](/governance/)** — proposals, the Advisory Board, and the DAO
+- **[Developers](/developers/)** — contract reference, integration guides and diagrams
+- **[Real World Insurance Vault](/rwi-vault/)** — depositing, yield and risks
+- **[Resources](/resources/)** — audits, FAQ and a glossary of the terms used here
