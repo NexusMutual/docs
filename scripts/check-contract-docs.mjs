@@ -295,6 +295,68 @@ if (examples.length) {
   }
 }
 
+// ---- check 6: cover wordings ---------------------------------------------
+//
+// The wording is the document a claim is assessed against. Pages used to
+// hardcode its IPFS hash, and seven of nine had drifted from the one the
+// protocol records. The page is generated now, so this reports when it needs
+// regenerating rather than letting it silently describe superseded terms.
+//
+// A product type keeps its wording after its last listing is retired, so the
+// page is checked against the types that still have active listings. That way
+// a product that quietly stops being sold does not stay listed as available.
+
+const WORDINGS = path.join(ALL_DOCS, 'overview/cover-products/cover-wordings.md');
+
+if (fs.existsSync(WORDINGS)) {
+  try {
+    const api = process.env.NEXUS_API_URL ?? 'https://api.nexusmutual.io/v2';
+    const [types, products] = await Promise.all([
+      fetch(`${api}/product-types`).then(r => r.json()),
+      fetch(`${api}/products`).then(r => r.json()),
+    ]);
+
+    const activeByType = products.reduce((acc, p) => {
+      if (!p.isDeprecated) acc[p.productType] = (acc[p.productType] ?? 0) + 1;
+      return acc;
+    }, {});
+
+    // Two product types can share a wording (Single and Multi Protocol Cover
+    // do), so this keys on the type rather than the hash.
+    const withMetadata = types.filter(t => t.metadata);
+    const activeTypes = withMetadata.filter(t => (activeByType[t.id] ?? 0) > 0);
+
+    const page = fs.readFileSync(WORDINGS, 'utf8');
+    const documented = new Set(
+      [...page.matchAll(/ipfs\/(Qm[1-9A-HJ-NP-Za-km-z]{44})/g)].map(m => m[1]),
+    );
+    const activeCids = new Set(activeTypes.map(t => t.metadata));
+
+    const missing = activeTypes.filter(t => !documented.has(t.metadata));
+    const stale = [...documented].filter(c => !activeCids.has(c));
+    const named = stale.map(c => {
+      const owner = withMetadata.find(t => t.metadata === c);
+      return owner ? `${owner.name} has no active listings` : `${c} is not a wording the protocol records`;
+    });
+
+    console.log(`\nCover wordings: ${activeTypes.length} products with active listings, ${documented.size} wordings listed`);
+
+    const issues = [
+      ...missing.map(t => `${t.name} has active listings but no wording listed`),
+      ...named,
+    ];
+
+    if (issues.length) {
+      issues.forEach(i => console.log(`  FAIL  ${i}`));
+      problems.push('overview/cover-products/cover-wordings.md is out of date — run npm run docs:wordings');
+    } else {
+      console.log('  ok    every product with active listings has its current wording listed');
+    }
+  } catch (err) {
+    notes.push(`cover wordings could not be checked — ${(err.message ?? err).toString().slice(0, 60)}`);
+  }
+}
+
 console.log(`\ndeployed contracts: ${Object.keys(addresses).length}   published ABIs: ${Object.keys(abis).length}   values verified: ${verified}`);
 
 if (notes.length) {
