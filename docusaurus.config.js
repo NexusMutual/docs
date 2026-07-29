@@ -10,13 +10,11 @@ async function createConfigAsync() {
     url: "https://docs.nexusmutual.io/",
     baseUrl: "/",
     onBrokenLinks: "throw",
-    onBrokenMarkdownLinks: "warn",
+    onBrokenAnchors: "throw",
     favicon: "img/NXM-Spinner-Green.svg",
 
-    // GitHub pages deployment config.
-    // If you aren't using GitHub pages, you don't need these.
-    organizationName: "NexusMutual", // Usually your GitHub org/user name.
-    projectName: "NexusMutual/docs", // Usually your repo name.
+    organizationName: "NexusMutual",
+    projectName: "NexusMutual/docs",
     i18n: {
       defaultLocale: "en",
       locales: ["en"],
@@ -24,6 +22,9 @@ async function createConfigAsync() {
 
     markdown: {
       mermaid: true,
+      hooks: {
+        onBrokenMarkdownLinks: "warn",
+      },
       mdx1Compat: {
         comments: true,
         admonitions: true,
