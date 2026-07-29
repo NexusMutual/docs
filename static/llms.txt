@@ -32,6 +32,13 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 - [BlockFi Halted Withdrawals | November 2022](https://docs.nexusmutual.io/overview/claims-history/blockfi): A total of $30,590.64 was paid out for Claims V1 #174 and #177.
 - [Euler Finance Exploit | March 2023](https://docs.nexusmutual.io/overview/claims-history/euler): A total of $2,389,227.88 was paid out for Euler Finance Protocol Cover Claims V2 #0, #2, #3, #4, #5, #6, #7, #8, and #11.
 
+## Using Nexus Mutual
+
+- [Using Nexus Mutual](https://docs.nexusmutual.io/using/): How to buy cover, stake NXM, and file a claim.
+- [Buy cover](https://docs.nexusmutual.io/using/buy-cover): Cover protects a position against a defined risk for a set amount and period.
+- [Stake NXM](https://docs.nexusmutual.io/using/stake): Staking NXM backs cover on chosen listings.
+- [File a claim](https://docs.nexusmutual.io/using/file-a-claim): A claim is filed against cover you hold, in the Nexus Mutual app.
+
 ## The Nexus Mutual Protocol
 
 - [The Nexus Mutual Protocol](https://docs.nexusmutual.io/protocol/): Nexus Mutual is a decentralized insurance alternative that allows people to join as members and share risk with others.
