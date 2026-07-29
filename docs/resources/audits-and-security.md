@@ -10,6 +10,23 @@ Review Nexus Mutual's audits, bug bounties, and initiatives to strengthen our pr
 
 Below are a list of audits conducted on Nexus Mutual's smart contracts in order of newest to oldest. You can also review [Nexus Mutual's GitHub](https://github.com/NexusMutual/smart-contracts) where these reports are hosted.
 
+For each audit alongside the code it covered and the governance proposal that shipped it, see the [audit timeline](./audit-timeline.md).
+
+### iosiro audit | October 2025
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the RI cover changes, which allow cover to be backed by external reinsurance pools.
+* [Nexus Mutual RI Cover Changes Smart Contract Audit](https://iosiro.com/audits/nexus-mutual-ri-cover-changes-smart-contract-audit)
+
+### iosiro audit | August - October 2025
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the protocol upgrade, which reimplemented governance and claim assessment through the new Governor and Registry contracts.
+* [Nexus Mutual Protocol Upgrade Smart Contract Audit](https://iosiro.com/audits/nexus-mutual-protocol-upgrade-smart-contract-audit)
+
+### iosiro audit | September 2025
+
+[iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the RWI Vault contracts, which hold the Mutual's real-world investments.
+* [Nexus Mutual RWI Vault Smart Contract Audit](https://iosiro.com/audits/nexus-mutual-rwi-vault-smart-contract-audit)
+
 ### iosiro audit | March 2025
 
 [iosiro](https://iosiro.com/) was commissioned by Nexus Mutual to conduct an audit on the Cover Edit, Limit Orders and Staking Pool contracts. 
@@ -77,8 +94,8 @@ Below are a list of audits conducted on Nexus Mutual's smart contracts in order 
 
 The [G0 Group](https://github.com/g0-group) was commissioned by Nexus Mutual to conduct a smart contract audit on:
 * [The pooled staking contract](https://github.com/g0-group/Audits/blob/master/G0Group-NexusMutual2020Jun.pdf)
-* [The claim payout contract upgrade](https://nexusmutual.io/pages/G0Group-Nexus_CPU.pdf)
-* [The distributor contract](https://nexusmutual.io/pages/G0Group-NexusMutualDistributor.pdf)
+* [The claim payout contract upgrade](/audits/G0Group-Nexus_CPU.pdf)
+* [The distributor contract](/audits/G0Group-NexusMutualDistributor.pdf)
 
 ### Solidified audit | April 2019
 
