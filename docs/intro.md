@@ -13,5 +13,5 @@ Nexus Mutual is an onchain discretionary mutual. Members pool capital, buy cover
 - **[Claim assessment](/protocol/claims-assessment)** — how a claim is decided
 - **[Governance](/governance/)** — proposals, the Advisory Board, and the DAO
 - **[Developers](/developers/)** — contract reference, integration guides and diagrams
-- **[Real World Insurance Vault](/rwi-vault/)** — depositing, yield and risks
+- **[Real World Insurance Vault](/rwi-vault/)** — a separate product, with its own contracts and governance
 - **[Resources](/resources/)** — audits, FAQ and a glossary of the terms used here

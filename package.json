@@ -37,6 +37,7 @@
     "@docusaurus/plugin-client-redirects": "^3.10.2",
     "@docusaurus/types": "^3.10.2",
     "@nexusmutual/deployments": "^3.4.0",
+    "@nexusmutual/rwi-vault-deployments": "^1.1.0",
     "ethers": "^6.17.0"
   },
   "browserslist": {

@@ -50,7 +50,7 @@ The ERC-7540 vault contracts used for real-world investments, reviewed across an
 
 - **Reviewed by:** iosiro
 - **Report:** [Nexus Mutual RWI Vault Smart Contract Audit](https://iosiro.com/audits/nexus-mutual-rwi-vault-smart-contract-audit)
-- **Repository:** `NexusMutual/rwa-vault`
+- **Repository:** [`NexusMutual/rwi-vault`](https://github.com/NexusMutual/rwi-vault)
 
 ### Cover edits, limit orders and staking pool fix — March 2025
 

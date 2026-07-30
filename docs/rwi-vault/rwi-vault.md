@@ -6,6 +6,8 @@ sidebar_position: 7
 
 The Real World Insurance Vault (“RWI Vault”) allows sophisticated investors to earn yield on their USDC.
 
+The Vault is a separate product from the Nexus Mutual protocol. It has its own contracts, its own approval process for depositors, and its own [governance](governance.md). Cover, staking and claims are not involved, and NXM is not involved. The two are connected in the ways set out [below](#relationship-to-nexus-mutual).
+
 The Vault is deployed on Ethereum mainnet with infrastructure based on the ERC-7540 standard. The underlying returns are sourced by providing solvency capital and reserves off-chain to back regulated insurance policies.
 
 The [yield](yield-structure/yield-structure.md) earned by depositors consists of two components:
@@ -21,9 +23,13 @@ The Vault operations are managed by the Vault Operator (“VO”). The Vault Ope
 
 ## Relationship to Nexus Mutual
 
-The RWI Vault is owned and operated by the members of Nexus Mutual and ties in with the Mutual in several ways:
+The RWI Vault is owned by the members of Nexus Mutual and ties in with the Mutual in several ways, none of which put the Vault under the Mutual's governance:
 
 - Interaction with the Vault is available via the existing Nexus Mutual application
 - Nexus Mutual provides Cover to protect the fixed Baseline Yield of the RWI Vault
 - The Mutual participates in excess returns via a profit share mechanism
 - As the ultimate owner of the Vault’s legal entity, the Mutual benefits from the residual operating margin of the Vault Operator (VO) after meeting all obligations.
+
+## Contracts and audits
+
+The Vault contracts are documented in [Contracts](/rwi-vault/contracts/), and are covered by the [audit reports](/resources/audits-and-security).

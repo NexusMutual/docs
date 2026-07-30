@@ -110,15 +110,23 @@ const directChildren = dir => pages.filter(p => p.dir === dir).sort(byPosition);
 
 const hasPages = dir => pages.some(p => p.dir === dir || p.dir.startsWith(dir + path.sep));
 
+/** Where a category sits, resolved as Docusaurus does: _category_.json wins. */
+const positionFor = dir => {
+  const cat = path.join(dir, '_category_.json');
+  if (fs.existsSync(cat)) {
+    try {
+      const { position } = JSON.parse(fs.readFileSync(cat, 'utf8'));
+      if (position !== undefined) return Number(position);
+    } catch {}
+  }
+  return directChildren(dir).find(p => p.isIndex)?.position ?? 99;
+};
+
 const subdirs = dir => fs.readdirSync(dir, { withFileTypes: true })
   .filter(e => e.isDirectory() && visible(e))
   .map(e => path.join(dir, e.name))
   .filter(hasPages)
-  .sort((a, b) => {
-    const ai = directChildren(a).find(p => p.isIndex)?.position ?? 99;
-    const bi = directChildren(b).find(p => p.isIndex)?.position ?? 99;
-    return ai - bi || a.localeCompare(b);
-  });
+  .sort((a, b) => positionFor(a) - positionFor(b) || a.localeCompare(b));
 
 const out = [read(path.join(ROOT, 'scripts/llms-header.md')).trim(), ''];
 

@@ -12,7 +12,7 @@ Snapshots for bonus distribution are taken at the end of each calendar quarter. 
 
 ## Bonus Earning Rate
 
-The longer a depositor locks their LP tokens, the higher the proportion of bonuses that will be distributed to them. Illustrative table of ratios below for the specific durations available in the UI, but users can lock for any duration onchain.
+The longer a depositor locks their RWIV, the higher the proportion of bonuses that will be distributed to them. Illustrative table of ratios below for the specific durations available in the UI.
 
 | Lock Period | Multiplier |
 |------------|------------|
@@ -23,11 +23,15 @@ The longer a depositor locks their LP tokens, the higher the proportion of bonus
 
 The earning rate is capped at 8x. Longer lock durations than 720 days still earn the maximum rate.
 
+<!-- @check Locks.MIN_LOCK_PERIOD = 30 days -->
+<!-- @check Locks.MAX_LOCK_PERIOD = 732 days -->
+Onchain, any lock period between 30 and 732 days is accepted, and the earning rate follows the formula below rather than the table. A lock can be topped up or extended while it is running, but there is no early exit: the RWIV can be withdrawn back to the depositor's wallet once the period is over.
+
 ## Points Formula
 
 For each locking segment:
 
-<code>earning_rate = min(8, (t_unlock - t_lock) in days / 90) * LP_token_amount / 1000</code>
+<code>earning_rate = min(8, (t_unlock - t_lock) in days / 90) * RWIV_amount / 1000</code>
 
 If there are edits to a locking position:
 

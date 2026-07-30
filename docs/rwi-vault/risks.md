@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # Risks
@@ -20,6 +20,8 @@ Risks include:
 - Unexpected economic behaviour
 - Ethereum network congestion or prolonged downtime
 - Chain reorganisations or consensus failures
+
+The contracts are upgradeable. [Governance](governance.md) covers who can upgrade them, and what no role can do regardless of an upgrade.
 
 Although Nexus Mutual Baseline Yield Cover is designed to protect against technical and economic smart contract failures, such protection is subject to Nexus Mutual’s own risk profile.
 

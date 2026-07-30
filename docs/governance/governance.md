@@ -6,6 +6,8 @@ sidebar_position: 6
 
 Nexus Mutual is an onchain discretionary mutual governed by its members. The Mutual uses an optimistic governance model where the Advisory Board (AB) creates a proposal and sets the default outcome.
 
+This page covers the governance of the Mutual and its protocol. The [Real World Insurance Vault](/rwi-vault/) is a separate product and is [governed separately](/rwi-vault/governance).
+
 The AB creates a proposal in parallel on the [Nexus Mutual DAO Snapshot space](https://snapshot.box/#/s:community.nexusmutual.eth), where Nexus Mutual members can vote to reject the default outcome. If Nexus Mutual members vote and meet the quorum for rejection, the AB's default outcome is rejected and the proposal does not move forward.
 
 Where a proposal requires a change onchain, the Advisory Board enacts the outcome of the Snapshot vote through the `Governor` contract, exactly as members voted. See [Onchain execution](#onchain-execution) below.
