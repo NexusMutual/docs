@@ -24,12 +24,12 @@ Approved depositors can access the full range of Vault actions:
 
 ## Requirements
 
-Before you complete the membership process, be sure to read the Know-Your-Customer (KYC) and Sophisticated Investor requirements.
+Before you start the approval process, be sure to read the Know-Your-Customer (KYC) and Sophisticated Investor requirements.
 
 - **KYC / KYB / AML**: To interact with the Vault, you will need to verify your identity through the Know-Your-Customer / Know-your-Business / Anti-Money-Laundering process.
 - **Sophisticated Investor Requirement**: The Vault is not open to retail investors. Depending on the jurisdiction, you may be required to prove your status as a sophisticated investor with additional documentation.
 
-While the Ethereum address you use for your registered wallet address can be changed later on, it's strongly recommended that you use a hardware wallet to generate an address that will be used as your address for interacting with the Vault.
+While the Ethereum address you use for your registered wallet address can be changed later on, the change has to be signed by the currently registered wallet. It's strongly recommended that you use a hardware wallet to generate an address that will be used as your address for interacting with the Vault.
 
 ## Restricted Countries List
 

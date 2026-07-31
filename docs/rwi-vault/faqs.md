@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 9
 ---
 
 # FAQs
@@ -28,7 +28,9 @@ are restricted to approved depositors who have completed KYC/KYB and Sophisticat
 
 ## Why would I lock my RWIV?
 
-Locking RWIV tokens for longer periods better aligns the timelines of the depositors with the return emergence of the Vault Operator’s underlying investments. Depositors who lock their RWIV will be rewarded with points, with a higher earning rate for those locking for longer periods, up to a maximum lock duration of 2 years.
+Locking RWIV tokens for longer periods better aligns the timelines of the depositors with the return emergence of the Vault Operator’s underlying investments. Depositors who lock their RWIV will be rewarded with points, with a higher earning rate for those locking for longer periods, up to a maximum lock duration of 732 days.
+
+A lock can be topped up or extended while it is running, but it cannot be ended early, so locked RWIV cannot be withdrawn or sold until the period is over.
 
 Should the underlying insurance investments generate surplus returns exceeding the Baseline Yield and cost of Nexus Mutual Cover, then 60% of this excess will be distributed as USDC on a quarterly basis, in proportion to the points accumulated by individual depositors.
 

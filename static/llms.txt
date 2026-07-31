@@ -6,7 +6,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 
 ## Start here
 
-- [Getting Started](https://docs.nexusmutual.io/): This documentation provides everything you need to know about Nexus Mutual.
+- [Getting Started](https://docs.nexusmutual.io/): Nexus Mutual is an onchain discretionary mutual.
 
 ## Overview
 
@@ -126,6 +126,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 - [Depositing USDC](https://docs.nexusmutual.io/rwi-vault/depositing): Approved depositors may deposit USDC into the RWI Vault smart contract.
 - [Insurance Partners](https://docs.nexusmutual.io/rwi-vault/insurance-partners): The Vault Operator sources returns by depositing funds into offchain insurance opportunities, with a focus on short-tail lines — insurance business where the vast majority of claims are resolved within a relatively shorter timeframe after the policies themselves end.
 - [Withdrawals](https://docs.nexusmutual.io/rwi-vault/withdrawals): Withdrawals of RWIV into USDC are requested via the app by calling <code>requestRedeem()</code>.
+- [Governance](https://docs.nexusmutual.io/rwi-vault/governance): Who controls the RWI Vault, and what the contracts let each role do.
 - [Risks](https://docs.nexusmutual.io/rwi-vault/risks): The RWI Vault is exposed to risks from both Ethereum blockchain infrastructure and institutional insurance exposure.
 - [FAQs](https://docs.nexusmutual.io/rwi-vault/faqs): The Vault Operator generates returns by providing capital to carefully selected Insurance Partners.
 
@@ -142,3 +143,10 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 
 - [Bonuses](https://docs.nexusmutual.io/rwi-vault/yield-structure/bonuses/): RWIV tokens can be locked in the Vault smart contracts for a specified duration to earn points.
 - [Net Asset Value Calculation](https://docs.nexusmutual.io/rwi-vault/yield-structure/bonuses/nav-calculation): At the end of every quarter (31/03, 30/06, 30/09, 31/12), the VO calculates total Net Asset Value ("NAV").
+
+### Contracts
+
+- [Contracts](https://docs.nexusmutual.io/rwi-vault/contracts/): The contracts behind the Real World Insurance Vault, and what an integration can and cannot rely on.
+- [RWIVault](https://docs.nexusmutual.io/rwi-vault/contracts/RWIVault): The RWIVault contract takes USDC deposits from approved depositors and issues RWIV, whose redemption value grows at a fixed per-second rate.
+- [Locks](https://docs.nexusmutual.io/rwi-vault/contracts/Locks): The Locks contract holds RWIV that members have committed for a fixed period, and pays out the bonuses that commitment earns.
+- [RWIRegistry](https://docs.nexusmutual.io/rwi-vault/contracts/RWIRegistry): The RWIRegistry contract is the vault system's address book, member register and pause switch.

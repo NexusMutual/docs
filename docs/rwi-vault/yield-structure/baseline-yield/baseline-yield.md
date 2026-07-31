@@ -12,13 +12,14 @@ The Baseline Yield is protected by [Baseline Yield Cover](nexus-mutual-cover.md)
 
 The yield is set at a level driven by a margin above 2-year and 5-year US Treasury yields — the driving force behind mass market insurance product returns. The VO aims to target a return ~2-3% above the monthly averages of those rates but is also entitled to respond to other macro or Insurance Partner changes.
 
-The baseline yield can only be changed with a 90 day notice period by the VO by calling <code>proposeBaseApyChange()</code> onchain.
+<!-- @check RWIVault.MIN_RATE_PROPOSAL_TIME = 90 days -->
+The baseline yield can only be changed with a 90 day notice period. The VO proposes a new rate onchain with <code>proposeBaseRateChange()</code>, and it takes effect once the notice period has passed and <code>executeBaseRateChange()</code> is called.
 
 The current Baseline Yield can be found on the app.
 
 ## Accrual
 
-The Baseline Yield is applied to the value of the RWIV token programmatically, compounded per second. The value can be obtained by calling the <code>convertToShares()</code> function. Simplified calculation:
+The Baseline Yield is applied to the value of the RWIV token programmatically, compounded per second. The USDC value of an amount of RWIV can be obtained by calling the <code>convertToAssets()</code> function. Simplified calculation:
 
 <code>assetsPerShare = startAssetsPerShare * (1 + interestPerSecond) ^ secondsPassed</code>
 

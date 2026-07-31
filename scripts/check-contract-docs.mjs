@@ -3,8 +3,8 @@
  * Checks the contract reference docs against the deployed contracts.
  *
  * Three checks:
- *   1. every solidity function documented in docs/developers/contracts/*.md
- *      exists on the deployed ABI of the contract that page documents
+ *   1. every solidity function documented in a contract reference page exists
+ *      on the deployed ABI of the contract that page documents
  *   2. every page maps to a contract that is actually deployed
  *   3. every solidity constant quoted in those pages still holds the value
  *      the deployed contract returns
@@ -27,26 +27,35 @@ import { fileURLToPath } from 'node:url';
 import { ethers } from 'ethers';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const DOCS = path.join(ROOT, 'docs/developers/contracts');
 const ALL_DOCS = path.join(ROOT, 'docs');
 const RPC = process.env.ETH_RPC_URL || 'https://ethereum-rpc.publicnode.com';
 
-// doc file -> deployed contract name
+// doc file -> deployed contract name. Paths are relative to docs/, because the
+// RWI Vault is a separate product and its reference lives in its own section.
 const PAGES = {
-  'Assessments.md': 'Assessments',
-  'Claims.md': 'Claims',
-  'Cover.md': 'Cover',
-  'Pool.md': 'Pool',
-  'Ramm.md': 'Ramm',
-  'StakingPool.md': 'StakingPool',
-  'StakingPoolFactory.md': 'StakingPoolFactory',
-  'StakingProducts.md': 'StakingProducts',
-  'TokenController.md': 'TokenController',
+  'developers/contracts/Assessments.md': 'Assessments',
+  'developers/contracts/Claims.md': 'Claims',
+  'developers/contracts/Cover.md': 'Cover',
+  'developers/contracts/Pool.md': 'Pool',
+  'developers/contracts/Ramm.md': 'Ramm',
+  'developers/contracts/StakingPool.md': 'StakingPool',
+  'developers/contracts/StakingPoolFactory.md': 'StakingPoolFactory',
+  'developers/contracts/StakingProducts.md': 'StakingProducts',
+  'developers/contracts/TokenController.md': 'TokenController',
+  'rwi-vault/contracts/RWIVault.md': 'RWIVault',
+  'rwi-vault/contracts/Locks.md': 'Locks',
+  'rwi-vault/contracts/RWIRegistry.md': 'RWIRegistry',
 };
 
-const { addresses, abis } = await import('@nexusmutual/deployments');
+const core = await import('@nexusmutual/deployments');
+const vault = await import('@nexusmutual/rwi-vault-deployments');
 
-const read = file => fs.readFileSync(path.join(DOCS, file), 'utf8');
+// The RWI Vault ships from its own repo with its own deployments package, so
+// its contracts are merged in here. Annotations name a contract, not a package.
+const addresses = { ...core.addresses, ...vault.addresses };
+const abis = { ...core.abis, ...vault.abis };
+
+const read = file => fs.readFileSync(path.join(ALL_DOCS, file), 'utf8');
 
 const documentedFunctions = txt =>
   [...new Set([...txt.matchAll(/^\s*function\s+([A-Za-z0-9_]+)\s*\(/gm)].map(m => m[1]))];
@@ -65,6 +74,9 @@ const literal = raw => {
   if (days) return BigInt(days[1]) * 86400n;
   const hours = s.match(/^(\d+)\s*hours?$/);
   if (hours) return BigInt(hours[1]) * 3600n;
+  // The vault scales rates and its asset unit as powers of ten: 1e18, 1.5e18, 1e6.
+  const exponent = s.match(/^([\d.]+)e(\d+)$/);
+  if (exponent) return ethers.parseUnits(exponent[1], Number(exponent[2]));
   return null;
 };
 
@@ -96,7 +108,7 @@ const rows = [];
 // ---- checks 1 and 2 -------------------------------------------------------
 
 for (const [file, contract] of Object.entries(PAGES)) {
-  if (!fs.existsSync(path.join(DOCS, file))) {
+  if (!fs.existsSync(path.join(ALL_DOCS, file))) {
     problems.push(`${file}: page is missing`);
     continue;
   }
@@ -150,7 +162,7 @@ let verified = 0;
 console.log('\nConstants quoted in the reference:');
 
 for (const [file, pageContract] of Object.entries(PAGES)) {
-  if (!fs.existsSync(path.join(DOCS, file))) continue;
+  if (!fs.existsSync(path.join(ALL_DOCS, file))) continue;
 
   for (const c of documentedConstants(read(file))) {
     const expected = literal(c.raw);
@@ -357,7 +369,7 @@ if (fs.existsSync(WORDINGS)) {
   }
 }
 
-console.log(`\ndeployed contracts: ${Object.keys(addresses).length}   published ABIs: ${Object.keys(abis).length}   values verified: ${verified}`);
+console.log(`\ndeployed contracts: ${Object.keys(addresses).length} (${Object.keys(core.addresses).length} core, ${Object.keys(vault.addresses).length} vault)   published ABIs: ${Object.keys(abis).length}   values verified: ${verified}`);
 
 if (notes.length) {
   console.log('\nNot checked:');
