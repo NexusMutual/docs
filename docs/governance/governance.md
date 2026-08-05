@@ -15,7 +15,7 @@ Where a proposal requires a change onchain, the Advisory Board enacts the outcom
 ## The Advisory Board
 
 <!-- @check Registry.ADVISORY_BOARD_SEATS = 5 -->
-The Advisory Board (AB) puts forward governance proposals and recommends a default outcome. There are five (5) subject matter experts that sit on the AB, who bring expertise across three broad skill sets:
+The  Advisory Board, formally constituted as the Foundation Council of Terrapin International Foundation, was established to provide the DAO with its legal and operational structure. The Advisory Board (AB) puts forward governance proposals and recommends a default outcome. There are five (5) subject matter experts that sit on the AB, who bring expertise across three broad skill sets:
 * Technical expertise: smart contract security and blockchain
 * Technical expertise: insurance and mutuals
 * General expertise: legal, regulatory, corporate governance, and business management
