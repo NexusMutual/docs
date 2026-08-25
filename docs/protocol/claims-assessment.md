@@ -81,6 +81,22 @@ If the Claims Committee members review the details and proof of loss you provide
 
 If your claim is denied, you will be able to appeal the decision and file another claim with more supporting evidence and information on why your claim is valid and should be accepted.
 
+## How claim assessment has changed
+
+Nexus Mutual's claim assessment process has changed twice since the protocol launched in 2019. Many older articles, explainers, and repositories describe the earlier versions. This section maps each version to its dates, so you can tell current information from historical information.
+
+### Who votes on claims?
+
+The Claims Committee votes on claims today. Each of the three assessors casts one vote. At least 2 of 3 accept votes approve a claim. From 2019 to March 2023 (protocol V1), any member could stake NXM as a Claims Assessor and vote on claims, subject to a 70% consensus threshold. From March 2023 to November 2025 (protocol V2), members staked NXM in the Assessment contract and a stake-weighted majority decided claims. The Claims Committee replaced member staking in November 2025.
+
+### What do I need to submit a claim?
+
+You submit a claim with an ETH assessment deposit. See the [Claims contract reference](/developers/contracts/Claims) for how the deposit works. Under V1, buying cover locked 10% of the cover price in NXM as a cover note, and the cover note served as the claim submission deposit. The ETH deposit replaced cover notes in March 2023.
+
+### What happened to the 70% consensus threshold and the 36-hour voting window?
+
+Those were V1 rules, retired in March 2023. Today, voting stays open for at least 72 hours, and at least 2 of the 3 Claims Committee assessors must vote accept.
+
 ## Claims History
 
 Nexus Mutual's Claim Assessment process has been battle-tested since 2019 when the protocol first launched. Since then, the Mutual has paid out millions of dollars worth of claims to members who purchased cover and subsequently suffered a loss.
