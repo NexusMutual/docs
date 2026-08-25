@@ -20,6 +20,9 @@ The members who raise governance proposals, perform technical upgrades when gran
 **Claims Committee**
 The members who assess claims. They review the evidence, discuss the claim against the cover wording, and vote to accept or deny it, recording their reasoning. See [Claim assessment](/protocol/claims-assessment).
 
+**Designated Claim Assessor**
+An assessor named in a cover product's wording, used for that product's claims instead of the Claims Committee. See [Claim assessment](/protocol/claims-assessment#expert-led-claim-assessment).
+
 **Voting power**
 A member's weight in a vote: their NXM balance plus one, capped at a share of total supply. Staking pool managers also vote with the NXM delegated to their pools.
 
@@ -45,6 +48,10 @@ How long a cover runs, chosen when it is bought, within the minimum and maximum 
 
 **Grace period**
 A window after a cover expires during which a claim can still be filed for a loss that happened while the cover was active.
+
+**Claim deposit**
+<!-- @check Claims.CLAIM_DEPOSIT_IN_ETH = 0.05 ether -->
+The 0.05 ETH paid when a claim is submitted. An accepted or drawn claim returns it. A denied claim forfeits it to the pool. See [File a claim](/using/file-a-claim#the-deposit).
 
 **Deductible**
 An amount of loss a cover holder bears before a claim can be made. Used where small losses are expected in normal operation, such as validator penalties.

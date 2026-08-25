@@ -51,6 +51,8 @@ Confirm all of the information is correct before proceeding to file your claim. 
 
 Nexus Mutual's Claims Committee is responsible for assessing the validity of any claims submitted. There may be cover products with a Designated Claim Assessor that is separate from the Claims Committee; however, the Claims Committee will handle the majority of the claims submitted.
 
+Each product type maps to one assessor group. The Claims Committee is the group most products use. Where a Designated Claim Assessor applies instead, the cover wording names that assessor.
+
 The Claims Committee is made up of publicly known experts with an established record of assessing claims within the Mutual. Currently, Nexus Mutual's Claims Committee has three members:
 * **Hugh Karp, Advisory Board Member**. Hugh is Nexus Mutual's founder and brings a wealth of traditional insurance expertise along with half a decade of onchain risk expertise to the Claims Committee.
 * **Roxana Danila, Advisory Board Member**. Roxana is Nexus Mutual's CTO and brings engineering and onchain analysis expertise to the Claims Committee.

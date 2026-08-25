@@ -46,6 +46,8 @@ struct Assessment {
 | `acceptVotes`      | Number of votes to accept the claim.                          |
 | `denyVotes`        | Number of votes to deny the claim.                            |
 
+The cooldown period comes from the product type's `assessmentCooldownPeriod` setting, read when the assessment starts. Every product type uses 24 hours for the cooldown period today, verified onchain 26 August 2026.
+
 Each assessor holds one vote. The voting period defaults to three days. Anyone can close voting early once every assessor in the group has voted, and the Governor can extend voting with a fresh three-day window.
 
 ### Ballot

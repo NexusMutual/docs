@@ -43,6 +43,8 @@ struct Claim {
 | `payoutRedeemed`         | Whether the payout has been redeemed.                   |
 | `depositRetrieved`       | Whether the assessment deposit has been retrieved.      |
 
+The redemption period comes from the product type's `payoutRedemptionPeriod` setting, read when the claim is submitted. Every product type uses 30 days for the redemption period today, verified onchain 26 August 2026.
+
 ### Assessment Deposit
 
 Submitting a claim requires an ETH deposit:

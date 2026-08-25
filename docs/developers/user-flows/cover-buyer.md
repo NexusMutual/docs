@@ -279,13 +279,14 @@ CoverViewer.getCovers(coverIds);
 Claims.submitClaim(uint coverId);
 ```
 
-- **Claim Payout:** **100% of the cover amount.** No deductibles.
+- **Claim Payout:** The payout equals the requested amount, up to the cover amount. Terms depend on the cover wording for the product.
 
 #### Claim Review Process
 
 - Claims are **reviewed by claim assessors** who evaluate validity based on cover conditions.
-- **Review Duration:** Typically 7 days, but can vary depending on complexity.
-- If a claim is **approved**, payout = **100% of cover amount** (no deductibles).
+<!-- @check Assessments.minVotingPeriod = 3 days -->
+- **Review Duration:** A 72-hour voting window, which closes early once every assessor votes, followed by the product type's cooldown period (24 hours for every product type today). See [Claim Assessment](/protocol/claims-assessment) for the full process.
+- If a claim is **approved**, the payout equals the requested amount, up to the cover amount, per the cover wording.
 - If a claim is **rejected**, the **claim deposit is lost**.
 - Appeal Process:
   - If rejected, claimants **cannot appeal** directly, but can **resubmit** a claim with additional evidence.
@@ -319,8 +320,8 @@ bool isMember = Registry.checkRole(memberAddress, uint8(Role.Member));
 
 ### How much is the claim payout?
 
-- **100% of the cover amount.**
-- **No deductibles.**
+- The payout equals the requested amount, up to the cover amount.
+- Terms depend on the cover wording for the product you purchased.
 
 ---
 
@@ -343,7 +344,7 @@ uint32 gracePeriod = CoverProducts.getProductType(productType).gracePeriod;
 ### What happens if my claim is rejected?
 
 - **You lose the claim deposit.**
-- It is distributed to claim assessors as rewards.
+- It is forfeited to the pool that backs cover payouts.
 
 ---
 
