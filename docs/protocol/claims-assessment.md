@@ -61,7 +61,7 @@ These risk experts will review the incident details and proof of loss provided b
 Once you submit your claim, the Claims Committee will be alerted and begin their review.
 
 <!-- @check Assessments.minVotingPeriod = 3 days -->
-Any claim that is submitted will be open for voting for at least 72 hours. During that 72 hours, the Claims Committee will review the details provided, discuss the validity of your claim, and cast their votes. Each Assessor casts one vote, and a claim is accepted when accept votes outnumber deny votes: 2 of the 3 Claims Committee Assessors.
+Any claim that is submitted will be open for voting for at least 72 hours. During that 72 hours, the Claims Committee will review the details provided, discuss the validity of your claim, and cast their votes. Each Assessor casts one vote, and a majority of accept votes approves a claim: 2 of the 3 Claims Committee Assessors.
 
 Once the Claims Committee has cast their votes and the 72-hour period ends, voting on the claim will close.
 
@@ -98,7 +98,7 @@ You submit a claim with a 0.05 ETH claim deposit. See the [Claims contract refer
 ### What happened to the 70% consensus threshold and the 36-hour voting window?
 
 <!-- @check Assessments.minVotingPeriod = 3 days -->
-Those were V1 rules, retired in March 2023. Today, voting stays open for at least 72 hours. A majority of the three Claims Committee assessors must vote accept.
+Those were V1 rules, retired in March 2023. Today, voting stays open for at least 72 hours. A majority of accept votes approves a claim: 2 of the 3 Claims Committee assessors.
 
 ## Claims History
 
