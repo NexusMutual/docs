@@ -40,7 +40,8 @@ You review everything before it goes onchain.
 
 ## What happens next
 
-The Claims Committee reviews the claim and votes. Voting stays open for **at least 72 hours**, and assessors record the reasoning behind their vote, which you can read once voting closes.
+<!-- @check Assessments.minVotingPeriod = 3 days -->
+The Claims Committee reviews the claim and votes. Voting runs in a **72-hour window**, and assessors record the reasoning behind their vote, which you can read once voting closes.
 
 A **24-hour cooldown** follows, during which the Advisory Board can act if a vote was fraudulent.
 

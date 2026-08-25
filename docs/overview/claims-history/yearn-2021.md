@@ -7,7 +7,7 @@ sidebar_position: 2
 A total of $2,317,776.72 was paid out to Yearn Finance Smart Contract Cover holders. Smart Contract Cover has since been deprecated and replaced by Protocol Cover, an updated cover product that protects against more risks in DeFi.
 
 ## Overview
-After this exploit occurred, claim assessors [discussed this loss event](https://discord.com/channels/496296560624140298/689385874265342056/807263979192713217) in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participated in claims assessment, [the V1 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed), and review the validity of claims submitted after a loss event occurs.
+After this exploit occurred, claim assessors [discussed this loss event](https://discord.com/channels/496296560624140298/689385874265342056/807263979192713217) in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members reviewed the validity of the claims submitted after this loss event under [the V1 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed).
 
 Members reviewed the information available after the hack occurred and the consensus was that this was a covered event, as it met the conditions outlined in the existing cover wording at the time of the hack.
 

@@ -10,7 +10,7 @@ There is a full post-mortem of this loss event and the claim payouts in the [Pay
 A total of $397,087.31 was paid out to members including the Claim V1 #102 payout from the DAO treasury.
 
 ### Overview
-After this exploit occurred, claim assessors discussed this loss event in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participated in claims assessment, [the V1 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed), and review the validity of claims submitted after a loss event occurs.
+After this exploit occurred, claim assessors discussed this loss event in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members reviewed the validity of the claims submitted after this loss event under [the V1 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed).
 
 Members reviewed the information available in the days after the exploit, while CREAM V1 Protocol Cover holders waited for the 72-hour cool-down period to pass before submitting claims. Claim assessors discussed the event and determined the CREAM V1 economic exploit was covered under sections 1.2 and 1.3 of the Protocol Cover wording.
 

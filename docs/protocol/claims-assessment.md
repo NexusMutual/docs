@@ -7,7 +7,9 @@ description: The Claims Committee, three publicly known assessors, reviews and v
 
 <!-- @check Assessments.minVotingPeriod = 3 days -->
 <!-- @check Claims.CLAIM_DEPOSIT_IN_ETH = 0.05 ether -->
-Nexus Mutual pays claims through an expert-led assessment process. You submit a claim in the Nexus Mutual app, together with a 0.05 ETH claim deposit. The Claims Committee, three publicly known assessors, reviews your evidence and votes on your claim. Some cover products name a Designated Claim Assessor instead. Voting stays open for at least 72 hours. Each assessor casts one vote, and a majority of accept votes approves your claim: 2 of the 3 Committee assessors. After a 24-hour cool-down period, you can redeem an accepted payout for 30 days. Expert assessors have decided every claim since November 2025.
+Nexus Mutual pays claims through an expert-led assessment process. You submit a claim in the Nexus Mutual app, together with a 0.05 ETH claim deposit. The Claims Committee, three publicly known assessors, reviews your evidence and votes on your claim. Some cover products name a Designated Claim Assessor instead. Voting runs in a 72-hour window, and it closes early once all assessors have voted. Each assessor casts one vote, and a majority of accept votes approves your claim: 2 of the 3 Committee assessors. After a 24-hour cool-down period, you can redeem an accepted payout for 30 days. Expert assessors have decided every claim since November 2025.
+
+*Last reviewed: August 2026.*
 
 This page describes each step of the Claim Assessment process in detail.
 
@@ -61,9 +63,9 @@ These risk experts will review the incident details and proof of loss provided b
 Once you submit your claim, the Claims Committee will be alerted and begin their review.
 
 <!-- @check Assessments.minVotingPeriod = 3 days -->
-Any claim that is submitted will be open for voting for at least 72 hours. During that 72 hours, the Claims Committee will review the details provided, discuss the validity of your claim, and cast their votes. Each Assessor casts one vote, and a claim is accepted when accept votes outnumber deny votes: 2 of the 3 Claims Committee Assessors.
+Any claim that is submitted opens a 72-hour voting window. During that window, the Claims Committee reviews the details provided, discusses the validity of your claim, and casts their votes. Each Assessor casts one vote, and a majority of accept votes approves a claim: 2 of the 3 Claims Committee Assessors. Once every assessor has voted, voting can close early. Governance can extend voting with a fresh 72-hour window.
 
-Once the Claims Committee has cast their votes and the 72-hour period ends, voting on the claim will close.
+Voting on the claim closes when the window ends.
 
 **Note**: The Claims Committee members are required to provide the rationale behind their decision to accept or deny a claim when they cast their vote. Claimants will be able to review this information after the voting period ends for a claim submission.
 
@@ -98,7 +100,7 @@ You submit a claim with a 0.05 ETH claim deposit. See the [Claims contract refer
 ### What happened to the 70% consensus threshold and the 36-hour voting window?
 
 <!-- @check Assessments.minVotingPeriod = 3 days -->
-Those were V1 rules, retired in March 2023. Today, voting stays open for at least 72 hours. A majority of the three Claims Committee assessors must vote accept.
+Those were V1 rules, retired in March 2023. Today, a claim opens a 72-hour voting window. A majority of accept votes approves a claim: 2 of the 3 Claims Committee assessors.
 
 ## Claims History
 
