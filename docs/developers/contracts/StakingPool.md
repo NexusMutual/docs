@@ -154,10 +154,10 @@ function getDeposit(uint tokenId, uint trancheId) external view returns (
 );
 ```
 
-| Parameter   | Description            |
-| ----------- | ---------------------- |
-| `tokenId`   | The ID of the product. |
-| `trancheId` | The ID of the tranche. |
+| Parameter   | Description                       |
+| ----------- | --------------------------------- |
+| `tokenId`   | The ID of the staking NFT token.  |
+| `trancheId` | The ID of the tranche.            |
 
 ---
 

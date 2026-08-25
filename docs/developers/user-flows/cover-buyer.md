@@ -52,19 +52,14 @@ Cover pricing follows a **dynamic adjustment mechanism**:
 
 #### Price Bump
 
-- **When utilization increases**, the **cover price increases** per purchase.
-- **Bump Rate:** The price **increases by 2% per purchase**, **compounded** on the previous price.
+<!-- @check StakingProducts.PRICE_BUMP_RATIO = 500 -->
+- **Bump Rate:** A purchase adds 0.05% to the spot price for every 1% of pool capacity the purchase uses.
 
 #### Price Decay
 
-- If **no new purchases occur**, the price **decays daily** back toward the target price.
-- **Decay Rate:** Price reduces by **0.1% per day**, applied as:
-
-  $$
-  \text{New Price} = \text{Current Price} \times 0.999
-  $$
-
-- **Lower Limit:** Price **cannot go below the product's initial price ratio**.
+<!-- @check StakingProducts.PRICE_CHANGE_PER_DAY = 200 -->
+- **Decay Rate:** The price subtracts 2% per day since the last price update, moving the price toward the target price.
+- **Floor:** The price floors at the product's minimum price (`minPrice`).
 
 To check the **minimum price** of a product:
 

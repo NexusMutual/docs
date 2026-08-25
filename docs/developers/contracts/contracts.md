@@ -93,19 +93,18 @@ The `StakingProducts` contract manages cover products and their integration into
 
 ## Token Controller
 
-The `TokenController` contract is the **core token manager** within the protocol, governing **NXM minting, burning, and transfers**. It is **not meant to be directly integrated by users** but rather serves as an internal controller for **Governance, Staking Pools, and Assessment**.
+The `TokenController` contract is the **core token manager** within the protocol, governing **NXM minting, burning, and transfers**. It is **not meant to be directly integrated by users** but rather serves as an internal controller for **Governor, Registry, Cover, Ramm, StakingProducts, and StakingPool**.
 
 This contract enables:
 
 - **Minting and burning NXM** for staking, rewards, and governance.
 - **Managing staking pool deposits and withdrawals** to regulate staked NXM.
-- **Facilitating governance and assessment rewards** by distributing NXM.
 - **Operator-controlled transfers** for protocol-authorized token movements.
 
 **Designed for Internal Use Only**
 
 - 🚫 TokenController is NOT meant for direct integration by users or external contracts.
-- ✅ Only protocol-approved contracts (e.g., Governor, StakingPool, Assessments, Pool) can interact with it.
+- ✅ Only protocol-approved contracts (Governor, Registry, Cover, Ramm, StakingProducts, StakingPool) can interact with it.
 - ✅ Functions are restricted using access control mechanisms such as onlyContracts and onlyGovernor.
 
 This design ensures that all NXM token movements remain securely controlled within the protocol.
