@@ -15,7 +15,7 @@ During this time, members documented their losses and prepared for claims filing
 After 90 days passed, withdrawals were still halted on Hodlnaut. On Monday, 7 November 2022, members began filing claims for the Hodlnaut loss event. As claims were filed, members staked NXM to participate in claims assessment, [the V1 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed). Claims assessors discussed claims in the Nexus Mutual Discord and kept track of eligible covers in the [Hodlnaut Claims Tracker](https://docs.google.com/spreadsheets/d/1Yy7wasUHlAW8TSiu6GoqoN3ZEFdvWMYXDO-5x93BVKQ/edit?usp=sharing), which is displayed below.
 
 ### Filed claims and outcomes
-Twenty-one (21) claims were filed, and those claims were reviewed and voted on by claim assessors. Since this loss event met the terms outlined in Section 1.2 of the Custody Cover wording, claim assessors reviewed the validity of the claims to determine:
+Twenty-two (22) claims were filed, and those claims were reviewed and voted on by claim assessors. Claim assessors approved nineteen (19) and denied three (3). Since this loss event met the terms outlined in Section 1.2 of the Custody Cover wording, claim assessors reviewed the validity of the claims to determine:
 * Was the member's Hodlnaut Custody Cover active at the time withdrawals were first halted?
 * Did the member provide off-chain proof of loss with their claim?
 

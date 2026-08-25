@@ -11,7 +11,7 @@ There are five foundations that define how members share risk with one another. 
 1. **Cover fees**. All cover fees are paid into the Capital Pool in full. Cover can be purchased in either ETH, USDC or cbBTC terms, with the ETH, USDC or cbBTC flowing directly into the pool.
 2. **Claims**. All claims are paid from the Capital Pool in either ETH, USDC or cbBTC terms, as per the covers purchased. To review past claims, review the [Claims History](/overview/claims-history/) section.
 3. **Buy NXM**. Members can contribute ETH directly to the Mutual to mint NXM. Members can contribute ETH at any time, and any ETH contributed flows into the Capital Pool.
-4. **Sell NXM**. Members can redeem NXM for ETH directly from the Mutual, but only when the minimum capital requirement ratio (MCR%) is above 100%.
+4. **Sell NXM**. Before the November 2023 tokenomics upgrade, members could redeem NXM for ETH directly from the Mutual only when the MCR% was above 100%. The [Ratcheting AMM](/protocol/nxm-token/token-model) sets the current mechanism.
 5. **Investment Earnings**. Members discuss, propose, and vote on Capital Pool investment allocations, which generate a return for the Mutual. This is also called earning money on the "float" in traditional terms. All the investment earnings accumulate in the Capital Pool. The Nexus Mutual protocol holds ETH, USDC and cbBTC in the Capital Pool, and members have allocated some capital to investment strategies.
 
 For a detailed breakdown of Nexus Mutual's Capital Pool assets, see the [Capital Pool and Ownership Dune Dashboard](https://dune.com/nexus_mutual/capital-pool-and-ownership) created by the R&D and Marketing DAO teams.

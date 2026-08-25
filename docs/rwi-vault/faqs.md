@@ -58,6 +58,8 @@ The Baseline Yield Cover provided by Nexus Mutual pays out to the Vault Operator
 
 If the Vault’s [Net Asset Value](/rwi-vault/yield-structure/bonuses/nav-calculation) is negative at the end of a quarter, the cover will make up the difference.
 
+The Baseline Yield Cover pays through Nexus Mutual's [claims assessment](/protocol/claims-assessment) process. The VO submits a claim with a claim deposit, then a voting window opens, followed by a cooldown period and a redemption window. The assessors decide the claim, and payment follows an accepted vote. This settlement lag sits inside the quarterly top-up timeline.
+
 ## Is the Baseline Yield fixed forever?
 
 No. The Baseline Yield can be changed onchain by the Vault Operator with a 90-day delay from submitting the change.

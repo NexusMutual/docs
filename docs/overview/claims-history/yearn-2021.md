@@ -14,7 +14,7 @@ Members reviewed the information available after the hack occurred and the conse
 The Yearn development team worked with the Mutual to provide members with a [complete list of affected addresses](https://github.com/NexusMutual/incidents/tree/master/2021-02-04-ydai-v1) for claim assessors to refer to when checking the proof of loss requirement during the claims voting process.
 
 ### Filed claims and outcomes
-A total of eighteen (18) claims were filed, and those claims were reviewed and voted on by claim assessors. As stated in the section above, claim assessors had determined this was a covered event. Once it has been determined that an event is covered, claim assessors review the validity of claims to determine:
+A total of nineteen (19) claims were filed, and those claims were reviewed and voted on by claim assessors. Claim assessors approved fifteen (15) and denied four (4). As stated in the section above, claim assessors had determined this was a covered event. Once it has been determined that an event is covered, claim assessors review the validity of claims to determine:
 * Did the member have active cover at the time of the exploit?
 * Did the member have a cover with an ID lower than lower than #2291?
   * The proof of loss requirement was implemented for cover IDs higher than #2291. Any cover IDs lower than #2291 were not subject to the proof of loss requirement.

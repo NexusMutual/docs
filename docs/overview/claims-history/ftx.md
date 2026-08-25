@@ -18,7 +18,7 @@ After 90 days passed, withdrawals were still halted on FTX. On Monday, 6 Februar
 
 ## Filed claims and outcomes
 
-Twenty-four (24) claims were filed, and those claims were reviewed and voted on by claim assessors. Since this loss event met the terms outlined in Section 1.2 of the Custody Cover wording, claim assessors reviewed the validity of the claims to determine:
+Twenty-seven (27) claims were filed, and those claims were reviewed and voted on by claim assessors. Claim assessors approved twenty-four (24) and denied three (3). These claims cross the March 2023 protocol upgrade, so the filed and approved lists include both V1- and V2-numbered claims. Since this loss event met the terms outlined in Section 1.2 of the Custody Cover wording, claim assessors reviewed the validity of the claims to determine:
 
 * Was the member's FTX Custody Cover active at the time withdrawals were first halted?
 * Did the member provide off-chain proof of loss with their claim?

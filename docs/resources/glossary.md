@@ -51,7 +51,7 @@ A window after a cover expires during which a claim can still be filed for a los
 
 **Claim deposit**
 <!-- @check Claims.CLAIM_DEPOSIT_IN_ETH = 0.05 ether -->
-The 0.05 ETH paid when a claim is submitted. An accepted or drawn claim returns it. A denied claim forfeits it to the pool. See [File a claim](/using/file-a-claim#the-deposit).
+The 0.05 ETH paid when a claim is submitted. An accepted claim refunds the deposit with the payout. A drawn claim lets you retrieve the deposit. A denied claim forfeits it to the pool. See [File a claim](/using/file-a-claim#the-deposit).
 
 **Deductible**
 An amount of loss a cover holder bears before a claim can be made. Used where small losses are expected in normal operation, such as validator penalties.

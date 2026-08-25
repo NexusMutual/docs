@@ -66,7 +66,7 @@ For most of Nexus Mutual's cover products, you will provide the wallet address(e
 
 If you suffer a loss of funds and need to file a claim, you will provide the necessary information at that time. This information differs for each [cover product](/overview/cover-products/).
 
-## What is upfront proof of loss?
+### What is upfront proof of loss?
 
 For several of Nexus Mutual's cover products, you will need to provide some information in the **Extra Cover Info** section on the Buy Cover page.
 

@@ -132,7 +132,7 @@ Common **asset IDs**:
 | NXM   | 255 |
 | ETH   | 0   |
 | USDC  | 6   |
-| cBTC  | 7   |
+| cbBTC | 7   |
 
 ---
 

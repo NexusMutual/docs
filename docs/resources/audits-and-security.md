@@ -8,7 +8,7 @@ Review Nexus Mutual's audits, bug bounties, and initiatives to strengthen our pr
 
 ## Audits
 
-Every security review of the Nexus Mutual smart contracts, newest first, with the code that was reviewed, the report, and the governance proposal that put the audited code on Ethereum mainnet. You can also review [Nexus Mutual's GitHub](https://github.com/NexusMutual/smart-contracts), where these reports are hosted.
+Every security review of the Nexus Mutual smart contracts, with the code that was reviewed, the report, and the governance proposal that put the audited code on Ethereum mainnet. You can also review [Nexus Mutual's GitHub](https://github.com/NexusMutual/smart-contracts), where these reports are hosted.
 
 ### Asset oracle update — April 2026
 

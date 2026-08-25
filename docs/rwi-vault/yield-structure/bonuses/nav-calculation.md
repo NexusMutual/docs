@@ -34,6 +34,8 @@ If NAV is **positive**, bonuses are distributed:
 
 If NAV is **negative**, the VO submits a claim via Nexus Mutual Baseline Yield Cover
 
+The Baseline Yield Cover pays through Nexus Mutual's [claims assessment](/protocol/claims-assessment) process. The VO submits a claim with a claim deposit, then a voting window opens, followed by a cooldown period and a redemption window. The assessors decide the claim, and payment follows an accepted vote. This settlement lag sits inside the quarterly top-up timeline.
+
 Note that there may be some retrospective revisions to the NAV calculations based on updated/audited results from Insurance Partners. Any impacts of those will flow through to the NAV calculations of the upcoming quarters and we do not expect to retrospectively change outcomes of previous quarters once declared.
 
 ## Individual Components (where not self-explanatory)

@@ -18,6 +18,16 @@ A request that hasn’t been filled can be cancelled, and the RWIV is returned t
 
 Note that the typical timeline for releasing loss reserves from the insurance business backed by the RWI Vault is approximately 18-24 months. We strongly encourage depositors to have this timeframe in mind when depositing into the RWI Vault.
 
+## Timeline Ladder
+
+| Liquidity situation | Typical wait |
+| --- | --- |
+| Liquid reserves cover the request | A few days |
+| The VO runs a normal unwind of the underlying investments | Around 90 days |
+| Reserves stay tied to active insurance policies until they expire | A year or longer |
+
+Most requests fall in the middle row. The VO fills available liquidity first, then completes the rest once the unwind finishes.
+
 ## Secondary Market
 
 RWIV tokens are fungible, freely tradeable and can be used in wider DeFi applications.
