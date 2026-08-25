@@ -10,7 +10,7 @@ This page covers the governance of the Mutual and its protocol. The [Real World 
 
 The AB creates a proposal in parallel on the [Nexus Mutual DAO Snapshot space](https://snapshot.box/#/s:community.nexusmutual.eth), where Nexus Mutual members can vote to reject the default outcome. If Nexus Mutual members vote and meet the quorum for rejection, the AB's default outcome is rejected and the proposal does not move forward.
 
-Where a proposal requires a change onchain, the Advisory Board enacts the outcome of the Snapshot vote through the `Governor` contract, exactly as members voted. See [Onchain execution](#onchain-execution) below.
+Where a proposal requires a change onchain, the Advisory Board raises an AB proposal on the `Governor` contract and enacts the Snapshot outcome exactly as members voted. Member proposals on the `Governor` contract cover one case, AB-seat swaps, and are voted onchain directly. See [Onchain execution](#onchain-execution) below.
 
 ## The Advisory Board
 

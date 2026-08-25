@@ -102,17 +102,17 @@ struct RiConfig {
 }
 ```
 
-| Parameter             | Description                                             |
-| ---------------------- | -------------------------------------------------------- |
-| `providerId`           | The ID of the reinsurance provider.                       |
-| `amount`               | The reinsured amount.                                     |
-| `premium`              | The premium the reinsurance provider charges.              |
-| `signature`            | The reinsurance provider's signature over the request.    |
-| `data`                 | Provider-specific data attached to the request.            |
-| `dataFormat`           | The format version of `data`.                              |
-| `deadline`             | The timestamp after which the signature expires.           |
-| `nextNonce`            | The next nonce the provider's signature must use.          |
-| `premiumDestination`   | The address that receives the reinsurance premium.         |
+| Parameter            | Description                                             |
+| -------------------- | -------------------------------------------------------- |
+| `providerId`         | The ID of the reinsurance provider.                       |
+| `amount`             | The reinsured amount.                                     |
+| `premium`            | The premium the reinsurance provider charges.              |
+| `signature`          | The reinsurance provider's signature over the request.     |
+| `data`               | Provider-specific data attached to the request.            |
+| `dataFormat`         | The format version of `data`.                              |
+| `deadline`           | The timestamp after which the signature expires.           |
+| `nextNonce`          | The next nonce the provider's signature must use.          |
+| `premiumDestination` | The address that receives the reinsurance premium.        |
 
 ### Active Cover and Expiration Buckets
 
