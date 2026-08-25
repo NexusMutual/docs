@@ -8,7 +8,7 @@ sidebar_position: 5
 A total of $377,147.19 was paid out for Claim V1 #118 and Claim V1 #119.
 
 ## Overview
-After this exploit occurred, claim assessors [discussed this loss event](https://discordapp.com/channels/496296560624140298/689385874265342056/980881247368806470) in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
+After this exploit occurred, claim assessors [discussed this loss event](https://discordapp.com/channels/496296560624140298/689385874265342056/980881247368806470) in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participated in claims assessment, [the V1 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed), and review the validity of claims submitted after a loss event occurs.
 
 Claim assessors discussed the event and determined the Perpetual Protocol v1 economic design failure event was covered under section 1.2 of the [Protocol Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4c4cca088730ac54ccc_ProtocolCoverv1.0.pdf).
 

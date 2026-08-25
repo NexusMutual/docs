@@ -45,7 +45,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 - [Cover](https://docs.nexusmutual.io/protocol/cover): Members can buy cover products to protect against any of the supported risks.
 - [Pricing](https://docs.nexusmutual.io/protocol/pricing): The protocol uses two approaches to pricing:  Dynamic pricing for public listings with variable pricing  Fixed pricing for select public listings and private listings with a defined minimum price set by the Advisory Board to prevent a race to the bottom scenario
 - [Capacity](https://docs.nexusmutual.io/protocol/capacity): Staking pool managers allocate staked NXM to individual listings to create available capacity, which is the amount of cover that can be sold over a given period of time for a given listing.
-- [Claim Assessment](https://docs.nexusmutual.io/protocol/claims-assessment): Nexus Mutual pays claims through an expert-led assessment process.
+- [Claim Assessment](https://docs.nexusmutual.io/protocol/claims-assessment): The Claims Committee, three publicly known assessors, reviews and votes on claims. Expert-led assessment replaced member NXM staking in November 2025.
 
 ### NXM Token
 
