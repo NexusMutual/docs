@@ -68,6 +68,19 @@ async function createConfigAsync() {
       [
         '@docusaurus/plugin-client-redirects',
         {
+          // The V2 contract pages were replaced when the contracts were
+          // rewritten. Redirect the old URLs, which search engines still
+          // index, to their successors.
+          redirects: [
+            {
+              from: '/developers/contracts/Assessment',
+              to: '/developers/contracts/Assessments',
+            },
+            {
+              from: '/developers/contracts/IndividualClaims',
+              to: '/developers/contracts/Claims',
+            },
+          ],
           // The developer directories were renamed to remove spaces, which
           // had been reaching production as %20 in the URL. Keep the old
           // paths working for anything already linking to them.
