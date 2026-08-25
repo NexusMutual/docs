@@ -16,7 +16,7 @@ Members who lack the technical expertise or the time to assess risk and manage N
 
 ### Delegating staked NXM
 
-When someone chooses to stake and delegate their NXM, they delegate both capital and voting power. Staking pool managers can use the delegated NXM stakes to allocate against cover products within the pool and use the pool’s voting power to participate in onchain governance. However, delegated NXM stakes cannot be used in the [Claims Assessment](/protocol/claims-assessment) process.
+When someone chooses to stake and delegate their NXM, they delegate both capital and voting power. Staking pool managers can use the delegated NXM stakes to allocate against cover products within the pool and use the pool’s voting power to participate in onchain governance. Delegated NXM stakes serve underwriting capacity and onchain governance only. [Claim assessment](/protocol/claims-assessment) sits with the Claims Committee, separate from staking.
 
 NXM stakers do not control how their NXM is allocated within a staking pool, though they can review staking pools to see which cover products are included in the pool, the staking pool manager’s record of past NXM burns, and the staking pool’s current APY.
 

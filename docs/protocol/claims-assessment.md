@@ -75,7 +75,7 @@ Once voting on a claim has closed, there is a 24-hour cool-down period that must
 
 If the Claims Committee members review the details and proof of loss provided and determine your claim is valid (meets the terms and conditions outlined in the cover wording), they will vote to accept your claim submission.
 
-If the Claims Committee members vote to accept your claim, you will be able to withdraw your claim payment after the 24-hour post-claim cool-down period ends. After a claim is accepted, you will have 30 days to withdraw your claim payment.
+If the Claims Committee members vote to accept your claim, you will be able to withdraw your claim payment after the 24-hour post-claim cool-down period ends. After the cool-down period ends, you have 30 days to withdraw your claim payment.
 
 ### Your Claim is Denied
 

@@ -103,7 +103,7 @@ Our Claim Assessment process is managed by the Claims Committee, a group of publ
 * **BraveNewDeFi, Head of Risk**. BraveNewDeFi is Head of Risk and has been managing claims incident response since he joined Nexus Mutual in 2021. Brave brings his onchain risk and analysis expertise to the Claims Committee.
 
 Every claim filed is reviewed by the Claims Committee, who provide claimants with help to calculate their losses and ensure all of the information needed is included before a claim is filed.
-To learn more about the Claims Assessment process, see the [/protocol/claims-assessment] section of the documentation.
+To learn more about the Claims Assessment process, see the [Claim Assessment](/protocol/claims-assessment) section of the documentation.
 
 ### When is loss of funds determined for a claim?
 
