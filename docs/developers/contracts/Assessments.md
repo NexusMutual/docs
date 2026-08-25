@@ -46,7 +46,7 @@ struct Assessment {
 | `acceptVotes`      | Number of votes to accept the claim.                          |
 | `denyVotes`        | Number of votes to deny the claim.                            |
 
-Each assessor holds one vote. The voting period is a minimum of three days, and can be extended or closed early.
+Each assessor holds one vote. The voting period defaults to three days. Anyone can close voting early once every assessor in the group has voted, and the Governor can extend voting with a fresh three-day window.
 
 ### Ballot
 
