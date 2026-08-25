@@ -10,7 +10,7 @@ There is a full post-mortem of this loss event and the claim payouts in the [Pay
 A total of $397,087.31 was paid out to members including the Claim V1 #102 payout from the DAO treasury.
 
 ### Overview
-After this exploit occurred, claim assessors discussed this loss event in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
+After this exploit occurred, claim assessors discussed this loss event in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participated in claims assessment, [the V1 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed), and review the validity of claims submitted after a loss event occurs.
 
 Members reviewed the information available in the days after the exploit, while CREAM V1 Protocol Cover holders waited for the 72-hour cool-down period to pass before submitting claims. Claim assessors discussed the event and determined the CREAM V1 economic exploit was covered under sections 1.2 and 1.3 of the Protocol Cover wording.
 
@@ -37,7 +37,7 @@ Claim assessors reviewed and denied claims 102 and 104.
 
 The member who filed **Claim V1 #102** did hold active cover and this member was affected by the CREAM V1 economic exploit; however, they did not lose 20% or more. At the time of this loss event, Nexus Mutual was unable to pay partial claims. This is the reason for the 20% or greater clause in the Protocol Cover wording.
 
-Claim assessors can use their discretion when deciding claims. In this case, members recognized that a loss had occurred and this member should receive a payout. This could not be done through the Claim Assessment process, so members voted on a Snapshot proposal, which proposed paying out Claim V1 #102 for the loss amount. This vote [passed](https://snapshot.org/#/community.nexusmutual.eth/proposal/0xc2bff3d5d05a72f3ff31258851dc736436e800552f0df0bf339efe41f76a7ad6)) and the member who filed Claim V1 #102 was [compensated](https://etherscan.io/tx/0x1d39fd6a68b77750477d838b5c9190f7b10efbb40251aad15c936b4b84681e79) using holdings from the DAO treasury for their loss amount.
+Claim assessors can use their discretion when deciding claims. In this case, members recognized that a loss had occurred and this member should receive a payout. This could not be done through [the V1 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed), so members voted on a Snapshot proposal, which proposed paying out Claim V1 #102 for the loss amount. This vote [passed](https://snapshot.org/#/community.nexusmutual.eth/proposal/0xc2bff3d5d05a72f3ff31258851dc736436e800552f0df0bf339efe41f76a7ad6)) and the member who filed Claim V1 #102 was [compensated](https://etherscan.io/tx/0x1d39fd6a68b77750477d838b5c9190f7b10efbb40251aad15c936b4b84681e79) using holdings from the DAO treasury for their loss amount.
 
 The member who filed Claim V1 #104 purchased Protocol Cover after the exploit took place and was not eligible for a claim payout for that reason.
 

@@ -12,7 +12,7 @@ A total of $1m was paid out for the Sherlock Excess Cover Claim V2 #10, where [S
 
 ## Overview
 
-On Monday, 13 March 2023, [Euler Finance was exploited for $197m](https://twitter.com/FrankResearcher/status/1635241475989721089). After this exploit occurred, claim assessors [discussed this loss event in the Mutual's Discord server](https://discord.com/channels/496296560624140298/1084935082978070549/1084935082978070549). Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](https://docs.nexusmutual.io/protocol/claims-assessment) process and review the validity of claims submitted after a loss event occurs.
+On Monday, 13 March 2023, [Euler Finance was exploited for $197m](https://twitter.com/FrankResearcher/status/1635241475989721089). After this exploit occurred, claim assessors [discussed this loss event in the Mutual's Discord server](https://discord.com/channels/496296560624140298/1084935082978070549/1084935082978070549). Because Nexus Mutual is a discretionary mutual, members participated in claims assessment, [the V2 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed), and review the validity of claims submitted after a loss event occurs.
 
 Members reviewed the information available in the days after the exploit, while Euler Finance Protocol Cover holders waited for the 72-hour cool-down period to pass before submitting claims. Claim assessors discussed the event and determined the Euler Finance exploit was covered under [section 1.1 of the Protocol Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4c4cca088730ac54ccc_ProtocolCoverv1.0.pdf).
 

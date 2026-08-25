@@ -8,7 +8,7 @@ sidebar_position: 4
 A total of $5,089,889.24 was paid out for Claims V1 #110, #111, and #113.
 
 ## Overview
-After this exploit occurred, claim assessors [discussed this loss event](https://discord.com/channels/496296560624140298/689385874265342056/970676366238425098) in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participate in the [Claims Assessment](/protocol/claims-assessment/) process and review the validity of claims submitted after a loss event occurs.
+After this exploit occurred, claim assessors [discussed this loss event](https://discord.com/channels/496296560624140298/689385874265342056/970676366238425098) in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members participated in claims assessment, [the V1 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed), and review the validity of claims submitted after a loss event occurs.
 
 Members reviewed the information available in the days after the exploit, while Rari Capital Protocol Cover holders waited for the 72-hour cool-down period to pass before submitting claims. Claim assessors discussed the event and determined the Rari Capital Fuse market exploit was covered under sections 1.1 of the [Protocol Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4c4cca088730ac54ccc_ProtocolCoverv1.0.pdf).
 

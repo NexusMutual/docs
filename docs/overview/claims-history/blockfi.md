@@ -14,7 +14,7 @@ After BlockFi halted withdrawals in November 2022, members who held BlockFi Cust
 
 During this time, members documented their losses and prepared for claims filing. Before the 90-day period ended, a [guide to BlockFi claims filing](https://nexusmutual.io/blog/how-blockfi-and-gemini-custody-cover-holders-can-prepare-for-claims-filing) was shared across the Mutual's social channels.
 
-After 90 days passed, withdrawals were still halted on BlockFi. On Thursday, 9 February 2023, members began filing claims for the BlockFi loss event. As claims were filed, members staked NXM to participate in the [Claims Assessment](https://docs.nexusmutual.io/protocol/claims-assessment) process. Claim assessors discussed claims in the Nexus Mutual Discord and kept track of eligible covers in the [BlockFi Claims Tracker](https://docs.google.com/spreadsheets/d/1U6cGApDL_crY5RJBa3PUOTMAa17acmWBpYk5ZOPpOls/edit?usp=sharing).
+After 90 days passed, withdrawals were still halted on BlockFi. On Thursday, 9 February 2023, members began filing claims for the BlockFi loss event. As claims were filed, members staked NXM to participate in claims assessment, [the member-staking process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed). Claim assessors discussed claims in the Nexus Mutual Discord and kept track of eligible covers in the [BlockFi Claims Tracker](https://docs.google.com/spreadsheets/d/1U6cGApDL_crY5RJBa3PUOTMAa17acmWBpYk5ZOPpOls/edit?usp=sharing).
 
 ## Filed claims and outcomes
 
