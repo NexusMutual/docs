@@ -4,9 +4,10 @@ sidebar_position: 7
 
 # Claim Assessment
 
-When you buy cover to protect yourself against risk and suffer a loss, you can submit a claim in the Nexus Mutual app. Once you have submitted a claim, the Claims Committee reviews your claim submission and the information you provide, assesses the validity of your claim, and votes on your claim. This is a general overview of Nexus Mutual's Claim Assessment process.
+<!-- @check Assessments.minVotingPeriod = 3 days -->
+Nexus Mutual pays claims through an expert-led assessment process. You submit a claim in the Nexus Mutual app, together with an ETH assessment deposit. The Claims Committee, three publicly known assessors, reviews your evidence and votes on your claim. Voting stays open for at least 72 hours. Your claim is accepted when at least 2 of the 3 assessors vote accept. After a 24-hour cool-down period, you can redeem an accepted claim payout for 30 days. The Claims Committee has assessed every claim since November 2025.
 
-Let's take a look at each step of the Claim Assessment process in more detail.
+This page describes each step of the Claim Assessment process in detail.
 
 ## Submitting a Claim
 
