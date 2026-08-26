@@ -64,4 +64,4 @@ The information is stored privately and offchain. Reading it back needs a wallet
 
 Your cover appears in the [app](https://app.nexusmutual.io/dashboard). If you suffer a loss, see [File a claim](/using/file-a-claim).
 
-Cover runs to its end date, then stops. You can edit the cover to extend its period, see [Cover](/protocol/cover#flexible-coverage). A renewal order extends it automatically, see [Place a limit order](/using/limit-orders).
+Cover runs to its end date, then stops. You can edit the cover to extend its period, see [Cover](/protocol/cover#flexible-coverage). A renewal order buys the next cover automatically, see [Place a limit order](/using/limit-orders).

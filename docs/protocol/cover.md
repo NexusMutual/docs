@@ -38,4 +38,4 @@ This provides members with greater optionality when self-custodying their cover.
 
 ## Limit orders
 
-A **limit order** buys cover once the price falls to a chosen maximum, or renews existing cover automatically before it expires. A solver, an execution service Nexus Mutual operates, submits the order onchain once the price condition holds. See [Place a limit order](/using/limit-orders) for how.
+A **limit order** buys cover once the price falls to a chosen maximum, or buys the next cover automatically before the current one expires. A solver, an execution service Nexus Mutual operates, submits the order onchain once the price condition holds. See [Place a limit order](/using/limit-orders) for how.

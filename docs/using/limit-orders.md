@@ -17,7 +17,7 @@ You start a new-cover order from the buy-cover flow, or a renewal order from a c
 
 A new-cover order takes the same cover amount, asset, and period as a regular purchase. You also set a maximum annual price and an expiry of 1, 3, 7, or 30 days. A renewal order additionally takes a repeat count, from 1 to 11, so one order can renew the cover more than once.
 
-Placing an order signs an EIP-712 message. Signing is gas-free. The order is stored in the order book. Review and cancel your orders from the cover page or the [stake page](https://app.nexusmutual.io/stake), which lists active orders and history.
+Placing an order signs an EIP-712 message. Signing is gas-free. The order is stored in the order book. Review and cancel your orders from the [cover page](https://app.nexusmutual.io/cover), which lists active orders and history.
 
 ## How execution works
 
@@ -25,7 +25,7 @@ You pay when the order executes. Your wallet pays the cover fee plus the solver 
 
 ## Renewing cover
 
-A renewal order buys the next period of your cover through the same renewal flow the app uses, so the rules on the [Cover](/protocol/cover#flexible-coverage) page apply.
+A renewal order buys a new cover for the next period, with the same amount, asset, and period, at or below your maximum annual price. Your current cover runs to its own end date, and the new cover takes over from there.
 
 <!-- @check LimitOrders.MAX_RENEWABLE_PERIOD_BEFORE_EXPIRATION = 10 days -->
 A renewal executes only in the days before your current cover ends, at most 10 days before. The app sets that window to 3 days by default.
