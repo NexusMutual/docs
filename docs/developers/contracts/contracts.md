@@ -14,7 +14,7 @@ The `Cover` contract manages the purchase and management of coverage within the 
 
 ## Cover Products
 
-The `CoverProducts` contract holds the product and product type registry. It stores each product's cover assets, grace period and product type, and each product type's claim method and cover wording.
+The `CoverProducts` contract holds the product and product type registry. It stores each product's cover assets, grace period and product type, and each product type's claim method and cover wording. See the [CoverProducts contract reference](/developers/contracts/CoverProducts) for the full function list.
 
 ## Limit Orders
 

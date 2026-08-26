@@ -36,6 +36,7 @@ const PAGES = {
   'developers/contracts/Assessments.md': 'Assessments',
   'developers/contracts/Claims.md': 'Claims',
   'developers/contracts/Cover.md': 'Cover',
+  'developers/contracts/CoverProducts.md': 'CoverProducts',
   'developers/contracts/Pool.md': 'Pool',
   'developers/contracts/Ramm.md': 'Ramm',
   'developers/contracts/StakingPool.md': 'StakingPool',
