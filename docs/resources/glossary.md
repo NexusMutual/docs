@@ -35,7 +35,7 @@ Protection bought against a specific risk for a set period and amount. Held as a
 The terms and conditions of a cover product: what is covered, what is excluded, and what counts as a loss. The Claims Committee assesses every claim against it.
 
 **Listing**
-A single thing you can buy cover on, such as one protocol or one custodian. Each listing is sold under a product.
+A single thing you can buy cover on, such as one protocol or one custodian. Each listing is sold under a product. Protocol pages use cover product and listing for the same catalogue entry.
 
 **Product**
 The kind of cover a listing is sold under. The product sets the cover wording, the grace period, and how a claim on it is assessed. Single Protocol Cover and Quota Share Cover are products.
@@ -43,8 +43,17 @@ The kind of cover a listing is sold under. The product sets the cover wording, t
 **Cover asset**
 The asset a cover is denominated in and paid out in.
 
+**Cover fee**
+The amount a member pays for cover. See [Pricing](/protocol/pricing).
+
 **Cover period**
 How long a cover runs, chosen when it is bought, within the minimum and maximum the protocol allows.
+
+**Limit order**
+An instruction to buy or renew cover automatically once the price meets a chosen maximum. See [Limit orders](/protocol/cover#limit-orders).
+
+**Solver**
+The execution service Nexus Mutual operates to submit limit orders onchain once their price condition holds. See [Limit orders](/protocol/cover#limit-orders).
 
 **Grace period**
 A window after a cover expires during which a claim can still be filed for a loss that happened while the cover was active.
@@ -114,7 +123,7 @@ The rate at which price falls back toward the target price when no cover is bein
 ## Capital
 
 **Capital pool**
-The assets backing cover. Premiums flow in, claim payouts flow out, and its value against the MCR determines how well capitalised the Mutual is. See [Capital pool](/protocol/capital-pool/).
+The assets backing cover. Cover fees flow in, claim payouts flow out, and its value against the MCR determines how well capitalised the Mutual is. See [Capital pool](/protocol/capital-pool/).
 
 **Minimum Capital Requirement (MCR)**
 The minimum the Mutual needs to hold to be confident it can pay all claims. Driven by total active cover divided by the gearing factor. See [MCR](/protocol/capital-pool/mcr).
@@ -138,6 +147,3 @@ The capital pool in ETH divided by NXM supply — the capital backing each token
 
 **Ratcheting AMM (RAMM)**
 The mechanism that lets members swap between NXM and ETH, using two simulated pools whose liquidity is injected and ratcheted over time. See [Token model](/protocol/nxm-token/token-model).
-
-**Solver**
-The execution service Nexus Mutual operates to submit limit orders onchain once their price condition holds. See [Limit orders](/protocol/cover#limit-orders).

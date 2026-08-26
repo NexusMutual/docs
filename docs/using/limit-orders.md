@@ -17,11 +17,11 @@ You start a new-cover order from the buy-cover flow, or a renewal order from a c
 
 A new-cover order takes the same cover amount, asset, and period as a regular purchase. You also set a maximum annual price and an expiry of 1, 3, 7, or 30 days. A renewal order additionally takes a repeat count, from 1 to 11, so one order can renew the cover more than once.
 
-Placing an order signs an EIP-712 message. Signing is gas-free. The order is stored in the order book. Review and cancel your orders from the cover page or the stake page, which lists active orders and history.
+Placing an order signs an EIP-712 message. Signing is gas-free. The order is stored in the order book. Review and cancel your orders from the cover page or the [stake page](https://app.nexusmutual.io/stake), which lists active orders and history.
 
 ## How execution works
 
-See [Limit orders](/protocol/cover#limit-orders) for how a solver executes your order. You pay when the order executes. Your wallet pays the cover fee plus the solver fee, and the total stays at or below your maximum.
+You pay when the order executes. Your wallet pays the cover fee plus the solver fee, and the price used stays at or below the maximum annual price you set.
 
 ## Renewing cover
 
@@ -34,7 +34,7 @@ Renewal can fail when the [pool's capacity](/protocol/capacity) is full, or when
 
 ## Statuses and cancelling
 
-An order carries one of four statuses: executable, completed, cancelled, or expired, which follows once its window passes.
+An order carries one of four statuses: executable, completed, cancelled, or expired. An order expires once its window passes.
 
 Cancelling an order is an onchain transaction. It costs gas only, and it is permanent.
 

@@ -8,7 +8,7 @@ Risk is assessed and managed in individual staking pools. Instead of having one 
 
 ## Staking pool managers
 
-Staking pool managers are responsible for creating staking pools, determining the initial pool settings, and managing and pricing risk within the pool. Those who have an existing risk management business or specific risk and pricing expertise can create a staking pool and earn rewards for managing risk within the pool.
+Staking pool managers are responsible for creating staking pools, determining the initial pool settings, and managing and pricing risk within the pool. Those who have an existing risk management business or specific risk and pricing expertise can create a staking pool and earn rewards for managing risk within the pool. See [Run a pool](/using/run-a-pool) for how to create one.
 
 A manager can create a public staking pool, which accepts delegations from NXM stakers, or a private staking pool, which does not accept delegations from NXM stakers.
 
@@ -20,7 +20,7 @@ Every pool has settings that are determined when the pool is created and setting
 
 Those who decide to manage risk within a staking pool charge a management fee, which is the percentage of all rewards earned whenever someone buys cover from the pool. When a cover is sold, 50% of the cover fee flows into the pool. The management fee is charged before rewards are distributed among NXM stakers within the pool. The staking pool manager’s fee is streamed over the cover period to the manager’s staking pool NFT, from which rewards can be withdrawn at any time.
 
-When a pool is first created, the maximum management fee needs to be set. The highest management fee that can be set for a staking pool is below 100%, for an effective ceiling of 99%. Once the maximum fee is set at creation, it stays fixed for the life of the pool, though the fee can be adjusted up to the maximum.
+When a pool is first created, the maximum management fee needs to be set. The highest management fee that can be set for a staking pool is below 100%. Once the maximum fee is set at creation, it stays fixed for the life of the pool, though the fee can be adjusted up to the maximum.
 
 With multiple staking pools, managers can adjust their fee to be competitive in order to attract additional NXM stakes. NXM stakers can review the current and maximum management fee charged within a pool and use that to determine where they delegate their NXM stakes.
 

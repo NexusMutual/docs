@@ -9,13 +9,13 @@ Members vote on governance proposals, some on [Snapshot](https://snapshot.box/#/
 
 ## Before you start
 
-You need to be a [member](/overview/membership). Your NXM balance sets your voting power.
+You need to be a [member](/overview/membership). Your NXM holding sets your voting power, see [Voting power](#voting-power).
 
 ## Where each vote happens
 
 Nexus Mutual Protocol Improvement Proposals, Nexus Mutual DAO Proposals, and signalling votes all run on Snapshot. Advisory Board proposals also go to Snapshot, where members vote to reject the default outcome. The default passes when the 15% rejection quorum stays unmet. See [Governance](/governance/) for what each type covers.
 
-The app's governance page lists the onchain proposals raised on the `Governor` contract: Advisory Board proposals and [member proposals](/governance/#member-proposals), with filters and a legacy V1 section. Members vote on member proposals in the app. Advisory Board members vote on Advisory Board proposals in the app. The app links out to Snapshot and to the governance forum for the rest.
+The app's governance page lists the onchain proposals raised on the `Governor` contract: Advisory Board proposals and [member proposals](/governance/#member-proposals). Members vote on member proposals in the app. Advisory Board members vote on Advisory Board proposals in the app. The app links out to Snapshot and to the governance forum for the rest.
 
 ## Voting power
 
@@ -29,6 +29,8 @@ It is capped at 5% of the total NXM supply, on Snapshot and onchain alike. The a
 Cast your vote from a proposal in the app: for, against, or abstain. The app calls the `Governor` contract with your choice.
 
 Voting on a member proposal locks your NXM transfers until the proposal becomes executable.
+
+Cast a Snapshot vote in the [Nexus Mutual DAO Snapshot space](https://snapshot.box/#/s:community.nexusmutual.eth). Snapshot voting is gas-free.
 
 ## Reading a proposal
 
@@ -44,4 +46,4 @@ A carried proposal then sits in a 24-hour timelock before it executes.
 
 ## Where to look
 
-[Governance](/governance/) covers the proposal types, the Advisory Board, and the process in depth.
+[Governance](/governance/) covers the proposal types, the Advisory Board, and the process in depth. Discuss proposals on the [governance forum](https://forum.nexusmutual.io/).

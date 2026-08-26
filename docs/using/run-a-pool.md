@@ -27,9 +27,9 @@ The current fee changes any time up to that maximum, and the change takes effect
 
 ## Managing listings
 
-You set a **target weight** per listing. [Capacity](/protocol/capacity) explains the bounds and the pool total. [Staking pools](/protocol/staking/staking-pools) calls a listing a cover product.
+You set a **target weight** per listing. [Capacity](/protocol/capacity) explains the bounds and the pool total.
 
-You set a target price for each listing: at most 100%, at least 1.00%, and at least the [listing's minimum price](/protocol/pricing) where the Advisory Board set a higher one. The target price changes immediately, and the price buyers pay moves toward it over time. See [Pricing](/protocol/pricing).
+You set a target price for each listing, within the bounds on [Staking pools](/protocol/staking/staking-pools), and at least the listing's minimum price where the Advisory Board set a higher one. The target price changes immediately, and the price buyers pay moves toward it over time. See [Pricing](/protocol/pricing).
 
 ## Public and private pools
 
@@ -45,4 +45,4 @@ Burns hit your own deposit like any other stake. Your fee stays outside burns.
 
 ## Where to look
 
-[Staking pools](/protocol/staking/staking-pools) covers running a pool in depth, and [Capacity](/protocol/capacity) explains how listings turn into capacity.
+[Staking pools](/protocol/staking/staking-pools) covers running a pool in depth, [Stake NXM](/using/stake) covers delegating into one, and [Capacity](/protocol/capacity) explains how listings turn into capacity.
