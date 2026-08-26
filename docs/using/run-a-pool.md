@@ -13,7 +13,7 @@ Being a [member](/overview/membership) is the only requirement to create a pool.
 
 ## Creating a pool
 
-Create a pool from [your pools](https://app.nexusmutual.io/stake). You set the pool's shape: public or private, a name of up to 80 characters, and a description of up to 500 characters. You also set the current management fee and the maximum management fee.
+Create a pool from your pools on the [stake page](https://app.nexusmutual.io/stake). You set the pool's shape: public or private, a name of up to 80 characters, and a description of up to 500 characters. You also set the current management fee and the maximum management fee.
 
 You then set the pool's initial listings, each with a target weight and a target price.
 
@@ -21,7 +21,7 @@ The name and description go to IPFS, and the hash goes onchain.
 
 ## The management fee
 
-The maximum management fee stays fixed after creation, and it sits below 100%. See [Staking pools](/protocol/staking/staking-pools).
+You must set the maximum management fee below 100%, and it stays fixed after creation. See [Staking pools](/protocol/staking/staking-pools).
 
 The current fee changes any time up to that maximum, and the change takes effect immediately.
 
@@ -33,7 +33,7 @@ You set a target price for each listing, within the bounds on [Staking pools](/p
 
 ## Public and private pools
 
-Switching a pool between public and private takes effect immediately, in either direction. A private pool accepts deposits and extensions from you, the manager, only.
+You can switch a pool between public and private, see [Staking pools](/protocol/staking/staking-pools#staking-pool-managers). A private pool accepts deposits and extensions from you, the manager, only.
 
 ## What you earn
 

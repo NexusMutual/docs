@@ -8,7 +8,7 @@ Staking NXM backs cover on chosen listings. Stakers earn a share of the fees pai
 
 ## Before you start
 
-You need to be a [member](/overview/membership) and to hold NXM.
+You need to be a [member](/overview/membership), and to hold NXM to delegate.
 
 ## Two ways to stake
 

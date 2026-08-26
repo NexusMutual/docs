@@ -24,6 +24,8 @@ Check that the risk you want covered has a listing. The [product index](https://
 
 The price comes from the staking pools backing that listing, so it moves with how much of their capacity is already in use. See [Pricing](/protocol/pricing) for how that works.
 
+You can also wait for a lower price with a limit order, see [Place a limit order](/using/limit-orders).
+
 ## Proof of loss is collected upfront
 
 Most cover requires you to give **proof of loss** at the point of purchase: the addresses or positions the cover applies to. This is recorded with the cover. You can edit it later, see [Updating your cover info](#updating-your-cover-info).

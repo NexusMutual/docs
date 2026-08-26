@@ -36,4 +36,4 @@ Once membership activates, you can:
 - [Stake NXM](/using/stake) to underwrite risk and earn a share of cover fees
 - [Swap NXM](/using/swap-nxm) to trade ETH for NXM
 - [File a claim](/using/file-a-claim) after a loss on cover you hold
-- Vote on governance proposals, see [Vote on proposals](/using/vote)
+- [Vote on proposals](/using/vote) to decide protocol and DAO outcomes

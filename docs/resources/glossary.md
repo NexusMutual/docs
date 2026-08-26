@@ -24,7 +24,8 @@ The members who assess claims. They review the evidence, discuss the claim again
 An assessor named in a cover product's wording, used for that product's claims instead of the Claims Committee. See [Claim assessment](/protocol/claims-assessment#expert-led-claim-assessment).
 
 **Voting power**
-A member's weight in a vote: their NXM balance plus one, capped at a share of total supply. Staking pool managers also vote with the NXM delegated to their pools.
+<!-- @check Governor.VOTE_WEIGHT_CAP_PERCENTAGE = 5 -->
+A member's weight in a vote: their NXM balance plus one, capped at 5% of the total NXM supply. Staking pool managers also vote with the NXM delegated to their pools.
 
 ## Cover
 
@@ -42,6 +43,9 @@ The kind of cover a listing is sold under. The product sets the cover wording, t
 
 **Cover asset**
 The asset a cover is denominated in and paid out in.
+
+**Payment asset**
+The asset a member pays the cover fee in: ETH, USDC, cbBTC or NXM. It can differ from the cover asset.
 
 **Cover fee**
 The amount a member pays for cover. See [Pricing](/protocol/pricing).
@@ -66,7 +70,7 @@ The 0.05 ETH paid when a claim is submitted. An accepted claim refunds the depos
 An amount of loss a cover holder bears before a claim can be made. Used where small losses are expected in normal operation, such as validator penalties.
 
 **Proof of loss**
-The evidence a claimant provides. Most cover requires it upfront, recorded when the cover is bought, so the covered addresses or positions are fixed before any loss occurs.
+The evidence a claimant provides. Most cover requires it upfront, recorded when the cover is bought. A cover holder can edit it while the cover is active and during the grace period that follows, up until any loss event.
 
 **Quota share**
 An arrangement where the Mutual takes an agreed share of another cover provider's risk, and pays that share of their claims.
