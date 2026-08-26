@@ -8,7 +8,7 @@ Risk is assessed and managed in individual staking pools. Instead of having one 
 
 ## Staking pool managers
 
-Staking pool managers are responsible for creating staking pools, determining the initial pool settings, and managing and pricing risk within the pool. Those who have an existing risk management business or specific risk and pricing expertise can create a staking pool and earn rewards for managing risk within the pool. See [Run a pool](/using/run-a-pool) for how to create one.
+Staking pool managers are responsible for creating staking pools, determining the initial pool settings, and managing and pricing risk within the pool. Those who have an existing risk management business or specific risk and pricing expertise can create a staking pool and earn rewards for managing risk within the pool. See [Run a staking pool](/using/run-a-staking-pool) for how to create one.
 
 A manager can create a public staking pool, which accepts delegations from NXM stakers, or a private staking pool, which does not accept delegations from NXM stakers. A manager can switch a pool between public and private at any time, effective immediately.
 

@@ -39,7 +39,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 - [Buy cover](https://docs.nexusmutual.io/using/buy-cover): Cover protects a position against a defined risk for a set amount and period.
 - [Place a limit order](https://docs.nexusmutual.io/using/limit-orders): How to place a limit order to buy cover at your price, or renew cover automatically.
 - [Stake NXM](https://docs.nexusmutual.io/using/stake): Staking NXM backs cover on chosen listings.
-- [Run a pool](https://docs.nexusmutual.io/using/run-a-pool): How to create a staking pool, set its management fee, and price the listings it backs.
+- [Run a staking pool](https://docs.nexusmutual.io/using/run-a-staking-pool): How to create a staking pool, set its management fee, and price the listings it backs.
 - [Swap NXM](https://docs.nexusmutual.io/using/swap-nxm): How to swap ETH for NXM in the Nexus Mutual app.
 - [File a claim](https://docs.nexusmutual.io/using/file-a-claim): A claim is filed against cover you hold, in the Nexus Mutual app.
 - [Vote on proposals](https://docs.nexusmutual.io/using/vote): How to vote on Nexus Mutual governance proposals, on Snapshot and onchain in the app.

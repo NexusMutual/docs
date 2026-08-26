@@ -3,7 +3,7 @@ sidebar_position: 2.2
 description: How to create a staking pool, set its management fee, and price the listings it backs.
 ---
 
-# Run a pool
+# Run a staking pool
 
 Running a pool means creating a **staking pool**, choosing the listings it backs, and setting the prices and weights yourself. Other members can then delegate into it, and you earn a **management fee** on the pool's rewards.
 

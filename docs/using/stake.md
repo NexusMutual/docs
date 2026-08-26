@@ -14,7 +14,7 @@ You need to be a [member](/overview/membership), and to hold NXM to delegate.
 
 **Delegate to a pool.** You choose a staking pool and deposit into it. The pool manager decides which listings the pool backs, at what price, and with what weight. This is how most members stake.
 
-**Run a pool.** You create a pool, choose the listings it backs, and set the prices and weights yourself. Other members can then delegate into it. This is a risk management business, and the returns and losses follow from your own pricing. See [Run a pool](/using/run-a-pool) for how to create one.
+**Run a staking pool.** You create a pool, choose the listings it backs, and set the prices and weights yourself. Other members can then delegate into it. This is a risk management business, and the returns and losses follow from your own pricing. See [Run a staking pool](/using/run-a-staking-pool) for how to create one.
 
 Either way the stake is at risk in the same way. Delegating chooses who makes the decisions, not whether the risk applies.
 
@@ -53,4 +53,4 @@ Your staking position is an NFT, and transferring it transfers the deposit.
 
 ## Where to look
 
-[Staking](/protocol/staking/) covers the mechanics in depth, [Staking pools](/protocol/staking/staking-pools) covers running one, [Run a pool](/using/run-a-pool) walks through creating one, and [Capacity](/protocol/capacity) explains how staked NXM turns into cover capacity.
+[Staking](/protocol/staking/) covers the mechanics in depth, [Staking pools](/protocol/staking/staking-pools) covers running one, [Run a staking pool](/using/run-a-staking-pool) walks through creating one, and [Capacity](/protocol/capacity) explains how staked NXM turns into cover capacity.
