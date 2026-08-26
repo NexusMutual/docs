@@ -27,6 +27,9 @@ See [Limit orders](/protocol/cover#limit-orders) for how a solver executes your 
 
 A renewal order buys the next period of your cover through the same renewal flow the app uses, so the rules on the [Cover](/protocol/cover#flexible-coverage) page apply.
 
+<!-- @check LimitOrders.MAX_RENEWABLE_PERIOD_BEFORE_EXPIRATION = 10 days -->
+A renewal executes only in the days before your current cover ends, at most 10 days before. The app sets that window to 3 days by default.
+
 Renewal can fail when the [pool's capacity](/protocol/capacity) is full, or when the price stays above your maximum. Execution depends on the solver acting, so an order can pass its window without executing.
 
 ## Statuses and cancelling
