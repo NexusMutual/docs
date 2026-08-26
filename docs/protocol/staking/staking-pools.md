@@ -20,7 +20,7 @@ Every pool has settings that are determined when the pool is created and setting
 
 Those who decide to manage risk within a staking pool charge a management fee, which is the percentage of all rewards earned whenever someone buys cover from the pool. When a cover is sold, 50% of the cover fee flows into the pool. The management fee is charged before rewards are distributed among NXM stakers within the pool. The staking pool manager’s fee is streamed over the cover period to the manager’s staking pool NFT, from which rewards can be withdrawn at any time.
 
-When a pool is first created, the maximum management fee needs to be set. The highest management fee that can be set for a staking pool is 100%. Once the maximum fee is set at creation, it can never be changed, though the fee can be adjusted up to the maximum.
+When a pool is first created, the maximum management fee needs to be set. The highest management fee that can be set for a staking pool is below 100%, for an effective ceiling of 99%. Once the maximum fee is set at creation, it can never be changed, though the fee can be adjusted up to the maximum.
 
 With multiple staking pools, managers can adjust their fee to be competitive in order to attract additional NXM stakes. NXM stakers can review the current and maximum management fee charged within a pool and use that to determine where they delegate their NXM stakes.
 

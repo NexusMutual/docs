@@ -39,6 +39,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 - [Buy cover](https://docs.nexusmutual.io/using/buy-cover): Cover protects a position against a defined risk for a set amount and period.
 - [Limit orders](https://docs.nexusmutual.io/using/limit-orders): A limit order buys new cover once the premium falls to your maximum, or renews existing cover before it expires, from one signed instruction.
 - [Stake NXM](https://docs.nexusmutual.io/using/stake): Staking NXM backs cover on chosen listings.
+- [Run a pool](https://docs.nexusmutual.io/using/run-a-pool): Running a pool means creating a staking pool, choosing the listings it backs, and setting the prices and weights yourself.
 - [Swap NXM](https://docs.nexusmutual.io/using/swap-nxm): How to swap ETH for NXM in the Nexus Mutual app.
 - [File a claim](https://docs.nexusmutual.io/using/file-a-claim): A claim is filed against cover you hold, in the Nexus Mutual app.
 
