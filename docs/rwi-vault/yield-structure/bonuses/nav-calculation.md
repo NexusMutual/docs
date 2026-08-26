@@ -44,6 +44,8 @@ Note that there may be some retrospective revisions to the NAV calculations base
 
 Calculated as <code>Cover Amount in USDC * Annual Cost of Cover * (Cover Days Remaining / 365)</code>
 
+Annual Cost of Cover is the annualized premium rate the Vault Operator pays for the Baseline Yield Cover. The protocol quotes the rate at each cover purchase or renewal. The vault's financial model assumes 3% per year.
+
 **Pre-funded Cover Fee Asset**
 
 The purpose of this item is to smooth out the impact on NAV of the NXM Grant used to pay early Baseline Yield Cover fees.
