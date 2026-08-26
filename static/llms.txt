@@ -42,6 +42,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 - [Run a pool](https://docs.nexusmutual.io/using/run-a-pool): Running a pool means creating a staking pool, choosing the listings it backs, and setting the prices and weights yourself.
 - [Swap NXM](https://docs.nexusmutual.io/using/swap-nxm): How to swap ETH for NXM in the Nexus Mutual app.
 - [File a claim](https://docs.nexusmutual.io/using/file-a-claim): A claim is filed against cover you hold, in the Nexus Mutual app.
+- [Vote](https://docs.nexusmutual.io/using/vote): Members vote on governance proposals, some on Snapshot and some in the Nexus Mutual app.
 
 ## The Nexus Mutual Protocol
 
