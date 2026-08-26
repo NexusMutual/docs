@@ -1,11 +1,11 @@
 ---
 sidebar_position: 2.5
-description: How to swap ETH for NXM in the Nexus Mutual app.
+description: How to swap ETH for NXM, or wrap NXM to wNXM, in the Nexus Mutual app.
 ---
 
 # Swap NXM
 
-The swap page in the [Nexus Mutual app](https://app.nexusmutual.io/swap) pairs ETH with NXM through the RAMM.
+The swap page in the [Nexus Mutual app](https://app.nexusmutual.io/swap) pairs ETH with NXM through the RAMM. It also wraps NXM to wNXM directly.
 
 ## What the page shows
 
@@ -20,6 +20,14 @@ You set a **slippage tolerance** and a **transaction deadline** before you swap.
 ## Swapping ETH and NXM
 
 A RAMM swap calls `swap` with your minimum amount out and your deadline. Buying NXM sends ETH with the transaction. See [Token Model](/protocol/nxm-token/token-model) for how the RAMM prices NXM.
+
+## Wrapping to wNXM
+
+You can also wrap NXM to wNXM, or unwrap wNXM back to NXM, from the same page. Wrapping calls the wNXM contract directly, instead of the RAMM. Price impact applies only to a RAMM swap.
+
+:::caution Disclaimer for the NXM Wrapper
+The Wrapped NXM token (WNXM) is NOT a wrapper created by or supported by Nexus Mutual, and it is important to understand that it operates independently. While the Foundation team endeavors to provide a safe and user-friendly User Interface (UI) for the benefit of Nexus Mutual Members, it is essential to emphasize that the underlying smart contract governing WNXM is not associated with NXM and Nexus Mutual. The smart contract was developed by a third-party and is entirely separate from Nexus Mutual. While we strive to maintain a secure environment, the DAO teams cannot give any assurances or support with regard to the actions or outcomes related to the WNXM smart contract. Please be aware that any engagement with WNXM is done at your own risk, and Nexus Mutual Members are advised to exercise caution and conduct their own due diligence when engaging with WNXM, or consult with the sources provided on this website for any inquiries related to the token.
+:::
 
 ## Before you swap
 
