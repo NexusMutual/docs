@@ -26,7 +26,7 @@ The price comes from the staking pools backing that listing, so it moves with ho
 
 ## Proof of loss is collected upfront
 
-Most cover requires you to say what is being protected at the point of purchase — typically the addresses or positions the cover applies to. This is recorded with the cover and cannot be changed afterwards.
+Most cover requires you to give **proof of loss** at the point of purchase: the addresses or positions the cover applies to. This is recorded with the cover. You can edit it later while the cover is active, see [Updating your cover info](#updating-your-cover-info).
 
 Getting this wrong is the most common reason a claim fails. A loss on an address you did not list is not covered, however genuine the loss.
 
@@ -49,11 +49,11 @@ Each product's page links its wording, and the wordings are also published on IP
 
 ## Updating your cover info
 
-Open **Update Cover** from a cover you hold to reach the **Update Cover Info** panel.
+Reach the **Extra Cover Info** panel from a cover you hold, to edit your proof of loss.
 
-Each product defines what it asks for: covered wallet addresses with a chain selector, API keys, a validator list upload, a wallet-balances upload, or free text. Some products also carry a quota share or an AUM cover percentage.
+Each product defines what it asks for: covered wallet addresses with a chain selector, API keys, a validator list upload, a wallet-balances upload, or free text. Some products also carry a quota share.
 
-You can edit this information while the cover is active, and until cover end plus the grace period. Edits stop during and after a loss event.
+You can edit it while your cover is active, including its grace period, and before any loss event.
 
 The information is stored privately and offchain. Reading it back needs a wallet signature proving you own the address. The [Claims Committee](/protocol/claims-assessment) reads it to validate claims. See the FAQ's [upfront proof of loss](/resources/faq#what-is-upfront-proof-of-loss) entry, and [File a claim](/using/file-a-claim) for what happens after a loss.
 
@@ -61,4 +61,4 @@ The information is stored privately and offchain. Reading it back needs a wallet
 
 Your cover appears in the [app](https://app.nexusmutual.io/dashboard). If you suffer a loss, see [File a claim](/using/file-a-claim).
 
-Cover does not renew automatically. When it expires, coverage stops. To renew it automatically instead, see [Limit orders](/using/limit-orders).
+Cover runs to its end date, then stops. A renewal order can extend it, see [Place a limit order](/using/limit-orders).

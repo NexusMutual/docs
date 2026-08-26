@@ -1,40 +1,40 @@
 ---
 sidebar_position: 1.5
+description: How to place a limit order to buy cover at your price, or renew cover automatically.
 ---
 
-# Limit orders
+# Place a limit order
 
-A **limit order** buys new cover once the premium falls to your maximum, or renews existing cover before it expires, from one signed instruction. A solver executes it onchain when the price condition is met.
+A **limit order** buys new cover once the price falls to your maximum, or renews existing cover before it expires, from one signed instruction. A [solver](/protocol/cover#limit-orders) executes it onchain when the price condition is met.
 
 ## Before you start
 
-You need to be a [member](/overview/membership). You need an allowance for the payment asset to the LimitOrders contract, except when you pay in ETH.
+You need to be a [member](/overview/membership). You need an allowance for the payment asset to the `LimitOrders` contract, except when you pay in ETH.
 
 ## Placing an order
 
-Start from two places in the [app](https://app.nexusmutual.io/cover). Use **Place Limit Order** on the buy-cover flow for new cover, or **Set Renewal Order** on an existing cover to renew it.
+You start a new-cover order from the buy-cover flow, or a renewal order from a cover you hold.
 
-A new-cover order takes the same cover amount, asset, and period as a regular purchase. You also set a maximum annual fee and an expiry of 1, 3, 7, or 30 days. A renewal order additionally takes a repeat count, from 1 to 11, so one order can renew the cover more than once.
+A new-cover order takes the same cover amount, asset, and period as a regular purchase. You also set a maximum annual price and an expiry of 1, 3, 7, or 30 days. A renewal order additionally takes a repeat count, from 1 to 11, so one order can renew the cover more than once.
 
-Placing an order signs an EIP-712 message. Signing is gas-free. The order is stored in the order book, and you pay only when it executes.
+Placing an order signs an EIP-712 message. Signing is gas-free. The order is stored in the order book. Review and cancel your orders from the cover page or the stake page, which lists active orders and history.
 
 ## How execution works
 
-A solver executes your order once the current premium plus the solver's fee is at or below your maximum, inside the order's window. Your wallet pays the actual premium plus the fee at that moment. Any surplus between your maximum and the actual cost returns to you.
+See [Limit orders](/protocol/cover#limit-orders) for how a solver executes your order. You pay when the order executes. Your wallet pays the cover fee plus the solver fee, and the total stays at or below your maximum.
 
 ## Renewing cover
 
-<!-- @check LimitOrders.MAX_RENEWABLE_PERIOD_BEFORE_EXPIRATION = 10 days -->
-A renewal order can execute at most 10 days before your current cover expires. The app sets the window to 3 days before expiry by default.
+A renewal order buys the next period of your cover through the same renewal flow the app uses, so the rules on the [Cover](/protocol/cover#flexible-coverage) page apply.
 
-Renewal can fail when the pool's capacity is full, or when the price stays above your maximum.
+Renewal can fail when the [pool's capacity](/protocol/capacity) is full, or when the price stays above your maximum. Execution depends on the solver acting, so an order can pass its window without executing.
 
 ## Statuses and cancelling
 
-An order carries one of these statuses: executable, completed, or cancelled. It becomes expired once its window passes.
+An order carries one of four statuses: executable, completed, cancelled, or expired, which follows once its window passes.
 
 Cancelling an order is an onchain transaction. It costs gas only, and it is permanent.
 
 ## Where to look
 
-Find your orders in two places: the **Your orders** section on the cover page, and the **Limit Orders** tab on the [stake page](https://app.nexusmutual.io/stake), which lists active orders and history.
+[Limit orders](/protocol/cover#limit-orders) explains the solver mechanism, and [Pricing](/protocol/pricing) explains how the price moves toward your maximum.

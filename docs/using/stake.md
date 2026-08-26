@@ -53,4 +53,4 @@ Your staking position is an NFT, and transferring it transfers the deposit.
 
 ## Where to look
 
-[Staking](/protocol/staking/) covers the mechanics in depth, [Staking pools](/protocol/staking/staking-pools) covers running one, and [Capacity](/protocol/capacity) explains how staked NXM turns into cover capacity.
+[Staking](/protocol/staking/) covers the mechanics in depth, [Staking pools](/protocol/staking/staking-pools) covers running one, [Run a pool](/using/run-a-pool) walks through creating one, and [Capacity](/protocol/capacity) explains how staked NXM turns into cover capacity.

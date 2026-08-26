@@ -36,6 +36,6 @@ Members need to use their whitelisted address to buy cover and file a claim. How
 
 This provides members with greater optionality when self-custodying their cover.
 
-### Limit orders
+## Limit orders
 
-A member can place a limit order to buy cover once the premium falls to a chosen maximum, or to renew existing cover automatically before it expires. A solver executes the order onchain once the price condition is met, and the member pays only at that point. See [Limit orders](/using/limit-orders) for how to place one.
+A **limit order** buys cover once the price falls to a chosen maximum, or renews existing cover automatically before it expires. A solver, an execution service Nexus Mutual operates, submits the order onchain once the price condition holds. See [Place a limit order](/using/limit-orders) for how.

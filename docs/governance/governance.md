@@ -122,7 +122,7 @@ While not required, signalling votes are a helpful way to gauge support for an R
 
 ## Onchain execution
 
-Proposals that change the protocol are enacted onchain through the `Governor` contract. The Governor contract handles two onchain proposal kinds, described below. See [Vote](/using/vote) for how to cast a vote in the app.
+Proposals that change the protocol are enacted onchain through the `Governor` contract. The Governor contract handles two onchain proposal kinds, described below. See [Vote on proposals](/using/vote) for how to cast a vote in the app.
 
 Advisory Board proposals carry arbitrary transactions, such as a contract upgrade or a Capital Pool allocation. They pass by Advisory Board vote followed by a timelock. Member proposals exist only to replace an Advisory Board member, and members vote on them directly.
 

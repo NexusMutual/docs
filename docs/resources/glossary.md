@@ -138,3 +138,6 @@ The capital pool in ETH divided by NXM supply — the capital backing each token
 
 **Ratcheting AMM (RAMM)**
 The mechanism that lets members swap between NXM and ETH, using two simulated pools whose liquidity is injected and ratcheted over time. See [Token model](/protocol/nxm-token/token-model).
+
+**Solver**
+The execution service Nexus Mutual operates to submit limit orders onchain once their price condition holds. See [Limit orders](/protocol/cover#limit-orders).

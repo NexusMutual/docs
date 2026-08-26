@@ -62,7 +62,7 @@ Yes, with the launch of our upfront proof of loss feature, we can now support li
 
 Yes, you can. You need to buy cover using the your membership address (i.e., the Ethereum address you used to sign up for membership). You need to purchase cover with your membership address, but you can protect crypto assets you manage in other blockchain wallet addresses.
 
-For most of Nexus Mutual's cover products, you will provide the wallet address(es) in the **Extra Cover Info** section below the Cover Details. This information is stored privately and can be edited to add or remove covered wallet addresses during the active cover period but not during or after a loss event occurs.
+For most of Nexus Mutual's cover products, you will provide the wallet address(es) in the **Extra Cover Info** section below the Cover Details. This information is stored privately and can be edited to add or remove covered wallet addresses during the active cover period, including its grace period, but not during or after a loss event occurs.
 
 If you suffer a loss of funds and need to file a claim, you will provide the necessary information at that time. This information differs for each [cover product](/overview/cover-products/).
 
@@ -72,7 +72,7 @@ For several of Nexus Mutual's cover products, you will need to provide some info
 
 For most of our cover products, you will enter the wallet address or wallet addresses you want your coverage to be valid for. This information is stored privately offchain and can only be accessed by you and the [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment), who will use that information to help calculate your Claim Amount and assist you with claims filing if a loss event should occur during the Active Cover period. **Be sure you include all of the relevant wallet addresses for your coverage, as the coverage only applies to the wallet addresses listed for the cover you purchase.**
 
-You will be able to edit this information during the Active Cover period if you want to add or remove cover addresses to your coverage. To keep this information private, we require you to sign a message to prove you own the address before you can access or edit this information in the Nexus Mutual app. 
+You will be able to edit this information during the Active Cover period, including its grace period, if you want to add or remove cover addresses to your coverage. To keep this information private, we require you to sign a message to prove you own the address before you can access or edit this information in the Nexus Mutual app. 
 Upfront proof of loss allows the Mutual to improve the member experience by extending coverage to non-EVM networks like Solana, helping members prepare for claims filing events in a timely fashion, and more.
 
 To learn more about how upfront proof of loss applies to each of the Mutual's cover products, see the [Cover Products page](/overview/cover-products/) to find detailed information on the cover product you are interested in purchasing.
