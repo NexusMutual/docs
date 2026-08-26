@@ -52,19 +52,14 @@ Cover pricing follows a **dynamic adjustment mechanism**:
 
 #### Price Bump
 
-- **When utilization increases**, the **cover price increases** per purchase.
-- **Bump Rate:** The price **increases by 2% per purchase**, **compounded** on the previous price.
+<!-- @check StakingProducts.PRICE_BUMP_RATIO = 500 -->
+- **Bump Rate:** A purchase adds 0.05% to the spot price for every 1% of pool capacity the purchase uses.
 
 #### Price Decay
 
-- If **no new purchases occur**, the price **decays daily** back toward the target price.
-- **Decay Rate:** Price reduces by **0.1% per day**, applied as:
-
-  $$
-  \text{New Price} = \text{Current Price} \times 0.999
-  $$
-
-- **Lower Limit:** Price **cannot go below the product's initial price ratio**.
+<!-- @check StakingProducts.PRICE_CHANGE_PER_DAY = 200 -->
+- **Decay Rate:** The price subtracts 2% per day since the last price update, moving the price toward the target price.
+- **Floor:** The price floors at the pool's target price, which stays at or above the product's minimum price (`minPrice`).
 
 To check the **minimum price** of a product:
 
@@ -137,7 +132,7 @@ Common **asset IDs**:
 | NXM   | 255 |
 | ETH   | 0   |
 | USDC  | 6   |
-| cBTC  | 7   |
+| cbBTC | 7   |
 
 ---
 
@@ -284,13 +279,14 @@ CoverViewer.getCovers(coverIds);
 Claims.submitClaim(uint coverId);
 ```
 
-- **Claim Payout:** **100% of the cover amount.** No deductibles.
+- **Claim Payout:** The payout equals the requested amount, up to the cover amount. Terms depend on the cover wording for the product.
 
 #### Claim Review Process
 
 - Claims are **reviewed by claim assessors** who evaluate validity based on cover conditions.
-- **Review Duration:** Typically 7 days, but can vary depending on complexity.
-- If a claim is **approved**, payout = **100% of cover amount** (no deductibles).
+<!-- @check Assessments.minVotingPeriod = 3 days -->
+- **Review Duration:** A 72-hour voting window, which closes early once every assessor has voted, followed by the product type's cooldown period (24 hours for every product type today). See [Claim Assessment](/protocol/claims-assessment) for the full process.
+- If a claim is **approved**, the payout equals the requested amount, up to the cover amount, per the cover wording.
 - If a claim is **rejected**, the **claim deposit is lost**.
 - Appeal Process:
   - If rejected, claimants **cannot appeal** directly, but can **resubmit** a claim with additional evidence.
@@ -324,8 +320,8 @@ bool isMember = Registry.checkRole(memberAddress, uint8(Role.Member));
 
 ### How much is the claim payout?
 
-- **100% of the cover amount.**
-- **No deductibles.**
+- The payout equals the requested amount, up to the cover amount.
+- Terms depend on the cover wording for the product you purchased.
 
 ---
 
@@ -348,7 +344,7 @@ uint32 gracePeriod = CoverProducts.getProductType(productType).gracePeriod;
 ### What happens if my claim is rejected?
 
 - **You lose the claim deposit.**
-- It is distributed to claim assessors as rewards.
+- It is forfeited to the pool that backs cover payouts.
 
 ---
 

@@ -48,12 +48,18 @@ flowchart LR
     end
 
     subgraph "Governance Group"
-      MR("Registry")
+      Registry("Registry")
+    end
+
+    Assessor(("Claim Assessor"))
+    subgraph "Claims/Assessments Group"
+      ClaimsC("Claims")
+      Assess("Assessments")
     end
 
     %% 1. Buy Cover (single tx)
     Buyer -->|"**(1a)** buyCover()"| CoverC
-    CoverC -->|"**(1b)** onlyMember check"| MR
+    CoverC -->|"**(1b)** onlyMember check"| Registry
     CoverC -->|"**(1c)** get product info"| CoverP
     CoverC -->|"**(1d)** mint Cover NFT"| CoverN
     CoverN -->|"**(1e)** issue NFT"| Buyer

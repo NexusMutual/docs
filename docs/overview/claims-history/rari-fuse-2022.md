@@ -15,7 +15,7 @@ Members reviewed the information available in the days after the exploit, while 
 Once the 72-hour cool-down period had passed, the Mutual [released a statement](https://twitter.com/NexusMutual/status/1521481408967061508) with instructions on How to File a Claim, as well as information about the active covers and the Claim Assessment process. Within this announcement, there is a [Google Sheet](https://docs.google.com/spreadsheets/d/1haZshQwcYASEGnVRmE5AWC_iNWRLibqRNT7y94Jh63E/edit#gid=0) that contains Rari Capital active covers where information has been included about claims members voted to accept, deny, or claims that were not filed.
 
 ### Filed claims and outcomes
-To date, two (2) claims have been filed, and those claims were reviewed and voted on by claim assessors. As stated in the section above, claim assessors had determined this was a covered event. Once it has been determined that an event is covered, claim assessors review the validity of claims to determine:
+To date, three (3) claims have been filed, and those claims were reviewed and voted on by claim assessors. As stated in the section above, claim assessors had determined this was a covered event. Once it has been determined that an event is covered, claim assessors review the validity of claims to determine:
 * Did the member have active cover at the time of the exploit?
 * Did the member provide proof of loss?
 * Did the member lose 20% or more of the covered amount?

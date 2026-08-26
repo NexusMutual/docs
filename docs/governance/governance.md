@@ -10,7 +10,7 @@ This page covers the governance of the Mutual and its protocol. The [Real World 
 
 The AB creates a proposal in parallel on the [Nexus Mutual DAO Snapshot space](https://snapshot.box/#/s:community.nexusmutual.eth), where Nexus Mutual members can vote to reject the default outcome. If Nexus Mutual members vote and meet the quorum for rejection, the AB's default outcome is rejected and the proposal does not move forward.
 
-Where a proposal requires a change onchain, the Advisory Board enacts the outcome of the Snapshot vote through the `Governor` contract, exactly as members voted. See [Onchain execution](#onchain-execution) below.
+Where a proposal requires a change onchain, the Advisory Board raises an AB proposal on the `Governor` contract and enacts the Snapshot outcome exactly as members voted. Member proposals on the `Governor` contract cover one case, AB-seat swaps, and are voted onchain directly. See [Onchain execution](#onchain-execution) below.
 
 ## The Advisory Board
 
@@ -47,7 +47,7 @@ Ultimately, AB members serve at the discretion of Nexus Mutual members. Should m
 
 Any Nexus Mutual member can raise a proposal to replace an AB member, with the following requirements:
 <!-- @check Governor.PROPOSAL_THRESHOLD = 100 ether -->
-* The member who raises the proposal must hold more than 99 NXM in order to put the proposal onchain; and
+* The member who raises the proposal must hold more than 100 NXM in order to put the proposal onchain; and
 <!-- @check Governor.MEMBER_VOTE_QUORUM_PERCENTAGE = 15 -->
 * At least 15% of the total NXM token supply must participate in the vote.
 
@@ -122,9 +122,11 @@ While not required, signalling votes are a helpful way to gauge support for an R
 
 ## Onchain execution
 
-Proposals that change the protocol are enacted onchain through the `Governor` contract. The Advisory Board implements the outcome of the Snapshot vote as members voted it.
+Proposals that change the protocol are enacted onchain through the `Governor` contract. The Governor contract handles two onchain proposal kinds, described below.
 
-The `Governor` contract handles two kinds of proposal.
+Advisory Board proposals carry arbitrary transactions, such as a contract upgrade or a Capital Pool allocation. They pass by Advisory Board vote followed by a timelock. Member proposals exist only to replace an Advisory Board member, and members vote on them directly.
+
+Snapshot is the offchain venue where members signal support for or rejection of an Advisory Board proposal's default outcome. Advisory Board members cast their onchain votes to match that signal, and the Governor contract counts Advisory Board votes and the timelock toward the proposal's outcome.
 
 ### Advisory Board proposals
 

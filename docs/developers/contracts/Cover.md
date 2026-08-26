@@ -76,6 +76,44 @@ struct PoolAllocation {
 | `premiumInNXM`     | Premium paid for the allocation in NXM tokens.        |
 | `allocationId`     | Unique identifier for the allocation within the pool. |
 
+#### Ri, RiRequest, RiConfig
+
+`Ri` records the reinsurance allocation the protocol holds against a cover. `RiRequest` carries a reinsurance provider's signed request to back a cover. `RiConfig` stores a reinsurance provider's premium destination and signature nonce.
+
+```solidity
+struct Ri {
+    uint24 providerId;
+    uint96 amount;
+}
+
+struct RiRequest {
+    uint providerId;
+    uint amount;
+    uint premium;
+    bytes signature;
+    bytes data;
+    uint8 dataFormat;
+    uint32 deadline;
+}
+
+struct RiConfig {
+    uint24 nextNonce;
+    address premiumDestination;
+}
+```
+
+| Parameter            | Description                                             |
+| -------------------- | -------------------------------------------------------- |
+| `providerId`         | The ID of the reinsurance provider.                       |
+| `amount`             | The reinsured amount.                                     |
+| `premium`            | The premium the reinsurance provider charges.              |
+| `signature`          | The reinsurance provider's signature over the request.     |
+| `data`               | Provider-specific data attached to the request.            |
+| `dataFormat`         | The format version of `data`.                              |
+| `deadline`           | The timestamp after which the signature expires.           |
+| `nextNonce`          | The next nonce the provider's signature must use.          |
+| `premiumDestination` | The address that receives the reinsurance premium.        |
+
 ### Active Cover and Expiration Buckets
 
 - **ActiveCover:** Tracks the total active cover in an asset and the last bucket update ID.
@@ -106,6 +144,7 @@ uint private constant BUCKET_SIZE = 7 days;
 - **Allocation Units per NXM:**
 
 <!-- @check Cover.NXM_PER_ALLOCATION_UNIT = 0.01 ether -->
+
 ```solidity
 uint private constant ALLOCATION_UNITS_PER_NXM = 100;
 uint public constant NXM_PER_ALLOCATION_UNIT = ONE_NXM / ALLOCATION_UNITS_PER_NXM;
@@ -189,6 +228,28 @@ To retrieve data to construct `PoolAllocationRequest`, call the `/quote` endpoin
 **Returns:** The coverId of the purchased cover. Editing a cover returns a new coverId.
 
 **Description:** Purchases new cover or edits an existing one. Validates input parameters (e.g., cover period, commission ratio), allocates cover amounts across specified staking pools, calculates premiums and commissions, and mints a new Cover NFT. Editing requires the caller to own the cover or be approved for it.
+
+### `buyCoverWithRi`
+
+Purchases cover backed by a reinsurance provider's signed request.
+
+```solidity
+function buyCoverWithRi(
+    BuyCoverParams memory params,
+    PoolAllocationRequest[] memory poolAllocationRequests,
+    RiRequest memory riRequest
+) external payable returns (uint coverId);
+```
+
+| Parameter                | Description                                                    |
+| ------------------------ | ---------------------------------------------------------------- |
+| `params`                 | Struct containing cover purchase parameters (see above).          |
+| `poolAllocationRequests` | Array of pool allocation requests for the cover amount (see above). |
+| `riRequest`              | The reinsurance provider's signed request backing the cover.      |
+
+**Returns:** The coverId of the purchased cover.
+
+**Description:** Validates the reinsurance provider's signature and deadline, buys or edits the cover, and records the reinsurance allocation against the cover. The payment asset must match the cover asset.
 
 ### `expireCover`
 
@@ -295,6 +356,54 @@ function getPoolAllocations(uint coverId) external view returns (PoolAllocation[
 | Parameter | Description          |
 | --------- | -------------------- |
 | `coverId` | The ID of the cover. |
+
+### `getCoverRi`
+
+Returns the reinsurance allocation recorded against a cover.
+
+```solidity
+function getCoverRi(uint coverId) external view returns (Ri memory);
+```
+
+| Parameter | Description          |
+| --------- | -------------------- |
+| `coverId` | The ID of the cover. |
+
+### `getCoverDataWithRi`
+
+Returns a cover's data together with its reinsurance allocation.
+
+```solidity
+function getCoverDataWithRi(uint coverId) external view returns (CoverData memory, Ri memory);
+```
+
+| Parameter | Description          |
+| --------- | -------------------- |
+| `coverId` | The ID of the cover. |
+
+### `getCoverDataWithReference`
+
+Returns a cover's data together with the ids linking it to its edit history.
+
+```solidity
+function getCoverDataWithReference(uint coverId) external view returns (CoverData memory, CoverReference memory);
+```
+
+| Parameter | Description          |
+| --------- | -------------------- |
+| `coverId` | The ID of the cover. |
+
+### `getRiProviderConfig`
+
+Returns a reinsurance provider's premium destination and next signature nonce.
+
+```solidity
+function getRiProviderConfig(uint providerId) external view returns (RiConfig memory);
+```
+
+| Parameter    | Description                          |
+| ------------ | ------------------------------------- |
+| `providerId` | The ID of the reinsurance provider.   |
 
 ### `getCoverMetadata`
 

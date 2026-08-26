@@ -6,21 +6,11 @@ sidebar_position: 5
 
 [Staking pool managers](/protocol/staking/staking-pools#staking-pool-managers) allocate staked NXM to individual listings to create available capacity, which is the amount of cover that can be sold over a given period of time for a given listing. Capacity is calculated as follows:
 
-<p><code>total stake = active stake + expired stake</code></p>
+<!-- @check Cover.getGlobalCapacityRatio = 20000 -->
+A tranche's capacity equals the tranche's stake, multiplied by the global capacity ratio of 2.0, multiplied by one minus the product's capacity reduction ratio, multiplied by the product's target weight. Most products keep the reduction ratio at zero, so the factor stays at one. A product's capacity in a pool sums its usable tranche capacities and subtracts active allocations. Total product capacity sums that figure over every pool that lists the product.
 
-Where <code>active stake</code> represents all NXM in active staking periods and expired stake represents staked NXM in staking periods that have ended and can be withdrawn by NXM stakers.
-
-<p><code>total capacity = active stake * global capacity factor</code></p>
-
-Where total capacity is the amount of staked NXM in active staking periods and the global capacity factor is two for all listings but can be changed by the Advisory Board.
-
-<p><code>total product capacity = total capacity * capacity reduction factor * product weight</code></p>
-
-Where the <code>capacity reduction factor</code> is set to zero but can be adjusted up to one by the Advisory Board and <code>product weight</code> refers to the amount of staked NXM allocated to that cover listing.
-
-<p><code>total product capacity = reserved product capacity + available product capacity</code></p>
-
-Where <code>reserved product capacity</code> is the reserved product capacity for covers that have been sold and <code>available product capacity</code> is the remaining capacity that can still be sold.
+<!-- @check StakingProducts.MAX_TOTAL_WEIGHT = 2000 -->
+Product weight is the target-weight ratio a pool manager sets for a product, from 0 to 1.00 per product. A pool's total target weight across its products is capped at 20.00.
 
 ## Cover Buys and Reserved Capacity
 

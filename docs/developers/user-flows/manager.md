@@ -514,17 +514,12 @@ StakingProducts.recalculateEffectiveWeights(poolId, productIds);
 #### Why Pricing Adjustments Matter
 
 - **Target Price** → Acts as a reference, but actual price fluctuates with demand.
-- **Price Bump** → Increases price **by 2% per purchase**.
-- **Price Decay** → Reduces price **by 0.1% per day** when no new purchases occur.
+<!-- @check StakingProducts.PRICE_BUMP_RATIO = 500 -->
+- **Price Bump** → Adds 0.05% to the spot price for every 1% of pool capacity a purchase uses.
+<!-- @check StakingProducts.PRICE_CHANGE_PER_DAY = 200 -->
+- **Price Decay** → Subtracts 2% per day since the last price update.
 - **Utilization Impact** → Higher utilization pushes the effective price **closer to maxPrice**.
-- **`minPrice` Constraint** → Ensures no pool undercuts the **global minimum product price**.
-
-#### Why Pricing Adjustments Matter
-
-- **Target Price** → Acts as a reference, but actual price fluctuates with demand.
-- **Price Bump** → Increases price **by 2% per purchase**.
-- **Price Decay** → Reduces price **by 0.1% per day** when no new purchases occur.
-- **Utilization Impact** → Higher utilization pushes the effective price **closer to maxPrice**.
+- **`minPrice` Constraint** → The price floors at the product's minimum price.
 
 ---
 

@@ -96,6 +96,8 @@ function removeMember(uint memberId) external;
 
 The id is retired rather than freed. Anything open against it, such as a pending request, resolves to the Vault Operator afterwards, because there is no longer an address to pay.
 
+A member can call `removeMember` on themself, making self-removal immediate. Removal leaves RWIV untouched: the token is a plain ERC-20 balance that stays in the member's wallet and remains transferable. Removal revokes membership-only actions such as new deposits, direct withdrawals and locking, listed in the [FAQs](/rwi-vault/faqs). A removed member returns through the standard approval process and a fresh `addMember` call, which issues a new member id, because ids stay unique for the life of the registry.
+
 ### `proposePauseConfig` and `confirmPauseConfig`
 
 Set the pause bitmap. Emergency admins only, and the proposer cannot confirm their own proposal, so it takes two of them.

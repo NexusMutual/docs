@@ -24,7 +24,7 @@ The token price varied based on two primary parameters controlled by the bonding
 
 #### Token price formula
 
-<p><code>Price = A + (MCR(eth) / C) x MCR%^4</code></p>
+<p><code>TP = A + (MCR(eth) / C) x MCR%^4</code></p>
 
 Where:
 * TP = Token Price in Ether

@@ -66,7 +66,7 @@ For most of Nexus Mutual's cover products, you will provide the wallet address(e
 
 If you suffer a loss of funds and need to file a claim, you will provide the necessary information at that time. This information differs for each [cover product](/overview/cover-products/).
 
-## What is upfront proof of loss?
+### What is upfront proof of loss?
 
 For several of Nexus Mutual's cover products, you will need to provide some information in the **Extra Cover Info** section on the Buy Cover page.
 
@@ -102,7 +102,7 @@ Our Claim Assessment process is managed by the Claims Committee, a group of publ
 * **Roxana Danila, Advisory Board Member**. Roxana is Nexus Mutual's CTO and brings engineering and onchain analysis expertise to the Claims Committee.
 * **BraveNewDeFi, Head of Risk**. BraveNewDeFi is Head of Risk and has been managing claims incident response since he joined Nexus Mutual in 2021. Brave brings his onchain risk and analysis expertise to the Claims Committee.
 
-Every claim filed is reviewed by the Claims Committee, who provide claimants with help to calculate their losses and ensure all of the information needed is included before a claim is filed.
+Every claim filed is reviewed by the Claims Committee, who provide claimants with help to calculate their losses and ensure all of the information needed is included before a claim is filed. Some cover products name a [Designated Claim Assessor](/protocol/claims-assessment#expert-led-claim-assessment) instead of the Claims Committee.
 To learn more about the Claims Assessment process, see the [Claim Assessment](/protocol/claims-assessment) section of the documentation.
 
 ### When is loss of funds determined for a claim?
@@ -117,7 +117,8 @@ Proof of loss is different for each cover product. You can find information on p
 
 ### How long does the Claim Assessment process take?
 
-From the time you submit your claim, it usually takes three (3) days for the Claims Committee to review, vote, and determine a claim's outcome.
+<!-- @check Assessments.minVotingPeriod = 3 days -->
+From the time you submit your claim, voting runs for up to 72 hours and closes early once every assessor has voted. A cooldown period follows: 24 hours for every product type today. Then you get a redemption window to withdraw an accepted payout: 30 days for every product type today. See [Claim Assessment](/protocol/claims-assessment) for the full timeline.
 
 ## Staking
 

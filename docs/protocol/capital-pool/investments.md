@@ -38,7 +38,7 @@ In March 2023, Moss from the Avantgarde team shared an [RFC](https://forum.nexus
 Members signaled their support via Snapshot and this proposal was transitioned to an [NMPIP](https://forum.nexusmutual.io/t/nmpip-196-restart-enzyme-vault-start-staking-through-kiln-6-624-weth/1174/1), which was then put on chain for a full-member vote.
 * Members voted in favor of [NMPIP 196: Stake 6624 WETH from the Nexus Mutual Enzyme vault through Kiln](https://app.nexusmutual.io/governance/proposals/v1/196) and 6,624 WETH from the Nexus Mutual Enzyme vault (i.e., a portion of the Capital Pool) to Kiln.
 
-The 6,224 WETH was staked in Kiln and is currently accuring staking rewards. See [Avantgarde's latest post](https://forum.nexusmutual.io/t/nmpip-196-restart-enzyme-vault-start-staking-through-kiln-6-624-weth/1174/5?u=bravenewdefi) on the governance forum for a status update.
+The 6,624 WETH was staked in Kiln and is currently accuring staking rewards. See [Avantgarde's latest post](https://forum.nexusmutual.io/t/nmpip-196-restart-enzyme-vault-start-staking-through-kiln-6-624-weth/1174/5?u=bravenewdefi) on the governance forum for a status update.
 
 ## Investment in Chorus One through Stakewise V3 via the Nexus Mutual Enzyme vault
 

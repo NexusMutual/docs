@@ -31,6 +31,6 @@ Users are still able to submit a deposit request transaction even if that deposi
 - If approved, the deposit is accepted into the Vault and RWIV tokens are issued as normal. The VO can also approve part of a request, in which case the rest is returned to the user
 - If rejected, the deposit amount is returned to the user
 
-The Vault Cap was set to 10m USDC at launch. The current cap is held onchain and can be read from the Vault contract as <code>assetCap</code>.
+The Vault Cap was set to 10m USDC at launch. The live cap moves as the Vault Operator updates it, so read <code>assetCap</code> on the Vault contract for the current value.
 
 The Vault Operator can update the Vault Cap onchain as required. These updates are made according to the VO’s processes based on deposit demand, ability of [Insurance Partners](insurance-partners.md) to take in additional funds and interest accrued over time within the Vault.

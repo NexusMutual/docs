@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # File a claim
 
-A claim is filed against cover you hold, in the [Nexus Mutual app](https://app.nexusmutual.io/claims). The [Claims Committee](/protocol/claims-assessment) assesses it against the cover wording and votes on the outcome.
+A claim is filed against cover you hold, in the [Nexus Mutual app](https://app.nexusmutual.io/claims). The [Claims Committee](/protocol/claims-assessment) assesses it against the cover wording and votes on the outcome. Some cover products name a [Designated Claim Assessor](/protocol/claims-assessment#expert-led-claim-assessment) instead.
 
 ## Before you start
 
@@ -41,7 +41,7 @@ You review everything before it goes onchain.
 ## What happens next
 
 <!-- @check Assessments.minVotingPeriod = 3 days -->
-The Claims Committee reviews the claim and votes. Voting runs in a **72-hour window**, and assessors record the reasoning behind their vote, which you can read once voting closes.
+The Claims Committee reviews the claim and votes. Voting runs in a **72-hour window**, and assessors record the reasoning behind their vote, which you can read once voting closes. Voting closes early once every assessor has voted. Governance can extend voting with a fresh 72-hour window.
 
 A **24-hour cooldown** follows, during which the Advisory Board can act if a vote was fraudulent.
 

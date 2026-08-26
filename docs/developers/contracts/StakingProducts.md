@@ -40,7 +40,8 @@ The pricing system adjusts dynamically based on usage and capacity, ensuring fai
 - **Target Price (`targetPrice`)** – The price pool managers set as the preferred price for their product. Pricing gradually adjusts toward this value. Must be equal to or higher than Minimum Price.
 - **Minimum Price (`minPrice`)** – A product-specific minimum price that overrides the **global 1% minimum price** if needed.
 - **Price Bumps** – When cover is purchased, the price **increases slightly** (+0.05% per 1% of capacity used).
-- **Pricing Decay** – After a price bump, the price **gradually decreases** over time (0.5% per day) to allow for **price discovery**.
+<!-- @check StakingProducts.PRICE_CHANGE_PER_DAY = 200 -->
+- **Pricing Decay** – After a price bump, the price **gradually decreases** over time (2% per day) to allow for **price discovery**.
 - **Dynamic Adjustments** – Pricing fluctuates based on demand, ensuring fairness while preventing extreme volatility.
 
 ### Staking Pool Creation and Management
@@ -240,18 +241,16 @@ function getPremium(
 ) public returns (uint premium);
 ```
 
-| Parameter               | Description                                              |
-| ----------------------- | -------------------------------------------------------- |
-| `poolId`                | The ID of the staking pool.                              |
-| `productId`             | The ID of the specific cover product.                    |
-| `period`                | The cover duration in seconds.                           |
-| `coverAmount`           | The coverage amount requested (in the protocol's units). |
-| `initialCapacityUsed`   | The capacity already used before this cover.             |
-| `totalCapacity`         | The total capacity available in the pool.                |
-| `globalMinPrice`        | The global minimum price ratio for the cover product.    |
-| `useFixedPrice`         | Boolean indicating if a fixed price should be used.      |
-| `nxmPerAllocationUnit`  | The amount of NXM per allocation unit.                   |
-| `allocationUnitsPerNXM` | The number of allocation units per NXM token.            |
+| Parameter              | Description                                              |
+| ---------------------- | -------------------------------------------------------- |
+| `poolId`               | The ID of the staking pool.                              |
+| `productId`            | The ID of the specific cover product.                    |
+| `period`               | The cover duration in seconds.                           |
+| `coverAmount`          | The coverage amount requested (in the protocol's units). |
+| `totalCapacity`        | The total capacity available in the pool.                |
+| `productMinPrice`      | The product-specific minimum price ratio.                |
+| `useFixedPrice`        | Boolean indicating if a fixed price should be used.      |
+| `nxmPerAllocationUnit` | The amount of NXM per allocation unit.                   |
 
 **Description:** Typically called internally by the staking pool during cover purchase. Updates the product's bumped price and timestamp.
 

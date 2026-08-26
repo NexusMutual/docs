@@ -280,13 +280,15 @@ Returns: `uint tokenId` - The ID of the newly minted staking position NFT
 To keep your stake active beyond its initial duration and continue earning rewards, you must extend it before expiration.
 
 ```solidity
-StakingPool.extendDeposit(uint tokenId, uint newDuration);
+StakingPool.extendDeposit(uint tokenId, uint initialTrancheId, uint targetTrancheId, uint topUpAmount);
 ```
 
-| Parameter     | Description                                 |
-| ------------- | ------------------------------------------- |
-| `tokenId`     | ID of the staking position (NFT) to extend. |
-| `newDuration` | Additional duration for staking.            |
+| Parameter          | Description                                      |
+| ------------------ | ------------------------------------------------- |
+| `tokenId`          | ID of the staking position (NFT) to extend.        |
+| `initialTrancheId` | ID of the tranche the deposit currently sits in.   |
+| `targetTrancheId`  | ID of the tranche the deposit moves to.            |
+| `topUpAmount`      | Amount of NXM to add to the deposit, or zero.      |
 
 ### How to Withdraw Stake / Rewards
 
@@ -331,37 +333,6 @@ Your staked NXM can be locked for **two reasons**:
 ---
 
 ## Frequently Asked Questions (FAQ)
-
-### What happens if a manager votes near the end of a tranche?
-
-- Your stake remains locked for voting even if the tranche expires.
-- **Example:**
-  - **Manager votes on Day 88** of a **91-day tranche**.
-  - **Tranche expires on Day 91**, but **your NXM remains locked**.
-  - If voting ends **on Day 96**, you must wait **until then** to withdraw.
-
-### Can I prevent my NXM from being used in governance?
-
-- ❌ No, when you stake, you delegate governance rights to the pool manager.
-
-### How do I know if my stake is at risk of being burned?
-
-- The risk depends on:
-
-  - **Utilization of the pool** (how much NXM is backing active cover).
-  - **Risk level of the listed products** (higher risk = higher chance of claims).
-
-- Check pool utilization using the [capacity pools API](https://api.nexusmutual.io/v2/api/docs/#/Capacity/get_v2_capacity_pools__poolId_):
-
-  ```bash
-  GET https://api.nexusmutual.io/v2/capacity/pools/{poolId}
-
-  {
-    "poolId": 22,
-    "utilizationRate": 4926,  // 49.26% utilization
-    ...
-  }
-  ```
 
 ### What happens if a manager votes near the end of a tranche?
 

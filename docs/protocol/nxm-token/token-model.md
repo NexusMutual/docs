@@ -37,7 +37,7 @@ The two pools are described below:
 | 1) When NXM is purchased in this pool, the price increases as the ETH liquidity increases and the virtual amount of NXM decreases.       | 5) During periods where no NXM is being redeemed for ETH, the ratchet mechanism will move the price back toward the Book Value.   |
 | 2) This pool operates within the following price range: <code>[(100+ oracle buffer)% * Book Value,∞)</code>                              | 6) This is the Book Value, which the ratchet mechanism will "ratchet" up to in the absence of NXM redemptions in this pool.       |
 | 3) During periods where no NXM is purchased, the ratchet mechanism will move the price back toward the Book Value.                       | 7) When NXM is redeemed in this pool, the price decreases as the ETH liquidity decreases and the virtual amount of NXM increases. |
-| 4) This is the Book Value, which the ratchet mechanism will "ratchet" down to in the absence of NXM purchases in this pool.              | 8) This pool operates within the following price range: <code>(0, (100-x)% * Book Value]</code>                                   |
+| 4) This is the Book Value, which the ratchet mechanism will "ratchet" down to in the absence of NXM purchases in this pool.              | 8) This pool operates within the following price range: <code>(0, (100 - oracle buffer)% * Book Value]</code>                                   |
 
 ### How liquidity is managed within the RAMM
 

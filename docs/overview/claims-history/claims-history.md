@@ -7,13 +7,13 @@ sidebar_position: 3
 
 Because Nexus Mutual is a discretionary mutual, the cover products members purchase are not the same as traditional insurance policies. When one of our members has cover and suffers a material loss, they can submit their claim and go through the [Claims Assessment](/protocol/claims-assessment) process.
 
-Once a claim is submitted, the Claim Committee reviews the claim details, helps claimants calculate their claim amount, discusses claims to determine if they are valid and meet the terms outlined in the cover wording, and votes to accept or deny a claim based on its validity.
+Once a claim is submitted, the Claims Committee reviews the claim details, helps claimants calculate their claim amount, discusses claims to determine if they are valid and meet the terms outlined in the cover wording, and votes to accept or deny a claim based on its validity.
 
 There will be a discussion on the validity of a claim on the [Nexus Mutual governance forum](https://forum.nexusmutual.io/c/claims-assessment/6), where the Claims Committee will share a summary of each claim filed along with a discussion and assessment of the claim.
 
 ## Claims Paid to Date
 
-Members of the Mutual have paid out over $18M to cover holders who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralized custodians.
+The Mutual has paid more than $18.5M in claims to cover holders as of August 2026, after exploits, technical failures, and halted withdrawals on centralized custodians. The [Nexus Mutual Claims Database](https://nexusmutualdao.io/claims-history) shows the running total.
 
 For every claim the Mutual has paid, along with the amount and date, see the [claims record](https://nexusmutual.io/claims).
 
