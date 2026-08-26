@@ -43,6 +43,14 @@ Because the same stake can back several listings at once, up to the pool's maxim
 
 Staking is not a yield product with a downside case. Deciding what to stake on is a risk decision, and it is the decision the rewards are paid for.
 
+## Managing your deposit
+
+The delegations screen in the app lists your deposits and lets you manage each one.
+
+You can extend a deposit into a later tranche, or top up an existing deposit, through the app's update-deposit flow. Both actions call [`extendDeposit`](/developers/contracts/StakingPool#extenddeposit) on the `StakingPool` contract.
+
+Your staking position is an NFT, and transferring it transfers the deposit.
+
 ## Where to look
 
 [Staking](/protocol/staking/) covers the mechanics in depth, [Staking pools](/protocol/staking/staking-pools) covers running one, and [Capacity](/protocol/capacity) explains how staked NXM turns into cover capacity.

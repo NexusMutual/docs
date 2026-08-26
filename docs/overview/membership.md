@@ -42,6 +42,8 @@ To become a member, you will need to verify your identity.
 2. Proceed to KYC submission: you will be prompted to submit a photo of your government-issued identification, which will be used in the verification process.
 3. Pay the 0.0020 ETH fee and finalize your membership.
 
+The identity check runs inside the app. Membership activates onchain with the join fee once you pass verification.
+
 **Unfortunately, the Nexus Mutual DAO cannot accept members from the following jurisdictions.** We are working hard to reduce this list in the future.
 
 Restricted|Countries|List
