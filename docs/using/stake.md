@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: How to stake NXM, by delegating to a staking pool or running one, with staking periods, rewards, and burn risk.
 ---
 
 # Stake NXM
