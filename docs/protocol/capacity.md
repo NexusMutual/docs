@@ -6,7 +6,7 @@ sidebar_position: 5
 
 [Staking pool managers](/protocol/staking/staking-pools#staking-pool-managers) allocate staked NXM to individual listings to create available capacity, which is the amount of cover that can be sold over a given period of time for a given listing. Capacity is calculated as follows:
 
-<!-- @check Cover.GLOBAL_CAPACITY_RATIO = 20000 -->
+<!-- @check Cover.getGlobalCapacityRatio = 20000 -->
 A tranche's capacity equals the tranche's stake, multiplied by the global capacity ratio of 2.0, multiplied by one minus the product's capacity reduction ratio, multiplied by the product's target weight. Most products keep the reduction ratio at zero, so the factor stays at one. A product's capacity in a pool sums its usable tranche capacities and subtracts active allocations. Total product capacity sums that figure over every pool that lists the product.
 
 <!-- @check StakingProducts.MAX_TOTAL_WEIGHT = 2000 -->

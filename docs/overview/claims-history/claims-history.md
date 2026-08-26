@@ -13,7 +13,7 @@ There will be a discussion on the validity of a claim on the [Nexus Mutual gover
 
 ## Claims Paid to Date
 
-Members of the Mutual have paid out more than $18.5M as of August 2026. See the [Nexus Mutual Claims Database](https://nexusmutualdao.io/claims-history) for the running total, paid to cover holders after exploits, technical failures, and halted withdrawals on centralized custodians.
+The Mutual has paid more than $18.5M in claims to cover holders as of August 2026, after exploits, technical failures, and halted withdrawals on centralized custodians. The [Nexus Mutual Claims Database](https://nexusmutualdao.io/claims-history) shows the running total.
 
 For every claim the Mutual has paid, along with the amount and date, see the [claims record](https://nexusmutual.io/claims).
 

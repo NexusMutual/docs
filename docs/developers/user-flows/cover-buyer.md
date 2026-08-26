@@ -59,7 +59,7 @@ Cover pricing follows a **dynamic adjustment mechanism**:
 
 <!-- @check StakingProducts.PRICE_CHANGE_PER_DAY = 200 -->
 - **Decay Rate:** The price subtracts 2% per day since the last price update, moving the price toward the target price.
-- **Floor:** The price floors at the product's minimum price (`minPrice`).
+- **Floor:** The price floors at the pool's target price, which stays at or above the product's minimum price (`minPrice`).
 
 To check the **minimum price** of a product:
 
@@ -285,7 +285,7 @@ Claims.submitClaim(uint coverId);
 
 - Claims are **reviewed by claim assessors** who evaluate validity based on cover conditions.
 <!-- @check Assessments.minVotingPeriod = 3 days -->
-- **Review Duration:** A 72-hour voting window, which closes early once every assessor votes, followed by the product type's cooldown period (24 hours for every product type today). See [Claim Assessment](/protocol/claims-assessment) for the full process.
+- **Review Duration:** A 72-hour voting window, which closes early once every assessor has voted, followed by the product type's cooldown period (24 hours for every product type today). See [Claim Assessment](/protocol/claims-assessment) for the full process.
 - If a claim is **approved**, the payout equals the requested amount, up to the cover amount, per the cover wording.
 - If a claim is **rejected**, the **claim deposit is lost**.
 - Appeal Process:
