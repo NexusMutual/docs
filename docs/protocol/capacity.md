@@ -20,13 +20,11 @@ When someone buys cover, the protocol reserves the necessary amount of capacity 
 
 Individual staking pools can determine which cover listings they allocate staked NXM against to open up capacity. The correlation risk between all staking pools needs to be managed on a global level within the protocol.
 
-The Advisory Board can adjust two factors to adjust exposure to risk for any one product.
-
 ### Global Capacity Factor
 
 <!-- @check Cover.getGlobalCapacityRatio = 20000 -->
-The global capacity factor is set at two for all listings, which means every one NXM staked opens up two NXM worth of capacity.
+The global capacity factor is set in the Cover contract code at 2.0. Changing it takes a contract upgrade approved through governance.
 
 ### Capacity Reduction Factor
 
-The capacity reduction factor is set at zero for all products but can be increased up to a maximum of one if any one listing's active cover approaches 20% of the minimum capital requirement (MCR).
+The capacity reduction factor is set at zero for all products. The Advisory Board can increase it up to a maximum of one, through `setProducts`, if any one listing's active cover approaches 20% of the minimum capital requirement (MCR).

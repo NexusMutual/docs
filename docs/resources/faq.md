@@ -89,13 +89,13 @@ If you're interested in having your protocol reviewed for a potential listing in
 
 ### Have any claims been paid?
 
-To date, members have paid $18M+ to people who suffered a loss due to past exploits, technical failures, and halted withdrawals on centralised custodians.
+Members have paid more than $18.5M as of August 2026 for losses from exploits, failures, and custodian halts. See the [Claims Database](https://nexusmutualdao.io/claims-history) for running totals.
 
 To learn more, see the [Claims History section](/overview/claims-history/) of the documentation.
 
 ### How do I know my claim will be paid?
 
-Nexus Mutual's claims process is battle-tested and has been used to review and approve $18M+ in claims to date.
+Nexus Mutual's claims process is battle-tested, having reviewed and approved more than $18.5M as of August 2026.
 
 Our Claim Assessment process is managed by the Claims Committee, a group of publicly known experts with an established record of assessing claims within the Mutual. Currently, Nexus Mutual's Claims Committee has three members:
 * **Hugh Karp, Advisory Board Member**. Hugh is Nexus Mutual's founder and brings a wealth of traditional insurance expertise along with half a decade of onchain risk expertise to the Claims Committee.
