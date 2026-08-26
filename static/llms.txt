@@ -34,9 +34,11 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 
 ## Using Nexus Mutual
 
-- [Using Nexus Mutual](https://docs.nexusmutual.io/using/): How to buy cover, stake NXM, and file a claim.
+- [Using Nexus Mutual](https://docs.nexusmutual.io/using/): How to become a member, buy cover, stake NXM, swap NXM, and file a claim.
+- [Become a member](https://docs.nexusmutual.io/using/become-a-member): How to become a Nexus Mutual member: identity verification, the membership fee, and the onchain join.
 - [Buy cover](https://docs.nexusmutual.io/using/buy-cover): Cover protects a position against a defined risk for a set amount and period.
 - [Stake NXM](https://docs.nexusmutual.io/using/stake): Staking NXM backs cover on chosen listings.
+- [Swap NXM](https://docs.nexusmutual.io/using/swap-nxm): How to swap ETH for NXM in the Nexus Mutual app.
 - [File a claim](https://docs.nexusmutual.io/using/file-a-claim): A claim is filed against cover you hold, in the Nexus Mutual app.
 
 ## The Nexus Mutual Protocol
@@ -81,6 +83,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 - [Contracts](https://docs.nexusmutual.io/developers/contracts/): The source code for the Nexus Mutual protocol is available on GitHub.
 - [Assessments](https://docs.nexusmutual.io/developers/contracts/Assessments): The Assessments contract manages evaluation of cover claims.
 - [Cover](https://docs.nexusmutual.io/developers/contracts/Cover): The Cover contract manages the purchase and management of coverage within the protocol.
+- [CoverProducts](https://docs.nexusmutual.io/developers/contracts/CoverProducts): Reference for the CoverProducts contract, the registry of cover products and product types.
 - [Claims](https://docs.nexusmutual.io/developers/contracts/Claims): The Claims contract enables cover owners to submit claims and redeem payouts if their claims are accepted.
 - [Pool](https://docs.nexusmutual.io/developers/contracts/Pool): The Pool contract is a core component of the protocol, responsible for managing collective assets such as ETH and other ERC20 tokens.
 - [RAMM](https://docs.nexusmutual.io/developers/contracts/Ramm): The Ramm contract is designed to allow swaps between NXM tokens and ETH.
