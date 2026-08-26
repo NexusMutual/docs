@@ -9,7 +9,7 @@ The swap page in the [Nexus Mutual app](https://app.nexusmutual.io/swap) pairs E
 
 ## What the page shows
 
-The UI shows the **exchange rate**, a **gas estimate**, the **price impact**, and the **minimum received** after slippage.
+The UI shows the **swap rate**, a **gas estimate**, the **price impact**, and the **minimum received** after slippage.
 
 The maximum amount you can send is your balance minus the estimated gas.
 
