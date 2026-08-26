@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: How to file a claim in the Nexus Mutual app, the claim deposit, and what happens after you submit.
 ---
 
 # File a claim
