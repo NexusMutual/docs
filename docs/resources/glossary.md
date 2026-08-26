@@ -86,7 +86,7 @@ The fixed period staked NXM is committed for. Stake is held per tranche and can 
 The amount of cover that can be sold. Staked NXM opens capacity at a multiple set by the capacity factor.
 
 **Capacity factor**
-The multiple applied to staked NXM to give total capacity. Set globally and adjustable by the Advisory Board.
+The multiple applied to staked NXM to give total capacity. The global capacity factor is set in the Cover contract code at 2.0. Changing it takes a contract upgrade approved through governance.
 
 **Capacity reduction factor**
 A per-listing reduction applied to capacity, used to limit how much of the Mutual's exposure any one listing can take.
