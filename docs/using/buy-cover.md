@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: How to buy cover in the Nexus Mutual app, what you choose, what you receive, and what happens after.
 ---
 
 # Buy cover
