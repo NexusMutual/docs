@@ -47,6 +47,16 @@ Two things in it are worth knowing before you buy rather than after a loss:
 
 Each product's page links its wording, and the wordings are also published on IPFS.
 
+## Updating your cover info
+
+Open **Update Cover** from a cover you hold to reach the **Update Cover Info** panel.
+
+Each product defines what it asks for: covered wallet addresses with a chain selector, API keys, a validator list upload, a wallet-balances upload, or free text. Some products also carry a quota share or an AUM cover percentage.
+
+You can edit this information while the cover is active, and until cover end plus the grace period. Edits stop during and after a loss event.
+
+The information is stored privately and offchain. Reading it back needs a wallet signature proving you own the address. The [Claims Committee](/protocol/claims-assessment) reads it to validate claims. See the FAQ's [upfront proof of loss](/resources/faq#what-is-upfront-proof-of-loss) entry, and [File a claim](/using/file-a-claim) for what happens after a loss.
+
 ## After buying
 
 Your cover appears in the [app](https://app.nexusmutual.io/dashboard). If you suffer a loss, see [File a claim](/using/file-a-claim).
