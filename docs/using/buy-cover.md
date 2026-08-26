@@ -51,4 +51,4 @@ Each product's page links its wording, and the wordings are also published on IP
 
 Your cover appears in the [app](https://app.nexusmutual.io/dashboard). If you suffer a loss, see [File a claim](/using/file-a-claim).
 
-Cover does not renew automatically. When it expires, coverage stops.
+Cover does not renew automatically. When it expires, coverage stops. To renew it automatically instead, see [Limit orders](/using/limit-orders).

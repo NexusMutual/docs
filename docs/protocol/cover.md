@@ -35,3 +35,7 @@ Should a member suffer a loss of funds that is less than the total covered amoun
 Members need to use their whitelisted address to buy cover and file a claim. However, a member can transfer their cover NFT to a non-member address for a variety of reasons (e.g, holding cover in an address secured by a hardware wallet). Because cover NFTs are transferable, someone can switch their membership address before an existing cover expires, as the NFT can be transferred to an address and membership can then be transferred to that address.
 
 This provides members with greater optionality when self-custodying their cover.
+
+### Limit orders
+
+A member can place a limit order to buy cover once the premium falls to a chosen maximum, or to renew existing cover automatically before it expires. A solver executes the order onchain once the price condition is met, and the member pays only at that point. See [Limit orders](/using/limit-orders) for how to place one.
