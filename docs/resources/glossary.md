@@ -144,7 +144,7 @@ The total amount of cover currently in force, in ETH terms.
 ## The NXM token
 
 **NXM**
-The membership and governance token. It is backed by the capital pool, used to stake, and used to vote. It can only be held and transferred by members.
+The token of the mutual. It is backed by the capital pool, used to stake, and used to vote. It can only be held and transferred by members.
 
 **Book value**
 The capital pool in ETH divided by NXM supply — the capital backing each token.
