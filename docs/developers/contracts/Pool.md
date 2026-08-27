@@ -210,7 +210,7 @@ function sendPayout(
 
 ### `sendEth`
 
-Transfers ETH to a member, typically in exchange for native tokens (RAMM only).
+Transfers ETH to a member, typically as part of a swap for native tokens (RAMM only).
 
 ```solidity
 function sendEth(address member, uint amount) external onlyRamm nonReentrant;

@@ -57,7 +57,7 @@ Voting on a proposal to replace an AB member locks your NXM transfers until the 
 
 ## Voting Power
 
-Every member who joins Nexus Mutual has voting power equal to one vote plus the sum total of their NXM tokens.
+Every member who joins Nexus Mutual has voting power equal to one vote plus the sum total of their NXM tokens. NXM delegated to a staking pool votes with that pool's manager.
 
 <!-- @check Governor.VOTE_WEIGHT_CAP_PERCENTAGE = 5 -->
 A single member's voting power is capped at 5% of the total NXM supply. This cap applies to Snapshot votes as well as onchain votes, because the Snapshot space reads voting power from the `VotePower` contract.
@@ -122,7 +122,7 @@ While not required, signalling votes are a helpful way to gauge support for an R
 
 ## Onchain execution
 
-Proposals that change the protocol are enacted onchain through the `Governor` contract. The Governor contract handles two onchain proposal kinds, described below.
+Proposals that change the protocol are enacted onchain through the `Governor` contract. The Governor contract handles two onchain proposal kinds, described below. See [Vote on proposals](/using/vote) for how to cast a vote in the app.
 
 Advisory Board proposals carry arbitrary transactions, such as a contract upgrade or a Capital Pool allocation. They pass by Advisory Board vote followed by a timelock. Member proposals exist only to replace an Advisory Board member, and members vote on them directly.
 

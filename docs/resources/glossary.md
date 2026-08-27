@@ -24,7 +24,8 @@ The members who assess claims. They review the evidence, discuss the claim again
 An assessor named in a cover product's wording, used for that product's claims instead of the Claims Committee. See [Claim assessment](/protocol/claims-assessment#expert-led-claim-assessment).
 
 **Voting power**
-A member's weight in a vote: their NXM balance plus one, capped at a share of total supply. Staking pool managers also vote with the NXM delegated to their pools.
+<!-- @check Governor.VOTE_WEIGHT_CAP_PERCENTAGE = 5 -->
+A member's weight in a vote: their NXM balance plus one, capped at 5% of the total NXM supply. Staking pool managers also vote with the NXM delegated to their pools.
 
 ## Cover
 
@@ -35,7 +36,7 @@ Protection bought against a specific risk for a set period and amount. Held as a
 The terms and conditions of a cover product: what is covered, what is excluded, and what counts as a loss. The Claims Committee assesses every claim against it.
 
 **Listing**
-A single thing you can buy cover on, such as one protocol or one custodian. Each listing is sold under a product.
+A single thing you can buy cover on, such as one protocol or one custodian. Each listing is sold under a product. Protocol pages use cover product and listing for the same catalogue entry.
 
 **Product**
 The kind of cover a listing is sold under. The product sets the cover wording, the grace period, and how a claim on it is assessed. Single Protocol Cover and Quota Share Cover are products.
@@ -43,8 +44,20 @@ The kind of cover a listing is sold under. The product sets the cover wording, t
 **Cover asset**
 The asset a cover is denominated in and paid out in.
 
+**Payment asset**
+The asset a member pays the cover fee in: ETH, USDC, cbBTC or NXM. It can differ from the cover asset.
+
+**Cover fee**
+The amount a member pays for cover. See [Pricing](/protocol/pricing).
+
 **Cover period**
 How long a cover runs, chosen when it is bought, within the minimum and maximum the protocol allows.
+
+**Limit order**
+An instruction to buy or renew cover automatically once the price meets a chosen maximum. See [Limit orders](/protocol/cover#limit-orders).
+
+**Solver**
+The execution service Nexus Mutual operates to submit limit orders onchain once their price condition holds. See [Limit orders](/protocol/cover#limit-orders).
 
 **Grace period**
 A window after a cover expires during which a claim can still be filed for a loss that happened while the cover was active.
@@ -57,7 +70,7 @@ The 0.05 ETH paid when a claim is submitted. An accepted claim refunds the depos
 An amount of loss a cover holder bears before a claim can be made. Used where small losses are expected in normal operation, such as validator penalties.
 
 **Proof of loss**
-The evidence a claimant provides. Most cover requires it upfront, recorded when the cover is bought, so the covered addresses or positions are fixed before any loss occurs.
+The evidence a claimant provides. Most cover requires it upfront, recorded when the cover is bought. A cover holder can edit it while the cover is active and during the grace period that follows, up until any loss event.
 
 **Quota share**
 An arrangement where the Mutual takes an agreed share of another cover provider's risk, and pays that share of their claims.
@@ -114,7 +127,7 @@ The rate at which price falls back toward the target price when no cover is bein
 ## Capital
 
 **Capital pool**
-The assets backing cover. Premiums flow in, claim payouts flow out, and its value against the MCR determines how well capitalised the Mutual is. See [Capital pool](/protocol/capital-pool/).
+The assets backing cover. Cover fees flow in, claim payouts flow out, and its value against the MCR determines how well capitalised the Mutual is. See [Capital pool](/protocol/capital-pool/).
 
 **Minimum Capital Requirement (MCR)**
 The minimum the Mutual needs to hold to be confident it can pay all claims. Driven by total active cover divided by the gearing factor. See [MCR](/protocol/capital-pool/mcr).

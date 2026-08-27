@@ -115,8 +115,8 @@ The above is an overview of the RAMM, how the mechanism works, how liquidity is 
 | **k<sub>a</sub>**               | Above Pool invariant equal to *liq* * *NXM<sub>a</sub>*                                                                                                |
 | **NXM<sub>b</sub>**             | Notional NXM reserve in the Below Pool                                                                                                                 |
 | **k<sub>b</sub>**               | Below Pool invariant equal to *liq* * *NXM<sub>b</sub>*                                                                                                |
-| **spot<sub>a</sub>**            | Current price at which members can exchange ETH for NXM. Equal to *liq* / *NXM<sub>a</sub>*                                                            |
-| **spot<sub>b</sub>**            | Current price at which members can exchange NXM for ETH. Equal to *liq* / *NXM<sub>b</sub>*                                                            |
+| **spot<sub>a</sub>**            | Current price at which members can swap ETH for NXM. Equal to *liq* / *NXM<sub>a</sub>*                                                            |
+| **spot<sub>b</sub>**            | Current price at which members can swap NXM for ETH. Equal to *liq* / *NXM<sub>b</sub>*                                                            |
 | **ratchetTarget<sub>a</sub>**   | Value towards which *spot<sub>a</sub>* moves.   Equal to *(1 + oracleBuffer)* * *ratchetTarget*                                                        |
 | **ratchetTarget<sub>b</sub>**   | Value towards which *spot<sub>b</sub>* moves. Equal to *(1 - oracleBuffer)* * *ratchetTarget*                                                          |
 | **twap<sub>a</sub>**            | Time-weighted average price of the Above Pool                                                                                                          |

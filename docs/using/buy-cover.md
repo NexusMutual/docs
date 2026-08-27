@@ -25,9 +25,11 @@ Check that the risk you want covered has a listing. The [product index](https://
 
 The price comes from the staking pools backing that listing, so it moves with how much of their capacity is already in use. See [Pricing](/protocol/pricing) for how that works.
 
+You can also wait for a lower price with a limit order, see [Place a limit order](/using/limit-orders).
+
 ## Proof of loss is collected upfront
 
-Most cover requires you to say what is being protected at the point of purchase — typically the addresses or positions the cover applies to. This is recorded with the cover and cannot be changed afterwards.
+Most cover requires you to give **proof of loss** at the point of purchase: the addresses or positions the cover applies to. This is recorded with the cover. You can edit it later, see [Updating your cover info](#updating-your-cover-info).
 
 Getting this wrong is the most common reason a claim fails. A loss on an address you did not list is not covered, however genuine the loss.
 
@@ -48,8 +50,18 @@ Two things in it are worth knowing before you buy rather than after a loss:
 
 Each product's page links its wording, and the wordings are also published on IPFS.
 
+## Updating your cover info
+
+Reach the **Extra Cover Info** panel from a cover you hold, to edit your proof of loss.
+
+Each product defines what it asks for: covered wallet addresses with a chain selector, API keys, a validator list upload, a wallet-balances upload, or free text. Some products also carry a quota share.
+
+You can edit it while your cover is active and during the grace period that follows, up until any loss event.
+
+The information is stored privately and offchain. Reading it back needs a wallet signature proving you own the address. The [Claims Committee](/protocol/claims-assessment) reads it to validate claims. See the FAQ's [upfront proof of loss](/resources/faq#what-is-upfront-proof-of-loss) entry, and [File a claim](/using/file-a-claim) for what happens after a loss.
+
 ## After buying
 
 Your cover appears in the [app](https://app.nexusmutual.io/dashboard). If you suffer a loss, see [File a claim](/using/file-a-claim).
 
-Cover does not renew automatically. When it expires, coverage stops.
+Cover runs to its end date, then stops. You can edit the cover to extend its period, see [Cover](/protocol/cover#flexible-coverage). A renewal order buys the next cover automatically, see [Place a limit order](/using/limit-orders).

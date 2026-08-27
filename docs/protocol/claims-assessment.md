@@ -33,7 +33,7 @@ Once you have entered in all of the incident details, you can proceed to the Pro
 
 ### Step 2: Proof of Loss
 
-Nexus Mutual requires cover holders to provide proof of loss when they submit a claim. The proof of loss required varies depending on the cover product. For most of Nexus Mutual's cover products, upfront proof of loss is provided when cover is purchased or added during the active cover period before a loss occurs onchain.
+Nexus Mutual requires cover holders to provide proof of loss when they submit a claim. The proof of loss required varies depending on the cover product. For most of Nexus Mutual's cover products, upfront proof of loss is provided when cover is purchased. It can also be added while the cover is active and during the grace period that follows, up until any loss event.
 
 If upfront proof of loss is already available, the Claims Committee will review this information to determine your claim's validity and help you calculate your Claim Amount and prepare for claims filing.
 
