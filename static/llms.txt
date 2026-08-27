@@ -57,6 +57,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 - [NXM Token](https://docs.nexusmutual.io/protocol/nxm-token/): The NXM token is a governance and utility token backed by crypto assets held in the capital pool contract.
 - [Token Model](https://docs.nexusmutual.io/protocol/nxm-token/token-model): The Nexus Mutual protocol has a mechanism that allows members to freely mint and redeem NXM and ensures all claims can be confidently paid should a major loss event occur.
 - [History of Capitalisation Controls](https://docs.nexusmutual.io/protocol/nxm-token/history-capitalisation-controls): The following information below is the documentation that outlined how the original bonding curve worked; how the NXM token was priced; certain bonding curve parameters; how the Minimum Capital Requirement (MCR) was previously implemented; and the history of the MCR Floor.
+- [Wrapped NXM](https://docs.nexusmutual.io/protocol/nxm-token/wrapped-nxm): Wrapped NXM (wNXM) is an ERC-20 token that wraps NXM one to one.
 
 ### Capital Pool
 
