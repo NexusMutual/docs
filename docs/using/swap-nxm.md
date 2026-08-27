@@ -17,6 +17,10 @@ The maximum amount you can send is your balance minus the estimated gas.
 
 You set a **slippage tolerance** and a **transaction deadline** before you swap. Slippage tolerance bounds how far the price can move against you before the swap fails. The deadline bounds how long the transaction can sit unconfirmed before it fails.
 
+## Before you swap
+
+The app checks the protocol-wide pause state before it lets a swap go through. Swapping resumes once the protocol is unpaused.
+
 ## Swapping ETH and NXM
 
 A RAMM swap calls `swap` with your minimum amount out and your deadline. Buying NXM sends ETH with the transaction. See [Token Model](/protocol/nxm-token/token-model) for how the RAMM prices NXM.
@@ -39,7 +43,3 @@ Sources for the wrapper:
 * [PepperSec's Wrapped NXM on GitHub](https://github.com/peppersec/wrappedNXM)
 * [Wrapped NXM on CoinGecko](https://www.coingecko.com/en/coins/wrapped-nxm)
 * [Wrapped NXM on the Nexus Mutual DAO website](https://nexusmutualdao.io/wrapped-nxm)
-
-## Before you swap
-
-The app checks the protocol-wide pause state before it lets a swap go through. Swapping resumes once the protocol is unpaused.
