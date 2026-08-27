@@ -131,7 +131,7 @@ These contracts hold no protocol state and exist to make integration easier.
 
 ## Token contracts
 
-- **`NXMToken`** is the mutual's membership token.
+- **`NXMToken`** is the mutual's token. Only members can hold and transfer it.
 - **`CoverNFT`** represents ownership of a cover.
 - **`StakingNFT`** represents ownership of a staking position.
 
