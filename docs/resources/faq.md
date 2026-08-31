@@ -89,7 +89,7 @@ If you're interested in having your protocol reviewed for a potential listing in
 
 ### Have any claims been paid?
 
-Members have paid more than $18.5M as of August 2026 for losses from exploits, failures, and custodian halts. See the [Claims Database](https://nexusmutualdao.io/claims-history) for running totals.
+Members have paid more than $18.5M as of August 2026 for losses from exploits, failures, and custodian halts. See the [Claims page](https://nexusmutual.io/claims) for running totals.
 
 To learn more, see the [Claims History section](/overview/claims-history/) of the documentation.
 

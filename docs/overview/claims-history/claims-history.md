@@ -20,7 +20,7 @@ For every claim the Mutual has paid, along with the amount and date, see the [cl
 ## Auditing, Reviewing Past Claims
 
 For stats on claims, you can review:
-* The Mutual's [claims history on the Nexus Mutual DAO website](https://nexusmutualdao.io/claims-history), where you will find the summary, outcome, and other information about each claim request that has been filed.
+* The Mutual's [claims history on the Nexus Mutual website](https://nexusmutual.io/claims), where you will find the summary, outcome, and other information about each claim request that has been filed.
 * The [Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 * The [claims section in the Nexus Mutual user interface](https://nexusmutual.io/claims). Numerous claims have been submitted by users testing the system in the first two years after the Mutual launched.
 
