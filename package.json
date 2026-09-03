@@ -54,5 +54,12 @@
   },
   "engines": {
     "node": ">=22.14"
+  },
+  "overrides": {
+    "qs": "^6.16.0",
+    "serialize-javascript": "^7.0.5",
+    "sockjs": {
+      "uuid": "^11.1.1"
+    }
   }
 }
