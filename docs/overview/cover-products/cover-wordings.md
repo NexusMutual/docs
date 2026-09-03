@@ -11,7 +11,6 @@ Each wording below is the one the protocol currently records for that product. R
 
 - [Baseline Yield Cover](https://api.nexusmutual.io/v2/ipfs/QmVqZCbB1EHpAucZSawXu7WMC8FHTpwJSyiTq7fCbf2nv7)
 - [Crypto Cover](https://api.nexusmutual.io/v2/ipfs/QmaUcoUq8972J41UzyyT82C9EkVme82UYSCbuQfzkS6pnr)
-- [DeFi Pass](https://api.nexusmutual.io/v2/ipfs/QmQLh2wNDD2b2RGg9rNFbyrQwxqTthrTNaTsHenZnRg6u6)
 - [ETH Slashing Umbrella](https://api.nexusmutual.io/v2/ipfs/QmRKcAsQrdHU2HtGizeRX5tgPgqAhZ3dVYhz29i16UPGza)
 - [Follow On Cover](https://api.nexusmutual.io/v2/ipfs/QmYgZNrGSAQZCGKEGdgvR132KWkLKtSDXmZVGfoGSKfYMG)
 - [Fund Portfolio Cover](https://api.nexusmutual.io/v2/ipfs/QmW1ZUGHB5Uo5rbTrfj49BNAB8ADd4Nc4cYFCAfLGvVKjx)
