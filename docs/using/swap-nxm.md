@@ -21,6 +21,12 @@ You set a **slippage tolerance** and a **transaction deadline** before you swap.
 
 The app checks the protocol-wide pause state before it lets a swap go through. Swapping resumes once the protocol is unpaused.
 
+A swap fails when the price moves beyond your slippage tolerance, or when the deadline passes before the transaction confirms. Raise the slippage tolerance or extend the deadline, and submit it again.
+
+<!-- @check Ramm.TARGET_LIQUIDITY = 5000 ether -->
+<!-- @check Ramm.LIQ_SPEED_B = 100 ether -->
+The RAMM aims to hold 5,000 ETH of liquidity. When swaps from NXM to ETH draw it below that, the protocol adds back up to 100 ETH a day. It adds liquidity only while the capital pool holds more than the MCR plus that 5,000 ETH. A low ETH balance during heavy swaps from NXM to ETH is therefore expected, and it recovers over the following days.
+
 ## Swapping ETH and NXM
 
 A RAMM swap calls `swap` with your minimum amount out and your deadline. Buying NXM sends ETH with the transaction. See [Token Model](/protocol/nxm-token/token-model) for how the RAMM prices NXM.
