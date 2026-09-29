@@ -73,13 +73,13 @@ npm run docs:wordings
 
 The page links the wording for every product type with a current listing, and lists the public listings with their product IDs. Private listings are custom deals, so they stay off the page. A product type whose listings are all private shows its wording alone.
 
+**Cover products refresh** runs this daily. When the page changes, it builds the site and opens a pull request. The next run updates that pull request if it is still open, and closes it once `master` already matches the API. The workflow builds the site itself, because a pull request it opens does not trigger the Build check.
+
 ## Checks on a pull request
 
 **Build** runs `npm ci` and `npm run build`. A failure here belongs to this repository and blocks the merge.
 
 **Contract docs drift** runs the check above on every pull request and again weekly. It reports without blocking, because it fails when contracts change rather than when the docs do. Drift found on a scheduled run opens a single tracking issue and updates that same issue until the reference matches again.
-
-**Cover products refresh** runs daily. It regenerates the cover wordings and listings page, and opens a pull request when the page changes. An unmerged refresh is updated in place on the same branch. The workflow builds the site itself, because a pull request it opens does not trigger the Build check.
 
 ## How it deploys
 

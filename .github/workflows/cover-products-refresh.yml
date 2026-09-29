@@ -6,7 +6,8 @@ name: Cover products refresh
 # Listings change often, so a check that only reports would keep the drift
 # issue open most weeks. This turns each change into a pull request that
 # fixes it. The pull request reuses one branch, so an unmerged refresh is
-# updated in place instead of piling up.
+# updated in place instead of piling up, and closed once master matches the
+# API again.
 #
 # A pull request opened with the workflow token does not trigger other
 # workflows, so this job builds the site itself before opening one.
@@ -54,6 +55,19 @@ jobs:
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
             git diff --stat -- "$PAGE"
+          fi
+
+      # A refresh left open after the page caught up would reintroduce drift
+      # if merged, so close it.
+      - name: Close a refresh that is no longer needed
+        if: steps.diff.outputs.changed == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')
+          if [ -n "$open" ]; then
+            gh pr close "$open" --delete-branch \
+              --comment 'The page on master already matches the Nexus Mutual API, so this refresh is no longer needed.'
           fi
 
       - name: Build the site
