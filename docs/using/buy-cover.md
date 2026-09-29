@@ -59,7 +59,7 @@ Each product defines what it asks for: covered wallet addresses with a chain sel
 
 You can edit it while your cover is active and during the grace period that follows, up until any loss event.
 
-The information is stored privately and offchain. Reading it back needs a wallet signature proving you own the address. The [Claims Committee](/protocol/claims-assessment) reads it to validate claims. See the FAQ's [upfront proof of loss](/resources/faq#what-is-upfront-proof-of-loss) entry, and [File a claim](/using/file-a-claim) for what happens after a loss.
+The information is stored privately and off-chain. Reading it back needs a wallet signature proving you own the address. The [Claims Committee](/protocol/claims-assessment) reads it to validate claims. See the FAQ's [upfront proof of loss](/resources/faq#what-is-upfront-proof-of-loss) entry, and [File a claim](/using/file-a-claim) for what happens after a loss.
 
 ## After buying
 

@@ -5,7 +5,7 @@ description: "How to vote on Nexus Mutual proposals: on Snapshot for every propo
 
 # Vote on proposals
 
-Members vote on [Snapshot](https://snapshot.box/#/s:community.nexusmutual.eth). The Advisory Board then implements the outcome onchain. One kind of proposal runs onchain among members: replacing an Advisory Board member.
+Members vote on [Snapshot](https://snapshot.box/#/s:community.nexusmutual.eth). The Advisory Board then implements the outcome on-chain. One kind of proposal runs on-chain among members: replacing an Advisory Board member.
 
 ## Before you start
 
@@ -17,11 +17,11 @@ Every governance proposal goes to the [Nexus Mutual DAO Snapshot space](https://
 
 For an Advisory Board proposal, the Advisory Board recommends a default outcome. Your vote supports or rejects it. The default passes when the 15% rejection quorum stays unmet.
 
-After Snapshot closes, the Advisory Board members cast their onchain votes to match the outcome, and the `Governor` contract executes the proposal after the timelock. You can follow those onchain votes on the app's governance page.
+After Snapshot closes, the Advisory Board members cast their on-chain votes to match the outcome, and the `Governor` contract executes the proposal after the timelock. You can follow those on-chain votes on the app's governance page.
 
-## Replace an Advisory Board member onchain
+## Replace an Advisory Board member on-chain
 
-A [member proposal](/governance/#member-proposals) swaps one Advisory Board seat, and it runs onchain among members.
+A [member proposal](/governance/#member-proposals) swaps one Advisory Board seat, and it runs on-chain among members.
 
 <!-- @check Governor.PROPOSAL_THRESHOLD = 100 ether -->
 Any member holding more than 100 NXM can raise one.
@@ -33,7 +33,7 @@ Cast your vote from the proposal in the [app](https://app.nexusmutual.io/governa
 Your voting power equals one plus the NXM you hold. NXM you have delegated to a staking pool votes with that pool's manager.
 
 <!-- @check Governor.VOTE_WEIGHT_CAP_PERCENTAGE = 5 -->
-It is capped at 5% of the total NXM supply, on Snapshot and onchain alike. The app shows this cap alongside the vote.
+It is capped at 5% of the total NXM supply, on Snapshot and on-chain alike. The app shows this cap alongside the vote.
 
 ## Reading a proposal in the app
 

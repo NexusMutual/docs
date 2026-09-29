@@ -62,7 +62,7 @@ You can review this position in the Nexus Mutual Enzyme vault noted below.
 
 ## Investment performance
 
-The Capital Pool contract can be verified onchain. Anyone can view the crypto assets held in the pool.
+The Capital Pool contract can be verified on-chain. Anyone can view the crypto assets held in the pool.
 * [Capital Pool Address](https://etherscan.io/address/0xcafea91714e55756C125B509274eDE9Bc91697CB): 0xcafea91714e55756C125B509274eDE9Bc91697CB
 
 You can also find the [Investment Committee's monthly updates on the Capital Pool investment performance](https://forum.nexusmutual.io/c/investment/22) on the forum.

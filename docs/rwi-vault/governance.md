@@ -11,7 +11,7 @@ Vault changes do not go through the [Nexus Mutual governance](/governance/) proc
 
 ## Who can do what
 
-Every role sits in the Vault's own [`RWIRegistry`](/rwi-vault/contracts/RWIRegistry), and the current holder of each is readable onchain.
+Every role sits in the Vault's own [`RWIRegistry`](/rwi-vault/contracts/RWIRegistry), and the current holder of each is readable on-chain.
 
 **The Governor** is the Vault's highest authority. It can upgrade the Vault contracts, register and remove contracts, and appoint or remove emergency admins. It has no role in day-to-day operations.
 

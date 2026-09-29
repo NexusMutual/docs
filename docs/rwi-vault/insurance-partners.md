@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Insurance Partners
 
-The Vault Operator sources returns by depositing funds into offchain insurance opportunities, with a focus on short-tail lines — insurance business where the vast majority of claims are resolved within a relatively shorter timeframe after the policies themselves end.
+The Vault Operator sources returns by depositing funds into off-chain insurance opportunities, with a focus on short-tail lines — insurance business where the vast majority of claims are resolved within a relatively shorter timeframe after the policies themselves end.
 
 The RWI Vault is launched in partnership with [Re](https://re.xyz/) as its first Insurance Partner.
 

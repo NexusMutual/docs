@@ -8,7 +8,7 @@ RWIV tokens can be locked in the Vault smart contracts for a specified duration 
 
 If the underlying insurance investments generate returns in excess of the Baseline Yield and cost of Nexus Mutual Cover, then 60% of these excess returns will be distributed to lockers as USDC in proportion to the points they have accumulated.
 
-Snapshots for bonus distribution are taken at the end of each calendar quarter. Points are calculated offchain. Bonuses are distributed directly to the wallets of those who have locked their tokens during each quarterly period.
+Snapshots for bonus distribution are taken at the end of each calendar quarter. Points are calculated off-chain. Bonuses are distributed directly to the wallets of those who have locked their tokens during each quarterly period.
 
 ## Bonus Earning Rate
 
@@ -25,7 +25,7 @@ The earning rate is capped at 8x. Longer lock durations than 720 days still earn
 
 <!-- @check Locks.MIN_LOCK_PERIOD = 30 days -->
 <!-- @check Locks.MAX_LOCK_PERIOD = 732 days -->
-Onchain, any lock period between 30 and 732 days is accepted, and the earning rate follows the formula below rather than the table. A lock can be topped up or extended while it is running, but there is no early exit: the RWIV can be withdrawn back to the depositor's wallet once the period is over.
+On-chain, any lock period between 30 and 732 days is accepted, and the earning rate follows the formula below rather than the table. A lock can be topped up or extended while it is running, but there is no early exit: the RWIV can be withdrawn back to the depositor's wallet once the period is over.
 
 ## Points Formula
 

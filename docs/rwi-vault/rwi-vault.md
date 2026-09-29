@@ -17,7 +17,7 @@ The [yield](yield-structure/yield-structure.md) earned by depositors consists of
 
 The RWI Vault is designed as a long-term, allocate-and-hold investment, targeting capital commitments of approximately 18–24 months. These timelines match typical insurance product cashflow emergence.
 
-In return for USDC deposits, the Vault issues the RWIV token, which increases in value at the Baseline Yield over time. While direct onchain interactions with the Vault are limited to approved sophisticated investors, the RWIV token itself can be freely transferred and used in other onchain financial applications.
+In return for USDC deposits, the Vault issues the RWIV token, which increases in value at the Baseline Yield over time. While direct on-chain interactions with the Vault are limited to approved sophisticated investors, the RWIV token itself can be freely transferred and used in other on-chain financial applications.
 
 The Vault operations are managed by the Vault Operator (“VO”). The Vault Operator’s role is to act as the coordinator between all parties participating in the RWI Vault — depositors, Insurance Partners and Nexus Mutual.
 

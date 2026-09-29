@@ -60,7 +60,7 @@ The ERC-4626 conversion and preview functions do work, and `convertToAssets` is 
 
 ## Where the assets are
 
-The vault holds USDC only between a deposit request and its fulfilment, and RWIV only between a redemption request and its fulfilment. Everything else sits with the Vault Operator, which invests it offchain: fulfilled deposits are transferred out to the operator, and redemptions are paid from the operator's balance.
+The vault holds USDC only between a deposit request and its fulfilment, and RWIV only between a redemption request and its fulfilment. Everything else sits with the Vault Operator, which invests it off-chain: fulfilled deposits are transferred out to the operator, and redemptions are paid from the operator's balance.
 
 `totalAssets()` is therefore the redemption value of all RWIV in issue — what the vault owes — and not a balance it holds. A redemption can only be fulfilled while the operator holds enough USDC to pay it, which is why withdrawals are queued rather than immediate.
 

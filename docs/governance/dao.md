@@ -12,7 +12,7 @@ People that contribute should help further the Nexus Mutual mission.
 
 ## Mission
 
-Our mission is to provide onchain protection against crypto risks and beyond.
+Our mission is to provide on-chain protection against crypto risks and beyond.
 
 ## DAO treasury
 

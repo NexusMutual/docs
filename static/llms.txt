@@ -6,7 +6,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 
 ## Start here
 
-- [Getting Started](https://docs.nexusmutual.io/): Nexus Mutual is an onchain discretionary mutual.
+- [Getting Started](https://docs.nexusmutual.io/): Nexus Mutual is an on-chain discretionary mutual.
 
 ## Overview
 
@@ -35,7 +35,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 ## Using Nexus Mutual
 
 - [Using Nexus Mutual](https://docs.nexusmutual.io/using/): How to become a member, buy cover, place limit orders, stake NXM, run a pool, swap NXM, file a claim, and vote on proposals.
-- [Become a member](https://docs.nexusmutual.io/using/become-a-member): How to become a Nexus Mutual member: identity verification, the membership fee, and the onchain join.
+- [Become a member](https://docs.nexusmutual.io/using/become-a-member): How to become a Nexus Mutual member: identity verification, the membership fee, and the on-chain join.
 - [Buy cover](https://docs.nexusmutual.io/using/buy-cover): How to buy cover in the Nexus Mutual app, what you choose, what you receive, and what happens after.
 - [Place a limit order](https://docs.nexusmutual.io/using/limit-orders): How to place a limit order to buy cover at your price, or renew cover automatically.
 - [Stake NXM](https://docs.nexusmutual.io/using/stake): How to stake NXM, by delegating to a staking pool or running one, with staking periods, rewards, and burn risk.
@@ -122,7 +122,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 
 ## Governance
 
-- [Governance](https://docs.nexusmutual.io/governance/): Nexus Mutual is an onchain discretionary mutual governed by its members.
+- [Governance](https://docs.nexusmutual.io/governance/): Nexus Mutual is an on-chain discretionary mutual governed by its members.
 - [Nexus Mutual DAO](https://docs.nexusmutual.io/governance/dao): People join as members of the Nexus Mutual DAO and access the benefits of membership.
 
 ## Real World Insurance Vault
@@ -130,7 +130,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 - [Real World Insurance Vault](https://docs.nexusmutual.io/rwi-vault/): The Real World Insurance Vault (“RWI Vault”) allows sophisticated investors to earn yield on their USDC.
 - [Depositor Approval](https://docs.nexusmutual.io/rwi-vault/approval): Depositors are required to pass verification before they are able to interact with the Vault's smart contracts directly.
 - [Depositing USDC](https://docs.nexusmutual.io/rwi-vault/depositing): Approved depositors may deposit USDC into the RWI Vault smart contract.
-- [Insurance Partners](https://docs.nexusmutual.io/rwi-vault/insurance-partners): The Vault Operator sources returns by depositing funds into offchain insurance opportunities, with a focus on short-tail lines — insurance business where the vast majority of claims are resolved within a relatively shorter timeframe after the policies themselves end.
+- [Insurance Partners](https://docs.nexusmutual.io/rwi-vault/insurance-partners): The Vault Operator sources returns by depositing funds into off-chain insurance opportunities, with a focus on short-tail lines — insurance business where the vast majority of claims are resolved within a relatively shorter timeframe after the policies themselves end.
 - [Withdrawals](https://docs.nexusmutual.io/rwi-vault/withdrawals): Withdrawals of RWIV into USDC are requested via the app by calling <code>requestRedeem()</code>.
 - [Governance](https://docs.nexusmutual.io/rwi-vault/governance): Who controls the RWI Vault, and what the contracts let each role do.
 - [Risks](https://docs.nexusmutual.io/rwi-vault/risks): The RWI Vault is exposed to risks from both Ethereum blockchain infrastructure and institutional insurance exposure.

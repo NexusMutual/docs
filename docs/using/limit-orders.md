@@ -5,7 +5,7 @@ description: How to place a limit order to buy cover at your price, or renew cov
 
 # Place a limit order
 
-A **limit order** buys new cover once the price falls to your maximum, or renews existing cover before it expires, from one signed instruction. A [solver](/protocol/cover#limit-orders) executes it onchain when the price condition is met.
+A **limit order** buys new cover once the price falls to your maximum, or renews existing cover before it expires, from one signed instruction. A [solver](/protocol/cover#limit-orders) executes it on-chain when the price condition is met.
 
 ## Before you start
 
@@ -36,7 +36,7 @@ Renewal can fail when the [pool's capacity](/protocol/capacity) is full, or when
 
 An order carries one of four statuses: executable, completed, cancelled, or expired. An order expires once its window passes.
 
-Cancelling an order is an onchain transaction. It costs gas only, and it is permanent.
+Cancelling an order is an on-chain transaction. It costs gas only, and it is permanent.
 
 ## Where to look
 

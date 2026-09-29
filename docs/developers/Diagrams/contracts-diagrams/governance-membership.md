@@ -114,7 +114,7 @@ graph TD
 
 ## Notes
 
-- Members raise and vote on Advisory Board replacements onchain, and vote on all other proposals through the Nexus Mutual DAO Snapshot space
+- Members raise and vote on Advisory Board replacements on-chain, and vote on all other proposals through the Nexus Mutual DAO Snapshot space
 - Voting power is capped at 5% of the total NXM supply
 - Voting on a member proposal locks NXM transfers until the proposal is executable
 - A 24-hour timelock runs before any carried proposal can be executed

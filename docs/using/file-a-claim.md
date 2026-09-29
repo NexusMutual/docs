@@ -38,7 +38,7 @@ It exists to make frivolous claims cost something. It is not a fee on genuine cl
 
 **The amount.** What you are claiming, after any deductible. It cannot exceed the cover amount.
 
-You review everything before it goes onchain.
+You review everything before it goes on-chain.
 
 ## What happens next
 

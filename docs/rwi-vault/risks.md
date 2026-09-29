@@ -12,7 +12,7 @@ Below are some risks that should be considered ahead of interacting with the RWI
 
 ## Smart Contract Risk
 
-The RWI Vault is implemented using Ethereum smart contracts and issues the RWIV token based on the ERC-7540 standard. Deposits, redemption requests, locking and yield accrual occur programmatically onchain.
+The RWI Vault is implemented using Ethereum smart contracts and issues the RWIV token based on the ERC-7540 standard. Deposits, redemption requests, locking and yield accrual occur programmatically on-chain.
 
 Risks include:
 
@@ -83,7 +83,7 @@ Risks include:
 - Changes in treasury yields and/or insurance pricing cycles
 - Structural shifts in (re)insurance markets
 
-The Baseline Yield can be changed onchain by the VO with 90 days’ notice.
+The Baseline Yield can be changed on-chain by the VO with 90 days’ notice.
 
 Future baseline rates may be lower than current rates.
 
@@ -112,7 +112,7 @@ The VO is responsible for:
 
 The VO team has significant DeFi and insurance experience, and has built operational processes designed for consistency, resilience and security. However, residual operational risks remain and include:
 
-- Possible offchain calculation errors
+- Possible off-chain calculation errors
 - Transaction errors in operational multi-sig wallets
 - Misreporting or delayed reporting from Insurance Partners
 - Incorrect Cover sizing or renewal timing
@@ -124,12 +124,12 @@ The VO team has significant DeFi and insurance experience, and has built operati
 Bonus distributions:
 
 - Depend on excess returns beyond Baseline Yield and Cover costs
-- Are calculated using offchain points calculations
+- Are calculated using off-chain points calculations
 
 Risks include:
 
 - No excess returns in a given quarter
-- Possible offchain calculation process failures
+- Possible off-chain calculation process failures
 - Distribution transaction errors
 - Lack of liquidity availability for bonus distributions
 
@@ -167,6 +167,6 @@ No cover or smart contract structure can eliminate all systemic risk.
 
 ## Further Reading
 
-For a deeper and more comprehensive breakdown of onchain risk categories, users are encouraged to consult the [Onchain Risk Map](https://onchainriskmap.com/map)
+For a deeper and more comprehensive breakdown of on-chain risk categories, users are encouraged to consult the [Onchain Risk Map](https://onchainriskmap.com/map)
 
 This resource provides a structured taxonomy of blockchain-specific risks that may be relevant when interacting with the RWI Vault and other DeFi protocols.

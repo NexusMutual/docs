@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Capital Pool
 
-The Capital Pool is jointly owned by all Nexus Mutual members. The crypto assets that back NXM tokens are held in the Capital Pool contract. These assets are used to underwrite covers, pay out valid claims, and invest and generate revenue for the Mutual. Members control the Capital Pool through onchain governance.
+The Capital Pool is jointly owned by all Nexus Mutual members. The crypto assets that back NXM tokens are held in the Capital Pool contract. These assets are used to underwrite covers, pay out valid claims, and invest and generate revenue for the Mutual. Members control the Capital Pool through on-chain governance.
 
 There are five foundations that define how members share risk with one another. Those foundations represent the flow of funds into and out of the Capital Pool contract: 
 1. **Cover fees**. All cover fees are paid into the Capital Pool in full. Cover can be purchased in either ETH, USDC or cbBTC terms, with the ETH, USDC or cbBTC flowing directly into the pool.
