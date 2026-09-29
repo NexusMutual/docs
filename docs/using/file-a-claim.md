@@ -11,12 +11,13 @@ A claim is filed against cover you hold, in the [Nexus Mutual app](https://app.n
 
 You must hold the cover and be a [member](/overview/membership). If you bought cover without joining, you need to join before you can claim.
 
-Check two things first:
+Check three things first:
 
-- **the grace period has not passed.** You can claim after cover expires, but only within the grace period set by the product. It varies, from a couple of weeks to several months.
+- **the grace period has not passed.** You can claim after cover expires, but only within the grace period set by the product. The wording for the product you hold states the grace period that applies to you.
+- **the waiting period after the event has passed.** The wording sets a Cool Down Period after the event, during which no claim can be filed. A claim filed before it ends does not meet the wording's conditions.
 - **the loss meets the cover wording.** The wording defines what counts as a loss and what is excluded. If there is a deductible, losses below it are not claimable.
 
-The Claims Committee can help you check both, and calculate the loss, before you file. Reach them through the in-app chat or the [contact form](https://nexusmutual.io/contact). Doing this first is worth it.
+The Claims Committee can help you check all three, and calculate the loss, before you file. Reach them through the in-app chat or the [contact form](https://nexusmutual.io/contact). Doing this first is worth it.
 
 ## The deposit
 

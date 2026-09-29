@@ -44,6 +44,8 @@ To become a member, you will need to verify your identity.
 
 The identity check runs inside the app. Membership activates onchain with the join fee once you pass verification.
 
+An address can join only once. If you are already a member and want to use another wallet, [change your membership address](#changing-your-membership-address) instead of applying again.
+
 **Unfortunately, the Nexus Mutual DAO cannot accept members from the following jurisdictions.** We are working hard to reduce this list in the future.
 
 Restricted|Countries|List
@@ -57,6 +59,20 @@ China|Lebanon|Syria
 Cote d'Ivoire|Mexico|Venezuela
 Democratic Republic of Congo|Monaco|Vietnam
 Haiti|Myanmar|Yemen
+
+### Changing your membership address
+
+You can move your membership to another address from the [Nexus Mutual app](https://app.nexusmutual.io/), connected with your current membership address. There is no second membership fee. The new address must not already be a member.
+
+The switch needs all your NXM to be held directly in your wallet. If you have NXM staked in a pool or rewards you have not claimed, claim the rewards and withdraw the stake first. Staked NXM cannot be withdrawn until its tranche ends, so in that case the switch waits. NXM locked after a governance vote also blocks the switch until the lock ends.
+
+Your NXM moves to the new address as part of the switch, so you do not transfer it yourself.
+
+Cover NFTs stay with the old address. Transfer them to the new address afterwards, or your covers will not appear in the app.
+
+### Compromised wallet
+
+If your membership address is compromised or lost, [contact the team](https://nexusmutual.io/contact) before you do anything else.
 
 ## Participating within the protocol, contributing to the Mutual
 

@@ -37,9 +37,9 @@ Nexus Mutual requires cover holders to provide proof of loss when they submit a 
 
 If upfront proof of loss is already available, the Claims Committee will review this information to determine your claim's validity and help you calculate your Claim Amount and prepare for claims filing.
 
-If offchain proof of loss is required, you will see the information required to provide proof of loss in the Nexus Mutual app.
+If the product needs proof of loss at claim time, the Nexus Mutual app shows what to provide.
  
-Upfront proof of loss will already be on file in the private database. If offchain proof of loss is required, you will be prompted to provide that information before moving to the Reviewing Claim Details step.
+Upfront proof of loss is already on file. If proof of loss is needed at claim time, you will be prompted to provide it before moving to the Reviewing Claim Details step.
 
 ### Step 3: Reviewing Your Claim Details
 
