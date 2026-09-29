@@ -351,8 +351,8 @@ if (fs.existsSync(COVER_PAGE)) {
       const changes = [
         [diff(expectedIds, pageIds), 'listing(s) to add'],
         [diff(pageIds, expectedIds), 'listing(s) to remove'],
-        [diff(expectedCids, pageCids), 'wording(s) to add'],
-        [diff(pageCids, expectedCids), 'wording(s) to remove'],
+        [diff(expectedCids, pageCids), 'wording or annex link(s) to add'],
+        [diff(pageCids, expectedCids), 'wording or annex link(s) to remove'],
       ].filter(([items]) => items.length);
 
       changes.forEach(([items, label]) => {
