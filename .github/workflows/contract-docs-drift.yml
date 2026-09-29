@@ -63,7 +63,7 @@ jobs:
             const report = fs.readFileSync('report.txt', 'utf8');
             const title = 'Contract docs drift: the reference no longer matches the deployed contracts';
             const body = [
-              'The contract reference documents functions that are absent from the deployed ABIs.',
+              'The docs no longer match the deployed contracts or the live product data. The report below names each check that failed.',
               '',
               'Latest run:',
               '',
