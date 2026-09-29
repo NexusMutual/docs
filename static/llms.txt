@@ -16,7 +16,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 ### Cover Products
 
 - [Cover Products](https://docs.nexusmutual.io/overview/cover-products/): Members buy cover against a specific risk, for a chosen amount and period.
-- [Cover wordings](https://docs.nexusmutual.io/overview/cover-products/cover-wordings): The cover wording for every Nexus Mutual product, taken from what the protocol records.
+- [Cover wordings and listings](https://docs.nexusmutual.io/overview/cover-products/cover-wordings): The cover wording for every Nexus Mutual product, and every public listing with its product ID.
 - [Real World Risk](https://docs.nexusmutual.io/overview/cover-products/real-world-risk): The Nexus Mutual protocol provides the infrastructure for members to build risk management businesses.
 
 ### Claims History

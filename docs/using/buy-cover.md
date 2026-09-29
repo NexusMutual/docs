@@ -11,7 +11,7 @@ Cover protects a position against a defined risk for a set amount and period. It
 
 You need to be a [member](/overview/membership), and you need the cover asset you intend to pay in.
 
-Check that the risk you want covered has a listing. The [product index](https://nexusmutual.io/product-index) is the current list of everything the Mutual covers, and each product's [cover wording](/overview/cover-products/cover-wordings) sets out what it protects against.
+Check that the risk you want covered has a listing. [Cover wordings and listings](/overview/cover-products/cover-wordings) lists the public listings, and each product's wording sets out what it protects against.
 
 ## What you choose
 
@@ -49,7 +49,7 @@ Three things in it are worth knowing before you buy rather than after a loss:
 - the **grace period**, which is how long after the cover expires you can still file a claim for a loss that happened while it was active. Each product sets its own.
 - the **deductible**, where one applies. Losses below it are not claimable.
 
-[Cover wordings](/overview/cover-products/cover-wordings) links the wording for every product with current listings, and the wordings are also published on IPFS.
+[Cover wordings and listings](/overview/cover-products/cover-wordings) links the wording for every product with current listings, and the wordings are also published on IPFS.
 
 ## Updating your proof of loss
 

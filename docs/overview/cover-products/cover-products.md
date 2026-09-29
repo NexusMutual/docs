@@ -8,9 +8,7 @@ Members buy cover against a specific risk, for a chosen amount and period. Cover
 
 Every **listing** you can buy cover on belongs to a **product**. The product sets the cover wording, the grace period, and what counts as proof of loss. Single Protocol Cover is a product, and each protocol covered under it is a listing.
 
-[The product index](https://nexusmutual.io/product-index) lists only current listings. Cover already held on a listing that is no longer offered stays valid to its end date, and a claim on it is assessed under its own wording.
-
-[Cover wordings](/overview/cover-products/cover-wordings) links the wording for every product with current listings.
+[Cover wordings and listings](/overview/cover-products/cover-wordings) links the wording for every product with a current listing, and lists the public listings with their product IDs. Cover already held on a listing that is no longer offered stays valid to its end date, and a claim on it is assessed under its own wording.
 
 ## New cover products
 

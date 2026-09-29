@@ -52,7 +52,7 @@ const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
 
 #### Step 3: Fetch a quote
 
-Use `getQuoteAndBuyCoverInputs` to retrieve a quote for the desired cover. It takes a single parameters object. See the [product index](https://nexusmutual.io/product-index) for the cover products the Mutual offers, or fetch them from [the products endpoint](https://api.nexusmutual.io/v2/products).
+Use `getQuoteAndBuyCoverInputs` to retrieve a quote for the desired cover. It takes a single parameters object. See [Cover wordings and listings](/overview/cover-products/cover-wordings) for the public listings and their product IDs, or fetch them from [the products endpoint](https://api.nexusmutual.io/v2/products).
 
 ```javascript
 const response = await sdk.quote.getQuoteAndBuyCoverInputs({

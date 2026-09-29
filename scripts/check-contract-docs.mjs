@@ -25,6 +25,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { ethers } from 'ethers';
+import { PAGE as COVER_PAGE, loadCoverProducts, renderPage } from './cover-products.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ALL_DOCS = path.join(ROOT, 'docs');
@@ -308,65 +309,64 @@ if (examples.length) {
   }
 }
 
-// ---- check 6: cover wordings ---------------------------------------------
+// ---- check 6: cover wordings and listings --------------------------------
 //
 // The wording is the document a claim is assessed against. Pages used to
 // hardcode its IPFS hash, and seven of nine had drifted from the one the
-// protocol records. The page is generated now, so this reports when it needs
-// regenerating rather than letting it silently describe superseded terms.
+// protocol records. The page is generated now, from the same code the
+// generator runs, so this compares the committed page with what the generator
+// would write today and names what moved.
 //
-// A product type keeps its wording after its last listing is retired, so the
-// page is checked against the types that still have active listings. That way
-// a product that quietly stops being sold does not stay listed as available.
+// Two cases fail here that the page itself cannot show:
+//   - a product type with current listings that records no wording, because
+//     members can hold cover whose terms the docs cannot link
+//   - an API failure, because a check that could not read the API cannot say
+//     the page is current, and a pass on a scheduled run closes the drift issue
 
-const WORDINGS = path.join(ALL_DOCS, 'overview/cover-products/cover-wordings.md');
-
-if (fs.existsSync(WORDINGS)) {
+if (fs.existsSync(COVER_PAGE)) {
   try {
-    const api = process.env.NEXUS_API_URL ?? 'https://api.nexusmutual.io/v2';
-    const [types, products] = await Promise.all([
-      fetch(`${api}/product-types`).then(r => r.json()),
-      fetch(`${api}/products`).then(r => r.json()),
-    ]);
+    const groups = await loadCoverProducts();
+    const expected = renderPage(groups);
+    const page = fs.readFileSync(COVER_PAGE, 'utf8').replace(/\r\n/g, '\n');
 
-    const activeByType = products.reduce((acc, p) => {
-      if (!p.isDeprecated) acc[p.productType] = (acc[p.productType] ?? 0) + 1;
-      return acc;
-    }, {});
+    const listings = groups.reduce((n, g) => n + g.listings.length, 0);
+    console.log(`\nCover wordings and listings: ${groups.length} products, ${listings} public listings`);
 
-    // Two product types can share a wording (Single and Multi Protocol Cover
-    // do), so this keys on the type rather than the hash.
-    const withMetadata = types.filter(t => t.metadata);
-    const activeTypes = withMetadata.filter(t => (activeByType[t.id] ?? 0) > 0);
+    const noWording = groups.filter(g => !g.cid);
+    noWording.forEach(g => console.log(`  FAIL  ${g.name} has current listings but no wording recorded`));
+    if (noWording.length) {
+      problems.push(`${noWording.length} product type(s) with current listings record no wording`);
+    }
 
-    const page = fs.readFileSync(WORDINGS, 'utf8');
-    const documented = new Set(
-      [...page.matchAll(/ipfs\/(Qm[1-9A-HJ-NP-Za-km-z]{44})/g)].map(m => m[1]),
-    );
-    const activeCids = new Set(activeTypes.map(t => t.metadata));
+    if (page !== expected) {
+      const ids = text => new Set([...text.matchAll(/^\| (\d+) \|/gm)].map(m => m[1]));
+      const cids = text => new Set([...text.matchAll(/ipfs\/(Qm[1-9A-HJ-NP-Za-km-z]{44})/g)].map(m => m[1]));
+      const diff = (a, b) => [...a].filter(x => !b.has(x));
 
-    const missing = activeTypes.filter(t => !documented.has(t.metadata));
-    const stale = [...documented].filter(c => !activeCids.has(c));
-    const named = stale.map(c => {
-      const owner = withMetadata.find(t => t.metadata === c);
-      return owner ? `${owner.name} has no active listings` : `${c} is not a wording the protocol records`;
-    });
+      const pageIds = ids(page);
+      const expectedIds = ids(expected);
+      const pageCids = cids(page);
+      const expectedCids = cids(expected);
 
-    console.log(`\nCover wordings: ${activeTypes.length} products with active listings, ${documented.size} wordings listed`);
+      const changes = [
+        [diff(expectedIds, pageIds), 'listing(s) to add'],
+        [diff(pageIds, expectedIds), 'listing(s) to remove'],
+        [diff(expectedCids, pageCids), 'wording(s) to add'],
+        [diff(pageCids, expectedCids), 'wording(s) to remove'],
+      ].filter(([items]) => items.length);
 
-    const issues = [
-      ...missing.map(t => `${t.name} has active listings but no wording listed`),
-      ...named,
-    ];
-
-    if (issues.length) {
-      issues.forEach(i => console.log(`  FAIL  ${i}`));
+      changes.forEach(([items, label]) => {
+        const shown = items.slice(0, 10).join(', ');
+        console.log(`  FAIL  ${items.length} ${label}: ${shown}${items.length > 10 ? ', ...' : ''}`);
+      });
+      if (!changes.length) console.log('  FAIL  names, order or text differ from what the generator writes');
       problems.push('overview/cover-products/cover-wordings.md is out of date — run npm run docs:wordings');
-    } else {
-      console.log('  ok    every product with active listings has its current wording listed');
+    } else if (!noWording.length) {
+      console.log('  ok    the page matches the current products, listings and wordings');
     }
   } catch (err) {
-    notes.push(`cover wordings could not be checked — ${(err.message ?? err).toString().slice(0, 60)}`);
+    console.log(`  FAIL  the Nexus Mutual API could not be read: ${(err.message ?? err).toString().slice(0, 80)}`);
+    problems.push('cover wordings and listings could not be checked against the API');
   }
 }
 

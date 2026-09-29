@@ -45,11 +45,12 @@ The contract reference and the protocol numbers are checked against the deployed
 npm run check:contract-docs
 ```
 
-It verifies three things:
+It verifies four things:
 
 - every solidity function documented under `docs/developers/contracts/` exists on the deployed contract's ABI
 - every constant quoted there still holds the value the contract returns
 - the worked examples reproduce when run against the contract's own functions
+- the cover wordings and listings page matches the Nexus Mutual API
 
 Numbers written in prose are tied to their source with an annotation, which does not render:
 
@@ -62,11 +63,23 @@ If you change a number that carries one of these, update the annotation to match
 
 Constant values live in the deployed bytecode, so the check reads them over JSON-RPC. Set `ETH_RPC_URL` to use your own endpoint; it falls back to a public one.
 
+## The cover wordings and listings page
+
+`docs/overview/cover-products/cover-wordings.md` is generated from the Nexus Mutual API. Do not edit it by hand. Refresh it with:
+
+```bash
+npm run docs:wordings
+```
+
+The page links the wording for every product type with a current listing, and lists the public listings with their product IDs. Private listings are custom deals, so they stay off the page. A product type whose listings are all private shows its wording alone.
+
 ## Checks on a pull request
 
 **Build** runs `npm ci` and `npm run build`. A failure here belongs to this repository and blocks the merge.
 
 **Contract docs drift** runs the check above on every pull request and again weekly. It reports without blocking, because it fails when contracts change rather than when the docs do. Drift found on a scheduled run opens a single tracking issue and updates that same issue until the reference matches again.
+
+**Cover products refresh** runs daily. It regenerates the cover wordings and listings page, and opens a pull request when the page changes. An unmerged refresh is updated in place on the same branch. The workflow builds the site itself, because a pull request it opens does not trigger the Build check.
 
 ## How it deploys
 
