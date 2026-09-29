@@ -70,7 +70,7 @@ If you suffer a loss of funds and need to file a claim, you will provide the nec
 
 For several of Nexus Mutual's cover products, you will need to provide some information when you buy cover.
 
-For most of our cover products, you will enter the wallet address or wallet addresses you want your coverage to be valid for. This information is stored privately offchain and can only be accessed by you and the [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment), who will use that information to help calculate your Claim Amount and assist you with claims filing if a loss event should occur during the Active Cover period. **Be sure you include all of the relevant wallet addresses for your coverage, as the coverage only applies to the wallet addresses listed for the cover you purchase.**
+For most of our cover products, you will enter the wallet address or wallet addresses you want your coverage to be valid for. This information is stored privately off-chain and can only be accessed by you and the [Claims Committee](/protocol/claims-assessment#expert-led-claim-assessment), who will use that information to help calculate your Claim Amount and assist you with claims filing if a loss event should occur during the Active Cover period. **Be sure you include all of the relevant wallet addresses for your coverage, as the coverage only applies to the wallet addresses listed for the cover you purchase.**
 
 You will be able to edit this information while your cover is active and during the grace period that follows, up until any loss event. To keep this information private, we require you to sign a message to prove you own the address. This happens before you can access or edit this information in the Nexus Mutual app. 
 Upfront proof of loss allows the Mutual to improve the member experience by extending coverage to non-EVM networks like Solana, helping members prepare for claims filing events in a timely fashion, and more.
@@ -98,9 +98,9 @@ To learn more, see the [Claims History section](/overview/claims-history/) of th
 Nexus Mutual's claims process is battle-tested, having reviewed and approved more than $18.5M as of August 2026.
 
 Our Claim Assessment process is managed by the Claims Committee, a group of publicly known experts with an established record of assessing claims within the Mutual. Currently, Nexus Mutual's Claims Committee has three members:
-* **Hugh Karp, Advisory Board Member**. Hugh is Nexus Mutual's founder and brings a wealth of traditional insurance expertise along with half a decade of onchain risk expertise to the Claims Committee.
-* **Roxana Danila, Advisory Board Member**. Roxana is Nexus Mutual's CTO and brings engineering and onchain analysis expertise to the Claims Committee.
-* **BraveNewDeFi, Head of Risk**. BraveNewDeFi is Head of Risk and has been managing claims incident response since he joined Nexus Mutual in 2021. Brave brings his onchain risk and analysis expertise to the Claims Committee.
+* **Hugh Karp, Advisory Board Member**. Hugh is Nexus Mutual's founder and brings a wealth of traditional insurance expertise along with half a decade of on-chain risk expertise to the Claims Committee.
+* **Roxana Danila, Advisory Board Member**. Roxana is Nexus Mutual's CTO and brings engineering and on-chain analysis expertise to the Claims Committee.
+* **BraveNewDeFi, Head of Risk**. BraveNewDeFi is Head of Risk and has been managing claims incident response since he joined Nexus Mutual in 2021. Brave brings his on-chain risk and analysis expertise to the Claims Committee.
 
 Every claim filed is reviewed by the Claims Committee, who provide claimants with help to calculate their losses and ensure all of the information needed is included before a claim is filed. Some cover products name a [Designated Claim Assessor](/protocol/claims-assessment#expert-led-claim-assessment) instead of the Claims Committee.
 To learn more about the Claims Assessment process, see the [Claim Assessment](/protocol/claims-assessment) section of the documentation.

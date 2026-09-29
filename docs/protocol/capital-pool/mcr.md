@@ -13,4 +13,4 @@ The MCR is driven by the Mutual's Total Active Cover Amount, which is the curren
 <!-- @check Pool.GEARING_FACTOR = 48000 -->
 Gearing Factor currently = 4.8
 
-The full capital model is run offchain. If it starts producing results that are materially different to the current Gearing Factor, the factor is updated through a governance action.
+The full capital model is run off-chain. If it starts producing results that are materially different to the current Gearing Factor, the factor is updated through a governance action.

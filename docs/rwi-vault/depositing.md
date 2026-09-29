@@ -33,4 +33,4 @@ Users are still able to submit a deposit request transaction even if that deposi
 
 The Vault Cap was set to 10m USDC at launch. The live cap moves as the Vault Operator updates it, so read <code>assetCap</code> on the Vault contract for the current value.
 
-The Vault Operator can update the Vault Cap onchain as required. These updates are made according to the VO’s processes based on deposit demand, ability of [Insurance Partners](insurance-partners.md) to take in additional funds and interest accrued over time within the Vault.
+The Vault Operator can update the Vault Cap on-chain as required. These updates are made according to the VO’s processes based on deposit demand, ability of [Insurance Partners](insurance-partners.md) to take in additional funds and interest accrued over time within the Vault.

@@ -17,7 +17,7 @@ Create a pool from your pools on the [stake page](https://app.nexusmutual.io/sta
 
 You then set the pool's initial listings, each with a target weight and a target price.
 
-The name and description go to IPFS, and the hash goes onchain.
+The name and description go to IPFS, and the hash goes on-chain.
 
 ## The management fee
 

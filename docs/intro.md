@@ -5,7 +5,7 @@ slug: /
 
 # Getting Started
 
-Nexus Mutual is an onchain discretionary mutual. Members pool capital, buy cover against onchain and real world risks, underwrite that risk by staking NXM, and decide claims and protocol changes through governance.
+Nexus Mutual is an on-chain discretionary mutual. Members pool capital, buy cover against on-chain and real world risks, underwrite that risk by staking NXM, and decide claims and protocol changes through governance.
 
 - **[Overview](/overview/)** — what the Mutual is, how membership works, and what has been claimed
 - **[Cover products](/overview/cover-products/)** — what can be covered, and the wording each product is sold under

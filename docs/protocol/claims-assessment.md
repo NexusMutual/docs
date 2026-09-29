@@ -17,15 +17,15 @@ This page describes each step of the Claim Assessment process in detail.
 
 Nexus Mutual members buy cover to protect themselves against a variety of risks. If you purchase cover to protect your crypto and subsequently suffer a loss, you can file a claim by heading to the **Your Covers** section of the Nexus Mutual app. In that section of the app, you will see an option to select **Claim**, which will take you to the first step of the Claim Submission process.
 
-**Of note**: If you need to file a claim, the Claims Committee members can help you calculate your loss amount and review the details of your claim before you submit the claim onchain. You can reach out to the Claims Committee using the in-app chat or the [Nexus Mutual Contact Form](https://nexusmutual.io/contact). This ensures that you are not missing any information ahead of submitting your claim.
+**Of note**: If you need to file a claim, the Claims Committee members can help you calculate your loss amount and review the details of your claim before you submit the claim on-chain. You can reach out to the Claims Committee using the in-app chat or the [Nexus Mutual Contact Form](https://nexusmutual.io/contact). This ensures that you are not missing any information ahead of submitting your claim.
 
 ### Step 1: Incident Details
 
 When you select the Claim option on your cover, you will be directed to the Incident Details page (the first step of the Claim Submission process) and asked to provide the details about your loss and any supporting evidence for your claim.
 
 On the Incident Details page, you will see the following fields:
-* **Did the loss occur onchain or offchain?**. You will select either **onchain** or **offchain** depending on where your loss occurred.
-* **Select the chain where your loss occurred**. If you selected **onchain** in the field above, you will need to select the chain where your loss occurred. There is a drop-down list of the supported chains that you can choose from in this field.
+* **Did the loss occur on-chain or off-chain?**. You will select either **on-chain** or **off-chain** depending on where your loss occurred.
+* **Select the chain where your loss occurred**. If you selected **on-chain** in the field above, you will need to select the chain where your loss occurred. There is a drop-down list of the supported chains that you can choose from in this field.
 * **Please provide an overview of how the loss occurred**. You will use this field to enter in the details about your loss. Sharing links to your original deposit transactions, the post-mortem report for a hack, etc., are all examples of supporting evidence you can include in this field. The Claims Committee will use the overview and information you provide in this field to validate your claim submission.
 * **Please share any files, screenshots, and/or supporting evidence that can help assessors validate your claim**. You can upload images, documents, etc., in this field, which Claims Committee will use to validate your claim.
 
@@ -43,7 +43,7 @@ Upfront proof of loss is already on file. If proof of loss is needed at claim ti
 
 ### Step 3: Reviewing Your Claim Details
 
-Once you provide the incident details and proof of loss, you will need to review all of the information you have included with your claim. This last step is the final check before you submit your claim onchain for the Claims Committee to review.
+Once you provide the incident details and proof of loss, you will need to review all of the information you have included with your claim. This last step is the final check before you submit your claim on-chain for the Claims Committee to review.
 
 Confirm all of the information is correct before proceeding to file your claim. Once you have confirmed, you will file your claim and Nexus Mutual's Claims Committee will review your claim submission.
 
@@ -54,9 +54,9 @@ Nexus Mutual's Claims Committee is responsible for assessing the validity of any
 Each product type maps to one assessor group. Where a Designated Claim Assessor applies instead, the cover wording names that assessor.
 
 The Claims Committee is made up of publicly known experts with an established record of assessing claims within the Mutual. Currently, Nexus Mutual's Claims Committee has three members:
-* **Hugh Karp, Advisory Board Member**. Hugh is Nexus Mutual's founder and brings a wealth of traditional insurance expertise along with half a decade of onchain risk expertise to the Claims Committee.
-* **Roxana Danila, Advisory Board Member**. Roxana is Nexus Mutual's CTO and brings engineering and onchain analysis expertise to the Claims Committee.
-* **BraveNewDeFi, Head of Risk**. BraveNewDeFi is Head of Risk and has been managing claims incident response since he joined Nexus Mutual in 2021. Brave brings his onchain risk and analysis expertise to the Claims Committee.
+* **Hugh Karp, Advisory Board Member**. Hugh is Nexus Mutual's founder and brings a wealth of traditional insurance expertise along with half a decade of on-chain risk expertise to the Claims Committee.
+* **Roxana Danila, Advisory Board Member**. Roxana is Nexus Mutual's CTO and brings engineering and on-chain analysis expertise to the Claims Committee.
+* **BraveNewDeFi, Head of Risk**. BraveNewDeFi is Head of Risk and has been managing claims incident response since he joined Nexus Mutual in 2021. Brave brings his on-chain risk and analysis expertise to the Claims Committee.
 
 These risk experts will review the incident details and proof of loss provided by claimants and use that information to determine whether a claim is valid (meets the terms and conditions outlined in the cover wording) or not valid (does not meet the terms and conditions outlined in the cover wording).
 

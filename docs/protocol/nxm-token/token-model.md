@@ -45,7 +45,7 @@ The Nexus Mutual protocol holds crypto assets within the Capital Pool, and the R
 
 To be sure all claims can be paid, the Minimum Capital Requirement (MCR) is the only threshold that can prevent additional liquidity from being sent to the RAMM.
 
-The MCR is driven by the Active Cover Amount going forward. The onchain formula for the MCR is presented below:
+The MCR is driven by the Active Cover Amount going forward. The on-chain formula for the MCR is presented below:
 <p><code>MCR = Total Active Cover Amount / 4.8</code></p>
 
 At launch, members signalled support for a target liquidity of 5,000 ETH.

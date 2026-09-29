@@ -62,6 +62,6 @@ The Baseline Yield Cover pays through Nexus Mutual's [claims assessment](/protoc
 
 ## Is the Baseline Yield fixed forever?
 
-No. The Baseline Yield can be changed onchain by the Vault Operator with a 90-day delay from submitting the change.
+No. The Baseline Yield can be changed on-chain by the Vault Operator with a 90-day delay from submitting the change.
 
 The Vault Operator benchmarks the yield by tracking the average of the 2- and 5-year US Treasury yields (the main drivers of mass-market insurance returns) plus a 2-3% spread. If there is a deviation of more than 1% from the previous average, the operator may change the Baseline Yield to ensure sustainability of returns. The VO also reserves the right to respond to other changing conditions.

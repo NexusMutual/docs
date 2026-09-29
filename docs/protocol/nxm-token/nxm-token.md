@@ -8,7 +8,7 @@ sidebar_position: 1
 The NXM token is backed by crypto assets held in the capital pool contract. When someone contributes ETH, USDC or cbBTC to the Capital Pool in the [Nexus Mutual user interface](https://app.nexusmutual.io/swap), NXM is minted and transferred to their wallet.
 
 Members can custody and use NXM within the protocol to participate in:
-* **Onchain governance**. NXM holders use the token to vote in onchain governance, where members make critical decisions about protocol upgrades, capital pool investment allocations, and how capital pool assets are used. Learn more in the [Governance](/governance/) section.
+* **On-chain governance**. NXM holders use the token to vote in on-chain governance, where members make critical decisions about protocol upgrades, capital pool investment allocations, and how capital pool assets are used. Learn more in the [Governance](/governance/) section.
 * **DAO governance**. Members decide how DAO treasury funds are used by discussing proposals and voting with their NXM. Learn more in the [Governance](/governance/) section.
 * **Staking**. NXM powers the underwriting process, where members can stake and delegate their NXM to a pool or assess risk and manage a staking pool. By staking NXM, they create open capacity for other members to buy cover. When cover is purchased, NXM stakers are rewarded with a share of the cover fee in NXM. Learn more in the [Staking](/protocol/staking/) section. 
 

@@ -15,7 +15,7 @@ Someone who has joined the Mutual. Membership requires KYC and a one-off fee, an
 A mutual whose members share risk with each other and decide claims on their merits, rather than an insurer selling a contract that pays automatically on a defined trigger. Cover is discretionary: a claim is assessed against the cover wording by people, not settled by a formula.
 
 **Advisory Board**
-The members who raise governance proposals, perform technical upgrades when granted authority, and pause the protocol in an emergency. Members can replace an Advisory Board member through an onchain proposal. See [Governance](/governance/).
+The members who raise governance proposals, perform technical upgrades when granted authority, and pause the protocol in an emergency. Members can replace an Advisory Board member through an on-chain proposal. See [Governance](/governance/).
 
 **Claims Committee**
 The members who assess claims. They review the evidence, discuss the claim against the cover wording, and vote to accept or deny it, recording their reasoning. See [Claim assessment](/protocol/claims-assessment).
@@ -57,7 +57,7 @@ How long a cover runs, chosen when it is bought, within the minimum and maximum 
 An instruction to buy or renew cover automatically once the price meets a chosen maximum. See [Limit orders](/protocol/cover#limit-orders).
 
 **Solver**
-The execution service Nexus Mutual operates to submit limit orders onchain once their price condition holds. See [Limit orders](/protocol/cover#limit-orders).
+The execution service Nexus Mutual operates to submit limit orders on-chain once their price condition holds. See [Limit orders](/protocol/cover#limit-orders).
 
 **Grace period**
 A window after a cover expires during which a claim can still be filed for a loss that happened while the cover was active.

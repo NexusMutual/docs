@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Members can buy cover products to protect against any of the supported risks. Cover capacity is sourced from one or more staking pools, depending on available capacity.
 
-To buy cover, members choose the product, cover amount in ETH, USDC or cbBTC, cover period length, and preferred slippage given that pricing is onchain. The cover fee can be paid in ETH, USDC, cbBTC or NXM.
+To buy cover, members choose the product, cover amount in ETH, USDC or cbBTC, cover period length, and preferred slippage given that pricing is on-chain. The cover fee can be paid in ETH, USDC, cbBTC or NXM.
 
 After the cover is purchased, it is tokenized and represented as an NFT (ERC-721) that is held in the member's address.
 
@@ -38,4 +38,4 @@ This provides members with greater optionality when self-custodying their cover.
 
 ## Limit orders
 
-A **limit order** buys cover once the price falls to a chosen maximum, or buys the next cover automatically before the current one expires. A solver, an execution service Nexus Mutual operates, submits the order onchain once the price condition holds. See [Place a limit order](/using/limit-orders) for how.
+A **limit order** buys cover once the price falls to a chosen maximum, or buys the next cover automatically before the current one expires. A solver, an execution service Nexus Mutual operates, submits the order on-chain once the price condition holds. See [Place a limit order](/using/limit-orders) for how.

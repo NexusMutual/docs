@@ -42,7 +42,7 @@ To become a member, you will need to verify your identity.
 2. Proceed to KYC submission: you will be prompted to submit a photo of your government-issued identification, which will be used in the verification process.
 3. Pay the 0.0020 ETH fee and finalize your membership.
 
-The identity check runs inside the app. Membership activates onchain with the join fee once you pass verification.
+The identity check runs inside the app. Membership activates on-chain with the join fee once you pass verification.
 
 An address can join only once. If you are already a member and want to use another wallet, [change your membership address](#changing-your-membership-address) instead of applying again.
 

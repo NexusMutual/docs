@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-description: "How to become a Nexus Mutual member: identity verification, the membership fee, and the onchain join."
+description: "How to become a Nexus Mutual member: identity verification, the membership fee, and the on-chain join."
 ---
 
 # Become a member
@@ -23,10 +23,10 @@ Complete identity verification in the app. Choose individual or company verifica
 
 The app shows your verification status as the review progresses. Approval activates the next step, paying the membership fee.
 
-## Join onchain
+## Join on-chain
 
 <!-- @check Registry.JOIN_FEE = 0.002 ether -->
-Pay the 0.0020 ETH membership fee to join onchain. This is a one-time fee, and your membership activates once the transaction confirms.
+Pay the 0.0020 ETH membership fee to join on-chain. This is a one-time fee, and your membership activates once the transaction confirms.
 
 ## What happens next
 

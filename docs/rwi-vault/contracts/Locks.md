@@ -39,7 +39,7 @@ Any period between the two is accepted. The app offers a few fixed durations, bu
 
 ### Points and bonuses
 
-Points are calculated offchain from the locks recorded here, and the [rate they earn at](/rwi-vault/yield-structure/bonuses/#bonus-earning-rate) rises with the period committed. Bonuses are paid in USDC, straight to member addresses, and are not accrued in the contract — `addReward` transfers them in the same call.
+Points are calculated off-chain from the locks recorded here, and the [rate they earn at](/rwi-vault/yield-structure/bonuses/#bonus-earning-rate) rises with the period committed. Bonuses are paid in USDC, straight to member addresses, and are not accrued in the contract — `addReward` transfers them in the same call.
 
 ---
 
@@ -113,7 +113,7 @@ function addReward(
 | `totalAssetAmounts` | The sum of `assetAmounts`, checked against it.                     |
 | `snapshotTimestamp` | The quarter-end the distribution was calculated at, for the event. |
 
-The amounts come from the offchain points calculation. `totalAssetAmounts` has to match their sum exactly, so a distribution that was assembled wrongly reverts rather than paying out.
+The amounts come from the off-chain points calculation. `totalAssetAmounts` has to match their sum exactly, so a distribution that was assembled wrongly reverts rather than paying out.
 
 ---
 
