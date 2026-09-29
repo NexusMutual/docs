@@ -45,11 +45,12 @@ The contract reference and the protocol numbers are checked against the deployed
 npm run check:contract-docs
 ```
 
-It verifies three things:
+It verifies four things:
 
 - every solidity function documented under `docs/developers/contracts/` exists on the deployed contract's ABI
 - every constant quoted there still holds the value the contract returns
 - the worked examples reproduce when run against the contract's own functions
+- the cover wordings and listings page matches the Nexus Mutual API
 
 Numbers written in prose are tied to their source with an annotation, which does not render:
 
@@ -61,6 +62,18 @@ Numbers written in prose are tied to their source with an annotation, which does
 If you change a number that carries one of these, update the annotation to match, or the check will report the page and line.
 
 Constant values live in the deployed bytecode, so the check reads them over JSON-RPC. Set `ETH_RPC_URL` to use your own endpoint; it falls back to a public one.
+
+## The cover wordings and listings page
+
+`docs/overview/cover-products/cover-wordings.md` is generated from the Nexus Mutual API. Do not edit it by hand. Refresh it with:
+
+```bash
+npm run docs:wordings
+```
+
+The page links the wording for every product type with a current listing, and lists the public listings with their product IDs. Private listings are custom deals, so they stay off the page. A product type whose listings are all private shows its wording alone.
+
+**Cover products refresh** runs this daily. When the page changes, it builds the site and opens a pull request. The next run updates that pull request if it is still open, and closes it once `master` already matches the API. The workflow builds the site itself, because a pull request it opens does not trigger the Build check.
 
 ## Checks on a pull request
 

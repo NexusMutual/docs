@@ -1,0 +1,104 @@
+name: Cover products refresh
+
+# Regenerates the cover wordings and listings page from the Nexus Mutual API,
+# and opens a pull request when it changes.
+#
+# Listings change often, so a check that only reports would keep the drift
+# issue open most weeks. This turns each change into a pull request that
+# fixes it. The pull request reuses one branch, so an unmerged refresh is
+# updated in place instead of piling up, and closed once master matches the
+# API again.
+#
+# A pull request opened with the workflow token does not trigger other
+# workflows, so this job builds the site itself before opening one.
+
+on:
+  schedule:
+    # Daily, 06:00 UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: cover-products-refresh
+  cancel-in-progress: false
+
+env:
+  BRANCH: automation/refresh-cover-products
+  PAGE: docs/overview/cover-products/cover-wordings.md
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Install
+        run: npm ci --ignore-scripts
+
+      - name: Regenerate the page
+        run: npm run docs:wordings
+
+      - name: Detect a change
+        id: diff
+        run: |
+          if git diff --quiet -- "$PAGE"; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "The page matches the API."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat -- "$PAGE"
+          fi
+
+      # A refresh left open after the page caught up would reintroduce drift
+      # if merged, so close it.
+      - name: Close a refresh that is no longer needed
+        if: steps.diff.outputs.changed == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')
+          if [ -n "$open" ]; then
+            gh pr close "$open" --delete-branch \
+              --comment 'The page on master already matches the Nexus Mutual API, so this refresh is no longer needed.'
+          fi
+
+      - name: Build the site
+        if: steps.diff.outputs.changed == 'true'
+        run: npm run build
+
+      - name: Open or update the pull request
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -C "$BRANCH"
+          git add "$PAGE" static/llms.txt
+          git commit -m 'docs: refresh cover wordings and listings from the API'
+          git push --force origin "$BRANCH"
+
+          open=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')
+          if [ -n "$open" ]; then
+            echo "Updated pull request #$open"
+            exit 0
+          fi
+
+          gh pr create \
+            --base master \
+            --head "$BRANCH" \
+            --title 'docs: refresh cover wordings and listings from the API' \
+            --body "$(cat <<'EOF'
+          The Nexus Mutual API lists different products, listings or wordings from the committed cover wordings and listings page. This pull request regenerates the page with `npm run docs:wordings`.
+
+          The Cover products refresh workflow opened it and updates it daily until it is merged. The workflow built the site before pushing.
+          EOF
+          )"
