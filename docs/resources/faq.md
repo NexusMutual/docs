@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: Answers on membership, networks and cover assets, cover on Solana and other chains, buying through OpenCover, the record of your cover, non-EVM cover, claims, staking, governance, and spotting scams.
 ---
 
 # FAQ
@@ -56,7 +57,11 @@ For a full list of Nexus Mutual's cover products, see the [Cover Products](/over
 
 ### Does Nexus Mutual offer cover for protocols on networks like Solana?
 
-Yes, with the launch of our upfront proof of loss feature, we can now support listings for Solana and other non-EVM networks. If there is a protocol on a non-EVM network you would like listed in the Nexus Mutual app, reach out to us through the [Nexus Mutual contact form](https://nexusmutual.io/contact).
+Yes. Nexus Mutual has listings for protocols on Solana. Listings carry the protocol's name, so search the [app](https://app.nexusmutual.io/cover/buy-cover) by protocol name. Each listing's annex names the network it covers.
+
+You buy Solana cover in the app on Ethereum mainnet, like any other cover. When you buy, enter the Solana addresses the cover applies to as [upfront proof of loss](#what-is-upfront-proof-of-loss).
+
+To request a listing for a protocol on Solana or another non-EVM network, use the [Nexus Mutual contact form](https://nexusmutual.io/contact).
 
 ### Can I buy cover for assets in wallets other than my membership address?
 
@@ -84,6 +89,34 @@ No, you cannot buy cover for another person even if that person is your spouse. 
 ### How do I get my protocol listed on Nexus Mutual?
 
 If you're interested in having your protocol reviewed for a potential listing in the Nexus Mutual user interface, you can use the following **[contact form](https://nexusmutual.io/contact)** to provide your request, which the Product & Risk team will review and determine if a listing is appropriate at this time.
+
+## Buying Cover
+
+### Which network do I buy cover on, and which networks does it protect?
+
+The Nexus Mutual app runs on Ethereum mainnet. Your wallet needs to be connected to Ethereum, and the cover fee comes from ETH, USDC, cbBTC or NXM held there.
+
+If the app asks you to switch to mainnet, your wallet is connected to another network. Approve the network switch in your wallet, then continue.
+
+The network you buy on and the network your cover protects are separate. By default, a listing covers positions on any EVM-compatible chain. Its annex names any exception, such as a non-EVM network like Solana.
+
+See [Buy cover](/using/buy-cover) for the full flow.
+
+### Can I buy cover with USDC on Base or another L2?
+
+The Nexus Mutual app works with assets on Ethereum mainnet only, so the cover fee comes from Ethereum. The cover itself can protect your position on Base, since listings cover any EVM-compatible chain by default.
+
+To use funds on Base or another L2 for the cover fee, buy through [OpenCover](https://opencover.com), which offers Nexus Mutual cover on those networks.
+
+### Can I buy Nexus Mutual cover through OpenCover?
+
+Yes. [OpenCover](https://opencover.com) is an independent distributor that offers cover backed by Nexus Mutual on L2 networks, including Base. OpenCover runs its own buying flow, so contact OpenCover for help with cover bought there.
+
+### How do I get a record of my cover, for example for my accountant?
+
+Your cover is recorded on-chain. The transaction that bought it, on [Etherscan](https://etherscan.io), shows the date, your address, the asset and the cover fee. The cover NFT in your wallet records the cover itself.
+
+The transaction is the record to share with your accountant. Your covers are also listed in the [app dashboard](https://app.nexusmutual.io/dashboard).
 
 ## Claims
 
@@ -182,3 +215,17 @@ Yes, as long as the address being transferred to is also a Nexus Mutual member; 
 ### How do I sell my NXM tokens?
 
 If you are a member and want to sell your NXM tokens, you can head to the [NXM page in the Nexus Mutual app](https://app.nexusmutual.io/swap), where you will be able to sell your NXM for ETH.
+
+## Security
+
+### Will Nexus Mutual contact me first?
+
+Nexus Mutual never contacts you first. A message claiming to be from Nexus Mutual that reaches you before you reached out is a scam, on any channel and with any document attached.
+
+To reach the team, use the [contact form](https://nexusmutual.io/contact) or the chat in the [Nexus Mutual app](https://app.nexusmutual.io).
+
+Keep your seed phrase and private key to yourself. Anyone who asks for them, or asks you to sign a transaction or send funds to release, unlock or recover funds, is a scammer. Report them through the [contact form](https://nexusmutual.io/contact).
+
+### I received an invoice from Nexus Mutual. Is it real?
+
+Nexus Mutual never contacts you first, so an invoice you did not ask for is a scam. You buy cover on-chain, in the app, and the cover fee leaves your wallet at that moment. Report the invoice through the [contact form](https://nexusmutual.io/contact).

@@ -73,7 +73,7 @@ These docs describe the protocol, the cover products, how claims are assessed, a
 
 - [Resources](https://docs.nexusmutual.io/resources/): Audit reports, the FAQ, and a glossary of the terms used across these docs.
 - [Audits and Security](https://docs.nexusmutual.io/resources/audits-and-security): Review Nexus Mutual's audits, bug bounties, and initiatives to strengthen our protocol's security.
-- [FAQ](https://docs.nexusmutual.io/resources/faq): Nexus Mutual is a decentralized insurance alternative that allows members to join, purchase cover to protect themselves against a variety of risks, and more.
+- [FAQ](https://docs.nexusmutual.io/resources/faq): Answers on membership, networks and cover assets, cover on Solana and other chains, buying through OpenCover, the record of your cover, non-EVM cover, claims, staking, governance, and spotting scams.
 - [Glossary](https://docs.nexusmutual.io/resources/glossary): Terms used across these docs, in the sense Nexus Mutual uses them.
 
 ## Developer Resources
