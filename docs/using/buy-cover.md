@@ -11,6 +11,8 @@ Cover protects a position against a defined risk for a set amount and period. It
 
 You need to be a [member](/overview/membership), and you need the cover asset you intend to pay in.
 
+The app runs on Ethereum mainnet. Connect your wallet to Ethereum, and hold the cover fee there in ETH, USDC, cbBTC or NXM. If the app asks you to switch to mainnet, approve the network switch in your wallet. Cover bought on Ethereum protects positions on any EVM-compatible chain by default. The listing's annex names any exception. To buy cover with funds on Base, see the FAQ entry on [Base and other L2s](/resources/faq#can-i-buy-cover-with-usdc-on-base-or-another-l2).
+
 Check that the risk you want covered has a listing. The [product index](https://nexusmutual.io/product-index) is the current list of everything the Mutual covers, and each product's [cover wording](/overview/cover-products/cover-wordings) sets out what it protects against.
 
 ## What you choose
