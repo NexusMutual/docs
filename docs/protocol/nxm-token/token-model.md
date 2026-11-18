@@ -14,7 +14,7 @@ Members can use the crypto assets held in the Capital Pool to underwrite various
 
 ## Ratcheting Automated Market Maker (RAMM)
 
-The RAMM model is made up of two virtual one-sided [Uniswap v2-style pools](https://docs.uniswap.org/contracts/v2/concepts/protocol-overview/how-uniswap-works), which determine the price at which the mutual is willing to buy and sell NXM in value-accretive ranges for the mutual, complemented by a price ratchet to enable price discovery.
+The RAMM model is made up of two virtual one-sided [Uniswap v2-style pools](https://developers.uniswap.org/docs/get-started/concepts/how-uniswap-works), which determine the price at which the mutual is willing to buy and sell NXM in value-accretive ranges for the mutual, complemented by a price ratchet to enable price discovery.
 
 The Below Pool and Above Pool are the two pools present in the system. These pools contain a defined amount of ETH liquidity paired with "virtual" NXM. This creates two internal pools, which have the same ETH liquidity; the NXM reserves in each pool are represented by a virtual NXM balance. The ETH and NXM balances change over time as NXM is sold and purchased.
 

@@ -10,7 +10,7 @@ A total of $30,590.64 was paid out for Claims V1 #174 and #177.
 
 ## Overview
 
-After BlockFi halted withdrawals in November 2022, members who held BlockFi Custody Cover at the time withdrawals were first halted waited for the 90-day period to pass. [Section 1.2 of the Custody Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4d7b378db634f0f9a9d_CustodyCoverWordingv1.0.pdf) provides protection for assets that cannot be withdrawn from a centralized exchange after more than 90 days has passed.
+After BlockFi halted withdrawals in November 2022, members who held BlockFi Custody Cover at the time withdrawals were first halted waited for the 90-day period to pass. [Section 1.2 of the Custody Cover wording](https://api.nexusmutual.io/v2/ipfs/QmYhCNjfrNTMq8eyg8i7LbBpTkMCHfix9Sv1jrPb7dYZKd) provides protection for assets that cannot be withdrawn from a centralized exchange after more than 90 days has passed. That was the Custody Cover wording in force at the time. Custody Cover now uses the Crypto Cover wording, which sets the trigger at a withdrawal restriction of 100 days or more, see [Cover wordings](/overview/cover-products/cover-wordings).
 
 During this time, members documented their losses and prepared for claims filing. Before the 90-day period ended, a [guide to BlockFi claims filing](https://nexusmutual.io/blog/how-blockfi-and-gemini-custody-cover-holders-can-prepare-for-claims-filing) was shared across the Mutual's social channels.
 
@@ -30,7 +30,7 @@ For more information on each claim, review the sections below and the [Nexus Mut
 
 Claim assessors reviewed and approved Claims V1 #174 and #177. These claims included proof of loss, which showed each affected member suffered a loss due to halted withdrawals.
 
-You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://nexusmutual.io/claims).
+You can review a summary of each claim in the [claims history on the Nexus Mutual website](https://nexusmutual.io/claims).
 
 ### Denied claims
 

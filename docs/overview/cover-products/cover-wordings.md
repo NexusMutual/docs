@@ -10,7 +10,7 @@ The cover wording is the document a claim is assessed against. It defines what i
 Each wording below is the one the protocol currently records for that product. Read the wording for the product you hold before buying and before claiming.
 
 - [Baseline Yield Cover](https://api.nexusmutual.io/v2/ipfs/QmVqZCbB1EHpAucZSawXu7WMC8FHTpwJSyiTq7fCbf2nv7)
-- [Crypto Cover](https://api.nexusmutual.io/v2/ipfs/QmaUcoUq8972J41UzyyT82C9EkVme82UYSCbuQfzkS6pnr)
+- [Crypto Cover](https://api.nexusmutual.io/v2/ipfs/QmPczDAzeBtV3r5b1YEbxod7ukCTk4YBt1DHN2uXNJ58SJ)
 - [ETH Slashing Umbrella](https://api.nexusmutual.io/v2/ipfs/QmRKcAsQrdHU2HtGizeRX5tgPgqAhZ3dVYhz29i16UPGza)
 - [Follow On Cover](https://api.nexusmutual.io/v2/ipfs/QmYgZNrGSAQZCGKEGdgvR132KWkLKtSDXmZVGfoGSKfYMG)
 - [Fund Portfolio Cover](https://api.nexusmutual.io/v2/ipfs/QmW1ZUGHB5Uo5rbTrfj49BNAB8ADd4Nc4cYFCAfLGvVKjx)

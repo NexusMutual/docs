@@ -48,4 +48,3 @@ Sources for the wrapper:
 * [jclancy93's crypto wrapper on GitHub](https://github.com/jclancy93/crypto-wrapper), the wrapper contract with community interfaces
 * [PepperSec's Wrapped NXM on GitHub](https://github.com/peppersec/wrappedNXM)
 * [Wrapped NXM on CoinGecko](https://www.coingecko.com/en/coins/wrapped-nxm)
-* [Wrapped NXM on the Nexus Mutual DAO website](https://nexusmutualdao.io/wrapped-nxm)

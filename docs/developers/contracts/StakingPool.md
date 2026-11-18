@@ -320,7 +320,7 @@ Once capacity is allocated for cover, your stake **remains locked until the cove
 If you have questions or need assistance integrating with the `StakingPool` contract, please reach out through the official support channels or developer forums.
 
 - **Developer Forums**: Join our community forums to discuss and seek help.
-- **Official Support Channels**: Contact us via our official support email or join our Discord.
+- **Official Support Channels**: Use the [contact form](https://nexusmutual.io/contact) or the chat in the [Nexus Mutual app](https://app.nexusmutual.io/).
 - **Documentation Resources**: Access tutorials and FAQs on our official website.
 - **GitHub Repository**: Report issues or contribute to the codebase.
 

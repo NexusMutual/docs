@@ -6,13 +6,13 @@ sidebar_position: 9
 
 ## Total claims paid
 
-A total of $2,389,227.88 was paid out for Euler Finance Protocol Cover Claims V2 #0, #2, #3, #4, #5, #6, #7, #8, and #11.
+A total of $2,397,472.27 was paid out for Euler Finance Protocol Cover Claims V2 #0, #2, #3, #4, #5, #6, #7, #8, and #11.
 
-A total of $1m was paid out for the Sherlock Excess Cover Claim V2 #10, where [Sherlock paid out on their Euler Finance coverage](https://twitter.com/sherlockdefi/status/1641174876231815168) and their Excess Cover offset the payout by 25%.
+A total of $1m was paid out for the Sherlock Excess Cover Claim V2 #10, where [Sherlock paid out on their Euler Finance coverage](https://x.com/sherlockdefi/status/1641174876231815168) and their Excess Cover offset the payout by 25%.
 
 ## Overview
 
-On Monday, 13 March 2023, [Euler Finance was exploited for $197m](https://twitter.com/FrankResearcher/status/1635241475989721089). After this exploit occurred, claim assessors [discussed this loss event in the Mutual's Discord server](https://discord.com/channels/496296560624140298/1084935082978070549/1084935082978070549). Because Nexus Mutual is a discretionary mutual, members reviewed the validity of the claims submitted after this loss event under [the V2 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed).
+On Monday, 13 March 2023, [Euler Finance was exploited for $197m](https://x.com/FrankResearcher/status/1635241475989721089). After this exploit occurred, claim assessors [discussed this loss event in the Mutual's Discord server](https://discord.com/channels/496296560624140298/1084935082978070549/1084935082978070549). Because Nexus Mutual is a discretionary mutual, members reviewed the validity of the claims submitted after this loss event under [the V2 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed).
 
 Members reviewed the information available in the days after the exploit, while Euler Finance Protocol Cover holders waited for the 72-hour cool-down period to pass before submitting claims. Claim assessors discussed the event and determined the Euler Finance exploit was covered under [section 1.1 of the Protocol Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4c4cca088730ac54ccc_ProtocolCoverv1.0.pdf).
 
@@ -33,7 +33,7 @@ Claim assessors reviewed and approved Claims V2 #0, #2, #3, #4, #5, #6, #7, #8, 
 
 The claims included proof of loss, which showed the affected addresses where the members suffered a loss. Each approved claim also requested a claim payment that reflected their actual loss amount.
 
-You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://nexusmutual.io/claims).
+You can review a summary of each claim in the [claims history on the Nexus Mutual website](https://nexusmutual.io/claims).
 
 | Approved claims                                                                 |                                                                                 |                                                                                 |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ The Community team has been working with members who redeemed their claim paymen
 
 #### Euler Finance reimbursement to affected users
 
-On 11 April 2023, the Euler Labs team [shared an update](https://twitter.com/eulerfinance/status/1645964057239855104) with their community indicating they were [opening reimbursement claims at 2:00 UTC](https://t.co/fAJr5Qdv1w), per the [updated redemption plan](https://forum.euler.finance/t/plan-for-redemption-of-euler-funds-v2/947) shared on the Euler Finance governance forum.
+On 11 April 2023, the Euler Labs team [shared an update](https://x.com/eulerfinance/status/1645964057239855104) with their community indicating they were [opening reimbursement claims at 2:00 UTC](https://t.co/fAJr5Qdv1w), per the [updated redemption plan](https://forum.euler.finance/t/plan-for-redemption-of-euler-funds-v2/947) shared on the Euler Finance governance forum.
 
 For affected users who received a claim payment from Nexus Mutual, a disclaimer was presented in the redemption user interface that read:
 
