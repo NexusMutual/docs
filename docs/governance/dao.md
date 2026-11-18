@@ -23,10 +23,10 @@ Members decide what community projects and teams are funded from the treasury.
 ### Multisig signers
 
 The treasury multisig signers were decided through a Snapshot vote. The community voted for the following members to act as the treasury multisig participants:
-* [Roxana Danila](https://twitter.com/roxdanila)
+* [Roxana Danila](https://x.com/roxdanila)
 * [shark0der.eth](https://x.com/shark0der)
 * [Ricky Tan](https://x.com/TokenData)
-* [BraveNewDeFi](https://twitter.com/BraveDeFi)
+* [BraveNewDeFi](https://x.com/BraveDeFi)
 * [Rei Melbardis](https://x.com/Rei_Melb)
 * [Hugh Karp](https://x.com/HughKarp)
 * [Netrim on behalf of kpk](https://x.com/thelyingbear)

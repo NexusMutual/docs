@@ -45,7 +45,7 @@ See the [Membership](/overview/membership) page for more information.
 
 Yes, once your KYC has completed you will receive an email notification to the email you used to register as a member.
 
-If more than 24 hours has passed and your membership still hasn't gone through, please reach out through the [Nexus Mutual contact forum](https://nexusmutual.io/contact).
+If more than 24 hours has passed and your membership still hasn't gone through, please reach out through the [Nexus Mutual contact form](https://nexusmutual.io/contact).
 
 ## Cover Products and Listings
 
@@ -122,13 +122,13 @@ The transaction is the record to share with your accountant. Your covers are als
 
 ### Have any claims been paid?
 
-Members have paid more than $18.5M as of August 2026 for losses from exploits, failures, and custodian halts. See the [Claims page](https://nexusmutual.io/claims) for running totals.
+Members have paid more than $24.7M as of November 2026 for losses from exploits, failures, custodian halts, and a stablecoin depeg. See the [Claims page](https://nexusmutual.io/claims) for running totals.
 
 To learn more, see the [Claims History section](/overview/claims-history/) of the documentation.
 
 ### How do I know my claim will be paid?
 
-Nexus Mutual's claims process is battle-tested, having reviewed and approved more than $18.5M as of August 2026.
+Nexus Mutual's claims process is battle-tested, having reviewed and approved more than $24.7M as of November 2026.
 
 Our Claim Assessment process is managed by the Claims Committee, a group of publicly known experts with an established record of assessing claims within the Mutual. Currently, Nexus Mutual's Claims Committee has three members:
 * **Hugh Karp, Advisory Board Member**. Hugh is Nexus Mutual's founder and brings a wealth of traditional insurance expertise along with half a decade of on-chain risk expertise to the Claims Committee.

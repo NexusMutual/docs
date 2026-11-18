@@ -8,7 +8,7 @@ sidebar_position: 6
 A total of $1,113,211.17 was paid out for Claims V1 #127, #128, #129, #130, #131, #132, #133, #134, #135, #136, #137, #138, #140, #141, #143, #144, #145, #147, and #151.
 
 ## Overview
-After Hodlnaut halted withdrawals on 8 August 2022, members who held Hodlnaut Custody Cover at the time withdrawals were first halted waited for the 90-day period to pass. [Section 1.2 of the Custody Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4d7b378db634f0f9a9d_CustodyCoverWordingv1.0.pdf) provides protection for assets that cannot be withdrawn from a centralized exchange after more than 90 days has passed. 
+After Hodlnaut halted withdrawals on 8 August 2022, members who held Hodlnaut Custody Cover at the time withdrawals were first halted waited for the 90-day period to pass. [Section 1.2 of the Custody Cover wording](https://api.nexusmutual.io/v2/ipfs/QmYhCNjfrNTMq8eyg8i7LbBpTkMCHfix9Sv1jrPb7dYZKd) provides protection for assets that cannot be withdrawn from a centralized exchange after more than 90 days has passed. That was the Custody Cover wording in force at the time. Custody Cover now uses the Crypto Cover wording, which sets the trigger at a withdrawal restriction of 100 days or more, see [Cover wordings](/overview/cover-products/cover-wordings).
 
 During this time, members documented their losses and prepared for claims filing. Before the 90-day period ended, a [guide to Hodlnaut claims filing](https://medium.com/nexus-mutual/how-hodlnaut-custody-cover-holders-can-prepare-for-claims-filing-17b8e169fc97) was shared across the Mutual's social channels.
 
@@ -22,7 +22,7 @@ Twenty-two (22) claims were filed, and those claims were reviewed and voted on b
 For more information on each claim, review the sections below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 #### Approved claims
-Claim assessors reviewed and approved Claims V1 #127, #128, #129, #130, #131, #132, #133, #134, #135, #136, #137, #138, #140, #141, #143, #144, #145, #147, and #151. These claims included proof of loss, which showed each affected member suffered a loss of 10% or greater. You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://nexusmutual.io/claims).
+Claim assessors reviewed and approved Claims V1 #127, #128, #129, #130, #131, #132, #133, #134, #135, #136, #137, #138, #140, #141, #143, #144, #145, #147, and #151. These claims included proof of loss, which showed each affected member suffered a loss of 10% or greater. You can review a summary of each claim in the [claims history on the Nexus Mutual website](https://nexusmutual.io/claims).
 
 | Approved claims                                                                 |                                                                                 |                                                                                 |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|

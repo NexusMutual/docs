@@ -21,11 +21,11 @@ The  Advisory Board, formally constituted as the Foundation Council of Terrapin
 * General expertise: legal, regulatory, corporate governance, and business management
 
 The current AB members are:
-* [Roxana Danila](https://twitter.com/roxdanila)
-* [Hugh Karp](https://twitter.com/HughKarp)
-* [Rei Melbardis](https://twitter.com/Rei_Melb)
+* [Roxana Danila](https://x.com/roxdanila)
+* [Hugh Karp](https://x.com/HughKarp)
+* [Rei Melbardis](https://x.com/Rei_Melb)
 * [Lee McClelland](https://www.linkedin.com/in/lee-j-mcclelland/)
-* [Graeme Thurgood](https://twitter.com/GraemeThurgood)
+* [Graeme Thurgood](https://x.com/GraemeThurgood)
 
 ### The Role of the Advisory Board
 
@@ -108,7 +108,7 @@ The default outcome will be **approve** unless Nexus Mutual members vote to deny
 
 In September 2024, Nexus Mutual members voted to approve [kpk's (formerly karpatkey) proposal to manage the Nexus Mutual DAO treasury](https://forum.nexusmutual.io/t/nmdp-8-establish-karpatkey-as-the-treasury-manager-for-nexus-mutual-dao/1511), the pool of funds set aside to fund DAO-based initiatives.
 
-Since that time, kpk has provided [treasury updates](https://forum.nexusmutual.io/t/nexus-mutual-dao-treasury-updates-karpatkey/1572) on the governance forum. They also track the [Mutual's DAO treasury performance](https://reports.karpatkey.com/nexus-mutual?month=9&year=2025&currency=USD) on the kpk website.
+Since that time, kpk has provided [treasury updates](https://forum.nexusmutual.io/t/nexus-mutual-dao-treasury-updates-karpatkey/1572) on the governance forum. They also track the [Mutual's DAO treasury performance](https://reports.kpk.io/nexus-mutual?month=9&year=2025&currency=USD) on the kpk website.
 
 #### DAO Team Funding Requests
 

@@ -170,11 +170,11 @@ async function createConfigAsync() {
               items: [
                 {
                   label: "Discord",
-                  href: "https://discord.com/invite/xxFaAEn",
+                  href: "https://discord.gg/nexusmutual",
                 },
                 {
                   label: "Twitter",
-                  href: "https://twitter.com/NexusMutual",
+                  href: "https://x.com/NexusMutual",
                 },
                 {
                   label: "LinkedIn",

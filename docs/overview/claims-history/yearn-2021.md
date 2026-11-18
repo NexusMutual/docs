@@ -36,7 +36,7 @@ Claim assessors reviewed and approved Claims V1 #72–75, 77–84, 86–87, and 
 | Claim V1 #78 | Claim V1 #79 | Claim V1 #80 | Claim V1 #81 | Claim V1 #82 |
 | Claim V1 #83 | Claim V1 #84 | Claim V1 #86 | Claim V1 #87 | Claim V1 #93 |
 
-You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://nexusmutual.io/claims).
+You can review a summary of each claim in the [claims history on the Nexus Mutual website](https://nexusmutual.io/claims).
 
 #### Denied claims
 Claim assessors reviewed and denied Claims V1 #76, #85, #88, and #92.

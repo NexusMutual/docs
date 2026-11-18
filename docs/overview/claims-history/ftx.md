@@ -6,11 +6,11 @@ sidebar_position: 7
 
 ## Total claims paid
 
-A total of $4,924,887.90 was paid out for Claims V1 #156, #157, #158, #159, #160, #161, #162, #163, #164, #165, #166, #167, #168, #169, #170, #171, #172, #173, #176, #178, V2 #12, V2 #14, V2 #19, and V2 #20.
+A total of $5,240,785.69 was paid out for Claims V1 #156, #157, #158, #159, #160, #161, #162, #163, #164, #165, #166, #167, #168, #169, #170, #171, #172, #173, #176, #178, V2 #12, V2 #14, V2 #19, and V2 #20.
 
 ## Overview
 
-After FTX halted withdrawals in November 2022, members who held FTX Custody Cover at the time withdrawals were first halted waited for the 90-day period to pass. [Section 1.2 of the Custody Cover wording](https://uploads-ssl.webflow.com/62d8193ce9880895261daf4a/63d0f4d7b378db634f0f9a9d_CustodyCoverWordingv1.0.pdf) provides protection for assets that cannot be withdrawn from a centralized exchange after more than 90 days has passed.
+After FTX halted withdrawals in November 2022, members who held FTX Custody Cover at the time withdrawals were first halted waited for the 90-day period to pass. [Section 1.2 of the Custody Cover wording](https://api.nexusmutual.io/v2/ipfs/QmYhCNjfrNTMq8eyg8i7LbBpTkMCHfix9Sv1jrPb7dYZKd) provides protection for assets that cannot be withdrawn from a centralized exchange after more than 90 days has passed. That was the Custody Cover wording in force at the time. Custody Cover now uses the Crypto Cover wording, which sets the trigger at a withdrawal restriction of 100 days or more, see [Cover wordings](/overview/cover-products/cover-wordings).
 
 During this time, members documented their losses and prepared for claims filing. Before the 90-day period ended, a [guide to FTX claims filing](https://nexusmutual.io/blog/how-ftx-custody-cover-holders-can-prepare-for-claims-filing) was shared across the Mutual's social channels. 
 
@@ -30,7 +30,7 @@ For more information on each claim, review the sections below and the [Nexus Mut
 
 Claim assessors reviewed and approved Claims V1 #156, #157, #158, #159, #160, #161, #162, #163, #164, #165, #166, #167, #168, #169, #170, #171, #172, #173, #176, #178, V2 #12, V2 #14, V2 #19, and V2 #20. These claims included proof of loss, which showed each affected member suffered a loss due to halted withdrawals.
 
-You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://nexusmutual.io/claims).
+You can review a summary of each claim in the [claims history on the Nexus Mutual website](https://nexusmutual.io/claims).
 
 | Approved claims                                                                 |                                                                                 |                                                                                 |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -57,6 +57,6 @@ Claim V1 #175 was filed with a requested claim amount that was higher than the a
 
 Members who filed a claim and received a payout agreed to the following terms:
 
-<blockquote>By making a successful claim and receiving a payout (i.e., reimbursement) from Nexus Mutual, you agree to give rights to any future reimbursements from the FTX bankruptcy proceedings — including any future reimbursement tokens distributed as part of the FTX bankruptcy settlement — to Nexus Mutual, per the recoveries provision in Section 3 in the Custody Cover wording: https://nexusmutual.io/pages/CustodyCoverWordingv1.0.pdf.</blockquote>
+<blockquote>By making a successful claim and receiving a payout (i.e., reimbursement) from Nexus Mutual, you agree to give rights to any future reimbursements from the FTX bankruptcy proceedings — including any future reimbursement tokens distributed as part of the FTX bankruptcy settlement — to Nexus Mutual, per the recoveries provision in Section 3 in the Custody Cover wording: https://api.nexusmutual.io/v2/ipfs/QmYhCNjfrNTMq8eyg8i7LbBpTkMCHfix9Sv1jrPb7dYZKd.</blockquote>
 
 The DAO Community team and the Foundation Legal team is in the process of working with members who received claim payouts to transfer the bankruptcy claims to the Mutual, so any future reimbursement can be returned to the Capital Pool.

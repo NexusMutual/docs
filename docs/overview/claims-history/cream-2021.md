@@ -7,7 +7,7 @@ sidebar_position: 3
 There is a full post-mortem of this loss event and the claim payouts in the [Paying claims for the CREAM V1 exploit](https://medium.com/nexus-mutual/paying-claims-for-the-cream-v1-exploit-230f93990f1b) Medium post. Details of this event are also included below.
 
 ## Total claim payouts
-A total of $397,087.31 was paid out to members including the Claim V1 #102 payout from the DAO treasury.
+A total of $399,181.39 was paid out to members including the Claim V1 #102 payout from the DAO treasury.
 
 ### Overview
 After this exploit occurred, claim assessors discussed this loss event in the Mutual's Discord server. Because Nexus Mutual is a discretionary mutual, members reviewed the validity of the claims submitted after this loss event under [the V1 process in place at the time](/protocol/claims-assessment#how-claim-assessment-has-changed).
@@ -25,7 +25,7 @@ To date, eight (8) claims have been filed and voted on by claims assessors. As s
 For more information on each claim, review the sections below and the [Nexus Mutual Claims Dune dashboard](https://dune.com/nexus_mutual/claims).
 
 #### Approved claims
-Claim assessors reviewed and approved Claims V1 #98, #99, #100, #101, #103, and #105. These claims included proof of loss, which showed each affected member suffered a loss of 20% or greater. You can review a summary of each claim in the [Nexus Mutual Claims History database](https://nexusmutualdao.io/claims-history) and the [Nexus Mutual user interface](https://nexusmutual.io/claims).
+Claim assessors reviewed and approved Claims V1 #98, #99, #100, #101, #103, and #105. These claims included proof of loss, which showed each affected member suffered a loss of 20% or greater. You can review a summary of each claim in the [claims history on the Nexus Mutual website](https://nexusmutual.io/claims).
 
 | Approved claims                                                                 |                                                                                 |                                                                                 |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|

@@ -109,7 +109,6 @@ Those were V1 rules, retired in March 2023. Today, a claim opens a 72-hour votin
 Nexus Mutual's Claim Assessment process has been battle-tested since 2019 when the protocol first launched. Since then, the Mutual has paid out millions of dollars worth of claims to members who purchased cover and subsequently suffered a loss.
 
 To audit Nexus Mutual's past claim submissions, you can use the following resources:
-* [Nexus Mutual Claims Database](https://nexusmutualdao.io/claims-history)
 * [Nexus Mutual Claims Dune Dashboard](https://dune.com/nexus_mutual/claims)
 * [Nexus Mutual Claims page](https://app.nexusmutual.io/claims)
 * [Claims History section of our documentation](/overview/claims-history/)
